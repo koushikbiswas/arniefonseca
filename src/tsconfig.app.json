@@ -7,5 +7,20 @@
   "exclude": [
     "test.ts",
     "**/*.spec.ts"
-  ]
+  ],
+  "paths": {
+    "login": [
+      "dist/login"
+    ],
+    "login/*": [
+      "dist/login/*"
+    ],
+    "contactus": [
+      "dist/contactus"
+    ],
+    "contactus/*": [
+      "dist/contactus/*"
+    ]
+  }
+  
 }

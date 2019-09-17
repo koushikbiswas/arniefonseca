@@ -17,6 +17,56 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "on-page-editor": [
+        "dist/on-page-editor"
+      ],
+      "on-page-editor/*": [
+        "dist/on-page-editor/*"
+      ],
+      "contactus": [
+        "dist/contactus"
+      ],
+      "contactus/*": [
+        "dist/contactus/*"
+      ],
+      "auto-share": [
+        "dist/auto-share"
+      ],
+      "auto-share/*": [
+        "dist/auto-share/*"
+      ],
+      "login": [
+        "dist/login"
+      ],
+      "login/*": [
+        "dist/login/*"
+      ],
+      "blogs": [
+        "dist/blogs"
+      ],
+      "blogs/*": [
+        "dist/blogs/*"
+      ],
+      "from": [
+        "dist/from"
+      ],
+      "from/*": [
+        "dist/from/*"
+      ],
+      "lib-listing": [
+        "dist/listing"
+      ],
+      "listing/*": [
+        "dist/listing/*"
+      ],
+      "news-title": [
+        "dist/news-title"
+      ],
+      "news-title/*": [
+        "dist/news-title/*"
+      ]
+    }
   }
 }
