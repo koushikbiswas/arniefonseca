@@ -16,9 +16,11 @@ export declare class ForgetPasswordComponent implements OnInit {
     signUpRouteingUrlValue: any;
     private domanUrlValue;
     addEndpointValue: any;
+    logoValue: any;
     domanUrl: any;
     formTitle: any;
     serverUrl: any;
+    logo: any;
     addEndpoint: any;
     signUpRouteingUrl: any;
     constructor(fb: FormBuilder, http: HttpClient, router: Router, apiService: ApiService);

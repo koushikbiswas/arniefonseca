@@ -8,6 +8,7 @@ import { MetaService } from '@ngx-meta/core';
 })
 export class SignUpComponent implements OnInit {
 
+  public logo: any = '../../assets/images/logo.png';
   public forgetRouteingUrl: any = 'forget-password';
   public loginRouteingUrl: any = 'login';
 
@@ -19,8 +20,8 @@ export class SignUpComponent implements OnInit {
   };
   constructor(private readonly meta: MetaService) {
     
-    this.meta.setTitle('About us dynamic');
-    this.meta.setTag('og:description', 'This is dynamic decription ');
+    this.meta.setTitle('Sign Up dynamic');
+    this.meta.setTag('og:description', 'This is dynamic description ');
     this.meta.setTag('og:title', 'This is dynamic title with meta og ');
     this.meta.setTag('og:type', 'website');
     this.meta.setTag('og:image', 'https://upload.wikimedia.org/wikipedia/commons/f/f8/superraton.jpg');

@@ -8,6 +8,7 @@ import { MetaService } from '@ngx-meta/core';
 })
 export class ForgetPasswordComponent implements OnInit {
 
+  public logo: any = '../../assets/images/logo.png';
   public signUpRouteingUrl: any = 'sign-up';
   public formTitle: any = 'Forget Password';
   public serverUrl:any = 'http://166.62.39.137:5050/';
@@ -17,7 +18,7 @@ export class ForgetPasswordComponent implements OnInit {
   public domanUrl: any = 'http://localhost:4200/reset-password';
   constructor(private readonly meta: MetaService) {
     
-    this.meta.setTitle('About us dynamic');
+    this.meta.setTitle('Forget Password dynamic');
     this.meta.setTag('og:description', 'This is dynamic decription ');
     this.meta.setTag('og:title', 'This is dynamic title with meta og ');
     this.meta.setTag('og:type', 'website');

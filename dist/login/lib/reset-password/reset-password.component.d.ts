@@ -15,9 +15,11 @@ export declare class ResetPasswordComponent implements OnInit {
     serverUrlValue: any;
     message: any;
     addEndpointValue: any;
+    logoValue: any;
     fromTitleName: any;
     serverUrl: any;
     addEndpoint: any;
+    logo: any;
     accesscode: string;
     constructor(fb: FormBuilder, http: HttpClient, router: Router, route: ActivatedRoute, apiService: ApiService);
     ngOnInit(): void;

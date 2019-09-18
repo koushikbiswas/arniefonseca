@@ -16,7 +16,9 @@ export declare class LoginComponent implements OnInit {
     forgetRouteingUrlValue: any;
     routerStatusValue: any;
     endpointValue: any;
+    logoValue: any;
     fromTitle: any;
+    logo: any;
     fullUrl: any;
     endpoint: any;
     signUpRouteingUrl: any;

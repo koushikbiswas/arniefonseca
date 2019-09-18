@@ -1,0 +1,46 @@
+<mat-card class="footerwrapper">
+  <span class="scroll-to-top" [ngClass]="{'show-scrollTop': windowScrolled}">
+    <a (click)="scrollToTop()">
+      <i class="fa fa-chevron-up"></i>
+    </a>
+  </span>
+  <span class="mainwrappercontent">
+     <mat-card-content>
+       <span class="footertopwrapper footernavlist">
+            <mat-nav-list>
+              <span class="menuwrapper">
+                  <mat-list-item fxFlex>
+                      <a [routerLink]="['/home']">Home</a>
+                    </mat-list-item>
+                    <mat-list-item fxFlex>
+                      <a [routerLink]="['/pre-owned']">Pre-owned</a>
+                    </mat-list-item>
+                    <mat-list-item fxFlex>
+                      <a [routerLink]="['/new']">New</a>
+                    </mat-list-item>
+                    <mat-list-item fxFlex>
+                      <a [routerLink]="['/limited-time-specials']">Limited Time Specials</a>
+                    </mat-list-item>
+                    <mat-list-item fxFlex>
+                      <a [routerLink]="['/visit-our-store']">Visit Our Store</a>
+                    </mat-list-item>
+                    <mat-list-item fxFlex>
+                      <a [routerLink]="['/join-probid ']">Join Probid</a>
+                    </mat-list-item>
+                    <mat-list-item fxFlex>
+                      <a [routerLink]="['/social-advo']">Social Advo</a>
+                    </mat-list-item>
+                    <mat-list-item fxFlex class="activemenu">
+                      <a [routerLink]="['/contactus']">Contact Us</a>
+                    </mat-list-item>
+              </span>
+          </mat-nav-list>
+          <p>© 2019 ProBidAuto. All Rights Reserved</p>
+        </span>
+        <span class="footerddress">
+          <span class="logowrapper" fxFlex><a [routerLink]="['/home']"><img src="../../assets/images/logomain.png" class="landinglogoblock1"></a></span>
+        </span>
+     </mat-card-content>
+  </span>
+</mat-card>
+

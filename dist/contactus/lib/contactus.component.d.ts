@@ -18,7 +18,13 @@ export declare class ContactusComponent implements OnInit {
     serverURL: any;
     addEndpointData: any;
     routeingUrlValue: any;
+    setJwtTokenValue: any;
+    listingValue: any;
+    logoImgValue: any;
     formTitle: string;
+    logoimg: string;
+    addlisting: any;
+    JwtToken: any;
     serverUrl: any;
     addEndpoint: any;
     routeingUrl: any;
