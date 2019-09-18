@@ -8,7 +8,8 @@ import { MetaService } from '@ngx-meta/core';
 })
 export class ResetPasswordComponent implements OnInit {
 
-  public fromTitleName: any = 'Reset From';
+  public logo: any = '../../assets/images/logo.png';
+  public fromTitleName: any = 'Reset Password';
   public serverUrl: any = 'https://o820cv2lu8.execute-api.us-east-2.amazonaws.com/production/api/';
   public addEndpoint: any = {
     endpoint:'addorupdatedata',
@@ -17,8 +18,8 @@ export class ResetPasswordComponent implements OnInit {
   
   constructor(private readonly meta: MetaService) {
     
-    this.meta.setTitle('About us dynamic');
-    this.meta.setTag('og:description', 'This is dynamic decription ');
+    this.meta.setTitle('Reset Password dynamic');
+    this.meta.setTag('og:description', 'This is dynamic description');
     this.meta.setTag('og:title', 'This is dynamic title with meta og ');
     this.meta.setTag('og:type', 'website');
     this.meta.setTag('og:image', 'https://upload.wikimedia.org/wikipedia/commons/f/f8/superraton.jpg');
