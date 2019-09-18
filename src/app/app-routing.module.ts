@@ -6,11 +6,12 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ForgetPasswordComponent } from './forget-password/forget-password.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { AuthGuard } from './auth.guard';
 
 const routes: Routes = [
   {path: '',component:LoginComponent},
   {path: 'contactus', component:ContactusComponent},
-  {path: 'dashboard', component:DashboardComponent},
+  {path: 'dashboard', component:DashboardComponent, canActivate:[AuthGuard]},       // Useing for canActive
   {path: 'forget-password', component:ForgetPasswordComponent},
   {path: 'reset-password', component:ResetPasswordComponent},
   {path: 'sign-up', component:SignUpComponent},

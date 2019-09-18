@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MetaService } from '@ngx-meta/core';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-login',
@@ -13,7 +14,7 @@ export class LoginComponent implements OnInit {
   public signUpRouteingUrl: any = 'sign-up';
   public forgetRouteingUrl: any = 'forget-password';
   public routerStatus: any;
-    constructor(private readonly meta: MetaService) { 
+    constructor(private readonly meta: MetaService, public apiService:ApiService) { 
 
     this.meta.setTitle('About us dynamic');
     this.meta.setTag('og:description', 'This is dynamic decription ');
@@ -44,6 +45,7 @@ export class LoginComponent implements OnInit {
     }
   
     ngOnInit() {
+      console.log(this.apiService.serverUrlDemo)
     }
   
   }

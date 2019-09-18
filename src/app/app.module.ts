@@ -18,6 +18,8 @@ import { ForgetPasswordComponent } from './forget-password/forget-password.compo
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { AuthGuard } from './auth.guard';
+import { ApiService } from './api.service';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     HttpClientModule,
     AppRoutingModule,MetaModule.forRoot(), BrowserAnimationsModule
   ],
-  providers: [CookieService],
+  providers: [CookieService, AuthGuard, ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
