@@ -42,7 +42,7 @@ const routes: Routes = [
   {path: 'bk-footer', component:BkFooterComponent},
   {path: 'addedit-testimonial', component:AddeditTestimonialComponent},
   {path: 'testimonial-listing', component:ListingTestimonialComponent},
-  {path: 'listing-service', component:ListingServiceComponent},
+  {path: 'service-listing', component:ListingServiceComponent},
   {path: 'addedit-service', component:AddeditServiceComponent},
   /**End Backend Routing**/
 
