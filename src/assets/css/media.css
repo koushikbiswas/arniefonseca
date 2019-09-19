@@ -99,12 +99,25 @@
 
 
 @media only screen and (max-width: 991px){
+    
+
+    .headermiddlewrapper.mat-card-content {
+        justify-content: center !important;
+    }
     .mat-icon-button.mat-animation-noopable .smlmenudiv.ng-star-inserted {
         display: none !important;
     }
     .mat-icon-button.mat-animation-noopable.cdk-touch-focused .smlmenudiv.ng-star-inserted{
         display: block !important;
     }
+    
+    .pagelogowrapper{display: none;}
+    .topsocialblock{width: 100px !important; margin: 20px auto 20px; display: block;}
+    .topsocialblock .mat-list {display: inline-flex; justify-content: center !important;}
+    .headerbottom .mainwrappercontent{width: 100% !important;}
+
+
+
 }
 
 
@@ -124,6 +137,7 @@
         display: block;
         width: 100%;
         align-items: center;
+        border-bottom: 1px solid #58565a;
     }
 
     .homemain mat-nav-list span.logowrapper {
@@ -134,6 +148,7 @@
         width: 100%;
         align-items: center;
         display: inline-block !important;
+        
     }
 
     .vpheaderwrapper .mat-toolbar-row, .mat-toolbar-single-row{
