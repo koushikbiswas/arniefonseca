@@ -42,6 +42,8 @@ import { ListingServiceComponent } from './component/backend/ServiceApp/listing-
 import { ListingTestimonialComponent } from './component/backend/TestimonialApp/listing-testimonial/listing-testimonial.component';
 import { AddeditTestimonialComponent } from './component/backend/TestimonialApp/addedit-testimonial/addedit-testimonial.component';
 import { ServicelibModule } from 'servicelib';
+import { BkLeftdivComponent } from './component/backend/bk-leftdiv/bk-leftdiv.component';
+import { MaindashboardComponent } from './component/backend/maindashboard/maindashboard.component';
 /**End Backend Component** */
 
 @NgModule({
@@ -61,7 +63,9 @@ import { ServicelibModule } from 'servicelib';
     AddeditServiceComponent,
     ListingServiceComponent,
     ListingTestimonialComponent,
-    AddeditTestimonialComponent
+    AddeditTestimonialComponent,
+    BkLeftdivComponent,
+    MaindashboardComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

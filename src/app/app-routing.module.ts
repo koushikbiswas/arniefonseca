@@ -17,6 +17,8 @@ import { SignUpComponent } from './component/frontend/sign-up/sign-up.component'
 import { DashboardComponent } from './component/backend/dashboard/dashboard.component';
 import { BkHeaderComponent } from './component/backend/bk-header/bk-header.component';
 import { BkFooterComponent } from './component/backend/bk-footer/bk-footer.component';
+import { BkLeftdivComponent } from './component/backend/bk-leftdiv/bk-leftdiv.component';
+import { MaindashboardComponent } from './component/backend/maindashboard/maindashboard.component';
 import { AddeditServiceComponent } from './component/backend/ServiceApp/addedit-service/addedit-service.component';
 import { ListingServiceComponent } from './component/backend/ServiceApp/listing-service/listing-service.component';
 import { ListingTestimonialComponent } from './component/backend/TestimonialApp/listing-testimonial/listing-testimonial.component';
@@ -40,6 +42,8 @@ const routes: Routes = [
   {path: 'dashboard', component:DashboardComponent, canActivate:[AuthGuard]},       // Useing for canActive
   {path: 'bk-header', component:BkHeaderComponent},
   {path: 'bk-footer', component:BkFooterComponent},
+  {path: 'bk-leftdiv', component:BkLeftdivComponent},
+  {path: 'maindashboard', component:MaindashboardComponent},
   {path: 'addedit-testimonial', component:AddeditTestimonialComponent},
   {path: 'testimonial-listing', component:ListingTestimonialComponent},
   {path: 'service-listing', component:ListingServiceComponent},
