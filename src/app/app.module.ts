@@ -15,18 +15,28 @@ import { LoginModule } from 'login';
 import { CookieService } from 'ngx-cookie-service';
 import { MetaModule } from '@ngx-meta/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AuthGuard } from './auth.guard';
+import { ApiService } from './api.service';
+
+/**Frontend Component**/
+
+import { HeaderComponent } from './component/frontend/header/header.component';
+import { FooterComponent } from './component/frontend/footer/footer.component';
+import { HomeComponent } from './component/frontend/home/home.component';
 import { ContactusComponent } from './component/frontend/contactus/contactus.component';
 import { ForgetPasswordComponent } from './component/frontend/forget-password/forget-password.component';
 import { ResetPasswordComponent } from './component/frontend/reset-password/reset-password.component';
 import { SignUpComponent } from './component/frontend/sign-up/sign-up.component';
+
+/**End Frontend Component**/
+
+
+
+/**Backend Component**/
 import { DashboardComponent } from './component/backend/dashboard/dashboard.component';
-import { AuthGuard } from './auth.guard';
-import { ApiService } from './api.service';
-import { HeaderComponent } from './component/frontend/header/header.component';
-import { FooterComponent } from './component/frontend/footer/footer.component';
-import { HomeComponent } from './component/frontend/home/home.component';
 import { BkHeaderComponent } from './component/backend/bk-header/bk-header.component';
 import { BkFooterComponent } from './component/backend/bk-footer/bk-footer.component';
+/**End Backend Component** */
 
 @NgModule({
   declarations: [
