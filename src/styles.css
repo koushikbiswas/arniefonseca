@@ -209,6 +209,9 @@ body {
   border-radius: 0px !important;
   transition: none !important;
 }
+.contactusinfoblock .mat-card{  
+  box-shadow: none !important;
+}
 
 .footertopwrapper .mat-list-item:first-child .mat-list-item-content {
   padding-left: 0px;
