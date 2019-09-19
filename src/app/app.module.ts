@@ -31,7 +31,6 @@ import { SignUpComponent } from './component/frontend/sign-up/sign-up.component'
 /**End Frontend Component**/
 
 
-
 /**Backend Component**/
 import { DashboardComponent } from './component/backend/dashboard/dashboard.component';
 import { BkHeaderComponent } from './component/backend/bk-header/bk-header.component';
