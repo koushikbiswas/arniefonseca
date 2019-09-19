@@ -4,8 +4,8 @@ import { LoginComponent } from './component/frontend/login/login.component';
 import { AuthGuard } from './auth.guard';
 
 /**Frontend Routing**/
-import { HeaderComponent } from './component/frontend/header/header.component';
-import { FooterComponent } from './component/frontend/footer/footer.component';
+import { HeaderComponent } from './layout/header/header.component';
+import { FooterComponent } from './layout/footer/footer.component';
 import { HomeComponent } from './component/frontend/home/home.component';
 import { ContactusComponent } from './component/frontend/contactus/contactus.component';
 import { ForgetPasswordComponent } from './component/frontend/forget-password/forget-password.component';
@@ -15,9 +15,9 @@ import { SignUpComponent } from './component/frontend/sign-up/sign-up.component'
 
 /**Backend Routing**/
 import { DashboardComponent } from './component/backend/dashboard/dashboard.component';
-import { BkHeaderComponent } from './component/backend/bk-header/bk-header.component';
-import { BkFooterComponent } from './component/backend/bk-footer/bk-footer.component';
-import { BkLeftdivComponent } from './component/backend/bk-leftdiv/bk-leftdiv.component';
+import { BkHeaderComponent } from './layout/bk-header/bk-header.component';
+import { BkFooterComponent } from './layout/bk-footer/bk-footer.component';
+import { BkLeftdivComponent } from './layout/bk-leftdiv/bk-leftdiv.component';
 import { MaindashboardComponent } from './component/backend/maindashboard/maindashboard.component';
 import { AddeditServiceComponent } from './component/backend/ServiceApp/addedit-service/addedit-service.component';
 import { ListingServiceComponent } from './component/backend/ServiceApp/listing-service/listing-service.component';

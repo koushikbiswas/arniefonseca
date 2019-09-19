@@ -1,0 +1,93 @@
+<mat-sidenav #rightSidenav mode="side" class="rightSidenav" [fixedInViewport]="true" [fixedTopGap]="80">
+
+
+    <mat-list class="navigation-left">
+        <mat-list-item class="nav-item active" (click)="open(1)">
+            <a class="nav-item-hold">
+                <i class="nav-icon i-Bar-Chart"></i>
+                <span class="nav-text">Dashboard</span>
+            </a>
+            <div class="triangle"></div>
+        </mat-list-item>
+        <mat-list-item class="nav-item" (click)="open(2)">
+            <a class="nav-item-hold">
+                <i class="nav-icon i-Library"></i>
+                <span class="nav-text">UI kits</span>
+            </a>
+            <div class="triangle"></div>
+        </mat-list-item>
+        <mat-list-item class="nav-item">
+            <a class="nav-item-hold" href="#">
+                <i class="nav-icon i-Suitcase"></i>
+                <span class="nav-text">Extra kits</span>
+            </a>
+            <div class="triangle"></div>
+        </mat-list-item>
+        <mat-list-item class="nav-item">
+            <a class="nav-item-hold" href="#">
+                <i class="nav-icon i-Computer-Secure"></i>
+                <span class="nav-text">Apps</span>
+            </a>
+            <div class="triangle"></div>
+        </mat-list-item>
+        <mat-list-item class="nav-item">
+            <a class="nav-item-hold" href="#">
+                <i class="nav-icon i-File-Clipboard-File--Text"></i>
+                <span class="nav-text">Forms</span>
+            </a>
+            <div class="triangle"></div>
+        </mat-list-item>
+        <mat-list-item class="nav-item">
+            <a class="nav-item-hold" href="#">
+                <i class="nav-icon i-Windows-2"></i>
+                <span class="nav-text">widgets</span>
+            </a>
+            <div class="triangle"></div>
+        </mat-list-item>
+        <mat-list-item class="nav-item">
+            <a class="nav-item-hold" href="#">
+                <i class="nav-icon i-Administrator"></i>
+                <span class="nav-text">Sessions</span>
+            </a>
+            <div class="triangle"></div>
+        </mat-list-item>
+
+    </mat-list>
+
+    
+
+    <div class="sidebar-left-secondary">
+        <!-- Submenu Dashboards -->
+        <mat-list class="childNav" *ngIf = "status==1">            
+            <mat-list-item>
+                <a href="#" class="">
+                    <i class="nav-icon i-Clock-3"></i>
+                    <span class="item-name">Version 1</span>
+                </a>
+            </mat-list-item>
+            <mat-list-item>
+                <a href="#" class="">
+                    <i class="nav-icon i-Clock-4"></i>
+                    <span class="item-name">Version 2</span>
+                </a>
+            </mat-list-item>
+        </mat-list>
+
+        <mat-list class="childNav" *ngIf = "status==2">           
+            <mat-list-item>
+                <a href="#" class="">
+                    <i class="nav-icon i-Clock-3"></i>
+                    <span class="item-name">Version 3</span>
+                </a>
+            </mat-list-item>
+            <mat-list-item>
+                <a href="#" class="">
+                    <i class="nav-icon i-Clock-4"></i>
+                    <span class="item-name">Version 4</span>
+                </a>
+            </mat-list-item>
+        </mat-list>
+
+    </div>
+
+</mat-sidenav>
