@@ -17,13 +17,16 @@ import { SignUpComponent } from './component/frontend/sign-up/sign-up.component'
 import { DashboardComponent } from './component/backend/dashboard/dashboard.component';
 import { BkHeaderComponent } from './component/backend/bk-header/bk-header.component';
 import { BkFooterComponent } from './component/backend/bk-footer/bk-footer.component';
+import { AddeditServiceComponent } from './component/backend/ServiceApp/addedit-service/addedit-service.component';
+import { ListingServiceComponent } from './component/backend/ServiceApp/listing-service/listing-service.component';
+import { ListingTestimonialComponent } from './component/backend/TestimonialApp/listing-testimonial/listing-testimonial.component';
+import { AddeditTestimonialComponent } from './component/backend/TestimonialApp/addedit-testimonial/addedit-testimonial.component';
 /**End Backend Routing**/
 
 const routes: Routes = [
   
 /**Frontend Routing**/   
 {path: '',component:LoginComponent},
-{ path: '**', component: LoginComponent },
 {path: 'forget-password', component:ForgetPasswordComponent},
 {path: 'reset-password', component:ResetPasswordComponent},
 {path: 'sign-up', component:SignUpComponent},
@@ -37,8 +40,18 @@ const routes: Routes = [
   {path: 'dashboard', component:DashboardComponent, canActivate:[AuthGuard]},       // Useing for canActive
   {path: 'bk-header', component:BkHeaderComponent},
   {path: 'bk-footer', component:BkFooterComponent},
+  {path: 'addedit-testimonial', component:AddeditTestimonialComponent},
+  {path: 'testimonial-listing', component:ListingTestimonialComponent},
+  {path: 'listing-service', component:ListingServiceComponent},
+  {path: 'addedit-service', component:AddeditServiceComponent},
   /**End Backend Routing**/
 
+
+
+
+
+
+{ path: '**', component: LoginComponent },
 ];
 
 @NgModule({

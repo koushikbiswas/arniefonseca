@@ -17,6 +17,7 @@ import { MetaModule } from '@ngx-meta/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AuthGuard } from './auth.guard';
 import { ApiService } from './api.service';
+import { TestimonialModule } from 'testimonial';
 
 /**Frontend Component**/
 
@@ -35,6 +36,12 @@ import { SignUpComponent } from './component/frontend/sign-up/sign-up.component'
 import { DashboardComponent } from './component/backend/dashboard/dashboard.component';
 import { BkHeaderComponent } from './component/backend/bk-header/bk-header.component';
 import { BkFooterComponent } from './component/backend/bk-footer/bk-footer.component';
+
+import { AddeditServiceComponent } from './component/backend/ServiceApp/addedit-service/addedit-service.component';
+import { ListingServiceComponent } from './component/backend/ServiceApp/listing-service/listing-service.component';
+import { ListingTestimonialComponent } from './component/backend/TestimonialApp/listing-testimonial/listing-testimonial.component';
+import { AddeditTestimonialComponent } from './component/backend/TestimonialApp/addedit-testimonial/addedit-testimonial.component';
+import { ServicelibModule } from 'servicelib';
 /**End Backend Component** */
 
 @NgModule({
@@ -50,7 +57,11 @@ import { BkFooterComponent } from './component/backend/bk-footer/bk-footer.compo
     FooterComponent,
     HomeComponent,
     BkHeaderComponent,
-    BkFooterComponent
+    BkFooterComponent,
+    AddeditServiceComponent,
+    ListingServiceComponent,
+    ListingTestimonialComponent,
+    AddeditTestimonialComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
@@ -61,6 +72,8 @@ import { BkFooterComponent } from './component/backend/bk-footer/bk-footer.compo
     HttpClientModule,
     NgtUniversalModule,
     LoginModule,
+    TestimonialModule,
+    ServicelibModule,
     ContactusModule,
     HttpClientModule,
     AppRoutingModule,MetaModule.forRoot(), BrowserAnimationsModule
