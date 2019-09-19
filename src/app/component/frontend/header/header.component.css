@@ -156,7 +156,7 @@
     .vpheaderwrapper {position: relative !important; z-index: 999;color: #fff;width: 100%;}
     .vpheaderwrapper.mat-card {background-color: #cdd4da !important;box-shadow: none !important;  padding: 0px !important;}
     .vpheaderwrapper .mat-nav-list {display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;justify-content: space-between; padding-top: 0;}
-    .vpheaderwrapper .mat-nav-list .mat-list-item a {font-family: 'open_sanssemibold';font-size: 14px;color:#1e1e1e;padding: 0;margin: 0 auto;line-height: 16px;letter-spacing: 0px;margin-top: 0px;text-transform: uppercase; cursor: pointer;}
+    .vpheaderwrapper .mat-nav-list .mat-list-item a {font-family: 'open_sanssemibold';font-size: 14px;color:#1e1e1e;padding: 0;margin: 0 auto;line-height: 16px;letter-spacing: 0px;margin-top: 0px;text-transform: uppercase; cursor: pointer;height: 64px; line-height: 64px;}
     .vpheaderwrapper .mat-nav-list .mat-list-item:hover a {color:#fff;}
     .vpheaderwrapper .mat-nav-list .mat-list-item:not(.mat-list-item-disabled):hover {background: #0071bc;}
     .landinglogoblock {position: relative !important;top: 0;left: 0;z-index: 999;color: #fff;width: 100%;}

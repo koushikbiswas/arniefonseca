@@ -634,7 +634,7 @@ a{cursor: pointer; outline: none;}
 
 
 /* InnerBanner CSS */
-.contactusbg {
+.contactusbg.mat-card {
   overflow-x: hidden;
   background: url("../images/contactusbg.jpg") no-repeat center
     center;
@@ -649,7 +649,7 @@ a{cursor: pointer; outline: none;}
   position: relative;
 }
 
-.contactusbg h1 {
+.contactusbg.mat-card h1 {
   text-align: center;
   text-transform: uppercase;
   background: -webkit-linear-gradient(#d0d6dd, #7d8a92);
@@ -664,11 +664,11 @@ a{cursor: pointer; outline: none;}
   transform: translateY(-50%);
 }
 
-.contactusbg .mainwrappercontent {
+.contactusbg.mat-card .mainwrappercontent {
   position: relative;
 }
 
-.contactusbg .mat-card-content {
+.contactusbg.mat-card .mat-card-content {
   height: 250px;
   position: relative;
 }
