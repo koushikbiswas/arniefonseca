@@ -270,34 +270,6 @@ a{cursor: pointer; outline: none;}
 /*Page css start */
 
 
-.innerpagetitle {
-    background-color: #e2ecee;
-    padding: 20px 0px;
-    width: 100%;
-  }
-  
-  .innerpagetitle h2 {
-    text-align: center;
-    color: #3d3d3d;
-    text-transform: uppercase;
-    font-size: 36px;
-    font-family: "HelveticaBold";
-    display: inline-block;
-  }
-  
-  .innerpagetitle h2:after {
-    content: "";
-    left: 0;
-    top: 100%;
-    background: #7d8a92;
-    height: 2px;
-    width: 100%;
-    float: left;
-  }
-  
-  .innerpagetitle .mat-card-content {
-    margin-bottom: 0;
-  }
   
 
 
@@ -317,6 +289,39 @@ a{cursor: pointer; outline: none;}
 
 
 /*Page css End */
+
+
+
+.innerpagetitle.mat-card {
+  background-color: #e2ecee;
+  padding: 20px 0px;
+  width: 100%;
+}
+
+.innerpagetitle.mat-card h2 {
+  text-align: center;
+  color: #3d3d3d;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-family: "HelveticaBold";
+  display: inline-block;
+}
+
+.innerpagetitle.mat-card h2:after {
+  content: "";
+  left: 0;
+  top: 100%;
+  background: #7d8a92;
+  height: 2px;
+  width: 100%;
+  float: left;
+}
+
+.innerpagetitle.mat-card .mat-card-content {
+  margin-bottom: 0;
+}
+
+
 
 .navbarlists{
     display: -webkit-box;  
@@ -628,6 +633,47 @@ a{cursor: pointer; outline: none;}
 /* LOGO CSS */
 
 
+/* InnerBanner CSS */
+.contactusbg {
+  overflow-x: hidden;
+  background: url("../images/contactusbg.jpg") no-repeat center
+    center;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 250px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+
+.contactusbg h1 {
+  text-align: center;
+  text-transform: uppercase;
+  background: -webkit-linear-gradient(#d0d6dd, #7d8a92);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  font-size: 72px;
+  font-family: "OrbitronBold";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.contactusbg .mainwrappercontent {
+  position: relative;
+}
+
+.contactusbg .mat-card-content {
+  height: 250px;
+  position: relative;
+}
+/* InnerBanner CSS */
+
 
 /* CONTACT US PAGE CSS */
 
@@ -693,44 +739,6 @@ a{cursor: pointer; outline: none;}
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2) !important;
   }
   
-  .contactusbg {
-    overflow-x: hidden;
-    background: url("../src/assets/images/contactusbg.jpg") no-repeat center
-      center;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 250px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    position: relative;
-  }
-  
-  .contactusbg h1 {
-    text-align: center;
-    text-transform: uppercase;
-    background: -webkit-linear-gradient(#d0d6dd, #7d8a92);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-transform: uppercase;
-    font-size: 72px;
-    font-family: "OrbitronBold";
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-  }
-  
-  .contactusbg .mainwrappercontent {
-    position: relative;
-  }
-  
-  .contactusbg .mat-card-content {
-    height: 250px;
-    position: relative;
-  }
   
   .contact-form .from h2 {
     display: none;
