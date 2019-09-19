@@ -9,21 +9,24 @@ import { CommonModule } from '@angular/common';
 import { TransferHttpCacheModule } from '@nguniversal/common';
 import { HttpClientModule } from '@angular/common/http';
 import { NgtUniversalModule } from '@ng-toolkit/universal';
-import { LoginComponent } from './login/login.component';
+import { LoginComponent } from './component/frontend/login/login.component';
 import { ContactusModule } from 'contactus';
 import { LoginModule } from 'login';
 import { CookieService } from 'ngx-cookie-service';
 import { MetaModule } from '@ngx-meta/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ContactusComponent } from './contactus/contactus.component';
-import { ForgetPasswordComponent } from './forget-password/forget-password.component';
-import { ResetPasswordComponent } from './reset-password/reset-password.component';
-import { SignUpComponent } from './sign-up/sign-up.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { ContactusComponent } from './component/frontend/contactus/contactus.component';
+import { ForgetPasswordComponent } from './component/frontend/forget-password/forget-password.component';
+import { ResetPasswordComponent } from './component/frontend/reset-password/reset-password.component';
+import { SignUpComponent } from './component/frontend/sign-up/sign-up.component';
+import { DashboardComponent } from './component/backend/dashboard/dashboard.component';
 import { AuthGuard } from './auth.guard';
 import { ApiService } from './api.service';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './component/frontend/header/header.component';
+import { FooterComponent } from './component/frontend/footer/footer.component';
+import { HomeComponent } from './component/frontend/home/home.component';
+import { BkHeaderComponent } from './component/backend/bk-header/bk-header.component';
+import { BkFooterComponent } from './component/backend/bk-footer/bk-footer.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +38,10 @@ import { FooterComponent } from './footer/footer.component';
     SignUpComponent,
     DashboardComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent,
+    BkHeaderComponent,
+    BkFooterComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
