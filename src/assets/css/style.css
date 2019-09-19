@@ -88,11 +88,15 @@ a:focus {
 img, *img, img:focus, *img:focus{border: 0; outline: none; border-style: none;}
 
 
+
+
 .full-screen {-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-position: center;  background-repeat: no-repeat; min-width: 100%;}
 
 button{cursor: pointer; outline: none;}
 
 a{cursor: pointer; outline: none;}
+
+/*Base css start*/
 
 .generalcls .mat-card-header-text{margin: 0 !important;width: 100%;}
 .generalcls .mat-card-title{font-family: 'RalewayRegular'; font-size: 48px !important; line-height: 48px !important; text-transform: uppercase;  margin: 0px; padding: 0; margin-bottom:30px!important; color:#2a2b2c;display: flex; width: 100%; align-items: center; justify-content: space-between;}
@@ -113,10 +117,7 @@ a{cursor: pointer; outline: none;}
 .generalcls h1 span{color:#fed204;font-family: 'HelveticaBold';}
 .generalcls h2{font-family: 'HelveticaBold'; font-size: 30px !important; line-height: 36px !important;; text-transform: uppercase;  margin: 0px; padding: 0; margin-bottom: 18px; margin-top: 25px; color:#fff; white-space: normal !important;}
 
-
-.txtuppercase{
-    font-family: 'HelveticaBold'; font-size: 18px; line-height: 20px !important;; text-transform: uppercase; display: block; margin: 0px; padding: 0; margin-bottom: 18px; margin-top: 25px; color:#2b2c2d;
-}
+.txtuppercase{font-family: 'HelveticaBold'; font-size: 18px; line-height: 20px !important;; text-transform: uppercase; display: block; margin: 0px; padding: 0; margin-bottom: 18px; margin-top: 25px; color:#2b2c2d;}
 
 .txtbluecolor {
     font-family: 'HelveticaNormal';
@@ -263,6 +264,41 @@ a{cursor: pointer; outline: none;}
 .socialmediaicons .fa-reddit:hover {background: #ff5700; color: white;}
 .socialmediaicons .fa-rss:hover {background: #ff6600; color: white;}*/
 
+/*Base css end*/
+
+
+/*Page css start */
+
+
+.innerpagetitle {
+    background-color: #e2ecee;
+    padding: 20px 0px;
+    width: 100%;
+  }
+  
+  .innerpagetitle h2 {
+    text-align: center;
+    color: #3d3d3d;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-family: "HelveticaBold";
+    display: inline-block;
+  }
+  
+  .innerpagetitle h2:after {
+    content: "";
+    left: 0;
+    top: 100%;
+    background: #7d8a92;
+    height: 2px;
+    width: 100%;
+    float: left;
+  }
+  
+  .innerpagetitle .mat-card-content {
+    margin-bottom: 0;
+  }
+  
 
 
 
@@ -280,14 +316,14 @@ a{cursor: pointer; outline: none;}
   }
 
 
-
+/*Page css End */
 
 .navbarlists{
-    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flexbox;      /* TWEENER - IE 10 */
-    display: -webkit-flex;     /* NEW - Chrome */
-    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    display: -webkit-box;  
+    display: -moz-box;  
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
 }
 
 
@@ -353,10 +389,10 @@ a{cursor: pointer; outline: none;}
 .homemain mat-nav-list span.logowrapper img{max-width: 100%; margin: 0 auto;}
 
 .logowrappersml{display: none;}
+
 .mat-drawer-container{
     display: none !important;
 }
-
 
 .landinglogoblock{
     position: relative !important;
@@ -440,173 +476,11 @@ a{cursor: pointer; outline: none;}
     -o-transform: translateX(-50%);
 }
 
-
-
 .mat-menu-content .mat-menu-item{
     height:auto;
     border-radius: 0px !important;
     line-height: 24px;
 }
-
-/* .formcls .mat-card-header {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin-left: -4px;
-    margin-top: 6px;
-    background-image: url(../../assets/images/formmatcardheaderbg.jpg) !important;
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
-    background-position: top center !important;
-    padding: 10px 4px;
-    -webkit-box-shadow: 0px 6px 24px -8px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 6px 24px -8px rgba(0,0,0,0.75);
-    box-shadow: 0px 6px 24px -8px rgba(0,0,0,0.75);
-}
-
-
-.formcls .mat-card-header .mat-card-header-text {
-    margin: 0 0px;
-}
-
-.formcls .mat-card-header h2 {
-    font-family: 'OpenSansSemibold';
-    font-size: 36px;
-    text-transform: uppercase;
-    color:#ffffff;
-    padding: 0;
-    margin: 0px;
-    line-height: 36px;
-    letter-spacing: 0px;
-    text-shadow: 0px 1px 2px rgba(28,110,164,0.5);
-    text-align: center;
-    width: 100%;
-}
-
-
-.formcls .example-container {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    margin: 20px auto 0px;
-}
-
-.formcls .example-container > * {
-    width: 100%;
-}
-
-.formcls .mat-form-field-flex{
-    background-color: #eeeff2;
-    border:1px solid #b6c0c9;
-}
-
-.formcls .mat-input-element {
-    caret-color: #000 !important;
-}
-
-
-.formcls button sub {
-    position: absolute;
-    top: 7px;
-}
-
-
-.formcls button{
-    background-image: url(../../assets/images/formbuttonbg.jpg) !important;
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
-    background-position: top center !important;
-    padding: 20px 4px;
-    border-radius: 19px;
-    -moz-border-radius: 19px;
-    -webkit-border-radius: 19px;
-    border: 9px solid #e0e2e7;
-    font-family: 'OpenSansBold';
-    font-size: 24px;
-    text-transform: uppercase;
-    color:#ffffff;
-    text-shadow: 0px 1px 2px rgba(28,110,164,0.5);
-    width: 100%;
-    box-shadow: 0 0 10px rgba(0,0,0,0.6);
-    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
-    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
-    -o-box-shadow: 0 0 10px rgba(0,0,0,0.6);
-    white-space: normal;
-}
-
-.formcls .mat-card-footer {
-    display: block;
-    margin: 15px auto 12px;
-    width: 94%;
-}
-
-.formcls .mat-form-field-infix {
-    border-top: 0 solid transparent;
-}
-
-.formcls .mat-form-field .mat-form-field-label{
-    color:#000000;
-}
-
-.formcls .mat-form-field.mat-focused .mat-form-field-label{
-    color:#000 !important;
-    display: none;
-}
-
-.formcls .mat-form-field-appearance-legacy .mat-form-field-label {
-    top: 0.9em;
-}
-
-
-.formcls input.mat-input-element {
-    margin-top: -.0725em;
-}
-
-.formcls .mat-form-field-label-wrapper {
-    left: 5px !important;
-    width: 98%;
-}
-
-.mat-form-field .mat-form-field-infix{height: 30px; line-height: 30px; padding-left: 6px; padding-right: 6px;}
-
-.formcls .mat-form-field-appearance-legacy .mat-form-field-infix {
-    padding: 1px 5px !important;
- }
-
-.formcls .mat-list-option:not(.mat-list-item-disabled):hover, .mat-nav-list .mat-list-item:not(.mat-list-item-disabled):hover {
-    background: 0 !important;
-}
-.formcls .mat-list-option:focus, .mat-list-option:hover, .mat-nav-list .mat-list-item:focus, .mat-nav-list .mat-list-item:hover {
-    background: 0 !important;
-}
-
-.formcls .mat-card:not([class*=mat-elevation-z]){box-shadow: none !important;}
-
-
-.mat-card-actions, .mat-card-content, .mat-card-subtitle {
-    display: block;
-    margin-bottom: 0px !important;
-}
-.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label{display: none !important;}
-
-
-.vpheaderwrapper .mat-toolbar.mat-primary {
-    background: transparent !important;
-    color: #fff;
-}
-
-
-
-.mat-card{
-    box-shadow: none !important;
-} */
-
-
-
-
-
-
-
 
 
 .vpfooterwrapper{
@@ -665,8 +539,6 @@ a{cursor: pointer; outline: none;}
 
     #slides .slide{height: auto;}
     #slides .slide .mat-list-item-content{padding: 0px !important;}
-
-
     #slides {
         position: relative;
         height: 580px;
@@ -723,10 +595,281 @@ a{cursor: pointer; outline: none;}
         background: rgba(0,0,0, 1);
         cursor: pointer;
       }
-      #previous:focus,
-      #next:focus{ outline: none; }
-      .slide:nth-of-type(1) {
-        background: rgb(137, 255, 183);
-      }
+#previous:focus,
+#next:focus{ outline: none; }
+.slide:nth-of-type(1) {background: rgb(137, 255, 183);}
       
       
+
+
+
+
+/* LOGO CSS */
+.logowrapper {
+    margin-top: -27% !important;
+    margin-bottom: 26px !important;
+    width: 350px;
+  }
+  
+  .logowrapper img {
+    max-width: 100%;
+  }
+  
+  .pagelogowrapper {
+    margin-top: 0% !important;
+    margin-bottom: 0px !important;
+    width: 350px;
+  }
+  
+  .pagelogowrapper img {
+    max-width: 100%;
+  }
+
+/* LOGO CSS */
+
+
+
+/* CONTACT US PAGE CSS */
+
+.contactusblockinner {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  .contactusinfoblock {
+    /* background-color: #fb4a32; */
+    padding: 0px 0px;
+    /* flex: 1 1 40%; */
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    width: 40%;
+    transform: translateY(-50%);
+    height: 65%;
+    z-index: 9999;
+  }
+  .contact-form .contactusinfoblock .main-div .mat-card {
+    margin-top: 0px;
+    margin: 4em auto !important;
+  }
+  
+  .contactusformblock {
+    flex: 1 1 100%;
+    /* display: flex; */
+    position: relative;
+  }
+  .contactusinfoblock .mat-card {
+    box-shadow: none;
+    padding: 30px 48px !important;
+    background: transparent;
+    height: 100%;
+  }
+  .contactusinfoblock .mat-card img {
+    margin-left: -22%;
+    width: 143%;
+    margin-top: -20%;
+  }
+  
+  .contactusinfoblock .mat-card h2 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 40px;
+  }
+  
+  .from.mat-card{
+    background-color: transparent !important;
+  }
+  
+.contact-form .main-div .from.mat-card {
+    margin-top: 0px;
+    margin: 4em auto !important;
+    width: 85% !important;
+    padding-left: 40% !important;
+  }
+  
+  .contact-form .main-div .from.mat-card:hover {
+    -o-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2) !important;
+    -ms-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2) !important;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2) !important;
+  }
+  
+  .contactusbg {
+    overflow-x: hidden;
+    background: url("../src/assets/images/contactusbg.jpg") no-repeat center
+      center;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 250px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .contactusbg h1 {
+    text-align: center;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(#d0d6dd, #7d8a92);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    font-size: 72px;
+    font-family: "OrbitronBold";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+  
+  .contactusbg .mainwrappercontent {
+    position: relative;
+  }
+  
+  .contactusbg .mat-card-content {
+    height: 250px;
+    position: relative;
+  }
+  
+  .contact-form .from h2 {
+    display: none;
+  }
+
+  /* CONTACT US PAGE CSS ENDS */
+
+
+
+
+    /* FORMS PAGE CSS ENDS */
+.from {
+    width: 600px !important;
+    margin: 0 auto;
+    background-color: transparent;
+  }
+  
+  .from {
+    padding: 24px !important;
+    margin: 4em auto !important;
+    color: #fff !important;
+    -webkit-transition: box-shadow 0.5s !important;
+    transition: box-shadow 0.5s !important;
+    overflow: hidden !important;
+    border-radius: 10px !important;
+    -webkit-transform: scale(1.03) !important;
+    -moz-transform: scale(1.03) !important;
+    -o-transform: scale(1.03) !important;
+    -ms-transform: scale(1.03) !important;
+    transform: scale(1.03) !important;
+    box-sizing: border-box !important;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative !important;
+    z-index: 999 !important;
+    /* box-shadow:none !important; */
+    margin-top: -20px !important;
+    -webkit-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2) !important;
+    -moz-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2) !important;
+    -o-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2) !important;
+    -ms-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2) !important;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2) !important;
+    overflow: inherit !important;
+  }
+  
+  .from:hover {
+    -webkit-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.9) !important;
+    -moz-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.9) !important;
+    -o-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.9) !important;
+    -ms-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.9) !important;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.9) !important;
+  }
+  
+  .formgenrl input.mat-input-element,
+  .formgenrl textarea.mat-input-element {
+    outline: none;
+    font-size: 1em;
+    color: #000;
+    padding: 0.6em;
+    margin: 0;
+    width: 96%;
+    border: none;
+    -webkit-appearance: none;
+    display: block;
+    background: #fff;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px;
+  }
+  
+  .formgenrl input.mat-input-element,
+  .formgenrl textarea.mat-input-element {
+    background: #fff;
+    padding: 10px;
+    color: #333;
+  }
+  
+  .formgenrl p {
+    font-size: 0.9em;
+    color: #fff;
+    margin: 1.8em 0 0.5em;
+    letter-spacing: 1px;
+  }
+  
+  .formgenrl button {
+    font-size: 1em;
+    outline: none;
+    cursor: pointer;
+    padding: 0.6em 1em;
+    -webkit-appearance: none;
+    width: 100%;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+  }
+  
+  .formgenrl button.mat-primary {
+    color: #fff;
+    /* background: #fb4a32;
+    border: 1px solid #fb4a32; */
+    background: #12c3e3;
+    border: 1px solid #12c3e3;
+    font-size: 24px;
+    line-height: normal;
+    width: 100% !important;
+    height: auto !important;
+  }
+  
+  .formgenrl h2 {
+    text-align: center;
+    background-color: transparent !important;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0px 15px 15px;
+    font-size: 30px;
+  }
+  
+  .mat-form-field.mat-focused .mat-form-field-label {
+    color: #fff;
+    left: 0px;
+  }
+  
+  .mat-form-field.mat-focused .mat-input-element {
+    caret-color: #000;
+  }
+  
+  .mat-form-field .mat-form-field-label {
+    top: 1.28125em;
+    line-height: 36px;
+    left: 10px;
+  }
+  
+  .mat-form-field-appearance-legacy.mat-focused .mat-form-field-underline {
+    background-color: rgb(251, 74, 50);
+  }
+
+    /* FORMS CSS ENDS */
