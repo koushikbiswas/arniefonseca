@@ -1,4 +1,4 @@
-<mat-card>
+<mat-card  *ngIf="router.url ==='/' || router.url ==='/home' || router.url ==='/forget-password' || router.url ==='/reset-password' || router.url ==='/sign-up' || router.url ==='/contactus'">
   <mat-card-content>
 
       <mat-card class="headertop">
@@ -122,10 +122,16 @@
 </mat-card>
 
 
-<mat-card>
+<mat-card class="adminheaderleftdiv admcls" *ngIf="router.url ==='/service-listing'">
   <mat-card-content>
-    <!-- app header -->
     <app-bk-header></app-bk-header>
+
+      <!-- <input type="checkbox" id="show-menu" role="button"> -->
+    
+      <mat-card-content class="dashboard_left" id="menu">
+          <app-bk-leftdiv></app-bk-leftdiv>
+      </mat-card-content>
+   
     
   </mat-card-content>
 </mat-card>
