@@ -23,6 +23,7 @@ import { AddeditServiceComponent } from './component/backend/ServiceApp/addedit-
 import { ListingServiceComponent } from './component/backend/ServiceApp/listing-service/listing-service.component';
 import { ListingTestimonialComponent } from './component/backend/TestimonialApp/listing-testimonial/listing-testimonial.component';
 import { AddeditTestimonialComponent } from './component/backend/TestimonialApp/addedit-testimonial/addedit-testimonial.component';
+import { ResolveService } from './resolve.service';
 /**End Backend Routing**/
 
 const routes: Routes = [
@@ -44,10 +45,16 @@ const routes: Routes = [
   {path: 'bk-footer', component:BkFooterComponent},
   {path: 'bk-leftdiv', component:BkLeftdivComponent},
   {path: 'maindashboard', component:MaindashboardComponent},
-  {path: 'addedit-testimonial', component:AddeditTestimonialComponent},
-  {path: 'testimonial-listing', component:ListingTestimonialComponent},
-  {path: 'service-listing', component:ListingServiceComponent},
-  {path: 'addedit-service', component:AddeditServiceComponent},
+  {path: 'testimonial/add', component:AddeditTestimonialComponent},
+  {path: 'testimonial/edit/:_id', component:AddeditTestimonialComponent, resolve: { testimonialData: ResolveService },
+  data: { requestcondition: { source: 'testimonial', condition: {} }, endpoint: 'datalist'}},
+  {path: 'testimonial-listing', component:ListingTestimonialComponent,resolve: { testimonialList: ResolveService },
+  data: { requestcondition: { source: 'testimonial_view', condition: {} }, endpoint: 'datalist'}},
+  {path: 'service-listing', component:ListingServiceComponent,resolve: { serviceList: ResolveService },
+  data: { requestcondition: { source: 'services_view', condition: {} }, endpoint: 'datalist'}},
+  {path: 'service/add', component:AddeditServiceComponent},
+  { path:'service/edit/:_id', component:AddeditServiceComponent,  resolve: { serviceList: ResolveService },
+  data: { requestcondition: { source: 'services', condition: {} }, endpoint: 'datalist'}},
   /**End Backend Routing**/
 
 

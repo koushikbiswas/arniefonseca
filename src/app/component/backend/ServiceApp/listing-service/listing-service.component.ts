@@ -30,8 +30,7 @@ export class ListingServiceComponent implements OnInit {
 
   this.activatedRoute.data.subscribe(resolveData => {
     this.serviceListConfig.datasource = resolveData.serviceList.res;
-    this.serviceListConfig.jwtToken = this.cookieService.get('jwtToken');
-    
+    this.serviceListConfig.jwtToken = this.cookieService.get('jwtToken');   
   });
 }
 

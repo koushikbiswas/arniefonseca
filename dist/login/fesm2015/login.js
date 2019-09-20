@@ -605,12 +605,14 @@ class LoginComponent {
      * @param {?} http
      * @param {?} router
      * @param {?} apiService
+     * @param {?} cookieService
      */
-    constructor(fb, http, router, apiService) {
+    constructor(fb, http, router, apiService, cookieService) {
         this.fb = fb;
         this.http = http;
         this.router = router;
         this.apiService = apiService;
+        this.cookieService = cookieService;
         this.message = '';
         this.fromTitleValue = '';
         this.serverURL = '';
@@ -618,9 +620,10 @@ class LoginComponent {
         this.forgetRouteingUrlValue = '';
         this.routerStatusValue = '';
         this.logoValue = '';
+        this.cookieSetValue = '';
         this.project_name = '';
         this.loginForm = this.fb.group({
-            username: ['', Validators.compose([Validators.required, Validators.pattern(/^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/)])],
+            email: ['', Validators.compose([Validators.required, Validators.pattern(/^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/)])],
             password: ['', Validators.required]
         });
     }
@@ -653,6 +656,17 @@ class LoginComponent {
      */
     set endpoint(endpointVal) {
         this.endpointValue = endpointVal;
+    }
+    /**
+     * @param {?} v
+     * @return {?}
+     */
+    set cookieSet(v) {
+        this.cookieSetValue = v;
+        console.log(this.cookieSetValue.cookie);
+        // for (const key in this.cookieSetValue.cookie) {
+        //   console.log(this.cookieSetValue.cookie[key]);
+        // }
     }
     /**
      * @param {?} routeingUrlval
@@ -708,6 +722,13 @@ class LoginComponent {
     loginFormSubmit() {
         /** @type {?} */
         let x;
+        /****************** test*******************/
+        // for (const key in this.cookieSetValue.cookie) {
+        //   console.log(this.cookieSetValue.cookie[key].type);
+        //   if (result.token == this.cookieSetValue.cookie[key].type) {
+        //     console.log('+++++++++++++++');
+        //   }
+        // }
         // use for validation checking
         for (x in this.loginForm.controls) {
             this.loginForm.controls[x].markAsTouched();
@@ -724,9 +745,44 @@ class LoginComponent {
                 /** @type {?} */
                 let result = {};
                 result = response;
+                //   let cookiekeyarr:any = [];
+                //   let cookievaluearr:any = [];
+                //   for(let j in result.item){
+                //     // console.log(Object.values(result.item[j]));
+                //     // cookiekeyarr = Object.keys(result.item[j]);
+                //     // cookievaluearr = Object.values(result.item[j]);
+                //     cookievaluearr.push(Object.keys(result.item[j]), Object.values(result.item[j]));
+                //   }
+                //   // console.log('cookiekeyarr'+cookiekeyarr);
+                //   console.log(cookievaluearr);
+                // //   setTimeout(()=>{
+                //   // for (let key in cookiekeyarr){
+                //     for(let value in cookievaluearr[0]){
+                //       console.log('hi'+value);
+                //       // this.cookieService.set(cookiekeyarr[key],cookievaluearr[value]);
+                //     }
+                //   // }
+                // // },2000);
+                //   // setTimeout(()=>{
+                //   //   console.log(this.cookieService.getAll());
+                //   // },4000);
                 if (result.status == "success") {
+                    // for (const key in this.cookieSetValue.cookie) {
+                    //   console.log(this.cookieSetValue.cookie[key].type);
+                    //   if (result == this.cookieSetValue.cookie[key].type) {
+                    //     console.log('+++++++++++++++');
+                    //   }
+                    // }
+                    this.cookieService.set('user_details', JSON.stringify(result.item[0]));
+                    this.cookieService.set('jwtToken', result.token);
+                    setTimeout((/**
+                     * @return {?}
+                     */
+                    () => {
+                        console.log(this.cookieService.getAll());
+                    }), 1000);
                     for (const key in this.routerStatusValue.data) {
-                        console.log(this.routerStatusValue.data[key].type);
+                        // console.log(this.routerStatusValue.data[key].type);
                         if (result.type === this.routerStatusValue.data[key].type) {
                             this.router.navigateByUrl('/' + this.routerStatusValue.data[key].routerNav); // navigate to dashboard url 
                         }
@@ -766,7 +822,7 @@ class LoginComponent {
 LoginComponent.decorators = [
     { type: Component, args: [{
                 selector: 'lib-login',
-                template: "<div class=\"main-div\">\n\n    <mat-card class=\"from\">\n            <span class=\"logowrapper\" *ngIf=\"logoValue != ''\" >\n                    <img  [src]=\"logoValue\">\n                </span>\n\n        <h2 *ngIf=\"fromTitleValue != ''\"> {{fromTitleValue}}</h2>\n\n        <form class=\"example-container\" [formGroup]=\"loginForm\" (ngSubmit)=\"loginFormSubmit()\" novalidate>\n<mat-error class=\"error\" *ngIf=\"message !=''\">{{message}}</mat-error>\n\n            <mat-form-field>\n                <input matInput type=\"text\" placeholder=\"Username\" formControlName=\"username\" (blur)=\"inputUntouched('username')\">\n                <mat-error\n                    *ngIf=\"!loginForm.controls['username'].valid && loginForm.controls['username'].errors.required && loginForm.controls['username'].touched\">\n                    Username field can not be blank</mat-error>\n            </mat-form-field>\n\n\n            <mat-form-field>\n                <input matInput placeholder=\"Password\" type=\"password\" formControlName=\"password\" (blur)=\"inputUntouched('password')\">\n                <mat-error\n                    *ngIf=\"!loginForm.controls['password'].valid && loginForm.controls['password'].errors.required && loginForm.controls['password'].touched\">\n                    Password field can not be blank</mat-error>\n            </mat-form-field>\n\n\n            <button mat-raised-button color=\"primary\">Login</button>\n            <span class=\"signupfooter\">\n                <a (click)=\"forgetpassword()\">Forgot password</a>\n                <a (click)=\"signup()\">Sign Up</a>\n            </span>\n        </form>\n\n    </mat-card>\n\n</div>",
+                template: "<div class=\"main-div\">\n\n    <mat-card class=\"from\">\n            <span class=\"logowrapper\" *ngIf=\"logoValue != ''\" >\n                    <img  [src]=\"logoValue\">\n                </span>\n\n        <h2 *ngIf=\"fromTitleValue != ''\"> {{fromTitleValue}}</h2>\n\n        <form class=\"example-container\" [formGroup]=\"loginForm\" (ngSubmit)=\"loginFormSubmit()\" novalidate>\n<mat-error class=\"error\" *ngIf=\"message !=''\">{{message}}</mat-error>\n\n            <mat-form-field>\n                <input matInput type=\"text\" placeholder=\"Username\" formControlName=\"email\" (blur)=\"inputUntouched('email')\">\n                <mat-error\n                    *ngIf=\"!loginForm.controls['email'].valid && loginForm.controls['email'].errors.required && loginForm.controls['email'].touched\">\n                    Username field can not be blank</mat-error>\n            </mat-form-field>\n\n\n            <mat-form-field>\n                <input matInput placeholder=\"Password\" type=\"password\" formControlName=\"password\" (blur)=\"inputUntouched('password')\">\n                <mat-error\n                    *ngIf=\"!loginForm.controls['password'].valid && loginForm.controls['password'].errors.required && loginForm.controls['password'].touched\">\n                    Password field can not be blank</mat-error>\n            </mat-form-field>\n\n\n            <button mat-raised-button color=\"primary\">Login</button>\n            <span class=\"signupfooter\">\n                <a (click)=\"forgetpassword()\">Forgot password</a>\n                <a (click)=\"signup()\">Sign Up</a>\n            </span>\n        </form>\n\n    </mat-card>\n\n</div>",
                 styles: [".example-container{display:flex;flex-direction:column}.example-container>*{width:100%}.from{width:30%;margin:0 auto}.from h2{text-align:center;background-color:#00f;color:#fff;padding:15px}.from a{padding-right:30px}.main-div{height:100vh;display:flex;justify-content:center;align-items:center}.signupfooter{margin-top:12px;display:flex;justify-content:space-between;align-items:center}.signupfooter a{cursor:pointer}.error{text-align:center}.logowrapper{margin:0 auto;display:block;text-align:center}"]
             }] }
 ];
@@ -775,7 +831,8 @@ LoginComponent.ctorParameters = () => [
     { type: FormBuilder },
     { type: HttpClient },
     { type: Router },
-    { type: ApiService }
+    { type: ApiService },
+    { type: CookieService }
 ];
 LoginComponent.propDecorators = {
     formDirective: [{ type: ViewChild, args: [FormGroupDirective,] }],
@@ -783,6 +840,7 @@ LoginComponent.propDecorators = {
     logo: [{ type: Input }],
     fullUrl: [{ type: Input }],
     endpoint: [{ type: Input }],
+    cookieSet: [{ type: Input }],
     signUpRouteingUrl: [{ type: Input }],
     forgetRouteingUrl: [{ type: Input }],
     routerStatus: [{ type: Input }]
