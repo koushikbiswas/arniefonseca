@@ -1408,7 +1408,7 @@ var ForgetPasswordComponent = /** @class */ (function () {
         this.domanUrlValue = '';
         this.addEndpointValue = '';
         this.logoValue = '';
-        this.durationInSeconds = 50;
+        this.durationInSeconds = 5;
         this.forgetPasswordForm = this.fb.group({
             email: ['', Validators.compose([Validators.required, Validators.pattern(/^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/)])],
         });

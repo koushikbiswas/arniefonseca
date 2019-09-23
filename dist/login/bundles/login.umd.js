@@ -1329,7 +1329,7 @@
             this.domanUrlValue = '';
             this.addEndpointValue = '';
             this.logoValue = '';
-            this.durationInSeconds = 50;
+            this.durationInSeconds = 5;
             this.forgetPasswordForm = this.fb.group({
                 email: ['', forms.Validators.compose([forms.Validators.required, forms.Validators.pattern(/^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/)])],
             });
