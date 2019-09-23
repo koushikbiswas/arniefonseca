@@ -1298,7 +1298,7 @@
         successModalComponent.decorators = [
             { type: i0.Component, args: [{
                         selector: 'successModal',
-                        template: "\n<span style=\"text-align: center\"  *ngIf=\"data.Url != ''\" >\n  <img style=\"max-width: 100%; text-align: center\" [src]=\"data.Url\">\n</span>\n\n<div mat-dialog-content>\n  <p *ngIf=\"data.value.length <= 7\">Thanks! your account has been successfully created</p>\n  <p *ngIf=\"data.value.length >= 8\">{{data.value}}</p>\n  \n</div>\n<div mat-dialog-actions>\n  <!-- <button mat-button (click)=\"onNoClick()\">No Thanks</button> -->\n  <button mat-button [mat-dialog-close]=\"\" cdkFocusInitial>Ok</button>\n</div>"
+                        template: "\n<span style=\"text-align: center\"  *ngIf=\"data.Url != ''\" >\n  <img style=\"max-width: 100%; text-align: center\" [src]=\"data.Url\">\n</span>\n\n<div mat-dialog-content>\n  <p *ngIf=\"data.value.length <= 7\">Thanks! your account has been successfully created</p>\n  <p *ngIf=\"data.value.length >= 8\">{{data.value}}</p>\n  \n</div>\n<div mat-dialog-actions>\n  <button mat-button [mat-dialog-close]=\"\" cdkFocusInitial>Ok</button>\n</div>"
                     }] }
         ];
         /** @nocollapse */
@@ -1316,11 +1316,12 @@
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var ForgetPasswordComponent = /** @class */ (function () {
-        function ForgetPasswordComponent(fb, http, router$$1, apiService) {
+        function ForgetPasswordComponent(fb, http, router$$1, apiService, snackBar$$1) {
             this.fb = fb;
             this.http = http;
             this.router = router$$1;
             this.apiService = apiService;
+            this.snackBar = snackBar$$1;
             this.message = '';
             this.formTitleValue = '';
             this.serverUrlValue = '';
@@ -1328,6 +1329,7 @@
             this.domanUrlValue = '';
             this.addEndpointValue = '';
             this.logoValue = '';
+            this.durationInSeconds = 50;
             this.forgetPasswordForm = this.fb.group({
                 email: ['', forms.Validators.compose([forms.Validators.required, forms.Validators.pattern(/^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/)])],
             });
@@ -1436,6 +1438,7 @@
                     this.forgetPasswordForm.controls[x].markAsTouched();
                 }
                 if (this.forgetPasswordForm.valid) {
+                    this.openSnackBar();
                     /** @type {?} */
                     var link = this.serverUrlValue;
                     /** @type {?} */
@@ -1450,6 +1453,7 @@
                         var result = {};
                         result = response;
                         if (result.status == "success") {
+                            _this.openSnackBar();
                             // this is use for reset the from
                             _this.formDirective.resetForm();
                         }
@@ -1461,17 +1465,32 @@
                 }
             };
         /********* Forget password  Form Submit end here*********/
+        /********* openSnackBar function open start here*********/
+        /********* Forget password  Form Submit end here*********/
+        /**
+         * ****** openSnackBar function open start here********
+         * @return {?}
+         */
+        ForgetPasswordComponent.prototype.openSnackBar = /********* Forget password  Form Submit end here*********/
+            /**
+             * ****** openSnackBar function open start here********
+             * @return {?}
+             */
+            function () {
+                this.snackBar.openFromComponent(snackBarComponent, {
+                    duration: this.durationInSeconds * 1000,
+                });
+            };
+        // This is use for navigate this component to sign-Up component 
         // This is use for navigate this component to sign-Up component 
         /**
-         * ****** Forget password  Form Submit end here********
          * @return {?}
          */
-        // This is use for navigate this component to sign-Up component 
-        ForgetPasswordComponent.prototype.signup = /**
-         * ****** Forget password  Form Submit end here********
-         * @return {?}
-         */
+        ForgetPasswordComponent.prototype.signup =
             // This is use for navigate this component to sign-Up component 
+            /**
+             * @return {?}
+             */
             function () {
                 this.router.navigateByUrl('/' + this.signUpRouteingUrlValue);
             };
@@ -1499,7 +1518,8 @@
                 { type: forms.FormBuilder },
                 { type: i1.HttpClient },
                 { type: router.Router },
-                { type: ApiService }
+                { type: ApiService },
+                { type: material.MatSnackBar }
             ];
         };
         ForgetPasswordComponent.propDecorators = {
@@ -1512,6 +1532,18 @@
             signUpRouteingUrl: [{ type: i0.Input }]
         };
         return ForgetPasswordComponent;
+    }());
+    var snackBarComponent = /** @class */ (function () {
+        function snackBarComponent() {
+        }
+        snackBarComponent.decorators = [
+            { type: i0.Component, args: [{
+                        selector: 'snack-bar-modale',
+                        template: "<span class=\"example\">\n    We have e-mailed your password reset link!\n  </span>",
+                        styles: ["\n    .example {\n      color: aliceblue;\n      background-color: yellowgreen;\n    }\n  "]
+                    }] }
+        ];
+        return snackBarComponent;
     }());
 
     /**
@@ -1747,6 +1779,7 @@
                             ForgetPasswordComponent,
                             ResetPasswordComponent,
                             successModalComponent,
+                            snackBarComponent,
                         ],
                         imports: [
                             DemoMaterialModule,
@@ -1760,7 +1793,7 @@
                         providers: [ApiService],
                         bootstrap: [],
                         schemas: [i0.CUSTOM_ELEMENTS_SCHEMA],
-                        entryComponents: [successModalComponent]
+                        entryComponents: [successModalComponent, snackBarComponent]
                     },] }
         ];
         return LoginModule;
@@ -1781,8 +1814,9 @@
     exports.LoginModule = LoginModule;
     exports.ɵa = ApiService;
     exports.ɵd = ForgetPasswordComponent;
-    exports.ɵf = DemoMaterialModule;
-    exports.ɵe = ResetPasswordComponent;
+    exports.ɵe = snackBarComponent;
+    exports.ɵg = DemoMaterialModule;
+    exports.ɵf = ResetPasswordComponent;
     exports.ɵb = SignUpComponent;
     exports.ɵc = successModalComponent;
 
