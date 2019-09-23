@@ -1,5 +1,5 @@
 
-<ng-content  *ngIf="router.url ==='/' || router.url ==='/home' || router.url ==='/forget-password' || router.url ==='/reset-password' || router.url ==='/sign-up' || router.url ==='/contactus'">
+<mat-card  *ngIf="router.url =='/' || router.url =='/home' || router.url =='/forget-password' || router.url =='/reset-password' || router.url =='/sign-up' || router.url =='/contactus'">
   <mat-card-content>
 
       <mat-card class="headertop">
@@ -120,10 +120,10 @@
         </mat-card>
 
   </mat-card-content>
-</ng-content>
+</mat-card>
 
 
-<ng-content class="adminheaderleftdiv admcls" *ngIf="router.url ==='/service-listing'">
+<mat-card class="adminheaderleftdiv admcls" *ngIf="router.url =='/service-listing'">
   <mat-card-content>
     <app-bk-header></app-bk-header>
     <app-bk-leftdiv></app-bk-leftdiv>
@@ -135,6 +135,6 @@
     -->
     
   </mat-card-content>
-</ng-content>
+</mat-card>
 
 

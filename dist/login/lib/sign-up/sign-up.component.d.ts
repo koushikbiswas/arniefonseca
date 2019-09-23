@@ -21,9 +21,11 @@ export declare class SignUpComponent implements OnInit {
     loginRouteingUrlValue: any;
     addEndpointValue: any;
     logoValue: any;
+    typevalue: any;
     formTitle: any;
     serverUrl: any;
     logo: any;
+    userType: any;
     addEndpoint: any;
     forgetRouteingUrl: any;
     loginRouteingUrl: any;

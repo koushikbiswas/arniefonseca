@@ -875,9 +875,11 @@
                              */function () {
                                 console.log(_this.cookieService.getAll());
                             }), 1000);
+                            console.log('result');
+                            console.log(result.item[0].type);
                             for (var key in _this.routerStatusValue.data) {
                                 // console.log(this.routerStatusValue.data[key].type);
-                                if (result.type === _this.routerStatusValue.data[key].type) {
+                                if (result.item[0].type === _this.routerStatusValue.data[key].type) {
                                     _this.router.navigateByUrl('/' + _this.routerStatusValue.data[key].routerNav); // navigate to dashboard url 
                                 }
                             }
@@ -1035,6 +1037,7 @@
             this.loginRouteingUrlValue = '';
             this.addEndpointValue = '';
             this.logoValue = '';
+            this.typevalue = '';
             this.signUpForm = this.fb.group({
                 email: ['', forms.Validators.compose([forms.Validators.required, forms.Validators.pattern(/^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/)])],
                 firstname: ['', forms.Validators.required],
@@ -1072,6 +1075,16 @@
              * @return {?}
              */ function (logoVal) {
                 this.logoValue = logoVal;
+            },
+            enumerable: true,
+            configurable: true
+        });
+        Object.defineProperty(SignUpComponent.prototype, "userType", {
+            set: /**
+             * @param {?} typeval
+             * @return {?}
+             */ function (typeval) {
+                this.typevalue = typeval;
             },
             enumerable: true,
             configurable: true
@@ -1151,8 +1164,12 @@
                 if (this.signUpForm.valid) {
                     // let link: any = this.fullUrlValue;
                     /** @type {?} */
+                    var allData = this.signUpForm.value;
+                    allData.type = this.typevalue;
+                    console.log(allData);
+                    /** @type {?} */
                     var data = {
-                        'data': this.signUpForm.value,
+                        'data': allData,
                         "source": this.addEndpointValue.source
                     };
                     console.log(data);
@@ -1237,6 +1254,7 @@
             formTitle: [{ type: i0.Input }],
             serverUrl: [{ type: i0.Input }],
             logo: [{ type: i0.Input }],
+            userType: [{ type: i0.Input }],
             addEndpoint: [{ type: i0.Input }],
             forgetRouteingUrl: [{ type: i0.Input }],
             loginRouteingUrl: [{ type: i0.Input }]
@@ -1703,7 +1721,13 @@
         }
         LoginModule.decorators = [
             { type: i0.NgModule, args: [{
-                        declarations: [LoginComponent, SignUpComponent, ForgetPasswordComponent, ResetPasswordComponent, commonModalComponent],
+                        declarations: [
+                            LoginComponent,
+                            SignUpComponent,
+                            ForgetPasswordComponent,
+                            ResetPasswordComponent,
+                            commonModalComponent
+                        ],
                         imports: [
                             DemoMaterialModule,
                             forms.FormsModule,
