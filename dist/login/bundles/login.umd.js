@@ -1182,6 +1182,11 @@
                         result = response;
                         console.log(result);
                         if (result.status == "success") {
+                            /** @type {?} */
+                            var dialogRef = _this.dialog.open(successModalComponent, {
+                                width: '250px',
+                                data: { value: result.status }
+                            });
                             // this.router.navigateByUrl('/' + )     // navigate to dashboard url 
                             // this is use for reset the from
                             _this.formDirective.resetForm();
@@ -1261,34 +1266,34 @@
         };
         return SignUpComponent;
     }());
-    var commonModalComponent = /** @class */ (function () {
-        function commonModalComponent(dialogRef, data) {
+    var successModalComponent = /** @class */ (function () {
+        function successModalComponent(dialogRef, data) {
             this.dialogRef = dialogRef;
             this.data = data;
         }
         /**
          * @return {?}
          */
-        commonModalComponent.prototype.onNoClick = /**
+        successModalComponent.prototype.onNoClick = /**
          * @return {?}
          */
             function () {
                 this.dialogRef.close();
             };
-        commonModalComponent.decorators = [
+        successModalComponent.decorators = [
             { type: i0.Component, args: [{
-                        selector: 'commonModal',
-                        template: "<!-- <h1 mat-dialog-title>Hi {{data.name}}</h1> -->\n<div mat-dialog-content>\n  <h2>{{data.name}}</h2>\n \n</div>\n<div mat-dialog-actions>\n  <button mat-button (click)=\"onNoClick()\">No Thanks</button>\n  <button mat-button >Ok</button>\n</div>"
+                        selector: 'successModal',
+                        template: "\n<div mat-dialog-content>\n  <p *ngIf=\"data.value.length <= 7\">Thanks! your account has been successfully created</p>\n  <p *ngIf=\"data.value.length >= 8\">{{data.value}}</p>\n  \n</div>\n<div mat-dialog-actions>\n  <!-- <button mat-button (click)=\"onNoClick()\">No Thanks</button> -->\n  <button mat-button [mat-dialog-close]=\"\" cdkFocusInitial>Ok</button>\n</div>"
                     }] }
         ];
         /** @nocollapse */
-        commonModalComponent.ctorParameters = function () {
+        successModalComponent.ctorParameters = function () {
             return [
                 { type: material.MatDialogRef },
                 { type: undefined, decorators: [{ type: i0.Inject, args: [material.MAT_DIALOG_DATA,] }] }
             ];
         };
-        return commonModalComponent;
+        return successModalComponent;
     }());
 
     /**
@@ -1726,7 +1731,7 @@
                             SignUpComponent,
                             ForgetPasswordComponent,
                             ResetPasswordComponent,
-                            commonModalComponent
+                            successModalComponent,
                         ],
                         imports: [
                             DemoMaterialModule,
@@ -1740,7 +1745,7 @@
                         providers: [ApiService],
                         bootstrap: [],
                         schemas: [i0.CUSTOM_ELEMENTS_SCHEMA],
-                        entryComponents: [commonModalComponent]
+                        entryComponents: [successModalComponent]
                     },] }
         ];
         return LoginModule;
@@ -1764,7 +1769,7 @@
     exports.ɵf = DemoMaterialModule;
     exports.ɵe = ResetPasswordComponent;
     exports.ɵb = SignUpComponent;
-    exports.ɵc = commonModalComponent;
+    exports.ɵc = successModalComponent;
 
     Object.defineProperty(exports, '__esModule', { value: true });
 

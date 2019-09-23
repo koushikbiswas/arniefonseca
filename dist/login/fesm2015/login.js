@@ -45,7 +45,7 @@ import { MatTreeModule } from '@angular/material/tree';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
 import { MAT_DIALOG_DATA, MatDialogRef, MatDialog } from '@angular/material';
-import { Injectable, NgModule, Component, Input, ViewChild, Inject, CUSTOM_ELEMENTS_SCHEMA, defineInjectable, inject } from '@angular/core';
+import { Injectable, NgModule, Component, Input, Inject, ViewChild, CUSTOM_ELEMENTS_SCHEMA, defineInjectable, inject } from '@angular/core';
 import { FormBuilder, Validators, FormGroupDirective, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, HttpHeaders, HttpClientModule } from '@angular/common/http';
 import { Router, ActivatedRoute } from '@angular/router';
@@ -1045,6 +1045,11 @@ class SignUpComponent {
                 result = response;
                 console.log(result);
                 if (result.status == "success") {
+                    /** @type {?} */
+                    const dialogRef = this.dialog.open(successModalComponent, {
+                        width: '250px',
+                        data: { value: result.status }
+                    });
                     // this.router.navigateByUrl('/' + )     // navigate to dashboard url 
                     // this is use for reset the from
                     this.formDirective.resetForm();
@@ -1104,7 +1109,7 @@ SignUpComponent.propDecorators = {
     forgetRouteingUrl: [{ type: Input }],
     loginRouteingUrl: [{ type: Input }]
 };
-class commonModalComponent {
+class successModalComponent {
     /**
      * @param {?} dialogRef
      * @param {?} data
@@ -1120,14 +1125,14 @@ class commonModalComponent {
         this.dialogRef.close();
     }
 }
-commonModalComponent.decorators = [
+successModalComponent.decorators = [
     { type: Component, args: [{
-                selector: 'commonModal',
-                template: "<!-- <h1 mat-dialog-title>Hi {{data.name}}</h1> -->\n<div mat-dialog-content>\n  <h2>{{data.name}}</h2>\n \n</div>\n<div mat-dialog-actions>\n  <button mat-button (click)=\"onNoClick()\">No Thanks</button>\n  <button mat-button >Ok</button>\n</div>"
+                selector: 'successModal',
+                template: "\n<div mat-dialog-content>\n  <p *ngIf=\"data.value.length <= 7\">Thanks! your account has been successfully created</p>\n  <p *ngIf=\"data.value.length >= 8\">{{data.value}}</p>\n  \n</div>\n<div mat-dialog-actions>\n  <!-- <button mat-button (click)=\"onNoClick()\">No Thanks</button> -->\n  <button mat-button [mat-dialog-close]=\"\" cdkFocusInitial>Ok</button>\n</div>"
             }] }
 ];
 /** @nocollapse */
-commonModalComponent.ctorParameters = () => [
+successModalComponent.ctorParameters = () => [
     { type: MatDialogRef },
     { type: undefined, decorators: [{ type: Inject, args: [MAT_DIALOG_DATA,] }] }
 ];
@@ -1504,7 +1509,7 @@ LoginModule.decorators = [
                     SignUpComponent,
                     ForgetPasswordComponent,
                     ResetPasswordComponent,
-                    commonModalComponent
+                    successModalComponent,
                 ],
                 imports: [
                     DemoMaterialModule,
@@ -1518,7 +1523,7 @@ LoginModule.decorators = [
                 providers: [ApiService],
                 bootstrap: [],
                 schemas: [CUSTOM_ELEMENTS_SCHEMA],
-                entryComponents: [commonModalComponent]
+                entryComponents: [successModalComponent]
             },] }
 ];
 
@@ -1532,6 +1537,6 @@ LoginModule.decorators = [
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
-export { LoginService, LoginComponent, LoginModule, ApiService as ɵa, ForgetPasswordComponent as ɵd, DemoMaterialModule as ɵf, ResetPasswordComponent as ɵe, SignUpComponent as ɵb, commonModalComponent as ɵc };
+export { LoginService, LoginComponent, LoginModule, ApiService as ɵa, ForgetPasswordComponent as ɵd, DemoMaterialModule as ɵf, ResetPasswordComponent as ɵe, SignUpComponent as ɵb, successModalComponent as ɵc };
 
 //# sourceMappingURL=login.js.map
