@@ -781,9 +781,11 @@ class LoginComponent {
                     () => {
                         console.log(this.cookieService.getAll());
                     }), 1000);
+                    console.log('result');
+                    console.log(result.item[0].type);
                     for (const key in this.routerStatusValue.data) {
                         // console.log(this.routerStatusValue.data[key].type);
-                        if (result.type === this.routerStatusValue.data[key].type) {
+                        if (result.item[0].type === this.routerStatusValue.data[key].type) {
                             this.router.navigateByUrl('/' + this.routerStatusValue.data[key].routerNav); // navigate to dashboard url 
                         }
                     }
@@ -926,6 +928,7 @@ class SignUpComponent {
         this.loginRouteingUrlValue = '';
         this.addEndpointValue = '';
         this.logoValue = '';
+        this.typevalue = '';
         this.signUpForm = this.fb.group({
             email: ['', Validators.compose([Validators.required, Validators.pattern(/^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/)])],
             firstname: ['', Validators.required],
@@ -957,6 +960,13 @@ class SignUpComponent {
      */
     set logo(logoVal) {
         this.logoValue = logoVal;
+    }
+    /**
+     * @param {?} typeval
+     * @return {?}
+     */
+    set userType(typeval) {
+        this.typevalue = typeval;
     }
     /**
      * @param {?} addEndpointVal
@@ -1016,8 +1026,12 @@ class SignUpComponent {
         if (this.signUpForm.valid) {
             // let link: any = this.fullUrlValue;
             /** @type {?} */
+            let allData = this.signUpForm.value;
+            allData.type = this.typevalue;
+            console.log(allData);
+            /** @type {?} */
             let data = {
-                'data': this.signUpForm.value,
+                'data': allData,
                 "source": this.addEndpointValue.source
             };
             console.log(data);
@@ -1085,6 +1099,7 @@ SignUpComponent.propDecorators = {
     formTitle: [{ type: Input }],
     serverUrl: [{ type: Input }],
     logo: [{ type: Input }],
+    userType: [{ type: Input }],
     addEndpoint: [{ type: Input }],
     forgetRouteingUrl: [{ type: Input }],
     loginRouteingUrl: [{ type: Input }]
@@ -1484,7 +1499,13 @@ class LoginModule {
 }
 LoginModule.decorators = [
     { type: NgModule, args: [{
-                declarations: [LoginComponent, SignUpComponent, ForgetPasswordComponent, ResetPasswordComponent, commonModalComponent],
+                declarations: [
+                    LoginComponent,
+                    SignUpComponent,
+                    ForgetPasswordComponent,
+                    ResetPasswordComponent,
+                    commonModalComponent
+                ],
                 imports: [
                     DemoMaterialModule,
                     FormsModule,

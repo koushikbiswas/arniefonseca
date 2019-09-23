@@ -7,7 +7,7 @@ import { MetaService } from '@ngx-meta/core';
   styleUrls: ['./sign-up.component.css']
 })
 export class SignUpComponent implements OnInit {
-
+  public userType: any = 'admin';
   public logo: any = '../../assets/images/logo.png';
   public forgetRouteingUrl: any = 'forget-password';
   public loginRouteingUrl: any = 'login';
@@ -16,7 +16,7 @@ export class SignUpComponent implements OnInit {
   public serverUrl: any = 'https://o820cv2lu8.execute-api.us-east-2.amazonaws.com/production/api/';
   public addEndpoint: any = {
     endpoint:'addorupdatedata',
-    source:'usermanagement'
+    source:'user'
   };
   constructor(private readonly meta: MetaService) {
     

@@ -9,7 +9,7 @@ import { MatSidenav } from '@angular/material';
 })
 export class BkLeftdivComponent implements OnInit {
 
-  @ViewChild('rightSidenav') public sidenav: MatSidenav;
+  @ViewChild('leftSidenav') public sidenav: MatSidenav;
   
   public status: any = 1;
 
