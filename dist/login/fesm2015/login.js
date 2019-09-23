@@ -44,8 +44,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatTreeModule } from '@angular/material/tree';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
-import { MAT_DIALOG_DATA, MatDialogRef, MatDialog } from '@angular/material';
-import { Injectable, Component, Input, ViewChild, Inject, NgModule, CUSTOM_ELEMENTS_SCHEMA, defineInjectable, inject } from '@angular/core';
+import { MAT_DIALOG_DATA, MatDialogRef, MatDialog, MatSnackBar } from '@angular/material';
+import { Injectable, NgModule, Component, Input, ViewChild, Inject, CUSTOM_ELEMENTS_SCHEMA, defineInjectable, inject } from '@angular/core';
 import { FormBuilder, Validators, FormGroupDirective, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, HttpHeaders, HttpClientModule } from '@angular/common/http';
 import { Router, ActivatedRoute } from '@angular/router';
@@ -1140,7 +1140,7 @@ class successModalComponent {
 successModalComponent.decorators = [
     { type: Component, args: [{
                 selector: 'successModal',
-                template: "\n<span style=\"text-align: center\"  *ngIf=\"data.Url != ''\" >\n  <img style=\"max-width: 100%; text-align: center\" [src]=\"data.Url\">\n</span>\n\n<div mat-dialog-content>\n  <p *ngIf=\"data.value.length <= 7\">Thanks! your account has been successfully created</p>\n  <p *ngIf=\"data.value.length >= 8\">{{data.value}}</p>\n  \n</div>\n<div mat-dialog-actions>\n  <!-- <button mat-button (click)=\"onNoClick()\">No Thanks</button> -->\n  <button mat-button [mat-dialog-close]=\"\" cdkFocusInitial>Ok</button>\n</div>"
+                template: "\n<span style=\"text-align: center\"  *ngIf=\"data.Url != ''\" >\n  <img style=\"max-width: 100%; text-align: center\" [src]=\"data.Url\">\n</span>\n\n<div mat-dialog-content>\n  <p *ngIf=\"data.value.length <= 7\">Thanks! your account has been successfully created</p>\n  <p *ngIf=\"data.value.length >= 8\">{{data.value}}</p>\n  \n</div>\n<div mat-dialog-actions>\n  <button mat-button [mat-dialog-close]=\"\" cdkFocusInitial>Ok</button>\n</div>"
             }] }
 ];
 /** @nocollapse */
@@ -1159,12 +1159,14 @@ class ForgetPasswordComponent {
      * @param {?} http
      * @param {?} router
      * @param {?} apiService
+     * @param {?} snackBar
      */
-    constructor(fb, http, router, apiService) {
+    constructor(fb, http, router, apiService, snackBar) {
         this.fb = fb;
         this.http = http;
         this.router = router;
         this.apiService = apiService;
+        this.snackBar = snackBar;
         this.message = '';
         this.formTitleValue = '';
         this.serverUrlValue = '';
@@ -1172,6 +1174,7 @@ class ForgetPasswordComponent {
         this.domanUrlValue = '';
         this.addEndpointValue = '';
         this.logoValue = '';
+        this.durationInSeconds = 5;
         this.forgetPasswordForm = this.fb.group({
             email: ['', Validators.compose([Validators.required, Validators.pattern(/^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/)])],
         });
@@ -1254,6 +1257,7 @@ class ForgetPasswordComponent {
             this.forgetPasswordForm.controls[x].markAsTouched();
         }
         if (this.forgetPasswordForm.valid) {
+            this.openSnackBar();
             /** @type {?} */
             let link = this.serverUrlValue;
             /** @type {?} */
@@ -1269,6 +1273,7 @@ class ForgetPasswordComponent {
                 let result = {};
                 result = response;
                 if (result.status == "success") {
+                    this.openSnackBar();
                     // this is use for reset the from
                     this.formDirective.resetForm();
                 }
@@ -1279,11 +1284,20 @@ class ForgetPasswordComponent {
             }));
         }
     }
+    /********* Forget password  Form Submit end here*********/
     /**
-     * ****** Forget password  Form Submit end here********
+     * ****** openSnackBar function open start here********
      * @return {?}
      */
+    openSnackBar() {
+        this.snackBar.openFromComponent(snackBarComponent, {
+            duration: this.durationInSeconds * 1000,
+        });
+    }
     // This is use for navigate this component to sign-Up component 
+    /**
+     * @return {?}
+     */
     signup() {
         this.router.navigateByUrl('/' + this.signUpRouteingUrlValue);
     }
@@ -1307,7 +1321,8 @@ ForgetPasswordComponent.ctorParameters = () => [
     { type: FormBuilder },
     { type: HttpClient },
     { type: Router },
-    { type: ApiService }
+    { type: ApiService },
+    { type: MatSnackBar }
 ];
 ForgetPasswordComponent.propDecorators = {
     formDirective: [{ type: ViewChild, args: [FormGroupDirective,] }],
@@ -1318,6 +1333,20 @@ ForgetPasswordComponent.propDecorators = {
     addEndpoint: [{ type: Input }],
     signUpRouteingUrl: [{ type: Input }]
 };
+class snackBarComponent {
+}
+snackBarComponent.decorators = [
+    { type: Component, args: [{
+                selector: 'snack-bar-modale',
+                template: "<span class=\"example\">\n    We have e-mailed your password reset link!\n  </span>",
+                styles: [`
+    .example {
+      color: aliceblue;
+      background-color: yellowgreen;
+    }
+  `]
+            }] }
+];
 
 /**
  * @fileoverview added by tsickle
@@ -1522,6 +1551,7 @@ LoginModule.decorators = [
                     ForgetPasswordComponent,
                     ResetPasswordComponent,
                     successModalComponent,
+                    snackBarComponent,
                 ],
                 imports: [
                     DemoMaterialModule,
@@ -1535,7 +1565,7 @@ LoginModule.decorators = [
                 providers: [ApiService],
                 bootstrap: [],
                 schemas: [CUSTOM_ELEMENTS_SCHEMA],
-                entryComponents: [successModalComponent]
+                entryComponents: [successModalComponent, snackBarComponent]
             },] }
 ];
 
@@ -1549,6 +1579,6 @@ LoginModule.decorators = [
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
-export { LoginService, LoginComponent, LoginModule, ApiService as ɵa, ForgetPasswordComponent as ɵd, DemoMaterialModule as ɵf, ResetPasswordComponent as ɵe, SignUpComponent as ɵb, successModalComponent as ɵc };
+export { LoginService, LoginComponent, LoginModule, ApiService as ɵa, ForgetPasswordComponent as ɵd, snackBarComponent as ɵe, DemoMaterialModule as ɵg, ResetPasswordComponent as ɵf, SignUpComponent as ɵb, successModalComponent as ɵc };
 
 //# sourceMappingURL=login.js.map
