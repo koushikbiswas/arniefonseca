@@ -9,6 +9,7 @@ import { MetaService } from '@ngx-meta/core';
 export class SignUpComponent implements OnInit {
 
   public logo: any = '../../assets/images/logo.png';
+  public modaleLogo: any = '../../assets/images/logo.png';
   public forgetRouteingUrl: any = 'forget-password';
   public loginRouteingUrl: any = 'login';
 

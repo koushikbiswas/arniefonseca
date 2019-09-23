@@ -45,7 +45,7 @@ import { MatTreeModule } from '@angular/material/tree';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
 import { MAT_DIALOG_DATA, MatDialogRef, MatDialog } from '@angular/material';
-import { Injectable, NgModule, Component, Input, Inject, ViewChild, CUSTOM_ELEMENTS_SCHEMA, defineInjectable, inject } from '@angular/core';
+import { Injectable, Component, Input, ViewChild, Inject, NgModule, CUSTOM_ELEMENTS_SCHEMA, defineInjectable, inject } from '@angular/core';
 import { FormBuilder, Validators, FormGroupDirective, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, HttpHeaders, HttpClientModule } from '@angular/common/http';
 import { Router, ActivatedRoute } from '@angular/router';
@@ -921,6 +921,9 @@ class SignUpComponent {
         this.router = router;
         this.dialog = dialog;
         this.apiService = apiService;
+        this.value = '';
+        this.link = '';
+        this.Url = '';
         this.message = '';
         this.formTitleValue = '';
         this.serverUrlValue = '';
@@ -960,6 +963,13 @@ class SignUpComponent {
      */
     set logo(logoVal) {
         this.logoValue = logoVal;
+    }
+    /**
+     * @param {?} modaleLogoVal
+     * @return {?}
+     */
+    set modaleLogo(modaleLogoVal) {
+        this.link = modaleLogoVal;
     }
     /**
      * @param {?} typeval
@@ -1048,7 +1058,7 @@ class SignUpComponent {
                     /** @type {?} */
                     const dialogRef = this.dialog.open(successModalComponent, {
                         width: '250px',
-                        data: { value: result.status }
+                        data: { value: result.status, Url: this.link }
                     });
                     // this.router.navigateByUrl('/' + )     // navigate to dashboard url 
                     // this is use for reset the from
@@ -1104,6 +1114,7 @@ SignUpComponent.propDecorators = {
     formTitle: [{ type: Input }],
     serverUrl: [{ type: Input }],
     logo: [{ type: Input }],
+    modaleLogo: [{ type: Input }],
     userType: [{ type: Input }],
     addEndpoint: [{ type: Input }],
     forgetRouteingUrl: [{ type: Input }],
@@ -1117,6 +1128,7 @@ class successModalComponent {
     constructor(dialogRef, data) {
         this.dialogRef = dialogRef;
         this.data = data;
+        console.log(data);
     }
     /**
      * @return {?}
@@ -1128,7 +1140,7 @@ class successModalComponent {
 successModalComponent.decorators = [
     { type: Component, args: [{
                 selector: 'successModal',
-                template: "\n<div mat-dialog-content>\n  <p *ngIf=\"data.value.length <= 7\">Thanks! your account has been successfully created</p>\n  <p *ngIf=\"data.value.length >= 8\">{{data.value}}</p>\n  \n</div>\n<div mat-dialog-actions>\n  <!-- <button mat-button (click)=\"onNoClick()\">No Thanks</button> -->\n  <button mat-button [mat-dialog-close]=\"\" cdkFocusInitial>Ok</button>\n</div>"
+                template: "\n<span style=\"text-align: center\"  *ngIf=\"data.Url != ''\" >\n  <img style=\"max-width: 100%; text-align: center\" [src]=\"data.Url\">\n</span>\n\n<div mat-dialog-content>\n  <p *ngIf=\"data.value.length <= 7\">Thanks! your account has been successfully created</p>\n  <p *ngIf=\"data.value.length >= 8\">{{data.value}}</p>\n  \n</div>\n<div mat-dialog-actions>\n  <!-- <button mat-button (click)=\"onNoClick()\">No Thanks</button> -->\n  <button mat-button [mat-dialog-close]=\"\" cdkFocusInitial>Ok</button>\n</div>"
             }] }
 ];
 /** @nocollapse */

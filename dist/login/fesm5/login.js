@@ -1102,6 +1102,9 @@ var SignUpComponent = /** @class */ (function () {
         this.router = router;
         this.dialog = dialog;
         this.apiService = apiService;
+        this.value = '';
+        this.link = '';
+        this.Url = '';
         this.message = '';
         this.formTitleValue = '';
         this.serverUrlValue = '';
@@ -1150,6 +1153,17 @@ var SignUpComponent = /** @class */ (function () {
          */
         function (logoVal) {
             this.logoValue = logoVal;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(SignUpComponent.prototype, "modaleLogo", {
+        set: /**
+         * @param {?} modaleLogoVal
+         * @return {?}
+         */
+        function (modaleLogoVal) {
+            this.link = modaleLogoVal;
         },
         enumerable: true,
         configurable: true
@@ -1267,7 +1281,7 @@ var SignUpComponent = /** @class */ (function () {
                     /** @type {?} */
                     var dialogRef = _this.dialog.open(successModalComponent, {
                         width: '250px',
-                        data: { value: result.status }
+                        data: { value: result.status, Url: _this.link }
                     });
                     // this.router.navigateByUrl('/' + )     // navigate to dashboard url 
                     // this is use for reset the from
@@ -1339,6 +1353,7 @@ var SignUpComponent = /** @class */ (function () {
         formTitle: [{ type: Input }],
         serverUrl: [{ type: Input }],
         logo: [{ type: Input }],
+        modaleLogo: [{ type: Input }],
         userType: [{ type: Input }],
         addEndpoint: [{ type: Input }],
         forgetRouteingUrl: [{ type: Input }],
@@ -1350,6 +1365,7 @@ var successModalComponent = /** @class */ (function () {
     function successModalComponent(dialogRef, data) {
         this.dialogRef = dialogRef;
         this.data = data;
+        console.log(data);
     }
     /**
      * @return {?}
@@ -1363,7 +1379,7 @@ var successModalComponent = /** @class */ (function () {
     successModalComponent.decorators = [
         { type: Component, args: [{
                     selector: 'successModal',
-                    template: "\n<div mat-dialog-content>\n  <p *ngIf=\"data.value.length <= 7\">Thanks! your account has been successfully created</p>\n  <p *ngIf=\"data.value.length >= 8\">{{data.value}}</p>\n  \n</div>\n<div mat-dialog-actions>\n  <!-- <button mat-button (click)=\"onNoClick()\">No Thanks</button> -->\n  <button mat-button [mat-dialog-close]=\"\" cdkFocusInitial>Ok</button>\n</div>"
+                    template: "\n<span style=\"text-align: center\"  *ngIf=\"data.Url != ''\" >\n  <img style=\"max-width: 100%; text-align: center\" [src]=\"data.Url\">\n</span>\n\n<div mat-dialog-content>\n  <p *ngIf=\"data.value.length <= 7\">Thanks! your account has been successfully created</p>\n  <p *ngIf=\"data.value.length >= 8\">{{data.value}}</p>\n  \n</div>\n<div mat-dialog-actions>\n  <!-- <button mat-button (click)=\"onNoClick()\">No Thanks</button> -->\n  <button mat-button [mat-dialog-close]=\"\" cdkFocusInitial>Ok</button>\n</div>"
                 }] }
     ];
     /** @nocollapse */

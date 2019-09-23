@@ -1030,6 +1030,9 @@
             this.router = router$$1;
             this.dialog = dialog$$1;
             this.apiService = apiService;
+            this.value = '';
+            this.link = '';
+            this.Url = '';
             this.message = '';
             this.formTitleValue = '';
             this.serverUrlValue = '';
@@ -1075,6 +1078,16 @@
              * @return {?}
              */ function (logoVal) {
                 this.logoValue = logoVal;
+            },
+            enumerable: true,
+            configurable: true
+        });
+        Object.defineProperty(SignUpComponent.prototype, "modaleLogo", {
+            set: /**
+             * @param {?} modaleLogoVal
+             * @return {?}
+             */ function (modaleLogoVal) {
+                this.link = modaleLogoVal;
             },
             enumerable: true,
             configurable: true
@@ -1185,7 +1198,7 @@
                             /** @type {?} */
                             var dialogRef = _this.dialog.open(successModalComponent, {
                                 width: '250px',
-                                data: { value: result.status }
+                                data: { value: result.status, Url: _this.link }
                             });
                             // this.router.navigateByUrl('/' + )     // navigate to dashboard url 
                             // this is use for reset the from
@@ -1259,6 +1272,7 @@
             formTitle: [{ type: i0.Input }],
             serverUrl: [{ type: i0.Input }],
             logo: [{ type: i0.Input }],
+            modaleLogo: [{ type: i0.Input }],
             userType: [{ type: i0.Input }],
             addEndpoint: [{ type: i0.Input }],
             forgetRouteingUrl: [{ type: i0.Input }],
@@ -1270,6 +1284,7 @@
         function successModalComponent(dialogRef, data) {
             this.dialogRef = dialogRef;
             this.data = data;
+            console.log(data);
         }
         /**
          * @return {?}
@@ -1283,7 +1298,7 @@
         successModalComponent.decorators = [
             { type: i0.Component, args: [{
                         selector: 'successModal',
-                        template: "\n<div mat-dialog-content>\n  <p *ngIf=\"data.value.length <= 7\">Thanks! your account has been successfully created</p>\n  <p *ngIf=\"data.value.length >= 8\">{{data.value}}</p>\n  \n</div>\n<div mat-dialog-actions>\n  <!-- <button mat-button (click)=\"onNoClick()\">No Thanks</button> -->\n  <button mat-button [mat-dialog-close]=\"\" cdkFocusInitial>Ok</button>\n</div>"
+                        template: "\n<span style=\"text-align: center\"  *ngIf=\"data.Url != ''\" >\n  <img style=\"max-width: 100%; text-align: center\" [src]=\"data.Url\">\n</span>\n\n<div mat-dialog-content>\n  <p *ngIf=\"data.value.length <= 7\">Thanks! your account has been successfully created</p>\n  <p *ngIf=\"data.value.length >= 8\">{{data.value}}</p>\n  \n</div>\n<div mat-dialog-actions>\n  <!-- <button mat-button (click)=\"onNoClick()\">No Thanks</button> -->\n  <button mat-button [mat-dialog-close]=\"\" cdkFocusInitial>Ok</button>\n</div>"
                     }] }
         ];
         /** @nocollapse */
