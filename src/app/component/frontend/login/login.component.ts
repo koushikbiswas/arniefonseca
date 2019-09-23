@@ -8,24 +8,24 @@ import { ApiService } from '../../../api.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-
-  public configData: any = {
-    baseUrl: "http://3.15.236.141:5005/",
-    endpoint: "uploads",
-    size: "51200", // kb
-    format: ["jpg", "jpeg", "png", "bmp", "zip", 'html'], // use all small font
-    type: "profile-picture",
-    path: "files",
-    prefix: "profile_picture_"
-  }
+/***************** This is use for image upload ********************/ 
+  // public configData: any = {
+  //   baseUrl: "http://3.15.236.141:5005/",
+  //   endpoint: "uploads",
+  //   size: "51200", // kb
+  //   format: ["jpg", "jpeg", "png", "bmp", "zip", 'html'], // use all small font
+  //   type: "profile-picture",
+  //   path: "files",
+  //   prefix: "profile_picture_"
+  // }
 
   
-  public logo: any = '../../assets/images/logo.png';
+  public logo: any = '../../assets/images/logo.png';      // logo url 
   public fromTitle: any = "Login";    // This is a From Title 
   public fullUrl: any = "https://o820cv2lu8.execute-api.us-east-2.amazonaws.com/production/api/";  // server url
   public endpoint: any = "login";  // login endpoint
-  public signUpRouteingUrl: any = 'sign-up';
-  public forgetRouteingUrl: any = 'forget-password';
+  public signUpRouteingUrl: any = 'sign-up';      // navigate the sign up page
+  public forgetRouteingUrl: any = 'forget-password';      // navigate the Forget password page
   public routerStatus: any;
     constructor(private readonly meta: MetaService, public apiService:ApiService) { 
 

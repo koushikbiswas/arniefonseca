@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import {DemoMaterialModule} from "../material-module";
 
@@ -19,10 +19,11 @@ import { AuthGuard } from './auth.guard';
 import { ApiService } from './api.service';
 import { TestimonialModule } from 'testimonial';
 
+
 /**Frontend Component**/
 
-import { HeaderComponent } from './component/frontend/header/header.component';
-import { FooterComponent } from './component/frontend/footer/footer.component';
+import { HeaderComponent } from './layout/header/header.component';
+import { FooterComponent } from './layout/footer/footer.component';
 import { HomeComponent } from './component/frontend/home/home.component';
 import { ContactusComponent } from './component/frontend/contactus/contactus.component';
 import { ForgetPasswordComponent } from './component/frontend/forget-password/forget-password.component';
@@ -33,16 +34,19 @@ import { SignUpComponent } from './component/frontend/sign-up/sign-up.component'
 
 
 /**Backend Component**/
+import { SidenavService } from './../app/services/sidenav.service';
 import { DashboardComponent } from './component/backend/dashboard/dashboard.component';
-import { BkHeaderComponent } from './component/backend/bk-header/bk-header.component';
-import { BkFooterComponent } from './component/backend/bk-footer/bk-footer.component';
+import { BkHeaderComponent } from './layout/bk-header/bk-header.component';
+import { BkFooterComponent } from './layout/bk-footer/bk-footer.component';
 
 import { AddeditServiceComponent } from './component/backend/ServiceApp/addedit-service/addedit-service.component';
 import { ListingServiceComponent } from './component/backend/ServiceApp/listing-service/listing-service.component';
 import { ListingTestimonialComponent } from './component/backend/TestimonialApp/listing-testimonial/listing-testimonial.component';
 import { AddeditTestimonialComponent } from './component/backend/TestimonialApp/addedit-testimonial/addedit-testimonial.component';
 import { ServicelibModule } from 'servicelib';
-import { FileUploadModule } from 'dist/file-upload';
+// import { FileUploadModule } from 'dist/file-upload';
+import { BkLeftdivComponent } from './layout/bk-leftdiv/bk-leftdiv.component';
+import { MaindashboardComponent } from './component/backend/maindashboard/maindashboard.component';
 /**End Backend Component** */
 
 @NgModule({
@@ -62,7 +66,10 @@ import { FileUploadModule } from 'dist/file-upload';
     AddeditServiceComponent,
     ListingServiceComponent,
     ListingTestimonialComponent,
-    AddeditTestimonialComponent
+    AddeditTestimonialComponent,
+    BkLeftdivComponent,
+    MaindashboardComponent,
+  
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
@@ -76,11 +83,12 @@ import { FileUploadModule } from 'dist/file-upload';
     TestimonialModule,
     ServicelibModule,
     ContactusModule,
-    FileUploadModule,
+    // FileUploadModule,
     HttpClientModule,
     AppRoutingModule,MetaModule.forRoot(), BrowserAnimationsModule
   ],
-  providers: [CookieService, AuthGuard, ApiService],
-  bootstrap: [AppComponent]
+  providers: [CookieService, AuthGuard, ApiService, SidenavService],
+  bootstrap: [AppComponent],
+  schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }

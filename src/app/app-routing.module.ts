@@ -4,8 +4,8 @@ import { LoginComponent } from './component/frontend/login/login.component';
 import { AuthGuard } from './auth.guard';
 
 /**Frontend Routing**/
-import { HeaderComponent } from './component/frontend/header/header.component';
-import { FooterComponent } from './component/frontend/footer/footer.component';
+import { HeaderComponent } from './layout/header/header.component';
+import { FooterComponent } from './layout/footer/footer.component';
 import { HomeComponent } from './component/frontend/home/home.component';
 import { ContactusComponent } from './component/frontend/contactus/contactus.component';
 import { ForgetPasswordComponent } from './component/frontend/forget-password/forget-password.component';
@@ -15,12 +15,15 @@ import { SignUpComponent } from './component/frontend/sign-up/sign-up.component'
 
 /**Backend Routing**/
 import { DashboardComponent } from './component/backend/dashboard/dashboard.component';
-import { BkHeaderComponent } from './component/backend/bk-header/bk-header.component';
-import { BkFooterComponent } from './component/backend/bk-footer/bk-footer.component';
+import { BkHeaderComponent } from './layout/bk-header/bk-header.component';
+import { BkFooterComponent } from './layout/bk-footer/bk-footer.component';
+import { BkLeftdivComponent } from './layout/bk-leftdiv/bk-leftdiv.component';
+import { MaindashboardComponent } from './component/backend/maindashboard/maindashboard.component';
 import { AddeditServiceComponent } from './component/backend/ServiceApp/addedit-service/addedit-service.component';
 import { ListingServiceComponent } from './component/backend/ServiceApp/listing-service/listing-service.component';
 import { ListingTestimonialComponent } from './component/backend/TestimonialApp/listing-testimonial/listing-testimonial.component';
 import { AddeditTestimonialComponent } from './component/backend/TestimonialApp/addedit-testimonial/addedit-testimonial.component';
+import { ResolveService } from './resolve.service';
 /**End Backend Routing**/
 
 const routes: Routes = [
@@ -40,10 +43,18 @@ const routes: Routes = [
   {path: 'dashboard', component:DashboardComponent, canActivate:[AuthGuard]},       // Useing for canActive
   {path: 'bk-header', component:BkHeaderComponent},
   {path: 'bk-footer', component:BkFooterComponent},
-  {path: 'addedit-testimonial', component:AddeditTestimonialComponent},
-  {path: 'testimonial-listing', component:ListingTestimonialComponent},
-  {path: 'service-listing', component:ListingServiceComponent},
-  {path: 'addedit-service', component:AddeditServiceComponent},
+  {path: 'bk-leftdiv', component:BkLeftdivComponent},
+  {path: 'maindashboard', component:MaindashboardComponent},
+  {path: 'testimonial/add', component:AddeditTestimonialComponent},
+  {path: 'testimonial/edit/:_id', component:AddeditTestimonialComponent, resolve: { testimonialData: ResolveService },
+  data: { requestcondition: { source: 'testimonial', condition: {} }, endpoint: 'datalist'}},
+  {path: 'testimonial-listing', component:ListingTestimonialComponent,resolve: { testimonialList: ResolveService },
+  data: { requestcondition: { source: 'testimonial_view', condition: {} }, endpoint: 'datalist'}},
+  {path: 'service-listing', component:ListingServiceComponent,resolve: { serviceList: ResolveService },
+  data: { requestcondition: { source: 'services_view', condition: {} }, endpoint: 'datalist'}},
+  {path: 'service/add', component:AddeditServiceComponent},
+  { path:'service/edit/:_id', component:AddeditServiceComponent,  resolve: { serviceList: ResolveService },
+  data: { requestcondition: { source: 'services', condition: {} }, endpoint: 'datalist'}},
   /**End Backend Routing**/
 
 

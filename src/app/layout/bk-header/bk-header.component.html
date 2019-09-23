@@ -1,0 +1,108 @@
+<!-- <mat-card class="topblock">
+
+
+        <span class="headerlogo"><img src="../../assets/images/logo.png" alt="" ></span>
+      
+      
+      
+        <label class="topmenudevider"><label for="show-menu" > <i class="material-icons dehazeicon"  >
+          dehaze
+        </i>
+        </label></label>
+      
+      
+        <label class="topmenudevider2"><label for="show-menu2" > <i class="material-icons dehazeicon"  >
+          dehaze
+        </i>
+        </label></label>
+      
+      
+      
+      
+      
+      
+        <button class="accountsettingbtn" mat-button [matMenuTriggerFor]="menu"><span>User Name</span><i class="material-icons personicon">
+          person
+        </i>   <i class="material-icons">
+          keyboard_arrow_down
+        </i></button>
+      
+      
+        <mat-menu #menu="matMenu" class="accountsettingmenu">
+      
+          <button mat-menu-item>My Account</button>
+          <button mat-menu-item>Logout</button>
+        </mat-menu>
+        <mat-card class="clearmenu"></mat-card>
+      
+        <input type="checkbox" id="show-menu2" role="button">
+        <mat-list role="list" id="menu2">
+          <mat-list-item role="listitem"> <button mat-menu-item class="topmenu active">Home</button></mat-list-item>
+          <mat-list-item role="listitem"><button mat-menu-item class="topmenu">Customers</button></mat-list-item>
+          <mat-list-item role="listitem"><button mat-menu-item class="topmenu">Inventory</button></mat-list-item>
+          <mat-list-item role="listitem"><button mat-menu-item class="topmenu">Communication</button></mat-list-item>
+          <mat-list-item role="listitem"><button mat-menu-item class="topmenu">Social Advo</button></mat-list-item>
+          <mat-list-item role="listitem"><button mat-menu-item class="topmenu">Manager’s Calendar</button></mat-list-item>
+      
+      
+          <mat-card class="clear"></mat-card>
+        </mat-list>
+      
+        <mat-card class="clear"></mat-card>
+      
+</mat-card>
+      
+      
+       -->
+
+       <!-- <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" routerLink="/home">PROJECT LOGO</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li routerLinkActive="active"><a routerLink="/home">Home</a></li>
+          <li routerLinkActive="active"><a routerLink="/blogs">Blogs</a></li>
+          <li routerLinkActive="active"><a routerLink="/about-us">About Us</a></li>
+          <li routerLinkActive="active"><a routerLink="/contact-us">Contact Us</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li routerLinkActive="active"><a routerLink="/login">Login</a></li>
+          <li routerLinkActive="active"><a routerLink="/register">Register</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> -->
+  <mat-toolbar class="header fixed">
+    <mat-toolbar-row class="toolbar-row">   
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="">
+        </div> 
+        <div class="menu-toggle rightSidenav_toggle" [class.active]="toggleActive" (click)="toggleRightSidenav()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+       
+        <div style="margin: auto"></div>
+        <div class="header-part-right">           
+
+            <div class="dropdown">
+                <div class="user col align-self-end">
+                    <img src="http://gull-html-laravel.ui-lib.com/assets/images/faces/1.jpg" id="userDropdown" alt="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                   
+                </div>
+            </div>
+        </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+
+  
