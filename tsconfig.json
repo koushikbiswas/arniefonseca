@@ -77,6 +77,12 @@
       ],
       "servicelib/*": [
         "dist/servicelib/*"
+      ],
+      "file-upload": [
+        "dist/file-upload"
+      ],
+      "file-upload/*": [
+        "dist/file-upload/*"
       ]
  
     }

@@ -8,6 +8,17 @@ import { ApiService } from '../../../api.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+
+  public configData: any = {
+    baseUrl: "http://3.15.236.141:5005/",
+    endpoint: "uploads",
+    size: "51200", // kb
+    format: ["jpg", "jpeg", "png", "bmp", "zip", 'html'], // use all small font
+    type: "profile-picture",
+    path: "files",
+    prefix: "profile_picture_"
+  }
+
   
   public logo: any = '../../assets/images/logo.png';
   public fromTitle: any = "Login";    // This is a From Title 

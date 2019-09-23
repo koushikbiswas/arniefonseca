@@ -3,11 +3,13 @@ import { FormBuilder, FormGroup, FormGroupDirective } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { ApiService } from './api.service';
+import { CookieService } from 'ngx-cookie-service';
 export declare class LoginComponent implements OnInit {
     fb: FormBuilder;
     http: HttpClient;
     router: Router;
     apiService: ApiService;
+    cookieService: CookieService;
     message: any;
     formDirective: FormGroupDirective;
     fromTitleValue: any;
@@ -17,16 +19,18 @@ export declare class LoginComponent implements OnInit {
     routerStatusValue: any;
     endpointValue: any;
     logoValue: any;
+    cookieSetValue: any;
     fromTitle: any;
     logo: any;
     fullUrl: any;
     endpoint: any;
+    cookieSet: any;
     signUpRouteingUrl: any;
     forgetRouteingUrl: any;
     routerStatus: any;
     loginForm: FormGroup;
     project_name: any;
-    constructor(fb: FormBuilder, http: HttpClient, router: Router, apiService: ApiService);
+    constructor(fb: FormBuilder, http: HttpClient, router: Router, apiService: ApiService, cookieService: CookieService);
     ngOnInit(): void;
     /********* Login Form Submit start here*********/
     loginFormSubmit(): void;

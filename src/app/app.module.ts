@@ -42,6 +42,7 @@ import { ListingServiceComponent } from './component/backend/ServiceApp/listing-
 import { ListingTestimonialComponent } from './component/backend/TestimonialApp/listing-testimonial/listing-testimonial.component';
 import { AddeditTestimonialComponent } from './component/backend/TestimonialApp/addedit-testimonial/addedit-testimonial.component';
 import { ServicelibModule } from 'servicelib';
+import { FileUploadModule } from 'dist/file-upload';
 /**End Backend Component** */
 
 @NgModule({
@@ -75,6 +76,7 @@ import { ServicelibModule } from 'servicelib';
     TestimonialModule,
     ServicelibModule,
     ContactusModule,
+    FileUploadModule,
     HttpClientModule,
     AppRoutingModule,MetaModule.forRoot(), BrowserAnimationsModule
   ],
