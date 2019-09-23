@@ -5012,3 +5012,152 @@ i {
   background-color: transparent;
   border: 0;
 }
+
+
+
+
+
+
+.clear{ padding: 0px!important; }
+.dashboard_block1{ border: none!important; background:#fff url("../images/ami_amin_block1bg1.jpg") no-repeat right top!important; margin: 0!important; outline: none!important; box-shadow:none!important; padding: 48px!important; }
+
+.dashboard_block1 mat-card-content{ border: none!important; outline: none!important; box-shadow:none!important; width: 890px; height:460px; display: table-cell; vertical-align: middle;}
+
+
+.dashboard_block1 mat-card-content h2{ font-size: 48px; color: #343c5c; margin: 0; padding: 0;}
+
+.dashboard_block1 mat-card-content h2:after{ content: ''; display: block; width: 185px; height: 2px; background: #12c3e3;}
+
+.dashboard_block1 mat-card-content h3{ font-size: 30px; color: #f15b46; margin: 0; padding: 15px 0;}
+
+.dashboard_block1 mat-card-content p{ margin: 0; padding: 0; font-size: 15px; color: #222222; line-height: 24px;}
+
+
+.dashboard_block1 mat-card-content button{ background: #38cde8; width: 138px; height: 46px; display: block; margin: 25px 0 0 0; box-shadow: none; border: none; border-radius: 5px; font-size: 15px; color: #ffffff;}
+
+.dashboard_block2{border: none!important; background:#fff url("../images/ami_amin_blockbg1.png") no-repeat right center!important; margin: 0!important; outline: none!important; box-shadow:none!important; padding: 0px!important; }
+
+
+.dashboard_block2 mat-card-content{ border: none!important; outline: none!important; box-shadow:none!important; background: url("../images/ami_amin_blockcon2.png") no-repeat left top!important; min-height: 480px; padding: 48px!important; padding-top: 0px!important;}
+
+
+.dashboard_block2 mat-card-content h2{ font-size: 40px; color: #343c5c; margin: 0; padding: 0;}
+
+.dashboard_block2 mat-card-content h2:after{ content: ''; display: block; width: 360px; height: 2px; background: #12c3e3;}
+
+.dashboard_block2 mat-card-subtitle{ border: none!important; outline: none!important; box-shadow:none!important; margin: 0px!important; padding: 0px!important; padding-left: 890px!important; padding-top: 20px!important;}
+
+.dashboard_block2_img{ background: #d4d4d4; width: 280px; height: 280px; padding: 18px; display: block; box-shadow: 0 0 5px #ccc; float: left;}
+
+.dashboard_block2_img img{ width: 100%; border: solid 1px #fff; box-shadow: 0 0 5px #ccc;}
+
+.dashboard_block2_text{ display: block; width: 540px; height: 280px; padding: 18px; background: #d4d4d4; box-shadow: 0 0 5px #ccc; float: right;}
+
+.dashboard_block2_text ul{ margin: 0; padding: 0px;}
+
+.dashboard_block2_text ul li{ list-style: none; display: table; height: 60px; margin-top: 14px; background: #bdc3c6; width: 100%;}
+
+.dashboard_block2_text ul li:nth-of-type(1){ margin-top: 0px;}
+
+.dashboard_block2_text ul li label:nth-of-type(1){ margin: 0; padding: 0; display: table-cell; width: 160px; height: 60px; vertical-align: middle;}
+
+.dashboard_block2_text ul li label:nth-of-type(2){ margin: 0; padding: 0; display: table-cell; height: 60px; background: #495158 url("../images/ami_amin_blockcon2_textarrow.png") no-repeat left center; vertical-align: middle; }
+
+.dashboard_block2_text ul li label span{ display: block; padding: 0 20px; font-size: 15px; color: #bdc3c6;}
+
+.dashboard_block2_text ul li label:nth-of-type(1) span{ color: #495158; font-weight: normal;}
+
+.dashboard_block2_text ul li label:nth-of-type(2) span{ padding-left: 50px;}
+
+
+.dashboard_block3{border: none!important; background: url("../images/ami_amin_blockbg2.png") no-repeat left center!important; margin: 0!important; outline: none!important; box-shadow:none!important; padding: 48px!important; padding-top: 0px!important; margin-top: -60px!important;}
+
+
+.dashboard_block3 h2{ font-size: 40px; color: #343c5c; margin: 0; padding: 0; display: inline-block; float: left;}
+
+.dashboard_block3 h2:after{ content: ''; display: block; width: 130px; height: 2px; background: #12c3e3;}
+
+
+.dashboard_block3 .viewlalalbtn3{ background: #38cde8; width: 138px; height: 46px; display: block; margin: 0; box-shadow: none; border: none; border-radius: 5px; font-size: 15px; color: #ffffff; float: right;}
+
+.dashboard_block3 mat-card-subtitle{ width: 23.25%; float: left; margin: 20px 1% 0 0; background: #bdc3c6; padding: 0.5%!important; }
+
+.dashboard_block3 mat-card-subtitle:nth-of-type(4){ margin-right: 0!important;}
+
+.dashboard_block3 .block3carblock{ width: 100%; position: relative; display: block;}
+.dashboard_block3 mat-card-subtitle img{ display: block; width: 100%; border: solid 1px #fff; }
+
+.dashboard_block3 mat-card-subtitle .block3span1{display: inline-block; float: left; font-size: 15px; color: #30373d; margin-bottom: 8px;}
+.dashboard_block3 mat-card-subtitle .block3span2{display: inline-block; float: right; font-size: 15px; color: #30373d; margin-bottom: 8px;}
+
+.dashboard_block3 mat-card-subtitle .block3span2 strong{ color: #ff2223;}
+
+.dashboard_block3 mat-card-subtitle .block3span3{display: inline-block; float: left; font-size: 15px; color: #30373d; margin-top:17px;}
+
+.dashboard_block3 mat-card-subtitle button{ display: inline-block; float: right; margin-top: 8px; background: rgba(50,57,63,1);
+background: -moz-linear-gradient(left, rgba(50,57,63,1) 0%, rgba(76,84,90,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(50,57,63,1)), color-stop(100%, rgba(76,84,90,1)));
+background: -webkit-linear-gradient(left, rgba(50,57,63,1) 0%, rgba(76,84,90,1) 100%);
+background: -o-linear-gradient(left, rgba(50,57,63,1) 0%, rgba(76,84,90,1) 100%);
+background: -ms-linear-gradient(left, rgba(50,57,63,1) 0%, rgba(76,84,90,1) 100%);
+background: linear-gradient(to right, rgba(50,57,63,1) 0%, rgba(76,84,90,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#32393f', endColorstr='#4c545a', GradientType=1 ); border-radius: 4px; text-align: center; line-height: 40px; text-align: center; border: none; font-size: 15px; color: #fff; padding: 0 30px;}
+
+
+
+.dashboard_block4{border: none!important; background: url("../images/ami_amin_blockbg1.png") no-repeat right center!important; margin: 0!important; outline: none!important; box-shadow:none!important; padding: 48px!important; padding-top: 0px!important; }
+
+
+.dashboard_block4 h2{ font-size: 40px; color: #343c5c; margin: 0; padding: 0; display: inline-block; float: left;}
+
+.dashboard_block4 h2:after{ content: ''; display: block; width: 200px; height: 2px; background: #12c3e3;}
+
+.dashboard_block4 mat-card-subtitle .block3span3{display: block; float: none; margin-top:8px;}
+
+.d_block4_price{ display: block; float: left; width: 130px; line-height: 40px; background: #12c3e3; font-size: 22px; color: #ffffff; text-align: center; padding: 0 4px; margin-top: 8px;}
+
+.d_block4_label{ display: inline-block; float: right; line-height: 40px; background: #8f979b; padding: 0 5px; margin-top: 8px;}
+
+.d_block4_label span{ padding: 0 5px 0 30px; font-size: 14px; color: #ffffff; }
+
+.d_block4_label span:nth-of-type(1){background: url("../images/ami_amin_blockcon4_icon1.png") no-repeat left center!important;}
+.d_block4_label span:nth-of-type(2){background: url("../images/ami_amin_blockcon4_icon2.png") no-repeat left center!important;}
+.d_block4_label span:nth-of-type(3){background: url("../images/ami_amin_blockcon4_icon4.png") no-repeat left center!important;}
+
+.starimgnew{ width: 43px!important; position: absolute; left: 1px; top:1px; border: none!important;}
+
+
+@media only screen and (max-width: 1760px) {
+
+.dashboard_block1{ background-position: 790px top!important;}
+
+.dashboard_block1 mat-card-content{ width: 1000px;}
+
+.dashboard_block1 mat-card-content h3 br{ display: none;}
+}
+
+
+@media only screen and (max-width: 1600px) {
+.dashboard_block1{ background-position: 660px top!important;}
+.dashboard_block1 mat-card-content{ width: 900px;}
+
+}
+
+@media only screen and (max-width: 1500px) {
+.dashboard_block1{ background-position: 550px top!important;}
+.dashboard_block1 mat-card-content{ width: 800px;}
+
+}
+
+
+@media only screen and (max-width: 1380px) {
+.dashboard_block1{ background-position: 440px top!important;}
+.dashboard_block1 mat-card-content{ width: 660px;}
+
+}
+
+@media only screen and (max-width: 1260px) {
+.dashboard_block1{ background-position: 370px top!important;}
+.dashboard_block1 mat-card-content{ width: 600px;}
+
+}
