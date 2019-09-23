@@ -6,6 +6,7 @@ import { MatDialogRef, MatDialog } from '@angular/material';
 import { ApiService } from '../api.service';
 export interface DialogData {
     value: string;
+    Url: any;
 }
 export declare class SignUpComponent implements OnInit {
     fb: FormBuilder;
@@ -14,6 +15,8 @@ export declare class SignUpComponent implements OnInit {
     dialog: MatDialog;
     apiService: ApiService;
     value: any;
+    link: any;
+    Url: any;
     message: any;
     formDirective: FormGroupDirective;
     formTitleValue: any;
@@ -26,6 +29,7 @@ export declare class SignUpComponent implements OnInit {
     formTitle: any;
     serverUrl: any;
     logo: any;
+    modaleLogo: any;
     userType: any;
     addEndpoint: any;
     forgetRouteingUrl: any;
