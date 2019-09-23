@@ -1395,26 +1395,33 @@ var successModalComponent = /** @class */ (function () {
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var ForgetPasswordComponent = /** @class */ (function () {
-    function ForgetPasswordComponent(fb, http, router, apiService, snackBar) {
+    function ForgetPasswordComponent(fb, router, apiService, snackBar) {
         this.fb = fb;
-        this.http = http;
         this.router = router;
         this.apiService = apiService;
         this.snackBar = snackBar;
         this.message = '';
-        this.formTitleValue = '';
-        this.serverUrlValue = '';
-        this.signUpRouteingUrlValue = '';
-        this.domanUrlValue = '';
-        this.addEndpointValue = '';
-        this.logoValue = '';
-        this.durationInSeconds = 5;
+        this.formTitleValue = ''; // This is From title
+        // This is From title
+        this.serverUrlValue = ''; //  This is Server url
+        //  This is Server url
+        this.signUpRouteingUrlValue = ''; // setting the navigate By Sign Up Url from project
+        // setting the navigate By Sign Up Url from project
+        this.domanUrlValue = ''; // This is reset password url
+        // This is reset password url
+        this.addEndpointValue = ''; // This is endpoint url
+        // This is endpoint url
+        this.logoValue = ''; // This is from logo url
+        // This is from logo url
+        this.durationInSeconds = 5; // This is SnackBar set time
         this.forgetPasswordForm = this.fb.group({
             email: ['', Validators.compose([Validators.required, Validators.pattern(/^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/)])],
         });
     }
     Object.defineProperty(ForgetPasswordComponent.prototype, "domanUrl", {
-        set: /**
+        set: 
+        // This is SnackBar set time
+        /**
          * @param {?} domanUrlVal
          * @return {?}
          */
@@ -1521,11 +1528,13 @@ var ForgetPasswordComponent = /** @class */ (function () {
         var _this = this;
         /** @type {?} */
         var x;
+        //  This for-loop use for from blank or properly validated checking  
         for (x in this.forgetPasswordForm.controls) {
             this.forgetPasswordForm.controls[x].markAsTouched();
         }
-        if (this.forgetPasswordForm.valid) {
-            this.openSnackBar();
+        if (this.forgetPasswordForm.valid) { //    validation checking
+            this.openSnackBar(); // open snack-bar function
+            // open snack-bar function
             /** @type {?} */
             var link = this.serverUrlValue;
             /** @type {?} */
@@ -1536,18 +1545,18 @@ var ForgetPasswordComponent = /** @class */ (function () {
              * @return {?}
              */
             function (response) {
-                console.log(response);
+                // console.log(response);
                 /** @type {?} */
                 var result = {};
                 result = response;
                 if (result.status == "success") {
-                    _this.openSnackBar();
+                    _this.openSnackBar(); // open snack-bar function
                     // this is use for reset the from
-                    _this.formDirective.resetForm();
+                    _this.formDirective.resetForm(); // clear the from
                 }
                 else {
                     // display error message on html
-                    _this.message = result.msg;
+                    _this.message = result.msg; // show the error message
                 }
             }));
         }
@@ -1569,16 +1578,18 @@ var ForgetPasswordComponent = /** @class */ (function () {
             duration: this.durationInSeconds * 1000,
         });
     };
-    // This is use for navigate this component to sign-Up component 
-    // This is use for navigate this component to sign-Up component 
-    /**
-     * @return {?}
-     */
-    ForgetPasswordComponent.prototype.signup = 
+    /********* openSnackBar function open end here*********/
     // This is use for navigate this component to sign-Up component 
     /**
+     * ****** openSnackBar function open end here********
      * @return {?}
      */
+    // This is use for navigate this component to sign-Up component 
+    ForgetPasswordComponent.prototype.signup = /**
+     * ****** openSnackBar function open end here********
+     * @return {?}
+     */
+    // This is use for navigate this component to sign-Up component 
     function () {
         this.router.navigateByUrl('/' + this.signUpRouteingUrlValue);
     };
@@ -1603,7 +1614,6 @@ var ForgetPasswordComponent = /** @class */ (function () {
     /** @nocollapse */
     ForgetPasswordComponent.ctorParameters = function () { return [
         { type: FormBuilder },
-        { type: HttpClient },
         { type: Router },
         { type: ApiService },
         { type: MatSnackBar }
