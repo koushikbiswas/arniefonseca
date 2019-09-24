@@ -28,6 +28,9 @@ import { TesimonialComponent } from './component/frontend/tesimonial/tesimonial.
 import { TesimoniallistComponent } from './component/frontend/tesimoniallist/tesimoniallist.component';
 import { ServiceComponent } from './component/frontend/service/service.component';
 import { ServicelistComponent } from './component/frontend/servicelist/servicelist.component';
+import { BlogComponent } from './component/frontend/blog/blog.component';
+import { BloglistComponent } from './component/frontend/bloglist/bloglist.component';
+import { BlogdetailComponent } from './component/frontend/blogdetail/blogdetail.component';
 /**End Backend Routing**/
 
 const routes: Routes = [
@@ -41,10 +44,37 @@ const routes: Routes = [
 {path: 'footer', component:FooterComponent},
 {path: 'home', component:HomeComponent}, 
 {path: 'contactus', component:ContactusComponent},
-{path: 'testimonial', component:TesimonialComponent},
-{path: 'testimoniallist', component:TesimoniallistComponent},
-{path: 'service', component:ServiceComponent},
-{path: 'servicelist', component:ServicelistComponent},
+{
+  path: "testimonial",
+  component: TesimonialComponent,
+  resolve: { testimonialListData: ResolveService },
+  data: {
+    requestcondition: { source: "testimonals", condition: {} },
+    endpoint: "datalist"
+  }
+},
+{
+  path: "testimoniallist",
+  component: TesimoniallistComponent,
+  resolve: { testimonialListData: ResolveService },
+  data: {
+    requestcondition: { source: "testimonals", condition: {} },
+    endpoint: "datalist"
+  }
+},
+{path:'service',
+    component: ServiceComponent,
+    resolve: { serviceListData: ResolveService },
+    data: { requestcondition: { source: 'service', condition: {} }, endpoint: 'datalist'}
+},
+{path:'servicelist',
+    component: ServicelistComponent,
+    resolve: { serviceListData: ResolveService },
+    data: { requestcondition: { source: 'service', condition: {} }, endpoint: 'datalist'}
+},
+{path: 'blog', component:BlogComponent},
+{path: 'bloglist', component:BloglistComponent},
+{path: 'blogdetail', component:BlogdetailComponent},
 
 /**End Frontend Routing**/
 
