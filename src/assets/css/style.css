@@ -277,7 +277,7 @@ a{cursor:pointer;outline:none}
 }
 
 .modelthumbimginnerwarpper {
-    width: auto;
+    width: 33.33%;
     height: auto;
     display: inline-block;
     position: relative;
@@ -337,6 +337,7 @@ a{cursor:pointer;outline:none}
 } */
 
 
+.testimonialwrapper{}
 
 .modelthumbimginnerwarpper.active .modelmodelthumbimg1{
   width: 329px;
@@ -346,6 +347,30 @@ a{cursor:pointer;outline:none}
 /* .generalcls .modelthumbimginnerwarpper:nth-child(3n+1) .mat-card-title {width: 10%;}
 .generalcls .modelthumbimginnerwarpper:nth-child(3n+2) .mat-card-title {}
 .generalcls .modelthumbimginnerwarpper:nth-child(3n+3) .mat-card-title {width: 10%;} */
+
+.modelthumbimginnerwarpper.active {
+  justify-content: center;
+}
+.modelthumbimginnerwarpper.active .testimonialwrapper{
+  justify-content: center;
+}
+
+.modelthumbimginnerwarpper{
+  justify-content: flex-end;
+}
+
+.modelthumbimginnerwarpper .testimonialwrapper {
+  justify-content: flex-end;
+}
+
+
+.modelthumbimginnerwarpper.active + .modelthumbimginnerwarpper{
+  justify-content: flex-start;
+}
+
+.modelthumbimginnerwarpper.active + .modelthumbimginnerwarpper .testimonialwrapper {
+  justify-content: flex-start;
+}
 
 .modelthumbimginnerwarpper.active .testimonialcontent{
   position: absolute;
