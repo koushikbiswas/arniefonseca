@@ -230,21 +230,32 @@ i{font-family:'iconsmind'!important;speak:none;font-style:normal;font-weight:400
   line-height: 1.112em;
   letter-spacing: 0px;
   color: #2b2b2b;
-  text-align: left;
+  text-align: center;
   margin-bottom: 20px;
 }
 
 .gencls .testimonialserv .mat-card {
   padding: 0px;
   background: #fff;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .gencls .testimonialserv .iconcls {
-  width: 48px;
+  width: 210px;
   margin-bottom: 20px;
+  border-radius: 50%;
 }
 
+.gencls .testimonialserv .mat-card:not([class*=mat-elevation-z]) {
+  box-shadow: none;
+}
 
+.gencls .testimonialserv.active .iconcls{
+  width: 329px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
 
 
 /*------Start testimonial CSS----*/
