@@ -24,6 +24,10 @@ import { ListingServiceComponent } from './component/backend/ServiceApp/listing-
 import { ListingTestimonialComponent } from './component/backend/TestimonialApp/listing-testimonial/listing-testimonial.component';
 import { AddeditTestimonialComponent } from './component/backend/TestimonialApp/addedit-testimonial/addedit-testimonial.component';
 import { ResolveService } from './resolve.service';
+import { TesimonialComponent } from './component/frontend/tesimonial/tesimonial.component';
+import { TesimoniallistComponent } from './component/frontend/tesimoniallist/tesimoniallist.component';
+import { ServiceComponent } from './component/frontend/service/service.component';
+import { ServicelistComponent } from './component/frontend/servicelist/servicelist.component';
 /**End Backend Routing**/
 
 const routes: Routes = [
@@ -35,8 +39,13 @@ const routes: Routes = [
 {path: 'sign-up', component:SignUpComponent},
 {path: 'header', component:HeaderComponent},
 {path: 'footer', component:FooterComponent},
-{path: 'contactus', component:ContactusComponent},
 {path: 'home', component:HomeComponent}, 
+{path: 'contactus', component:ContactusComponent},
+{path: 'testimonial', component:TesimonialComponent},
+{path: 'testimoniallist', component:TesimoniallistComponent},
+{path: 'service', component:ServiceComponent},
+{path: 'servicelist', component:ServicelistComponent},
+
 /**End Frontend Routing**/
 
   /**Backend Routing**/
