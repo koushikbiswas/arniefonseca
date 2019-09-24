@@ -20,6 +20,7 @@
     <span class="maincontainer testimonialwrappercontent">
 
           <mat-card-title>What others say</mat-card-title>
+
 <!-- added by Himadri -->
 
           <div class="modelthumbimgouter">
@@ -36,7 +37,8 @@
 
           <!-- added by Himadri -->
 
-          <div  class="testimonialserv" *ngFor="let testmon of TestimonialListArray; let i=index">
+          
+          <div  class="testimonialserv active" *ngFor="let testmon of TestimonialListArray; let i=index">
               <mat-card>
                   <img src="{{testmon.image}}" class="iconcls">
                   <mat-card-title>{{testmon.name}}</mat-card-title>
