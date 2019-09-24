@@ -24,7 +24,7 @@ export class BlogComponent implements OnInit {
       var newstr = str.replace(re, "");
       this.videos = newstr;
       this.savedId.push(newstr);
-      console.log(this.savedId)
+      // console.log(this.savedId)
     }
 
 
