@@ -273,7 +273,7 @@ i{font-family:'iconsmind'!important;speak:none;font-style:normal;font-weight:400
   position: relative !important;
 }
 
-.testimonialwrapper:after {
+/* .testimonialwrapper:after {
   content: "";
   position: absolute;
   top: 0;
@@ -282,7 +282,7 @@ i{font-family:'iconsmind'!important;speak:none;font-style:normal;font-weight:400
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 1;
-}
+} */
 
 
 .testimonialwrappercontent .mat-list {
