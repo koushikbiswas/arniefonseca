@@ -39,7 +39,7 @@ export class LoginComponent implements OnInit {
         "data": [
           {
            "type":"admin",
-           "routerNav":"dashboard"
+           "routerNav":"maindashboard"
           },
           {
             "type":"user",

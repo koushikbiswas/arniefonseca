@@ -11,7 +11,6 @@ import { CookieService } from 'ngx-cookie-service';
 })
 export class ListingServiceComponent implements OnInit {
 
-
     /************** lib list setup start here *************/
     public serviceListConfig:any = {
       apiBaseUrl: "https://o820cv2lu8.execute-api.us-east-2.amazonaws.com/production/api/",
