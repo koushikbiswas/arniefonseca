@@ -214,6 +214,261 @@ i{font-family:'iconsmind'!important;speak:none;font-style:normal;font-weight:400
   /*------End Service Details CSS----*/
 
 
+
+
+  
+
+.testimonialserv .mat-list-item-content{
+  align-items: flex-start !important;
+  padding: 0 !important;
+}
+
+.gencls .testimonialserv .mat-card-title {
+  font-family: "Montserrat", Sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.112em;
+  letter-spacing: 0px;
+  color: #2b2b2b;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.gencls .testimonialserv .mat-card {
+  padding: 0px;
+  background: #fff;
+}
+
+.gencls .testimonialserv .iconcls {
+  width: 48px;
+  margin-bottom: 20px;
+}
+
+
+
+
+/*------Start testimonial CSS----*/
+
+.testimonialwrapper {
+  background: url(../images/analytics-blur-business-590045.jpg) no-repeat;
+  background-position: left, top;
+  background-size: cover;
+  padding: 130px 20px !important;
+  text-align: center;
+  position: relative !important;
+}
+
+.testimonialwrapper:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+
+.testimonialwrappercontent .mat-list {
+  position: relative;
+  min-height: 1px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  position: relative;
+  z-index: 9;
+}
+
+.testimonialwrappercontent .mat-list .mat-list-item {
+  flex: 1;
+  flex-basis: 25.33%;
+  height: auto;   
+  background-color: #fff;
+  box-shadow: 0px 5px 27px 0px rgba(0, 0, 0, 0.09);
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  margin: 0px 0px 6px 6px;
+  padding: 37px 40px 40px 50px;
+  display: flex;
+  align-items: stretch;
+}
+
+/* .servicewrappercontent .mat-list span  {
+  flex-basis: 100%;
+  height: auto;
+} */
+
+.testimonialwrappercontent .btngeneral {
+  padding: 5px 30px;
+  text-transform: uppercase;
+}
+
+.btngray{
+  background-color: #2b2b2b;    
+  color: #fff;
+}
+
+.testimonialwrappercontent .btngeneral {
+  text-align: center;
+  margin: 30px auto;
+  display: block;
+  position: relative;
+    z-index: 9;
+}
+
+.singleservice .mat-list-item-content{
+padding: 0 !important;
+}
+
+.testimonialwrappercontent .carousel{z-index: 99;}
+
+/*------End testimonial CSS----*/
+
+
+/*------Start testimonial Details CSS----*/
+
+.testimonialwrapper.testimonialwrapperinner{
+  padding: 50px 20px !important;
+}
+
+.testimonialwrappercontent.testimonialwrappercontentinner{
+    background-color: #f3f3f3;
+    padding: 50px 16px;
+}
+
+.testimonialwrappercontent.testimonialwrappercontentinner .mat-list {
+  margin-top: 0 !important;
+}
+
+.testimonialwrappercontent.testimonialwrappercontentinner .mat-list .mat-list-item {
+  flex: 1;
+  flex-basis: 100%;
+}
+
+.testimonialwrappercontent.testimonialwrappercontentinner .testiimgwarpper {
+  float: left;
+  padding: 0 20px 10px 0;
+}
+
+.testimonialwrappercontent.testimonialwrappercontentinner .testiimgwarpper img {
+  float: left;
+  border: 7px solid #f9f8f7;
+  border-radius: 50%;
+  box-shadow: 0 5px 5px 0 rgba(50,50,50,.15);
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.title1{
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 1.92px;
+  text-transform: uppercase;
+}
+
+.title2{
+  color: #999;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 24px;
+  letter-spacing: 1.28px;
+}
+
+.title3{
+  color: #1da1db;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: .8px;
+}
+
+.testimonialwrappercontent.testimonialwrappercontentinner .mat-list .testimonialserv:nth-child(odd) .testiimgwarpper {
+  float: right;
+  padding: 0 0px 10px 20px;
+}
+
+.testimonialwrappercontent.testimonialwrappercontentinner .mat-list .testimonialserv:nth-child(even) .testibottomcontent{
+  float: right;
+}
+
+.custom-module--bg-offwhite, .custom-module--bg-paleyellow, .custom-module--bg-skyblue {
+  background-color: #f9f8f7;
+}
+.testimonial.custom-module.testimonial--border {
+  border-bottom: 1px solid #d1d1d1;
+}
+.testimonial.custom-module {
+  padding: 30px;
+}
+.custom-module .testimonial__quote {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: .9px;
+  padding: 20px 0 25px;
+}
+.testimonial.custom-module * {
+  margin: 0;
+}
+.testimonial__quote {
+  position: relative;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.5em;
+  letter-spacing: .9px;
+}
+
+
+.custom-module .testimonial__image {
+  float: left;
+  border: 7px solid #f9f8f7;
+  border-radius: 50%;
+  box-shadow: 0 5px 5px 0 rgba(50,50,50,.15);
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.custom-module .testimonial__attribution {
+  text-align: right;
+  padding: 0 0 20px;
+}
+.testimonial__attribution {
+  position: relative;
+  line-height: 1.6em;
+}
+.custom-module .testimonial__name {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 1.92px;
+  text-transform: uppercase;
+}
+.custom-module .testimonial__title {
+  
+}
+.testimonial.custom-module * {
+  margin: 0;
+}
+.testimonial__company, .testimonial__company-link {
+  font-family: KlinicSlab,serif;
+  letter-spacing: .4px;
+}
+.custom-module .testimonial__company a {
+  color: #1da1db;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: .8px;
+}
+
+/*------End testimonial Details CSS----*/
+
+
 /* .dashboard_block2{border: none!important; background:#fff url("../images/ami_amin_blockbg1.png") no-repeat right center!important; margin: 0!important; outline: none!important; box-shadow:none!important; padding: 0px!important; }
 .dashboard_block2 mat-card-content{ border: none!important; outline: none!important; box-shadow:none!important; background: url("../images/ami_amin_blockcon2.png") no-repeat left top!important; min-height: 480px; padding: 48px!important; padding-top: 0px!important;}
 .dashboard_block2 mat-card-content h2{ font-size: 40px; color: #343c5c; margin: 0; padding: 0;}

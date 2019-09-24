@@ -26,7 +26,7 @@ export class TesimonialComponent implements OnInit {
   }
 
   btnClick= function () {
-    this.router.navigateByUrl('/tesimoniallist');
+    this.router.navigateByUrl('/testimoniallist');
   };
 
 }
