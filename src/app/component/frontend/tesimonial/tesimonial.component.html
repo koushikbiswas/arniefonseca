@@ -15,20 +15,50 @@
 </mat-card>
   
   
-  <mat-card class="testimonialwrapper gencls">
+  <mat-card class="testimonialwrapper generalcls">
       
     <span class="maincontainer testimonialwrappercontent">
 
           <mat-card-title>What others say</mat-card-title>
-          <div  class="testimonialserv active" *ngFor="let testmon of TestimonialListArray; let i=index">
-              <mat-card>
+          
+          <div class="modelthumbimgwrapper">
+              <div class="modelthumbimgouterwrapper">
+                <div class="modelthumbimgouter">
+      
+                  <drag-scroll #imgsmall >
+                    <div class="modelthumbimginnerwarpper" *ngFor="let testmon of TestimonialListArray; let i=index">
+                      <div class="testimonialwrapper">
+                        <span class="modelmodelthumbimg1">
+                          <img (click)="imgClick(x)" drag-scroll-item class="demo cursor" src="{{testmon.image}}" alt="modelmodelthumbimg1"></span>
+                          <!-- <mat-card-title drag-scroll-item class="demo cursor">{{testmon.name}}</mat-card-title>
+                          <mat-card-title drag-scroll-item class="demo cursor">{{testmon.designation}}</mat-card-title>
+                          <mat-card-title drag-scroll-item class="demo cursor">{{testmon.address}}</mat-card-title>
+                          <mat-card-content drag-scroll-item class="demo cursor">{{testmon.quatation}}</mat-card-content> -->
+                      </div>
+                      
+                    </div>      
+                  </drag-scroll>
+                  <a class="prev" (click)="moveLeft()">&#10094;</a>
+                  <a class="next" (click)="moveRight()">&#10095;</a>
+                </div>
+              </div>
+            </div>  
+
+
+          
+             
+              <!-- <mat-card>
                   <img src="{{testmon.image}}" class="iconcls">
                   <mat-card-title>{{testmon.name}}</mat-card-title>
                   <mat-card-title>{{testmon.designation}}</mat-card-title>
                   <mat-card-title>{{testmon.address}}</mat-card-title>
                   <mat-card-content>{{testmon.quatation}}</mat-card-content>
-                </mat-card>
-          </div>
+                </mat-card> -->
+            
+            <!-- <button (click)="moveLeft()">Left</button>
+            <button (click)="moveRight()">Right</button> -->
+
+
           
           <!-- <mat-carousel timings="250ms ease-in" [autoplay]="true" interval="5000" color="accent" maxWidth="auto"
           proportion="25"
