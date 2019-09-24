@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import {ActivatedRoute,Router} from '@angular/router';
+import { DragScrollComponent } from 'ngx-drag-scroll';
 
 @Component({
   selector: 'app-tesimonial',
@@ -8,7 +9,8 @@ import {ActivatedRoute,Router} from '@angular/router';
 })
 export class TesimonialComponent implements OnInit {
 
-  
+  @ViewChild('imgsmall') imgsmall: DragScrollComponent;
+public mainImg: any;
   public TestimonialListArray:any=[];
 
   constructor(private activatedRoute: ActivatedRoute, private router: Router) { }
@@ -25,8 +27,25 @@ export class TesimonialComponent implements OnInit {
     })
   }
 
-  btnClick= function () {
+  moveLeft() {
+        this.imgsmall.moveLeft();
+        console.log(this.imgsmall._index);
+        this.mainImg = this.imgsmall._index;
+    }
+
+    moveRight(val: any) {
+        this.imgsmall.moveRight();
+        console.log(this.imgsmall._index)
+        this.mainImg = this.imgsmall._index;
+    }
+  
+  
+    imgClick(val: any){
+      console.log(val)
+    }
+  btnClick() {
     this.router.navigateByUrl('/testimoniallist');
   };
+  
 
 }

@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import {DemoMaterialModule} from "../material-module";
+import { DragScrollModule } from 'ngx-drag-scroll';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -87,6 +88,7 @@ import { MaindashboardComponent } from './component/backend/maindashboard/mainda
     BlogdetailComponent  
   ],
   imports: [
+    DragScrollModule,
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     DemoMaterialModule,
