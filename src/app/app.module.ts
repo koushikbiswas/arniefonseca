@@ -35,6 +35,10 @@ import { ServicelistComponent } from './component/frontend/servicelist/serviceli
 import { TesimonialComponent } from './component/frontend/tesimonial/tesimonial.component';
 import { TesimoniallistComponent } from './component/frontend/tesimoniallist/tesimoniallist.component';
 
+import { BlogComponent } from './component/frontend/blog/blog.component';
+import { BloglistComponent } from './component/frontend/bloglist/bloglist.component';
+import { BlogdetailComponent } from './component/frontend/blogdetail/blogdetail.component';
+
 /**End Frontend Component**/
 
 
@@ -78,7 +82,9 @@ import { MaindashboardComponent } from './component/backend/maindashboard/mainda
     ServicelistComponent,
     TesimonialComponent,
     TesimoniallistComponent,
-  
+    BlogComponent,
+    BloglistComponent,
+    BlogdetailComponent  
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

@@ -71,10 +71,12 @@ a{cursor:pointer;outline:none}
 .footertopwrapper .mat-list-item:first-child .mat-list-item-content{padding-left:0}
 .mainwrappercontent{width:1351px;margin:0 auto;display:block}
 .landinglogoblock1wrapper{width:1351px;margin:0 auto;display:block}
-.innerpagetitle.mat-card{background-color:#e2ecee;padding:20px 0;width:100%}
+
+.innerpagetitle.mat-card{background-color:#e2ecee!important;padding:20px 0;width:100%}
 .innerpagetitle.mat-card h2{text-align:center;color:#3d3d3d;text-transform:uppercase;font-size:36px;font-family:"HelveticaBold";display:inline-block}
 .innerpagetitle.mat-card h2:after{content:"";left:0;top:100%;background:#7d8a92;height:2px;width:100%;float:left}
 .innerpagetitle.mat-card .mat-card-content{margin-bottom:0}
+
 .navbarlists{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex}
 .toprightformdiv{width:454px!important;float:right;background-color:rgba(0,0,0,0.3);padding:14px;border:10px solid rgba(221,221,221,0.12);box-shadow:0 0 15px rgba(0,0,0,0.6);-moz-box-shadow:0 0 15px rgba(0,0,0,0.6);-webkit-box-shadow:0 0 15px rgba(0,0,0,0.6);-o-box-shadow:0 0 15px rgba(0,0,0,0.6);border-radius:20px}
 .formheaderblock{background-color:#00c0ff;padding:16px;border-top-right-radius:3px!important;border-top-left-radius:3px!important;border-radius:0;margin-bottom:30px}
