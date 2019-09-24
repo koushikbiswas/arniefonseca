@@ -29,16 +29,19 @@
                     <div class="modelthumbimginnerwarpper" *ngFor="let testmon of TestimonialListArray; let i=index">
                       <div class="testimonialwrapper">
                         <span class="modelmodelthumbimg1">
-                          <img (click)="imgClick(x)" drag-scroll-item class="demo cursor" src="{{testmon.image}}" alt="modelmodelthumbimg1"></span>
-                          <!-- <mat-card-title drag-scroll-item class="demo cursor">{{testmon.name}}</mat-card-title>
-                          <mat-card-title drag-scroll-item class="demo cursor">{{testmon.designation}}</mat-card-title>
-                          <mat-card-title drag-scroll-item class="demo cursor">{{testmon.address}}</mat-card-title>
-                          <mat-card-content drag-scroll-item class="demo cursor">{{testmon.quatation}}</mat-card-content> -->
-                      </div>                      
+                          <img (click)="imgClick(x)" drag-scroll-item class="demo cursor" src="{{testmon.image}}" alt="modelmodelthumbimg1"></span>                          
+                      </div>   
+                      <div class="testimonialcontent">
+                          <mat-card-title drag-scroll-item class="demo cursor">{{testmon.name}}</mat-card-title>
+                          <!-- <mat-card-title drag-scroll-item class="demo cursor">{{testmon.designation}}</mat-card-title>
+                         <mat-card-title drag-scroll-item class="demo cursor">{{testmon.address}}</mat-card-title>
+                         <mat-card-content drag-scroll-item class="demo cursor">{{testmon.quatation}}</mat-card-content> -->
+                      </div>
+                                        
                     </div>      
                   </drag-scroll>
-                  <a class="prev" (click)="moveLeft()">&#10094;</a>
-                  <a class="next" (click)="moveRight()">&#10095;</a>
+                  <a class="prev" (click)="moveLeft()">prev &#10094;</a>
+                  <a class="next" (click)="moveRight()">next &#10095;</a>
                 </div>
               </div>
             </div>  
