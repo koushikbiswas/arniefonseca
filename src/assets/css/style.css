@@ -291,12 +291,12 @@ a{cursor:pointer;outline:none}
     white-space: nowrap;
   }
   
-
+/* 
 .testimonialserv .mat-list-item-content{
   align-items: flex-start !important;
   padding: 0 !important;
-}
-
+} */
+/* 
 .gencls .testimonialserv .mat-card-title {
   font-family: "Montserrat", Sans-serif;
   font-size: 24px;
@@ -325,11 +325,17 @@ a{cursor:pointer;outline:none}
   box-shadow: none;
 }
 
-.gencls .testimonialserv.active .iconcls{
+.gencls .modelthumbimginnerwarpper.active .iconcls{
   width: 329px;
   margin-bottom: 20px;
   border-radius: 50%;
+} */
+
+.modelthumbimginnerwarpper.active .modelmodelthumbimg1{
+  width: 329px;
+  height: 329px;
 }
+
 .prev {
     left: 2%;
     border-radius: 3px 0 0 3px;
