@@ -120,14 +120,13 @@ i{font-family:'iconsmind'!important;speak:none;font-style:normal;font-weight:400
 /*------Start Service CSS----*/
 
 .servicewrapper {
-    background: url(../images/analytics-blur-business-590045.jpg) no-repeat;
-    background-position: left, top;
-    background-size: cover;
-    padding: 130px 20px !important;
+    background: #fff !important;
+    padding: 30px 20px !important;
     text-align: center;
     position: relative !important;
+    box-shadow: none !important;
   }
-  
+/*   
   .servicewrapper:after {
     content: "";
     position: absolute;
@@ -137,7 +136,7 @@ i{font-family:'iconsmind'!important;speak:none;font-style:normal;font-weight:400
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 1;
-  }
+  } */
   
   
   .servicewrappercontent .mat-list {
@@ -150,7 +149,7 @@ i{font-family:'iconsmind'!important;speak:none;font-style:normal;font-weight:400
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: space-between;
-    margin-top: -8%;
+    margin-top: 0;
     position: relative;
     z-index: 9;
   }
@@ -162,10 +161,15 @@ i{font-family:'iconsmind'!important;speak:none;font-style:normal;font-weight:400
     background-color: #fff;
     box-shadow: 0px 5px 27px 0px rgba(0, 0, 0, 0.09);
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-    margin: 0px 0px 6px 6px;
-    padding: 37px 40px 40px 50px;
+    margin: 6px;
+    padding: 0 40px 0 50px;
     display: flex;
     align-items: stretch;
+  }
+
+  .servicewrappercontent .mat-list .mat-list-item .mat-card{
+    box-shadow:none !important;
+    text-align: center;
   }
 
   /* .servicewrappercontent .mat-list span  {
@@ -269,7 +273,7 @@ i{font-family:'iconsmind'!important;speak:none;font-style:normal;font-weight:400
   position: relative !important;
 }
 
-.testimonialwrapper:after {
+/* .testimonialwrapper:after {
   content: "";
   position: absolute;
   top: 0;
@@ -278,7 +282,7 @@ i{font-family:'iconsmind'!important;speak:none;font-style:normal;font-weight:400
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 1;
-}
+} */
 
 
 .testimonialwrappercontent .mat-list {
