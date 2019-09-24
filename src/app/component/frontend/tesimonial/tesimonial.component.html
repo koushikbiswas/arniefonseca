@@ -19,26 +19,8 @@
       
     <span class="maincontainer testimonialwrappercontent">
 
-          <mat-card-title>What others say</mat-card-title>
-
-<!-- added by Himadri -->
-
-          <div class="modelthumbimgouter">
-
-            <drag-scroll #imgsmall >
-              <div class="modelthumbimginnerwarpper" *ngFor="let x of TestimonialListArray">
-                <img (click)="imgClick(x.image)" drag-scroll-item class="demo cursor" src="{{x.image}}" alt="modelmodelthumbimg1">
-              </div>
-
-            </drag-scroll>
-            <a class="prev" (click)="moveLeft()">&#10094;</a>
-            <a class="next" (click)="moveRight()">&#10095;</a>
-          </div>
-
-          <!-- added by Himadri -->
-
-          
-          <div  class="testimonialserv active" *ngFor="let testmon of TestimonialListArray; let i=index">
+          <mat-card-title>What others say</mat-card-title>z
+          <div  class="testimonialserv" *ngFor="let testmon of TestimonialListArray; let i=index">
               <mat-card>
                   <img src="{{testmon.image}}" class="iconcls">
                   <mat-card-title>{{testmon.name}}</mat-card-title>
