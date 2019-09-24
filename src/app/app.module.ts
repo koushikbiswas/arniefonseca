@@ -30,6 +30,11 @@ import { ForgetPasswordComponent } from './component/frontend/forget-password/fo
 import { ResetPasswordComponent } from './component/frontend/reset-password/reset-password.component';
 import { SignUpComponent } from './component/frontend/sign-up/sign-up.component';
 
+import { ServiceComponent } from './component/frontend/service/service.component';
+import { ServicelistComponent } from './component/frontend/servicelist/servicelist.component';
+import { TesimonialComponent } from './component/frontend/tesimonial/tesimonial.component';
+import { TesimoniallistComponent } from './component/frontend/tesimoniallist/tesimoniallist.component';
+
 /**End Frontend Component**/
 
 
@@ -69,6 +74,10 @@ import { MaindashboardComponent } from './component/backend/maindashboard/mainda
     AddeditTestimonialComponent,
     BkLeftdivComponent,
     MaindashboardComponent,
+    ServiceComponent,
+    ServicelistComponent,
+    TesimonialComponent,
+    TesimoniallistComponent,
   
   ],
   imports: [

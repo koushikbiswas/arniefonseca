@@ -1,0 +1,47 @@
+<app-header></app-header>
+<mat-card class="innerpagebanner contactusbg">
+    <span class="mainwrappercontent">
+        <mat-card-content>
+            <h1>Testimonial Lists</h1>
+        </mat-card-content>
+    </span>
+</mat-card>
+<mat-card class="innerpagetitle">
+        <span class="mainwrappercontent">
+            <mat-card-content>
+                <h2>Testimonial Lists</h2>
+            </mat-card-content>
+        </span>
+</mat-card>
+
+<mat-card class="testimonialwrapper gencls testimonialwrapperinner">
+    <span class="maincontainer">
+      <mat-card-title>What others say</mat-card-title>
+    </span>  
+    <span class="testimonialwrappertransparentbg"></span>
+  </mat-card>
+  <mat-card class="testimonialwrappercontent gencls testimonialwrappercontentinner">
+      <button (click)="btnBackClick()" mat-stroked-button class="btngeneral btngray">Back To Main</button>
+    <span class="maincontainer">
+      <mat-list role="list">
+              
+              <mat-list-item role="listitem" class="testimonialserv" *ngFor="let testmon of TestimonialListArray | slice:0:indexval; let i=index">
+                <mat-card>
+                  <span class="testiimgwarpper"><img src="{{testmon.image}}" class="iconcls"></span>                
+                  <mat-card-content>&quot; {{testmon.quatation}} &quot;</mat-card-content>
+                  <span class="testibottomcontent">
+                    <mat-card-title class="title1">{{testmon.name}}</mat-card-title>
+                    <mat-card-title class="title2">{{testmon.designation}}</mat-card-title>
+                    <mat-card-title class="title3">{{testmon.address}}</mat-card-title>
+                  </span>
+                </mat-card>
+              </mat-list-item>
+                     
+        
+      </mat-list>
+      <button *ngIf="indexvallength > indexval" (click)="showMoreFunc()" mat-stroked-button class="btngeneral btngray">Show more</button>
+    </span>
+  </mat-card>
+
+  
+<app-footer></app-footer>
