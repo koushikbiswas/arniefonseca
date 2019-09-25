@@ -23,7 +23,7 @@ public mainImg: any;
       result=data.testimonialListData.res;
       this.TestimonialListArray=result;
       //console.log("ojjjjjjjjhgdfhgdf",this.TestimonialListArray);
-      
+      this.moveRight();
     })
   }
 
@@ -33,7 +33,7 @@ public mainImg: any;
         this.mainImg = this.imgsmall._index;
     }
 
-    moveRight(val: any) {
+    moveRight() {
         this.imgsmall.moveRight();
         console.log(this.imgsmall._index)
         this.mainImg = this.imgsmall._index;
