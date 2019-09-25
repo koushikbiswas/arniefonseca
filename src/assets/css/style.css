@@ -176,7 +176,7 @@ a{cursor:pointer;outline:none}
 .servicewrappercontent.servicewrappercontentinner{background-color:#f3f3f3;padding:50px 16px}
 .servicewrappercontent.servicewrappercontentinner .mat-list{margin-top:0!important}
 
-.modelthumbimgouterwrapper{width:92%;margin:0 auto}
+.modelthumbimgouterwrapper{width:100%;margin:0 auto}
 .modelthumbimgouter{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;overflow-y:hidden;overflow-x:auto;justify-content:center;position:relative}
 .modelthumbimginnerwarpper{width:33.33%;height:auto;display:inline-block;position:relative;margin:8px;-ms-touch-action:pan-y;touch-action:pan-y;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
 .drag-scroll-content{height:100%;overflow:auto;white-space:nowrap}
@@ -237,6 +237,6 @@ a{cursor:pointer;outline:none}
 .modelthumbimginnerwarpper.active .testimonialcontent .title2{font-size: 20px !important; margin-bottom: 10px !important;line-height: normal !important;}
 .modelthumbimginnerwarpper.active .testimonialcontent .title3{font-size: 18px !important; margin-bottom: 10px !important;line-height: normal !important;}
 .modelthumbimginnerwarpper.active .testimonialcontent .quatation{font-size: 16px !important;}
-
+.testimonialwrappercontent .mat-card-title {justify-content: center;}
 
 .generalcls .testibottomcontent .mat-card-title {font-size: 26px!important;line-height: normal!important; margin-bottom: 5px !important;}
