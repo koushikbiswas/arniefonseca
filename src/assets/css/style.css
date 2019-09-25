@@ -179,7 +179,7 @@ a{cursor:pointer;outline:none}
 .modelthumbimgouterwrapper{width:100%;margin:0 auto}
 .modelthumbimgouter{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;overflow-y:hidden;overflow-x:auto;justify-content:center;position:relative}
 .modelthumbimginnerwarpper{width:33.33%;height:auto;display:inline-block;position:relative;margin:8px;-ms-touch-action:pan-y;touch-action:pan-y;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
-.drag-scroll-content{height:100%;overflow:auto;white-space:nowrap}
+.drag-scroll-content{height: auto !important;white-space: nowrap; overflow: inherit !important;}
 .modelthumbimginnerwarpper.active .modelmodelthumbimg1{width:329px;height:329px}
 .modelthumbimginnerwarpper.active{justify-content:center}
 .modelthumbimginnerwarpper.active .testimonialwrapper{justify-content:center}
