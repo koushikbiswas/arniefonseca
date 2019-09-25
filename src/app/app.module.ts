@@ -57,6 +57,7 @@ import { ServicelibModule } from 'servicelib';
 // import { FileUploadModule } from 'dist/file-upload';
 import { BkLeftdivComponent } from './layout/bk-leftdiv/bk-leftdiv.component';
 import { MaindashboardComponent } from './component/backend/maindashboard/maindashboard.component';
+import { UserManagementComponent } from './component/backend/user-management/user-management.component';
 /**End Backend Component** */
 
 @NgModule({
@@ -85,7 +86,8 @@ import { MaindashboardComponent } from './component/backend/maindashboard/mainda
     TesimoniallistComponent,
     BlogComponent,
     BloglistComponent,
-    BlogdetailComponent  
+    BlogdetailComponent,
+    UserManagementComponent  
   ],
   imports: [
     DragScrollModule,

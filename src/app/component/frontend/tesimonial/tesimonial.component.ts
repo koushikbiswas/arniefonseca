@@ -29,13 +29,13 @@ public mainImg: any;
 
   moveLeft() {
         this.imgsmall.moveLeft();
-        console.log(this.imgsmall._index);
+        // console.log(this.imgsmall._index);
         // this.mainImg = this.imgsmall._index;
     }
 
     moveRight() {
         this.imgsmall.moveRight();
-        console.log(this.imgsmall._index)
+        // console.log(this.imgsmall._index)
         // this.mainImg = this.imgsmall._index;
     }
   
