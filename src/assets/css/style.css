@@ -187,7 +187,11 @@ a{cursor:pointer;outline:none}
 .modelthumbimginnerwarpper .testimonialwrapper{justify-content:flex-end}
 .modelthumbimginnerwarpper.active + .modelthumbimginnerwarpper{justify-content:flex-start}
 .modelthumbimginnerwarpper.active + .modelthumbimginnerwarpper .testimonialwrapper{justify-content:flex-start}
-.modelthumbimginnerwarpper.active .testimonialcontent{position:absolute;width:100%;text-align:center;left:0;bottom:-65px;}
+.modelthumbimginnerwarpper.active .testimonialcontent{position: absolute;width: 300%;text-align: center;left: -100%;top: 100%;
+    white-space: normal;}
+.modelthumbimginnerwarpper .testimonialcontent{display: none;}
+.modelthumbimginnerwarpper.active .testimonialcontent{display: block !important;}
+
 .prev{left:2%;border-radius:3px 0 0 3px}
 .prev,.next{cursor:pointer;position:absolute;top:50%;width:auto;padding:16px;margin-top:-50px;font-weight:700;font-size:20px;border-radius:0 3px 3px 0;user-select:none;-webkit-user-select:none;background-repeat:repeat-x}
 .next{right:2%;border-radius:3px 0 0 3px}
@@ -226,5 +230,13 @@ a{cursor:pointer;outline:none}
 .testimonial.custom-module *{margin:0}
 .testimonial__company,.testimonial__company-link{font-family:KlinicSlab,serif;letter-spacing:.4px}
 .custom-module .testimonial__company a{color:#1da1db;font-size:16px;line-height:24px;letter-spacing:.8px}
+
+.modelthumbimginnerwarpper.active .testimonialcontent .title1, .modelthumbimginnerwarpper.active .testimonialcontent .title2, .modelthumbimginnerwarpper.active .testimonialcontent .title3, .modelthumbimginnerwarpper.active .testimonialcontent .quatation{display: block;}
+
+.modelthumbimginnerwarpper.active .testimonialcontent .title1{font-size: 28px !important; margin-bottom: 10px !important;line-height: normal !important;}
+.modelthumbimginnerwarpper.active .testimonialcontent .title2{font-size: 20px !important; margin-bottom: 10px !important;line-height: normal !important;}
+.modelthumbimginnerwarpper.active .testimonialcontent .title3{font-size: 18px !important; margin-bottom: 10px !important;line-height: normal !important;}
+.modelthumbimginnerwarpper.active .testimonialcontent .quatation{font-size: 16px !important;}
+
 
 .generalcls .testibottomcontent .mat-card-title {font-size: 26px!important;line-height: normal!important; margin-bottom: 5px !important;}
