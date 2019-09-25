@@ -28,7 +28,7 @@
               <mat-list-item role="listitem" class="testimonialserv" *ngFor="let testmon of TestimonialListArray | slice:0:indexval; let i=index">
                 <mat-card>
                   <span class="testiimgwarpper"><img src="{{testmon.image}}" class="iconcls"></span>                
-                  <mat-card-content>&quot; {{testmon.quatation}} &quot;</mat-card-content>
+                  <mat-card-content class="quatation">&quot; {{testmon.quatation}} &quot;</mat-card-content>
                   <span class="testibottomcontent">
                     <mat-card-title class="title1">{{testmon.name}}</mat-card-title>
                     <mat-card-title class="title2">{{testmon.designation}}</mat-card-title>
