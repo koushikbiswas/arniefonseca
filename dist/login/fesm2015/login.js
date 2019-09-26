@@ -361,7 +361,7 @@ class ApiService {
                 'Authorization': this.accesstoken //hard code written access-token(temp)
             })
         };
-        console.log('httpoptions', httpOptions, this.serverUrl, requestdata);
+        // console.log('httpoptions',httpOptions,this.serverUrl,requestdata);
         /** @type {?} */
         var result = this._http.post(this.serverUrl + this.addendpointUrl, JSON.stringify(requestdata), httpOptions).pipe(map((/**
          * @param {?} res
@@ -446,7 +446,7 @@ class ApiService {
                 // 'Authorization': this.accesstoken          //hard code written access-token(temp)
             })
         };
-        console.log(this.serverUrl, requestdata);
+        // console.log(this.serverUrl,requestdata);
         /** @type {?} */
         var result = this._http.post(this.serverUrl + this.addendpointUrl, JSON.stringify(requestdata), httpOptions).pipe(map((/**
          * @param {?} res
@@ -470,7 +470,7 @@ class ApiService {
                 // 'Authorization': this.accesstoken          //hard code written access-token(temp)
             })
         };
-        console.log(this.serverUrl, requestdata);
+        // console.log(this.serverUrl,requestdata);
         /** @type {?} */
         var result = this._http.post(this.serverUrl + this.addendpointUrl, JSON.stringify(requestdata), httpOptions).pipe(map((/**
          * @param {?} res
@@ -663,7 +663,7 @@ class LoginComponent {
      */
     set cookieSet(v) {
         this.cookieSetValue = v;
-        console.log(this.cookieSetValue.cookie);
+        // console.log(this.cookieSetValue.cookie);
         // for (const key in this.cookieSetValue.cookie) {
         //   console.log(this.cookieSetValue.cookie[key]);
         // }
@@ -691,8 +691,8 @@ class LoginComponent {
     set routerStatus(routerStatusval) {
         this.routerStatusValue = (routerStatusval) || '<no name set>';
         this.routerStatusValue = routerStatusval;
-        console.log(this.routerStatusValue);
-        console.log(this.routerStatusValue.data.length);
+        // console.log(this.routerStatusValue);
+        // console.log(this.routerStatusValue.data.length);
     }
     /**
      * @return {?}
@@ -779,10 +779,10 @@ class LoginComponent {
                      * @return {?}
                      */
                     () => {
-                        console.log(this.cookieService.getAll());
+                        // console.log(this.cookieService.getAll());
                     }), 1000);
-                    console.log('result');
-                    console.log(result.item[0].type);
+                    // console.log('result')
+                    // console.log(result.item[0].type)
                     for (const key in this.routerStatusValue.data) {
                         // console.log(this.routerStatusValue.data[key].type);
                         if (result.item[0].type === this.routerStatusValue.data[key].type) {

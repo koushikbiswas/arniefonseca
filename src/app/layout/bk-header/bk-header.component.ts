@@ -3,6 +3,7 @@ import { BkLeftdivComponent } from '../../../app/layout/bk-leftdiv/bk-leftdiv.co
 import { SidenavService } from '../../../app/services/sidenav.service';
 
 import {MatDialog} from '@angular/material/dialog';
+import { CookieService } from 'ngx-cookie-service';
 
 @Component({
   selector: 'app-bk-header',
@@ -10,16 +11,27 @@ import {MatDialog} from '@angular/material/dialog';
   styleUrls: ['./bk-header.component.css']
 })
 export class BkHeaderComponent implements OnInit {
-
-  constructor(private sidenav: SidenavService, public dialog: MatDialog) {}
+  public userCookies: any;
+  public user_full_name: any = '';
+     
+      
+  constructor(public cookieService: CookieService, private sidenav: SidenavService, public dialog: MatDialog) {}
   toggleActive:boolean = false;
   toggleRightSidenav() {
     this.toggleActive = !this.toggleActive;
     this.sidenav.toggle();
     console.log('Clicked');
-  }
+    
+    
+    
+   }
 
   ngOnInit() {
+    this.userCookies = JSON.parse(this.cookieService.get('user_details'));
+  
+    console.log(this.userCookies);
+    this.user_full_name = this.userCookies.firstname +' '+this.userCookies.lastname;
+    console.log(this.user_full_name);
   }
 
 }
