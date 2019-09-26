@@ -1,107 +1,61 @@
 <app-header></app-header>
 <mat-card class="innerpagebanner contactusbg">
-    <span class="mainwrappercontent">
-        <mat-card-content>
-            <h1>Testimonial</h1>
-        </mat-card-content>
-    </span>
+  <span class="mainwrappercontent">
+    <mat-card-content>
+      <h1>Testimonial</h1>
+    </mat-card-content>
+  </span>
 </mat-card>
 <mat-card class="innerpagetitle">
-        <span class="mainwrappercontent">
-            <mat-card-content>
-                <h2>Testimonial</h2>
-            </mat-card-content>
-        </span>
+  <span class="mainwrappercontent">
+    <mat-card-content>
+      <h2>Testimonial</h2>
+    </mat-card-content>
+  </span>
 </mat-card>
-  
-  
-  <mat-card class="testimonialwrapper generalcls">
-      
-    <span class="maincontainer testimonialwrappercontent">
 
-          <mat-card-title>What others say</mat-card-title>
 
-          <div class="modelthumbimgwrapper">
-              <div class="modelthumbimgouterwrapper">
-                <div class="modelthumbimgouter">
-      
-                  <drag-scroll #imgsmall >
-                    <div class="modelthumbimginnerwarpper" *ngFor="let testmon of TestimonialListArray; let i=index">
-                      <div class="modelmodelthumbimg1">
-                          <img (click)="imgClick(testmon)" drag-scroll-item class="demo cursor" src="{{testmon.image}}" alt="modelmodelthumbimg1">
-                      </div>    
-                      <div class="testimonialcontent">
-                          <mat-card-title drag-scroll-item class="title1 demo cursor">{{testmon.name}}</mat-card-title>
-                          <mat-card-title drag-scroll-item class="title2 demo cursor">{{testmon.designation}}</mat-card-title>
-                         <mat-card-title drag-scroll-item class="title3 demo cursor">{{testmon.address}}</mat-card-title>
-                         <mat-card-content drag-scroll-item class="description demo cursor">{{testmon.quatation}}</mat-card-content>
-                      </div>                   
-                    </div>      
-                  </drag-scroll>
-                  <a class="prev" (click)="moveLeft()">prev &#10094;</a>
-                  <a class="next" (click)="moveRight()">next &#10095;</a>
+<mat-card class="testimonialwrapper generalcls">
+
+  <span class="maincontainer testimonialwrappercontent">
+
+
+    <div class="modelthumbimgwrapper">
+      <div class="modelthumbimgouterwrapper">
+        <div class="modelthumbimgouter">
+
+          <drag-scroll #imgsmall>
+            <div class="modelthumbimginnerwarpper" *ngFor="let testmon of TestimonialListArray">
+              <span>
+                <div class="testimonialwrapper">
+
+                  <span class="modelmodelthumbimg1">
+                    <img (click)="imgClick(testmon)" drag-scroll-item class="demo cursor" src="{{testmon.image}}"
+                      alt="modelmodelthumbimg1"></span>
                 </div>
-              </div>
+                <div class="testimonialcontent">
+                  <mat-card-title drag-scroll-item class="demo cursor">{{testmon.name}}</mat-card-title>
+                  <mat-card-title drag-scroll-item class="title1 demo cursor">{{testmon.name}}</mat-card-title>
+                  <mat-card-title drag-scroll-item class="title2 demo cursor">{{testmon.designation}}</mat-card-title>
+                  <mat-card-title drag-scroll-item class="title3 demo cursor">{{testmon.address}}</mat-card-title>
+                  <mat-card-content drag-scroll-item class="quatation demo cursor">{{testmon.quatation}}
+                  </mat-card-content>
+                </div>
+              </span>
             </div>
-          
-          <!-- <div class="modelthumbimgwrapper">
-              <div class="modelthumbimgouterwrapper">
-                <div class="modelthumbimgouter">
-      
-                  <drag-scroll #imgsmall >
-                    <div class="modelthumbimginnerwarpper" *ngFor="let testmon of TestimonialListArray; let i=index">
-                      <div class="testimonialwrapper">
-                        <span class="modelmodelthumbimg1">
-                          <img (click)="imgClick(testmon)" drag-scroll-item class="demo cursor" src="{{testmon.image}}" alt="modelmodelthumbimg1"></span>                          
-                      </div>   
-                      <div class="testimonialcontent">
-                          <mat-card-title drag-scroll-item class="title1 demo cursor">{{testmon.name}}</mat-card-title>
-                          <mat-card-title drag-scroll-item class="title2 demo cursor">{{testmon.designation}}</mat-card-title>
-                         <mat-card-title drag-scroll-item class="title3 demo cursor">{{testmon.address}}</mat-card-title>
-                         <mat-card-content drag-scroll-item class="description demo cursor">{{testmon.quatation}}</mat-card-content>
-                      </div>
-                                        
-                    </div>      
-                  </drag-scroll>
-                  <a class="prev" (click)="moveLeft()">prev &#10094;</a>
-                  <a class="next" (click)="moveRight()">next &#10095;</a>
-                </div>
-              </div>
-            </div>   -->
+          </drag-scroll>
+          <a class="prev" (click)="moveLeft()">prev &#10094;</a>
+          <a class="next" (click)="moveRight()">next &#10095;</a>
+        </div>
+      </div>
+    </div>
 
 
-          
-             
-              <!-- <mat-card>
-                  <img src="{{testmon.image}}" class="iconcls">
-                  <mat-card-title>{{testmon.name}}</mat-card-title>
-                  <mat-card-title>{{testmon.designation}}</mat-card-title>
-                  <mat-card-title>{{testmon.address}}</mat-card-title>
-                  <mat-card-content>{{testmon.quatation}}</mat-card-content>
-                </mat-card> -->
-            
-            <!-- <button (click)="moveLeft()">Left</button>
-            <button (click)="moveRight()">Right</button> -->
 
 
-          
-          <!-- <mat-carousel timings="250ms ease-in" [autoplay]="true" interval="5000" color="accent" maxWidth="auto"
-          proportion="25"
-          slides="3"
-          [loop]="true"
-          [hideArrows]="false"
-          [hideIndicators]="false"
-          [useKeyboard]="true"
-          [useMouseWheel]="false"
-          orientation="ltr">
-              <mat-carousel-slide>
-                  
-              </mat-carousel-slide>
-            </mat-carousel> -->
+    <button mat-stroked-button class="btngeneral btngray" (click)="btnClick();">View More</button>
+  </span>
+</mat-card>
 
-      <button mat-stroked-button class="btngeneral btngray" (click)="btnClick();">View More</button>
-    </span>
-  </mat-card>
 
-  
 <app-footer></app-footer>

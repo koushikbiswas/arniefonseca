@@ -1,5 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
+import { CookieService } from 'ngx-cookie-service';
 
 @Component({
   selector: 'app-header',
@@ -18,9 +19,16 @@ export class HeaderComponent implements OnInit {
     this.navbarOpen = !this.navbarOpen;
   }
 
-  constructor(public router: Router) {
-    console.log(router.url)
-  }
+  public userCookies: any;
+public user_full_name: any = '';
+   
+  constructor(public router: Router, public cookieService: CookieService) {
+    // this.userCookies = JSON.parse(this.cookieService.get('user_details'));
+
+    // console.log(this.userCookies.firstname);
+    // this.user_full_name = this.userCookies.firstname +' '+this.userCookies.lastname;
+    // console.log(this.user_full_name);
+   }
 
   ngOnInit() {
   }

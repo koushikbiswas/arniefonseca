@@ -11,7 +11,8 @@ export class FooterComponent implements OnInit {
   windowScrolled: boolean;
 
   constructor(public router: Router, public route: ActivatedRoute,) {
-    console.log(router.url);
+    // console.log(router.url);
+    
    }
 
    @HostListener("window:scroll", [])

@@ -31,6 +31,7 @@ import { ServicelistComponent } from './component/frontend/servicelist/serviceli
 import { BlogComponent } from './component/frontend/blog/blog.component';
 import { BloglistComponent } from './component/frontend/bloglist/bloglist.component';
 import { BlogdetailComponent } from './component/frontend/blogdetail/blogdetail.component';
+import { UserManagementComponent } from './component/backend/user-management/user-management.component';
 /**End Backend Routing**/
 
 const routes: Routes = [
@@ -53,6 +54,7 @@ const routes: Routes = [
     endpoint: "datalist"
   }
 },
+
 {
   path: "testimoniallist",
   component: TesimoniallistComponent,
@@ -94,6 +96,12 @@ const routes: Routes = [
   {path: 'service/add', component:AddeditServiceComponent},
   { path:'service/edit/:_id', component:AddeditServiceComponent,  resolve: { serviceList: ResolveService },
   data: { requestcondition: { source: 'services', condition: {} }, endpoint: 'datalist'}},
+
+  /**************** User Management *****************/ 
+  { path:'user-management', component:UserManagementComponent,  resolve: { serviceList: ResolveService },
+  data: { requestcondition: { source: 'user', condition: {} }, endpoint: 'datalist'}},
+
+  
   /**End Backend Routing**/
 
 

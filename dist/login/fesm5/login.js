@@ -440,7 +440,7 @@ var ApiService = /** @class */ (function () {
                 'Authorization': this.accesstoken //hard code written access-token(temp)
             })
         };
-        console.log('httpoptions', httpOptions, this.serverUrl, requestdata);
+        // console.log('httpoptions',httpOptions,this.serverUrl,requestdata);
         /** @type {?} */
         var result = this._http.post(this.serverUrl + this.addendpointUrl, JSON.stringify(requestdata), httpOptions).pipe(map((/**
          * @param {?} res
@@ -547,7 +547,7 @@ var ApiService = /** @class */ (function () {
                 // 'Authorization': this.accesstoken          //hard code written access-token(temp)
             })
         };
-        console.log(this.serverUrl, requestdata);
+        // console.log(this.serverUrl,requestdata);
         /** @type {?} */
         var result = this._http.post(this.serverUrl + this.addendpointUrl, JSON.stringify(requestdata), httpOptions).pipe(map((/**
          * @param {?} res
@@ -579,7 +579,7 @@ var ApiService = /** @class */ (function () {
                 // 'Authorization': this.accesstoken          //hard code written access-token(temp)
             })
         };
-        console.log(this.serverUrl, requestdata);
+        // console.log(this.serverUrl,requestdata);
         /** @type {?} */
         var result = this._http.post(this.serverUrl + this.addendpointUrl, JSON.stringify(requestdata), httpOptions).pipe(map((/**
          * @param {?} res
@@ -806,7 +806,7 @@ var LoginComponent = /** @class */ (function () {
          */
         function (v) {
             this.cookieSetValue = v;
-            console.log(this.cookieSetValue.cookie);
+            // console.log(this.cookieSetValue.cookie);
             // for (const key in this.cookieSetValue.cookie) {
             //   console.log(this.cookieSetValue.cookie[key]);
             // }
@@ -846,8 +846,8 @@ var LoginComponent = /** @class */ (function () {
         function (routerStatusval) {
             this.routerStatusValue = (routerStatusval) || '<no name set>';
             this.routerStatusValue = routerStatusval;
-            console.log(this.routerStatusValue);
-            console.log(this.routerStatusValue.data.length);
+            // console.log(this.routerStatusValue);
+            // console.log(this.routerStatusValue.data.length);
         },
         enumerable: true,
         configurable: true
@@ -947,10 +947,10 @@ var LoginComponent = /** @class */ (function () {
                      * @return {?}
                      */
                     function () {
-                        console.log(_this.cookieService.getAll());
+                        // console.log(this.cookieService.getAll());
                     }), 1000);
-                    console.log('result');
-                    console.log(result.item[0].type);
+                    // console.log('result')
+                    // console.log(result.item[0].type)
                     for (var key in _this.routerStatusValue.data) {
                         // console.log(this.routerStatusValue.data[key].type);
                         if (result.item[0].type === _this.routerStatusValue.data[key].type) {
