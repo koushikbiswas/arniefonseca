@@ -19,6 +19,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AuthGuard } from './auth.guard';
 import { ApiService } from './api.service';
 import { TestimonialModule } from 'testimonial';
+import { ListingModule } from 'lib-listing';
 
 
 /**Frontend Component**/
@@ -104,7 +105,8 @@ import { UserManagementComponent } from './component/backend/user-management/use
     ContactusModule,
     // FileUploadModule,
     HttpClientModule,
-    AppRoutingModule,MetaModule.forRoot(), BrowserAnimationsModule
+    AppRoutingModule,MetaModule.forRoot(), BrowserAnimationsModule,
+    ListingModule
   ],
   providers: [CookieService, AuthGuard, ApiService, SidenavService],
   bootstrap: [AppComponent],

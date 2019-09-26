@@ -4,6 +4,7 @@
 @import "../src/assets/css/admin-style.css";
 @import "../src/assets/css/media.css";
 @import "../src/assets/css/admin-media.css";
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
 
 
 
@@ -12,3 +13,5 @@
 
 
 
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

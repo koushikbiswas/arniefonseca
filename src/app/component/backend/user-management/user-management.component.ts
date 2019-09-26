@@ -9,11 +9,9 @@ import { ApiService } from '../../../api.service';
 })
 export class UserManagementComponent implements OnInit {
   public user_management_ditiles: any = [];
-  public user_management_ditiles_skip: any = [];
+  public user_management_ditiles_skip: any = ['password','_id'];
   public user_management_ditiles_modify_header: any = {
-    
     'email': 'Email Id',
-    
     '_id': "ID"
 };
 public tablename: any= 'user';
