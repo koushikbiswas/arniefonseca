@@ -15,7 +15,7 @@
 </mat-card>
 
 
-<mat-card class="testimonialwrapper generalcls">
+<!-- <mat-card class="testimonialwrapper generalcls">
 
   <span class="maincontainer testimonialwrappercontent">
 
@@ -55,7 +55,41 @@
 
     <button mat-stroked-button class="btngeneral btngray" (click)="btnClick();">View More</button>
   </span>
-</mat-card>
+
+
+
+
+</mat-card> -->
+
+
+
+
+
+<div class="demo-border" [matBadge]="index">
+  <drag-scroll class="demo-one"
+    drag-scroll-y-disabled="true"
+    scrollbar-hidden="true"
+    (dsInitialized)="onDragScrollInitialized()"
+    (indexChanged)="onIndexChanged($event)"
+    (reachesLeftBound)="leftBoundStat($event)"
+    (reachesRightBound)="rightBoundStat($event)"
+    (snapAnimationFinished)="onSnapAnimationFinished()"
+    (dragStart)="onDragStart()"
+    (dragEnd)="onDragEnd()"
+    #nav
+    >
+    <img drag-scroll-item *ngFor="let testmon of TestimonialListArray" [src]="testmon.image" (click)="clickItem(testmon)"/>
+  </drag-scroll>
+
+
+  <div fxLayout="row" fxLayoutGap="5px" fxLayoutAlign="center center">
+    <button mat-raised-button color="primary"  (click)="moveTo(0)">first</button>
+    <button mat-raised-button color="primary"  [disabled]="leftNavDisabled" (click)="moveLeft1()">left</button>
+    <button mat-raised-button color="primary"  [disabled]="rightNavDisabled" (click)="moveRight1()">right</button>
+    <button mat-raised-button color="primary"  (click)="moveTo(TestimonialListArray.length - 1)">last</button>
+  </div>
+
+
 
 
 <app-footer></app-footer>
