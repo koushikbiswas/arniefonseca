@@ -19,6 +19,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AuthGuard } from './auth.guard';
 import { ApiService } from './api.service';
 import { TestimonialModule } from 'testimonial';
+import { ListingModule } from 'lib-listing';
+import {MatIconModule} from '@angular/material/icon';
 
 
 /**Frontend Component**/
@@ -58,6 +60,7 @@ import { ServicelibModule } from 'servicelib';
 import { BkLeftdivComponent } from './layout/bk-leftdiv/bk-leftdiv.component';
 import { MaindashboardComponent } from './component/backend/maindashboard/maindashboard.component';
 import { UserManagementComponent } from './component/backend/user-management/user-management.component';
+import { ContactUsDashboardComponent } from './component/backend/contact-us-dashboard/contact-us-dashboard.component';
 /**End Backend Component** */
 
 @NgModule({
@@ -87,7 +90,8 @@ import { UserManagementComponent } from './component/backend/user-management/use
     BlogComponent,
     BloglistComponent,
     BlogdetailComponent,
-    UserManagementComponent  
+    UserManagementComponent,
+    ContactUsDashboardComponent  
   ],
   imports: [
     DragScrollModule,
@@ -104,7 +108,9 @@ import { UserManagementComponent } from './component/backend/user-management/use
     ContactusModule,
     // FileUploadModule,
     HttpClientModule,
-    AppRoutingModule,MetaModule.forRoot(), BrowserAnimationsModule
+    AppRoutingModule,MetaModule.forRoot(), BrowserAnimationsModule,
+    ListingModule,
+    MatIconModule
   ],
   providers: [CookieService, AuthGuard, ApiService, SidenavService],
   bootstrap: [AppComponent],

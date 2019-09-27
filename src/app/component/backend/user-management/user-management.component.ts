@@ -9,11 +9,9 @@ import { ApiService } from '../../../api.service';
 })
 export class UserManagementComponent implements OnInit {
   public user_management_ditiles: any = [];
-  public user_management_ditiles_skip: any = [];
+  public user_management_ditiles_skip: any = ['password','_id'];
   public user_management_ditiles_modify_header: any = {
-    
     'email': 'Email Id',
-    
     '_id': "ID"
 };
 public tablename: any= 'user';
@@ -24,7 +22,6 @@ public tablename: any= 'user';
     this.route.data.forEach(data =>{
       let result:any;
       result=data.serviceList.res;
-      // console.log(result)
       this.user_management_ditiles = result;
       console.log(this.user_management_ditiles.length)
       console.log(this.user_management_ditiles)

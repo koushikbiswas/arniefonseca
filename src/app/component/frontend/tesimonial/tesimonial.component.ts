@@ -37,8 +37,7 @@ export class TesimonialComponent implements OnInit {
       let result: any;
       result = data.testimonialListData.res;
       this.TestimonialListArray = result;
-      //console.log("ojjjjjjjjhgdfhgdf",this.TestimonialListArray);
-      //this.moveRight();
+
     })
   }
 

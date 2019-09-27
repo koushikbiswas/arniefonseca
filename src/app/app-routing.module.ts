@@ -32,6 +32,7 @@ import { BlogComponent } from './component/frontend/blog/blog.component';
 import { BloglistComponent } from './component/frontend/bloglist/bloglist.component';
 import { BlogdetailComponent } from './component/frontend/blogdetail/blogdetail.component';
 import { UserManagementComponent } from './component/backend/user-management/user-management.component';
+import { ContactUsDashboardComponent } from './component/backend/contact-us-dashboard/contact-us-dashboard.component';
 /**End Backend Routing**/
 
 const routes: Routes = [
@@ -100,6 +101,9 @@ const routes: Routes = [
   /**************** User Management *****************/ 
   { path:'user-management', component:UserManagementComponent,  resolve: { serviceList: ResolveService },
   data: { requestcondition: { source: 'user', condition: {} }, endpoint: 'datalist'}},
+
+  { path:'contact-us-dashboard', component:ContactUsDashboardComponent,  resolve: { serviceList: ResolveService },
+  data: { requestcondition: { source: 'contactusForm', condition: {} }, endpoint: 'datalist'}},
 
   
   /**End Backend Routing**/
