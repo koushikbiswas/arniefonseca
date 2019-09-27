@@ -20,19 +20,7 @@ export class TesimonialComponent implements OnInit {
   disabled;
   xDisabled;
   yDisabled;
-  imagelist = [
-    'luke.png',
-    'chubaka.png',
-    'boba.png',
-    'c3po.png' ,
-    'leia.png',
-    'obi.png',
-    'r2d2.png',
-    'storm.png',
-    'varder.png',
-    'yoda.png',
-    'yolo.png'
-  ];
+
   leftNavDisabled = false;
   rightNavDisabled = false;
   index = 0;
@@ -50,7 +38,7 @@ export class TesimonialComponent implements OnInit {
       result = data.testimonialListData.res;
       this.TestimonialListArray = result;
       //console.log("ojjjjjjjjhgdfhgdf",this.TestimonialListArray);
-      this.moveRight();
+      //this.moveRight();
     })
   }
 

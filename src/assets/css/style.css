@@ -177,7 +177,13 @@ a{cursor:pointer;outline:none}
 .servicewrappercontent.servicewrappercontentinner .mat-list{margin-top:0!important}
 
 
+/* .demo-one .modelmodelthumbimg1 {
+    height: 260px;
+    width: 260px;
+    border-radius: 50%;
+} */
 
+/* 
 .modelthumbimginnerwarpper {
     width:33.33%;
     height:auto;
@@ -223,21 +229,10 @@ width: 100%;
 	justify-content: center;
 }
 
-/* .modelthumbimg{
-	min-height: min-content;
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-} */
-
-/* Add a pointer when hovering over the thumbnail images */
 .cursor {
 	cursor: pointer;
 }
 
-/* Next & previous buttons */
 .prev,
 .next {
 	cursor: pointer;
@@ -261,8 +256,6 @@ width: 100%;
 	border: 1px solid rgba(64, 64, 64, 1);
 }
 
-
-/* Position the "next button" to the right */
 .prev {
 	left: 2%;
 	border-radius: 3px 0 0 3px;
@@ -273,7 +266,6 @@ width: 100%;
 	border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
 	background-image: -webkit-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.5) 100%);
@@ -299,51 +291,7 @@ width: 100%;
     left: 0;
     top: 100%;
     white-space: normal;
-}
-
-.carousel-control.left{
-
-	background-image: none;
-	}
-	.carousel-control.right{
-	
-	background-image: none;
-	}
-	/*.carousel-indicators li{
-	   background-color:#3f51b5;
-	  border:1px solid  black;
-	}
-	.carousel-indicators li active{
-	   background-color: white;
-	  border:1px solid black;
-	}*/
-	.carousel-indicators li {
-		margin-bottom: 2%;
-		height: 20px;
-		width: 20px;
-		max-width: 20px;
-		background-color: #3f51b5;
-	}
-	.carousel-indicators .active {
-		 margin-bottom: 2%;
-		height: 25px;
-		width: 25px;
-		max-width: 25px;
-		background-color: #3f51b5;
-		border-radius: 50%;
-	}
-	@media screen and (min-width: 768px){
-	.carousel-indicators {
-		bottom: -45px;
-	}
-	}
-	
-	
-	@media screen and (max-width: 500px){
-	.carousel-indicators {
-		bottom: -43px;
-	}
-	}
+} */
 
 /* .modelthumbimginnerwarpper .testimonialcontent{display: none;}*/
 
@@ -379,7 +327,7 @@ width: 100%;
 .next{right:2%;border-radius:3px 0 0 3px}
 .modelmodelthumbimg1{display:block;width:210px;height:210px;overflow:hidden;margin-bottom:20px;border-radius:50%}
 .modelmodelthumbimg1 img{width:100%} */
-
+/* 
 .testimonialwrapper{display:flex;flex-wrap:wrap;align-items:center;justify-content:center}
 .testimonialwrappercontent .mat-list{position:relative;min-height:1px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;flex-wrap:wrap;align-items:stretch;justify-content:space-between;position:relative;z-index:9}
 .testimonialwrappercontent .mat-list .mat-list-item{flex:1;flex-basis:25.33%;height:auto;background-color:#fff;box-shadow:0 5px 27px 0 rgba(0,0,0,0.09);transition:background 0.3s,border 0.3s,border-radius 0.3s,box-shadow .3s;margin:0 0 6px 6px;padding:37px 40px 40px 50px;display:flex;align-items:stretch}
@@ -387,7 +335,7 @@ width: 100%;
 .btngray{background-color:#2b2b2b;color:#fff}
 .testimonialwrappercontent .btngeneral{text-align:center;margin:30px auto;display:block;position:relative;z-index:9}
 .singleservice .mat-list-item-content{padding:0!important;justify-content:center;width:100%}
-.testimonialwrappercontent .carousel{z-index:99}
+.testimonialwrappercontent .carousel{z-index:99} */
 .testimonialwrapper.testimonialwrapperinner{padding:50px 20px!important}
 .testimonialwrappercontent.testimonialwrappercontentinner{background-color:#f3f3f3;padding:50px 16px}
 .testimonialwrappercontent.testimonialwrappercontentinner .mat-list{margin-top:0!important}
