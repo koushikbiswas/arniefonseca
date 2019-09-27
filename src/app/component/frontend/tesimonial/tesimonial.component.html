@@ -78,7 +78,7 @@
     (dragEnd)="onDragEnd()"
     #nav
     >
-    <div class="modelthumbwrapper" drag-scroll-item *ngFor="let testmon of TestimonialListArray">
+    <div class="modelthumbwrapper" [ngClass]="i === index ? 'active': ''" drag-scroll-item *ngFor="let testmon of TestimonialListArray; let i = index">
       <div class="modelmodelthumbimg1">
           <img [src]="testmon.image" (click)="clickItem(testmon)"/>
       </div>

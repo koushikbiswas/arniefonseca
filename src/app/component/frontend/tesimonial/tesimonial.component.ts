@@ -78,9 +78,9 @@ export class TesimonialComponent implements OnInit {
     console.log('item clicked');
   }
 
-  remove() {
-    this.imagelist.pop();
-  }
+  // remove() {
+  //   this.imagelist.pop();
+  // }
 
   toggleHideSB() {
     this.hideScrollbar = !this.hideScrollbar;
