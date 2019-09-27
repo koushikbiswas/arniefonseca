@@ -22,7 +22,6 @@ public tablename: any= 'user';
     this.route.data.forEach(data =>{
       let result:any;
       result=data.serviceList.res;
-      // console.log(result)
       this.user_management_ditiles = result;
       console.log(this.user_management_ditiles.length)
       console.log(this.user_management_ditiles)
