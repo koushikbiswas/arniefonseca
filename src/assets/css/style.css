@@ -68,8 +68,6 @@ a{cursor:pointer;outline:none}
 .loginform{padding:0;margin:0}
 
 .mat-card{border-radius:0!important;transition:none!important;box-shadow:none!important;}
-.contactusinfoblock .mat-card{box-shadow:none!important}
-.footertopwrapper .mat-list-item:first-child .mat-list-item-content{padding-left:0}
 .mainwrappercontent{width:1351px;margin:0 auto;display:block}
 .maincontainer{max-width:1351px;margin:0 auto;display:block}
 
@@ -114,8 +112,18 @@ a{cursor:pointer;outline:none}
 .mat-form-field{margin-top:5px}
 .mat-form-field .errortext{font-size:12px;color:red;display:block;margin-top:-4px}
 .contact-form .main-div{height:auto!important;display:inherit!important;justify-content:inherit!important;align-items:inherit!important}
+
 .innerpagebanner{background-color:#01110d;padding:20px}
 .innerpagebanner.mat-card{padding:0!important}
+
+.innerpagebanner.mat-card{overflow-x:hidden;background:url(../images/contactusbg.jpg) no-repeat center center;top:0;left:0;min-width:100%;min-height:250px;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;position:relative}
+.innerpagebanner.mat-card h1{text-align:center;text-transform:uppercase;background:-webkit-linear-gradient(#d0d6dd,#7d8a92);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-transform:uppercase;font-size:72px;font-family:"OrbitronBold";position:absolute;top:50%;right:0;transform:translateY(-50%)}
+.innerpagebanner.mat-card .mainwrappercontent{position:relative}
+.innerpagebanner.mat-card .mat-card-content{height:250px;position:relative}
+
+
+.footertopwrapper .mat-list-item:first-child .mat-list-item-content{padding-left: 0 !important;}
+
 #slides .slide{height:auto}
 #slides .slide .mat-list-item-content{padding:0!important}
 #slides{position:relative;height:580px;padding:0;margin:0;list-style-type:none}
@@ -132,24 +140,7 @@ a{cursor:pointer;outline:none}
 .pagelogowrapper{margin-top:0!important;margin-bottom:0!important;width:350px}
 .pagelogowrapper img{max-width:100%}
 
-
-.contactusbg.mat-card{overflow-x:hidden;background:url(../images/contactusbg.jpg) no-repeat center center;top:0;left:0;min-width:100%;min-height:250px;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;position:relative}
-.contactusbg.mat-card h1{text-align:center;text-transform:uppercase;background:-webkit-linear-gradient(#d0d6dd,#7d8a92);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-transform:uppercase;font-size:72px;font-family:"OrbitronBold";position:absolute;top:50%;right:0;transform:translateY(-50%)}
-.contactusbg.mat-card .mainwrappercontent{position:relative}
-.contactusbg.mat-card .mat-card-content{height:250px;position:relative}
-.contactusblockinner{display:flex!important;justify-content:space-between;align-items:stretch}
-.contactusinfoblock{padding:0;position:absolute;top:50%;left:3%;width:40%;transform:translateY(-50%);height:65%;z-index:9999}
-.contact-form .contactusinfoblock .main-div .mat-card{margin:4em auto!important}
-.contactusformblock{flex:1 1 100%;position:relative}
-.contactusinfoblock .mat-card{box-shadow:none!important;padding:30px 48px!important;background:transparent!important;height:100%}
-.contactusinfoblock .mat-card img{margin-left:-22%;width:143%;margin-top:-20%}
-.contactusinfoblock .mat-card h2{text-transform:uppercase;color:#fff;font-size:40px}
-
-.from.mat-card{background-color:transparent!important}
-.contact-form .main-div .from.mat-card{margin:4em auto!important;width:85%!important;padding-left:40%!important}
-.contact-form .main-div .from.mat-card:hover{-o-box-shadow:0 0 50px rgba(0,0,0,0.2)!important;-ms-box-shadow:0 0 50px rgba(0,0,0,0.2)!important;box-shadow:0 0 50px rgba(0,0,0,0.2)!important}
-.contact-form .from h2{display:none}
-
+.from.mat-card{background-color:transparent!important;}
 .from{width:600px!important;margin:0 auto;background-color:transparent;padding:24px!important;margin:4em auto!important;color:#fff!important;-webkit-transition:box-shadow .5s!important;transition:box-shadow .5s!important;overflow:hidden!important;border-radius:10px!important;-webkit-transform:scale(1.03)!important;-moz-transform:scale(1.03)!important;-o-transform:scale(1.03)!important;-ms-transform:scale(1.03)!important;transform:scale(1.03)!important;box-sizing:border-box!important;background-size:cover;background-position:center;background-attachment:fixed;position:relative!important;z-index:999!important;margin-top:-20px!important;-webkit-box-shadow:0 0 50px rgba(0,0,0,0.2)!important;-moz-box-shadow:0 0 50px rgba(0,0,0,0.2)!important;-o-box-shadow:0 0 50px rgba(0,0,0,0.2)!important;-ms-box-shadow:0 0 50px rgba(0,0,0,0.2)!important;box-shadow:0 0 50px rgba(0,0,0,0.2)!important;overflow:inherit!important}
 .from:hover{-webkit-box-shadow:0 0 50px rgba(0,0,0,0.9)!important;-moz-box-shadow:0 0 50px rgba(0,0,0,0.9)!important;-o-box-shadow:0 0 50px rgba(0,0,0,0.9)!important;-ms-box-shadow:0 0 50px rgba(0,0,0,0.9)!important;box-shadow:0 0 50px rgba(0,0,0,0.9)!important}
 .formgenrl input.mat-input-element,.formgenrl textarea.mat-input-element{outline:none;font-size:1em;color:#000;padding:.6em;margin:0;width:96%;border:none;-webkit-appearance:none;display:block;background:#fff;-webkit-border-radius:2px;-moz-border-radius:2px;-o-border-radius:2px;-ms-border-radius:2px;border-radius:2px;background:#fff;padding:10px;color:#333}
@@ -175,6 +166,12 @@ a{cursor:pointer;outline:none}
 .servicewrapper.servicewrapperinner{padding:50px 20px!important}
 .servicewrappercontent.servicewrappercontentinner{background-color:#f3f3f3;padding:50px 16px}
 .servicewrappercontent.servicewrappercontentinner .mat-list{margin-top:0!important}
+
+
+.contact-form .from h2 {display: none;}
+.contactusinfoblock .from {margin-top: 0!important;}
+.contact-form .main-div .from.mat-card{margin:4em auto!important;width:85%!important;padding-left:40%!important}
+.contact-form .main-div .from.mat-card:hover{-o-box-shadow:0 0 50px rgba(0,0,0,0.2)!important;-ms-box-shadow:0 0 50px rgba(0,0,0,0.2)!important;box-shadow:0 0 50px rgba(0,0,0,0.2)!important}
 
 
 /* .demo-one .modelmodelthumbimg1 {
@@ -336,6 +333,7 @@ width: 100%;
 .testimonialwrappercontent .btngeneral{text-align:center;margin:30px auto;display:block;position:relative;z-index:9}
 .singleservice .mat-list-item-content{padding:0!important;justify-content:center;width:100%}
 .testimonialwrappercontent .carousel{z-index:99} */
+
 .testimonialwrapper.testimonialwrapperinner{padding:50px 20px!important}
 .testimonialwrappercontent.testimonialwrappercontentinner{background-color:#f3f3f3;padding:50px 16px}
 .testimonialwrappercontent.testimonialwrappercontentinner .mat-list{margin-top:0!important}

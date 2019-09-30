@@ -128,6 +128,10 @@
   white-space: normal;
 }
   
+.testimonialbg.mat-card{background:url(../../../../assets/images/contactusbg.jpg) no-repeat center center !important;}
+
+
+
   @media only screen and  (max-width: 960px) {
     .toggle-box {
       width: 100%;

@@ -131,6 +131,10 @@
 
 
 
+.blogbg.mat-card{background:url(../../../../assets/images/contactusbg.jpg) no-repeat center center !important;}
+
+
+
 
 @media screen and (max-width: 1240px){
   .container { width: 1080px; }
