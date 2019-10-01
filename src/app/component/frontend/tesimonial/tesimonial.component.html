@@ -1,5 +1,5 @@
 <app-header></app-header>
-<mat-card class="innerpagebanner contactusbg">
+<mat-card class="innerpagebanner testimonialbg">
   <span class="mainwrappercontent">
     <mat-card-content>
       <h1>Testimonial</h1>
@@ -14,94 +14,49 @@
   </span>
 </mat-card>
 
-
-<!-- <mat-card class="testimonialwrapper generalcls">
-
-  <span class="maincontainer testimonialwrappercontent">
-
-
-    <div class="modelthumbimgwrapper">
-      <div class="modelthumbimgouterwrapper">
-        <div class="modelthumbimgouter">
-
-          <drag-scroll #imgsmall>
-            <div class="modelthumbimginnerwarpper" *ngFor="let testmon of TestimonialListArray">
-              <span>
-                <div class="testimonialwrapper">
-
-                  <span class="modelmodelthumbimg1">
-                    <img (click)="imgClick(testmon)" drag-scroll-item class="demo cursor" src="{{testmon.image}}"
-                      alt="modelmodelthumbimg1"></span>
-                </div>
-                <div class="testimonialcontent">
-                  <mat-card-title drag-scroll-item class="demo cursor">{{testmon.name}}</mat-card-title>
-                  <mat-card-title drag-scroll-item class="title1 demo cursor">{{testmon.name}}</mat-card-title>
-                  <mat-card-title drag-scroll-item class="title2 demo cursor">{{testmon.designation}}</mat-card-title>
-                  <mat-card-title drag-scroll-item class="title3 demo cursor">{{testmon.address}}</mat-card-title>
-                  <mat-card-content drag-scroll-item class="quatation demo cursor">{{testmon.quatation}}
-                  </mat-card-content>
-                </div>
-              </span>
+<mat-card class="ptb-35 generalcls testimonial">     
+  <span class="mainwrappercontent">
+    <div class="demo-border" [matBadge]="index">
+        <drag-scroll class="demo-one"
+          drag-scroll-y-disabled="true"
+          scrollbar-hidden="true"
+          (dsInitialized)="onDragScrollInitialized()"
+          (indexChanged)="onIndexChanged($event)"
+          (reachesLeftBound)="leftBoundStat($event)"
+          (reachesRightBound)="rightBoundStat($event)"
+          (snapAnimationFinished)="onSnapAnimationFinished()"
+          (dragStart)="onDragStart()"
+          (dragEnd)="onDragEnd()"
+          #nav
+          >
+          <div class="modelthumbwrapper" [ngClass]="i === index ? 'active': ''" drag-scroll-item *ngFor="let testmon of TestimonialListArray; let i = index">
+            <div class="modelmodelthumbimg1">
+                <img [src]="testmon.image" (click)="clickItem(testmon)"/>
             </div>
-          </drag-scroll>
-          <a class="prev" (click)="moveLeft()">prev &#10094;</a>
-          <a class="next" (click)="moveRight()">next &#10095;</a>
+            
+            <div class="testimonialcontent">
+                <mat-card-title drag-scroll-item class="demo cursor">{{testmon.name}}</mat-card-title>
+                <mat-card-title drag-scroll-item class="title1 demo cursor">{{testmon.name}}</mat-card-title>
+                <mat-card-title drag-scroll-item class="title2 demo cursor">{{testmon.designation}}</mat-card-title>
+                <mat-card-title drag-scroll-item class="title3 demo cursor">{{testmon.address}}</mat-card-title>
+                <mat-card-content drag-scroll-item class="quatation demo cursor">{{testmon.quatation}}
+                </mat-card-content>
+              </div>
+          </div>
+          
+        </drag-scroll>
+
+
+        <div fxLayout="row" fxLayoutGap="5px" fxLayoutAlign="center center">
+          <button mat-raised-button color="primary"  (click)="moveTo(0)">first</button>
+          <button mat-raised-button color="primary"  [disabled]="leftNavDisabled" (click)="moveLeft1()">left</button>
+          <button mat-raised-button color="primary"  [disabled]="rightNavDisabled" (click)="moveRight1()">right</button>
+          <button mat-raised-button color="primary"  (click)="moveTo(TestimonialListArray.length - 1)">last</button>
         </div>
-      </div>
     </div>
-
-
-
-
     <button mat-stroked-button class="btngeneral btngray" (click)="btnClick();">View More</button>
   </span>
-
-
-
-
-</mat-card> -->
-
-
-
-
-
-<div class="demo-border" [matBadge]="index">
-  <drag-scroll class="demo-one"
-    drag-scroll-y-disabled="true"
-    scrollbar-hidden="true"
-    (dsInitialized)="onDragScrollInitialized()"
-    (indexChanged)="onIndexChanged($event)"
-    (reachesLeftBound)="leftBoundStat($event)"
-    (reachesRightBound)="rightBoundStat($event)"
-    (snapAnimationFinished)="onSnapAnimationFinished()"
-    (dragStart)="onDragStart()"
-    (dragEnd)="onDragEnd()"
-    #nav
-    >
-    <div class="modelthumbwrapper" [ngClass]="i === index ? 'active': ''" drag-scroll-item *ngFor="let testmon of TestimonialListArray; let i = index">
-      <div class="modelmodelthumbimg1">
-          <img [src]="testmon.image" (click)="clickItem(testmon)"/>
-      </div>
-      
-      <div class="testimonialcontent">
-          <mat-card-title drag-scroll-item class="demo cursor">{{testmon.name}}</mat-card-title>
-          <mat-card-title drag-scroll-item class="title1 demo cursor">{{testmon.name}}</mat-card-title>
-          <mat-card-title drag-scroll-item class="title2 demo cursor">{{testmon.designation}}</mat-card-title>
-          <mat-card-title drag-scroll-item class="title3 demo cursor">{{testmon.address}}</mat-card-title>
-          <mat-card-content drag-scroll-item class="quatation demo cursor">{{testmon.quatation}}
-          </mat-card-content>
-        </div>
-    </div>
-    
-  </drag-scroll>
-
-
-  <div fxLayout="row" fxLayoutGap="5px" fxLayoutAlign="center center">
-    <button mat-raised-button color="primary"  (click)="moveTo(0)">first</button>
-    <button mat-raised-button color="primary"  [disabled]="leftNavDisabled" (click)="moveLeft1()">left</button>
-    <button mat-raised-button color="primary"  [disabled]="rightNavDisabled" (click)="moveRight1()">right</button>
-    <button mat-raised-button color="primary"  (click)="moveTo(TestimonialListArray.length - 1)">last</button>
-  </div>
+</mat-card>
 
 
   <button mat-stroked-button class="btngeneral btngray" (click)="btnClick();">View More</button>

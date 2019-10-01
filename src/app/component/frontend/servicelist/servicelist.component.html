@@ -1,5 +1,5 @@
 <app-header></app-header>
-<mat-card class="innerpagebanner contactusbg">
+<mat-card class="innerpagebanner servicebg">
     <span class="mainwrappercontent">
         <mat-card-content>
             <h1>service lists</h1>
@@ -14,6 +14,36 @@
         </span>
 </mat-card>
 
+
+
+<mat-card class="ptb-35 generalcls servicewrapper">     
+    <span class="mainwrappercontent">
+      <mat-card-title>Look Our Best Services</mat-card-title>
+      <mat-card-content class="titlesmldesc">Here you can learn more about each service we provide, and select which one fits you. After you selected the service, feel free to contact us for further details.</mat-card-content>
+    </span>
+    <span class="servicewrappertransparentbg"></span>
+</mat-card>
+
+<mat-card class="ptb-35 generalcls servicewrappercontent">
+    <button (click)="btnBackClick()" mat-stroked-button class="btngeneral btngray">Back To Main</button>
+    <span class="mainwrappercontent">
+      <mat-list role="list">          
+                <mat-list-item role="listitem" class="singleservice" *ngFor="let srv of ServiceListArray | slice:0:indexval; let i=index">
+                    <mat-card>
+                      <img src="{{srv.image}}" class="iconcls">
+                      <mat-card-title>{{srv.name}}</mat-card-title>
+                      <mat-card-content>{{srv.description}}</mat-card-content>
+                    </mat-card>
+                </mat-list-item>
+          
+      </mat-list>
+      <button *ngIf="indexvallength > indexval" (click)="showMoreFunc()" mat-stroked-button class="btngeneral btngray">Show more</button>
+    </span>
+  </mat-card>
+
+
+
+<!-- 
 <mat-card class="servicewrapper gencls servicewrapperinner">
   <span class="maincontainer">
       <mat-card-title>Look Our Best Services</mat-card-title>
@@ -36,6 +66,6 @@
     </mat-list>
     <button *ngIf="indexvallength > indexval" (click)="showMoreFunc()" mat-stroked-button class="btngeneral btngray">Show more</button>
   </span>
-</mat-card>
+</mat-card> -->
 
 <app-footer></app-footer>
