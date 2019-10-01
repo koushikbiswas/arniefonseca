@@ -9,30 +9,37 @@
        <span class="footertopwrapper footernavlist">
             <mat-nav-list>
               <span class="menuwrapper">
-                  <mat-list-item fxFlex routerLinkActive="activemenu">
-                      <a [routerLink]="['/home']">Home</a>
-                    </mat-list-item>
-                    <mat-list-item fxFlex routerLinkActive="activemenu">
-                      <a [routerLink]="['/pre-owned']">Pre-owned</a>
-                    </mat-list-item>
-                    <mat-list-item fxFlex routerLinkActive="activemenu">
-                      <a [routerLink]="['/new']">New</a>
-                    </mat-list-item>
-                    <mat-list-item fxFlex routerLinkActive="activemenu">
-                      <a [routerLink]="['/limited-time-specials']">Limited Time Specials</a>
-                    </mat-list-item>
-                    <mat-list-item fxFlex routerLinkActive="activemenu">
-                      <a [routerLink]="['/visit-our-store']">Visit Our Store</a>
-                    </mat-list-item>
-                    <mat-list-item fxFlex routerLinkActive="activemenu">
-                      <a [routerLink]="['/join-probid ']">Join Probid</a>
-                    </mat-list-item>
-                    <mat-list-item fxFlex routerLinkActive="activemenu">
-                      <a [routerLink]="['/social-advo']">Social Advo</a>
-                    </mat-list-item>
-                    <mat-list-item fxFlex routerLinkActive="activemenu">
-                      <a [routerLink]="['/contactus']">Contact Us</a>
-                    </mat-list-item>
+                <mat-list-item fxFlex routerLinkActive="activemenu">
+                  <a [routerLink]="['/home']">Home</a>
+                </mat-list-item>
+                <mat-list-item fxFlex routerLinkActive="activemenu">
+                  <a [routerLink]="['/pre-owned']">Pre-Owned</a>
+                </mat-list-item>
+                <mat-list-item fxFlex routerLinkActive="activemenu">
+                  <a [matMenuTriggerFor]="menu">Inventory Search</a>
+                </mat-list-item>
+                <mat-list-item fxFlex routerLinkActive="activemenu">
+                  <a [matMenuTriggerFor]="menu">Join Probid</a>
+                  <mat-menu #menu="matMenu" class="activedropmenu">
+                    <a mat-menu-item routerLinkActive="activemenu">Sign up as Sales Rep</a>
+                    <a mat-menu-item routerLinkActive="activemenu">Sign up as Customer</a>
+                  </mat-menu>
+                </mat-list-item>
+                <mat-list-item fxFlex routerLinkActive="activemenu">
+                  <a [routerLink]="['/about-us']">About Us</a>
+                </mat-list-item>
+                <mat-list-item fxFlex routerLinkActive="activemenu">
+                  <a [routerLink]="['/service']">Service</a>
+                </mat-list-item>
+                <mat-list-item fxFlex routerLinkActive="activemenu">
+                  <a [routerLink]="['/testimonial']">Testimonials</a>
+                </mat-list-item>
+                <mat-list-item fxFlex routerLinkActive="activemenu">
+                  <a [routerLink]="['/blog']">Blog</a>
+                </mat-list-item>
+                <mat-list-item fxFlex routerLinkActive="activemenu">
+                  <a [routerLink]="['/contactus']">Contact Us</a>
+                </mat-list-item>
               </span>
           </mat-nav-list>
           <p>© 2019 ProBidAuto. All Rights Reserved</p>
