@@ -28,7 +28,7 @@
   .topsocialblock .mat-list{display:inline-flex;justify-content:center!important}
   .headerbottom .mainwrappercontent{width:100%!important}
   
-  .contact-form .main-div .from.mat-card{margin:4em auto!important;width:90%!important;padding:0px 15px!important}
+  .contact-form .main-div .from.mat-card{margin:4em auto!important;width:90%!important;padding:15px!important}
   }
   @media only screen and (max-width:991px) {
   .mat-icon-button{display:block!important}
