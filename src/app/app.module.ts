@@ -42,6 +42,11 @@ import { BlogComponent } from './component/frontend/blog/blog.component';
 import { BloglistComponent } from './component/frontend/bloglist/bloglist.component';
 import { BlogdetailComponent } from './component/frontend/blogdetail/blogdetail.component';
 
+import { AdvanceInventorySearchComponent } from './component/frontend/advance-inventory-search/advance-inventory-search.component';
+import { BasicInventorySearchComponent } from './component/frontend/basic-inventory-search/basic-inventory-search.component';
+
+import { PreOwnedComponent } from './component/frontend/pre-owned/pre-owned.component';
+import { AboutusComponent } from './component/frontend/aboutus/aboutus.component';
 /**End Frontend Component**/
 
 
@@ -91,7 +96,11 @@ import { ContactUsDashboardComponent } from './component/backend/contact-us-dash
     BloglistComponent,
     BlogdetailComponent,
     UserManagementComponent,
-    ContactUsDashboardComponent  
+    ContactUsDashboardComponent,
+    BasicInventorySearchComponent,
+    AdvanceInventorySearchComponent,
+    PreOwnedComponent,
+    AboutusComponent  
   ],
   imports: [
     DragScrollModule,
