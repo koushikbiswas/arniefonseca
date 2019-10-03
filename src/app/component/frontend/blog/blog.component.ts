@@ -55,36 +55,36 @@ export class BlogComponent implements OnInit {
 
 
   ngOnInit() {
-    var slides = document.querySelectorAll('#custom_slider_by_subrata .subrata');
-    var currentSlide = 0;
-    var slideInterval = setInterval(nextSlide, 3000);
+    // var slides = document.querySelectorAll('#custom_slider_by_subrata .subrata');
+    // var currentSlide = 0;
+    // var slideInterval = setInterval(nextSlide, 3000);
 
-    var next: HTMLElement = document.querySelectorAll('#next')[0] as HTMLElement;
-    var previous: HTMLElement = document.querySelectorAll('#previous')[0] as HTMLElement;
+    // var next: HTMLElement = document.querySelectorAll('#next')[0] as HTMLElement;
+    // var previous: HTMLElement = document.querySelectorAll('#previous')[0] as HTMLElement;
 
 
-    next.onclick = function () {
+    // next.onclick = function () {
 
-      nextSlide();
-    };
-    previous.onclick = function () {
+    //   nextSlide();
+    // };
+    // previous.onclick = function () {
 
-      previousSlide();
-    };
+    //   previousSlide();
+    // };
 
-    function nextSlide() {
-      goToSlide(currentSlide + 1);
-    }
+    // function nextSlide() {
+    //   goToSlide(currentSlide + 1);
+    // }
 
-    function previousSlide() {
-      goToSlide(currentSlide - 1);
-    }
+    // function previousSlide() {
+    //   goToSlide(currentSlide - 1);
+    // }
 
-    function goToSlide(n) {
-      slides[currentSlide].className = 'subrata';
-      currentSlide = (n + slides.length) % slides.length;
-      slides[currentSlide].className = 'subrata showing';
-    }
+    // function goToSlide(n) {
+    //   slides[currentSlide].className = 'subrata';
+    //   currentSlide = (n + slides.length) % slides.length;
+    //   slides[currentSlide].className = 'subrata showing';
+    // }
 
 
     // get youtube video id
