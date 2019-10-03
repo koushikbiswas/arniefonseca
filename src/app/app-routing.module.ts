@@ -11,6 +11,15 @@ import { ContactusComponent } from './component/frontend/contactus/contactus.com
 import { ForgetPasswordComponent } from './component/frontend/forget-password/forget-password.component';
 import { ResetPasswordComponent } from './component/frontend/reset-password/reset-password.component';
 import { SignUpComponent } from './component/frontend/sign-up/sign-up.component';
+import { TesimonialComponent } from './component/frontend/tesimonial/tesimonial.component';
+import { TesimoniallistComponent } from './component/frontend/tesimoniallist/tesimoniallist.component';
+import { ServiceComponent } from './component/frontend/service/service.component';
+import { ServicelistComponent } from './component/frontend/servicelist/servicelist.component';
+import { BlogComponent } from './component/frontend/blog/blog.component';
+import { BloglistComponent } from './component/frontend/bloglist/bloglist.component';
+import { BlogdetailComponent } from './component/frontend/blogdetail/blogdetail.component';
+import { AdvanceInventorySearchComponent } from './component/frontend/advance-inventory-search/advance-inventory-search.component';
+import { BasicInventorySearchComponent } from './component/frontend/basic-inventory-search/basic-inventory-search.component';
 /**End Frontend Routing**/
 
 /**Backend Routing**/
@@ -23,16 +32,9 @@ import { AddeditServiceComponent } from './component/backend/ServiceApp/addedit-
 import { ListingServiceComponent } from './component/backend/ServiceApp/listing-service/listing-service.component';
 import { ListingTestimonialComponent } from './component/backend/TestimonialApp/listing-testimonial/listing-testimonial.component';
 import { AddeditTestimonialComponent } from './component/backend/TestimonialApp/addedit-testimonial/addedit-testimonial.component';
-import { ResolveService } from './resolve.service';
-import { TesimonialComponent } from './component/frontend/tesimonial/tesimonial.component';
-import { TesimoniallistComponent } from './component/frontend/tesimoniallist/tesimoniallist.component';
-import { ServiceComponent } from './component/frontend/service/service.component';
-import { ServicelistComponent } from './component/frontend/servicelist/servicelist.component';
-import { BlogComponent } from './component/frontend/blog/blog.component';
-import { BloglistComponent } from './component/frontend/bloglist/bloglist.component';
-import { BlogdetailComponent } from './component/frontend/blogdetail/blogdetail.component';
 import { UserManagementComponent } from './component/backend/user-management/user-management.component';
 import { ContactUsDashboardComponent } from './component/backend/contact-us-dashboard/contact-us-dashboard.component';
+import { ResolveService } from './resolve.service';
 /**End Backend Routing**/
 
 const routes: Routes = [
@@ -78,6 +80,8 @@ const routes: Routes = [
 {path: 'blog', component:BlogComponent},
 {path: 'bloglist', component:BloglistComponent},
 {path: 'blogdetail', component:BlogdetailComponent},
+{path: 'advance-inventory-search', component:AdvanceInventorySearchComponent},
+{path: 'basic-inventory-search', component:BasicInventorySearchComponent},
 
 /**End Frontend Routing**/
 

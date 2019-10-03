@@ -4,6 +4,7 @@
     cursor: pointer;
     background-color: #131414;
     padding: 0px 10px;
+    border: none !important;
   }
   
 .infoblock .mat-list .mat-list-item {
