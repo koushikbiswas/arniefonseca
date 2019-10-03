@@ -55,6 +55,12 @@ export class BlogComponent implements OnInit {
 
 
   ngOnInit() {
+
+
+
+
+
+    
     // var slides = document.querySelectorAll('#custom_slider_by_subrata .subrata');
     // var currentSlide = 0;
     // var slideInterval = setInterval(nextSlide, 3000);

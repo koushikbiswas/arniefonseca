@@ -75,7 +75,7 @@ const routes: Routes = [
     resolve: { serviceListData: ResolveService },
     data: { requestcondition: { source: 'service', condition: {} }, endpoint: 'datalist'}
 },
-{path: 'blog', component:BlogComponent},
+{path: 'blog', component:BlogComponent, resolve: {serviceListData: ResolveService}, data: { requestcondition: { source: 'blogs', condition: {} }, endpoint: 'datalist'}},
 {path: 'bloglist', component:BloglistComponent},
 {path: 'blogdetail', component:BlogdetailComponent},
 
