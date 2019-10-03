@@ -4,8 +4,6 @@ import { LoginComponent } from './component/frontend/login/login.component';
 import { AuthGuard } from './auth.guard';
 
 /**Frontend Routing**/
-import { HeaderComponent } from './layout/header/header.component';
-import { FooterComponent } from './layout/footer/footer.component';
 import { HomeComponent } from './component/frontend/home/home.component';
 import { ContactusComponent } from './component/frontend/contactus/contactus.component';
 import { ForgetPasswordComponent } from './component/frontend/forget-password/forget-password.component';
@@ -20,12 +18,12 @@ import { BloglistComponent } from './component/frontend/bloglist/bloglist.compon
 import { BlogdetailComponent } from './component/frontend/blogdetail/blogdetail.component';
 import { AdvanceInventorySearchComponent } from './component/frontend/advance-inventory-search/advance-inventory-search.component';
 import { BasicInventorySearchComponent } from './component/frontend/basic-inventory-search/basic-inventory-search.component';
+import { PreOwnedComponent } from './component/frontend/pre-owned/pre-owned.component';
+import { AboutusComponent } from './component/frontend/aboutus/aboutus.component';
 /**End Frontend Routing**/
 
 /**Backend Routing**/
 import { DashboardComponent } from './component/backend/dashboard/dashboard.component';
-import { BkHeaderComponent } from './layout/bk-header/bk-header.component';
-import { BkFooterComponent } from './layout/bk-footer/bk-footer.component';
 import { BkLeftdivComponent } from './layout/bk-leftdiv/bk-leftdiv.component';
 import { MaindashboardComponent } from './component/backend/maindashboard/maindashboard.component';
 import { AddeditServiceComponent } from './component/backend/ServiceApp/addedit-service/addedit-service.component';
@@ -44,8 +42,6 @@ const routes: Routes = [
 {path: 'forget-password', component:ForgetPasswordComponent},
 {path: 'reset-password', component:ResetPasswordComponent},
 {path: 'sign-up', component:SignUpComponent},
-{path: 'header', component:HeaderComponent},
-{path: 'footer', component:FooterComponent},
 {path: 'home', component:HomeComponent}, 
 {path: 'contactus', component:ContactusComponent},
 {
@@ -82,15 +78,17 @@ const routes: Routes = [
 {path: 'blogdetail', component:BlogdetailComponent},
 {path: 'advance-inventory-search', component:AdvanceInventorySearchComponent},
 {path: 'basic-inventory-search', component:BasicInventorySearchComponent},
+{path: 'pre-owned', component:PreOwnedComponent},
+{path: 'aboutus', component:AboutusComponent},
 
 /**End Frontend Routing**/
 
   /**Backend Routing**/
-  {path: 'dashboard', component:DashboardComponent, canActivate:[AuthGuard]},       // Useing for canActive
-  {path: 'bk-header', component:BkHeaderComponent},
-  {path: 'bk-footer', component:BkFooterComponent},
-  {path: 'bk-leftdiv', component:BkLeftdivComponent},
+  {path: 'admindashboard', component:DashboardComponent, canActivate:[AuthGuard]},       // Useing for canActive
   {path: 'maindashboard', component:MaindashboardComponent},
+
+  {path: 'bk-leftdiv', component:BkLeftdivComponent},
+
   {path: 'testimonial/add', component:AddeditTestimonialComponent},
   {path: 'testimonial/edit/:_id', component:AddeditTestimonialComponent, resolve: { testimonialData: ResolveService },
   data: { requestcondition: { source: 'testimonial', condition: {} }, endpoint: 'datalist'}},
@@ -108,7 +106,6 @@ const routes: Routes = [
 
   { path:'contact-us-dashboard', component:ContactUsDashboardComponent,  resolve: { serviceList: ResolveService },
   data: { requestcondition: { source: 'contactusForm', condition: {} }, endpoint: 'datalist'}},
-
   
   /**End Backend Routing**/
 
