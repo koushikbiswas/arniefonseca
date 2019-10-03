@@ -45,7 +45,7 @@ const routes: Routes = [
 {path: 'home', component:HomeComponent}, 
 {path: 'contactus', component:ContactusComponent},
 {
-  path: "testimonial",
+  path: "testimonialhome",
   component: TesimonialComponent,
   resolve: { testimonialListData: ResolveService },
   data: {
@@ -55,7 +55,7 @@ const routes: Routes = [
 },
 
 {
-  path: "testimoniallist",
+  path: "testimonial",
   component: TesimoniallistComponent,
   resolve: { testimonialListData: ResolveService },
   data: {
@@ -63,18 +63,18 @@ const routes: Routes = [
     endpoint: "datalist"
   }
 },
-{path:'service',
+{path:'servicehome',
     component: ServiceComponent,
     resolve: { serviceListData: ResolveService },
     data: { requestcondition: { source: 'service', condition: {} }, endpoint: 'datalist'}
 },
-{path:'servicelist',
+{path:'service',
     component: ServicelistComponent,
     resolve: { serviceListData: ResolveService },
     data: { requestcondition: { source: 'service', condition: {} }, endpoint: 'datalist'}
 },
-{path: 'blog', component:BlogComponent, resolve: {serviceListData: ResolveService}, data: { requestcondition: { source: 'blogs', condition: {} }, endpoint: 'datalist'}},
-{path: 'bloglist', component:BloglistComponent},
+{path: 'bloghome', component:BlogComponent, resolve: {serviceListData: ResolveService}, data: { requestcondition: { source: 'blogs', condition: {} }, endpoint: 'datalist'}},
+{path: 'blog', component:BloglistComponent},
 {path: 'blogdetail', component:BlogdetailComponent},
 {path: 'advance-inventory-search', component:AdvanceInventorySearchComponent},
 {path: 'basic-inventory-search', component:BasicInventorySearchComponent},

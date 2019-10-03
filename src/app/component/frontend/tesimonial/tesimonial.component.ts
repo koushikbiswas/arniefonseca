@@ -33,9 +33,9 @@ export class TesimonialComponent implements OnInit {
 
   ngOnInit() {
     this.activatedRoute.data.forEach(data => {
-      console.log(data);
+      // console.log(data);
       let result: any;
-      result = data.testimonialListData.res;
+      // result = data.testimonialListData.res;
       this.TestimonialListArray = result;
 
     })
@@ -43,11 +43,11 @@ export class TesimonialComponent implements OnInit {
 
   moveLeft() {
     this.imgsmall.moveLeft();
-    console.log(this.imgsmall);
+    // console.log(this.imgsmall);
     let imgsmallval: any;
     imgsmallval = this.imgsmall;
     this.index_number = JSON.parse(imgsmallval._index)
-    console.log(this.index_number)
+    // console.log(this.index_number)
     // this.mainImg = this.imgsmall._index;
   }
 
@@ -56,15 +56,15 @@ export class TesimonialComponent implements OnInit {
     let imgsmallval: any;
     imgsmallval = this.imgsmall;
     this.index_number = JSON.parse(imgsmallval._index)
-    console.log(this.index_number)
+    // console.log(this.index_number)
   }
 
 
   imgClick(val: any) {
-    console.log(val)
+    // console.log(val)
   }
   btnClick() {
-    this.router.navigateByUrl('/testimoniallist');
+    this.router.navigateByUrl('/testimonial');
   };
 
 
