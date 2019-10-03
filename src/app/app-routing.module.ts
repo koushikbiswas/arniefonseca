@@ -25,6 +25,7 @@ import { AboutusComponent } from './component/frontend/aboutus/aboutus.component
 /**Backend Routing**/
 import { DashboardComponent } from './component/backend/dashboard/dashboard.component';
 import { BkLeftdivComponent } from './layout/bk-leftdiv/bk-leftdiv.component';
+
 import { MaindashboardComponent } from './component/backend/maindashboard/maindashboard.component';
 import { AddeditServiceComponent } from './component/backend/ServiceApp/addedit-service/addedit-service.component';
 import { ListingServiceComponent } from './component/backend/ServiceApp/listing-service/listing-service.component';
@@ -32,6 +33,9 @@ import { ListingTestimonialComponent } from './component/backend/TestimonialApp/
 import { AddeditTestimonialComponent } from './component/backend/TestimonialApp/addedit-testimonial/addedit-testimonial.component';
 import { UserManagementComponent } from './component/backend/user-management/user-management.component';
 import { ContactUsDashboardComponent } from './component/backend/contact-us-dashboard/contact-us-dashboard.component';
+
+import { RepdashboardComponent } from './component/backend/repdashboard/repdashboard.component';
+
 import { ResolveService } from './resolve.service';
 /**End Backend Routing**/
 
@@ -84,8 +88,8 @@ const routes: Routes = [
 /**End Frontend Routing**/
 
   /**Backend Routing**/
-  {path: 'admindashboard', component:DashboardComponent, canActivate:[AuthGuard]},       // Useing for canActive
-  {path: 'maindashboard', component:MaindashboardComponent},
+  {path: 'customerdashboard', component:DashboardComponent, canActivate:[AuthGuard]},       // Useing for canActive
+  {path: 'admindashboard', component:MaindashboardComponent},
 
   {path: 'bk-leftdiv', component:BkLeftdivComponent},
 
@@ -107,6 +111,9 @@ const routes: Routes = [
   { path:'contact-us-dashboard', component:ContactUsDashboardComponent,  resolve: { serviceList: ResolveService },
   data: { requestcondition: { source: 'contactusForm', condition: {} }, endpoint: 'datalist'}},
   
+  /**************** Rep Management *****************/
+  {path: 'repdashboard', component:RepdashboardComponent},
+
   /**End Backend Routing**/
 
 

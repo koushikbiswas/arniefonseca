@@ -1,14 +1,4 @@
-<!-- <button mat-menu-item class="active"> <span>&nbsp;</span> <label>Home</label> </button>
-<button mat-menu-item> <span>&nbsp;</span> <label>Customers</label> </button>
-<button mat-menu-item> <span>&nbsp;</span> <label>Inventory</label> </button>
-<button mat-menu-item> <span>&nbsp;</span> <label>Communication</label> </button>
-<button mat-menu-item> <span>&nbsp;</span> <label>Social Advo</label> </button>
-<button mat-menu-item> <span>&nbsp;</span> <label>Manager’s Calendar</label> </button>
-<hr> -->
-
-
 <mat-sidenav #leftSidenav mode="side" class="leftSidenav" [fixedInViewport]="true" [fixedTopGap]="80">
-
 
     <mat-list class="navigation-left">
         <mat-list-item class="nav-item active" (click)="open(1)">
@@ -54,8 +44,6 @@
             <div class="triangle"></div>
         </mat-list-item>
     </mat-list>
-
-    
 
     <div class="sidebar-left-secondary">
         <mat-list class="childNav" *ngIf = "status==1">            
