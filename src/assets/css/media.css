@@ -3,6 +3,7 @@
   .mainwrappercontent{width:96%}
   .homemain .mat-nav-list{width:96%;align-items:center}
   .generalcls .mat-card-title{font-size:32px!important;line-height:36px!important}
+  .singleservice .mat-card-title {font-size: 18px !important;line-height:normal!important}
   .generalcls p{font-size:16px;line-height:24px}
   }
   @media only screen and (max-width: 1199px) {

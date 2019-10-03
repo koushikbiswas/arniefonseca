@@ -32,7 +32,7 @@ import { ListingServiceComponent } from './component/backend/ServiceApp/listing-
 import { ListingTestimonialComponent } from './component/backend/TestimonialApp/listing-testimonial/listing-testimonial.component';
 import { AddeditTestimonialComponent } from './component/backend/TestimonialApp/addedit-testimonial/addedit-testimonial.component';
 import { UserManagementComponent } from './component/backend/user-management/user-management.component';
-import { ContactUsDashboardComponent } from './component/backend/contact-us-dashboard/contact-us-dashboard.component';
+// import { ContactUsDashboardComponent } from './component/backend/contact-us-dashboard/contact-us-dashboard.component';
 
 import { RepdashboardComponent } from './component/backend/repdashboard/repdashboard.component';
 
@@ -108,8 +108,8 @@ const routes: Routes = [
   { path:'user-management', component:UserManagementComponent,  resolve: { serviceList: ResolveService },
   data: { requestcondition: { source: 'user', condition: {} }, endpoint: 'datalist'}},
 
-  { path:'contact-us-dashboard', component:ContactUsDashboardComponent,  resolve: { serviceList: ResolveService },
-  data: { requestcondition: { source: 'contactusForm', condition: {} }, endpoint: 'datalist'}},
+  // { path:'contact-us-dashboard', component:ContactUsDashboardComponent,  resolve: { serviceList: ResolveService },
+  // data: { requestcondition: { source: 'contactusForm', condition: {} }, endpoint: 'datalist'}},
   
   /**************** Rep Management *****************/
   {path: 'rep-dashboard', component:RepdashboardComponent},

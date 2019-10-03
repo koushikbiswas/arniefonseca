@@ -65,7 +65,6 @@ import { ServicelibModule } from 'servicelib';
 import { BkLeftdivComponent } from './layout/bk-leftdiv/bk-leftdiv.component';
 import { MaindashboardComponent } from './component/backend/maindashboard/maindashboard.component';
 import { UserManagementComponent } from './component/backend/user-management/user-management.component';
-import { ContactUsDashboardComponent } from './component/backend/contact-us-dashboard/contact-us-dashboard.component';
 import { RepdashboardComponent } from './component/backend/repdashboard/repdashboard.component';
 /**End Backend Component** */
 
@@ -97,7 +96,6 @@ import { RepdashboardComponent } from './component/backend/repdashboard/repdashb
     BloglistComponent,
     BlogdetailComponent,
     UserManagementComponent,
-    ContactUsDashboardComponent,
     BasicInventorySearchComponent,
     AdvanceInventorySearchComponent,
     PreOwnedComponent,
