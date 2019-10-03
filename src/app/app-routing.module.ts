@@ -88,8 +88,8 @@ const routes: Routes = [
 /**End Frontend Routing**/
 
   /**Backend Routing**/
-  {path: 'customerdashboard', component:DashboardComponent, canActivate:[AuthGuard]},       // Useing for canActive
-  {path: 'admindashboard', component:MaindashboardComponent},
+  {path: 'customer-dashboard', component:DashboardComponent, canActivate:[AuthGuard]},       // Useing for canActive
+  {path: 'admin-dashboard', component:MaindashboardComponent},
 
   {path: 'bk-leftdiv', component:BkLeftdivComponent},
 
@@ -112,7 +112,7 @@ const routes: Routes = [
   data: { requestcondition: { source: 'contactusForm', condition: {} }, endpoint: 'datalist'}},
   
   /**************** Rep Management *****************/
-  {path: 'repdashboard', component:RepdashboardComponent},
+  {path: 'rep-dashboard', component:RepdashboardComponent},
 
   /**End Backend Routing**/
 

@@ -14,8 +14,13 @@ export class BkHeaderComponent implements OnInit {
   public userCookies: any;
   public user_full_name: any = '';
      
-      
-  constructor(public cookieService: CookieService, private sidenav: SidenavService, public dialog: MatDialog) {}
+  public user_data: any;
+  constructor(public cookieService: CookieService, private sidenav: SidenavService, public dialog: MatDialog) {
+
+    this.user_data = JSON.parse(this.cookieService.get('user_details'));
+    // console.log(this.user_data);
+
+  }
   toggleActive:boolean = false;
   toggleRightSidenav() {
     this.toggleActive = !this.toggleActive;

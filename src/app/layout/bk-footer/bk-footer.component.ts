@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CookieService } from 'ngx-cookie-service';
 
 @Component({
   selector: 'app-bk-footer',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BkFooterComponent implements OnInit {
 
-  constructor() { }
+  public user_data: any;
+  constructor(public cookieService: CookieService) {
+    this.user_data = JSON.parse(this.cookieService.get('user_details'))
+    // console.log(this.user_data)
+   }
 
   ngOnInit() {
   }

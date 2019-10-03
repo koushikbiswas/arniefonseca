@@ -350,8 +350,8 @@ width: 100%;
 .title1{color:#000;font-size:16px;font-weight:600;line-height:24px;letter-spacing:1.92px;text-transform:uppercase}
 .title2{color:#999;font-size:16px;font-style:italic;line-height:24px;letter-spacing:1.28px}
 .title3{color:#1da1db;font-size:16px;line-height:24px;letter-spacing:.8px}
-.testimonial .mat-list .testimonialserv:nth-child(odd) .testiimgwarpper{float:right;padding:0 0 10px 20px}
-.testimonial .mat-list .testimonialserv:nth-child(even) .testibottomcontent{float:right}
+/* .testimonial .mat-list .testimonialserv:nth-child(odd) .testiimgwarpper{float:right;padding:0 0 10px 20px} */
+/* .testimonial .mat-list .testimonialserv:nth-child(even) .testibottomcontent{float:right} */
 .custom-module--bg-offwhite,.custom-module--bg-paleyellow,.custom-module--bg-skyblue{background-color:#f9f8f7}
 .testimonial.custom-module.testimonial--border{border-bottom:1px solid #d1d1d1}
 .testimonial.custom-module{padding:30px}

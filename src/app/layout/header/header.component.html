@@ -79,9 +79,6 @@
                               <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/advance-inventory-search']">Advance Inventory Search</a>
                             </mat-menu>
                           </mat-list-item>
-                        <!-- <mat-list-item fxFlex routerLinkActive="activemenu">
-                          <a [matMenuTriggerFor]="menu">Inventory Search</a>
-                        </mat-list-item> -->
                         <mat-list-item fxFlex routerLinkActive="activemenu">
                           <a [matMenuTriggerFor]="menu">Join Probid</a>
                           <mat-menu #menu="matMenu" class="activedropmenu">
@@ -104,13 +101,6 @@
                         <mat-list-item fxFlex routerLinkActive="activemenu">
                           <a [routerLink]="['/contactus']">Contact Us</a>
                         </mat-list-item>
-                        <!-- <mat-list-item fxFlex>
-                            <a [matMenuTriggerFor]="menu">Submenu</a>
-                            <mat-menu #menu="matMenu">
-                              <button mat-menu-item>Submenu 1</a>
-                              <button mat-menu-item>Submenu 2</a>
-                            </mat-menu>
-                          </mat-list-item> -->
                       </span>
                     </mat-nav-list>
                   </span>
@@ -136,7 +126,7 @@
 </ng-container>
 
 
-<ng-container class="adminheaderleftdiv" *ngIf="router.url ==='/service-listing' || router.url ==='/maindashboard' || router.url === '/contact-us-dashboard'">
+<ng-container class="adminheaderleftdiv" *ngIf="router.url ==='/service-listing' || router.url ==='/admin-dashboard' || router.url === '/contact-us-dashboard' || router.url === '/rep-dashboard'  || router.url === '/customer-dashboard'">
   <div class="admcls">
       <app-bk-header></app-bk-header>
       <app-bk-leftdiv></app-bk-leftdiv>

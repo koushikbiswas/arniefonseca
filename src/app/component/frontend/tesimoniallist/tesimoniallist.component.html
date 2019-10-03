@@ -16,13 +16,10 @@
 
 <mat-card class="ptb-35 generalcls testimonial" style="padding: 0 !important;">     
     <img src="../../../../assets/images/testimonial_blockimg1.jpg" style="width: 100%; display: block; margin: 0; padding: 0;">
-    <!-- <span class="mainwrappercontent">
-        <mat-card-title>What others say</mat-card-title>
-    </span>
-    <span class="testimonialwrappertransparentbg"></span> -->
-
-    <!-- <button (click)="btnBackClick()" mat-stroked-button class="btngeneral btngray">Back To Main</button>
     
+
+    <!-- <button (click)="btnBackClick()" mat-stroked-button class="btngeneral btngray">Back To Main</button> -->
+    <span class="mainwrappercontent">
     <mat-list role="list">              
         <mat-list-item role="listitem" class="testimonialserv" *ngFor="let testmon of TestimonialListArray | slice:0:indexval; let i=index">
           <mat-card>
@@ -36,8 +33,8 @@
           </mat-card>
         </mat-list-item>     
     </mat-list>
-<button *ngIf="indexvallength > indexval" (click)="showMoreFunc()" mat-stroked-button class="btngeneral btngray">Show more</button> -->
-    
+<button *ngIf="indexvallength > indexval" (click)="showMoreFunc()" mat-stroked-button class="btngeneral btngray">Show more</button>
+</span>
 </mat-card>
 
 
