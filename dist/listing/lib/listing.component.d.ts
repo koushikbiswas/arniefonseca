@@ -94,7 +94,7 @@ export declare class ListingComponent implements OnInit {
     i: any;
     loading: any;
     preresult: any;
-    dataSource: MatTableDataSource<unknown>;
+    dataSource: MatTableDataSource<{}>;
     sort: MatSort;
     paginator: MatPaginator;
     myForm: any;

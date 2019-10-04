@@ -14,7 +14,7 @@ var ListingService = /** @class */ (function () {
     ];
     /** @nocollapse */
     ListingService.ctorParameters = function () { return []; };
-    /** @nocollapse */ ListingService.ngInjectableDef = i0.ɵɵdefineInjectable({ factory: function ListingService_Factory() { return new ListingService(); }, token: ListingService, providedIn: "root" });
+    /** @nocollapse */ ListingService.ngInjectableDef = i0.defineInjectable({ factory: function ListingService_Factory() { return new ListingService(); }, token: ListingService, providedIn: "root" });
     return ListingService;
 }());
 export { ListingService };
