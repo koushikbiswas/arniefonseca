@@ -27,7 +27,7 @@ import {MatIconModule} from '@angular/material/icon';
 
 /**Frontend Component**/
 
-import { HeaderComponent } from './layout/header/header.component';
+import { HeaderComponent, comingSoonDialog } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { HomeComponent } from './component/frontend/home/home.component';
 import { ContactusComponent } from './component/frontend/contactus/contactus.component';
@@ -84,6 +84,7 @@ import { TestimonialModule } from 'testimonial';
     SignUpComponent,
     DashboardComponent,
     HeaderComponent,
+    comingSoonDialog,
     FooterComponent,
     HomeComponent,
     BkHeaderComponent,
@@ -129,6 +130,7 @@ import { TestimonialModule } from 'testimonial';
   ],
   providers: [CookieService, AuthGuard, ApiService, SidenavService],
   bootstrap: [AppComponent],
-  schemas:[CUSTOM_ELEMENTS_SCHEMA]
+  schemas:[CUSTOM_ELEMENTS_SCHEMA],
+  entryComponents: [comingSoonDialog]
 })
 export class AppModule { }

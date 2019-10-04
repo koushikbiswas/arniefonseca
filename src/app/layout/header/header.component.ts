@@ -1,6 +1,12 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { CookieService } from 'ngx-cookie-service';
+import { MatDialogRef, MAT_DIALOG_DATA, MatDialog } from '@angular/material';
+
+
+export interface DialogData {
+  name: string;
+}
 
 @Component({
   selector: 'app-header',
@@ -13,6 +19,7 @@ export class HeaderComponent implements OnInit {
 */
   /*@Output() public sidenavToggle = new EventEmitter();*/
 
+  public  name: string;
   navbarOpen = false;
 
   toggleNavbar() {
@@ -22,7 +29,7 @@ export class HeaderComponent implements OnInit {
   public userCookies: any;
 public user_full_name: any = '';
    
-  constructor(public router: Router, public cookieService: CookieService) {
+  constructor(public router: Router, public cookieService: CookieService, public dialog: MatDialog) {
     // this.userCookies = JSON.parse(this.cookieService.get('user_details'));
 
     // console.log(this.userCookies.firstname);
@@ -33,10 +40,35 @@ public user_full_name: any = '';
   ngOnInit() {
   }
 
+  openDialog(): void {
+    const dialogRef = this.dialog.open(comingSoonDialog, {
+      width: '250px',
+      data: {name: this.name}
+    });
+  }
+
  /* public onToggleSidenav = () => {
     this.sidenavToggle.emit();
   }*/
 
 
+
+}
+
+
+@Component({
+  selector: 'coming',
+  // templateUrl: './coming-soon.html',
+  template: `<h2> Coming Soon </h2>`
+})
+export class comingSoonDialog {
+
+  constructor(
+    public dialogRef: MatDialogRef<comingSoonDialog>,
+    @Inject(MAT_DIALOG_DATA) public data: DialogData) {}
+
+  onNoClick(): void {
+    this.dialogRef.close();
+  }
 
 }

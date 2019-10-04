@@ -70,7 +70,8 @@
                           <a [routerLink]="['/home']">Home</a>
                         </mat-list-item>
                         <mat-list-item fxFlex routerLinkActive="activemenu">
-                          <a [routerLink]="['/pre-owned']">Pre-Owned</a>
+                          <!-- <a [routerLink]="['/pre-owned']">Pre-Owned</a> -->
+                          <a (click)="openDialog()">Pre-Owned</a>
                         </mat-list-item>
                         <mat-list-item fxFlex routerLinkActive="activemenu">
                             <a [matMenuTriggerFor]="menu1">Inventory Search</a>
@@ -87,7 +88,8 @@
                           </mat-menu>
                         </mat-list-item>
                         <mat-list-item fxFlex routerLinkActive="activemenu">
-                          <a [routerLink]="['/aboutus']">About Us</a>
+                         <!-- <a [routerLink]="['/aboutus']">About Us</a> -->
+                          <a (click)="openDialog()">About Us</a>
                         </mat-list-item>
                         <mat-list-item fxFlex routerLinkActive="activemenu">
                           <a [routerLink]="['/service']">Service</a>
