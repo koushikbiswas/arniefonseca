@@ -11,22 +11,23 @@ import { TransferHttpCacheModule } from '@nguniversal/common';
 import { HttpClientModule } from '@angular/common/http';
 import { NgtUniversalModule } from '@ng-toolkit/universal';
 import { LoginComponent } from './component/frontend/login/login.component';
-import { ContactusModule } from 'contactus';
-import { LoginModule } from 'login';
+// import { ContactusModule } from 'contactus';
+// import { LoginModule } from 'login';
 import { CookieService } from 'ngx-cookie-service';
 import { MetaModule } from '@ngx-meta/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AuthGuard } from './auth.guard';
 import { ApiService } from './api.service';
-import { TestimonialModule } from 'testimonial';
-import { ListingModule } from 'lib-listing';
+// import { TestimonialModule } from 'testimonial';
+import {ListingModule} from 'listing-angular7';
+
 import {MatIconModule} from '@angular/material/icon';
 
 
 
 /**Frontend Component**/
 
-import { HeaderComponent } from './layout/header/header.component';
+import { HeaderComponent, comingSoonDialog } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { HomeComponent } from './component/frontend/home/home.component';
 import { ContactusComponent } from './component/frontend/contactus/contactus.component';
@@ -61,12 +62,16 @@ import { AddeditServiceComponent } from './component/backend/ServiceApp/addedit-
 import { ListingServiceComponent } from './component/backend/ServiceApp/listing-service/listing-service.component';
 import { ListingTestimonialComponent } from './component/backend/TestimonialApp/listing-testimonial/listing-testimonial.component';
 import { AddeditTestimonialComponent } from './component/backend/TestimonialApp/addedit-testimonial/addedit-testimonial.component';
-import { ServicelibModule } from 'servicelib';
+// import { ServicelibModule } from 'servicelib';
 // import { FileUploadModule } from 'dist/file-upload';
 import { BkLeftdivComponent } from './layout/bk-leftdiv/bk-leftdiv.component';
 import { MaindashboardComponent } from './component/backend/maindashboard/maindashboard.component';
 import { UserManagementComponent } from './component/backend/user-management/user-management.component';
 import { RepdashboardComponent } from './component/backend/repdashboard/repdashboard.component';
+import { LoginModule } from 'login';
+import { ServicelibModule } from 'servicelib';
+import { ContactusModule } from 'contactus';
+import { TestimonialModule } from 'testimonial';
 /**End Backend Component** */
 
 @NgModule({
@@ -79,6 +84,7 @@ import { RepdashboardComponent } from './component/backend/repdashboard/repdashb
     SignUpComponent,
     DashboardComponent,
     HeaderComponent,
+    comingSoonDialog,
     FooterComponent,
     HomeComponent,
     BkHeaderComponent,
@@ -124,6 +130,7 @@ import { RepdashboardComponent } from './component/backend/repdashboard/repdashb
   ],
   providers: [CookieService, AuthGuard, ApiService, SidenavService],
   bootstrap: [AppComponent],
-  schemas:[CUSTOM_ELEMENTS_SCHEMA]
+  schemas:[CUSTOM_ELEMENTS_SCHEMA],
+  entryComponents: [comingSoonDialog]
 })
 export class AppModule { }

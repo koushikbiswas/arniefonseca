@@ -44,12 +44,12 @@ import { MatTreeModule } from '@angular/material/tree';
 import { CommonModule } from '@angular/common';
 import { FormBuilder, Validators, FormGroupDirective, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ListingModule } from 'lib-listing';
 import { Injectable, Component, NgModule, Input, CUSTOM_ELEMENTS_SCHEMA, ViewChild, defineInjectable, inject } from '@angular/core';
 import { Router, NavigationStart, NavigationEnd, NavigationCancel, NavigationError } from '@angular/router';
 import { MatDialog } from '@angular/material';
 import { HttpClient, HttpHeaders, HttpClientModule } from '@angular/common/http';
 import { CookieService } from 'ngx-cookie-service';
+import { ListingModule } from 'listing-angular7';
 
 /**
  * @fileoverview added by tsickle

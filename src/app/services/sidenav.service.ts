@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { MatSidenav } from '@angular/material';
-import { BkLeftdivComponent } from '../../app/layout/bk-leftdiv/bk-leftdiv.component';
 
 @Injectable()
 export class SidenavService {
