@@ -1,6 +1,7 @@
 import { Component, OnInit,  ViewChild } from '@angular/core';
 import { SidenavService } from 'src/app/services/sidenav.service';
 import { MatSidenav } from '@angular/material';
+import { CookieService } from 'ngx-cookie-service';
 
 @Component({
   selector: 'app-bk-leftdiv',
@@ -13,7 +14,14 @@ export class BkLeftdivComponent implements OnInit {
   
   public status: any = 1;
 
-  constructor(private sidenavService: SidenavService) { }
+  public userCookies: any;
+  public user_full_name: any = '';     
+  public user_data: any;
+
+  constructor(public cookieService: CookieService, private sidenavService: SidenavService) {
+    
+    this.user_data = JSON.parse(this.cookieService.get('user_details'));
+   }
 
 
   ngOnInit(): void {

@@ -39,15 +39,15 @@ export class LoginComponent implements OnInit {
         "data": [
           {
            "type":"admin",
-           "routerNav":"maindashboard"
+           "routerNav":"admin-dashboard"
           },
           {
-            "type":"user",
-           "routerNav":"userDashbord"
+            "type":"customer",
+           "routerNav":"customer-dashboard"
           },
           {
-            "type":"model",
-            "routerNav":"modelDashbord"
+            "type":"rep",
+            "routerNav":"rep-dashboard"
           }
         ]
       }
