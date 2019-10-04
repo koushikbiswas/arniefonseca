@@ -1,9 +1,13 @@
+import { Injectable, ɵɵdefineInjectable, EventEmitter, ViewChild, Component, ComponentFactoryResolver, ViewContainerRef, Input, Inject, NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { MatTableDataSource, MatDialog, MatBottomSheet, MatSort, MatPaginator, MatDialogRef, MAT_DIALOG_DATA, MatBottomSheetRef, MAT_BOTTOM_SHEET_DATA, MatAutocompleteModule, MatBadgeModule, MatBottomSheetModule, MatButtonModule, MatButtonToggleModule, MatCardModule, MatCheckboxModule, MatChipsModule, MatStepperModule, MatDatepickerModule, MatDialogModule, MatDividerModule, MatExpansionModule, MatGridListModule, MatIconModule, MatInputModule, MatListModule, MatMenuModule, MatNativeDateModule, MatPaginatorModule, MatProgressBarModule, MatProgressSpinnerModule, MatRadioModule, MatRippleModule, MatSelectModule, MatSidenavModule, MatSliderModule, MatSlideToggleModule, MatSnackBarModule, MatSortModule, MatTableModule, MatTabsModule, MatToolbarModule, MatTooltipModule, MatTreeModule } from '@angular/material';
 import { SelectionModel } from '@angular/cdk/collections';
-import { humanizeBytes } from 'ngx-uploader';
 import { map, startWith } from 'rxjs/operators';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-import * as momentImported from 'moment';
+import { HttpHeaders, HttpClient } from '@angular/common/http';
+import { humanizeBytes } from 'ngx-uploader';
+import { FormControl, FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NavigationStart, NavigationEnd, NavigationCancel, NavigationError, Router, RouterModule } from '@angular/router';
 import { DomSanitizer, BrowserModule } from '@angular/platform-browser';
+import * as momentImported from 'moment';
 import { A11yModule } from '@angular/cdk/a11y';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { PortalModule } from '@angular/cdk/portal';
@@ -11,13 +15,9 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
 import { CdkStepperModule } from '@angular/cdk/stepper';
 import { CdkTableModule } from '@angular/cdk/table';
 import { CdkTreeModule } from '@angular/cdk/tree';
-import { Injectable, EventEmitter, ViewChild, NgModule, CUSTOM_ELEMENTS_SCHEMA, Component, Input, Inject, ComponentFactoryResolver, ViewContainerRef, defineInjectable } from '@angular/core';
-import { MatSort, MatTableDataSource, MatPaginator, MatDialog, MatDialogRef, MAT_DIALOG_DATA, MatBottomSheet, MatBottomSheetRef, MAT_BOTTOM_SHEET_DATA, MatAutocompleteModule, MatBadgeModule, MatBottomSheetModule, MatButtonModule, MatButtonToggleModule, MatCardModule, MatCheckboxModule, MatChipsModule, MatDatepickerModule, MatDialogModule, MatDividerModule, MatExpansionModule, MatGridListModule, MatIconModule, MatInputModule, MatListModule, MatMenuModule, MatNativeDateModule, MatPaginatorModule, MatProgressBarModule, MatProgressSpinnerModule, MatRadioModule, MatRippleModule, MatSelectModule, MatSidenavModule, MatSliderModule, MatSlideToggleModule, MatSnackBarModule, MatSortModule, MatStepperModule, MatTableModule, MatTabsModule, MatToolbarModule, MatTooltipModule, MatTreeModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormBuilder, FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { MomentModule } from 'ngx-moment';
-import { NavigationCancel, NavigationEnd, NavigationError, NavigationStart, Router, RouterModule } from '@angular/router';
 
 /**
  * @fileoverview added by tsickle
@@ -33,7 +33,7 @@ ListingService.decorators = [
 ];
 /** @nocollapse */
 ListingService.ctorParameters = () => [];
-/** @nocollapse */ ListingService.ngInjectableDef = defineInjectable({ factory: function ListingService_Factory() { return new ListingService(); }, token: ListingService, providedIn: "root" });
+/** @nocollapse */ ListingService.ngInjectableDef = ɵɵdefineInjectable({ factory: function ListingService_Factory() { return new ListingService(); }, token: ListingService, providedIn: "root" });
 
 /**
  * @fileoverview added by tsickle
@@ -219,7 +219,7 @@ class ApiService {
         const httpOptions = {
             headers: new HttpHeaders({
                 'Content-Type': 'application/json',
-                'access-token': ''
+                'Authorization': ''
             })
         };
         console.log('endpoint');
@@ -245,7 +245,7 @@ class ApiService {
         const httpOptions = {
             headers: new HttpHeaders({
                 'Content-Type': 'application/json',
-                'access-token': ''
+                'Authorization': ''
             })
         };
         console.log('endpoint');
@@ -273,7 +273,7 @@ class ApiService {
         const httpOptions = {
             headers: new HttpHeaders({
                 'Content-Type': 'application/json',
-                'access-token': data.token
+                'Authorization': data.token
             })
         };
         console.log('');
@@ -347,7 +347,7 @@ class ApiService {
         const httpOptions = {
             headers: new HttpHeaders({
                 'Content-Type': 'application/json',
-                'access-token': token
+                'Authorization': token
             })
         };
         console.log('------ ');
@@ -372,7 +372,7 @@ class ApiService {
         const httpOptions = {
             headers: new HttpHeaders({
                 'Content-Type': 'application/json',
-                'access-token': source.token
+                'Authorization': source.token
             })
         };
         console.log('------ ');
@@ -457,7 +457,7 @@ class ApiService {
         const httpOptions = {
             headers: new HttpHeaders({
                 'Content-Type': 'application/json',
-                'access-token': token
+                'Authorization': token
             })
         };
         console.log('------ ');
@@ -487,7 +487,7 @@ class ApiService {
         const httpOptions = {
             headers: new HttpHeaders({
                 'Content-Type': 'application/json',
-                'access-token': token
+                'Authorization': token
             })
         };
         console.log('------ ');
@@ -518,7 +518,7 @@ class ApiService {
         const httpOptions = {
             headers: new HttpHeaders({
                 'Content-Type': 'application/json',
-                'access-token': token
+                'Authorization': token
             })
         };
         console.log('------ ');
@@ -554,8 +554,48 @@ ApiService.ctorParameters = () => [
     { type: HttpClient }
 ];
 ApiService.propDecorators = {
-    uploaderInput: [{ type: ViewChild, args: ['fileInput1',] }]
+    uploaderInput: [{ type: ViewChild, args: ['fileInput1', { static: false },] }]
 };
+if (false) {
+    /** @type {?} */
+    ApiService.prototype.domain_for_fileupload_val;
+    /** @type {?} */
+    ApiService.prototype.files;
+    /** @type {?} */
+    ApiService.prototype.uploadInput;
+    /** @type {?} */
+    ApiService.prototype.humanizeBytes;
+    /** @type {?} */
+    ApiService.prototype.dragOver;
+    /** @type {?} */
+    ApiService.prototype.options;
+    /** @type {?} */
+    ApiService.prototype.uploaderInput;
+    /** @type {?} */
+    ApiService.prototype.lengthis;
+    /** @type {?} */
+    ApiService.prototype.percentageis;
+    /** @type {?} */
+    ApiService.prototype.inprogress;
+    /** @type {?} */
+    ApiService.prototype.progress;
+    /** @type {?} */
+    ApiService.prototype.uploadtype;
+    /** @type {?} */
+    ApiService.prototype.uploaderror;
+    /** @type {?} */
+    ApiService.prototype.fileservername;
+    /**
+     * @type {?}
+     * @private
+     */
+    ApiService.prototype._http;
+    /**
+     * @type {?}
+     * @private
+     */
+    ApiService.prototype._authHttp;
+}
 
 /**
  * @fileoverview added by tsickle
@@ -1336,6 +1376,8 @@ class ListingComponent {
      * @return {?}
      */
     clickurl(val, url) {
+        /** @type {?} */
+        let i;
         console.log('ok');
         console.log(val);
         console.log(val._id);
@@ -1451,6 +1493,8 @@ class ListingComponent {
         console.log('data');
         console.log(data);
         for (let key in data) {
+            /** @type {?} */
+            let flagk = '';
             if (data.hasOwnProperty(key)) {
                 console.log(key + " -> " + data[key] + "--->" + typeof (data[key]));
                 if (typeof (data[key]) == 'boolean') {
@@ -1889,9 +1933,153 @@ ListingComponent.propDecorators = {
     emailarray: [{ type: Input }],
     editroute: [{ type: Input }],
     preview_artistxp: [{ type: Input }],
-    sort: [{ type: ViewChild, args: [MatSort,] }],
-    paginator: [{ type: ViewChild, args: [MatPaginator,] }]
+    sort: [{ type: ViewChild, args: [MatSort, { static: true },] }],
+    paginator: [{ type: ViewChild, args: [MatPaginator, { static: true },] }]
 };
+if (false) {
+    /** @type {?} */
+    ListingComponent.prototype.myControl;
+    /** @type {?} */
+    ListingComponent.prototype.datasourceval;
+    /** @type {?} */
+    ListingComponent.prototype.search_settingsval;
+    /** @type {?} */
+    ListingComponent.prototype.click_to_add_ananother_pageval;
+    /** @type {?} */
+    ListingComponent.prototype.grab_linkval;
+    /** @type {?} */
+    ListingComponent.prototype.date_search_sourceval;
+    /** @type {?} */
+    ListingComponent.prototype.date_search_endpointval;
+    /** @type {?} */
+    ListingComponent.prototype.urlval;
+    /** @type {?} */
+    ListingComponent.prototype.searchendpointval;
+    /** @type {?} */
+    ListingComponent.prototype.searchListval;
+    /** @type {?} */
+    ListingComponent.prototype.pdf_link_val;
+    /** @type {?} */
+    ListingComponent.prototype.statusarrval;
+    /** @type {?} */
+    ListingComponent.prototype.skipval;
+    /** @type {?} */
+    ListingComponent.prototype.errormg;
+    /** @type {?} */
+    ListingComponent.prototype.jwttokenval;
+    /** @type {?} */
+    ListingComponent.prototype.detail_datatypeval;
+    /** @type {?} */
+    ListingComponent.prototype.detail_skip_arrayval;
+    /** @type {?} */
+    ListingComponent.prototype.deleteendpointval;
+    /** @type {?} */
+    ListingComponent.prototype.editrouteval;
+    /** @type {?} */
+    ListingComponent.prototype.apiurlval;
+    /** @type {?} */
+    ListingComponent.prototype.updateendpointval;
+    /** @type {?} */
+    ListingComponent.prototype.modify_header_arrayval;
+    /** @type {?} */
+    ListingComponent.prototype.selection;
+    /** @type {?} */
+    ListingComponent.prototype.sourcedataval;
+    /** @type {?} */
+    ListingComponent.prototype.emailarrayval;
+    /** @type {?} */
+    ListingComponent.prototype.columns;
+    /** @type {?} */
+    ListingComponent.prototype.olddata;
+    /** @type {?} */
+    ListingComponent.prototype.tsearch;
+    /** @type {?} */
+    ListingComponent.prototype.autosearch;
+    /** @type {?} */
+    ListingComponent.prototype.x;
+    /** @type {?} */
+    ListingComponent.prototype.custombuttonval;
+    /** @type {?} */
+    ListingComponent.prototype.result;
+    /** @type {?} */
+    ListingComponent.prototype.sh;
+    /** @type {?} */
+    ListingComponent.prototype.art;
+    /** @type {?} */
+    ListingComponent.prototype.aud2;
+    /** @type {?} */
+    ListingComponent.prototype.aud;
+    /** @type {?} */
+    ListingComponent.prototype.previewFlug;
+    /** @type {?} */
+    ListingComponent.prototype.stateGroups;
+    /** @type {?} */
+    ListingComponent.prototype.stateGroup;
+    /** @type {?} */
+    ListingComponent.prototype.displayedColumns;
+    /** @type {?} */
+    ListingComponent.prototype.datacolumns;
+    /** @type {?} */
+    ListingComponent.prototype.displayedColumnsheader;
+    /** @type {?} */
+    ListingComponent.prototype.formarray;
+    /** @type {?} */
+    ListingComponent.prototype.start_date;
+    /** @type {?} */
+    ListingComponent.prototype.dateSearch_condition;
+    /** @type {?} */
+    ListingComponent.prototype.selectSearch_condition;
+    /** @type {?} */
+    ListingComponent.prototype.autoSearch_condition;
+    /** @type {?} */
+    ListingComponent.prototype.textSearch_condition;
+    /** @type {?} */
+    ListingComponent.prototype.end_date;
+    /** @type {?} */
+    ListingComponent.prototype.i;
+    /** @type {?} */
+    ListingComponent.prototype.loading;
+    /** @type {?} */
+    ListingComponent.prototype.preresult;
+    /** @type {?} */
+    ListingComponent.prototype.dataSource;
+    /** @type {?} */
+    ListingComponent.prototype.sort;
+    /** @type {?} */
+    ListingComponent.prototype.paginator;
+    /** @type {?} */
+    ListingComponent.prototype.myForm;
+    /** @type {?} */
+    ListingComponent.prototype._apiService;
+    /** @type {?} */
+    ListingComponent.prototype.dialog;
+    /**
+     * @type {?}
+     * @private
+     */
+    ListingComponent.prototype.bottomSheet;
+    /** @type {?} */
+    ListingComponent.prototype.fb;
+    /**
+     * @type {?}
+     * @private
+     */
+    ListingComponent.prototype.router;
+    /**
+     * @type {?}
+     * @private
+     */
+    ListingComponent.prototype.resolver;
+    /**
+     * @type {?}
+     * @private
+     */
+    ListingComponent.prototype.container;
+    /** @type {?} */
+    ListingComponent.prototype._http;
+    /** @type {?} */
+    ListingComponent.prototype.sanitizer;
+}
 class Confirmdialog {
     /**
      * @param {?} dialogRef
@@ -1940,6 +2128,14 @@ Confirmdialog.ctorParameters = () => [
     { type: undefined, decorators: [{ type: Inject, args: [MAT_DIALOG_DATA,] }] },
     { type: DomSanitizer }
 ];
+if (false) {
+    /** @type {?} */
+    Confirmdialog.prototype.dialogRef;
+    /** @type {?} */
+    Confirmdialog.prototype.data;
+    /** @type {?} */
+    Confirmdialog.prototype.sanitizer;
+}
 class BottomSheet {
     /**
      * @param {?} bottomSheetRef
@@ -1971,6 +2167,15 @@ BottomSheet.ctorParameters = () => [
     { type: MatBottomSheetRef },
     { type: undefined, decorators: [{ type: Inject, args: [MAT_BOTTOM_SHEET_DATA,] }] }
 ];
+if (false) {
+    /**
+     * @type {?}
+     * @private
+     */
+    BottomSheet.prototype.bottomSheetRef;
+    /** @type {?} */
+    BottomSheet.prototype.data;
+}
 
 /**
  * @fileoverview added by tsickle
@@ -2064,6 +2269,5 @@ ListingModule.decorators = [
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
-export { ListingService, ListingComponent, Confirmdialog, BottomSheet, ListingModule, ApiService as ɵa, DemoMaterialModule as ɵb };
-
+export { BottomSheet, Confirmdialog, ListingComponent, ListingModule, ListingService, ApiService as ɵa, DemoMaterialModule as ɵb };
 //# sourceMappingURL=listing-angular7.js.map
