@@ -477,6 +477,30 @@ width: 100%;
   -webkit-line-clamp: 3; -webkit-box-orient: vertical; }
 
 
+  .mat-menu-panel.activedropmenu {
+    margin-left: -12%;
+    margin-top: 0;
+	background-color: #cdd4da !important;
+}
+
+.mat-menu-panel.activedropmenu .mat-menu-content{
+    background-color: #cdd4da !important;
+}
+
+.mat-menu-panel.activedropmenu .mat-menu-content .activemenu{
+	background-color: #0071bc;
+}
+
+.mat-menu-content a.mat-menu-item {
+    color: #000!important;
+    text-transform: uppercase;
+}
+
+.mat-menu-content a.mat-menu-item:hover {
+    color: #fff!important;
+    text-transform: uppercase;
+}
+
   @media screen and (max-width: 768px){
     .bottom_blog .item_wrapper { display: flex; flex-wrap: wrap; justify-content: center;}
     .bottom_blog .item_wrapper .item { width: 48%; margin: 1%; }
