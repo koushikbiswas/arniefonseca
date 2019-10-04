@@ -37,6 +37,21 @@ import { UserManagementComponent } from './component/backend/user-management/use
 import { RepdashboardComponent } from './component/backend/repdashboard/repdashboard.component';
 
 import { ResolveService } from './resolve.service';
+import { BlogManagementComponent } from './component/backend/blog-management/blog-management.component';
+
+import { CommissionReportComponent } from './component/backend/commission-report/commission-report.component';
+import { InventorySearchComponent } from './component/backend/inventory-search/inventory-search.component';
+import { ManageAvailabilityComponent } from './component/backend/manage-availability/manage-availability.component';
+import { TestimonialListsAdminComponent } from './component/backend/testimonial-lists-admin/testimonial-lists-admin.component';
+import { BirddogListComponent } from './component/backend/birddog-list/birddog-list.component';
+import { CommissionListComponent } from './component/backend/commission-list/commission-list.component';
+import { CustomerListComponent } from './component/backend/customer-list/customer-list.component';
+import { ManageCommissionComponent } from './component/backend/manage-commission/manage-commission.component';
+import { NewsletterlistsComponent } from './component/backend/newsletterlists/newsletterlists.component';
+import { SalesReportComponent } from './component/backend/sales-report/sales-report.component';
+import { SalesreplistsComponent } from './component/backend/salesreplists/salesreplists.component';
+import { RsvplistsComponent } from './component/backend/rsvplists/rsvplists.component';
+import { ManageTrainingComponent } from './component/backend/manage-training/manage-training.component';
 /**End Backend Routing**/
 
 const routes: Routes = [
@@ -103,6 +118,20 @@ const routes: Routes = [
   {path: 'service/add', component:AddeditServiceComponent},
   { path:'service/edit/:_id', component:AddeditServiceComponent,  resolve: { serviceList: ResolveService },
   data: { requestcondition: { source: 'services', condition: {} }, endpoint: 'datalist'}},
+  {path: 'blog-management', component:BlogManagementComponent}, 
+  {path: 'commission-report', component:CommissionReportComponent}, 
+  {path: 'inventory-search', component:InventorySearchComponent}, 
+  {path: 'manage-availability', component:ManageAvailabilityComponent}, 
+  {path: 'testimonial-lists-admin', component:TestimonialListsAdminComponent}, 
+  {path: 'birddog-list', component:BirddogListComponent}, 
+  {path: 'commission-list', component:CommissionListComponent}, 
+  {path: 'customer-list', component:CustomerListComponent},  
+  {path: 'manage-commission', component:ManageCommissionComponent},  
+  {path: 'newsletterlists', component:NewsletterlistsComponent},  
+  {path: 'sales-report', component:SalesReportComponent},  
+  {path: 'salesreplists', component:SalesreplistsComponent},  
+  {path: 'rsvp', component:RsvplistsComponent},  
+  {path: 'manage-training', component:ManageTrainingComponent},  
 
   /**************** User Management *****************/ 
   { path:'user-management', component:UserManagementComponent,  resolve: { serviceList: ResolveService },

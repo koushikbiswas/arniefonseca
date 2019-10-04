@@ -501,6 +501,30 @@ width: 100%;
     text-transform: uppercase;
 }
 
+.logomodalwrapper{
+	width: 480px;
+    margin: 0 auto;
+    display: block;
+    background: #ddd4d4;
+    padding: 10px;
+}
+.logomodalwrapper .logomodal{
+	width: 90%;
+	margin: 0 auto;
+	display: block;
+}
+.logomodalwrapper .logomodal img{max-width:100%;}
+.logomodalwrapper h2{	
+	color: #fc563f;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 1.92px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+}
+
   @media screen and (max-width: 768px){
     .bottom_blog .item_wrapper { display: flex; flex-wrap: wrap; justify-content: center;}
     .bottom_blog .item_wrapper .item { width: 48%; margin: 1%; }
@@ -510,3 +534,11 @@ width: 100%;
     @media screen and (max-width: 600px){
     .bottom_blog .item_wrapper .item { width: 100%; margin: 1%; }
     }
+
+	@media screen and (max-width: 480px){
+	.logomodalwrapper{
+		width: 90%;
+		margin: 0 auto;
+		display: block;
+	}
+}

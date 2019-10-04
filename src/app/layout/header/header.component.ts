@@ -42,7 +42,7 @@ public user_full_name: any = '';
 
   openDialog(): void {
     const dialogRef = this.dialog.open(comingSoonDialog, {
-      width: '250px',
+     
       data: {name: this.name}
     });
   }
@@ -59,7 +59,11 @@ public user_full_name: any = '';
 @Component({
   selector: 'coming',
   // templateUrl: './coming-soon.html',
-  template: `<h2> Coming Soon </h2>`
+  template: `
+  <div class="logomodalwrapper">
+  <div class="logomodal"><img src="../../assets/images/logo.png"></div>
+  <h2>coming soon</h2></div>
+  `
 })
 export class comingSoonDialog {
 

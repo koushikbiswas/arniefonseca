@@ -72,6 +72,20 @@ import { LoginModule } from 'login';
 import { ServicelibModule } from 'servicelib';
 import { ContactusModule } from 'contactus';
 import { TestimonialModule } from 'testimonial';
+import { BlogManagementComponent } from './component/backend/blog-management/blog-management.component';
+import { CommissionReportComponent } from './component/backend/commission-report/commission-report.component';
+import { InventorySearchComponent } from './component/backend/inventory-search/inventory-search.component';
+import { ManageAvailabilityComponent } from './component/backend/manage-availability/manage-availability.component';
+import { TestimonialListsAdminComponent } from './component/backend/testimonial-lists-admin/testimonial-lists-admin.component';
+import { BirddogListComponent } from './component/backend/birddog-list/birddog-list.component';
+import { CommissionListComponent } from './component/backend/commission-list/commission-list.component';
+import { CustomerListComponent } from './component/backend/customer-list/customer-list.component';
+import { ManageCommissionComponent } from './component/backend/manage-commission/manage-commission.component';
+import { NewsletterlistsComponent } from './component/backend/newsletterlists/newsletterlists.component';
+import { SalesReportComponent } from './component/backend/sales-report/sales-report.component';
+import { SalesreplistsComponent } from './component/backend/salesreplists/salesreplists.component';
+import { RsvplistsComponent } from './component/backend/rsvplists/rsvplists.component';
+import { ManageTrainingComponent } from './component/backend/manage-training/manage-training.component';
 /**End Backend Component** */
 
 @NgModule({
@@ -107,7 +121,21 @@ import { TestimonialModule } from 'testimonial';
     AdvanceInventorySearchComponent,
     PreOwnedComponent,
     AboutusComponent,
-    RepdashboardComponent  
+    RepdashboardComponent,
+    BlogManagementComponent,
+    CommissionReportComponent,
+    InventorySearchComponent,
+    ManageAvailabilityComponent,
+    TestimonialListsAdminComponent,
+    BirddogListComponent,
+    CommissionListComponent,
+    CustomerListComponent,
+    ManageCommissionComponent,
+    NewsletterlistsComponent,
+    SalesReportComponent,
+    SalesreplistsComponent,
+    RsvplistsComponent,
+    ManageTrainingComponent
   ],
   imports: [
     DragScrollModule,
