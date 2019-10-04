@@ -55,12 +55,19 @@
       "from/*": [
         "dist/from/*"
       ],
-      "lib-listing": [
+      "listing": [
         "dist/listing"
       ],
       "listing/*": [
         "dist/listing/*"
       ],
+      "lib-listing": [
+        "dist/listing"
+      ],
+      "lib-listing/*": [
+        "dist/listing/*"
+      ],
+     
       "news-title": [
         "dist/news-title"
       ],
