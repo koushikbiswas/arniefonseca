@@ -1,4 +1,4 @@
-.footerwrapper {display: flex;flex-direction: row;align-items: center;justify-content: space-between;width: 100%;text-align: left;background-color: #353535 !important;padding: 30px 16px; }
+.footerwrapper {display: flex;flex-direction: row;align-items: center;justify-content: space-between; text-align: left;background-color: #353535 !important;padding: 30px 16px; }
 .footerwrapper .menuwrapper {display: flex;flex-direction: row;align-items: center;justify-content: space-between;width: 100%;text-align: left;}
 .footertopwrapper {display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;justify-content: space-between;flex-direction: row;align-items: center;flex-wrap: wrap; flex: 1 1 100%;}
 .footertopwrapper .mat-nav-list {display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;justify-content: space-between;padding-top: 0;}
