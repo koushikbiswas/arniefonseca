@@ -52,6 +52,7 @@ import { SalesReportComponent } from './component/backend/sales-report/sales-rep
 import { SalesreplistsComponent } from './component/backend/salesreplists/salesreplists.component';
 import { RsvplistsComponent } from './component/backend/rsvplists/rsvplists.component';
 import { ManageTrainingComponent } from './component/backend/manage-training/manage-training.component';
+import { from } from 'rxjs';
 /**End Backend Routing**/
 
 const routes: Routes = [

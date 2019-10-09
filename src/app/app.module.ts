@@ -88,6 +88,7 @@ import { RsvplistsComponent } from './component/backend/rsvplists/rsvplists.comp
 import { ManageTrainingComponent } from './component/backend/manage-training/manage-training.component';
 /**End Backend Component** */
 
+
 @NgModule({
   declarations: [
     AppComponent,
