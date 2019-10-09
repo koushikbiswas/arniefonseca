@@ -477,6 +477,54 @@ width: 100%;
   -webkit-line-clamp: 3; -webkit-box-orient: vertical; }
 
 
+  .mat-menu-panel.activedropmenu {
+    margin-left: -12%;
+    margin-top: 0;
+	background-color: #cdd4da !important;
+}
+
+.mat-menu-panel.activedropmenu .mat-menu-content{
+    background-color: #cdd4da !important;
+}
+
+.mat-menu-panel.activedropmenu .mat-menu-content .activemenu{
+	background-color: #0071bc;
+}
+
+.mat-menu-content a.mat-menu-item {
+    color: #000!important;
+    text-transform: uppercase;
+}
+
+.mat-menu-content a.mat-menu-item:hover {
+    color: #fff!important;
+    text-transform: uppercase;
+}
+
+.logomodalwrapper{
+	width: 480px;
+    margin: 0 auto;
+    display: block;
+    background: #ddd4d4;
+    padding: 10px;
+}
+.logomodalwrapper .logomodal{
+	width: 90%;
+	margin: 0 auto;
+	display: block;
+}
+.logomodalwrapper .logomodal img{max-width:100%;}
+.logomodalwrapper h2{	
+	color: #fc563f;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 1.92px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+}
+
   @media screen and (max-width: 768px){
     .bottom_blog .item_wrapper { display: flex; flex-wrap: wrap; justify-content: center;}
     .bottom_blog .item_wrapper .item { width: 48%; margin: 1%; }
@@ -486,3 +534,11 @@ width: 100%;
     @media screen and (max-width: 600px){
     .bottom_blog .item_wrapper .item { width: 100%; margin: 1%; }
     }
+
+	@media screen and (max-width: 480px){
+	.logomodalwrapper{
+		width: 90%;
+		margin: 0 auto;
+		display: block;
+	}
+}
