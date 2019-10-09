@@ -73,25 +73,42 @@ const routes: Routes = [
   }
 },
 
+// {
+//   path: "testimonial",
+//   component: TesimoniallistComponent,
+//   resolve: { testimonialListData: ResolveService },
+//   data: {
+//     requestcondition: { source: "testimonals", condition: {} },
+//     endpoint: "datalist"
+//   }
+// },
+
+
+//  static path
 {
   path: "testimonial",
-  component: TesimoniallistComponent,
-  resolve: { testimonialListData: ResolveService },
-  data: {
-    requestcondition: { source: "testimonals", condition: {} },
-    endpoint: "datalist"
-  }
-},
+  component: TesimoniallistComponent},
+
+
+
+
 {path:'servicehome',
     component: ServiceComponent,
     resolve: { serviceListData: ResolveService },
     data: { requestcondition: { source: 'service', condition: {} }, endpoint: 'datalist'}
 },
+// {path:'service',
+//     component: ServicelistComponent,
+//     resolve: { serviceListData: ResolveService },
+//     data: { requestcondition: { source: 'service', condition: {} }, endpoint: 'datalist'}
+// },
+
+//  static path
+
 {path:'service',
-    component: ServicelistComponent,
-    resolve: { serviceListData: ResolveService },
-    data: { requestcondition: { source: 'service', condition: {} }, endpoint: 'datalist'}
-},
+    component: ServicelistComponent},
+
+
 {path: 'bloghome', component:BlogComponent, resolve: {serviceListData: ResolveService}, data: { requestcondition: { source: 'blogs', condition: {} }, endpoint: 'datalist'}},
 {path: 'blog', component:BloglistComponent},
 {path: 'blogdetail', component:BlogdetailComponent},
@@ -103,7 +120,8 @@ const routes: Routes = [
 /**End Frontend Routing**/
 
   /**Backend Routing**/
-  {path: 'customer-dashboard', component:DashboardComponent, canActivate:[AuthGuard]},       // Useing for canActive
+  // {path: 'customer-dashboard', component:DashboardComponent, canActivate:[AuthGuard]},       // Useing for canActive
+  {path: 'customer-dashboard', component:DashboardComponent},    
   {path: 'admin-dashboard', component:MaindashboardComponent},
 
   {path: 'bk-leftdiv', component:BkLeftdivComponent},

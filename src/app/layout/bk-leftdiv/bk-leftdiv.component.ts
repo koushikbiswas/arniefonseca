@@ -20,7 +20,7 @@ export class BkLeftdivComponent implements OnInit {
 
   constructor(public cookieService: CookieService, private sidenavService: SidenavService) {
     
-    this.user_data = JSON.parse(this.cookieService.get('user_details'));
+    // this.user_data = JSON.parse(this.cookieService.get('user_details'));
    }
 
 

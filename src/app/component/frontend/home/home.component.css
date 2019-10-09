@@ -3,3 +3,30 @@
     height: auto !important;
     position: relative;
 }
+
+/* 
+.wwblock4 .tabwrapper .mat-tab-labels {display: flex;flex-wrap: wrap;}
+.wwblock4 .tabwrapper .mat-tab-label {background-color: #333d53;height: 100%;padding: 20px;cursor: pointer;box-sizing: border-box;opacity: 1;text-align: center;display: flex;justify-content: center;align-items: center;white-space: normal;position: relative;height: 236px;flex-wrap: wrap;width: 46%;margin: 9px;-webkit-animation: fadein 2s; -moz-animation: fadein 2s; -ms-animation: fadein 2s;-o-animation: fadein 2s; animation: fadein 2s;}
+.wwblock4 .mat-tab-label .mat-tab-label-content {display: inline-flex;justify-content: center;align-items: center;white-space: nowrap;flex-wrap: wrap;}
+.wwblock4 .tabwrapper .mat-tab-label-active {background-color: #358de7}
+.wwblock4 .tabwrapper .mat-tab-label .mat-ink-bar {background-color: transparent !important}
+.wwblock4 .tabwrapper {display: flex;flex-direction: row;justify-content: space-between;}
+.wwblock4 .mat-tab-header {display: flex;overflow: hidden;position: relative;flex-shrink: 0;width: 50%;margin-right: 10px;}
+.wwblock4 .mat-tab-body-content {height: 100%;overflow: inherit;margin-top: 9px;}
+.wwblock4 .mat-tab-body-content img {border:1px solid #404a61;max-width: 100%;}
+.wwblock4 .mat-tab-body.mat-tab-body-active {position: relative;overflow-x: hidden;overflow-y: inherit;z-index: 1;flex-grow: 1;}
+.wwblock4.generalcls .mat-tab-body-content h2 {color:#358de7;}
+.wwblock4 .mat-tab-group.mat-primary .mat-ink-bar, .wwblock4 .mat-tab-nav-bar.mat-primary .mat-ink-bar {background-color: transparent;display: none;}
+.footertopwrapper .mat-grid-tile .mat-figure {justify-content: flex-start !important;flex-wrap: wrap;color: #fff;}
+.footertopwrapper .mat-grid-tile .mat-figure h2 {display: block;width: 100%;position: relative;}
+.footertopwrapper .mat-grid-tile .mat-figure h2:after {content: "";background-color: #713091;width: 100%;position: absolute;top: 140%;left: 0%;-webkit-transform: translate(-0%, -100%);transform: translate(0%, -135%);z-index: 999;height: 2px;}
+.wwblock5 {background-color: #f8f8f8}
+.wwblock4 .mat-card-header, .wwblock5 .mat-card-header {display: flex;flex-direction: row;flex-wrap: wrap;align-items: center;justify-content: center;width: 100%;text-align: center;} */
+
+.probidhomeblock1.mat-card{background-color: #e2ecee !important;}
+
+
+
+.probidhomeblock2 {
+    overflow-x:hidden;background:url(../../../../assets/images/probidhomeblock2bg.jpg) no-repeat center center;top:0;left:0;min-width:100%;min-height:537px;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;position:relative
+}

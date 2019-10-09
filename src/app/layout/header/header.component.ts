@@ -1,5 +1,5 @@
 import { Component, OnInit, Output, EventEmitter, Inject } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { CookieService } from 'ngx-cookie-service';
 import { MatDialogRef, MAT_DIALOG_DATA, MatDialog } from '@angular/material';
 
@@ -29,7 +29,8 @@ export class HeaderComponent implements OnInit {
   public userCookies: any;
 public user_full_name: any = '';
    
-  constructor(public router: Router, public cookieService: CookieService, public dialog: MatDialog) {
+  constructor(public router: Router, public cookieService: CookieService, public dialog: MatDialog, activeroute: ActivatedRoute) {
+    console.log(router.url)
     // this.userCookies = JSON.parse(this.cookieService.get('user_details'));
 
     // console.log(this.userCookies.firstname);

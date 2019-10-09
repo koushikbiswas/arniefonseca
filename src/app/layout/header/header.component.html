@@ -103,6 +103,9 @@
                         <mat-list-item fxFlex routerLinkActive="activemenu">
                           <a [routerLink]="['/contactus']">Contact Us</a>
                         </mat-list-item>
+                        <mat-list-item fxFlex routerLinkActive="activemenu">
+                            <a [routerLink]="['/admin-dashboard']">Dashboard</a>
+                          </mat-list-item>
                       </span>
                     </mat-nav-list>
                   </span>
@@ -128,7 +131,7 @@
 </ng-container>
 
 
-<ng-container class="adminheaderleftdiv" *ngIf="router.url ==='/service-listing' || router.url ==='/admin-dashboard' || router.url === '/contact-us-dashboard' || router.url === '/rep-dashboard' || router.url === '/customer-dashboard' || router.url === '/blog-management' || router.url === '/commission-report' || router.url === '/inventory-search' || router.url === '/manage-availability' || router.url === '/testimonial-lists-admin'|| router.url === '/commission-list' || router.url === '/customer-list' || router.url === '/manage-commission' || router.url === '/newsletterlists' || router.url === '/sales-report' || router.url === '/salesreplists' || router.url === '/rsvp' || router.url === '/birddog-list' || router.url === '/manage-training'">
+<ng-container class="adminheaderleftdiv" *ngIf = "router.url ==='/service-listing' || router.url ==='/admin-dashboard' || router.url === '/contact-us-dashboard' || router.url === '/rep-dashboard' || router.url === '/customer-dashboard' || router.url === '/blog-management' || router.url === '/commission-report' || router.url === '/inventory-search' || router.url === '/manage-availability' || router.url === '/testimonial-lists-admin'|| router.url === '/commission-list' || router.url === '/customer-list' || router.url === '/manage-commission' || router.url === '/newsletterlists' || router.url === '/sales-report' || router.url === '/salesreplists' || router.url === '/rsvp' || router.url === '/birddog-list' || router.url === '/manage-training'">
   <div class="admcls">
       <app-bk-header></app-bk-header>
       <app-bk-leftdiv></app-bk-leftdiv>

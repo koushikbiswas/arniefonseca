@@ -17,12 +17,12 @@ export class TesimoniallistComponent implements OnInit {
 
   
   ngOnInit() {
-    this.activatedRoute.data.forEach(data=>{
-      let result:any;
-      result=data.testimonialListData.res;
-      this.TestimonialListArray=result;   
-     this.indexvallength = this.TestimonialListArray.length;    
-    })
+    // this.activatedRoute.data.forEach(data=>{
+    //   let result:any;
+    //   result=data.testimonialListData.res;
+    //   this.TestimonialListArray=result;   
+    //  this.indexvallength = this.TestimonialListArray.length;    
+    // })
   }
 
   btnBackClick= function () {
