@@ -9,21 +9,25 @@ export declare class ForgetPasswordComponent implements OnInit {
     apiService: ApiService;
     private snackBar;
     message: any;
+    buttonNameValue: any;
     formDirective: FormGroupDirective;
     forgetPasswordForm: FormGroup;
     formTitleValue: any;
     serverUrlValue: any;
     signUpRouteingUrlValue: any;
+    loginRouteingUrlValue: any;
     private domanUrlValue;
     addEndpointValue: any;
     logoValue: any;
     durationInSeconds: number;
+    buttonName: any;
     domanUrl: any;
     formTitle: any;
     serverUrl: any;
     logo: any;
     addEndpoint: any;
     signUpRouteingUrl: any;
+    loginRouteingUrl: any;
     constructor(fb: FormBuilder, router: Router, apiService: ApiService, snackBar: MatSnackBar);
     ngOnInit(): void;
     /********* Forget password  Form Submit start here*********/
@@ -33,7 +37,9 @@ export declare class ForgetPasswordComponent implements OnInit {
     openSnackBar(): void;
     /********* openSnackBar function open end here*********/
     signup(): void;
+    login(): void;
     inputUntouched(val: any): void;
+    customFunction(link: any): void;
 }
 export declare class snackBarComponent {
 }

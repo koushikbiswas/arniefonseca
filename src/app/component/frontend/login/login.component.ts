@@ -24,8 +24,22 @@ export class LoginComponent implements OnInit {
   public fromTitle: any = "Login";    // This is a From Title 
   public fullUrl: any = "https://o820cv2lu8.execute-api.us-east-2.amazonaws.com/production/api/";  // server url
   public endpoint: any = "login";  // login endpoint
-  public signUpRouteingUrl: any = 'sign-up';      // navigate the sign up page
-  public forgetRouteingUrl: any = 'forget-password';      // navigate the Forget password page
+  // public signUpRouteingUrl: any = 'sign-up';      // navigate the sign up page
+  // public forgetRouteingUrl: any = 'forget-password';      // navigate the Forget password page
+  public buttonName:any= 'Login Button';
+  public signUpRouteingUrl: any = { 
+    "path":"sign-up",
+    "buttonName":"sign-up",
+    "customLink":"",
+    "customURl":""
+  };
+
+  public forgetRouteingUrl: any = {
+    "path":"forget-password",
+    "buttonName":"forget-password",
+    "customLink":"",
+    "customURl":""
+  };
   public routerStatus: any;
     constructor(private readonly meta: MetaService, public apiService:ApiService) { 
 

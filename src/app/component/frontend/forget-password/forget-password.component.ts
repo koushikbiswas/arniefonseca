@@ -9,7 +9,20 @@ import { MetaService } from '@ngx-meta/core';
 export class ForgetPasswordComponent implements OnInit {
 
   public logo: any = '../../assets/images/logo.png';
-  public signUpRouteingUrl: any = 'sign-up';
+  public loginRouteingUrl: any = { 
+    "path":"login",
+    "buttonName":"login",
+    "customLink":"",
+    "customURl":""
+  };
+  public signUpRouteingUrl: any = { 
+    "path":"",
+    "buttonName":"sign-up",
+    "customLink":"/sign-up",
+    "customURl":""
+  };
+  public buttonName: any = 'Update Password';
+  // public signUpRouteingUrl: any = 'sign-up';
   public formTitle: any = 'Forget Password';
   public serverUrl:any = 'http://166.62.39.137:5050/';
   public addEndpoint: any = {
