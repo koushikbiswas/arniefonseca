@@ -8,7 +8,7 @@ module.exports = {
   mode: 'none',
   entry: {
     // This is our Express server for Dynamic universal
-    server_probid: './server.ts',
+    server: './server.ts',
 	prerender: './prerender.ts'
   },
   target: 'node',
