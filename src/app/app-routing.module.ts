@@ -37,6 +37,22 @@ import { UserManagementComponent } from './component/backend/user-management/use
 import { RepdashboardComponent } from './component/backend/repdashboard/repdashboard.component';
 
 import { ResolveService } from './resolve.service';
+import { BlogManagementComponent } from './component/backend/blog-management/blog-management.component';
+
+import { CommissionReportComponent } from './component/backend/commission-report/commission-report.component';
+import { InventorySearchComponent } from './component/backend/inventory-search/inventory-search.component';
+import { ManageAvailabilityComponent } from './component/backend/manage-availability/manage-availability.component';
+import { TestimonialListsAdminComponent } from './component/backend/testimonial-lists-admin/testimonial-lists-admin.component';
+import { BirddogListComponent } from './component/backend/birddog-list/birddog-list.component';
+import { CommissionListComponent } from './component/backend/commission-list/commission-list.component';
+import { CustomerListComponent } from './component/backend/customer-list/customer-list.component';
+import { ManageCommissionComponent } from './component/backend/manage-commission/manage-commission.component';
+import { NewsletterlistsComponent } from './component/backend/newsletterlists/newsletterlists.component';
+import { SalesReportComponent } from './component/backend/sales-report/sales-report.component';
+import { SalesreplistsComponent } from './component/backend/salesreplists/salesreplists.component';
+import { RsvplistsComponent } from './component/backend/rsvplists/rsvplists.component';
+import { ManageTrainingComponent } from './component/backend/manage-training/manage-training.component';
+import { from } from 'rxjs';
 /**End Backend Routing**/
 
 const routes: Routes = [
@@ -58,25 +74,42 @@ const routes: Routes = [
   }
 },
 
+// {
+//   path: "testimonial",
+//   component: TesimoniallistComponent,
+//   resolve: { testimonialListData: ResolveService },
+//   data: {
+//     requestcondition: { source: "testimonals", condition: {} },
+//     endpoint: "datalist"
+//   }
+// },
+
+
+//  static path
 {
   path: "testimonial",
-  component: TesimoniallistComponent,
-  resolve: { testimonialListData: ResolveService },
-  data: {
-    requestcondition: { source: "testimonals", condition: {} },
-    endpoint: "datalist"
-  }
-},
+  component: TesimoniallistComponent},
+
+
+
+
 {path:'servicehome',
     component: ServiceComponent,
     resolve: { serviceListData: ResolveService },
     data: { requestcondition: { source: 'service', condition: {} }, endpoint: 'datalist'}
 },
+// {path:'service',
+//     component: ServicelistComponent,
+//     resolve: { serviceListData: ResolveService },
+//     data: { requestcondition: { source: 'service', condition: {} }, endpoint: 'datalist'}
+// },
+
+//  static path
+
 {path:'service',
-    component: ServicelistComponent,
-    resolve: { serviceListData: ResolveService },
-    data: { requestcondition: { source: 'service', condition: {} }, endpoint: 'datalist'}
-},
+    component: ServicelistComponent},
+
+
 {path: 'bloghome', component:BlogComponent, resolve: {serviceListData: ResolveService}, data: { requestcondition: { source: 'blogs', condition: {} }, endpoint: 'datalist'}},
 {path: 'blog', component:BloglistComponent},
 {path: 'blogdetail', component:BlogdetailComponent},
@@ -88,7 +121,8 @@ const routes: Routes = [
 /**End Frontend Routing**/
 
   /**Backend Routing**/
-  {path: 'customer-dashboard', component:DashboardComponent, canActivate:[AuthGuard]},       // Useing for canActive
+  // {path: 'customer-dashboard', component:DashboardComponent, canActivate:[AuthGuard]},       // Useing for canActive
+  {path: 'customer-dashboard', component:DashboardComponent},    
   {path: 'admin-dashboard', component:MaindashboardComponent},
 
   {path: 'bk-leftdiv', component:BkLeftdivComponent},
@@ -103,6 +137,20 @@ const routes: Routes = [
   {path: 'service/add', component:AddeditServiceComponent},
   { path:'service/edit/:_id', component:AddeditServiceComponent,  resolve: { serviceList: ResolveService },
   data: { requestcondition: { source: 'services', condition: {} }, endpoint: 'datalist'}},
+  {path: 'blog-management', component:BlogManagementComponent}, 
+  {path: 'commission-report', component:CommissionReportComponent}, 
+  {path: 'inventory-search', component:InventorySearchComponent}, 
+  {path: 'manage-availability', component:ManageAvailabilityComponent}, 
+  {path: 'testimonial-lists-admin', component:TestimonialListsAdminComponent}, 
+  {path: 'birddog-list', component:BirddogListComponent}, 
+  {path: 'commission-list', component:CommissionListComponent}, 
+  {path: 'customer-list', component:CustomerListComponent},  
+  {path: 'manage-commission', component:ManageCommissionComponent},  
+  {path: 'newsletterlists', component:NewsletterlistsComponent},  
+  {path: 'sales-report', component:SalesReportComponent},  
+  {path: 'salesreplists', component:SalesreplistsComponent},  
+  {path: 'rsvp', component:RsvplistsComponent},  
+  {path: 'manage-training', component:ManageTrainingComponent},  
 
   /**************** User Management *****************/ 
   { path:'user-management', component:UserManagementComponent,  resolve: { serviceList: ResolveService },

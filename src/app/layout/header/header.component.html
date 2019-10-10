@@ -79,7 +79,7 @@
                               <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/basic-inventory-search']">Basic Inventory Search</a>
                               <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/advance-inventory-search']">Advance Inventory Search</a>
                             </mat-menu>
-                          </mat-list-item>
+                        </mat-list-item>
                         <mat-list-item fxFlex routerLinkActive="activemenu">
                           <a [matMenuTriggerFor]="menu">Join Probid</a>
                           <mat-menu #menu="matMenu" class="activedropmenu">
@@ -103,19 +103,25 @@
                         <mat-list-item fxFlex routerLinkActive="activemenu">
                           <a [routerLink]="['/contactus']">Contact Us</a>
                         </mat-list-item>
+                        <mat-list-item fxFlex routerLinkActive="activemenu">
+                            <a [routerLink]="['/admin-dashboard']">Dashboard</a>
+                          </mat-list-item>
                       </span>
                     </mat-nav-list>
                   </span>
                   <span class="topsocialblock">
                     <mat-list role="list">
                       <mat-list-item role="listitem">
-                        <span class="iconwarpper"><i class="fa fa-facebook-f"></i></span>
+                        <!-- <span class="iconwarpper"><i class="fa fa-facebook-f"></i></span> -->
+                        <span class="iconwarpper"><img src="https://img.icons8.com/material/24/000000/facebook-f.png"></span>
                       </mat-list-item>
                       <mat-list-item role="listitem">
-                        <span class="iconwarpper"><i class="fa fa-instagram"></i></span>
+                        <!-- <span class="iconwarpper"><i class="fa fa-instagram"></i></span> -->
+                        <span class="iconwarpper"><img src="https://img.icons8.com/material/24/000000/instagram-new.png"></span>
                       </mat-list-item>
                       <mat-list-item role="listitem">
-                        <span class="iconwarpper"><i class="fa fa-youtube-play"></i></span>
+                        <!-- <span class="iconwarpper"><i class="fa fa-youtube-play"></i></span> -->
+                        <span class="iconwarpper"><img src="https://img.icons8.com/material/24/000000/youtube-play--v1.png"></span>
                       </mat-list-item>
                     </mat-list>
                   </span>
@@ -128,7 +134,7 @@
 </ng-container>
 
 
-<ng-container class="adminheaderleftdiv" *ngIf="router.url ==='/service-listing' || router.url ==='/admin-dashboard' || router.url === '/contact-us-dashboard' || router.url === '/rep-dashboard'  || router.url === '/customer-dashboard'">
+<ng-container class="adminheaderleftdiv" *ngIf = "router.url ==='/service-listing' || router.url ==='/admin-dashboard' || router.url === '/contact-us-dashboard' || router.url === '/rep-dashboard' || router.url === '/customer-dashboard' || router.url === '/blog-management' || router.url === '/commission-report' || router.url === '/inventory-search' || router.url === '/manage-availability' || router.url === '/testimonial-lists-admin'|| router.url === '/commission-list' || router.url === '/customer-list' || router.url === '/manage-commission' || router.url === '/newsletterlists' || router.url === '/sales-report' || router.url === '/salesreplists' || router.url === '/rsvp' || router.url === '/birddog-list' || router.url === '/manage-training'">
   <div class="admcls">
       <app-bk-header></app-bk-header>
       <app-bk-leftdiv></app-bk-leftdiv>

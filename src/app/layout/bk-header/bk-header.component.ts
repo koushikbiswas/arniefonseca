@@ -4,6 +4,8 @@ import { SidenavService } from '../../../app/services/sidenav.service';
 
 import {MatDialog} from '@angular/material/dialog';
 import { CookieService } from 'ngx-cookie-service';
+import { Router } from '@angular/router';
+import { HeaderComponent } from '../header/header.component';
 
 @Component({
   selector: 'app-bk-header',
@@ -15,9 +17,9 @@ export class BkHeaderComponent implements OnInit {
   public user_full_name: any = '';
      
   public user_data: any;
-  constructor(public cookieService: CookieService, private sidenav: SidenavService, public dialog: MatDialog) {
+  constructor(public cookieService: CookieService, private sidenav: SidenavService, public dialog: MatDialog, public router: Router, public Header: HeaderComponent) {
 
-    this.user_data = JSON.parse(this.cookieService.get('user_details'));
+    // this.user_data = JSON.parse(this.cookieService.get('user_details'));
     // console.log(this.user_data);
 
   }
@@ -32,10 +34,10 @@ export class BkHeaderComponent implements OnInit {
    }
 
   ngOnInit() {
-    this.userCookies = JSON.parse(this.cookieService.get('user_details'));
+    // this.userCookies = JSON.parse(this.cookieService.get('user_details'));
   
     // console.log(this.userCookies);
-    this.user_full_name = this.userCookies.firstname +' '+this.userCookies.lastname;
+    // this.user_full_name = this.userCookies.firstname +' '+this.userCookies.lastname;
     // console.log(this.user_full_name);
   }
 

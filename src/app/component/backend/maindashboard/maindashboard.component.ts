@@ -11,10 +11,10 @@ public userCookies: any;
 public user_full_name: any = '';
   constructor(public cookieService: CookieService) {
     // console.log(this.cookieService.getAll());
-    this.userCookies = JSON.parse(this.cookieService.get('user_details'));
+    // this.userCookies = JSON.parse(this.cookieService.get('user_details'));
 
     // console.log(this.userCookies.firstname);
-    this.user_full_name = this.userCookies.firstname +' '+this.userCookies.lastname;
+    // this.user_full_name = this.userCookies.firstname +' '+this.userCookies.lastname;
     // console.log(this.user_full_name);
    }
 
