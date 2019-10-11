@@ -11,17 +11,17 @@ export class ForgetPasswordComponent implements OnInit {
   public logo: any = '../../assets/images/logo.png';
   public loginRouteingUrl: any = { 
     "path":"login",
-    "buttonName":"login",
+    "buttonName":"Login",
     "customLink":"",
     "customURl":""
   };
   public signUpRouteingUrl: any = { 
     "path":"",
-    "buttonName":"sign-up",
+    "buttonName":"Sign-Up",
     "customLink":"/sign-up",
     "customURl":""
   };
-  public buttonName: any = 'Update Password';
+  public buttonName: any = 'Forget Password';
   // public signUpRouteingUrl: any = 'sign-up';
   public formTitle: any = 'Forget Password';
   public serverUrl:any = 'http://166.62.39.137:5050/';

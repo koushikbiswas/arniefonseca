@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { DragScrollComponent } from 'ngx-drag-scroll';
+import { ApiService } from 'src/app/api.service';
 
 @Component({
   selector: 'app-tesimonial',
@@ -28,18 +29,32 @@ export class TesimonialComponent implements OnInit {
   @ViewChild('nav', { read: DragScrollComponent }) ds: DragScrollComponent;
 
 
-  constructor(private activatedRoute: ActivatedRoute, private router: Router) { }
+  constructor(private activatedRoute: ActivatedRoute, private router: Router, public apiService: ApiService) { }
 
 
   ngOnInit() {
-    this.activatedRoute.data.forEach(data => {
-      // console.log(data);
-      let result: any;
-      // result = data.testimonialListData.res;
-      this.TestimonialListArray = result;
-
+    let data: any = {};
+    data = {
+      source:"testimonals",
+      endpoint: "datalist"
+    }
+    this.apiService.getDatalist(data).subscribe((res)=>{
+      console.log(res);
+          let result: any = {};
+      result = res;
+      this.TestimonialListArray = result.res;
+      console.log(this.TestimonialListArray);
     })
+    // this.activatedRoute.data.forEach(data => {
+    //   let result: any;
+    //   result = data.testimonialListData.res;
+    //   this.TestimonialListArray = result;
+    //   console.log(this.TestimonialListArray);
+
+    // })
   }
+
+
 
   moveLeft() {
     this.imgsmall.moveLeft();
