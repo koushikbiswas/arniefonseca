@@ -219,6 +219,7 @@ export class ApiService {
     var result = this._http.post(this.serverUrl + this.addendpointUrl, JSON.stringify(requestdata), httpOptions).pipe(map(res => res));
     return result;
   }
+  
   /*******added by souresh************/
   uploadFile(requestdata:any){
     const httpOptions={
@@ -251,8 +252,25 @@ export class ApiService {
     };
     var result = this._http.post(this.serverUrl + this.getdata_endpointUrl, JSON.stringify(requestdata), httpOptions).pipe(map(res => res));
     return result;
+
   }
 /*************** Added by himadri start here ***************/ 
+/*************** Added by himadri using for datalist start here ***************/ 
+
+getDatalist(requestdata: any) {
+  const httpOptions = {
+    headers: new HttpHeaders({
+      'Content-Type': 'application/json',
+      'Authorization': this.accesstoken
+    })
+  };
+  var result = this._http.post(this.serverUrlDemo + requestdata.endpoint, JSON.stringify(requestdata), httpOptions).pipe(map(res => res));
+  return result;
+
+/*************** Added by himadri end here ***************/ 
+}
+
+
   addLogin(requestdata: any) {
     console.log('in addLogin apiservice');
     const httpOptions = {
