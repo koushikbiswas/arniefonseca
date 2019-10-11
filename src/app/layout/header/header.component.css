@@ -115,6 +115,9 @@
     line-height: 20px;
 }
 
+.topsocialblock a{width: 20px; height: 20px; padding:5px; border-radius: 50px; line-height: 20px;}
+.topsocialblock .iconwarpper img{max-width: 100%;}
+
 .topsocialblock .iconwarpper .fa{color:#fff;}
 /*Header Middle block css*/
 

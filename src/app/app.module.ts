@@ -22,7 +22,7 @@ import { ApiService } from './api.service';
 import {ListingModule} from 'listing-angular7';
 
 import {MatIconModule} from '@angular/material/icon';
-
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 
 /**Frontend Component**/
@@ -139,6 +139,7 @@ import { ManageTrainingComponent } from './component/backend/manage-training/man
     ManageTrainingComponent
   ],
   imports: [
+    AngularFontAwesomeModule,
     DragScrollModule,
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
