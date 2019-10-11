@@ -53,6 +53,13 @@ import { SalesReportComponent } from './component/backend/sales-report/sales-rep
 import { SalesreplistsComponent } from './component/backend/salesreplists/salesreplists.component';
 import { RsvplistsComponent } from './component/backend/rsvplists/rsvplists.component';
 import { ManageTrainingComponent } from './component/backend/manage-training/manage-training.component';
+import { ManageLessonsComponent } from './component/backend/manage-lessons/manage-lessons.component';
+import { TrainingCenterComponent } from './component/backend/training-center/training-center.component';
+import { TrainingReportComponent } from './component/backend/training-report/training-report.component';
+import { MyAppointmentComponent } from './component/backend/my-appointment/my-appointment.component';
+import { CreateNewInventoryComponent } from './component/backend/create-new-inventory/create-new-inventory.component';
+import { JobTicketComponent } from './component/backend/job-ticket/job-ticket.component';
+import { SocialAdvoComponent } from './component/backend/social-advo/social-advo.component';
 import { from } from 'rxjs';
 /**End Backend Routing**/
 
@@ -157,7 +164,7 @@ const routes: Routes = [
   },
   { path: 'blog-management', component: BlogManagementComponent },
   { path: 'commission-report', component: CommissionReportComponent },
-  { path: 'inventory-search', component: InventorySearchComponent },
+  { path: 'by-category', component: InventorySearchComponent },
   { path: 'manage-availability', component: ManageAvailabilityComponent },
   { path: 'testimonial-lists-admin', component: TestimonialListsAdminComponent },
   { path: 'birddog-list', component: BirddogListComponent },
@@ -169,6 +176,13 @@ const routes: Routes = [
   { path: 'salesrep-list', component: SalesreplistsComponent },
   { path: 'rsvp', component: RsvplistsComponent },
   { path: 'manage-training', component: ManageTrainingComponent },
+  { path: 'manage-lessons', component: ManageLessonsComponent },
+  { path: 'training-center', component: TrainingCenterComponent },
+  { path: 'training-report', component: TrainingReportComponent },
+  { path: 'my-appointment', component: MyAppointmentComponent },
+  { path: 'create-new-inventory', component: CreateNewInventoryComponent },
+  { path: 'job-ticket', component: JobTicketComponent },
+  { path: 'social-advo', component: SocialAdvoComponent },
 
   /**************** User Management *****************/
   {

@@ -74,7 +74,7 @@
                           <!-- <a (click)="openDialog()">Pre-Owned</a> -->
                         </mat-list-item>
                         <mat-list-item fxFlex routerLinkActive="activemenu">
-                            <a [matMenuTriggerFor]="menu1">Inventory Search</a>
+                            <a [matMenuTriggerFor]="menu1">Inventory</a>
                             <mat-menu #menu1="matMenu" class="activedropmenu">
                               <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/basic-inventory-search']">Basic Inventory Search</a>
                               <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/advance-inventory-search']">Advance Inventory Search</a>
@@ -134,10 +134,5 @@
 </ng-container>
 
 
-<ng-container class="adminheaderleftdiv" *ngIf = "router.url ==='/service-listing' || router.url ==='/admin-dashboard' || router.url === '/contact-us-dashboard' || router.url === '/rep-dashboard' || router.url === '/customer-dashboard' || router.url === '/blog-management' || router.url === '/commission-report' || router.url === '/inventory-search' || router.url === '/manage-availability' || router.url === '/testimonial-lists-admin'|| router.url === '/commission-list' || router.url === '/customer-list' || router.url === '/manage-commission' || router.url === '/newsletter-list' || router.url === '/sales-report' || router.url === '/salesrep-list' || router.url === '/rsvp' || router.url === '/birddog-list' || router.url === '/manage-training'">
-  <div class="admcls">
-      <app-bk-header></app-bk-header>
-      <app-bk-leftdiv></app-bk-leftdiv>
-  </div>   
-</ng-container>
+<ng-container class="adminheaderleftdiv" *ngIf = "router.url ==='/service-listing' || router.url ==='/admin-dashboard' || router.url === '/contact-us-dashboard' || router.url === '/rep-dashboard' || router.url === '/customer-dashboard' || router.url === '/blog-management' || router.url === '/commission-report' || router.url === '/by-category' || router.url === '/manage-availability' || router.url === '/testimonial-lists-admin'|| router.url === '/commission-list' || router.url === '/customer-list' || router.url === '/manage-commission' || router.url === '/newsletter-list' || router.url === '/sales-report' || router.url === '/salesrep-list' || router.url === '/rsvp' || router.url === '/birddog-list' || router.url === '/manage-training' || router.url === '/manage-lessons' || router.url === '/training-center' || router.url === '/training-report' || router.url === '/my-appointment' || router.url === '/create-new-inventory' || router.url === '/job-ticket' || router.url === '/social-advo'"><div class="admcls"><app-bk-header></app-bk-header><app-bk-leftdiv></app-bk-leftdiv></div></ng-container>
 

@@ -87,6 +87,13 @@ import { SalesreplistsComponent } from './component/backend/salesreplists/salesr
 import { RsvplistsComponent } from './component/backend/rsvplists/rsvplists.component';
 import { ManageTrainingComponent } from './component/backend/manage-training/manage-training.component';
 import { SearchListViewComponent } from './component/frontend/search-list-view/search-list-view.component';
+import { ManageLessonsComponent } from './component/backend/manage-lessons/manage-lessons.component';
+import { TrainingCenterComponent } from './component/backend/training-center/training-center.component';
+import { TrainingReportComponent } from './component/backend/training-report/training-report.component';
+import { MyAppointmentComponent } from './component/backend/my-appointment/my-appointment.component';
+import { CreateNewInventoryComponent } from './component/backend/create-new-inventory/create-new-inventory.component';
+import { JobTicketComponent } from './component/backend/job-ticket/job-ticket.component';
+import { SocialAdvoComponent } from './component/backend/social-advo/social-advo.component';
 /**End Backend Component** */
 
 
@@ -140,7 +147,14 @@ import { SearchListViewComponent } from './component/frontend/search-list-view/s
     SalesreplistsComponent,
     RsvplistsComponent,
     ManageTrainingComponent,
-    SearchListViewComponent
+    SearchListViewComponent,
+    ManageLessonsComponent,
+    TrainingCenterComponent,
+    TrainingReportComponent,
+    MyAppointmentComponent,
+    CreateNewInventoryComponent,
+    JobTicketComponent,
+    SocialAdvoComponent
   ],
   imports: [
     AngularFontAwesomeModule,
