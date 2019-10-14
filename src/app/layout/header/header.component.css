@@ -302,30 +302,14 @@
 }
 
 
-@media screen and (max-width:540px) {
-    
-    .infoblock{
-        margin-bottom: 10px !important;
-    }
-    .langblock select {
-        color: #fff;
-        margin-bottom: 0px;
-        display: inline-block;
-        margin-top: 10px;
-    }
+@media only screen and (max-width: 600px) {
+  .rightsidelinks .iconimg {width: 45px; height: auto;}
+  .rightsidelinks {width: 45px;}
+}
 
-.headertopwrapper.mat-card-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 0;
-    flex-wrap: wrap;
-}
-.topcontactinfoblock .mat-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 0;
-    flex-wrap: wrap;
-}
+@media screen and (max-width:540px) {  
+  .infoblock{margin-bottom: 10px !important}
+  .langblock select{color: #fff;margin-bottom: 0px;display: inline-block;margin-top: 10px}
+  .headertopwrapper.mat-card-content{display: flex;align-items: center;justify-content: center;margin-bottom: 0;flex-wrap: wrap}
+  .topcontactinfoblock .mat-list{display: flex;justify-content: center;align-items: center;padding-top: 0;flex-wrap: wrap}
 }
