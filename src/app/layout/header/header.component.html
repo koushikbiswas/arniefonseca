@@ -1,7 +1,16 @@
 
 
 <ng-container  *ngIf="router.url =='/' || router.url =='/home' || router.url =='/forget-password' || router.url =='/reset-password' || router.url =='/sign-up' || router.url == '/contactus' || router.url == '/service' || router.url == '/servicelist' || router.url == '/testimonial' || router.url == '/testimoniallist' || router.url == '/contactus' || router.url == '/blog' || router.url == '/bloglist' || router.url == '/blogdetail' || router.url == '/basic-inventory-search' || router.url == '/advance-inventory-search' || router.url == '/pre-owned' || router.url == '/aboutus' || router.url == '/pre-owned-list' || router.url == '/online-inventory-list' || router.url == '/search-inventory-list' || router.url == '/specials-list'">
+  <mat-card class="rightsidelinks">
+    <mat-card-content>
+      <span><a [routerLink]="['/admin-dashboard']"><span class="iconimg"><img src="../../../assets//images/admin_dashboard1.png"> </span></a><span class="content">Admin dashboard</span></span>
+      <span><a [routerLink]="['/rep-dashboard']"><span class="iconimg"><img src="../../../assets//images/admin_dashboard2.png"> </span></a><span class="content">Rep dashboard</span></span>
+      <span><a [routerLink]="['/customer-dashboard']"><span class="iconimg"><img src="../../../assets//images/admin_dashboard3.png"> </span></a><span class="content">Customer dashboard</span></span>
+    </mat-card-content>
+  </mat-card>
+</ng-container>
 
+<ng-container  *ngIf="router.url =='/' || router.url =='/home' || router.url =='/forget-password' || router.url =='/reset-password' || router.url =='/sign-up' || router.url == '/contactus' || router.url == '/service' || router.url == '/servicelist' || router.url == '/testimonial' || router.url == '/testimoniallist' || router.url == '/contactus' || router.url == '/blog' || router.url == '/bloglist' || router.url == '/blogdetail' || router.url == '/basic-inventory-search' || router.url == '/advance-inventory-search' || router.url == '/pre-owned' || router.url == '/aboutus' || router.url == '/pre-owned-list' || router.url == '/online-inventory-list' || router.url == '/search-inventory-list' || router.url == '/specials-list'">
       <mat-card class="headertop">
           <span class="mainwrappercontent">
             <mat-card-content class="headertopwrapper">
@@ -17,8 +26,8 @@
                   <mat-list-item role="listitem">
                     <img src="../../assets/images/clockicon.png"> MON - SAT 0.00 - 00.00
                   </mat-list-item>
-                  <mat-list-item role="listitem"><span><img src="../../assets/images/loginicon.png"> login</span>
-                    <span>Register</span></mat-list-item>
+                  <mat-list-item role="listitem"><span><a [routerLink]="['']"><img src="../../assets/images/loginicon.png"> login</a></span>
+                    <span><a [routerLink]="['/sign-up']">Register</a></span></mat-list-item>
         
                 </mat-list>
               </span>
@@ -103,9 +112,9 @@
                         <mat-list-item fxFlex routerLinkActive="activemenu">
                           <a [routerLink]="['/contactus']">Contact Us</a>
                         </mat-list-item>
-                        <mat-list-item fxFlex routerLinkActive="activemenu">
+                        <!-- <mat-list-item fxFlex routerLinkActive="activemenu">
                             <a [routerLink]="['/admin-dashboard']">Dashboard</a>
-                          </mat-list-item>
+                          </mat-list-item> -->
                       </span>
                     </mat-nav-list>
                   </span>
@@ -134,5 +143,10 @@
 </ng-container>
 
 
-<ng-container class="adminheaderleftdiv" *ngIf = "router.url ==='/service-listing' || router.url ==='/admin-dashboard' || router.url === '/contact-us-dashboard' || router.url === '/rep-dashboard' || router.url === '/customer-dashboard' || router.url === '/blog-management' || router.url === '/commission-report' || router.url === '/by-category' || router.url === '/manage-availability' || router.url === '/testimonial-lists-admin'|| router.url === '/commission-list' || router.url === '/customer-list' || router.url === '/manage-commission' || router.url === '/newsletter-list' || router.url === '/sales-report' || router.url === '/salesrep-list' || router.url === '/rsvp' || router.url === '/birddog-list' || router.url === '/manage-training' || router.url === '/manage-lessons' || router.url === '/training-center' || router.url === '/training-report' || router.url === '/my-appointment' || router.url === '/create-new-inventory' || router.url === '/job-ticket' || router.url === '/social-advo'"><div class="admcls"><app-bk-header></app-bk-header><app-bk-leftdiv></app-bk-leftdiv></div></ng-container>
+<ng-container class="adminheaderleftdiv" *ngIf = "router.url ==='/service-listing' || router.url ==='/admin-dashboard' || router.url === '/contact-us-dashboard' || router.url === '/rep-dashboard' || router.url === '/customer-dashboard' || router.url === '/blog-management' || router.url === '/commission-report' || router.url === '/inventory-list' || router.url === '/manage-availability' || router.url === '/testimonial-lists-admin'|| router.url === '/commission-list' || router.url === '/customer-list' || router.url === '/manage-commission' || router.url === '/newsletter-list' || router.url === '/sales-report' || router.url === '/salesrep-list' || router.url === '/rsvp' || router.url === '/birddog-list' || router.url === '/manage-training' || router.url === '/manage-lessons' || router.url === '/training-center' || router.url === '/training-report' || router.url === '/my-appointment-admin' || router.url === '/my-appointment-user' || router.url === '/my-appointment-rep' || router.url === '/create-new-inventory' || router.url === '/job-ticket' || router.url === '/social-advo' || router.url === '/social-advo' || router.url === '/my-commission' || router.url === '/my-birddog' || router.url === '/book-an-appointment-user' || router.url === '/book-an-appointment-rep'">
+  <div class="admcls">
+    <app-bk-header></app-bk-header>
+    <app-bk-leftdiv></app-bk-leftdiv>
+  </div>
+</ng-container>
 

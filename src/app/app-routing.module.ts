@@ -61,6 +61,7 @@ import { CreateNewInventoryComponent } from './component/backend/create-new-inve
 import { JobTicketComponent } from './component/backend/job-ticket/job-ticket.component';
 import { SocialAdvoComponent } from './component/backend/social-advo/social-advo.component';
 import { from } from 'rxjs';
+import { BookAnAppointmentComponent } from './component/backend/book-an-appointment/book-an-appointment.component';
 /**End Backend Routing**/
 
 const routes: Routes = [
@@ -164,7 +165,7 @@ const routes: Routes = [
   },
   { path: 'blog-management', component: BlogManagementComponent },
   { path: 'commission-report', component: CommissionReportComponent },
-  { path: 'by-category', component: InventorySearchComponent },
+  { path: 'inventory-list', component: InventorySearchComponent },
   { path: 'manage-availability', component: ManageAvailabilityComponent },
   { path: 'testimonial-lists-admin', component: TestimonialListsAdminComponent },
   { path: 'birddog-list', component: BirddogListComponent },
@@ -179,22 +180,31 @@ const routes: Routes = [
   { path: 'manage-lessons', component: ManageLessonsComponent },
   { path: 'training-center', component: TrainingCenterComponent },
   { path: 'training-report', component: TrainingReportComponent },
-  { path: 'my-appointment', component: MyAppointmentComponent },
+  { path: 'my-appointment-admin', component: MyAppointmentComponent },
   { path: 'create-new-inventory', component: CreateNewInventoryComponent },
   { path: 'job-ticket', component: JobTicketComponent },
   { path: 'social-advo', component: SocialAdvoComponent },
-
+  
+ 
   /**************** User Management *****************/
   {
     path: 'user-management', component: UserManagementComponent, resolve: { serviceList: ResolveService },
     data: { requestcondition: { source: 'user', condition: {} }, endpoint: 'datalist' }
   },
+  
+  { path: 'my-appointment-user', component: MyAppointmentComponent },
+  { path: 'book-an-appointment-user', component: BookAnAppointmentComponent },
 
   // { path:'contact-us-dashboard', component:ContactUsDashboardComponent,  resolve: { serviceList: ResolveService },
   // data: { requestcondition: { source: 'contactusForm', condition: {} }, endpoint: 'datalist'}},
 
   /**************** Rep Management *****************/
   { path: 'rep-dashboard', component: RepdashboardComponent },
+  { path: 'my-commission', component: CommissionListComponent },
+  { path: 'my-birddog', component: BirddogListComponent },
+  
+  { path: 'my-appointment-rep', component: MyAppointmentComponent },
+  { path: 'book-an-appointment-rep', component: BookAnAppointmentComponent },
 
   /**End Backend Routing**/
 

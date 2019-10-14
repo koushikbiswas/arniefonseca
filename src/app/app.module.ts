@@ -94,6 +94,7 @@ import { MyAppointmentComponent } from './component/backend/my-appointment/my-ap
 import { CreateNewInventoryComponent } from './component/backend/create-new-inventory/create-new-inventory.component';
 import { JobTicketComponent } from './component/backend/job-ticket/job-ticket.component';
 import { SocialAdvoComponent } from './component/backend/social-advo/social-advo.component';
+import { BookAnAppointmentComponent } from './component/backend/book-an-appointment/book-an-appointment.component';
 /**End Backend Component** */
 
 
@@ -154,7 +155,8 @@ import { SocialAdvoComponent } from './component/backend/social-advo/social-advo
     MyAppointmentComponent,
     CreateNewInventoryComponent,
     JobTicketComponent,
-    SocialAdvoComponent
+    SocialAdvoComponent,
+    BookAnAppointmentComponent
   ],
   imports: [
     AngularFontAwesomeModule,

@@ -169,6 +169,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#32393f', end
 .starimgnew{ width: 43px!important; position: absolute; left: 1px; top:1px; border: none!important;}
 
 
+.footerbg.mat-card{width: 100%; display: block; background: #dde2e5 !important; padding: 10px; text-align: left; color: #fff;}
+.footerbg .mat-card{background: #dde2e5 !important;}
+.footerblock.mat-card{background: #dde2e5 !important;}
+
+
 @media only screen and (max-width: 1760px) {
 .dashboard_block1{ background-position: 790px top!important;}
 .dashboard_block1 mat-card-content{ width: 1000px;}

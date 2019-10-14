@@ -1,3 +1,83 @@
+/*---right side links css---*/
+.rightsidelinks{
+  position: fixed;
+  top: 22%;
+  right: 0;
+  z-index: 9999;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 70px;
+  height: auto;
+  overflow: hidden;
+  white-space: normal;
+  word-break: break-word;  
+  transition: width 0.5s;
+  -webkit-transition: width 0.5s;
+  padding: 0;
+  background:none !important;
+}
+
+.rightsidelinks span:nth-child(1){
+  background-color: #000;
+}
+.rightsidelinks span:nth-child(2){
+  background-color: #000;
+}
+.rightsidelinks span:nth-child(3){
+  background-color: #000;
+}
+
+.rightsidelinks span.content{
+  width: auto!important;
+    margin: 0;
+    padding:5px 0px 5px;
+    text-transform: capitalize;
+    font-size: 12px;
+    height: auto;
+    border-bottom: 1px solid #000;
+}
+
+.rightsidelinks span{
+  padding: 0;
+  border-radius: 0;
+  width:70px;
+  height: 55px;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  margin-top: 2px;
+}
+.rightsidelinks .iconimg{width: 70px; height: 57px;display: block;
+  border: 1px solid rgba(255, 255, 255, 0.2);}
+.rightsidelinks .iconimg img{
+  width: 63%;
+  padding: 5px;}
+
+.rightsidelinks span a{display: flex; align-items: center; justify-content: space-between;}
+
+.content {
+  display: none;
+  margin: 15px;
+  background-color: #f54336!important;
+}
+.rightsidelinks span:nth-child(1):hover .content {
+  display: block;
+}
+.rightsidelinks span:nth-child(2):hover .content {
+  display: block;
+}
+.rightsidelinks span:nth-child(3):hover .content {
+  display: block;
+}
+
+.rightsidelinks span:hover .img {
+  float: left;
+}
+
+/*---end right side links css---*/
+
+
 /*Header top block css*/
 
 .langblock select.mat-input-element:not(:disabled) {
@@ -12,6 +92,9 @@
     width: inherit;
     color: #a7a6a6;
     text-transform: uppercase;
+  }
+  .infoblock .mat-list .mat-list-item a, .infoblock .mat-list .mat-list-item a:hover{
+    color: #a7a6a6;
   }
   .infoblock .mat-list .mat-list-item span {
     border-right: 1px solid #333;
