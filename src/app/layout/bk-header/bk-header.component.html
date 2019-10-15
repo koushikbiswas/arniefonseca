@@ -1,4 +1,4 @@
-<mat-toolbar class="header fixed" *ngIf="router.url ==='/admin-dashboard' || router.url ==='/service-listing' || router.url === '/contact-us-dashboard' || router.url === '/blog-management' || router.url === '/commission-report' || router.url === '/inventory-list' || router.url === '/manage-availability' || router.url === '/testimonial-lists-admin'|| router.url === '/commission-list' || router.url === '/customer-list' || router.url === '/manage-commission' || router.url === '/newsletter-list' || router.url === '/sales-report' || router.url === '/salesrep-list' || router.url === '/rsvp' || router.url === '/birddog-list' || router.url === '/manage-training' || router.url === '/manage-lessons' || router.url === '/training-center' || router.url === '/training-report' || router.url === '/create-new-inventory' || router.url === '/job-ticket' || router.url === '/social-advo' || router.url === '/my-appointment-admin'">
+<mat-toolbar class="header fixed" *ngIf="router.url ==='/admin-dashboard' || router.url ==='/service-listing' || router.url === '/contact-us-dashboard' || router.url === '/blog-management' || router.url === '/commission-report' || router.url === '/inventory-list' || router.url === '/manage-availability' || router.url === '/testimonial-lists-admin'|| router.url === '/commission-list' || router.url === '/customer-list-admin' || router.url === '/manage-commission' || router.url === '/newsletter-list' || router.url === '/sales-report' || router.url === '/salesrep-list-admin' || router.url === '/rsvp' || router.url === '/birddog-list' || router.url === '/manage-training' || router.url === '/manage-lessons' || router.url === '/training-center' || router.url === '/training-report' || router.url === '/create-new-inventory' || router.url === '/job-ticket' || router.url === '/social-advo-admin' || router.url === '/my-appointment-admin'">
     <mat-toolbar-row class="toolbar-row">
         <div class="logo">
             <img src="assets/images/logomain.png" alt="">
@@ -55,8 +55,8 @@
                 <mat-list-item fxFlex class="nav-item" routerLinkActive="activemenu">
                     <a [matMenuTriggerFor]="menu1">User Management</a>
                     <mat-menu #menu1="matMenu" class="activedropmenu">
-                        <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/customer-list']">Customers</a>
-                        <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/salesrep-list']">SalesRep</a>
+                        <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/customer-list-admin']">Customers</a>
+                        <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/salesrep-list-admin']">SalesRep</a>
                         <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/birddog-list']">Birddogs</a>
                     </mat-menu>
                     <div class="triangle"></div>
@@ -92,7 +92,7 @@
                     <a [matMenuTriggerFor]="menu6">Manage Website</a>
                     <mat-menu #menu6="matMenu" class="activedropmenu">
                         <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/manage-commission']">Manage Commission</a>
-                        <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/social-advo']">Social Advo</a>
+                        <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/social-advo-admin']">Social Advo</a>
                         <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/blog-management']">Blog Management</a>
                         <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/testimonial-lists-admin']">testimonial lists</a>
                         <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/newsletter-list']">newsletter</a>
@@ -129,7 +129,7 @@
 
 
 <!-- <mat-toolbar class="header fixed" *ngIf="user_data.type == 'user'"> -->
-<mat-toolbar class="header fixed" *ngIf="router.url === '/customer-dashboard' || router.url === '/book-an-appointment-user' || router.url === '/my-appointment-user'">
+<mat-toolbar class="header fixed" *ngIf="router.url === '/customer-dashboard' || router.url === '/book-an-appointment-user' || router.url === '/my-appointment-user' || router.url === '/salesrep-list-user'">
   <mat-toolbar-row class="toolbar-row">
     <div class="logo">
       <img src="assets/images/logomain.png" alt="">
@@ -154,7 +154,7 @@
           <div class="triangle"></div>
         </mat-list-item>
         <mat-list-item  class="nav-item" routerLinkActive="activemenu" (click)="open(2)">
-          <a class="nav-item-hold" (click)="Header.openDialog()">
+          <a class="nav-item-hold" mat-menu-item routerLinkActive="activemenu" [routerLink]="['/salesrep-list-user']">
             <span class="nav-text">SalesRep</span>
           </a>
           <div class="triangle"></div>
@@ -217,7 +217,7 @@
 
 
 <!-- <mat-toolbar class="header fixed" *ngIf="user_data.type == 'rep'"> -->
-<mat-toolbar class="header fixed" *ngIf="router.url ==='/rep-dashboard' || router.url === '/my-appointment-rep' || router.url === '/book-an-appointment-rep' || router.url === '/my-birddog' || router.url === '/my-commission'">
+<mat-toolbar class="header fixed" *ngIf="router.url ==='/rep-dashboard' || router.url === '/my-appointment-rep' || router.url === '/book-an-appointment-rep' || router.url === '/my-birddog' || router.url === '/my-commission' || router.url === '/social-advo-rep' || router.url === '/customer-list-rep'">
   <mat-toolbar-row class="toolbar-row">
     <div class="logo">
       <img src="assets/images/logomain.png" alt="">
@@ -242,7 +242,7 @@
           <div class="triangle"></div>
         </mat-list-item>
         <mat-list-item  class="nav-item" routerLinkActive="activemenu" (click)="open(2)">
-          <a class="nav-item-hold" (click)="Header.openDialog()">
+          <a class="nav-item-hold" mat-menu-item routerLinkActive="activemenu" [routerLink]="['/customer-list-rep']">
             <span class="nav-text">Customers</span>
           </a>
           <div class="triangle"></div>
@@ -274,7 +274,7 @@
           <div class="triangle"></div>
         </mat-list-item>
         <mat-list-item class="nav-item" routerLinkActive="activemenu">
-          <a class="nav-item-hold" (click)="Header.openDialog()">
+          <a class="nav-item-hold" mat-menu-item routerLinkActive="activemenu" [routerLink]="['/social-advo-rep']">
             <span class="nav-text">Social Advo</span>
           </a>
           <div class="triangle"></div>

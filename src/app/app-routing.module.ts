@@ -170,11 +170,11 @@ const routes: Routes = [
   { path: 'testimonial-lists-admin', component: TestimonialListsAdminComponent },
   { path: 'birddog-list', component: BirddogListComponent },
   { path: 'commission-list', component: CommissionListComponent },
-  { path: 'customer-list', component: CustomerListComponent },
+  { path: 'customer-list-admin', component: CustomerListComponent },
   { path: 'manage-commission', component: ManageCommissionComponent },
   { path: 'newsletter-list', component: NewsletterlistsComponent },
   { path: 'sales-report', component: SalesReportComponent },
-  { path: 'salesrep-list', component: SalesreplistsComponent },
+  { path: 'salesrep-list-admin', component: SalesreplistsComponent },
   { path: 'rsvp', component: RsvplistsComponent },
   { path: 'manage-training', component: ManageTrainingComponent },
   { path: 'manage-lessons', component: ManageLessonsComponent },
@@ -183,7 +183,7 @@ const routes: Routes = [
   { path: 'my-appointment-admin', component: MyAppointmentComponent },
   { path: 'create-new-inventory', component: CreateNewInventoryComponent },
   { path: 'job-ticket', component: JobTicketComponent },
-  { path: 'social-advo', component: SocialAdvoComponent },
+  { path: 'social-advo-admin', component: SocialAdvoComponent },
   
  
   /**************** User Management *****************/
@@ -194,6 +194,7 @@ const routes: Routes = [
   
   { path: 'my-appointment-user', component: MyAppointmentComponent },
   { path: 'book-an-appointment-user', component: BookAnAppointmentComponent },
+  { path: 'salesrep-list-user', component: SalesreplistsComponent },
 
   // { path:'contact-us-dashboard', component:ContactUsDashboardComponent,  resolve: { serviceList: ResolveService },
   // data: { requestcondition: { source: 'contactusForm', condition: {} }, endpoint: 'datalist'}},
@@ -206,6 +207,8 @@ const routes: Routes = [
   { path: 'my-appointment-rep', component: MyAppointmentComponent },
   { path: 'book-an-appointment-rep', component: BookAnAppointmentComponent },
 
+  { path: 'customer-list-rep', component: CustomerListComponent },
+  { path: 'social-advo-rep', component: SocialAdvoComponent },
   /**End Backend Routing**/
 
 
