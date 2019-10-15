@@ -129,7 +129,7 @@
 
 
 <!-- <mat-toolbar class="header fixed" *ngIf="user_data.type == 'user'"> -->
-<mat-toolbar class="header fixed" *ngIf="router.url === '/customer-dashboard' || router.url === '/book-an-appointment-user' || router.url === '/my-appointment-user' || router.url === '/salesrep-list-user'">
+<mat-toolbar class="header fixed" *ngIf="router.url === '/customer-dashboard' || router.url === '/book-an-appointment-user' || router.url === '/my-appointment-user' || router.url === '/mysalesrep' || router.url === '/advance-inventory-search-user' || router.url === '/basic-inventory-search-user'">
   <mat-toolbar-row class="toolbar-row">
     <div class="logo">
       <img src="assets/images/logomain.png" alt="">
@@ -154,7 +154,7 @@
           <div class="triangle"></div>
         </mat-list-item>
         <mat-list-item  class="nav-item" routerLinkActive="activemenu" (click)="open(2)">
-          <a class="nav-item-hold" mat-menu-item routerLinkActive="activemenu" [routerLink]="['/salesrep-list-user']">
+          <a class="nav-item-hold" mat-menu-item routerLinkActive="activemenu" [routerLink]="['/mysalesrep']">
             <span class="nav-text">SalesRep</span>
           </a>
           <div class="triangle"></div>
@@ -163,9 +163,9 @@
           <a [matMenuTriggerFor]="menu1">Inventory</a>
           <mat-menu #menu1="matMenu" class="activedropmenu">
             <!-- <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/basic-inventory']">Basic Inventory Search</a> -->
-            <a mat-menu-item routerLinkActive="activemenu" (click)="Header.openDialog()">Basic Inventory Search</a>
+            <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/basic-inventory-search-user']">Basic Inventory Search</a>
             <!-- <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/advance-inventory']">Advance Inventory Search</a> -->
-            <a mat-menu-item routerLinkActive="activemenu" (click)="Header.openDialog()">Advance Inventory Search</a>
+            <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/advance-inventory-search-user']">Advance Inventory Search</a>
           </mat-menu>
           <div class="triangle"></div>
         </mat-list-item>
@@ -217,7 +217,7 @@
 
 
 <!-- <mat-toolbar class="header fixed" *ngIf="user_data.type == 'rep'"> -->
-<mat-toolbar class="header fixed" *ngIf="router.url ==='/rep-dashboard' || router.url === '/my-appointment-rep' || router.url === '/book-an-appointment-rep' || router.url === '/my-birddog' || router.url === '/my-commission' || router.url === '/social-advo-rep' || router.url === '/customer-list-rep'">
+<mat-toolbar class="header fixed" *ngIf="router.url ==='/rep-dashboard' || router.url === '/my-appointment-rep' || router.url === '/book-an-appointment-rep' || router.url === '/my-birddog' || router.url === '/my-commission' || router.url === '/social-advo-rep' || router.url === '/customer-list-rep' || router.url === '/advance-inventory-search-rep' || router.url === '/basic-inventory-search-rep' || router.url === '/communication' || router.url === '/training-center-rep'">
   <mat-toolbar-row class="toolbar-row">
     <div class="logo">
       <img src="assets/images/logomain.png" alt="">
@@ -250,13 +250,13 @@
         <mat-list-item fxFlex class="nav-item" routerLinkActive="activemenu">
           <a [matMenuTriggerFor]="menu1">Inventory</a>
           <mat-menu #menu1="matMenu" class="activedropmenu">
-            <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/basic-inventory-search']">Basic Inventory Search</a>
-            <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/advance-inventory-search']">Advance Inventory Search</a>
+            <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/basic-inventory-search-rep']">Basic Inventory Search</a>
+            <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/advance-inventory-search-rep']">Advance Inventory Search</a>
           </mat-menu>
           <div class="triangle"></div>
         </mat-list-item>
         <mat-list-item class="nav-item" routerLinkActive="activemenu">
-          <a class="nav-item-hold" (click)="Header.openDialog()">
+          <a class="nav-item-hold" mat-menu-item routerLinkActive="activemenu" [routerLink]="['/communication']">
             <span class="nav-text">Communication</span>
           </a>
           <div class="triangle"></div>
@@ -276,6 +276,12 @@
         <mat-list-item class="nav-item" routerLinkActive="activemenu">
           <a class="nav-item-hold" mat-menu-item routerLinkActive="activemenu" [routerLink]="['/social-advo-rep']">
             <span class="nav-text">Social Advo</span>
+          </a>
+          <div class="triangle"></div>
+        </mat-list-item>
+        <mat-list-item class="nav-item" routerLinkActive="activemenu">
+          <a class="nav-item-hold" mat-menu-item routerLinkActive="activemenu" [routerLink]="['/training-center-rep']">
+            <span class="nav-text">Training Center</span>
           </a>
           <div class="triangle"></div>
         </mat-list-item>

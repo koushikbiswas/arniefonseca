@@ -95,6 +95,10 @@ import { CreateNewInventoryComponent } from './component/backend/create-new-inve
 import { JobTicketComponent } from './component/backend/job-ticket/job-ticket.component';
 import { SocialAdvoComponent } from './component/backend/social-advo/social-advo.component';
 import { BookAnAppointmentComponent } from './component/backend/book-an-appointment/book-an-appointment.component';
+import { AdvanceInventorySearchBackendComponent } from './component/backend/advance-inventory-search-backend/advance-inventory-search-backend.component';
+import { BasicInventorySearchBackendComponent } from './component/backend/basic-inventory-search-backend/basic-inventory-search-backend.component';
+import { MysalesrepComponent } from './component/backend/mysalesrep/mysalesrep.component';
+import { CommunicationComponent } from './component/backend/communication/communication.component';
 /**End Backend Component** */
 
 
@@ -156,7 +160,11 @@ import { BookAnAppointmentComponent } from './component/backend/book-an-appointm
     CreateNewInventoryComponent,
     JobTicketComponent,
     SocialAdvoComponent,
-    BookAnAppointmentComponent
+    BookAnAppointmentComponent,
+    AdvanceInventorySearchBackendComponent,
+    BasicInventorySearchBackendComponent,
+    MysalesrepComponent,
+    CommunicationComponent,
   ],
   imports: [
     AngularFontAwesomeModule,

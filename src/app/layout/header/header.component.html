@@ -3,9 +3,9 @@
 <ng-container  *ngIf="router.url =='/' || router.url =='/home' || router.url =='/forget-password' || router.url =='/reset-password' || router.url =='/sign-up' || router.url == '/contactus' || router.url == '/service' || router.url == '/servicelist' || router.url == '/testimonial' || router.url == '/testimoniallist' || router.url == '/contactus' || router.url == '/blog' || router.url == '/bloglist' || router.url == '/blogdetail' || router.url == '/basic-inventory-search' || router.url == '/advance-inventory-search' || router.url == '/pre-owned' || router.url == '/aboutus' || router.url == '/pre-owned-list' || router.url == '/online-inventory-list' || router.url == '/search-inventory-list' || router.url == '/specials-list'">
   <mat-card class="rightsidelinks">
     <mat-card-content>
-      <span><a [routerLink]="['/admin-dashboard']"><span class="iconimg"><img src="../../../assets//images/admin_dashboard1.png"> </span></a><span class="content">Admin dashboard</span></span>
-      <span><a [routerLink]="['/rep-dashboard']"><span class="iconimg"><img src="../../../assets//images/admin_dashboard2.png"> </span></a><span class="content">Rep dashboard</span></span>
-      <span><a [routerLink]="['/customer-dashboard']"><span class="iconimg"><img src="../../../assets//images/admin_dashboard3.png"> </span></a><span class="content">Customer dashboard</span></span>
+      <span class="bg1"><a [routerLink]="['/admin-dashboard']"><span class="iconimg"><img src="../../../assets//images/admin_dashboard1.png"> </span></a><span class="content">Admin dashboard</span></span>
+      <span class="bg2"><a [routerLink]="['/rep-dashboard']"><span class="iconimg"><img src="../../../assets//images/admin_dashboard2.png"> </span></a><span class="content">Rep dashboard</span></span>
+      <span class="bg3"><a [routerLink]="['/customer-dashboard']"><span class="iconimg"><img src="../../../assets//images/admin_dashboard3.png"> </span></a><span class="content">Customer dashboard</span></span>
     </mat-card-content>
   </mat-card>
 </ng-container>
@@ -98,7 +98,7 @@
                         </mat-list-item>
                         <mat-list-item fxFlex routerLinkActive="activemenu">
                          <!-- <a [routerLink]="['/aboutus']">About Us</a> -->
-                          <a (click)="openDialog()">About Us</a>
+                          <a [routerLink]="['/aboutus']">About Us</a>
                         </mat-list-item>
                         <mat-list-item fxFlex routerLinkActive="activemenu">
                           <a [routerLink]="['/service']">Service</a>
@@ -143,7 +143,7 @@
 </ng-container>
 
 
-<ng-container class="adminheaderleftdiv" *ngIf = "router.url ==='/service-listing' || router.url ==='/admin-dashboard' || router.url === '/contact-us-dashboard' || router.url === '/rep-dashboard' || router.url === '/customer-dashboard' || router.url === '/blog-management' || router.url === '/commission-report' || router.url === '/inventory-list' || router.url === '/manage-availability' || router.url === '/testimonial-lists-admin'|| router.url === '/commission-list' || router.url === '/customer-list-admin' || router.url === '/customer-list-rep' || router.url === '/manage-commission' || router.url === '/newsletter-list' || router.url === '/sales-report' || router.url === '/salesrep-list-admin' || router.url === '/salesrep-list-user' || router.url === '/rsvp' || router.url === '/birddog-list' || router.url === '/manage-training' || router.url === '/manage-lessons' || router.url === '/training-center' || router.url === '/training-report' || router.url === '/my-appointment-admin' || router.url === '/my-appointment-user' || router.url === '/my-appointment-rep' || router.url === '/create-new-inventory' || router.url === '/job-ticket' || router.url === '/social-advo-admin' || router.url === '/social-advo-rep' || router.url === '/my-commission' || router.url === '/my-birddog' || router.url === '/book-an-appointment-user' || router.url === '/book-an-appointment-rep'">
+<ng-container class="adminheaderleftdiv" *ngIf = "router.url ==='/service-listing' || router.url ==='/admin-dashboard' || router.url === '/contact-us-dashboard' || router.url === '/rep-dashboard' || router.url === '/customer-dashboard' || router.url === '/blog-management' || router.url === '/commission-report' || router.url === '/inventory-list' || router.url === '/manage-availability' || router.url === '/testimonial-lists-admin'|| router.url === '/commission-list' || router.url === '/customer-list-admin' || router.url === '/customer-list-rep' || router.url === '/manage-commission' || router.url === '/newsletter-list' || router.url === '/sales-report' || router.url === '/salesrep-list-admin' || router.url === '/mysalesrep' || router.url === '/rsvp' || router.url === '/birddog-list' || router.url === '/manage-training' || router.url === '/manage-lessons' || router.url === '/training-center' || router.url === '/training-report' || router.url === '/my-appointment-admin' || router.url === '/my-appointment-user' || router.url === '/my-appointment-rep' || router.url === '/create-new-inventory' || router.url === '/job-ticket' || router.url === '/social-advo-admin' || router.url === '/social-advo-rep' || router.url === '/my-commission' || router.url === '/my-birddog' || router.url === '/book-an-appointment-user' || router.url === '/book-an-appointment-rep' || router.url === '/advance-inventory-search-rep' || router.url === '/basic-inventory-search-rep' || router.url === '/advance-inventory-search-user' || router.url === '/basic-inventory-search-user' || router.url === '/communication' || router.url === '/training-center-rep'">
   <div class="admcls">
     <app-bk-header></app-bk-header>
     <app-bk-leftdiv></app-bk-leftdiv>
