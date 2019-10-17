@@ -133,7 +133,7 @@
   white-space: normal;
 }
   
-.testimonialbg.mat-card{background:url(../../../../assets/images/contactusbg.jpg) no-repeat center center !important;}
+.testimonialbg.mat-card{background:url(../../../../assets/images/contactusbg.jpg) no-repeat center center !important;background-size: cover !important;}
 
 
 

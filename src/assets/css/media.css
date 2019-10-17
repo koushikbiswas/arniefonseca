@@ -1,7 +1,12 @@
+  @media only screen and (max-width: 1666px) {
+    .mainwrappercontent{width:96%}
+    .maincontainer{width:96%}
+  }
+
+
   @media only screen and (max-width: 1366px) {
   .probidhomeblock1.mat-card .mat-tab-header {width: 100%;}
-  .homemain .mat-nav-list{width:100%}
-  .mainwrappercontent{width:96%}
+  .homemain .mat-nav-list{width:100%}  
   .homemain .mat-nav-list{width:96%;align-items:center}
   .generalcls .mat-card-title{font-size:32px!important;line-height:36px!important}
   .singleservice .mat-card-title {font-size: 18px !important;line-height:normal!important}

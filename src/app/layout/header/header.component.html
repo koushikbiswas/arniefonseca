@@ -1,31 +1,40 @@
 
 
-<ng-container  *ngIf="router.url =='/' || router.url =='/home' || router.url =='/forget-password' || router.url =='/reset-password' || router.url =='/sign-up' || router.url == '/contactus' || router.url == '/service' || router.url == '/servicelist' || router.url == '/testimonial' || router.url == '/testimoniallist' || router.url == '/contactus' || router.url == '/blog' || router.url == '/bloglist' || router.url == '/blogdetail' || router.url == '/basic-inventory-search' || router.url == '/advance-inventory-search' || router.url == '/pre-owned' || router.url == '/aboutus' || router.url == '/pre-owned-list' || router.url == '/online-inventory-list' || router.url == '/search-inventory-list' || router.url == '/specials-list'">
+<ng-container  *ngIf="router.url =='/' || router.url =='/home' || router.url =='/forget-password' || router.url =='/reset-password' || router.url =='/sign-up' || router.url == '/contact' || router.url == '/blog' || router.url == '/bloglist' || router.url == '/blogdetail' || router.url == '/blogdetail' || router.url == '/testimonial' || router.url == '/employee-training' || router.url == '/couples-counseling' || router.url == '/personal-development-coaching' || router.url == '/high-performance-coaching' || router.url == '/special-programs-for-young-men' || router.url == '/ourservices' || router.url == '/image-gallery' || router.url == '/video-gallery' || router.url == '/team'">
   <mat-card class="rightsidelinks">
     <mat-card-content>
-      <span class="bg1"><a [routerLink]="['/admin-dashboard']"><span class="iconimg"><img src="../../../assets//images/admin_dashboard1.png"> </span></a><span class="content">Admin dashboard</span></span>
-      <span class="bg2"><a [routerLink]="['/rep-dashboard']"><span class="iconimg"><img src="../../../assets//images/admin_dashboard2.png"> </span></a><span class="content">Rep dashboard</span></span>
-      <span class="bg3"><a [routerLink]="['/customer-dashboard']"><span class="iconimg"><img src="../../../assets//images/admin_dashboard3.png"> </span></a><span class="content">Customer dashboard</span></span>
+      <span class="bg1"><a [routerLink]="['/admin-dashboard']"><span class="iconimg"><img src="../../../assets/images/admin_dashboard1.png"> </span></a><span class="content">Admin dashboard</span></span>  
+      <span class="bg2"><a [routerLink]="['/affiliate-dashboard']"><span class="iconimg"><img src="../../../assets/images/admin_dashboard2.png"> </span></a><span class="content">affiliate dashboard</span></span>  
+      <span class="bg3"><a [routerLink]="['/customer-dashboard']"><span class="iconimg"><img src="../../../assets/images/admin_dashboard3.png"> </span></a><span class="content">Customer dashboard</span></span>
     </mat-card-content>
   </mat-card>
 </ng-container>
 
-<ng-container  *ngIf="router.url =='/' || router.url =='/home' || router.url =='/forget-password' || router.url =='/reset-password' || router.url =='/sign-up' || router.url == '/contactus' || router.url == '/service' || router.url == '/servicelist' || router.url == '/testimonial' || router.url == '/testimoniallist' || router.url == '/contactus' || router.url == '/blog' || router.url == '/bloglist' || router.url == '/blogdetail' || router.url == '/basic-inventory-search' || router.url == '/advance-inventory-search' || router.url == '/pre-owned' || router.url == '/aboutus' || router.url == '/pre-owned-list' || router.url == '/online-inventory-list' || router.url == '/search-inventory-list' || router.url == '/specials-list'">
+<ng-container  *ngIf="router.url =='/' || router.url =='/home' || router.url =='/forget-password' || router.url =='/reset-password' || router.url =='/sign-up' || router.url == '/contact' || router.url == '/blog' || router.url == '/bloglist' || router.url == '/blogdetail' || router.url == '/blogdetail' || router.url == '/testimonial' || router.url == '/employee-training' || router.url == '/couples-counseling' || router.url == '/personal-development-coaching' || router.url == '/high-performance-coaching' || router.url == '/special-programs-for-young-men' || router.url == '/ourservices' || router.url == '/image-gallery' || router.url == '/video-gallery' || router.url == '/team'">
+  <mat-card class="rightsocialsidelinks">
+    <mat-card-content>
+      <span class="bg1"><a [routerLink]="['/']"><span class="iconimg"><img src="../../../assets/images/icon-facebook.png"> </span></a></span>  
+      <span class="bg2"><a [routerLink]="['/']"><span class="iconimg"><img src="../../../assets/images/icon-twitter.png"> </span></a></span>  
+      <span class="bg3"><a [routerLink]="['/']"><span class="iconimg"><img src="../../../assets/images/icon-instagram.png"> </span></a></span>
+      <span class="bg4"><a [routerLink]="['/']"><span class="iconimg"><img src="../../../assets/images/icon-linkedin.png"> </span></a></span>
+    </mat-card-content>
+  </mat-card>
+</ng-container>
+
+<ng-container  *ngIf="router.url =='/' || router.url =='/home' || router.url =='/forget-password' || router.url =='/reset-password' || router.url =='/sign-up' || router.url == '/contact' || router.url == '/blog' || router.url == '/bloglist' || router.url == '/blogdetail' || router.url == '/blogdetail' || router.url == '/testimonial' || router.url == '/employee-training' || router.url == '/couples-counseling' || router.url == '/personal-development-coaching' || router.url == '/high-performance-coaching' || router.url == '/special-programs-for-young-men' || router.url == '/ourservices' || router.url == '/image-gallery' || router.url == '/video-gallery' || router.url == '/team'">
       <mat-card class="headertop">
           <span class="mainwrappercontent">
             <mat-card-content class="headertopwrapper">
-              <span class="langblock">
-                <select matNativeControl required>
-                  <option value="english">ENGLISH</option>
-                  <option value="hindi">Hindi</option>
-                  <option value="bengali">Bengali</option>
-                </select>
+              <span class="infoblock infoblockleft">
+                <mat-list role="list">                  
+                  <mat-list-item role="listitem">
+                    <span class="txtcap"><a [routerLink]="['']"> Have any questions? </a></span>
+                    <span><a [routerLink]="['/sign-up']"><img src="../../assets/images/phoneiconheader.png">  +00 000 000 000</a></span>
+                  </mat-list-item>            
+                </mat-list>
               </span>
               <span class="infoblock">
-                <mat-list role="list">
-                  <mat-list-item role="listitem">
-                    <img src="../../assets/images/clockicon.png"> MON - SAT 0.00 - 00.00
-                  </mat-list-item>
+                <mat-list role="list">                  
                   <mat-list-item role="listitem"><span><a [routerLink]="['']"><img src="../../assets/images/loginicon.png"> login</a></span>
                     <span><a [routerLink]="['/sign-up']">Register</a></span></mat-list-item>
         
@@ -35,7 +44,7 @@
           </span>
         </mat-card>
         
-        <mat-card class="headermiddle">
+        <!-- <mat-card class="headermiddle">
           <span class="mainwrappercontent">
             <mat-card-content class="headermiddlewrapper">
               <span class="pagelogowrapper" fxFlex><a [routerLink]="['/home']"><img src="../../assets/images/logomain.png"
@@ -53,10 +62,8 @@
                 </mat-list>
               </span>
             </mat-card-content>
-        
-        
           </span>
-        </mat-card>
+        </mat-card> -->
         
         <mat-card class="headerbottom vpheaderwrapper">
           <span class="mainwrappercontent">
@@ -74,66 +81,66 @@
         
                   <span fxShow="true" class="smlmenudiv" [ngClass]="{ 'show': navbarOpen }">
                     <mat-nav-list fxLayout>
+                        <span class="pagelogowrapper" fxFlex><a [routerLink]="['/home']"><img src="../../assets/images/logo.png"
+                          class="landinglogoblock1"></a></span>
                       <span class="menuwrapper">
                         <mat-list-item fxFlex routerLinkActive="activemenu">
                           <a [routerLink]="['/home']">Home</a>
                         </mat-list-item>
                         <mat-list-item fxFlex routerLinkActive="activemenu">
-                          <a [routerLink]="['/pre-owned-list']">Pre-Owned</a>
-                          <!-- <a (click)="openDialog()">Pre-Owned</a> -->
-                        </mat-list-item>
-                        <mat-list-item fxFlex routerLinkActive="activemenu">
-                            <a [matMenuTriggerFor]="menu1">Inventory</a>
-                            <mat-menu #menu1="matMenu" class="activedropmenu">
-                              <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/basic-inventory-search']">Basic Inventory Search</a>
-                              <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/advance-inventory-search']">Advance Inventory Search</a>
-                            </mat-menu>
-                        </mat-list-item>
-                        <mat-list-item fxFlex routerLinkActive="activemenu">
-                          <a [matMenuTriggerFor]="menu">Join Probid</a>
-                          <mat-menu #menu="matMenu" class="activedropmenu">
-                            <a mat-menu-item routerLinkActive="activemenu" href="https://www.probidautomotive.com/" target="_blank">Sign up as Sales Rep</a>
-                            <a mat-menu-item routerLinkActive="activemenu" href="https://www.probidautomotive.com/salesrepsignup/" target="_blank">Sign up as Customer</a>
-                          </mat-menu>
-                        </mat-list-item>
-                        <mat-list-item fxFlex routerLinkActive="activemenu">
-                         <!-- <a [routerLink]="['/aboutus']">About Us</a> -->
-                          <a [routerLink]="['/aboutus']">About Us</a>
-                        </mat-list-item>
-                        <mat-list-item fxFlex routerLinkActive="activemenu">
-                          <a [routerLink]="['/service']">Service</a>
-                        </mat-list-item>
-                        <mat-list-item fxFlex routerLinkActive="activemenu">
-                          <a [routerLink]="['/testimonial']">Testimonials</a>
-                        </mat-list-item>
-                        <mat-list-item fxFlex routerLinkActive="activemenu">
                           <a [routerLink]="['/blog']">Blog</a>
                         </mat-list-item>
                         <mat-list-item fxFlex routerLinkActive="activemenu">
-                          <a [routerLink]="['/contactus']">Contact Us</a>
+                          <a [matMenuTriggerFor]="menu1">Service</a>
+                          <mat-menu #menu1="matMenu" class="activedropmenu">
+                            <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/ourservices']">our services</a>
+                            <!-- <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/employee-training']">Employee Training</a>
+                            <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/couples-counseling']">Couples Counseling</a>
+                            <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/personal-development-coaching']">Personal Development Coaching</a>
+                            <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/high-performance-coaching']">High Performance Coaching</a>
+                            <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/special-programs-for-young-men']">Special Programs For Young Men</a> -->
+                          </mat-menu>
                         </mat-list-item>
-                        <!-- <mat-list-item fxFlex routerLinkActive="activemenu">
-                            <a [routerLink]="['/admin-dashboard']">Dashboard</a>
-                          </mat-list-item> -->
+                        <mat-list-item fxFlex routerLinkActive="activemenu">
+                          <a [matMenuTriggerFor]="menu2">Gallery</a>
+                          <mat-menu #menu2="matMenu" class="activedropmenu">
+                            <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/image-gallery']">Image gallery</a>
+                            <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/video-gallery']">Video gallery</a>
+                          </mat-menu>
+                        </mat-list-item>                        
+                        <mat-list-item fxFlex routerLinkActive="activemenu">
+                          <a [matMenuTriggerFor]="menu3">Events</a>
+                          <mat-menu #menu3="matMenu" class="activedropmenu">
+                            <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/seminars']">Seminars</a>
+                            <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/workshops']">Workshops</a>
+                            <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/speaker-engagements']">Speaker Engagements</a>
+                          </mat-menu>
+                        </mat-list-item>
+                        <mat-list-item fxFlex routerLinkActive="activemenu">
+                          <a [routerLink]="['/team']">Team</a>
+                        </mat-list-item>
+                        <mat-list-item fxFlex routerLinkActive="activemenu">
+                          <a [routerLink]="['/testimonial']">Testimonial</a>
+                        </mat-list-item>
+                        <mat-list-item fxFlex routerLinkActive="activemenu">
+                          <a [routerLink]="['/contact']">Contact</a>
+                        </mat-list-item>
                       </span>
                     </mat-nav-list>
                   </span>
-                  <span class="topsocialblock">
+                  <!-- <span class="topsocialblock">
                     <mat-list role="list">
                       <mat-list-item role="listitem">
-                        <!-- <span class="iconwarpper"><i class="fa fa-facebook-f"></i></span> -->
                         <span class="iconwarpper"><img src="../../../assets/images/socialicon-fb.png"></span>
                       </mat-list-item>
                       <mat-list-item role="listitem">
-                        <!-- <span class="iconwarpper"><i class="fa fa-instagram"></i></span> -->
                         <span class="iconwarpper"><img src="../../../assets/images/socialicon-insgram.png"></span>
                       </mat-list-item>
                       <mat-list-item role="listitem">
-                        <!-- <span class="iconwarpper"><i class="fa fa-youtube-play"></i></span> -->
                         <span class="iconwarpper"><img src="../../../assets/images/socialicon-youtube.png"></span>
                       </mat-list-item>
                     </mat-list>
-                  </span>
+                  </span> -->
                 </mat-toolbar-row>
               </mat-toolbar>
             </span>
@@ -143,7 +150,7 @@
 </ng-container>
 
 
-<ng-container class="adminheaderleftdiv" *ngIf = "router.url ==='/service-listing' || router.url ==='/admin-dashboard' || router.url === '/contact-us-dashboard' || router.url === '/rep-dashboard' || router.url === '/customer-dashboard' || router.url === '/blog-management' || router.url === '/commission-report' || router.url === '/inventory-list' || router.url === '/manage-availability' || router.url === '/testimonial-lists-admin'|| router.url === '/commission-list' || router.url === '/customer-list-admin' || router.url === '/customer-list-rep' || router.url === '/manage-commission' || router.url === '/newsletter-list' || router.url === '/sales-report' || router.url === '/salesrep-list-admin' || router.url === '/mysalesrep' || router.url === '/rsvp' || router.url === '/birddog-list' || router.url === '/manage-training' || router.url === '/manage-lessons' || router.url === '/training-center' || router.url === '/training-report' || router.url === '/my-appointment-admin' || router.url === '/my-appointment-user' || router.url === '/my-appointment-rep' || router.url === '/create-new-inventory' || router.url === '/job-ticket' || router.url === '/social-advo-admin' || router.url === '/social-advo-rep' || router.url === '/my-commission' || router.url === '/my-birddog' || router.url === '/book-an-appointment-user' || router.url === '/book-an-appointment-rep' || router.url === '/advance-inventory-search-rep' || router.url === '/basic-inventory-search-rep' || router.url === '/advance-inventory-search-user' || router.url === '/basic-inventory-search-user' || router.url === '/communication' || router.url === '/training-center-rep'">
+<ng-container class="adminheaderleftdiv" *ngIf = "router.url ==='/admin-dashboard' || router.url === '/customer-dashboard' || router.url === '/affiliate-dashboard' || router.url ==='/commission-report' || router.url ==='/customer-list-admin' || router.url ==='/manage-availability' || router.url ==='/my-appointment-admin' || router.url ==='/blog-management' || router.url ==='/manage-commission' || router.url ==='/testimonial-lists-admin' || router.url ==='/newsletter-list' || router.url ==='/manage-commission' || router.url ==='/social-advo-admin' || router.url ==='/manage-commission' || router.url ==='/social-advo-affiliate' || router.url ==='/social-advo-affiliate' || router.url ==='/book-an-appointment-user' || router.url ==='/my-appointment-user' || router.url ==='/manage-commission-affiliate' || router.url ==='/booking-report'">
   <div class="admcls">
     <app-bk-header></app-bk-header>
     <app-bk-leftdiv></app-bk-leftdiv>

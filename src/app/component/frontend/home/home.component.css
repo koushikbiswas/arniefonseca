@@ -12,7 +12,9 @@
 
 .probidhomeblock2 {overflow-x:hidden;background:url(../../../../assets/images/probidhomeblock2bg.jpg) no-repeat center center !important;top:0;left:0;min-width:100%;min-height:1px;-webkit-background-size:cover !important;-moz-background-size:cover !important;-o-background-size:cover !important;background-size:cover !important;position:relative; padding: 0;display: flex; align-items: center;}
 
-
+.testimonial{
+    overflow-x:hidden;background:url(../../../../assets/images/testimonialbg.png) no-repeat top center !important;top:0;left:0;min-width:100%;min-height:1px;position:relative; padding: 0;
+}
 
 
 

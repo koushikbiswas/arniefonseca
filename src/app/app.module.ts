@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
-import {DemoMaterialModule} from "../material-module";
+import { DemoMaterialModule } from "../material-module";
 import { DragScrollModule } from 'ngx-drag-scroll';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -11,14 +11,11 @@ import { TransferHttpCacheModule } from '@nguniversal/common';
 import { HttpClientModule } from '@angular/common/http';
 import { NgtUniversalModule } from '@ng-toolkit/universal';
 import { LoginComponent } from './component/frontend/login/login.component';
-// import { ContactusModule } from 'contactus';
-// import { LoginModule } from 'login';
 import { CookieService } from 'ngx-cookie-service';
 import { MetaModule } from '@ngx-meta/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AuthGuard } from './auth.guard';
 import { ApiService } from './api.service';
-// import { TestimonialModule } from 'testimonial';
 import {ListingModule} from 'listing-angular7';
 
 import {MatIconModule} from '@angular/material/icon';
@@ -35,20 +32,25 @@ import { ForgetPasswordComponent } from './component/frontend/forget-password/fo
 import { ResetPasswordComponent } from './component/frontend/reset-password/reset-password.component';
 import { SignUpComponent } from './component/frontend/sign-up/sign-up.component';
 
-import { ServiceComponent } from './component/frontend/service/service.component';
-import { ServicelistComponent } from './component/frontend/servicelist/servicelist.component';
-import { TesimonialComponent } from './component/frontend/tesimonial/tesimonial.component';
-import { TesimoniallistComponent } from './component/frontend/tesimoniallist/tesimoniallist.component';
-
 import { BlogComponent } from './component/frontend/blog/blog.component';
 import { BloglistComponent } from './component/frontend/bloglist/bloglist.component';
 import { BlogdetailComponent } from './component/frontend/blogdetail/blogdetail.component';
 
-import { AdvanceInventorySearchComponent } from './component/frontend/advance-inventory-search/advance-inventory-search.component';
-import { BasicInventorySearchComponent } from './component/frontend/basic-inventory-search/basic-inventory-search.component';
-
-import { PreOwnedComponent } from './component/frontend/pre-owned/pre-owned.component';
 import { AboutusComponent } from './component/frontend/aboutus/aboutus.component';
+
+
+import { ServiceComponent } from './component/frontend/service/service.component';
+import { ServicelistComponent } from './component/frontend/servicelist/servicelist.component';
+import { TesimonialComponent } from './component/frontend/tesimonial/tesimonial.component';
+import { TesimoniallistComponent } from './component/frontend/tesimoniallist/tesimoniallist.component';
+import { EmployeeTrainingComponent } from './component/frontend/employee-training/employee-training.component';
+import { CouplesCounselingComponent } from './component/frontend/couples-counseling/couples-counseling.component';
+import { PersonalDevelopmentCoachingComponent } from './component/frontend/personal-development-coaching/personal-development-coaching.component';
+import { HighPerformanceCoachingComponent } from './component/frontend/high-performance-coaching/high-performance-coaching.component';
+import { SpecialProgramsForYoungMenComponent } from './component/frontend/special-programs-for-young-men/special-programs-for-young-men.component';
+import { ImageGalleryComponent } from './component/frontend/image-gallery/image-gallery.component';
+import { VideoGalleryComponent } from './component/frontend/video-gallery/video-gallery.component';
+import { TeamComponent } from './component/frontend/team/team.component';
 /**End Frontend Component**/
 
 
@@ -57,48 +59,32 @@ import { SidenavService } from './../app/services/sidenav.service';
 import { DashboardComponent } from './component/backend/dashboard/dashboard.component';
 import { BkHeaderComponent } from './layout/bk-header/bk-header.component';
 import { BkFooterComponent } from './layout/bk-footer/bk-footer.component';
-
+import { ManageCommissionComponent } from './component/backend/manage-commission/manage-commission.component';
+import { NewsletterlistsComponent } from './component/backend/newsletterlists/newsletterlists.component';
+import { CustomerListComponent } from './component/backend/customer-list/customer-list.component';
 import { AddeditServiceComponent } from './component/backend/ServiceApp/addedit-service/addedit-service.component';
 import { ListingServiceComponent } from './component/backend/ServiceApp/listing-service/listing-service.component';
-import { ListingTestimonialComponent } from './component/backend/TestimonialApp/listing-testimonial/listing-testimonial.component';
-import { AddeditTestimonialComponent } from './component/backend/TestimonialApp/addedit-testimonial/addedit-testimonial.component';
 // import { ServicelibModule } from 'servicelib';
 // import { FileUploadModule } from 'dist/file-upload';
 import { BkLeftdivComponent } from './layout/bk-leftdiv/bk-leftdiv.component';
 import { MaindashboardComponent } from './component/backend/maindashboard/maindashboard.component';
 import { UserManagementComponent } from './component/backend/user-management/user-management.component';
-import { RepdashboardComponent } from './component/backend/repdashboard/repdashboard.component';
 import { LoginModule } from 'login';
 import { ServicelibModule } from 'servicelib';
 import { ContactusModule } from 'contactus';
 import { TestimonialModule } from 'testimonial';
-import { BlogManagementComponent } from './component/backend/blog-management/blog-management.component';
-import { CommissionReportComponent } from './component/backend/commission-report/commission-report.component';
-import { InventorySearchComponent } from './component/backend/inventory-search/inventory-search.component';
-import { ManageAvailabilityComponent } from './component/backend/manage-availability/manage-availability.component';
 import { TestimonialListsAdminComponent } from './component/backend/testimonial-lists-admin/testimonial-lists-admin.component';
-import { BirddogListComponent } from './component/backend/birddog-list/birddog-list.component';
-import { CommissionListComponent } from './component/backend/commission-list/commission-list.component';
-import { CustomerListComponent } from './component/backend/customer-list/customer-list.component';
-import { ManageCommissionComponent } from './component/backend/manage-commission/manage-commission.component';
-import { NewsletterlistsComponent } from './component/backend/newsletterlists/newsletterlists.component';
-import { SalesReportComponent } from './component/backend/sales-report/sales-report.component';
-import { SalesreplistsComponent } from './component/backend/salesreplists/salesreplists.component';
-import { RsvplistsComponent } from './component/backend/rsvplists/rsvplists.component';
-import { ManageTrainingComponent } from './component/backend/manage-training/manage-training.component';
-import { SearchListViewComponent } from './component/frontend/search-list-view/search-list-view.component';
-import { ManageLessonsComponent } from './component/backend/manage-lessons/manage-lessons.component';
-import { TrainingCenterComponent } from './component/backend/training-center/training-center.component';
-import { TrainingReportComponent } from './component/backend/training-report/training-report.component';
-import { MyAppointmentComponent } from './component/backend/my-appointment/my-appointment.component';
-import { CreateNewInventoryComponent } from './component/backend/create-new-inventory/create-new-inventory.component';
-import { JobTicketComponent } from './component/backend/job-ticket/job-ticket.component';
-import { SocialAdvoComponent } from './component/backend/social-advo/social-advo.component';
+import { ListingTestimonialComponent } from './component/backend/TestimonialApp/listing-testimonial/listing-testimonial.component';
+import { AddeditTestimonialComponent } from './component/backend/TestimonialApp/addedit-testimonial/addedit-testimonial.component';
+import { BlogManagementComponent } from './component/backend/blog-management/blog-management.component';
+import { AffiliateDashboardComponent } from './component/backend/affiliate-dashboard/affiliate-dashboard.component';
 import { BookAnAppointmentComponent } from './component/backend/book-an-appointment/book-an-appointment.component';
-import { AdvanceInventorySearchBackendComponent } from './component/backend/advance-inventory-search-backend/advance-inventory-search-backend.component';
-import { BasicInventorySearchBackendComponent } from './component/backend/basic-inventory-search-backend/basic-inventory-search-backend.component';
-import { MysalesrepComponent } from './component/backend/mysalesrep/mysalesrep.component';
-import { CommunicationComponent } from './component/backend/communication/communication.component';
+import { MyAppointmentComponent } from './component/backend/my-appointment/my-appointment.component';
+import { ManageAvailabilityComponent } from './component/backend/manage-availability/manage-availability.component';
+import { SocialAdvoComponent } from './component/backend/social-advo/social-advo.component';
+import { CommissionReportComponent } from './component/backend/commission-report/commission-report.component';
+import { BookingReportComponent } from './component/backend/booking-report/booking-report.component';
+
 /**End Backend Component** */
 
 
@@ -121,50 +107,40 @@ import { CommunicationComponent } from './component/backend/communication/commun
     BkFooterComponent,
     AddeditServiceComponent,
     ListingServiceComponent,
-    ListingTestimonialComponent,
-    AddeditTestimonialComponent,
     BkLeftdivComponent,
     MaindashboardComponent,
-    ServiceComponent,
-    ServicelistComponent,
-    TesimonialComponent,
-    TesimoniallistComponent,
     BlogComponent,
     BloglistComponent,
     BlogdetailComponent,
     UserManagementComponent,
-    BasicInventorySearchComponent,
-    AdvanceInventorySearchComponent,
-    PreOwnedComponent,
     AboutusComponent,
-    RepdashboardComponent,
     BlogManagementComponent,
-    CommissionReportComponent,
-    InventorySearchComponent,
-    ManageAvailabilityComponent,
+    ServiceComponent,
+    ServicelistComponent,
+    AffiliateDashboardComponent,
+    TesimonialComponent,
+    TesimoniallistComponent,    
     TestimonialListsAdminComponent,
-    BirddogListComponent,
-    CommissionListComponent,
-    CustomerListComponent,
-    ManageCommissionComponent,
-    NewsletterlistsComponent,
-    SalesReportComponent,
-    SalesreplistsComponent,
-    RsvplistsComponent,
-    ManageTrainingComponent,
-    SearchListViewComponent,
-    ManageLessonsComponent,
-    TrainingCenterComponent,
-    TrainingReportComponent,
-    MyAppointmentComponent,
-    CreateNewInventoryComponent,
-    JobTicketComponent,
-    SocialAdvoComponent,
+    ListingTestimonialComponent,
+    AddeditTestimonialComponent,
     BookAnAppointmentComponent,
-    AdvanceInventorySearchBackendComponent,
-    BasicInventorySearchBackendComponent,
-    MysalesrepComponent,
-    CommunicationComponent,
+    MyAppointmentComponent,
+    NewsletterlistsComponent,
+    ManageCommissionComponent,    
+    SocialAdvoComponent,   
+    ManageAvailabilityComponent,
+    CommissionReportComponent,
+    CustomerListComponent,  
+    EmployeeTrainingComponent,    
+    CouplesCounselingComponent, 
+    PersonalDevelopmentCoachingComponent, 
+    HighPerformanceCoachingComponent, 
+    SpecialProgramsForYoungMenComponent, 
+    ImageGalleryComponent, 
+    VideoGalleryComponent,
+    TeamComponent, 
+    BookingReportComponent,
+    
   ],
   imports: [
     AngularFontAwesomeModule,

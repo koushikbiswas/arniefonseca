@@ -109,7 +109,7 @@
  */
 
 
-.blogbg.mat-card{background:url(../../../../assets/images/contactusbg.jpg) no-repeat center center !important;}
+.blogbg.mat-card{background:url(../../../../assets/images/contactusbg.jpg) no-repeat center center !important;background-size: cover !important;}
 
 
 /* 
