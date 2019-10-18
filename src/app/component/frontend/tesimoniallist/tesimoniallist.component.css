@@ -2,7 +2,7 @@
 
 .testimonialwrapper{
     overflow-x: hidden;
-    background: url(../../../../assets/images/testimonialbg.png) no-repeat top center !important;
+    background: url(../../../../assets/images/testimonialbg.png) no-repeat top center #fff !important;
     top: 0;
     left: 0;
     min-width: 100%;

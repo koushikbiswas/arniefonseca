@@ -98,4 +98,5 @@
   @media only screen and (max-width: 540px) {
     .innerpagebanner.mat-card h1 {font-size: 36px;}
     .infoblock .mat-list-base {flex-wrap: wrap;}
+    .infoblock .mat-list .mat-list-item .mat-list-item-content{flex-wrap: wrap; justify-content: center;}
   }

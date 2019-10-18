@@ -29,6 +29,9 @@ import { SpecialProgramsForYoungMenComponent } from './component/frontend/specia
 import { ImageGalleryComponent } from './component/frontend/image-gallery/image-gallery.component';
 import { VideoGalleryComponent } from './component/frontend/video-gallery/video-gallery.component';
 import { TeamComponent } from './component/frontend/team/team.component';
+import { SeminarsComponent } from './component/frontend/seminars/seminars.component';
+import { WorkshopsComponent } from './component/frontend/workshops/workshops.component';
+import { SpeakerEngagementsComponent } from './component/frontend/speaker-engagements/speaker-engagements.component';
 
 /**End Frontend Routing**/
 
@@ -67,7 +70,15 @@ import { SocialAdvoComponent } from './component/backend/social-advo/social-advo
 import { ManageAvailabilityComponent } from './component/backend/manage-availability/manage-availability.component';
 import { CommissionReportComponent } from './component/backend/commission-report/commission-report.component';
 import { BookingReportComponent } from './component/backend/booking-report/booking-report.component';
- 
+import { AffiliateComponent } from './component/backend/affiliate/affiliate.component';
+import { ManageSeminarsComponent } from './component/backend/manage-seminars/manage-seminars.component';
+import { ManageWorkshopsComponent } from './component/backend/manage-workshops/manage-workshops.component';
+import { ManageSpeakerEngagementsComponent } from './component/backend/manage-speaker-engagements/manage-speaker-engagements.component';
+import { GalleryAdminComponent } from './component/backend/gallery-admin/gallery-admin.component';
+import { BookedEventsComponent } from './component/backend/booked-events/booked-events.component';
+import { PastEventUserComponent } from './component/backend/past-event-user/past-event-user.component';
+import { UpcomingEventUserComponent } from './component/backend/upcoming-event-user/upcoming-event-user.component';
+import { MyCustomersAffiliateComponent } from './component/backend/my-customers-affiliate/my-customers-affiliate.component';
 
 import { from } from 'rxjs';
 /**End Backend Routing**/
@@ -75,11 +86,11 @@ import { from } from 'rxjs';
 const routes: Routes = [
 
   /**Frontend Routing**/
-  { path: '', component: LoginComponent },
+  { path: 'login', component: LoginComponent },
   { path: 'forget-password', component: ForgetPasswordComponent },
   { path: 'reset-password', component: ResetPasswordComponent },
   { path: 'sign-up', component: SignUpComponent },
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
   { path: 'contact', component: ContactusComponent },
   {
     path: 'servicehome',
@@ -153,6 +164,14 @@ const routes: Routes = [
   { path: 'video-gallery', component: VideoGalleryComponent },  
   { path: 'team', component: TeamComponent },  
   { path: 'booking-report', component: BookingReportComponent },  
+  { path: 'seminars', component: SeminarsComponent },  
+  { path: 'workshops', component: WorkshopsComponent },  
+  { path: 'speaker-engagements', component: SpeakerEngagementsComponent },  
+  { path: 'affiliate-admin', component: AffiliateComponent },  
+  { path: 'manage-seminars', component: ManageSeminarsComponent },  
+  { path: 'manage-workshops', component: ManageWorkshopsComponent },  
+  { path: 'manage-speaker-engagements', component: ManageSpeakerEngagementsComponent },  
+  { path: 'gallery-admin', component: GalleryAdminComponent },  
 
   /**************** User Management *****************/
   {
@@ -161,12 +180,18 @@ const routes: Routes = [
   },
   
   { path: 'my-appointment-user', component: MyAppointmentComponent },
-  { path: 'book-an-appointment-user', component: BookAnAppointmentComponent },
+  { path: 'book-an-appointment-user', component: BookAnAppointmentComponent },  
+  { path: 'booked-events', component: BookedEventsComponent },
+  { path: 'events', component: UpcomingEventUserComponent },
+  
+  { path: 'past-event-user', component: PastEventUserComponent },
+  { path: 'upcoming-event-user', component: UpcomingEventUserComponent },
   
   /**************** Affiliate Management *****************/
   { path: 'affiliate-dashboard', component: AffiliateDashboardComponent },
   { path: 'social-advo-affiliate', component: SocialAdvoComponent }, 
   { path: 'manage-commission-affiliate', component: CommissionReportComponent }, 
+  { path: 'my-customers', component: MyCustomersAffiliateComponent },  
 
   { path: '**', component: LoginComponent },
 ];

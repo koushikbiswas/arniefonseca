@@ -138,7 +138,7 @@ a{cursor:pointer;outline:none}
 .innerpagebanner.mat-card{padding:0!important}
 
 .innerpagebanner.mat-card{overflow-x:hidden;background:url(../images/contactusbg.jpg) no-repeat center center;top:0;left:0;min-width:100%;min-height:300px;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;position:relative;}
-.innerpagebanner.mat-card h1{text-transform:uppercase;font-size:110px;font-family:"HelveticaBold";width: 100%; text-align: left; color:#fff;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);}
+.innerpagebanner.mat-card h1{text-transform:uppercase;font-size:90px;font-family:"HelveticaBold";width: 100%; text-align: left; color:#fff;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);}
 .innerpagebanner.mat-card p{font-size:18px;font-family:"Helvetica-Normal"; width: 100%; text-align: left; color:#24252c;}
 
 .innerpagebanner.mat-card .mainwrappercontent{position:relative}
@@ -237,7 +237,10 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#010101",endCo
     padding: 56px!important;
 }
 .contact-form .main-div .from.mat-card:hover{-o-box-shadow:0 0 50px rgba(0,0,0,0.2)!important;-ms-box-shadow:0 0 50px rgba(0,0,0,0.2)!important;box-shadow:0 0 50px rgba(0,0,0,0.2)!important}
-.contactusformblock .example-container > *, .formgenrl.login-form .example-container > * {
+.contactusformblock .example-container > * {
+    width: inherit!important;margin-top: 0px;
+}
+.formgenrl.login-form .example-container > * {
     width: inherit!important;margin-top: 20px;
 }
 .formgenrl.login-form .from.mat-card {
@@ -337,7 +340,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#010101",endCo
 .bottom_blog .item_wrapper .item .next_page:hover i{width:35px;transition:all 500ms;background:#1299de;color:#fff;}
 .readmore{color:#ffffff;margin-left:auto;display:flex;background:#1299e1;width:150px;text-align:center;align-items:center;justify-content:center;font-family:'HelveticaBold';font-size:17px;}
 .bottom_blog .item_wrapper .item .contentsection .description{color:#838383;line-height:24px;font-size:16px;overflow:hidden;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;}
- .mat-menu-panel.activedropmenu{margin-left:0;margin-top:16px;background-color:#cdd4da !important;}
+ .mat-menu-panel.activedropmenu{margin-top:3px;background-color:#cdd4da !important;}
  .mat-menu-panel{min-width: 140px;}
 .mat-menu-panel.activedropmenu .mat-menu-content{background-color:#222222 !important;}
 .mat-menu-panel.activedropmenu .mat-menu-content .activemenu{background-color:#12c3e3;}
@@ -348,6 +351,14 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#010101",endCo
 .logomodalwrapper .logomodal img{max-width:100%;}
 .logomodalwrapper h2{color:#fc563f;font-size:32px;font-weight:600;line-height:24px;letter-spacing:1.92px;text-transform:uppercase;text-align:center;margin-top:20px;}
 
+.cdk-overlay-pane {
+    position: absolute;
+    pointer-events: auto;
+    box-sizing: border-box;
+    z-index: 1000;
+    display: flex;
+    width: auto;
+}
 
   @media screen and (max-width: 768px){
     .bottom_blog .item_wrapper { display: flex; flex-wrap: wrap; justify-content: center;}
@@ -441,8 +452,20 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#010101",endCo
 .bottom_blog .mat-tab-labels {flex-wrap: wrap;}
 .bottom_blog .mat-tab-label {min-width: inherit; width: 100%;}
 
-
+.pt-30{padding-top: 20px !important;}
 
 
 .bloghead p{text-align: center;}
 .signupfooter a{color:#0fd399 !important; cursor: pointer; text-transform: uppercase; padding-right: 0 !important;}
+
+
+
+
+
+.loder_body { width: 100%; height: 100vh;  position: fixed; left: 0; top: 0; background-color: #f0f7f5; z-index: -1}
+.loder_wrapper {width: 300vh; height: 100vh; display: table-cell; text-align: center; vertical-align: middle}
+.loder_wrapper img {width: 250px; margin: 0 auto; margin-bottom: 20px}
+.loader {border: 16px solid #10d17d;border-top: 16px solid #0ad9fb;border-radius: 50%;width: 80px;height: 80px;animation: spin 2s linear infinite;margin: 0 auto}
+@keyframes spin {0% { transform: rotate(0deg); }
+100% { transform: rotate(360deg); }
+}

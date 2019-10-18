@@ -38,7 +38,6 @@ import { BlogdetailComponent } from './component/frontend/blogdetail/blogdetail.
 
 import { AboutusComponent } from './component/frontend/aboutus/aboutus.component';
 
-
 import { ServiceComponent } from './component/frontend/service/service.component';
 import { ServicelistComponent } from './component/frontend/servicelist/servicelist.component';
 import { TesimonialComponent } from './component/frontend/tesimonial/tesimonial.component';
@@ -51,6 +50,10 @@ import { SpecialProgramsForYoungMenComponent } from './component/frontend/specia
 import { ImageGalleryComponent } from './component/frontend/image-gallery/image-gallery.component';
 import { VideoGalleryComponent } from './component/frontend/video-gallery/video-gallery.component';
 import { TeamComponent } from './component/frontend/team/team.component';
+import { SeminarsComponent } from './component/frontend/seminars/seminars.component';
+import { WorkshopsComponent } from './component/frontend/workshops/workshops.component';
+import { SpeakerEngagementsComponent } from './component/frontend/speaker-engagements/speaker-engagements.component';
+
 /**End Frontend Component**/
 
 
@@ -84,6 +87,15 @@ import { ManageAvailabilityComponent } from './component/backend/manage-availabi
 import { SocialAdvoComponent } from './component/backend/social-advo/social-advo.component';
 import { CommissionReportComponent } from './component/backend/commission-report/commission-report.component';
 import { BookingReportComponent } from './component/backend/booking-report/booking-report.component';
+import { AffiliateComponent } from './component/backend/affiliate/affiliate.component';
+import { ManageSeminarsComponent } from './component/backend/manage-seminars/manage-seminars.component';
+import { ManageWorkshopsComponent } from './component/backend/manage-workshops/manage-workshops.component';
+import { ManageSpeakerEngagementsComponent } from './component/backend/manage-speaker-engagements/manage-speaker-engagements.component';
+import { GalleryAdminComponent } from './component/backend/gallery-admin/gallery-admin.component';
+import { BookedEventsComponent } from './component/backend/booked-events/booked-events.component';
+import { PastEventUserComponent } from './component/backend/past-event-user/past-event-user.component';
+import { UpcomingEventUserComponent } from './component/backend/upcoming-event-user/upcoming-event-user.component';
+import { MyCustomersAffiliateComponent } from './component/backend/my-customers-affiliate/my-customers-affiliate.component';
 
 /**End Backend Component** */
 
@@ -139,8 +151,19 @@ import { BookingReportComponent } from './component/backend/booking-report/booki
     ImageGalleryComponent, 
     VideoGalleryComponent,
     TeamComponent, 
-    BookingReportComponent,
-    
+    BookingReportComponent, 
+    SeminarsComponent, 
+    WorkshopsComponent, 
+    SpeakerEngagementsComponent, 
+    AffiliateComponent, 
+    ManageSeminarsComponent, 
+    ManageWorkshopsComponent, 
+    ManageSpeakerEngagementsComponent, 
+    GalleryAdminComponent, 
+    BookedEventsComponent, 
+    PastEventUserComponent, 
+    UpcomingEventUserComponent, 
+    MyCustomersAffiliateComponent,
   ],
   imports: [
     AngularFontAwesomeModule,

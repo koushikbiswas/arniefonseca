@@ -1,5 +1,5 @@
 <!-- <mat-toolbar class="header fixed" *ngIf="user_data.type == 'admin'"> -->
-<mat-toolbar class="header fixed" *ngIf="router.url ==='/admin-dashboard' || router.url ==='/commission-report' || router.url ==='/manage-availability' || router.url ==='/my-appointment-admin' || router.url ==='/blog-management' || router.url ==='/testimonial-lists-admin' || router.url ==='/newsletter-list' || router.url ==='/social-advo-admin' || router.url ==='/manage-commission' || router.url ==='/customer-list-admin' || router.url ==='/booking-report'">
+<mat-toolbar class="header fixed" *ngIf="router.url ==='/admin-dashboard' || router.url ==='/commission-report' || router.url ==='/manage-availability' || router.url ==='/my-appointment-admin' || router.url ==='/blog-management' || router.url ==='/testimonial-lists-admin' || router.url ==='/newsletter-list' || router.url ==='/social-advo-admin' || router.url ==='/manage-commission' || router.url ==='/customer-list-admin' || router.url ==='/booking-report' || router.url ==='/affiliate-admin' || router.url ==='/manage-seminars' || router.url ==='/manage-workshops' || router.url ==='/manage-speaker-engagements' || router.url ==='/gallery-admin'">
     <mat-toolbar-row class="toolbar-row">
         <div class="logo">
             <img src="assets/images/logo.png" alt="">
@@ -12,7 +12,7 @@
         <div class="topmenulist">
             <mat-list class="navigation-left">
                     <mat-list-item class="nav-item" routerLinkActive="activemenu">
-                            <a class="nav-item-hold" mat-menu-item routerLinkActive="activemenu" [routerLink]="['/home']">
+                            <a class="nav-item-hold" mat-menu-item routerLinkActive="activemenu" [routerLink]="['']">
                                 <span class="nav-text">home</span>
                             </a>
                             <div class="triangle"></div>
@@ -34,7 +34,7 @@
                 <mat-list-item fxFlex class="nav-item" routerLinkActive="activemenu">
                         <a [matMenuTriggerFor]="menu3">User Management</a>
                         <mat-menu #menu3="matMenu" class="activedropmenu">
-                            <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/affiliate']">Affiliate</a>
+                            <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/affiliate-admin']">Affiliate</a>
                             <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/customer-list-admin']">Customers</a>
                         </mat-menu>
                         <div class="triangle"></div>
@@ -50,9 +50,9 @@
                 <mat-list-item class="nav-item" routerLinkActive="activemenu">
                         <a [matMenuTriggerFor]="menu4">Manage Events</a>
                         <mat-menu #menu4="matMenu" class="activedropmenu">
-                            <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/seminars']">Seminars</a>
-                            <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/workshops']">Workshops</a>
-                            <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/speaker-engagements']">Speaker Engagements</a>
+                            <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/manage-seminars']">Seminars</a>
+                            <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/manage-workshops']">Workshops</a>
+                            <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/manage-speaker-engagements']">Speaker Engagements</a>
                         </mat-menu>
                         <div class="triangle"></div>
                 </mat-list-item>
@@ -96,7 +96,7 @@
     </mat-toolbar-row>
 </mat-toolbar>
 <!-- <mat-toolbar class="header fixed" *ngIf="user_data.type == 'affiliate'"> -->
-<mat-toolbar class="header fixed" *ngIf="router.url === '/affiliate-dashboard' || router.url ==='/manage-commission-affiliate' || router.url ==='/social-advo-affiliate' || router.url ==='/social-advo-affiliate'">
+<mat-toolbar class="header fixed" *ngIf="router.url === '/affiliate-dashboard' || router.url ==='/manage-commission-affiliate' || router.url ==='/social-advo-affiliate' || router.url ==='/social-advo-affiliate' || router.url ==='/my-customers'">
   <mat-toolbar-row class="toolbar-row">
     <div class="logo">
       <img src="assets/images/logo.png" alt="">
@@ -109,7 +109,7 @@
     <div class="topmenulist">
       <mat-list class="navigation-left">
         <mat-list-item class="nav-item" routerLinkActive="activemenu">
-          <a class="nav-item-hold" mat-menu-item routerLinkActive="activemenu" [routerLink]="['/home']">
+          <a class="nav-item-hold" mat-menu-item routerLinkActive="activemenu" [routerLink]="['']">
             <span class="nav-text">home</span>
           </a>
           <div class="triangle"></div>
@@ -121,7 +121,7 @@
           <div class="triangle"></div>
         </mat-list-item>
         <mat-list-item  class="nav-item" routerLinkActive="activemenu" (click)="open(2)">
-          <a class="nav-item-hold" mat-menu-item routerLinkActive="activemenu" [routerLink]="['/my-customers-affiliate']">
+          <a class="nav-item-hold" mat-menu-item routerLinkActive="activemenu" [routerLink]="['/my-customers']">
             <span class="nav-text">My Customers</span>
           </a>
           <div class="triangle"></div>
@@ -175,7 +175,7 @@
 
 
 <!-- <mat-toolbar class="header fixed" *ngIf="user_data.type == 'user'"> -->
-    <mat-toolbar class="header fixed" *ngIf="router.url === '/customer-dashboard' || router.url ==='/book-an-appointment-user' || router.url ==='/my-appointment-user'">
+    <mat-toolbar class="header fixed" *ngIf="router.url === '/customer-dashboard' || router.url ==='/book-an-appointment-user' || router.url ==='/my-appointment-user' || router.url ==='/booked-events' || router.url ==='/past-event-user' || router.url ==='/upcoming-event-user' || router.url ==='/events'">
       <mat-toolbar-row class="toolbar-row">
         <div class="logo">
           <img src="assets/images/logo.png" alt="">
@@ -188,7 +188,7 @@
         <div class="topmenulist">
           <mat-list class="navigation-left">
             <mat-list-item class="nav-item" routerLinkActive="activemenu">
-              <a class="nav-item-hold" mat-menu-item routerLinkActive="activemenu" [routerLink]="['/home']">
+              <a class="nav-item-hold" mat-menu-item routerLinkActive="activemenu" [routerLink]="['']">
                 <span class="nav-text">home</span>
               </a>
               <div class="triangle"></div>
@@ -199,14 +199,20 @@
               </a>
               <div class="triangle"></div>
             </mat-list-item>
-            <mat-list-item fxFlex class="nav-item" routerLinkActive="activemenu">
-              <a [matMenuTriggerFor]="menu1">Events</a>
-              <mat-menu #menu1="matMenu" class="activedropmenu">
-                <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/']">Past</a>
-                <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/']">Upcoming</a>
-              </mat-menu>
+            <mat-list-item  class="nav-item" routerLinkActive="activemenu" (click)="open(2)">
+              <a class="nav-item-hold" mat-menu-item routerLinkActive="activemenu" [routerLink]="['/events']">
+                <span class="nav-text">Events</span>
+              </a>
               <div class="triangle"></div>
             </mat-list-item>
+            <!-- <mat-list-item fxFlex class="nav-item" routerLinkActive="activemenu">
+              <a [matMenuTriggerFor]="menu1">Events</a>
+              <mat-menu #menu1="matMenu" class="activedropmenu">
+                <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/past-event-user']">Past</a>
+                <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/upcoming-event-user']">Upcoming</a>
+              </mat-menu>
+              <div class="triangle"></div>
+            </mat-list-item> -->
             <mat-list-item  class="nav-item" routerLinkActive="activemenu" (click)="open(2)">
               <a class="nav-item-hold" mat-menu-item routerLinkActive="activemenu" [routerLink]="['/booked-events']">
                 <span class="nav-text">Booked Events</span>
