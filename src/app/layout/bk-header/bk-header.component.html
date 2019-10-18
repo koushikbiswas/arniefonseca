@@ -12,7 +12,7 @@
         <div class="topmenulist">
             <mat-list class="navigation-left">
                     <mat-list-item class="nav-item" routerLinkActive="activemenu">
-                            <a class="nav-item-hold" mat-menu-item routerLinkActive="activemenu" [routerLink]="['']">
+                            <a class="nav-item-hold" mat-menu-item routerLinkActive="activemenu" [routerLink]="['/home']">
                                 <span class="nav-text">home</span>
                             </a>
                             <div class="triangle"></div>
@@ -109,7 +109,7 @@
     <div class="topmenulist">
       <mat-list class="navigation-left">
         <mat-list-item class="nav-item" routerLinkActive="activemenu">
-          <a class="nav-item-hold" mat-menu-item routerLinkActive="activemenu" [routerLink]="['']">
+          <a class="nav-item-hold" mat-menu-item routerLinkActive="activemenu" [routerLink]="['/home']">
             <span class="nav-text">home</span>
           </a>
           <div class="triangle"></div>
@@ -188,7 +188,7 @@
         <div class="topmenulist">
           <mat-list class="navigation-left">
             <mat-list-item class="nav-item" routerLinkActive="activemenu">
-              <a class="nav-item-hold" mat-menu-item routerLinkActive="activemenu" [routerLink]="['']">
+              <a class="nav-item-hold" mat-menu-item routerLinkActive="activemenu" [routerLink]="['/home']">
                 <span class="nav-text">home</span>
               </a>
               <div class="triangle"></div>
@@ -219,8 +219,8 @@
               </a>
               <div class="triangle"></div>
             </mat-list-item>
-            <mat-list-item  class="nav-item" routerLinkActive="activemenu">         
-              <a class="nav-item-hold" [matMenuTriggerFor]="menu3">Manage Calendar</a>
+            <mat-list-item  class="nav-item">         
+              <a class="nav-item-hold" routerLinkActive="activemenu" [matMenuTriggerFor]="menu3">Manage Calendar</a>
               <mat-menu #menu3="matMenu" class="activedropmenu">
                 <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/book-an-appointment-user']">Book an Appointment</a>
                 <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/my-appointment-user']">My Appointment</a>
