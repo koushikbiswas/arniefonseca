@@ -361,6 +361,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#010101",endCo
     width: auto;
 }
 
+.footertopwrapper .mat-list-item .mat-list-item-content{padding: 0 !important;}
+
   @media screen and (max-width: 768px){
     .bottom_blog .item_wrapper { display: flex; flex-wrap: wrap; justify-content: center;}
     .bottom_blog .item_wrapper .item { width: 48%; margin: 1%; }

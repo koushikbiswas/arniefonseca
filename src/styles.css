@@ -15,7 +15,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .contact-form .main-div{height:auto!important;display:inherit!important;justify-content:inherit!important;align-items:inherit!important}
 .contact-form .mat-form-field-appearance-legacy .mat-form-field-wrapper .mat-form-field-suffix{display:none;}
 .mat-form-field-appearance-legacy .mat-form-field-underline {height: 0 !important;}
-.mat-form-field-appearance-legacy .mat-form-field-wrapper {padding-bottom: 0 !important;}
+.mat-form-field-appearance-legacy .mat-form-field-wrapper {width: 100% !important;}
 /* .mat-form-field-appearance-legacy .mat-form-field-wrapper {padding-bottom: 0 !important;}
 .mat-form-field-appearance-legacy .mat-form-field-infix {padding: 5px 0 !important;} */
 .mat-form-field-appearance-legacy.mat-focused .mat-form-field-label { top: 0.5em !important;}
@@ -23,4 +23,14 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .contactusformblock button {margin-top: 50px !important;}
 
 .example-container .mat-form-field { margin: 0 0px !important;}
-.mat-form-field-appearance-legacy .mat-form-field-subscript-wrapper {margin-top: 1.54167em; top: calc(100% - 1.66667em);}
+.mat-form-field-appearance-legacy .mat-form-field-subscript-wrapper {top: calc(100% - 1.66667em);}
+.newslettermain .mat-form-field .mat-form-field-label{
+    line-height: normal;
+}
+
+.mat-focused .mat-form-field-label.ng-star-inserted.mat-empty.mat-form-field-empty {display: none !important}
+.mat-form-field-label.ng-star-inserted.mat-empty.mat-form-field-empty {display: block !important}
+.mat-form-field-label.ng-star-inserted {display: none !important}
+.mat-form-field-infix {border: 0 !important}
+
+
