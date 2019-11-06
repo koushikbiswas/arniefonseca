@@ -72,6 +72,13 @@
     .probidhomeblock4 .mat-list-base.lists .mat-list-item {padding: 20px;  width: 100%;}
   }
 
+
+  @media screen and (max-width: 768px){
+    .bottom_blog .item_wrapper { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; flex-wrap: wrap; -webkit-justify-content: center;-moz-justify-content: center;-ms-justify-content: center;justify-content: center; }
+    .bottom_blog .item_wrapper .item { width: 48%; margin: 1%; }
+    }
+    
+    
   @media only screen and (max-width: 768px) {
     .probidhomeblock4 .mat-list-base.lists .mat-list-item {width: 43%;}
   }
@@ -86,6 +93,9 @@
   .logowrapper{margin-top:0!important;margin-bottom:9px!important;width:80%}
   .example-container > * {width: inherit !important;}
   }
+  @media screen and (max-width: 600px){
+    .bottom_blog .item_wrapper .item { width: 100%; margin: 1%; }
+    }
 
   @media only screen and (max-width: 600px) {
     .mat-list-base.lists .mat-list-item {width: 100%;}
@@ -99,4 +109,9 @@
     .innerpagebanner.mat-card h1 {font-size: 36px;}
     .infoblock .mat-list-base {flex-wrap: wrap;}
     .infoblock .mat-list .mat-list-item .mat-list-item-content{flex-wrap: wrap; justify-content: center;}
+  }
+
+  
+	@media screen and (max-width: 480px){
+    .logomodalwrapper{width: 90%; margin: 0 auto; display: block;	}
   }
