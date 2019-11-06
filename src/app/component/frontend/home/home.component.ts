@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -7,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private cdr: ChangeDetectorRef) { }
 
   ngOnInit() {
 //   var slides = document.querySelectorAll('#slides .slide');
@@ -33,4 +32,7 @@ export class HomeComponent implements OnInit {
 //    }
   }
 
+  ngAfterViewInit(): void {
+    this.cdr.detectChanges();
+  }
 }

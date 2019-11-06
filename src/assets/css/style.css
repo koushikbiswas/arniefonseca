@@ -66,7 +66,8 @@ a{cursor:pointer;outline:none}
 
 .btngreen{display: inline-block !important; background: #0fc47e !important; background-size: 12px !important; font-size: 16px !important; color: #fff!important; text-transform: uppercase; font-family: 'HelveticaBold' !important; text-decoration: none!important; line-height: normal !important; text-align: center !important; margin: 10px 6px !important; border-radius: 0px;text-decoration:none!important;box-shadow: none !Important;padding: 15px 25px 10px!important;}
 
-.btngray{display: inline-block !important; background: #24252c !important; background-size: 12px !important; font-size: 16px !important; color: #fff!important; text-transform: uppercase; font-family: 'HelveticaBold' !important; text-decoration: none!important; line-height: normal !important; text-align: center !important; margin: 10px 6px !important; border-radius: 0px;text-decoration:none!important;box-shadow: none !Important;padding: 15px 25px 10px!important;}
+.btngray{display: inline-block !important; background: #24252c !important; background-size: 12px !important; font-size: 16px !important; color: #fff!important; text-transform: uppercase; font-family: 'HelveticaBold' !important; text-decoration: none!important; line-height: normal !important; text-align: center !important; margin: 10px 6px !important; border-radius: 0px !important;text-decoration:none!important;box-shadow: none !Important;padding: 15px 25px 10px!important;}
+/* .btngray:nth-child(1){margin-left 0 !important;} */
 
 .btnyellow{display: inline-block !important; background: #fcd503 !important; font-size: 16px !important; color: #fff!important; text-transform: uppercase; font-family: 'HelveticaBold' !important; text-decoration: none!important; line-height: normal !important; text-align: center !important;
 	text-decoration:none!important;	margin: 0; margin-top: 0; margin-bottom: 0; border-radius: 0px; padding: 14px 18px 10px !important; margin-top: 10px !important;box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);}
@@ -458,7 +459,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#010101",endCo
 .pt-30{padding-top: 20px !important;}
 
 
-.bloghead p{text-align: center;}
+.bloghead p, .blockheader p{text-align: center;}
 .signupfooter a{color:#0fd399 !important; cursor: pointer; text-transform: uppercase; padding-right: 0 !important;}
 
 
@@ -524,3 +525,65 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#010101",endCo
       max-width: 100%;
     }
   }
+
+
+  .carousalinfoinner{
+    display: -ms-Flexbox;
+    -ms-box-orient: horizontal;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap:wrap;
+    -webkit-box-align: center; 
+    -moz-box-align: center; 
+    -ms-flex-align: center; 
+    -webkit-align-items: center; 
+    align-items: center;
+  }
+  .slide1imgperson{
+    background:#fff;
+    border:6px solid #fff;
+    -webkit-box-shadow: 1px 2px 24px -2px rgba(0,0,0,0.68);
+    -moz-box-shadow: 1px 2px 24px -2px rgba(0,0,0,0.68);
+    box-shadow: 1px 2px 24px -2px rgba(0,0,0,0.68);
+    width: 214px;
+    height: 251px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .slide1imgperson img{
+    height: 100% !important; -o-object-fit: cover; object-fit: cover; width: 100% !important; width: auto; height: auto;
+  }
+
+  
+.carousalinfo{
+    position: absolute;
+    left: 7%;
+    top: 50%;
+    width: 1105px;
+    height: auto;
+    transform: translateY(-50%);
+}
+.carousel-indicators > button {
+    width: 10px;
+    height: 10px;
+    margin: 7.5px;
+}
+.carousel .carousel-indicators>button {
+    width: 12px!important;
+    height: 12px!important;
+    margin: 2.5px!important;
+    background-color: #fff;
+    border-radius: 0;
+    box-shadow:none;
+}
+.carousalinfo h1{
+    color:#fff; font-family:"HelveticaBold"; font-size:110px;font-weight:600;line-height:100px;text-transform:uppercase;text-align:left;margin-top:20px;text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);  margin-left: 15px;}
+
+.carousalinfo h3{
+    color:#fff; font-family:"HelveticaBold"; font-size:60px;font-weight:600;line-height:60px;text-transform:capitalize;text-align:left;margin-top:8px;text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);  margin-left: 15px;}
+
+.carousalinfo p{color:#24252c; font-family:"Helvetica-Normal"; font-size:18px;text-align:left;margin-top:10px;}
+.carousalinfo p b{color:#24252c; font-family:"HelveticaBold"; font-size:18px;}
