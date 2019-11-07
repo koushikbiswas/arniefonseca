@@ -24,20 +24,15 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .example-container .mat-form-field { margin: 0 0px !important;}
 .mat-form-field-appearance-legacy .mat-form-field-subscript-wrapper {top: calc(100% - 1.66667em);}
-.newslettermain .mat-form-field .mat-form-field-label{
-    line-height: normal;
-}
+.newslettermain .mat-form-field .mat-form-field-label{line-height: normal;}
 
 .mat-focused .mat-form-field-label.ng-star-inserted.mat-empty.mat-form-field-empty {display: none !important}
 .mat-form-field-label.ng-star-inserted.mat-empty.mat-form-field-empty {display: block !important}
 .mat-form-field-label.ng-star-inserted {display: none !important}
 .mat-form-field-infix {border: 0 !important}
 
-
 .mat-fab.mat-accent[disabled], .mat-fab.mat-primary[disabled], .mat-fab.mat-warn[disabled], .mat-fab[disabled][disabled], .mat-flat-button.mat-accent[disabled], .mat-flat-button.mat-primary[disabled], .mat-flat-button.mat-warn[disabled], .mat-flat-button[disabled][disabled], .mat-mini-fab.mat-accent[disabled], .mat-mini-fab.mat-primary[disabled], .mat-mini-fab.mat-warn[disabled], .mat-mini-fab[disabled][disabled], .mat-raised-button.mat-accent[disabled], .mat-raised-button.mat-primary[disabled], .mat-raised-button.mat-warn[disabled], .mat-raised-button[disabled][disabled] {
-    background-color: #24252c;
-}
-
+    background-color: #24252c;}
 
 .homeblock2listssingleitem.mat-list-item:nth-child(even) .mat-list-item-content{flex-direction: row-reverse !important;}
 .homeblock2listssingleitem.mat-list-item:nth-child(even) .mat-list-item-content button{float: left !important;}

@@ -189,16 +189,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#010101",endCo
 .servicewrappercontent .mat-list .mat-list-item .mat-card .mat-card-content{font-size:16px; font-family:"Helvetica-Normal";}
 .servicewrappercontent .mat-list .mat-list-item .mat-card .iconcls{margin-bottom:20px;width:auto;-webkit-filter:grayscale(100%);filter:grayscale(100%);height:60px;}
 .servicewrappercontent .mat-list .mat-list-item .mat-card .imagewrap{position:relative;width:60px;}
-
-/* .servicewrappercontent .mat-list .mat-list-item .mat-card .imagewrap:after{
-	content: "";
-    position: absolute;
-    top: 0;
-	left: 0px;
-	background:url(../images/service_icon_style.png)  no-repeat center center;
-	width: 20px;
-    height: 20px;
-} */
 .servicewrappercontent .btngeneral{padding:5px 30px;text-transform:uppercase}
 .btngray{background-color:#2b2b2b;color:#fff}
 .servicewrappercontent .btngeneral{text-align:center;margin:30px auto;display:block}
@@ -206,33 +196,25 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#010101",endCo
 .servicewrapper.servicewrapperinner{padding:50px 20px!important}
 .servicewrappercontent.servicewrappercontentinner{background-color:#f3f3f3;padding:50px 16px}
 .servicewrappercontent.servicewrappercontentinner .mat-list{margin-top:0!important}
-
 .singleservice .mat-card-title{font-size: 18px !important; line-height: normal !important; margin-bottom: 10px !important;justify-content: flex-start;color: #00b5d6;}
-
 
 .contact-form .from h2 {display: none;}
 .contactusinfoblock .from {margin-top: 0!important;}
-.contact-form .main-div .from.mat-card{
-    margin:4em auto!important; width: 490px!important;
-    background: rgb(16,208,111)!important;
-    background: -moz-linear-gradient(31deg, rgba(16,208,111,1) 0%, rgba(10,218,255,1) 100%)!important;
-    background: -webkit-linear-gradient(31deg, rgba(16,208,111,1) 0%, rgba(10,218,255,1) 100%)!important;
-    background: linear-gradient(31deg, rgba(16,208,111,1) 0%, rgba(10,218,255,1) 100%)!important;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#10d06f",endColorstr="#0adaff",GradientType=1)!important;    border-radius: 60px !important;
-    padding: 56px!important;
-}
+.contact-form .main-div .from.mat-card{margin:4em auto!important; width: 490px!important; background: rgb(16,208,111)!important;background: -moz-linear-gradient(31deg, rgba(16,208,111,1) 0%, rgba(10,218,255,1) 100%)!important;
+background: -webkit-linear-gradient(31deg, rgba(16,208,111,1) 0%, rgba(10,218,255,1) 100%)!important;background: linear-gradient(31deg, rgba(16,208,111,1) 0%, rgba(10,218,255,1) 100%)!important;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#10d06f",endColorstr="#0adaff",GradientType=1)!important; border-radius: 60px !important;padding: 56px!important;}
 .contact-form .main-div .from.mat-card:hover{-o-box-shadow:0 0 50px rgba(0,0,0,0.2)!important;-ms-box-shadow:0 0 50px rgba(0,0,0,0.2)!important;box-shadow:0 0 50px rgba(0,0,0,0.2)!important}
 .contactusformblock .example-container > * {width: inherit!important;margin-top: 0px;}
+
 .formgenrl.login-form .example-container > * {width: inherit!important;margin-top: 20px;}
 .formgenrl.login-form .from.mat-card {background: rgba(13, 113, 173,1)!important;background: -moz-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 100%)!important;
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(13, 113, 173,1)), color-stop(100%, rgba(6,12,28,1)))!important;background: -webkit-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 100%)!important; background: -o-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 100%)!important;
-    background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 100%)!important; background: linear-gradient(to bottom, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 100%)!important; filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1969bf', endColorstr='#060c1c', GradientType=0 )!important;border: 1px solid rgba(255, 255, 255, 0.2);    margin: 0em auto!important;}
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(13, 113, 173,1)), color-stop(100%, rgba(6,12,28,1)))!important;background: -webkit-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 100%)!important; background: -o-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 100%)!important;
+background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 100%)!important; background: linear-gradient(to bottom, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 100%)!important; filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1969bf', endColorstr='#060c1c', GradientType=0 )!important;border: 1px solid rgba(255, 255, 255, 0.2);margin: 0em auto!important;}
 
 .mat-card-content, .mat-card-subtitle {font-size: 16px;}
 .servicewrappercontent .mainwrappercontent{display:flex; justify-content: space-between;align-items: stretch;}
 .servicewrappercontent .mainwrappercontent .servinfo{flex-basis: 310px; overflow: hidden;background: url(../images/servinfobg.png) no-repeat top center #222527 !important; object-fit: cover; margin-right: 20px !important; margin: 6px; position: relative;height: 560px; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; align-items: center;}
 .servicewrappercontent .mainwrappercontent .servinfo:before{background-color:rgba(0, 0, 0, 0.7); width:100%; min-height:100%; position:absolute; top:0; left:0; content:"";}
-
 .servinfoarrow{ content:""; position:absolute; top:50%; transform:translateY(-50%); right:0px;width: 0; height: 0; width: 0; 
 	height: 0; border-top: 13px solid transparent; border-bottom: 13px solid transparent; border-right: 20px solid #fff;}
 .servicewrappercontent .mainwrappercontent .servlist{flex:1;}
@@ -240,20 +222,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#010101",endCo
 .servinfo .mat-card-content p{color:#fff;margin-bottom:0;text-align:center;}
 .servinfo .mat-card-actions{display:flex;flex:1 1 100%;-webkit-justify-content: center;-moz-justify-content: center;-ms-justify-content: center;justify-content: center;  }
 .servinfo .mat-card-actions .mat-button{background-color:#12c3e3;color:#fff;width:80%;border-radius:50px;text-transform:uppercase;padding-top:5px;padding-bottom:5px;}
-
 .servicewrappercontent .servinfo .mat-card.servinfoinner{display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; align-items: center; flex-wrap: wrap; height: 46%; background: transparent !important; -webkit-justify-content: center;-moz-justify-content: center;-ms-justify-content: center;justify-content: center;  }
-
-/* .testimonialwrapper{display:flex;flex-wrap:wrap;-webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center;justify-content:center}
-.testimonialwrappercontent .mat-list{position:relative;min-height:1px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;flex-wrap:wrap;align-items:stretch;justify-content:space-between;position:relative;z-index:9}
-.testimonialwrappercontent .mat-list .mat-list-item{flex:1;flex-basis:25.33%;height:auto;background-color:#fff;box-shadow:0 5px 27px 0 rgba(0,0,0,0.09);transition:background 0.3s,border 0.3s,border-radius 0.3s,box-shadow .3s;margin:0 0 6px 6px;padding:37px 40px 40px 50px;display:flex;align-items:stretch}
-.testimonialwrappercontent .btngeneral{padding:5px 30px;text-transform:uppercase}
-.btngray{background-color:#2b2b2b;color:#fff}
-.testimonialwrappercontent .btngeneral{text-align:center;margin:30px auto;display:block;position:relative;z-index:9}
-.singleservice .mat-list-item-content{padding:0!important;-webkit-justify-content: center;-moz-justify-content: center;-ms-justify-content: center;justify-content: center;  width:100%}
-.testimonialwrappercontent .carousel{z-index:99}
-.testimonialwrapper.testimonialwrapperinner{padding:50px 20px!important}
-.testimonial{background-color:#f3f3f3;padding:50px 16px}
-*/
 
 .testimonial{background-color:#f3f3f3;padding:50px 16px}
 .testimonial .mat-list{margin-top:0!important}
@@ -263,8 +232,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#010101",endCo
 .title1{color:#000;font-size:16px;font-weight:600;line-height:24px;letter-spacing:1.92px;text-transform:uppercase}
 .title2{color:#999;font-size:16px;font-style:italic;line-height:24px;letter-spacing:1.28px}
 .title3{color:#1da1db;font-size:16px;line-height:24px;letter-spacing:.8px}
-/* .testimonial .mat-list .testimonialserv:nth-child(odd) .testiimgwarpper{float:right;padding:0 0 10px 20px} */
-/* .testimonial .mat-list .testimonialserv:nth-child(even) .testibottomcontent{float:right} */
 .custom-module--bg-offwhite,.custom-module--bg-paleyellow,.custom-module--bg-skyblue{background-color:#f9f8f7}
 .testimonial.custom-module.testimonial--border{border-bottom:1px solid #d1d1d1}
 .testimonial.custom-module{padding:30px}
@@ -287,9 +254,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#010101",endCo
 .modelthumbimginnerwarpper.active .testimonialcontent .quatation{font-size: 16px !important;}
 .testimonialwrappercontent .mat-card-title {-webkit-justify-content: center;-moz-justify-content: center;-ms-justify-content: center;justify-content: center; }
 .generalcls .testibottomcontent .mat-card-title {font-size: 26px!important;line-height: normal!important; margin-bottom: 5px !important; justify-content: inherit !important;}
-
-
-
 .generalcls.blog .mat-card-title {font-size: 24px!important;line-height: normal!important;justify-content: space-between;    margin-bottom: 15px!important; margin-top: 15px!important;text-transform: capitalize;}
 
 .bottom_blog .blog_header{font-size: 22px; color: #000; background: #fff; padding: 16px; text-transform: uppercase; padding-bottom: 0;}
@@ -407,21 +371,17 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#010101",endCo
 
 .bloghead p, .blockheader p{text-align: center;}
 
-
-
-
 .signupfooter a{color:#0fd399 !important; cursor: pointer; text-transform: uppercase; padding-right: 0 !important;}
 
 /*--- loder css---*/
-
 .loder_body { width: 100%; height: 100vh;  position: fixed; left: 0; top: 0; background-color: #f0f7f5; z-index: -1}
 .loder_wrapper {width: 300vh; height: 100vh; display: table-cell; text-align: center; vertical-align: middle}
 .loder_wrapper img {width: 250px; margin: 0 auto; margin-bottom: 20px}
 .loader {border: 16px solid #10d17d;border-top: 16px solid #0ad9fb;border-radius: 50%;width: 80px;height: 80px;animation: spin 2s linear infinite;margin: 0 auto}
-@keyframes spin {0% { transform: rotate(0deg); }
-100% { transform: rotate(360deg); }
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
-
 /*---End of loder css---*/
 
 
