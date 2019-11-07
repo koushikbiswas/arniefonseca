@@ -35,6 +35,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     background-color: #24252c;}
 
 .homeblock2listssingleitem.mat-list-item:nth-child(even) .mat-list-item-content{flex-direction: row-reverse !important;}
-.homeblock2listssingleitem.mat-list-item:nth-child(even) .mat-list-item-content button{float: left !important;}
+/* .homeblock2listssingleitem.mat-list-item:nth-child(even) .mat-list-item-content button{float: left !important;} */
 .homeblock2listssingleitem .mat-list-item-content{align-items: stretch !important;}
 .homeblock2 .blockcontent .btnmiddle {margin: 30px auto 0px !important; display: block !important; float: none;}
