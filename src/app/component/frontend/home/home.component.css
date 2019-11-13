@@ -47,3 +47,65 @@
 .homeblock2servcontent p{padding: 0px 30px;}
 .homeblock2servimg{overflow: hidden;}
 .homeblock2servcontent button{float: right !important; margin: 10px 15px !important;}
+
+
+
+
+
+
+
+.getintouch.mat-card{overflow-x:hidden;background:url(../../../../assets/images/getintouchbg.jpg) no-repeat right center !important;top:0;left:0;-webkit-background-size:cover !important;-moz-background-size:cover !important;-o-background-size:cover !important;background-size:cover !important;position:relative;}
+
+.getintouch h2{color:#fff !important;}
+.getintouch p{color:#fff !important;}
+
+.getintouch .getintouchmain{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 25px auto 0px;
+  width: 1039px;
+}
+.getintouch .getintouchmain h1{
+  font-family: 'Helvetica-Normal';
+  font-size: 48px!important;
+  line-height: normal!important;
+  text-transform: capitalize;
+  font-weight: normal;
+  color:#00c0ff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 0;
+}
+
+.getintouch .getintouchmain h1 span{
+    font-family: 'Helvetica-Normal' !important;
+}
+/* .getintouch .getintouchmain h1 span.uppercase{
+    font-family: 'HelveticaBold' !important;
+} */
+
+.getintouchicon{
+  flex: 1 1 30%;
+  flex-basis: 30%;
+}
+
+.getintouchicon img{
+    max-width: 100%;
+}
+
+.getintouchiconcontent{
+    flex: 1 1 66%;
+    flex-basis: 67%;
+    border-left: 1px solid #32546b;
+    padding-left: 16px;
+    margin-left: 1%;
+}
+.getintouch p span{color:#d8fc3e;}
+
+.getintouchiconcontent span.small{
+    font-family: 'Helvetica-Normal';
+    font-size: 20px!important;
+    line-height: normal!important;
+    font-weight: normal;
+    color:#fff;
+}

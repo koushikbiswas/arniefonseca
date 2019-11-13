@@ -136,6 +136,45 @@
 .testimonialbg.mat-card{background:url(../../../../assets/images/contactusbg.jpg) no-repeat center center !important;background-size: cover !important;}
 
 
+/*--- slide-image css---*/
+
+.slide-image-wrapper{
+  width: 231px;
+  height: 231px;
+  border-radius: 100%;
+  background-color: #efefef;
+  overflow: hidden;
+  display: block;
+  position: relative;    
+  margin: 20px auto 30px;
+}
+.quatation .quotestarticon{margin: 0 auto 20px; width: inherit;}
+.slide-image-wrapper-main img {
+  height: 100% !important;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100% !important;
+  width: auto;
+  height: auto;
+}
+
+.slide-image-wrapper-main{
+  width: 185px;
+  height: 185px;
+  border-radius: 100%;
+  background-color: #dedede;
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  left: 25px;
+  top: 8px;
+}
+
+.generalcls .testicontent .quatation p{text-align:left !important;}
+
+
+/*--- slide-image css---*/
+
 
   @media only screen and  (max-width: 960px) {
     .toggle-box {

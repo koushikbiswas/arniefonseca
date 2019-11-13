@@ -21,6 +21,7 @@ import {ListingModule} from 'listing-angular7';
 import {MatIconModule} from '@angular/material/icon';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { MatCarouselModule } from '@ngmodule/material-carousel';
+import { OwlModule } from 'ngx-owl-carousel';
 
 /**Frontend Component**/
 
@@ -185,6 +186,7 @@ import { MyCustomersAffiliateComponent } from './component/backend/my-customers-
     ListingModule,
     MatIconModule,
     MatCarouselModule.forRoot(),
+    OwlModule
   ],
   providers: [CookieService, AuthGuard, ApiService, SidenavService],
   bootstrap: [AppComponent],

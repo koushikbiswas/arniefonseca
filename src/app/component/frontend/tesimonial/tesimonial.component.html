@@ -1,44 +1,57 @@
 
 
-    <div class="demo-border" [matBadge]="index">
-        <drag-scroll class="demo-one"
-          drag-scroll-y-disabled="true"
-          scrollbar-hidden="true"
-          (dsInitialized)="onDragScrollInitialized()"
-          (indexChanged)="onIndexChanged($event)"
-          (reachesLeftBound)="leftBoundStat($event)"
-          (reachesRightBound)="rightBoundStat($event)"
-          (snapAnimationFinished)="onSnapAnimationFinished()"
-          (dragStart)="onDragStart()"
-          (dragEnd)="onDragEnd()"
-          #nav
-          >
-          <div class="modelthumbwrapper" [ngClass]="i === index ? 'active': ''" drag-scroll-item *ngFor="let testmon of TestimonialListArray; let i = index">
-            <div class="modelmodelthumbimg1">
-                <img [src]="testmon.image" (click)="clickItem(testmon)"/>
-            </div>
-            
-            <div class="testimonialcontent">
-                <mat-card-title drag-scroll-item class="demo cursor">{{testmon.name}}</mat-card-title>
-                <mat-card-title drag-scroll-item class="title1 demo cursor">{{testmon.name}}</mat-card-title>
-                <mat-card-title drag-scroll-item class="title2 demo cursor">{{testmon.designation}}</mat-card-title>
-                <mat-card-title drag-scroll-item class="title3 demo cursor">{{testmon.address}}</mat-card-title>
-                <mat-card-content drag-scroll-item class="quatation demo cursor">{{testmon.quatation}}
-                </mat-card-content>
-              </div>
+    <owl-carousel [options]="carouselOptions" [items]="TestimonialListArray" [carouselClasses]="['owl-theme', 'row', 'sliding']">
+      <!----START SINGLE TESTIMONIAL-->
+
+        <!-- <div *ngFor="let image of TestimonialListArray;let i= index"> -->
+        <div>
+          <span class="slide-image-wrapper">
+            <!-- <img class="slide-image" src="{{image.image}}" > -->
+            <span class="slide-image-wrapper-main"> 
+                <img class="slide-image" src="../../../../assets/images/testimonial-img1.jpg" >
+            </span>            
+          </span>
+          <span class="slide-text" (click)="showBut()">
+              <p class="quatation demo cursor">
+                <!-- <span [innerHtml]="image.testimonial"></span> -->
+                <img class="quotestarticon" src="../../../../assets/images/quotestart-icon-yellow.png"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+              </p>    
+          </span>
+        </div>  
+        <!----END SINGLE TESTIMONIAL-->
+
+        <!----START SINGLE TESTIMONIAL-->
+        <div>
+            <span class="slide-image-wrapper">
+              <!-- <img class="slide-image" src="{{image.image}}" > -->
+              <span class="slide-image-wrapper-main">
+                <img class="slide-image" src="../../../../assets/images/testimonial-img2.jpg" >
+              </span>
+            </span>
+            <span class="slide-text" (click)="showBut()">
+                <p class="quatation demo cursor">
+                  <!-- <span [innerHtml]="image.testimonial"></span> -->
+                  <img class="quotestarticon" src="../../../../assets/images/quotestart-icon-yellow.png"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+                </p>    
+            </span>
           </div>
-          
-        </drag-scroll>
+          <!----END SINGLE TESTIMONIAL-->
 
+          <!----START SINGLE TESTIMONIAL-->
+          <div>
+              <span class="slide-image-wrapper">
+                <!-- <img class="slide-image" src="{{image.image}}" > -->
+                <span class="slide-image-wrapper-main">
+                  <img class="slide-image" src="../../../../assets/images/testimonial-img3.jpg" >
+                </span>
+              </span>
+              <span class="slide-text" (click)="showBut()">
+                  <p class="quatation demo cursor">
+                    <!-- <span [innerHtml]="image.testimonial"></span> -->
+                    <img class="quotestarticon" src="../../../../assets/images/quotestart-icon-yellow.png"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+                  </p>    
+              </span>
+            </div>  
+            <!----END SINGLE TESTIMONIAL-->
+      </owl-carousel>
 
-        <div fxLayout="row" fxLayoutGap="5px" fxLayoutAlign="center center">
-          <button mat-raised-button color="primary"  (click)="moveTo(0)">first</button>
-          <button mat-raised-button color="primary"  [disabled]="leftNavDisabled" (click)="moveLeft1()">left</button>
-          <button mat-raised-button color="primary"  [disabled]="rightNavDisabled" (click)="moveRight1()">right</button>
-          <button mat-raised-button color="primary"  (click)="moveTo(TestimonialListArray.length - 1)">last</button>
-        </div>
-    </div>
-    <button mat-button class="btnblue sim-button" (click)="btnClick();">View More >></button>
-
-
-  <!-- <button mat-stroked-button class="btngeneral btngray" (click)="btnClick();">View More</button>  -->

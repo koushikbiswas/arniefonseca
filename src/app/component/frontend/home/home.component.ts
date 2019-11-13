@@ -1,4 +1,5 @@
-import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef, ViewChild, ɵConsole } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -6,33 +7,14 @@ import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private cdr: ChangeDetectorRef) { }
+
+  constructor(private cdr: ChangeDetectorRef, private router: Router) { }
 
   ngOnInit() {
-//   var slides = document.querySelectorAll('#slides .slide');
-//   var currentSlide = 0;
-//   var slideInterval = setInterval(nextSlide, 3000);
-//   var next: HTMLElement = document.querySelectorAll('#next')[0] as HTMLElement;
-//   var previous: HTMLElement = document.querySelectorAll('#previous')[0] as HTMLElement;
-//   next.onclick = function () {
-//  nextSlide();
-//  };
-//   previous.onclick = function () {
-//    previousSlide();
-// };
-//    function nextSlide() {
-//       goToSlide(currentSlide + 1);
-//     }
-//     function previousSlide() {
-//      goToSlide(currentSlide - 1);
-//    }
-//     function goToSlide(n) {
-//       slides[currentSlide].className = 'slide';
-//       currentSlide = (n + slides.length) % slides.length;
-//    }
+    var data: any = {};
   }
 
-  ngAfterViewInit(): void {
-    this.cdr.detectChanges();
-  }
+  btnClick() {
+    this.router.navigateByUrl('/testimonial');
+  };
 }

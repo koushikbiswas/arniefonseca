@@ -38,3 +38,24 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 /* .homeblock2listssingleitem.mat-list-item:nth-child(even) .mat-list-item-content button{float: left !important;} */
 .homeblock2listssingleitem .mat-list-item-content{align-items: stretch !important;}
 .homeblock2 .blockcontent .btnmiddle {margin: 30px auto 0px !important; display: block !important; float: none;}
+
+
+.next-slide i{color:#9e9e9e; font-size: 24px; transform: rotate(-180deg); line-height: 60px;}
+.prev-slide i{color:#9e9e9e; font-size: 24px; line-height: 60px;}
+.contentsection {display: flex; align-items: center; justify-content: space-between;width: 93%;}
+
+.absolute{
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+}
+.contentsection .blogsociallists {margin-top: 0px;}
+.quatation a {
+    float: left;
+    color: #1bbef7;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+
+.testimonialwrapper .mat-list .mat-list-item.testimonialserv .mat-list-item-content{padding: 0; display: block; position: initial !important;}

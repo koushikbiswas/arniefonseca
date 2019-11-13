@@ -105,7 +105,7 @@ const routes: Routes = [
     resolve: { testimonialListData: ResolveService },
     data: {
       requestcondition: { source: "testimonals", condition: {} },
-      endpoint: "datalist"
+      endpoint: "datalistwithouttoken"
     }
   },
   
