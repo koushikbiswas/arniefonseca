@@ -424,11 +424,143 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
 .singlecolgallary {-ms-flex: 24%; flex: 24%; max-width: 24%;padding: 0 4px;}
 .singlecolgallary span{width: 100%;}
 .singlecolgallary span img, .singlecolgallary span iframe {margin-top: 8px;vertical-align: middle; width: 100%;}
-.colgallary1 iframe:nth-child(1){height: 480px;}
+
+.singlecolgallary span img{height: 100% !important; -o-object-fit: cover; object-fit: cover; width: 100% !important; width: auto; height: auto;}
+
+/* .colgallary1 iframe:nth-child(1){height: 480px;}
 .colgallary2 iframe:nth-child(1){height: 560px;}
 .colgallary2 iframe:nth-child(2){height: 480px;}
 .colgallary3 iframe:nth-child(1){height: 560px;}
-.colgallary4 iframe:nth-child(1){height: 560px;}
+.colgallary4 iframe:nth-child(1){height: 560px;} */
+
+.singlecolgallary:nth-child(1) > span:nth-child(3n+1){
+  height: 640px;    
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+.singlecolgallary:nth-child(1) > span:nth-child(3n+2){
+  height: 464px;  
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+.singlecolgallary:nth-child(1) > span:nth-child(3n+3){
+  height: 360px;  
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+.singlecolgallary:nth-child(2) > span:nth-child(3n+1){
+  height: 466px;    
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+.singlecolgallary:nth-child(2) > span:nth-child(3n+2){
+  height: 640px;  
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+.singlecolgallary:nth-child(2) > span:nth-child(3n+3){
+  height: 360px;  
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+.singlecolgallary:nth-child(3) > span:nth-child(3n+1){
+  height: 358px;    
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+.singlecolgallary:nth-child(3) > span:nth-child(3n+2){
+  height: 360px;  
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+.singlecolgallary:nth-child(3) > span:nth-child(3n+3){
+  height: 748px;  
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+.singlecolgallary:nth-child(4) > span:nth-child(3n+1){
+  height: 640px;    
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+.singlecolgallary:nth-child(4) > span:nth-child(3n+2){
+  height: 358px;  
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+.singlecolgallary:nth-child(4) > span:nth-child(3n+3){
+  height: 468px;  
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+
+.singlecolgallary:nth-child(1) > span:nth-child(3n+1) iframe{
+  height: 640px; 
+}
+.singlecolgallary:nth-child(1) > span:nth-child(3n+2) iframe{
+  height: 464px;
+}
+.singlecolgallary:nth-child(1) > span:nth-child(3n+3) iframe{
+  height: 360px;
+}
+.singlecolgallary:nth-child(2) > span:nth-child(3n+1) iframe{
+  height: 466px;
+}
+.singlecolgallary:nth-child(2) > span:nth-child(3n+2) iframe{
+  height: 640px;
+}
+.singlecolgallary:nth-child(2) > span:nth-child(3n+3) iframe{
+  height: 360px;
+}
+.singlecolgallary:nth-child(3) > span:nth-child(3n+1) iframe{
+  height: 358px;
+}
+.singlecolgallary:nth-child(3) > span:nth-child(3n+2) iframe{
+  height: 360px;
+}
+.singlecolgallary:nth-child(3) > span:nth-child(3n+3) iframe{
+  height: 748px;
+}
+.singlecolgallary:nth-child(4) > span:nth-child(3n+1) iframe{
+  height: 640px;
+}
+.singlecolgallary:nth-child(4) > span:nth-child(3n+2) iframe{
+  height: 358px;
+}
+.singlecolgallary:nth-child(4) > span:nth-child(3n+3) iframe{
+  height: 468px;
+}
+
+
+
+.singlecolgallarycontent{
+  position: absolute;
+  bottom:0;
+  left: 0;
+  display: block;
+}
+
+/* :nth-child(9n+1)
+:nth-child(9n+2)
+:nth-child(9n+3)
+:nth-child(9n+4)
+:nth-child(9n+5)
+:nth-child(9n+6)
+:nth-child(9n+7)
+:nth-child(9n+8)
+:nth-child(9n+9) */
 
 @media screen and (max-width: 800px) {
 .singlecolgallary {-ms-flex: 48%; flex: 48%; max-width: 48%;}
@@ -436,6 +568,8 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
 @media screen and (max-width: 600px) {
   .singlecolgallary {-ms-flex: 100%; flex: 100%; max-width: 100%;}
 }
+
+
 
 /*--- End Image & Video Gallery css---*/
 

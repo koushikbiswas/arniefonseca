@@ -33,20 +33,7 @@
 .homeblock1contentright{width: 59%; padding-left: 30px;}
 .homeblock1contentright .mat-list{display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; align-items: center;}
 
-.homeblock2listssingleitem{display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex !important; flex-wrap: wrap !important;  height: auto !important; float: none !important; align-items: stretch;}
-.homeblock2listssingleitem span{ flex: 1;}
-.homeblock2servimg img{height: 100% !important; -o-object-fit: cover; object-fit: cover; width: 100% !important; width: auto; height: auto;}
-.homeblock2servcontent h2{margin-top: 54px;font-family: 'Helvetica-Normal'; font-size: 24px!important; line-height: normal!important; text-transform: capitalize !important; font-weight: normal; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; flex-wrap: wrap; align-items: center;padding-left: 30px;padding-right: 30px;}
 
-
-.homeblock2servcontent h2 span{flex: inherit;}
-.homeblock2servcontent h2 span.homeblock2icon{}
-.homeblock2servcontent h2 span.homeblock2iconcontent{text-align: left; margin-left: 18px;}
-.homeblock2servcontent h2 span.homeblock2iconcontent span{display: block;font-family: 'Helvetica-Normal'; font-size: 14px!important; line-height: normal!important;}
-
-.homeblock2servcontent p{padding: 0px 30px;}
-.homeblock2servimg{overflow: hidden;}
-.homeblock2servcontent button{float: right !important; margin: 10px 15px !important;}
 
 
 
