@@ -71,3 +71,21 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
 .testimonialwrapper .mat-list .mat-list-item.testimonialserv .mat-list-item-content{padding: 0; display: block; position: initial !important;}
+
+.singlecolgallarycontent .absolute {
+    position: relative !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    margin-top: 15px !important;
+  }
+
+  .singlecolgallarycontent .contentsection .blogsociallists {
+    margin-top: 0px;
+    display: inline-block;
+    padding: 8px 5px;
+    background: #fff;
+}
+
+.singlecolgallarycontent .contentsection .blogsociallists .sociallink fa {
+    font-size: 16px;
+}
