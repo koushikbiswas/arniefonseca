@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MetaService } from '@ngx-meta/core';
 
 // declare var $:any;
 // var iframe           = $('iframe:first');
@@ -24,7 +25,19 @@ export class VideoGalleryComponent implements OnInit {
 // }
 
 
-  constructor() {
+  constructor(private readonly meta: MetaService) {
+    this.meta.setTitle('Arniefonseca - Video Gallery');
+    this.meta.setTag('og:description', '');
+    this.meta.setTag('twitter:description', '');
+
+    this.meta.setTag('og:keyword', '');
+    this.meta.setTag('twitter:keyword', '');
+
+    this.meta.setTag('og:title', 'Arniefonseca - Video Gallery');
+    this.meta.setTag('twitter:title', 'Arniefonseca - Video Gallery');
+    this.meta.setTag('og:type', 'website');
+    this.meta.setTag('og:image', '../../assets/images/logo.png');
+    this.meta.setTag('twitter:image', '../../assets/images/logo.png');
    }
 
   ngOnInit() {}

@@ -16,6 +16,7 @@ export class BlogComponent implements OnInit {
   private currentSlide = 0;
   constructor(public sanitizer: DomSanitizer) {
 
+   
 
     for (const i of this.videos) {
       var re = "https://www.youtube.com/embed/";

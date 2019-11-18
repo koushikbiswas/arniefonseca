@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'probid-angular';
+  title = 'arniefonseca';
   constructor(public router: Router){
     // console.log('URL'+this.router.url);
   }
