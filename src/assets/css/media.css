@@ -34,7 +34,8 @@
   }
 
   @media only screen and (max-width:1024px) {
-    .probidhomeblock4 .mat-list-base.lists .mat-list-item {padding: 11px; width: 46.5%;}    
+    .singleteam {width: calc(1/2*100% - (1 - 1/2)*10px)!important;}
+
   }
   
   @media only screen and (max-width: 991px) {
@@ -73,6 +74,7 @@
   .vpheaderwrapper .mat-nav-list .mat-list-item{border-bottom:1px solid #333}
   .innerpagebanner.mat-card {min-height: 1px!important;}
   .rightsidelinks {width: 47px;}
+  .bloglists .item_wrapper > .item {width: calc(1/1*100% - (1 - 1/1)*20px);}
   }
 
   @media only screen and (max-width:900px) {

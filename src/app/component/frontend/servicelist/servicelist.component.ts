@@ -8,7 +8,7 @@ import { MetaService } from '@ngx-meta/core';
   styleUrls: ['./servicelist.component.css']
 })
 export class ServicelistComponent implements OnInit {
-
+  
   private indexvallength:any;
   public ServiceListArray:any=[];
   // showMore = false;

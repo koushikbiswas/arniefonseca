@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { MetaService } from '@ngx-meta/core';
+
+import { MatAccordion } from '@angular/material';
 
 @Component({
   selector: 'app-bloglist',
@@ -7,6 +9,17 @@ import { MetaService } from '@ngx-meta/core';
   styleUrls: ['./bloglist.component.css']
 })
 export class BloglistComponent implements OnInit {
+  panelOpenState = false;
+  
+
+  @ViewChild('myaccordion') myPanels: MatAccordion;
+
+  openAll(){
+    this.myPanels.openAll();
+  }
+  closeAll(){
+    this.myPanels.closeAll();
+  }
 
   constructor(private readonly meta: MetaService) {
     this.meta.setTitle('Arniefonseca - Blog');
@@ -24,9 +37,10 @@ export class BloglistComponent implements OnInit {
    }
 
   ngOnInit() {
-   
+
+    
 
   }
   
-  panelOpenState = false;
+  
 }

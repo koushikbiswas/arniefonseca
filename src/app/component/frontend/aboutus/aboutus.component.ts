@@ -8,6 +8,8 @@ import { MetaService } from '@ngx-meta/core';
 })
 export class AboutusComponent implements OnInit {
 
+  
+
   constructor(private readonly meta: MetaService) {
     this.meta.setTitle('Arniefonseca - Who We Are');
     this.meta.setTag('og:description', '');
