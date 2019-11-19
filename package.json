@@ -1,5 +1,5 @@
 {
-  "name": "probid-angular",
+  "name": "arniefonseca",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -11,7 +11,7 @@
     "compile:server": "webpack --config webpack.server.config.js --progress --colors",
     "serve:ssr": "node local.js",
     "build:ssr": "npm run build:client-and-server-bundles && npm run compile:server",
-    "build:client-and-server-bundles": "ng build --prod && ng run probid-angular:server:production",
+    "build:client-and-server-bundles": "ng build --prod && ng run arniefonseca:server:production",
     "server": "node local.js",
     "build:prod": "npm run build:ssr",
     "serve:prerender": "node static.js",

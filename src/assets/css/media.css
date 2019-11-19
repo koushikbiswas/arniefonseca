@@ -14,6 +14,8 @@
   }
 
   @media only screen and (max-width: 1199px) {
+    
+    .singleteam{height: auto !important;box-sizing: border-box; margin-bottom: 30px; width: calc(1/2*100% - (1 - 1/2)*30px) !important;}
   .probidhomeblock4 .mat-list-base.lists .mat-list-item {padding: 13px;width: 46.5%;}
   .vpheaderwrapper .mat-nav-list a{font-size:13px}
   .mat-drawer{position:relative;z-index:4;display:block;position:inherit;top:0;bottom:0;z-index:3;outline:0;box-sizing:border-box;overflow-y:auto;transform:translate3d(-100%,0,0)}
@@ -32,11 +34,12 @@
   }
 
   @media only screen and (max-width:1024px) {
-    .probidhomeblock4 .mat-list-base.lists .mat-list-item {padding: 11px; width: 46.5%;}
     .singleteam {width: calc(1/2*100% - (1 - 1/2)*10px)!important;}
+
   }
   
   @media only screen and (max-width: 991px) {
+    
     .mat-list-base.lists .mat-list-item {width: 49%;}
     .probidhomeblock2inner .mat-list {flex-wrap: wrap;}
     .probidhomeblock4 .mat-list-base.lists .mat-list-item {width: 44%;}
@@ -71,6 +74,7 @@
   .vpheaderwrapper .mat-nav-list .mat-list-item{border-bottom:1px solid #333}
   .innerpagebanner.mat-card {min-height: 1px!important;}
   .rightsidelinks {width: 47px;}
+  .bloglists .item_wrapper > .item {width: calc(1/1*100% - (1 - 1/1)*20px);}
   }
 
   @media only screen and (max-width:900px) {
@@ -79,10 +83,8 @@
 
   @media screen and (max-width: 768px){
     .bottom_blog .item_wrapper { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; flex-wrap: wrap; -webkit-justify-content: center;-moz-justify-content: center;-ms-justify-content: center;justify-content: center; }
-    .bottom_blog .item_wrapper .item { width: 48%; margin: 1%; }
-    .singleteam {width: calc(1/1*100% - (1 - 1/1)*10px)!important;}
-    .teamcontent h2 {font-size: 20px !important;}
-    .generalcls p {font-size: 16px; line-height: normal;}
+    .bottom_blog .item_wrapper .item { width: 48%; margin: 1%; }    
+    .singleteam{height: auto !important;box-sizing: border-box; margin-bottom: 30px; width: calc(1/1*100% - (1 - 1/1)*30px) !important;}
   }
         
   @media only screen and (max-width: 768px) {

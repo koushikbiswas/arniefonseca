@@ -1,6 +1,6 @@
 {
   "universal": {
-    "clientProject": "probid-angular",
+    "clientProject": "arniefonseca",
     "skipInstall": false,
     "http": true,
     "appId": "serverApp",

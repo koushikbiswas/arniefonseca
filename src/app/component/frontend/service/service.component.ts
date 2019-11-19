@@ -10,7 +10,9 @@ export class ServiceComponent implements OnInit {
 
   public ServiceListArray:any=[];
 
-  constructor(private activatedRoute: ActivatedRoute, private router: Router) { }
+  constructor(private activatedRoute: ActivatedRoute, private router: Router) {
+
+   }
 
   ngOnInit() {
     this.activatedRoute.data.forEach(data=>{

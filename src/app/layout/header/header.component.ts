@@ -29,7 +29,7 @@ export class HeaderComponent implements OnInit {
   public userCookies: any;
 public user_full_name: any = '';
    
-  constructor(public router: Router, public cookieService: CookieService, public dialog: MatDialog, activeroute: ActivatedRoute) {
+  constructor(public router: Router, public cookieService: CookieService, public dialog: MatDialog, public activeroute: ActivatedRoute) {
     console.log(router.url)
     // this.userCookies = JSON.parse(this.cookieService.get('user_details'));
 
