@@ -1,5 +1,5 @@
 <!-- <mat-toolbar class="header fixed" *ngIf="user_data.type == 'admin'"> -->
-<mat-toolbar class="header fixed" *ngIf="router.url ==='/admin-dashboard' || router.url ==='/commission-report' || router.url ==='/manage-availability' || router.url ==='/my-appointment-admin' || router.url ==='/blog-management' || router.url ==='/testimonial-lists-admin' || router.url ==='/newsletter-list' || router.url ==='/social-advo-admin' || router.url ==='/manage-commission' || router.url ==='/customer-list-admin' || router.url ==='/booking-report' || router.url ==='/affiliate-admin' || router.url ==='/manage-seminars' || router.url ==='/manage-workshops' || router.url ==='/manage-speaker-engagements' || router.url ==='/gallery-admin'">
+<mat-toolbar class="header fixed" *ngIf="router.url ==='/admin-dashboard' || router.url ==='/commission-report' || router.url ==='/manage-availability' || router.url ==='/my-appointment-admin' || router.url ==='/blog-management' || router.url === '/add-edit-blogs' || router.url === '/add-edit-blogcat' || router.url === 'blogs/add' || router.url === 'blog-category/add' || router.url ==='/testimonial-lists-admin' || router.url ==='/newsletter-list' || router.url ==='/social-advo-admin' || router.url ==='/manage-commission' || router.url ==='/customer-list-admin' || router.url ==='/booking-report' || router.url ==='/affiliate-admin' || router.url ==='/manage-seminars' || router.url ==='/manage-workshops' || router.url ==='/manage-speaker-engagements' || router.url ==='/gallery-admin'">
     <mat-toolbar-row class="toolbar-row">
         <div class="logo">
             <img src="assets/images/logo.png" alt="">
@@ -174,7 +174,7 @@
 </mat-toolbar>
 
 
-<!-- <mat-toolbar class="header fixed" *ngIf="user_data.type == 'user'"> -->
+<!-- <mat-toolbar class="header fixed" *ngIf="user_data.type == 'user'">
     <mat-toolbar class="header fixed" *ngIf="router.url === '/customer-dashboard' || router.url ==='/book-an-appointment-user' || router.url ==='/my-appointment-user' || router.url ==='/booked-events' || router.url ==='/past-event-user' || router.url ==='/upcoming-event-user' || router.url ==='/events'">
       <mat-toolbar-row class="toolbar-row">
         <div class="logo">
@@ -205,14 +205,6 @@
               </a>
               <div class="triangle"></div>
             </mat-list-item>
-            <!-- <mat-list-item fxFlex class="nav-item" routerLinkActive="activemenu">
-              <a [matMenuTriggerFor]="menu1">Events</a>
-              <mat-menu #menu1="matMenu" class="activedropmenu">
-                <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/past-event-user']">Past</a>
-                <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/upcoming-event-user']">Upcoming</a>
-              </mat-menu>
-              <div class="triangle"></div>
-            </mat-list-item> -->
             <mat-list-item  class="nav-item" routerLinkActive="activemenu" (click)="open(2)">
               <a class="nav-item-hold" mat-menu-item routerLinkActive="activemenu" [routerLink]="['/booked-events']">
                 <span class="nav-text">Booked Events</span>
@@ -232,7 +224,6 @@
         <div style="margin: auto"></div>
         <div class="header-part-right">
           <h4>{{user_full_name}}</h4>
-          <!-- User avatar dropdown -->
           <div class="dropdown">
             <div class="user">
               <button class="userwrapper" mat-button [matMenuTriggerFor]="menu"><img src="http://gull-html-laravel.ui-lib.com/assets/images/faces/1.jpg" id="userDropdown" alt="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
@@ -241,16 +232,8 @@
                 <button mat-menu-item>Item 2</button>
               </mat-menu>
     
-              <!-- <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-                        <div class="dropdown-header">
-                            <i class="i-Lock-User mr-1"></i> Timothy Carlson
-                        </div>
-                        <a class="dropdown-item">Account settings</a>
-                        <a class="dropdown-item">Billing history</a>
-                        <a class="dropdown-item" href="javascript:void(0)">Sign out</a>
-                    </div> -->
             </div>
           </div>
         </div>
       </mat-toolbar-row>
-    </mat-toolbar>
+    </mat-toolbar> -->

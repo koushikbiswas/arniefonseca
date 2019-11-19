@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { MetaService } from '@ngx-meta/core';
 import { ApiService } from '../../../api.service';
+import { Router } from '@angular/router';
+import { CookieService } from 'ngx-cookie-service';
 
 @Component({
   selector: 'app-login',
@@ -22,7 +24,8 @@ export class LoginComponent implements OnInit {
   
   public logo: any = '../../assets/images/logo.png';      // logo url 
   public fromTitle: any = "Login";    // This is a From Title 
-  public fullUrl: any = "https://63zzhpnoti.execute-api.us-east-1.amazonaws.com/production/api/";  // server url
+  // public fullUrl: any = "https://63zzhpnoti.execute-api.us-east-1.amazonaws.com/production/api/";  // server url
+  public fullUrl: any = this.apiService.serverUrlDemo;
   public endpoint: any = "login";  // login endpoint
   // public signUpRouteingUrl: any = 'sign-up';      // navigate the sign up page
   // public forgetRouteingUrl: any = 'forget-password';      // navigate the Forget password page
@@ -41,7 +44,8 @@ export class LoginComponent implements OnInit {
     "customURl":""
   };
   public routerStatus: any;
-    constructor(private readonly meta: MetaService, public apiService:ApiService) { 
+  public userData: any = {};
+    constructor(private readonly meta: MetaService, public apiService:ApiService, public router: Router, public cookieService: CookieService) { 
 
     // this.meta.setTitle('Login Form dynamic');
     // this.meta.setTag('og:description', 'This is dynamic decription');
@@ -69,12 +73,8 @@ export class LoginComponent implements OnInit {
            "routerNav":"admin-dashboard"
           },
           {
-            "type":"customer",
-           "routerNav":"customer-dashboard"
-          },
-          {
-            "type":"rep",
-            "routerNav":"rep-dashboard"
+            "type":"affiliate",
+           "routerNav":"affiliate-dashboard"
           }
         ]
       }
@@ -85,5 +85,18 @@ export class LoginComponent implements OnInit {
       console.log(this.apiService.serverUrlDemo)
     }
   
+
+    goto() {
+      console.log('sadfdff');
+      if (this.router.url == '/login') {
+        this.router.navigateByUrl('/admin-dashboard');
+  
+      } else if (this.router.url == '/login') {
+  
+        this.router.navigateByUrl('/rep-dashboard');
+  
+      } 
+    }
+
   }
   

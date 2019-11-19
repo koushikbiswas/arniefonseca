@@ -10,7 +10,7 @@ export class ContactusComponent implements OnInit {
   
   public formTitle: any = "Contact Us";      // Enter the Forl Title
   public pageUrl: any = 'home';
-  public serverUrl: any = 'https://o820cv2lu8.execute-api.us-east-2.amazonaws.com/production/api/';
+  public serverUrl: any = 'https://9v41bpikik.execute-api.us-east-1.amazonaws.com/production/api/';
 
   public addEndpoint: any = {
     endpoint:'addorupdatedata',

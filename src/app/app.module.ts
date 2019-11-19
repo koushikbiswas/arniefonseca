@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
+import { FormsModule, ReactiveFormsModule  }   from '@angular/forms'
 
 import { DemoMaterialModule } from "../material-module";
 import { DragScrollModule } from 'ngx-drag-scroll';
@@ -98,6 +99,13 @@ import { PastEventUserComponent } from './component/backend/past-event-user/past
 import { UpcomingEventUserComponent } from './component/backend/upcoming-event-user/upcoming-event-user.component';
 import { MyCustomersAffiliateComponent } from './component/backend/my-customers-affiliate/my-customers-affiliate.component';
 
+import { AddEditBlogcatComponent } from './component/backend/blogs/add-edit-blogcat/add-edit-blogcat.component';
+import { ListingBlogcatComponent } from './component/backend/blogs/listing-blogcat/listing-blogcat.component';
+import { AddEditBlogsComponent } from './component/backend/blogs/add-edit-blogs/add-edit-blogs.component';
+import { ListingBlogsComponent } from './component/backend/blogs/listing-blogs/listing-blogs.component';
+
+import { BlogModule } from '../../dist/blog';
+
 /**End Backend Component** */
 
 
@@ -165,8 +173,13 @@ import { MyCustomersAffiliateComponent } from './component/backend/my-customers-
     PastEventUserComponent, 
     UpcomingEventUserComponent, 
     MyCustomersAffiliateComponent,
+    AddEditBlogcatComponent,
+    ListingBlogcatComponent,
+    AddEditBlogsComponent,
+    ListingBlogsComponent,
   ],
   imports: [
+    BlogModule,
     AngularFontAwesomeModule,
     DragScrollModule,
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
@@ -186,11 +199,13 @@ import { MyCustomersAffiliateComponent } from './component/backend/my-customers-
     ListingModule,
     MatIconModule,
     MatCarouselModule.forRoot(),
-    OwlModule
+    OwlModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [CookieService, AuthGuard, ApiService, SidenavService],
   bootstrap: [AppComponent],
-  schemas:[CUSTOM_ELEMENTS_SCHEMA],
+  schemas:[CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
   entryComponents: [comingSoonDialog, DialogPrivacyDialog, DialogTermsDialog,]
 })
 export class AppModule { }

@@ -50,7 +50,7 @@ import { AddeditServiceComponent } from './component/backend/ServiceApp/addedit-
 import { ListingServiceComponent } from './component/backend/ServiceApp/listing-service/listing-service.component';
 
 import { UserManagementComponent } from './component/backend/user-management/user-management.component';
-import { ResolveService } from './resolve.service';
+import { ResolveService } from './services/resolve.service';
 import { BlogManagementComponent } from './component/backend/blog-management/blog-management.component';
 
 
@@ -79,6 +79,11 @@ import { BookedEventsComponent } from './component/backend/booked-events/booked-
 import { PastEventUserComponent } from './component/backend/past-event-user/past-event-user.component';
 import { UpcomingEventUserComponent } from './component/backend/upcoming-event-user/upcoming-event-user.component';
 import { MyCustomersAffiliateComponent } from './component/backend/my-customers-affiliate/my-customers-affiliate.component';
+
+import { AddEditBlogcatComponent } from './component/backend/blogs/add-edit-blogcat/add-edit-blogcat.component';
+import { ListingBlogcatComponent } from './component/backend/blogs/listing-blogcat/listing-blogcat.component';
+import { AddEditBlogsComponent } from './component/backend/blogs/add-edit-blogs/add-edit-blogs.component';
+import { ListingBlogsComponent } from './component/backend/blogs/listing-blogs/listing-blogs.component';
 
 import { from } from 'rxjs';
 /**End Backend Routing**/
@@ -174,6 +179,80 @@ const routes: Routes = [
   { path: 'manage-speaker-engagements', component: ManageSpeakerEngagementsComponent },  
   { path: 'gallery-admin', component: GalleryAdminComponent },  
 
+
+
+// ___________________BLOG MANAGEMENT_________________
+// =======================================================
+
+
+
+// _____________________BLOG CATEGORY________________
+{ path: 'blog-category/add', component: AddEditBlogcatComponent },
+
+{
+  path: 'blog-category/list',
+  component: ListingBlogcatComponent,
+  resolve: { blogCatList: ResolveService },
+  data: {
+    requestcondition: {
+      source: 'blog_category',
+      condition: {}
+    },
+    endpoint: 'datalist'
+  },
+},
+{
+  path: 'blog-category/edit/:_id',
+  component: AddEditBlogcatComponent,
+  
+  resolve: { blogCatList: ResolveService },
+  data: {
+    requestcondition: {
+      source: 'blog_category',
+      condition: {}
+    },
+    endpoint: 'datalist'
+  },
+},
+// -----------------------------------------------
+
+
+// ______________________BLOGS_________________
+// / ________________BLOGS______________
+
+
+{ path: 'blogs/add', component: AddEditBlogsComponent },
+
+  {
+    path: 'blogs/list',
+    component: ListingBlogsComponent,
+    resolve: { blogsList: ResolveService },
+    data: {
+      requestcondition: {
+        source: 'blogs',
+        condition: {}
+      },
+      endpoint: 'datalist'
+    },
+  },
+  {
+    path: 'blogs/edit/:_id',
+    component: AddEditBlogsComponent,
+    
+    resolve: { blogsList: ResolveService },
+    data: {
+      requestcondition: {
+        source: 'blogs',
+        condition: {}
+      },
+      endpoint: 'datalist'
+    },
+  },
+// -------------------------------------------
+
+
+
+  
   /**************** User Management *****************/
   {
     path: 'user-management', component: UserManagementComponent, resolve: { serviceList: ResolveService },

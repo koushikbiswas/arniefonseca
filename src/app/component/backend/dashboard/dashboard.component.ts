@@ -9,7 +9,7 @@ import { MetaService } from '@ngx-meta/core';
 export class DashboardComponent implements OnInit {
 
   public formTitle: any = "Contact Us Listing Page";
-  public serverUrl: any = 'https://o820cv2lu8.execute-api.us-east-2.amazonaws.com/production/api/';
+  public serverUrl: any = 'https://9v41bpikik.execute-api.us-east-1.amazonaws.com/production/api/';
   public getDataUrl: any = {
     endpoint: 'datalist',
     source: 'contactusForm'

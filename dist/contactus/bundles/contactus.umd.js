@@ -1062,7 +1062,7 @@
             function () {
                 var _this = this;
                 /** @type {?} */
-                var link = "https://o820cv2lu8.execute-api.us-east-2.amazonaws.com/production/api/temptoken";
+                var link = "https://9v41bpikik.execute-api.us-east-1.amazonaws.com/production/api/temptoken";
                 /** @type {?} */
                 var data;
                 this.http.post(link, data).subscribe(( /**

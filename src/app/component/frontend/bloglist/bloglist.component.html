@@ -21,22 +21,26 @@
             
             <span class="bloglistinner">
                 <span class="bloglistswrapper">
+                    <h2 class="blogtitle">Our Blogs </h2>
                     <span class="item_wrapper">
-                        <span class="item">
-                            <span class="item_images"><img src="../../../../assets/images/bloglistimg1.jpg"></span>
+                        <!-- <span class="item" *ngFor="let item of bloglisting | slice:0:indexval ; let i=index">
+                            <span class="item_images" (click)="blogdetail(item._id)"><img [src]="item.profile_picture"></span>
                             <span class="contentsection">
-                                <h2>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</h2>
-                                <p class="description"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></p>
+                                <h2 (click)="blogdetail(item._id)">{{item.blogtitle}}</h2>
+                                <p class="description"><span [innerHtml]="item.description_html"></span></p>
                                 <span class="bottom-blog-wrapper">
-                                    <span class="date">Julay 15/2019</span>
+                                    <span class="date">{{item.date_added}}</span>
                                     <span class="likecomment">
-                                        <span class="like">
-                                            <i class="material-icon">like</i> <span class="count">12</span>
+                                            <span class="like">
+                                                    <img src="../../../../assets/images/icon-like.png"> <span class="count"><span></span>12</span>
+                                            </span>
+                                            <span class="like">
+                                                <img src="../../../../assets/images/icon-dislike.png"> <span class="count"><span></span>12</span>
+                                            </span>
+                                            <span class="comment">
+                                                    <img src="../../../../assets/images/icon-comment.png"> <span class="count"><span>6</span> comment</span>
+                                            </span>
                                         </span>
-                                        <span class="comment">
-                                            <i class="material-icon">comment</i> <span class="count"><span>6 comment</span></span>
-                                        </span>
-                                    </span>
                                     <span class="sharelinkswrapper">
                                         <span class="blogsociallists">
                                             <a class="sociallink fa fb">
@@ -61,6 +65,49 @@
                                     </span>
                                 </span>
                             </span>
+                        </span> -->
+                        <span class="item">
+                                <span class="item_images"><img src="../../../../assets/images/bloglistimg1.jpg"></span>
+                                <span class="contentsection">
+                                    <h2>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</h2>
+                                    <p class="description"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></p>
+                                    <span class="bottom-blog-wrapper">
+                                        <span class="date">Julay 15/2019</span>
+                                        <span class="likecomment">
+                                                <span class="like">
+                                                        <img src="../../../../assets/images/icon-like.png"> <span class="count"><span></span>12</span>
+                                                </span>
+                                                <span class="like">
+                                                    <img src="../../../../assets/images/icon-dislike.png"> <span class="count"><span></span>12</span>
+                                                </span>
+                                                <span class="comment">
+                                                        <img src="../../../../assets/images/icon-comment.png"> <span class="count"><span>6</span> comment</span>
+                                                </span>
+                                            </span>
+                                        <span class="sharelinkswrapper">
+                                            <span class="blogsociallists">
+                                                <a class="sociallink fa fb">
+                                                    <fa name="facebook" class="fa-facebook"></fa>
+                                                </a>
+                                                <a class="sociallink fa twi">
+                                                    <fa name="twitter" class="fa-twitter"></fa>
+                                                </a>
+                                                <a class="sociallink fa pin">
+                                                    <fa name="pinterest" class="fa-pinterest"></fa>
+                                                </a>
+                                                <a class="sociallink fa lin">
+                                                    <fa name="linkedin" class="fa-linkedin"></fa>
+                                                </a>
+                                                <a class="sociallink fa env">
+                                                    <fa name="envelope" class="fa-envelope"></fa>
+                                                </a>
+                                                <a class="sociallink fa share">
+                                                    <fa name="share" class="fa-share"></fa>
+                                                </a>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </span>
                         </span>
                         <span class="item">
                                 <span class="item_images"><img src="../../../../assets/images/bloglistimg2.jpg"></span>
@@ -70,13 +117,16 @@
                                     <span class="bottom-blog-wrapper">
                                         <span class="date">Julay 15/2019</span>
                                         <span class="likecomment">
-                                            <span class="like">
-                                                <i class="material-icon">like</i> <span class="count">12</span>
+                                                <span class="like">
+                                                        <img src="../../../../assets/images/icon-like.png"> <span class="count"><span></span>12</span>
+                                                </span>
+                                                <span class="like">
+                                                    <img src="../../../../assets/images/icon-dislike.png"> <span class="count"><span></span>12</span>
+                                                </span>
+                                                <span class="comment">
+                                                        <img src="../../../../assets/images/icon-comment.png"> <span class="count"><span>6</span> comment</span>
+                                                </span>
                                             </span>
-                                            <span class="comment">
-                                                <i class="material-icon">comment</i> <span class="count"><span>6 comment</span></span>
-                                            </span>
-                                        </span>
                                         <span class="sharelinkswrapper">
                                             <span class="blogsociallists">
                                                 <a class="sociallink fa fb">
@@ -110,13 +160,16 @@
                                     <span class="bottom-blog-wrapper">
                                         <span class="date">Julay 15/2019</span>
                                         <span class="likecomment">
-                                            <span class="like">
-                                                <i class="material-icon">like</i> <span class="count">12</span>
+                                                <span class="like">
+                                                        <img src="../../../../assets/images/icon-like.png"> <span class="count"><span></span>12</span>
+                                                </span>
+                                                <span class="like">
+                                                    <img src="../../../../assets/images/icon-dislike.png"> <span class="count"><span></span>12</span>
+                                                </span>
+                                                <span class="comment">
+                                                        <img src="../../../../assets/images/icon-comment.png"> <span class="count"><span>6</span> comment</span>
+                                                </span>
                                             </span>
-                                            <span class="comment">
-                                                <i class="material-icon">comment</i> <span class="count"><span>6 comment</span></span>
-                                            </span>
-                                        </span>
                                         <span class="sharelinkswrapper">
                                             <span class="blogsociallists">
                                                 <a class="sociallink fa fb">
@@ -151,10 +204,13 @@
                                             <span class="date">Julay 15/2019</span>
                                             <span class="likecomment">
                                                 <span class="like">
-                                                    <i class="material-icon">like</i> <span class="count">12</span>
+                                                        <img src="../../../../assets/images/icon-like.png"> <span class="count"><span></span>12</span>
+                                                </span>
+                                                <span class="like">
+                                                    <img src="../../../../assets/images/icon-dislike.png"> <span class="count"><span></span>12</span>
                                                 </span>
                                                 <span class="comment">
-                                                    <i class="material-icon">comment</i> <span class="count"><span>6 comment</span></span>
+                                                        <img src="../../../../assets/images/icon-comment.png"> <span class="count"><span>6</span> comment</span>
                                                 </span>
                                             </span>
                                             <span class="sharelinkswrapper">
@@ -183,9 +239,11 @@
                                     </span>
                                 </span>   
                     </span>
+                    <!-- <button mat-button class="btnblue sim-button" *ngIf="bloglisting !=null && indexval < bloglisting.length"
+            (click)="blogloadmore()">Load More</button> -->
                 </span>   
                 <span class="categorywrapper">  
-                        <h2>Categories <button mat-raised-button (click)="openAll()">Open All</button><button mat-raised-button (click)="closeAll()">close All</button></h2>
+                        <h2 class="blogtitle">Categories <button mat-raised-button (click)="openAll()">Open All</button><button mat-raised-button (click)="closeAll()">close All</button></h2>
                         
                         <mat-accordion  #myaccordion="matAccordion" multi="true" class="category">
                           <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
