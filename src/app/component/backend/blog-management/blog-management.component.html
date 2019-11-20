@@ -21,7 +21,22 @@
                         <span class="bloglists">      
                           
                           <!-- Selector -->
-                            <app-listing-blogs></app-listing-blogs>
+                            <!-- <app-listing-blogs></app-listing-blogs> -->
+                            <mat-card>
+                                <span class="searchblock">
+                                    <span class="searchblockwrapper">
+                                        <span>
+                                            <h2>Manage Blog</h2>
+                                        </span>
+                                        <span>
+                                            <button mat-button class="btngreen sim-button" [routerLink]="['/blogs/add']"><i class="material-icons">add</i> Add New Blog</button>
+                                        </span>                    
+                                    </span>
+                                </span>
+                                <div class="tablediv">
+                                    <lib-listing-blogmanagementlib class="formfilterdiv" *ngIf="blogListConfig.datasource != null && blogListConfig.datasource.length > 0" [config]="blogListConfig"></lib-listing-blogmanagementlib>
+                                </div>
+                            </mat-card>
                         </span>
                       </ng-template>
                     </mat-tab>
@@ -33,7 +48,23 @@
                             <span class="blogcatlists"> 
 
                               <!-- Selector -->
-                                <app-listing-blogcat></app-listing-blogcat>                         
+                              <mat-card>       
+                                  <span class="searchblock">
+                                      <span class="searchblockwrapper">
+                                          <span>
+                                              <h2>Manage Blog Category</h2>
+                                          </span>
+                                          <span>
+                                              <button mat-button class="btngreen sim-button" [routerLink]="['/blog-category/add']"><i class="material-icons">add</i> Add Blog Category</button>
+                                          </span>                    
+                                      </span>
+                                  </span>
+                                  <div class="tablediv">
+                                   <lib-Blog class="formfilterdiv" *ngIf="blogCatConfig.datasource != null && blogCatConfig.datasource.length > 0" [config]="blogCatConfig"></lib-Blog>
+                                  </div>
+                          </mat-card>
+
+                                <!-- <app-listing-blogcat></app-listing-blogcat>                          -->
                             </span>
                         </ng-template>
                     </mat-tab>

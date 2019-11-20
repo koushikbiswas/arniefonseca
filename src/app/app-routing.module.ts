@@ -119,7 +119,7 @@ const routes: Routes = [
     path: 'ourservices', component: ServicelistComponent
   },
   { path: 'bloghome', component: BlogComponent, resolve: { serviceListData: ResolveService }, data: { requestcondition: { source: 'blogs', condition: {} }, endpoint: 'datalist' } },
-  { path: 'blog', component: BloglistComponent },
+  { path: 'blog', component: BloglistComponent, resolve: { serviceListData: ResolveService }, data: { requestcondition: { source: 'blogs', condition: {} }, endpoint: 'datalist' }  },
   { path: 'blogdetail', component: BlogdetailComponent },
 
   //  static path
@@ -142,7 +142,7 @@ const routes: Routes = [
     path: 'service/edit/:_id', component: AddeditServiceComponent, resolve: { serviceList: ResolveService },
     data: { requestcondition: { source: 'services', condition: {} }, endpoint: 'datalist' }
   },
-  { path: 'blog-management', component: BlogManagementComponent },
+
   { path: 'newsletter-list', component: NewsletterlistsComponent },
   { path: 'manage-commission', component: ManageCommissionComponent },
   { path: 'manage-availability', component: ManageAvailabilityComponent },
@@ -184,6 +184,16 @@ const routes: Routes = [
   // ___________________BLOG MANAGEMENT_________________
   // =======================================================
 
+  { path: 'blog-management', component: BlogManagementComponent,
+    resolve: { blogsList: ResolveService },
+    data: {
+      requestcondition: {
+        source: 'blogs',
+        condition: {}
+      },
+      endpoint: 'datalist'
+    },
+   },
 
 
   // _____________________BLOG CATEGORY________________
@@ -225,15 +235,7 @@ const routes: Routes = [
 
   {
     path: 'blogs/list',
-    component: ListingBlogsComponent,
-    resolve: { blogsList: ResolveService },
-    data: {
-      requestcondition: {
-        source: 'blogs',
-        condition: {}
-      },
-      endpoint: 'datalist'
-    },
+    component: ListingBlogsComponent
   },
   {
     path: 'blogs/edit/:_id',

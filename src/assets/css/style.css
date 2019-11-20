@@ -322,6 +322,11 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
   align-items: stretch;
   justify-content: space-between;
 }
+
+.bloglists .mat-card{padding:16px 0px;}
+.blogcatlists .mat-card{padding:16px 0px;}
+
+
 .bloglistswrapper{
   margin-right: 20px;
   width: 76%;
@@ -463,8 +468,12 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
 .tabwrapper .mat-tab-label{background-color: #12c3e3;border-left: 1px solid #fff;padding: 0 37px;}
 .tabwrapper .mat-tab-label:nth-child(1){border-left: 0px solid #fff;}
 .tabwrapper .mat-tab-label h2{color:#fff;font-size: 14px!important; line-height: normal!important; margin: 0;}
-.tabwrapper .mat-tab-label.mat-tab-label-active {background-color: #fff;}
-.tabwrapper .mat-tab-label.mat-tab-label-active h2 {color:#232f39;}
+.tabwrapper .mat-tab-label.mat-tab-label-active {
+  background-color: #000;
+  color: #fff;
+  opacity: 1;
+}
+.tabwrapper .mat-tab-label.mat-tab-label-active h2 {color:#fff;}
 
 .mat-list-base.lists{display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; flex-wrap: wrap;}
 .mat-list-base.lists .mat-list-item {display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; height: auto; -webkit-tap-highlight-color: transparent; width: 24%; background: #c2c9cd; margin: .5%;}

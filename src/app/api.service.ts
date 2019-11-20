@@ -19,9 +19,7 @@ export class ApiService {
   public uploadsslurl: any= environment["download_url"];
 
   public fileimgsslurl: any;
-
-
-
+  
   public lengthis;
   public percentageis;
   public inprogress;

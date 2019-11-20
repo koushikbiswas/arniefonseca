@@ -23,7 +23,7 @@
                 <span class="bloglistswrapper">
                     <h2 class="blogtitle">Our Blogs </h2>
                     <span class="item_wrapper">
-                        <!-- <span class="item" *ngFor="let item of bloglisting | slice:0:indexval ; let i=index">
+                        <span class="item" *ngFor="let item of bloglisting | slice:0:indexval ; let i=index">
                             <span class="item_images" (click)="blogdetail(item._id)"><img [src]="item.profile_picture"></span>
                             <span class="contentsection">
                                 <h2 (click)="blogdetail(item._id)">{{item.blogtitle}}</h2>
@@ -65,8 +65,8 @@
                                     </span>
                                 </span>
                             </span>
-                        </span> -->
-                        <span class="item">
+                        </span>
+                        <!-- <span class="item">
                                 <span class="item_images"><img src="../../../../assets/images/bloglistimg1.jpg"></span>
                                 <span class="contentsection">
                                     <h2>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</h2>
@@ -108,8 +108,8 @@
                                         </span>
                                     </span>
                                 </span>
-                        </span>
-                        <span class="item">
+                        </span> -->
+                        <!-- <span class="item">
                                 <span class="item_images"><img src="../../../../assets/images/bloglistimg2.jpg"></span>
                                 <span class="contentsection">
                                     <h2>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</h2>
@@ -237,14 +237,12 @@
                                             </span>
                                         </span>
                                     </span>
-                                </span>   
+                                </span>    -->
                     </span>
-                    <!-- <button mat-button class="btnblue sim-button" *ngIf="bloglisting !=null && indexval < bloglisting.length"
-            (click)="blogloadmore()">Load More</button> -->
+                    
                 </span>   
                 <span class="categorywrapper">  
-                        <h2 class="blogtitle">Categories <button mat-raised-button (click)="openAll()">Open All</button><button mat-raised-button (click)="closeAll()">close All</button></h2>
-                        
+                        <h2 class="blogtitle">Categories <button mat-raised-button (click)="openAll()">Open All</button><button mat-raised-button (click)="closeAll()">close All</button></h2>                        
                         <mat-accordion  #myaccordion="matAccordion" multi="true" class="category">
                           <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
                             <mat-expansion-panel-header>

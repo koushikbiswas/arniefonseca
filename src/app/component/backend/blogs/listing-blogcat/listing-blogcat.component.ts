@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { CookieService } from 'ngx-cookie-service';
-import { Router, ActivatedRoute } from '@angular/router';
-import { ApiService } from '../../../../api.service';
+// import { CookieService } from 'ngx-cookie-service';
+// import { Router, ActivatedRoute } from '@angular/router';
+// import { ApiService } from '../../../../api.service';
 
 @Component({
   selector: 'app-listing-blogcat',
@@ -11,34 +11,36 @@ import { ApiService } from '../../../../api.service';
 export class ListingBlogcatComponent implements OnInit {
 
   //Listing for blog category
-  public blogListConfig: any = {
-    apiBaseUrl:this.apiService.serverUrlDemo,
-    listEndPoint: "datalist",
-    datasource: "",
-    tableName: "blog_category",
-    updateurl: "addorupdatedata",
-    editUrl: "blog-category/edit/",
-    jwtToken: "this.cookieService.get('jwtToken')",
-    deleteEndPoint: "deletesingledata",
-    addLink: "blog-category/add",
-    view: "blog_category_view"
+  // public blogListConfig: any = {
+  //   apiBaseUrl:this.apiService.serverUrlDemo,
+  //   listEndPoint: "datalist",
+  //   datasource: "",
+  //   tableName: "blog_category",
+  //   updateurl: "addorupdatedata",
+  //   editUrl: "blog-category/edit/",
+  //   jwtToken: "this.cookieService.get('jwtToken')",
+  //   deleteEndPoint: "deletesingledata",
+  //   addLink: "blog-category/add",
+  //   view: "blog_category_view"
 
-  }
+  // }
   
 
   // public blogCatList: any;
 
-  constructor(private activatedRoute: ActivatedRoute, private cookieService: CookieService, public apiService: ApiService) {
+  constructor() {
 
-    let data: any = {
-      source:"blog_category",
-      endpoint: "datalist"
-    }
-    this.apiService.getDatalist(data).subscribe((result: any)=>{
-      console.log(result.res);
-      this.blogListConfig.datasource = result.res;
-      this.blogListConfig.jwtToken = this.cookieService.get('jwtToken');
-    });
+    // private activatedRoute: ActivatedRoute, private cookieService: CookieService, public apiService: ApiService
+    
+    // let data: any = {
+    //   source:"blog_category",
+    //   endpoint: "datalist"
+    // }
+    // this.apiService.getDatalist(data).subscribe((result: any)=>{
+    //   console.log(result.res);
+    //   this.blogListConfig.datasource = result.res;
+    //   this.blogListConfig.jwtToken = this.cookieService.get('jwtToken');
+    // });
   
   }
 
