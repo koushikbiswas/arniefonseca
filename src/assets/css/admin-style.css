@@ -334,7 +334,7 @@ text-transform: uppercase!important; font-family: 'Ralewaybold'; text-decoration
 .tablediv .searchbar .mat-form-field{z-index: 99; position: relative;}
 .tablediv .mat-form-field-flex {align-items: stretch;}
 .tablediv table td span .material-icons{color: #4f5051 !important;}
-.tablediv .mat-form-field-appearance-legacy .mat-form-field-infix{height: 39px; line-height: normal; padding: 10px 5px;}
+.tablediv .mat-form-field-appearance-legacy .mat-form-field-infix{line-height: normal; padding: 10px 5px;}
 .tablediv table .actionnewbtn span{cursor:pointer;}
 .tablediv.trainingtablediv{margin-top:0px !important;}
 .tablediv.trainingtablediv table {margin-top: 27px;}

@@ -25,32 +25,30 @@ export class ListingBlogcatComponent implements OnInit {
 
   }
   
-  constructor(private activatedRoute: ActivatedRoute, private cookieService: CookieService, public apiService: ApiService) {
-    // let data: any = {
-    //   source:"blog_category",
-    //   endpoint: "datalist"
-    // }
 
-    this.activatedRoute.data.subscribe(resolveData => {
-      this.blogListConfig.datasource = resolveData.blogCatList.res;
-      // console.log ("++++++++++++++++++", this.blogListConfig.datasource);
+  // public blogCatList: any;
+
+  constructor(private activatedRoute: ActivatedRoute, private cookieService: CookieService, public apiService: ApiService) {
+
+    let data: any = {
+      source:"blog_category",
+      endpoint: "datalist"
+    }
+    this.apiService.getDatalist(data).subscribe((result: any)=>{
+      console.log(result.res);
+      this.blogListConfig.datasource = result.res;
       this.blogListConfig.jwtToken = this.cookieService.get('jwtToken');
     });
-    // let data: any = {
-    //   source:"blog_category",
-    //   endpoint: "datalist"
-    // }
-    // this.apiService.getDatalist(data).subscribe((result: any)=>{
-    //   console.log(result.res);
-    //   this.blogListConfig.datasource = result.res;
-    //   this.blogListConfig.jwtToken = this.cookieService.get('jwtToken');
-    // });
-
-
+  
   }
 
   ngOnInit() {
    
-
+    // this.activatedRoute.data.forEach((data: any) => {
+    //   this.blogListConfig.datasource = data.blogCatList.res;
+    //    console.log('>>>>>koushikcat>>>>>>>>>',this.blogCatList)
+    // })
+   
+    
   }
 }

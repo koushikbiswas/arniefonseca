@@ -113,7 +113,7 @@ const routes: Routes = [
       endpoint: "datalistwithouttoken"
     }
   },
-  
+
   //  static path
   {
     path: 'ourservices', component: ServicelistComponent
@@ -121,10 +121,10 @@ const routes: Routes = [
   { path: 'bloghome', component: BlogComponent, resolve: { serviceListData: ResolveService }, data: { requestcondition: { source: 'blogs', condition: {} }, endpoint: 'datalist' } },
   { path: 'blog', component: BloglistComponent },
   { path: 'blogdetail', component: BlogdetailComponent },
-  
+
   //  static path
   {
-    path: "testimonial",  component: TesimoniallistComponent
+    path: "testimonial", component: TesimoniallistComponent
   },
 
   /**End Frontend Routing**/
@@ -146,9 +146,9 @@ const routes: Routes = [
   { path: 'newsletter-list', component: NewsletterlistsComponent },
   { path: 'manage-commission', component: ManageCommissionComponent },
   { path: 'manage-availability', component: ManageAvailabilityComponent },
-  { path: 'social-advo-admin', component: SocialAdvoComponent },  
+  { path: 'social-advo-admin', component: SocialAdvoComponent },
   { path: 'my-appointment-admin', component: MyAppointmentComponent },
-  { path: 'commission-report', component: CommissionReportComponent },  
+  { path: 'commission-report', component: CommissionReportComponent },
   { path: 'testimonial-lists-admin', component: TestimonialListsAdminComponent },
   { path: 'customer-list-admin', component: CustomerListComponent },
   { path: 'testimonial/add', component: AddeditTestimonialComponent },
@@ -160,68 +160,68 @@ const routes: Routes = [
     path: 'testimonial-listing', component: ListingTestimonialComponent, resolve: { testimonialList: ResolveService },
     data: { requestcondition: { source: 'testimonial_view', condition: {} }, endpoint: 'datalist' }
   },
- 
-  { path: 'employee-training', component: EmployeeTrainingComponent },  
-  { path: 'couples-counseling', component: CouplesCounselingComponent },  
-  { path: 'personal-development-coaching', component: PersonalDevelopmentCoachingComponent },  
-  { path: 'high-performance-coaching', component: HighPerformanceCoachingComponent },  
-  { path: 'special-programs-for-young-men', component: SpecialProgramsForYoungMenComponent },  
-  { path: 'image-gallery', component: ImageGalleryComponent },  
-  { path: 'video-gallery', component: VideoGalleryComponent },  
-  { path: 'team', component: TeamComponent },  
-  { path: 'booking-report', component: BookingReportComponent },  
-  { path: 'seminars', component: SeminarsComponent },  
-  { path: 'workshops', component: WorkshopsComponent },  
-  { path: 'speaker-engagements', component: SpeakerEngagementsComponent },  
-  { path: 'affiliate-admin', component: AffiliateComponent },  
-  { path: 'manage-seminars', component: ManageSeminarsComponent },  
-  { path: 'manage-workshops', component: ManageWorkshopsComponent },  
-  { path: 'manage-speaker-engagements', component: ManageSpeakerEngagementsComponent },  
-  { path: 'gallery-admin', component: GalleryAdminComponent },  
+
+  { path: 'employee-training', component: EmployeeTrainingComponent },
+  { path: 'couples-counseling', component: CouplesCounselingComponent },
+  { path: 'personal-development-coaching', component: PersonalDevelopmentCoachingComponent },
+  { path: 'high-performance-coaching', component: HighPerformanceCoachingComponent },
+  { path: 'special-programs-for-young-men', component: SpecialProgramsForYoungMenComponent },
+  { path: 'image-gallery', component: ImageGalleryComponent },
+  { path: 'video-gallery', component: VideoGalleryComponent },
+  { path: 'team', component: TeamComponent },
+  { path: 'booking-report', component: BookingReportComponent },
+  { path: 'seminars', component: SeminarsComponent },
+  { path: 'workshops', component: WorkshopsComponent },
+  { path: 'speaker-engagements', component: SpeakerEngagementsComponent },
+  { path: 'affiliate-admin', component: AffiliateComponent },
+  { path: 'manage-seminars', component: ManageSeminarsComponent },
+  { path: 'manage-workshops', component: ManageWorkshopsComponent },
+  { path: 'manage-speaker-engagements', component: ManageSpeakerEngagementsComponent },
+  { path: 'gallery-admin', component: GalleryAdminComponent },
 
 
 
-// ___________________BLOG MANAGEMENT_________________
-// =======================================================
+  // ___________________BLOG MANAGEMENT_________________
+  // =======================================================
 
 
 
-// _____________________BLOG CATEGORY________________
-{ path: 'blog-category/add', component: AddEditBlogcatComponent },
+  // _____________________BLOG CATEGORY________________
+  { path: 'blog-category/add', component: AddEditBlogcatComponent },
 
-{
-  path: 'blog-category/list',
-  component: ListingBlogcatComponent,
-  resolve: { blogCatList: ResolveService },
-  data: {
-    requestcondition: {
-      source: 'blog_category',
-      condition: {}
+  {
+    path: 'blog-category/list',
+    component: ListingBlogcatComponent,
+    resolve: { blogCatList: ResolveService },
+    data: {
+      requestcondition: {
+        source: 'blog_category',
+        condition: {}
+      },
+      endpoint: 'datalist'
     },
-    endpoint: 'datalist'
   },
-},
-{
-  path: 'blog-category/edit/:_id',
-  component: AddEditBlogcatComponent,
-  
-  resolve: { blogCatList: ResolveService },
-  data: {
-    requestcondition: {
-      source: 'blog_category',
-      condition: {}
+  {
+    path: 'blog-category/edit/:_id',
+    component: AddEditBlogcatComponent,
+
+    resolve: { blogCatList: ResolveService },
+    data: {
+      requestcondition: {
+        source: 'blog_category',
+        condition: {}
+      },
+      endpoint: 'datalist'
     },
-    endpoint: 'datalist'
   },
-},
-// -----------------------------------------------
+  // -----------------------------------------------
 
 
-// ______________________BLOGS_________________
-// / ________________BLOGS______________
+  // ______________________BLOGS_________________
+  // / ________________BLOGS______________
 
 
-{ path: 'blogs/add', component: AddEditBlogsComponent },
+  { path: 'blogs/add', component: AddEditBlogsComponent },
 
   {
     path: 'blogs/list',
@@ -238,7 +238,7 @@ const routes: Routes = [
   {
     path: 'blogs/edit/:_id',
     component: AddEditBlogsComponent,
-    
+
     resolve: { blogsList: ResolveService },
     data: {
       requestcondition: {
@@ -248,30 +248,30 @@ const routes: Routes = [
       endpoint: 'datalist'
     },
   },
-// -------------------------------------------
+  // -------------------------------------------
 
 
 
-  
+
   /**************** User Management *****************/
   {
     path: 'user-management', component: UserManagementComponent, resolve: { serviceList: ResolveService },
     data: { requestcondition: { source: 'user', condition: {} }, endpoint: 'datalist' }
   },
-  
+
   { path: 'my-appointment-user', component: MyAppointmentComponent },
-  { path: 'book-an-appointment-user', component: BookAnAppointmentComponent },  
+  { path: 'book-an-appointment-user', component: BookAnAppointmentComponent },
   { path: 'booked-events', component: BookedEventsComponent },
   { path: 'events', component: UpcomingEventUserComponent },
-  
+
   { path: 'past-event-user', component: PastEventUserComponent },
   { path: 'upcoming-event-user', component: UpcomingEventUserComponent },
-  
+
   /**************** Affiliate Management *****************/
   { path: 'affiliate-dashboard', component: AffiliateDashboardComponent },
-  { path: 'social-advo-affiliate', component: SocialAdvoComponent }, 
-  { path: 'manage-commission-affiliate', component: CommissionReportComponent }, 
-  { path: 'my-customers', component: MyCustomersAffiliateComponent },  
+  { path: 'social-advo-affiliate', component: SocialAdvoComponent },
+  { path: 'manage-commission-affiliate', component: CommissionReportComponent },
+  { path: 'my-customers', component: MyCustomersAffiliateComponent },
 
   { path: '**', component: LoginComponent },
 ];
