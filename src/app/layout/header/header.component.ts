@@ -31,6 +31,7 @@ public user_full_name: any = '';
    
   constructor(public router: Router, public cookieService: CookieService, public dialog: MatDialog, public activeroute: ActivatedRoute) {
     console.log(router.url)
+    console.log('++++++++++++++++++',activeroute.snapshot.routeConfig.path)
     // this.userCookies = JSON.parse(this.cookieService.get('user_details'));
 
     // console.log(this.userCookies.firstname);

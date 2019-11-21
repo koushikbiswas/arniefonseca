@@ -135,3 +135,38 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   .mat-checkbox-checked.mat-accent .mat-checkbox-background, .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
     background-color: #0fd183;
 }
+
+
+
+.blogheaderimgbg {
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: 9;
+}
+
+.blogheaderimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    -webkit-transition: .3s;
+    transition: all .3s;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: .85;
+    height: 100%!important;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%!important;
+}
+
+.innerpagebanner.mat-card .mat-card-content {
+    position: relative;
+    margin-bottom: 0;
+    z-index: 99;
+}

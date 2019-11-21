@@ -3,7 +3,6 @@ import { MatAccordion,MatDialog } from '@angular/material';
 import { Router, ActivatedRoute } from '@angular/router';
 import { CookieService } from 'ngx-cookie-service';
 import { ApiService } from 'src/app/api.service';
-
 import { MetaService } from '@ngx-meta/core';
 import { SafeResourceUrl, DomSanitizer } from '@angular/platform-browser';
 
@@ -13,25 +12,15 @@ import { SafeResourceUrl, DomSanitizer } from '@angular/platform-browser';
   styleUrls: ['./bloglist.component.css']
 })
 export class BloglistComponent implements OnInit {
- 
-  //Blogs Lib List
-  public blogListConfig: any = {
-    apiBaseUrl: this.apiService.serverUrlDemo,
-    listEndPoint: "datalist",
-    datasource: [],
-    tableName: "blogs",
-    updateurl: "addorupdatedata",
-    editUrl: "blog-management/edit",
-    jwtToken: this.cookieService.get('jwtToken'),
-    deleteEndPoint: "deletesingledata",
-    addLink: "/blog-management/add",
-    view: "blogs"
-  }
 
   
   public indexval:any=4;
   public blogList: any;  
   public bloglisting:any;
+
+  public blogcategory:any;
+  public blogcategorycount:any;
+  public blogcat:any;
 
 
   @ViewChild('myaccordion') myPanels: MatAccordion;
@@ -63,25 +52,39 @@ export class BloglistComponent implements OnInit {
    panelOpenState = false;
 
  
+  //***********blog list view in blog detail************//
+  blogdetail(val:any){
+    console.log(val)
+    this.router.navigateByUrl('/blogdetail/' +val)
+  }
+
+
   ngOnInit() {
 //**all blog category and blog list from resolve in routing**//
 
   this.activatedRoute.data.forEach((data: any) => {
-  this.blogList = data.serviceListData.res;
-  //console.log('>>>>>>>>>>>>>>',this.blogList)
+    this.blogList = data;
+  //console.log('>>>>>>>kb>>>>>>>',this.blogList)
+
+  //****total blog list****//
+  this.bloglisting = this.blogList.blogCatList.blogs
+ console.log('---------------',this.bloglisting)
+
+
+  /**api service for total blog_catagory */
+   
+  this.blogcategory =this.blogList.blogCatList.blog_category;
+  console.log('+++++++blogcategory+++++++++++',this.blogcategory)
+
+
+  /**api service for blog_catagory total count */
+
+   this.blogcategorycount = this.blogList.blogCatList.blog_category.length;
+   // console.log('>>>>>>>>>>>>>>>>>',this.blogcategorycount)
 
 })
 
-// ****total blog list****//
-//this.bloglisting = this.blogList.blogCatList.blogs
-//console.log('++++++++++++++++', this.bloglisting);
-
 }
-
-
-
-
-
 
 }
 

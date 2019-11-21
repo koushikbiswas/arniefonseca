@@ -355,17 +355,17 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
 }
 
 .bloglists .contentsection .description {
+  
   color: #272835;
   font-size: 16px !important;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   line-height: 18px;
-  min-height: 54px;
-  -webkit-line-clamp: 3;
+  min-height: 86px;
+  -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
-  margin-bottom: 20px;
-  margin-top: 10px;
+
 }
 
 .generalcls.bloglists .contentsection h2 {
@@ -396,6 +396,7 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 
 .categorywrapper h2 .mat-raised-button {
@@ -403,6 +404,7 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
   background-color: transparent;
   box-shadow:none !important;
   color: #00505c !important;
+  line-height: normal;
 }
 
 .categorywrapper .mat-expansion-panel-header, .categorywrapper .mat-expansion-panel-header:hover {
@@ -954,3 +956,123 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
       height: 32px;
     }
   }
+
+
+  .bloglistinner {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.bloglistswrapper {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-flex: 1;
+  flex: 1 1 60%;
+}
+
+.blogdetail .bloglistswrapper .bottom_blog {
+  margin-bottom: 0;
+}
+.bloglistswrapper .bottom_blog {
+  width: 100%;
+}
+
+.bottom_blog .item_wrapper {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.blogdetail .bloglistinner .bottom_blog .item_wrapper .item {
+  width: calc(1/1*100% - (1 - 1/1)*18px)!important;
+}
+
+.blogdetail .mat-card-content .inner_header.mat-card-title {
+  text-transform: uppercase;
+  margin-top: 0!important;
+  height: auto!important;
+  text-transform: uppercase;
+}
+
+.blogdetail .bottom_blog .item_wrapper .item .contentsection {
+  margin-top: 16px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.blogdetail .bottom_blog .item_wrapper .item .author {
+  margin-bottom: 0;
+}
+
+.blogdetail .bloglistinner .bottom_blog .item_wrapper .item .item_images {
+  height: 355px;
+}
+
+.blogdetail .blogsociallists {
+  margin-top: 0;
+}
+
+.blogdetail .bloglistinner .bottom_blog .item_wrapper .item .description {
+  margin-top: 10px;
+}
+
+
+.photogallerylists {
+  padding: 5px;
+}
+
+.photogallerylists .writer_image {
+  width: 130px!important;
+  overflow: hidden;
+  height: 130px!important;
+  margin: 5px;
+  background-color: #e9edef;
+  border: 2px solid #d8d9da;
+  padding: 10px;
+  display: inherit!important;
+}
+
+.photogallerylists .writer_image .mat-list-item-content {
+  height: 100%!important;
+  -webkit-box-align: stretch!important;
+  align-items: stretch!important;
+  padding: 0!important;
+}
+
+.photogallerylists .writer_image_wrapper img {
+  -webkit-transition: .3s;
+  transition: all .3s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: .85;
+  height: 100%!important;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%!important;
+}
+
+.photogallerylists .writer_image_wrapper div{height: 100%;}
+.photogallerylists .writer_image_wrapper button{height: 100%;}
+
+  .mostviewedblogs h2, .youmightalsolike h2 {
+    color: #333!important;
+    font-size: 24px!important;
+    line-height: 26px!important;
+}
+
+
+
+.bloglistswrapper .search-sec {width: 100%;}
+.bloglistswrapper .search-sec .mat-search-bar{width: 100%;}
+.bloglistswrapper .search-sec .example-full-width {width: 100%; margin-top: 18px;}
+.bloglistswrapper .search-sec .example-form .mat-form-field-appearance-legacy .mat-form-field-infix {max-width: initial;}
+.bloglistswrapper .mat-form-field-appearance-legacy .mat-form-field-wrapper {padding-bottom: 0;}

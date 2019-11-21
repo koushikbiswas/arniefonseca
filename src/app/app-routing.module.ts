@@ -115,12 +115,14 @@ const routes: Routes = [
   },
 
   //  static path
-  {
-    path: 'ourservices', component: ServicelistComponent
-  },
-  { path: 'bloghome', component: BlogComponent, resolve: { serviceListData: ResolveService }, data: { requestcondition: { source: 'blogs', condition: {} }, endpoint: 'datalist' } },
-  { path: 'blog', component: BloglistComponent, resolve: { serviceListData: ResolveService }, data: { requestcondition: { source: 'blogs', condition: {} }, endpoint: 'datalist' }  },
-  { path: 'blogdetail', component: BlogdetailComponent },
+  { path: 'ourservices', component: ServicelistComponent},
+  { path: 'bloghome', component: BlogComponent},
+
+  { path: 'blog', component: BloglistComponent, resolve: { blogCatList: ResolveService },
+  data: { requestcondition: { condition: {"limit": 4, "skip":1} }, endpoint: 'blogdata' } },
+
+  { path: 'blogdetail/:_id', component: BlogdetailComponent, resolve: { blogDetail: ResolveService },
+  data: { requestcondition: { source: 'blogs_view', condition: {} }, endpoint: 'datalist' }  },
 
   //  static path
   {
