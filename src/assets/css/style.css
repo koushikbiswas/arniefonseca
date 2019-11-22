@@ -281,6 +281,11 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
 .testimonial.custom-module *{margin:0}
 .testimonial__company,.testimonial__company-link{font-family:KlinicSlab,serif;letter-spacing:.4px}
 .custom-module .testimonial__company a{color:#1da1db;font-size:16px;line-height:24px;letter-spacing:.8px}
+.testicontent{position: relative;}
+.contentsection{position: relative;}
+.bnticons{position: absolute; right: 11px; top: -50px;}
+.bnticons button {cursor: pointer; outline: none; border: none; background: transparent;margin-left: 11px;}
+.bnticons button img{max-width: 55%;}
 
 .modelthumbimginnerwarpper.active .testimonialcontent .title1, .modelthumbimginnerwarpper.active .testimonialcontent .title2, .modelthumbimginnerwarpper.active .testimonialcontent .title3, .modelthumbimginnerwarpper.active .testimonialcontent .quatation{display: block;}
 
@@ -1146,3 +1151,67 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
 .bloglistswrapper .search-sec .example-full-width {width: 100%; margin-top: 18px;}
 .bloglistswrapper .search-sec .example-form .mat-form-field-appearance-legacy .mat-form-field-infix {max-width: initial;}
 .bloglistswrapper .mat-form-field-appearance-legacy .mat-form-field-wrapper {padding-bottom: 0;}
+
+
+
+
+.threecolumnlist{
+  display: flex !important;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.threecolumnlist > .mat-list-item {
+  box-sizing: border-box;
+  margin-bottom: 45px;
+  width: calc(1/3*100% - (1 - 1/3)*45px) !important;
+  height: auto !important;
+}
+
+.threecolumnlist > .mat-list-item h2 {
+  text-align: left;
+  color: #50cbd9;
+  font-family: 'HelveticaBold';
+  margin-bottom: 4px;
+}
+
+.iconlist1-wrap {
+  filter: drop-shadow(0px 1px 2px rgba(50, 50, 0, 0.2));
+}
+
+.iconlist1 {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  -moz-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  -os-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  -o-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background: -moz-linear-gradient(230deg, rgba(11,217,242,1) 0%, rgba(11,217,242,1) 23%, rgba(23,210,128,1) 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(23,210,128,1)), color-stop(77%, rgba(11,217,242,1)), color-stop(100%, rgba(11,217,242,1))); /* safari4+,chrome */
+  background: -webkit-linear-gradient(230deg, rgba(11,217,242,1) 0%, rgba(11,217,242,1) 23%, rgba(23,210,128,1) 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(230deg, rgba(11,217,242,1) 0%, rgba(11,217,242,1) 23%, rgba(23,210,128,1) 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(230deg, rgba(11,217,242,1) 0%, rgba(11,217,242,1) 23%, rgba(23,210,128,1) 100%); /* ie10+ */
+  background: linear-gradient(220deg, rgba(11,217,242,1) 0%, rgba(11,217,242,1) 23%, rgba(23,210,128,1) 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0bd9f2', endColorstr='#17d280',GradientType=0 ); /* ie6-9 */
+  filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.5));
+  width: 104px;
+  height: 120px;
+  display: block;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.iconlist img{
+  max-width: 78px;
+}
+.iconlist1content{
+  margin-left: 20px;
+}
+
+
+.cdk-overlay-pane {width: auto !important;}
+.mat-dialog-container {display: table;}
+.mat-dialog-container successmodal{width: 500px;display: block;text-align: center; margin: 0 auto;}
+.mat-dialog-container successmodal .mat-dialog-actions {margin-bottom: 0px;}
+.mat-dialog-container .mat-dialog-content p{font-size: 20px; margin-top: 10px;}

@@ -1,11 +1,15 @@
-import { Component, OnInit, ViewChild} from '@angular/core';
-import { MatAccordion,MatDialog } from '@angular/material';
+import { Component, OnInit, ViewChild, Inject} from '@angular/core';
+import { MatAccordion,MatDialog,MatDialogRef, MAT_DIALOG_DATA, } from '@angular/material';
 import { Router, ActivatedRoute } from '@angular/router';
 import { CookieService } from 'ngx-cookie-service';
 import { ApiService } from 'src/app/api.service';
 
 import { MetaService } from '@ngx-meta/core';
 import { SafeResourceUrl, DomSanitizer } from '@angular/platform-browser';
+
+export interface DialogData {
+  data: any;  
+} 
 
 @Component({
   selector: 'app-blogdetail',
@@ -72,4 +76,38 @@ export class BlogdetailComponent implements OnInit {
  
   }
 
+  openvideourl(val: any){
+    //console.log(val)
+    let url:any;
+     url="https://www.youtube.com/embed/";
+      //console.log('video url....>',url+val);
+      this.safeSrc =  this.sanitizer.bypassSecurityTrustResourceUrl(url + val);
+      
+      //console.log('>>>>>>>>>>>>>>>>>>',this.safeSrc)
+      const dialogRef = this.dialog.open(VideoModalComponent, {
+        // panelClass:['modal-md','success-modal'],
+       
+        width:'450px',
+        data:this.safeSrc,
+      
+        
+  
+      });
+  
+      dialogRef.afterClosed().subscribe(result => {
+        
+      });
+
+  }
+
+}
+
+@Component({
+  selector:'app-videomodal',
+  templateUrl:'./videomodal.html'
+})
+export class VideoModalComponent {
+  constructor( public dialogRef: MatDialogRef<VideoModalComponent>,
+               @Inject(MAT_DIALOG_DATA) public data: DialogData){
+  }
 }

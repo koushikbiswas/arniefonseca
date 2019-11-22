@@ -186,11 +186,11 @@ const routes: Routes = [
   // ___________________BLOG MANAGEMENT_________________
   // =======================================================
 
-  { path: 'blog-management', component: BlogManagementComponent,
+  { path: 'blog-management', component: BlogManagementComponent, canActivate:[AuthGuard],
     resolve: { blogsList: ResolveService },
     data: {
       requestcondition: {
-        source: 'blogs',
+        source: 'blogs_view',
         condition: {}
       },
       endpoint: 'datalist'
@@ -207,7 +207,7 @@ const routes: Routes = [
     resolve: { blogCatList: ResolveService },
     data: {
       requestcondition: {
-        source: 'blog_category',
+        source: 'blog_category_view',
         condition: {}
       },
       endpoint: 'datalist'
@@ -220,7 +220,7 @@ const routes: Routes = [
     resolve: { blogCatList: ResolveService },
     data: {
       requestcondition: {
-        source: 'blog_category',
+        source: 'blog_category_view',
         condition: {}
       },
       endpoint: 'datalist'

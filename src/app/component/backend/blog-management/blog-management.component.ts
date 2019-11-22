@@ -30,7 +30,7 @@ export class BlogManagementComponent implements OnInit {
   //Listing for blog category
   public blogCatConfig: any = {
     apiBaseUrl:this.apiService.serverUrlDemo,
-    listEndPoint: "datalist",
+    listEndPoint: "datalistwithouttoken",
     datasource: [],
     tableName: "blog_category",
     updateurl: "addorupdatedata",
@@ -50,12 +50,13 @@ export class BlogManagementComponent implements OnInit {
   constructor(private activatedRoute: ActivatedRoute, private cookieService: CookieService, public apiService: ApiService) {
 
     let data: any = {
-      source:"blog_category",
-      endpoint: "datalist",
-      token: this.cookieService.get('jwtToken')
+      source:"blog_category_view",
+      endpoint: "datalistwithouttoken"
+      // token: this.cookieService.get('jwtToken')
+
     }
     this.apiService.getDatalist(data).subscribe((result: any)=>{
-      //console.log(result.res);
+      console.log(result.res);
       this.blogCatConfig.datasource = result.res;
       //console.log('>>>>>>>>>>>>>>>>>>>>>>>>>', this.blogCatConfig.datasource);
     });
