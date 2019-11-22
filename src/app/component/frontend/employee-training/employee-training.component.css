@@ -109,10 +109,24 @@
 
 
 
+.block2{
+    background-image: url(../../../../assets/images/employeetrainingbanner2.png) !important;
+    display: block;
+    padding: 160px 0;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
 
+}
 
+.textwrapper.block2textwrapper{width: 1330px; margin: 0 auto; display: block; text-align: center;}
+.textwrapper h2{font-family: 'HelveticaBold'; font-size: 30px; color: #282828; margin: 0; padding-bottom: 30px;}
+.textwrapper p{font-family: 'Helvetica'; font-size: 20px; color: #282828; margin: 0; padding-bottom: 30px;}
+.textwrapper a{font-family: 'HelveticaBold'; font-size: 14px; color: #282828; margin: 0; text-transform: uppercase;}
+.textwrapper.block2textwrapper a{border-bottom: 2px solid #0ac4d9}
 
-
+.ascontainer{width: 1660px; display: block; margin: 0 auto;}
+.pt-50{padding-top: 50px;}
 
 
 
