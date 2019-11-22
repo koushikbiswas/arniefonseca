@@ -35,8 +35,8 @@ import { ResetPasswordComponent } from './component/frontend/reset-password/rese
 import { SignUpComponent } from './component/frontend/sign-up/sign-up.component';
 
 import { BlogComponent } from './component/frontend/blog/blog.component';
-import { BloglistComponent } from './component/frontend/bloglist/bloglist.component';
-import { BlogdetailComponent } from './component/frontend/blogdetail/blogdetail.component';
+import { BloglistComponent,  CommonVideoModalComponent} from './component/frontend/bloglist/bloglist.component';
+import { BlogdetailComponent, VideoModalComponent } from './component/frontend/blogdetail/blogdetail.component';
 
 import { AboutusComponent } from './component/frontend/aboutus/aboutus.component';
 
@@ -111,6 +111,8 @@ import { BlogModule } from '../../dist/blog';
 
 @NgModule({
   declarations: [
+    VideoModalComponent,
+    CommonVideoModalComponent,
     AppComponent,
     LoginComponent,
     ContactusComponent,
@@ -206,6 +208,6 @@ import { BlogModule } from '../../dist/blog';
   providers: [CookieService, AuthGuard, ApiService, SidenavService],
   bootstrap: [AppComponent],
   schemas:[CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
-  entryComponents: [comingSoonDialog, DialogPrivacyDialog, DialogTermsDialog,]
+  entryComponents: [comingSoonDialog, DialogPrivacyDialog, DialogTermsDialog,CommonVideoModalComponent, VideoModalComponent]
 })
 export class AppModule { }
