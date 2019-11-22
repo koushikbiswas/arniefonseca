@@ -9,26 +9,6 @@
     <span class="blogheaderimgbg"></span>
   </mat-card>
 
-<mat-card class="innerpagetitle">
-    <span class="mainwrappercontent">
-      <mat-card-content class="bred_cram_wrapper">
-        <mat-list class="bred_cram_wrapper_list">
-          <mat-list-item routerLinkActive="active">
-            <a [routerLink]="'/home'"> home </a>
-            <span class="breadcrumb__divider" aria-hidden="true">›</span>
-          </mat-list-item>
-          <mat-list-item routerLinkActive="active">
-            <a [routerLink]="'/bloglist'"> Blog list </a>
-            <span class="breadcrumb__divider" aria-hidden="true">›</span>
-          </mat-list-item>
-          <mat-list-item routerLinkActive="active activebread">
-            <a [routerLink]="'/blogdetail'"> Blog Details </a>
-          </mat-list-item>
-        </mat-list>
-      </mat-card-content>
-    </span>
-  </mat-card>
-
   <mat-card class="ptb-40 generalcls blog bloglist blogdetail">
     <span class="mainwrappercontent">
       <span class="bloglistinner">
@@ -37,17 +17,16 @@
             <span class="item_wrapper">
               <!-- <mat-card-content class="item"> -->
               <mat-card-content class="item">
-  
-                <mat-card-title class="inner_header">{{blogDetail[0].blogtitle}}</mat-card-title>
+                <span class="blogcategorycls" *ngFor="let item of blogcategory">
+                 {{item.blogtitle}}
+                </span>
+                <mat-card-title class="blogtitle">{{blog[0].blogtitle}}</mat-card-title>
                 <mat-card-content class="contentsection">
-                  <span class="author">
-                    <span class="authornmimg">
-                      <span class="writer_image">
-                        <img src="../../../../assets/images/blog-icon.png">
-                      </span>
-                      <p class="authorName">{{blogDetail[0].author}}</p>
+                  <span class="author">                    
+                    <p class="date">on {{blog[0].created_at}}</p>
+                    <span class="authornmimg">                      
+                      <p class="authorName">by {{blog[0].author}}</p>
                     </span>
-                    <p class="date">Date: {{blogDetail[0].created_at}}</p>
                   </span>
   
                   <span class="blogsociallists">
@@ -75,7 +54,7 @@
                   <img [src]="blog_img">
                 </span>
   
-                <p class="description"><span [innerHtml]="blogDetail[0].description"></span></p>
+                <p class="description"><span [innerHtml]="blog[0].description"></span></p>
               </mat-card-content>
             </span>
           </mat-card-content>

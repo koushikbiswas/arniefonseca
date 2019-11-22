@@ -121,8 +121,8 @@ const routes: Routes = [
   { path: 'blog', component: BloglistComponent, resolve: { blogCatList: ResolveService },
   data: { requestcondition: { condition: {"limit": 4, "skip":1} }, endpoint: 'blogdata' } },
 
-  { path: 'blogdetail/:_id', component: BlogdetailComponent, resolve: { blogDetail: ResolveService },
-  data: { requestcondition: { source: 'blogs_view', condition: {} }, endpoint: 'datalist' }  },
+  { path: 'blogdetail/:_id', component: BlogdetailComponent, resolve: { blogCatList: ResolveService },
+  data: { requestcondition: { source: 'blogs', condition: {} }, endpoint: 'datalistwithouttoken' }  },
 
   //  static path
   {

@@ -64,9 +64,9 @@ export class BlogdetailComponent implements OnInit {
 // ************* blog details *****************//
       
       this.activatedRoute.data.forEach((data: any) => {
-        this.blogDetail = data.blogDetail.res;
-        console.log('>>>>>>>kb>>>>>>>',this.blogDetail)  
-        this.blog_img=this.blogDetail[0].blogs_image[0];
+        this.blog = data.blogCatList.res;
+        //console.log('>>>>>>>kb>>>>>>>',this.blog)  
+        this.blog_img=this.blog[0].blogs_image[0].basepath+this.blog[0].blogs_image[0].image;
         
       })
  
