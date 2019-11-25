@@ -27,9 +27,7 @@ import { OwlModule } from 'ngx-owl-carousel';
 /**Frontend Component**/
 
 import { HeaderComponent, comingSoonDialog } from './layout/header/header.component';
-import {
-  FooterComponent, DialogTermsDialog, DialogPrivacyDialog
-} from './layout/footer/footer.component';
+import { FooterComponent, DialogTermsDialog, DialogPrivacyDialog, NewslatterDialogComponent} from './layout/footer/footer.component';
 import { HomeComponent } from './component/frontend/home/home.component';
 import { ContactusComponent } from './component/frontend/contactus/contactus.component';
 import { ForgetPasswordComponent } from './component/frontend/forget-password/forget-password.component';
@@ -80,7 +78,7 @@ import { LoginModule } from 'login';
 import { ServicelibModule } from 'servicelib';
 import { ContactusModule } from 'contactus';
 import { TestimonialModule } from 'testimonial';
-import { TestimonialListsAdminComponent } from './component/backend/testimonial-lists-admin/testimonial-lists-admin.component';
+// import { TestimonialListsAdminComponent } from './component/backend/testimonial-lists-admin/testimonial-lists-admin.component';
 import { ListingTestimonialComponent } from './component/backend/TestimonialApp/listing-testimonial/listing-testimonial.component';
 import { AddeditTestimonialComponent } from './component/backend/TestimonialApp/addedit-testimonial/addedit-testimonial.component';
 import { BlogManagementComponent } from './component/backend/blog-management/blog-management.component';
@@ -150,7 +148,7 @@ import { ManageWorkshopListingComponent } from './component/backend/events/manag
     AffiliateDashboardComponent,
     TesimonialComponent,
     TesimoniallistComponent,    
-    TestimonialListsAdminComponent,
+    // TestimonialListsAdminComponent,
     ListingTestimonialComponent,
     AddeditTestimonialComponent,
     BookAnAppointmentComponent,
@@ -190,6 +188,7 @@ import { ManageWorkshopListingComponent } from './component/backend/events/manag
     AddEditManageSpeakerEngagementComponent,
     AddEditManageWorkshopComponent,
     ManageWorkshopListingComponent,
+    NewslatterDialogComponent
   ],
   imports: [
     BlogModule,
@@ -215,11 +214,10 @@ import { ManageWorkshopListingComponent } from './component/backend/events/manag
     OwlModule,
     FormsModule,
     ReactiveFormsModule,
-
   ],
   providers: [CookieService, AuthGuard, ApiService, SidenavService],
   bootstrap: [AppComponent],
   schemas:[CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
-  entryComponents: [comingSoonDialog, DialogPrivacyDialog, DialogTermsDialog,CommonVideoModalComponent, VideoModalComponent]
+  entryComponents: [comingSoonDialog, DialogPrivacyDialog, DialogTermsDialog,CommonVideoModalComponent, NewslatterDialogComponent,VideoModalComponent]
 })
 export class AppModule { }

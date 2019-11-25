@@ -18,7 +18,7 @@
  <form [formGroup]="myform" name="myform" (ngSubmit)="doSubmit()">
      <span>
         <mat-form-field>
-    <input matInput placeholder="Email Address"   [formControl]="myform.controls['email']"    >
+    <input matInput placeholder="Email Address"   [formControl]="myform.controls['email']" >
    </mat-form-field>
                     <button mat-raised-button ><img src="../../assets/images/newlettericon.png"></button>
 
@@ -27,6 +27,9 @@
      <mat-error *ngIf="myform.controls['email'].touched && !myform.controls['email'].valid
            && myform.controls['email'].errors.required">
                 Email field can not be blank</mat-error>
+    <mat-error *ngIf="myform.controls['email'].touched && !myform.controls['email'].valid
+                && myform.controls['email'].errors.pattern">
+                     Email is not Valid</mat-error>
 
 
 </form>
@@ -159,7 +162,7 @@
 </mat-card>
 
 
-<mat-card class="adminheaderleftdiv footerbg" *ngIf="router.url ==='/admin-dashboard' || router.url === '/customer-dashboard' || router.url === '/affiliate-dashboard' || router.url ==='/commission-report' || router.url ==='/customer-list-admin' || router.url ==='/manage-availability' || router.url ==='/my-appointment-admin' || router.url ==='/affiliate-admin' || router.url ==='/blog-management' || router.url === '/add-edit-blogs' || router.url === '/add-edit-blogcat' || router.url === 'blogs/add' || router.url === 'blog-category/add' || router.url ==='/manage-commission' || router.url ==='/testimonial-lists-admin' || router.url ==='/social-advo-admin' || router.url ==='/newsletter-list' || router.url ==='/manage-commission-affiliate' || router.url ==='/social-advo-affiliate' || router.url ==='/book-an-appointment-user' || router.url ==='/my-appointment-user' || router.url ==='/booking-report' || router.url ==='/manage-seminar-listing' || router.url ==='/add-edit-manage-seminar' || router.url ==='/manage-speaker-engagement-listing' || router.url ==='/add-edit-manage-speaker-engagement' || router.url ==='/manage-workshop-listing' || router.url ==='/add-edit-manage-workshop' || router.url ==='/gallery-admin' || router.url ==='/my-customers' || router.url ==='/booked-events' || router.url ==='/past-event-user' || router.url ==='/upcoming-event-user' || router.url ==='/events'">
+<mat-card class="adminheaderleftdiv footerbg" *ngIf="router.url ==='/admin-dashboard' || router.url === '/customer-dashboard' || router.url === '/affiliate-dashboard' || router.url ==='/commission-report' || router.url ==='/customer-list-admin' || router.url ==='/manage-availability' || router.url ==='/my-appointment-admin' || router.url ==='/affiliate-admin' || router.url ==='/blog-management' || router.url === '/add-edit-blogs' || router.url === '/add-edit-blogcat' || router.url === 'blogs/add' || router.url === 'blog-category/add' || router.url ==='/manage-commission' || router.url ==='/testimonial-listing' || router.url ==='/social-advo-admin' || router.url ==='/newsletter-list' || router.url ==='/manage-commission-affiliate' || router.url ==='/social-advo-affiliate' || router.url ==='/book-an-appointment-user' || router.url ==='/my-appointment-user' || router.url ==='/booking-report' || router.url ==='/manage-seminar-listing' || router.url ==='/add-edit-manage-seminar' || router.url ==='/manage-speaker-engagement-listing' || router.url ==='/add-edit-manage-speaker-engagement' || router.url ==='/manage-workshop-listing' || router.url ==='/add-edit-manage-workshop' || router.url ==='/gallery-admin' || router.url ==='/my-customers' || router.url ==='/booked-events' || router.url ==='/past-event-user' || router.url ==='/upcoming-event-user' || router.url ==='/events'">
   <mat-card-content>
     <app-bk-footer></app-bk-footer>
   </mat-card-content>
