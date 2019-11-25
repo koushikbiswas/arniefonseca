@@ -78,7 +78,7 @@ import { LoginModule } from 'login';
 import { ServicelibModule } from 'servicelib';
 import { ContactusModule } from 'contactus';
 import { TestimonialModule } from 'testimonial';
-import { TestimonialListsAdminComponent } from './component/backend/testimonial-lists-admin/testimonial-lists-admin.component';
+// import { TestimonialListsAdminComponent } from './component/backend/testimonial-lists-admin/testimonial-lists-admin.component';
 import { ListingTestimonialComponent } from './component/backend/TestimonialApp/listing-testimonial/listing-testimonial.component';
 import { AddeditTestimonialComponent } from './component/backend/TestimonialApp/addedit-testimonial/addedit-testimonial.component';
 import { BlogManagementComponent } from './component/backend/blog-management/blog-management.component';
@@ -148,7 +148,7 @@ import { ManageWorkshopListingComponent } from './component/backend/events/manag
     AffiliateDashboardComponent,
     TesimonialComponent,
     TesimoniallistComponent,    
-    TestimonialListsAdminComponent,
+    // TestimonialListsAdminComponent,
     ListingTestimonialComponent,
     AddeditTestimonialComponent,
     BookAnAppointmentComponent,

@@ -1,5 +1,5 @@
 <!-- <mat-toolbar class="header fixed" *ngIf="user_data.type == 'admin'"> -->
-<mat-toolbar class="header fixed" *ngIf="router.url ==='/admin-dashboard' || router.url ==='/commission-report' || router.url ==='/manage-availability' || router.url ==='/my-appointment-admin' || router.url ==='/blog-management' || router.url === '/add-edit-blogs' || router.url === '/add-edit-blogcat' || router.url === 'blogs/add' || router.url === 'blog-category/add' || router.url ==='/testimonial-lists-admin' || router.url ==='/newsletter-list' || router.url ==='/social-advo-admin' || router.url ==='/manage-commission' || router.url ==='/customer-list-admin' || router.url ==='/booking-report' || router.url ==='/affiliate-admin' || router.url ==='/manage-seminar-listing' || router.url ==='/add-edit-manage-seminar' || router.url ==='/manage-speaker-engagement-listing' || router.url ==='/add-edit-manage-speaker-engagement' || router.url ==='/manage-workshop-listing' || router.url ==='/add-edit-manage-workshop' || router.url ==='/gallery-admin'">
+<mat-toolbar class="header fixed" *ngIf="router.url ==='/admin-dashboard' || router.url ==='/commission-report' || router.url ==='/manage-availability' || router.url ==='/my-appointment-admin' || router.url ==='/blog-management' || router.url === '/add-edit-blogs' || router.url === '/add-edit-blogcat' || router.url === 'blogs/add' || router.url === 'blog-category/add' || router.url ==='/testimonial-listing' || router.url ==='/newsletter-list' || router.url ==='/social-advo-admin' || router.url ==='/manage-commission' || router.url ==='/customer-list-admin' || router.url ==='/booking-report' || router.url ==='/affiliate-admin' || router.url ==='/manage-seminar-listing' || router.url ==='/add-edit-manage-seminar' || router.url ==='/manage-speaker-engagement-listing' || router.url ==='/add-edit-manage-speaker-engagement' || router.url ==='/manage-workshop-listing' || router.url ==='/add-edit-manage-workshop' || router.url ==='/gallery-admin'">
     <mat-toolbar-row class="toolbar-row">
         <div class="logo">
             <img src="assets/images/logo.png" alt="">
@@ -61,7 +61,7 @@
                     <a [matMenuTriggerFor]="menu6">Manage Website</a>
                     <mat-menu #menu6="matMenu" class="activedropmenu">
                         <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/blog-management']">Blog Management</a>
-                        <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/testimonial-lists-admin']">testimonial lists</a>
+                        <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/testimonial-listing']">testimonial lists</a>
                         <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/newsletter-list']">newsletter</a>
                         <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/gallery-admin']">gallery</a>
                         <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/manage-commission']">Manage Commission</a>
