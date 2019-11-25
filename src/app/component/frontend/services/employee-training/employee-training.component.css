@@ -213,13 +213,8 @@
 .block3subwrapper{
     padding: 47px 596px 47px 47px; 
     display: block; background-color: #fff;
-<<<<<<< HEAD:src/app/component/frontend/employee-training/employee-training.component.css
-     background-image: url(../../../../assets/images/employeetrainingbanner3.png);
-     box-shadow: 0 2px 10px rgba(0,0,0,.20);
-=======
      background-image: url(../../../../../assets/images/employeetrainingbanner3.png);
      box-shadow: 0 2px 10px rgba(0,0,0,.15);
->>>>>>> 794a58f6f18b8c4b0502bf078a5338805705228e:src/app/component/frontend/services/employee-training/employee-training.component.css
      background-repeat: no-repeat;
     background-size: cover;
     border: 1px solid #dedede;
