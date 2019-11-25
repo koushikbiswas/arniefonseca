@@ -390,6 +390,7 @@
   left: 0;
   position: inherit;
   width: 100%;margin-bottom: 40px;
+  background-color: #dbdbdb;
 }
 .lstsubwrapper {
   padding-left: 0;
@@ -449,6 +450,8 @@
   text-align: center;
   width: 100%;
 }
+.block3subwrapper2.textwrapper p {width: 100%;}
+.block3content { padding-bottom: 40px;}
 }
 
 
@@ -485,6 +488,7 @@
 .block3 .textwrapper .mat-list {
   padding-left: 0;
 }
+.block3 .block3subblock2 .mat-list {width: 97%;}
 }
 
 
