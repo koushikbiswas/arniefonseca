@@ -254,15 +254,32 @@
     text-align: center;
     margin: 0 auto;
 }
+.block3subblock2 {
+    display: block;
+    padding-bottom: 50px;
+}
 
 
 
 
+.block3subblock3 .mat-list {padding-left: 209px !important;}
 
-
-
-
-
-
+.lstsubwrapper{
+    display: block;
+    padding-left: 19%;
+    position: relative;
+    z-index: 9;
+}
+.block3{
+    background-image: url(../../../../assets/images/employeetrainingbanner5.png);
+    position: relative;
+    background-repeat: no-repeat !important;
+    background-position: right bottom !important;
+}
+.lstimageab{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
 
   
