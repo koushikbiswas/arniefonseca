@@ -10,7 +10,7 @@ import { ForgetPasswordComponent } from './component/frontend/forget-password/fo
 import { ResetPasswordComponent } from './component/frontend/reset-password/reset-password.component';
 import { SignUpComponent } from './component/frontend/sign-up/sign-up.component';
 import { ServiceComponent } from './component/frontend/service/service.component';
-import { ServicelistComponent } from './component/frontend/servicelist/servicelist.component';
+import { ServicelistComponent } from './component/frontend/services/servicelist/servicelist.component';
 import { BlogComponent } from './component/frontend/blog/blog.component';
 import { BloglistComponent } from './component/frontend/bloglist/bloglist.component';
 import { BlogdetailComponent } from './component/frontend/blogdetail/blogdetail.component';
@@ -21,17 +21,17 @@ import { TesimonialComponent } from './component/frontend/tesimonial/tesimonial.
 import { TesimoniallistComponent } from './component/frontend/tesimoniallist/tesimoniallist.component';
 
 
-import { EmployeeTrainingComponent } from './component/frontend/employee-training/employee-training.component';
-import { CouplesCounselingComponent } from './component/frontend/couples-counseling/couples-counseling.component';
-import { PersonalDevelopmentCoachingComponent } from './component/frontend/personal-development-coaching/personal-development-coaching.component';
-import { HighPerformanceCoachingComponent } from './component/frontend/high-performance-coaching/high-performance-coaching.component';
-import { SpecialProgramsForYoungMenComponent } from './component/frontend/special-programs-for-young-men/special-programs-for-young-men.component';
-import { ImageGalleryComponent } from './component/frontend/image-gallery/image-gallery.component';
-import { VideoGalleryComponent } from './component/frontend/video-gallery/video-gallery.component';
+import { EmployeeTrainingComponent } from './component/frontend/services/employee-training/employee-training.component';
+import { CouplesCounselingComponent } from './component/frontend/services/couples-counseling/couples-counseling.component';
+import { PersonalDevelopmentCoachingComponent } from './component/frontend/services/personal-development-coaching/personal-development-coaching.component';
+import { HighPerformanceCoachingComponent } from './component/frontend/services/high-performance-coaching/high-performance-coaching.component';
+import { SpecialProgramsForYoungMenComponent } from './component/frontend/services/special-programs-for-young-men/special-programs-for-young-men.component';
+import { ImageGalleryComponent } from './component/frontend/gallery/image-gallery/image-gallery.component';
+import { VideoGalleryComponent } from './component/frontend/gallery/video-gallery/video-gallery.component';
 import { TeamComponent } from './component/frontend/team/team.component';
-import { SeminarsComponent } from './component/frontend/seminars/seminars.component';
-import { WorkshopsComponent } from './component/frontend/workshops/workshops.component';
-import { SpeakerEngagementsComponent } from './component/frontend/speaker-engagements/speaker-engagements.component';
+import { SeminarsComponent } from './component/frontend/events/seminars/seminars.component';
+import { WorkshopsComponent } from './component/frontend/events/workshops/workshops.component';
+import { SpeakerEngagementsComponent } from './component/frontend/events/speaker-engagements/speaker-engagements.component';
 
 /**End Frontend Routing**/
 
@@ -71,21 +71,29 @@ import { ManageAvailabilityComponent } from './component/backend/manage-availabi
 import { CommissionReportComponent } from './component/backend/commission-report/commission-report.component';
 import { BookingReportComponent } from './component/backend/booking-report/booking-report.component';
 import { AffiliateComponent } from './component/backend/affiliate/affiliate.component';
-import { ManageSeminarsComponent } from './component/backend/manage-seminars/manage-seminars.component';
-import { ManageWorkshopsComponent } from './component/backend/manage-workshops/manage-workshops.component';
-import { ManageSpeakerEngagementsComponent } from './component/backend/manage-speaker-engagements/manage-speaker-engagements.component';
 import { GalleryAdminComponent } from './component/backend/gallery-admin/gallery-admin.component';
 import { BookedEventsComponent } from './component/backend/booked-events/booked-events.component';
 import { PastEventUserComponent } from './component/backend/past-event-user/past-event-user.component';
 import { UpcomingEventUserComponent } from './component/backend/upcoming-event-user/upcoming-event-user.component';
 import { MyCustomersAffiliateComponent } from './component/backend/my-customers-affiliate/my-customers-affiliate.component';
 
-import { AddEditBlogcatComponent } from './component/backend/blogs/add-edit-blogcat/add-edit-blogcat.component';
-import { ListingBlogcatComponent } from './component/backend/blogs/listing-blogcat/listing-blogcat.component';
-import { AddEditBlogsComponent } from './component/backend/blogs/add-edit-blogs/add-edit-blogs.component';
-import { ListingBlogsComponent } from './component/backend/blogs/listing-blogs/listing-blogs.component';
+import { AddEditBlogcatComponent } from './component/backend/blog-management/add-edit-blogcat/add-edit-blogcat.component';
+import { ListingBlogcatComponent } from './component/backend/blog-management/listing-blogcat/listing-blogcat.component';
+import { AddEditBlogsComponent } from './component/backend/blog-management/add-edit-blogs/add-edit-blogs.component';
+import { ListingBlogsComponent } from './component/backend/blog-management/listing-blogs/listing-blogs.component';
+
+import { ManageSeminarListingComponent } from './component/backend/events/manage-seminar/manage-seminar-listing/manage-seminar-listing.component';
+import { AddEditManageSeminarComponent } from './component/backend/events/manage-seminar/add-edit-manage-seminar/add-edit-manage-seminar.component';
+
+import { ManageSpeakerEngagementListingComponent } from './component/backend/events/manage-speaker-engagement/manage-speaker-engagement-listing/manage-speaker-engagement-listing.component';
+import { AddEditManageSpeakerEngagementComponent } from './component/backend/events/manage-speaker-engagement/add-edit-manage-speaker-engagement/add-edit-manage-speaker-engagement.component';
+
+import { ManageWorkshopListingComponent } from './component/backend/events/manage-workshop/manage-workshop-listing/manage-workshop-listing.component';
+import { AddEditManageWorkshopComponent } from './component/backend/events/manage-workshop/add-edit-manage-workshop/add-edit-manage-workshop.component';
+
 
 import { from } from 'rxjs';
+
 /**End Backend Routing**/
 
 const routes: Routes = [
@@ -176,10 +184,13 @@ const routes: Routes = [
   { path: 'workshops', component: WorkshopsComponent },
   { path: 'speaker-engagements', component: SpeakerEngagementsComponent },
   { path: 'affiliate-admin', component: AffiliateComponent },
-  { path: 'manage-seminars', component: ManageSeminarsComponent },
-  { path: 'manage-workshops', component: ManageWorkshopsComponent },
-  { path: 'manage-speaker-engagements', component: ManageSpeakerEngagementsComponent },
   { path: 'gallery-admin', component: GalleryAdminComponent },
+  { path: 'manage-seminar-listing', component: ManageSeminarListingComponent },
+  { path: 'add-edit-manage-seminar', component: AddEditManageSeminarComponent },
+  { path: 'manage-speaker-engagement-listing', component: ManageSpeakerEngagementListingComponent },
+  { path: 'add-edit-manage-speaker-engagement', component: AddEditManageSpeakerEngagementComponent },
+  { path: 'add-edit-manage-workshop', component:  AddEditManageWorkshopComponent},
+  { path: 'manage-workshop-listing', component: ManageWorkshopListingComponent },
 
 
 
