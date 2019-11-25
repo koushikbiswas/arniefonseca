@@ -27,7 +27,9 @@ import { OwlModule } from 'ngx-owl-carousel';
 /**Frontend Component**/
 
 import { HeaderComponent, comingSoonDialog } from './layout/header/header.component';
-import { FooterComponent, DialogTermsDialog, DialogPrivacyDialog } from './layout/footer/footer.component';
+import {
+  FooterComponent, DialogTermsDialog, DialogPrivacyDialog
+} from './layout/footer/footer.component';
 import { HomeComponent } from './component/frontend/home/home.component';
 import { ContactusComponent } from './component/frontend/contactus/contactus.component';
 import { ForgetPasswordComponent } from './component/frontend/forget-password/forget-password.component';
@@ -213,6 +215,7 @@ import { ManageWorkshopListingComponent } from './component/backend/events/manag
     OwlModule,
     FormsModule,
     ReactiveFormsModule,
+
   ],
   providers: [CookieService, AuthGuard, ApiService, SidenavService],
   bootstrap: [AppComponent],
