@@ -72,7 +72,7 @@ import { CustomerListComponent } from './component/backend/customer-list/custome
 import { AddeditServiceComponent } from './component/backend/ServiceApp/addedit-service/addedit-service.component';
 import { ListingServiceComponent } from './component/backend/ServiceApp/listing-service/listing-service.component';
 // import { ServicelibModule } from 'servicelib';
-// import { FileUploadModule } from 'dist/file-upload';
+import { FileUploadModule } from 'dist/file-upload';
 import { BkLeftdivComponent } from './layout/bk-leftdiv/bk-leftdiv.component';
 import { MaindashboardComponent } from './component/backend/maindashboard/maindashboard.component';
 import { UserManagementComponent } from './component/backend/user-management/user-management.component';
@@ -206,7 +206,7 @@ import { ManageWorkshopListingComponent } from './component/backend/events/manag
     TestimonialModule,
     ServicelibModule,
     ContactusModule,
-    // FileUploadModule,
+    FileUploadModule,
     HttpClientModule,
     AppRoutingModule,MetaModule.forRoot(), BrowserAnimationsModule,
     ListingModule,

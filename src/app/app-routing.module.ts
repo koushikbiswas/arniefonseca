@@ -161,6 +161,7 @@ const routes: Routes = [
   { path: 'commission-report', component: CommissionReportComponent },
   // { path: 'testimonial-lists-admin', component: ListingTestimonialComponent },
   { path: 'customer-list-admin', component: CustomerListComponent },
+  
   { path: 'testimonial/add', component: AddeditTestimonialComponent },
   {
     path: 'testimonial/edit/:_id', component: AddeditTestimonialComponent, resolve: { testimonialData: ResolveService },
