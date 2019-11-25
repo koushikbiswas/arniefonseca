@@ -80,10 +80,10 @@ import { PastEventUserComponent } from './component/backend/past-event-user/past
 import { UpcomingEventUserComponent } from './component/backend/upcoming-event-user/upcoming-event-user.component';
 import { MyCustomersAffiliateComponent } from './component/backend/my-customers-affiliate/my-customers-affiliate.component';
 
-import { AddEditBlogcatComponent } from './component/backend/blogs/add-edit-blogcat/add-edit-blogcat.component';
-import { ListingBlogcatComponent } from './component/backend/blogs/listing-blogcat/listing-blogcat.component';
-import { AddEditBlogsComponent } from './component/backend/blogs/add-edit-blogs/add-edit-blogs.component';
-import { ListingBlogsComponent } from './component/backend/blogs/listing-blogs/listing-blogs.component';
+import { AddEditBlogcatComponent } from './component/backend/blog-management/add-edit-blogcat/add-edit-blogcat.component';
+import { ListingBlogcatComponent } from './component/backend/blog-management/listing-blogcat/listing-blogcat.component';
+import { AddEditBlogsComponent } from './component/backend/blog-management/add-edit-blogs/add-edit-blogs.component';
+import { ListingBlogsComponent } from './component/backend/blog-management/listing-blogs/listing-blogs.component';
 
 import { from } from 'rxjs';
 /**End Backend Routing**/
