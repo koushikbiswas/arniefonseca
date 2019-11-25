@@ -32,25 +32,35 @@
     </a>
   </span>
   <span class="footerwrappercontent">
-    <span class="mainwrappercontent">
-      <mat-card-content>
-        <span class="newsletterwrapper">
-          <h3>Newsletter</h3>
-          <span class="newslettermain">
-            <h4>Subscribe to our newsletter</h4>
-            <div class="example-container">
-              <form [formGroup]="myform" name="myform" (ngSubmit)="doSubmit()">
-                <span>
-                  <mat-form-field>
-                    <input
-                      matInput
-                      placeholder="Email Address"
-                      [formControl]="myform.controls['email']"
-                    />
-                  </mat-form-field>
-                  <button mat-raised-button>
-                    <img src="../../assets/images/newlettericon.png" />
-                  </button>
+      <span class="mainwrappercontent">
+          <mat-card-content>
+            
+            <span class="newsletterwrapper">
+                <h3>Newsletter</h3>
+                <span class="newslettermain">
+                  <h4>Subscribe to our newsletter</h4>
+                  <div class="example-container">
+
+ <form [formGroup]="myform" name="myform" (ngSubmit)="doSubmit()">
+     <span>
+        <mat-form-field>
+    <input matInput placeholder="Email Address"   [formControl]="myform.controls['email']" >
+   </mat-form-field>
+                    <button mat-raised-button ><img src="../../assets/images/newlettericon.png"></button>
+
+     </span>
+     <mat-error *ngIf="myform.controls['email'].touched && !myform.controls['email'].valid
+           && myform.controls['email'].errors.required">
+                Email field can not be blank</mat-error>
+    <mat-error *ngIf="myform.controls['email'].touched && !myform.controls['email'].valid
+                && myform.controls['email'].errors.pattern">
+                     Email is not Valid</mat-error>
+
+
+</form>
+
+                  </div>
+                 <h5>We’ll never share your email address</h5>
                 </span>
                 <mat-error
                   *ngIf="
