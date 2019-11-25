@@ -185,15 +185,37 @@ const routes: Routes = [
   { path: 'speaker-engagements', component: SpeakerEngagementsComponent },
   { path: 'affiliate-admin', component: AffiliateComponent },
   { path: 'gallery-admin', component: GalleryAdminComponent },
+
+// ___________________manage event backend__________________//
+
+
+  //________________Manage Seminar____________//
+
   { path: 'manage-seminar-listing', component: ManageSeminarListingComponent },
   { path: 'add-edit-manage-seminar', component: AddEditManageSeminarComponent },
+
+
+
+//________________Manage Workshop____________//
+
+
+
+{ path: 'add-edit-manage-workshop', component:  AddEditManageWorkshopComponent},
+{ path: 'manage-workshop-listing', component: ManageWorkshopListingComponent },
+
+
+//________________Manage Speaker Engagement____________//
+
+
+
   { path: 'manage-speaker-engagement-listing', component: ManageSpeakerEngagementListingComponent },
   { path: 'add-edit-manage-speaker-engagement', component: AddEditManageSpeakerEngagementComponent },
-  { path: 'add-edit-manage-workshop', component:  AddEditManageWorkshopComponent},
-  { path: 'manage-workshop-listing', component: ManageWorkshopListingComponent },
 
 
 
+
+  //____________end event routing______________//
+  
   // ___________________BLOG MANAGEMENT_________________
   // =======================================================
 
