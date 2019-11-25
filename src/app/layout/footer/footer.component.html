@@ -15,11 +15,19 @@
                   <h4>Subscribe to our newsletter</h4>
                   <div class="example-container">
 
-<form [formGroup]="myform" (submit)="doSubmit()">
-                      <mat-form-field>
-    <input matInput placeholder="Email Address">
-  </mat-form-field>
+ <form [formGroup]="myform" name="myform" (ngSubmit)="doSubmit()">
+     <span>
+        <mat-form-field>
+    <input matInput placeholder="Email Address"   [formControl]="myform.controls['email']"    >
+   </mat-form-field>
                     <button mat-raised-button ><img src="../../assets/images/newlettericon.png"></button>
+
+
+     </span>
+     <mat-error *ngIf="myform.controls['email'].touched && !myform.controls['email'].valid
+           && myform.controls['email'].errors.required">
+                Email field can not be blank</mat-error>
+
 
 </form>
 

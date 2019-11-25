@@ -1,6 +1,15 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, HostListener, Inject, ViewChild  } from '@angular/core';
 import {Router, ActivatedRoute} from '@angular/router';
-import {MatDialog} from '@angular/material/dialog';
+import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import {FormControl, FormBuilder, Validators, FormGroup} from '@angular/forms';
+import  {ApiService} from '../../api.service';
+
+
+export interface DialogData {
+ /*   animal: string;
+    name: string;*/
+}
+
 
 @Component({
   selector: 'app-footer',
@@ -8,13 +17,24 @@ import {MatDialog} from '@angular/material/dialog';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
-  
+    myform :FormGroup;
   windowScrolled: boolean;
+  public data:any;
 
-  constructor(public router: Router, public route: ActivatedRoute, public dialog: MatDialog) {
+  constructor(public router: Router, public route: ActivatedRoute, public dialog: MatDialog, public formbuilder: FormBuilder, public apiService: ApiService) {
     // console.log(router.url);
+
+      this.myform = this.formbuilder.group({
+          email: ['', Validators.compose([Validators.required, Validators.pattern(/^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/)])],
+
+      })
+
+
     
    }
+
+
+    
 
    termscondition() {
     const dialogRef = this.dialog.open(DialogTermsDialog);
@@ -66,6 +86,44 @@ export class FooterComponent implements OnInit {
       );
   }
 
+
+    doSubmit() {
+        console.log('ok');
+        this.data = this.myform.value;
+        console.log(this.data);
+        for (let i in this.myform.controls) {
+            this.myform.controls[i].markAsTouched();
+        }
+        if (this.myform.valid) {
+
+           let link = '';
+            let data = {data: this.myform.value};
+            this.apiService.postdata(data)
+                .subscribe(res => {
+
+                    let result: any = {};
+                    result = res;
+                    console.log(result);
+                    if (result.status == 'success') {
+
+                        this.myform.reset();
+                        // this.opencontactDialog();
+                       /* const dialogRef = this.dialog.open(SubmitpopupComponent);*/
+
+                        // this.inputUntouch(this.myform,'email');
+
+                        this.myform.controls['email'].updateValueAndValidity();
+
+                    }
+                })
+
+        }
+
+    }
+
+
+
+
 }
 
 
@@ -82,3 +140,7 @@ export class FooterComponent implements OnInit {
     templateUrl: 'privacy-dialog.html',
   })
   export class DialogPrivacyDialog {}
+
+
+
+
