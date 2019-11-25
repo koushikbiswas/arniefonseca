@@ -1,5 +1,5 @@
 <!-- <mat-toolbar class="header fixed" *ngIf="user_data.type == 'admin'"> -->
-<mat-toolbar class="header fixed" *ngIf="router.url ==='/admin-dashboard' || router.url ==='/commission-report' || router.url ==='/manage-availability' || router.url ==='/my-appointment-admin' || router.url ==='/blog-management' || router.url === '/add-edit-blogs' || router.url === '/add-edit-blogcat' || router.url === 'blogs/add' || router.url === 'blog-category/add' || router.url ==='/testimonial-lists-admin' || router.url ==='/newsletter-list' || router.url ==='/social-advo-admin' || router.url ==='/manage-commission' || router.url ==='/customer-list-admin' || router.url ==='/booking-report' || router.url ==='/affiliate-admin' || router.url ==='/manage-seminars' || router.url ==='/manage-workshops' || router.url ==='/manage-speaker-engagements' || router.url ==='/gallery-admin'">
+<mat-toolbar class="header fixed" *ngIf="router.url ==='/admin-dashboard' || router.url ==='/commission-report' || router.url ==='/manage-availability' || router.url ==='/my-appointment-admin' || router.url ==='/blog-management' || router.url === '/add-edit-blogs' || router.url === '/add-edit-blogcat' || router.url === 'blogs/add' || router.url === 'blog-category/add' || router.url ==='/testimonial-lists-admin' || router.url ==='/newsletter-list' || router.url ==='/social-advo-admin' || router.url ==='/manage-commission' || router.url ==='/customer-list-admin' || router.url ==='/booking-report' || router.url ==='/affiliate-admin' || router.url ==='/manage-seminar-listing' || router.url ==='/add-edit-manage-seminar' || router.url ==='/manage-speaker-engagement-listing' || router.url ==='/add-edit-manage-speaker-engagement' || router.url ==='/manage-workshop-listing' || router.url ==='/add-edit-manage-workshop' || router.url ==='/gallery-admin'">
     <mat-toolbar-row class="toolbar-row">
         <div class="logo">
             <img src="assets/images/logo.png" alt="">
@@ -50,9 +50,9 @@
                 <mat-list-item class="nav-item" routerLinkActive="activemenu">
                         <a [matMenuTriggerFor]="menu4">Manage Events</a>
                         <mat-menu #menu4="matMenu" class="activedropmenu">
-                            <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/manage-seminars']">Seminars</a>
-                            <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/manage-workshops']">Workshops</a>
-                            <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/manage-speaker-engagements']">Speaker Engagements</a>
+                            <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/manage-seminar-listing']">Seminars</a>
+                            <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/manage-workshop-listing']">Workshops</a>
+                            <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/manage-speaker-engagement-listing']">Speaker Engagements</a>
                         </mat-menu>
                         <div class="triangle"></div>
                 </mat-list-item>

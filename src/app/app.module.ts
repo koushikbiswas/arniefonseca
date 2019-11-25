@@ -90,9 +90,6 @@ import { SocialAdvoComponent } from './component/backend/social-advo/social-advo
 import { CommissionReportComponent } from './component/backend/commission-report/commission-report.component';
 import { BookingReportComponent } from './component/backend/booking-report/booking-report.component';
 import { AffiliateComponent } from './component/backend/affiliate/affiliate.component';
-import { ManageSeminarsComponent } from './component/backend/manage-seminars/manage-seminars.component';
-import { ManageWorkshopsComponent } from './component/backend/manage-workshops/manage-workshops.component';
-import { ManageSpeakerEngagementsComponent } from './component/backend/manage-speaker-engagements/manage-speaker-engagements.component';
 import { GalleryAdminComponent } from './component/backend/gallery-admin/gallery-admin.component';
 import { BookedEventsComponent } from './component/backend/booked-events/booked-events.component';
 import { PastEventUserComponent } from './component/backend/past-event-user/past-event-user.component';
@@ -104,9 +101,15 @@ import { ListingBlogcatComponent } from './component/backend/blog-management/lis
 import { AddEditBlogsComponent } from './component/backend/blog-management/add-edit-blogs/add-edit-blogs.component';
 import { ListingBlogsComponent } from './component/backend/blog-management/listing-blogs/listing-blogs.component';
 
+import { ManageSeminarListingComponent } from './component/backend/events/manage-seminar/manage-seminar-listing/manage-seminar-listing.component';
+import { AddEditManageSeminarComponent } from './component/backend/events/manage-seminar/add-edit-manage-seminar/add-edit-manage-seminar.component';
 // import { BlogModule } from '../../dist/blog';
 
-import {BlogModule} from 'blog'
+import {BlogModule} from 'blog';
+import { ManageSpeakerEngagementListingComponent } from './component/backend/events/manage-speaker-engagement/manage-speaker-engagement-listing/manage-speaker-engagement-listing.component';
+import { AddEditManageSpeakerEngagementComponent } from './component/backend/events/manage-speaker-engagement/add-edit-manage-speaker-engagement/add-edit-manage-speaker-engagement.component';
+import { AddEditManageWorkshopComponent } from './component/backend/events/manage-workshop/add-edit-manage-workshop/add-edit-manage-workshop.component';
+import { ManageWorkshopListingComponent } from './component/backend/events/manage-workshop/manage-workshop-listing/manage-workshop-listing.component';
 
 /**End Backend Component** */
 
@@ -169,9 +172,6 @@ import {BlogModule} from 'blog'
     WorkshopsComponent, 
     SpeakerEngagementsComponent, 
     AffiliateComponent, 
-    ManageSeminarsComponent, 
-    ManageWorkshopsComponent, 
-    ManageSpeakerEngagementsComponent, 
     GalleryAdminComponent, 
     BookedEventsComponent, 
     PastEventUserComponent, 
@@ -181,6 +181,13 @@ import {BlogModule} from 'blog'
     ListingBlogcatComponent,
     AddEditBlogsComponent,
     ListingBlogsComponent,
+    
+    ManageSeminarListingComponent,
+    AddEditManageSeminarComponent,
+    ManageSpeakerEngagementListingComponent,
+    AddEditManageSpeakerEngagementComponent,
+    AddEditManageWorkshopComponent,
+    ManageWorkshopListingComponent,
   ],
   imports: [
     BlogModule,

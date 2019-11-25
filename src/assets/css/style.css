@@ -1160,3 +1160,9 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
 .mat-dialog-container successmodal{width: 500px;display: block;text-align: center; margin: 0 auto;}
 .mat-dialog-container successmodal .mat-dialog-actions {margin-bottom: 0px;}
 .mat-dialog-container .mat-dialog-content p{font-size: 20px; margin-top: 10px;}
+
+
+
+.homeblock1contentright .mat-list-base .mat-list-item{
+  height: auto;
+}
