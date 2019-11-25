@@ -1166,6 +1166,9 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
 @media only screen and (max-width: 1199px) {.block3 .block3subblock2 .mat-list .mat-list-item .mat-list-item-content{flex-wrap: wrap;}}
 @media only screen and (max-width: 991px) {
   .threecolumnlist > .mat-list-item .mat-list-item-content{flex-wrap: wrap;width: 100%;}
+  .mainwrappercontent  .threecolumnlist .mat-list-item .mat-list-item-content {
+    padding: 0 !important;
+  }
   
 }
 
