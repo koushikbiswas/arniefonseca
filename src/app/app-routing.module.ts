@@ -10,7 +10,7 @@ import { ForgetPasswordComponent } from './component/frontend/forget-password/fo
 import { ResetPasswordComponent } from './component/frontend/reset-password/reset-password.component';
 import { SignUpComponent } from './component/frontend/sign-up/sign-up.component';
 import { ServiceComponent } from './component/frontend/service/service.component';
-import { ServicelistComponent } from './component/frontend/servicelist/servicelist.component';
+import { ServicelistComponent } from './component/frontend/services/servicelist/servicelist.component';
 import { BlogComponent } from './component/frontend/blog/blog.component';
 import { BloglistComponent } from './component/frontend/bloglist/bloglist.component';
 import { BlogdetailComponent } from './component/frontend/blogdetail/blogdetail.component';
@@ -21,17 +21,17 @@ import { TesimonialComponent } from './component/frontend/tesimonial/tesimonial.
 import { TesimoniallistComponent } from './component/frontend/tesimoniallist/tesimoniallist.component';
 
 
-import { EmployeeTrainingComponent } from './component/frontend/employee-training/employee-training.component';
-import { CouplesCounselingComponent } from './component/frontend/couples-counseling/couples-counseling.component';
-import { PersonalDevelopmentCoachingComponent } from './component/frontend/personal-development-coaching/personal-development-coaching.component';
-import { HighPerformanceCoachingComponent } from './component/frontend/high-performance-coaching/high-performance-coaching.component';
-import { SpecialProgramsForYoungMenComponent } from './component/frontend/special-programs-for-young-men/special-programs-for-young-men.component';
-import { ImageGalleryComponent } from './component/frontend/image-gallery/image-gallery.component';
-import { VideoGalleryComponent } from './component/frontend/video-gallery/video-gallery.component';
+import { EmployeeTrainingComponent } from './component/frontend/services/employee-training/employee-training.component';
+import { CouplesCounselingComponent } from './component/frontend/services/couples-counseling/couples-counseling.component';
+import { PersonalDevelopmentCoachingComponent } from './component/frontend/services/personal-development-coaching/personal-development-coaching.component';
+import { HighPerformanceCoachingComponent } from './component/frontend/services/high-performance-coaching/high-performance-coaching.component';
+import { SpecialProgramsForYoungMenComponent } from './component/frontend/services/special-programs-for-young-men/special-programs-for-young-men.component';
+import { ImageGalleryComponent } from './component/frontend/gallery/image-gallery/image-gallery.component';
+import { VideoGalleryComponent } from './component/frontend/gallery/video-gallery/video-gallery.component';
 import { TeamComponent } from './component/frontend/team/team.component';
-import { SeminarsComponent } from './component/frontend/seminars/seminars.component';
-import { WorkshopsComponent } from './component/frontend/workshops/workshops.component';
-import { SpeakerEngagementsComponent } from './component/frontend/speaker-engagements/speaker-engagements.component';
+import { SeminarsComponent } from './component/frontend/events/seminars/seminars.component';
+import { WorkshopsComponent } from './component/frontend/events/workshops/workshops.component';
+import { SpeakerEngagementsComponent } from './component/frontend/events/speaker-engagements/speaker-engagements.component';
 
 /**End Frontend Routing**/
 
