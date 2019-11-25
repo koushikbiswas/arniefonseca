@@ -220,6 +220,7 @@
     border: 1px solid #dedede;
     background-position: right top;
     }
+    
 
 .block3subwrapper.textwrapper p{padding-bottom: 0;}
 .block3 .textwrapper h2{text-align: center;}
@@ -470,11 +471,19 @@
   padding: 0px 0 !important;
 }
 .block2{padding: 97px 0;}
+
 }
+
 @media only screen and (max-width: 768px) {
   .block2 {
     padding: 40px 0;
     background: #f2f4f4 !important;
+}
+.block3subwrapper{padding: 20px;
+  padding-top: 108%;
+}
+.block3 .textwrapper .mat-list {
+  padding-left: 0;
 }
 }
 
