@@ -171,6 +171,11 @@
     color: #868686;
 }
 
+
+
+
+
+
 @media (max-width: 1199px) {
 .footertopwrapper .mat-nav-list {margin: 0; margin-bottom: 15px;}
 .footertopwrapper .mat-nav-list .mat-list-item-content {display: flex;padding: 0 12px;}
