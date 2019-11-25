@@ -34,7 +34,7 @@ export class FooterComponent implements OnInit {
    }
 
 
-    
+
 
    termscondition() {
     const dialogRef = this.dialog.open(DialogTermsDialog);

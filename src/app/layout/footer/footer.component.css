@@ -154,12 +154,12 @@
 
 }
 
-.newslettermain .example-container .mat-form-field input.mat-input-element{color: #000;}
+.newslettermain .example-container .mat-form-field input.mat-input-element{color: #000; height: 20px!important;}
 
 .newslettermain .example-container .mat-raised-button{
     background: #21c4e1 !important;
     border-radius: 0 !important;
-    padding: 4px 0 3px!important;
+    padding: 3px 0 2px!important;
 }
 .newslettermain h4{
     font-family: "HelveticaBold";
