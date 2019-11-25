@@ -1,7 +1,4 @@
-<mat-card
-  style="padding: 0"
-  class="footerwrapper"
-  *ngIf="
+<mat-card style="padding: 0" class="footerwrapper" *ngIf="
     router.url == '/' ||
     router.url == '/home' ||
     router.url == '/forget-password' ||
@@ -24,36 +21,35 @@
     router.url == '/seminars' ||
     router.url == '/workshops' ||
     router.url == '/speaker-engagements'
-  "
->
+  ">
   <span class="scroll-to-top" [ngClass]="{ 'show-scrollTop': windowScrolled }">
     <a (click)="scrollToTop()">
       <mat-icon aria-hidden="false">keyboard_arrow_up</mat-icon>
     </a>
   </span>
   <span class="footerwrappercontent">
-      <span class="mainwrappercontent">
-          <mat-card-content>
-            
-            <span class="newsletterwrapper">
-                <h3>Newsletter</h3>
-                <span class="newslettermain">
-                  <h4>Subscribe to our newsletter</h4>
-                  <div class="example-container">
+    <span class="mainwrappercontent">
+      <mat-card-content>
+        <span class="newsletterwrapper">
+          <h3>Newsletter</h3>
+          <span class="newslettermain">
+            <h4>Subscribe to our newsletter</h4>
+            <div class="example-container">
 
- <form [formGroup]="myform" name="myform" (ngSubmit)="doSubmit()">
-     <span>
-        <mat-form-field>
-    <input matInput placeholder="Email Address"   [formControl]="myform.controls['email']" >
-   </mat-form-field>
-                    <button mat-raised-button ><img src="../../assets/images/newlettericon.png"></button>
+              <form [formGroup]="myform" name="myform" (ngSubmit)="doSubmit()">
+                <span>
+                  <mat-form-field>
+                    <input matInput placeholder="Email Address" [formControl]="myform.controls['email']">
+                  </mat-form-field>
+                  <button mat-raised-button><img src="../../assets/images/newlettericon.png"></button>
 
-     </span>
-     <mat-error *ngIf="myform.controls['email'].touched && !myform.controls['email'].valid
+                </span>
+                <mat-error *ngIf="myform.controls['email'].touched && !myform.controls['email'].valid
            && myform.controls['email'].errors.required">
-                Email field can not be blank</mat-error>
-    <mat-error *ngIf="myform.controls['email'].touched && !myform.controls['email'].valid
+                  Email field can not be blank</mat-error>
+                <mat-error *ngIf="myform.controls['email'].touched && !myform.controls['email'].valid
                 && myform.controls['email'].errors.pattern">
+<<<<<<< HEAD
                      Email is not Valid</mat-error>
 
 
@@ -64,6 +60,13 @@
                 </span>
 
 
+=======
+                  Email is not Valid</mat-error>
+              </form>
+            </div>
+            <h5>We’ll never share your email address</h5>
+          </span>
+>>>>>>> 1a433fcff62bcdffeb64d7d673463ada0b5056df
         </span>
         <span class="footertopwrapper footernavlist footerborder">
           <h3>Navigation</h3>
@@ -79,12 +82,7 @@
                 <mat-list-item fxFlex routerLinkActive="activemenu">
                   <a [matMenuTriggerFor]="menu1">Service</a>
                   <mat-menu #menu1="matMenu" class="activedropmenu">
-                    <a
-                      mat-menu-item
-                      routerLinkActive="activemenu"
-                      [routerLink]="['/ourservices']"
-                      >our services</a
-                    >
+                    <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/ourservices']">our services</a>
                     <!-- <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/employee-training']">Employee Training</a>
                     <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/couples-counseling']">Couples Counseling</a>
                     <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/personal-development-coaching']">Personal Development Coaching</a>
@@ -97,41 +95,17 @@
                 <mat-list-item fxFlex routerLinkActive="activemenu">
                   <a [matMenuTriggerFor]="menu2">Gallery</a>
                   <mat-menu #menu2="matMenu" class="activedropmenu">
-                    <a
-                      mat-menu-item
-                      routerLinkActive="activemenu"
-                      [routerLink]="['/image-gallery']"
-                      >Image gallery</a
-                    >
-                    <a
-                      mat-menu-item
-                      routerLinkActive="activemenu"
-                      [routerLink]="['/video-gallery']"
-                      >Video gallery</a
-                    >
+                    <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/image-gallery']">Image gallery</a>
+                    <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/video-gallery']">Video gallery</a>
                   </mat-menu>
                 </mat-list-item>
                 <mat-list-item fxFlex routerLinkActive="activemenu">
                   <a [matMenuTriggerFor]="menu3">Events</a>
                   <mat-menu #menu3="matMenu" class="activedropmenu">
-                    <a
-                      mat-menu-item
-                      routerLinkActive="activemenu"
-                      [routerLink]="['/seminars']"
-                      >Seminars</a
-                    >
-                    <a
-                      mat-menu-item
-                      routerLinkActive="activemenu"
-                      [routerLink]="['/workshops']"
-                      >Workshops</a
-                    >
-                    <a
-                      mat-menu-item
-                      routerLinkActive="activemenu"
-                      [routerLink]="['/speaker-engagements']"
-                      >Speaker Engagements</a
-                    >
+                    <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/seminars']">Seminars</a>
+                    <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/workshops']">Workshops</a>
+                    <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/speaker-engagements']">Speaker
+                      Engagements</a>
                   </mat-menu>
                 </mat-list-item>
                 <mat-list-item fxFlex routerLinkActive="activemenu">
@@ -152,11 +126,7 @@
         <span class="footerddress">
           <span class="footerddressinner">
             <span class="logowrapper" fxFlex>
-              <a [routerLink]="['/home']"
-                ><img
-                  src="../../assets/images/logomain.png"
-                  class="landinglogoblock1"
-              /></a>
+              <a [routerLink]="['/home']"><img src="../../assets/images/logomain.png" class="landinglogoblock1" /></a>
             </span>
             <p>© 2019 Arnie Fonseca. All rights reserved.</p>
           </span>
@@ -224,9 +194,7 @@
   </span> -->
 </mat-card>
 
-<mat-card
-  class="adminheaderleftdiv footerbg"
-  *ngIf="
+<mat-card class="adminheaderleftdiv footerbg" *ngIf="
     router.url === '/admin-dashboard' ||
     router.url === '/customer-dashboard' ||
     router.url === '/affiliate-dashboard' ||
@@ -261,8 +229,7 @@
     router.url === '/past-event-user' ||
     router.url === '/upcoming-event-user' ||
     router.url === '/events'
-  "
->
+  ">
   <mat-card-content>
     <app-bk-footer></app-bk-footer>
   </mat-card-content>
