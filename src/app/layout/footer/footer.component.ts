@@ -26,8 +26,14 @@ export class FooterComponent implements OnInit {
           email: ['', Validators.compose([Validators.required, Validators.pattern(/^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/)])],
 
       })
+
+
+
+
+
     
    }
+
 
 
    termscondition() {
@@ -114,12 +120,17 @@ export class FooterComponent implements OnInit {
         }
 
     }
+
+
+
+
 /*Newslatter modal */
+
 newslatterViewModal(){
 
     const dialogGenreRef = this.dialog.open(NewslatterDialogComponent, {
       panelClass: ['modal-sm', 'infomodal'],
-      disableClose: true,
+      //disableClose: true,
     });
 
     dialogGenreRef.afterClosed().subscribe(result => {
@@ -151,9 +162,22 @@ newslatterViewModal(){
   templateUrl: 'newsletter-dialog.html',
 })
 export class NewslatterDialogComponent {
+
+public myformnews: FormGroup
  
 constructor(public dialogRef: MatDialogRef<NewslatterDialogComponent>,
-  @Inject(MAT_DIALOG_DATA) public data: DialogData) { }
+
+   @Inject(MAT_DIALOG_DATA) public data: DialogData, public formbuilder:FormBuilder) {
+
+    this.myformnews = this.formbuilder.group({
+        email: ['', Validators.compose([Validators.required, Validators.pattern(/^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/)])],
+        name: ['', Validators.required],
+        phone: ['', Validators.required],
+        company: ['', Validators.required],
+
+    })
+
+}
     
   public onNoClick(): void {
     this.dialogRef.close();
