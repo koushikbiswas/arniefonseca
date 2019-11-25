@@ -27,7 +27,7 @@ import { OwlModule } from 'ngx-owl-carousel';
 /**Frontend Component**/
 
 import { HeaderComponent, comingSoonDialog } from './layout/header/header.component';
-import { FooterComponent, DialogTermsDialog, DialogPrivacyDialog } from './layout/footer/footer.component';
+import { FooterComponent, DialogTermsDialog, DialogPrivacyDialog, NewslatterDialogComponent} from './layout/footer/footer.component';
 import { HomeComponent } from './component/frontend/home/home.component';
 import { ContactusComponent } from './component/frontend/contactus/contactus.component';
 import { ForgetPasswordComponent } from './component/frontend/forget-password/forget-password.component';
@@ -70,7 +70,7 @@ import { CustomerListComponent } from './component/backend/customer-list/custome
 import { AddeditServiceComponent } from './component/backend/ServiceApp/addedit-service/addedit-service.component';
 import { ListingServiceComponent } from './component/backend/ServiceApp/listing-service/listing-service.component';
 // import { ServicelibModule } from 'servicelib';
-// import { FileUploadModule } from 'dist/file-upload';
+import { FileUploadModule } from 'dist/file-upload';
 import { BkLeftdivComponent } from './layout/bk-leftdiv/bk-leftdiv.component';
 import { MaindashboardComponent } from './component/backend/maindashboard/maindashboard.component';
 import { UserManagementComponent } from './component/backend/user-management/user-management.component';
@@ -78,7 +78,7 @@ import { LoginModule } from 'login';
 import { ServicelibModule } from 'servicelib';
 import { ContactusModule } from 'contactus';
 import { TestimonialModule } from 'testimonial';
-import { TestimonialListsAdminComponent } from './component/backend/testimonial-lists-admin/testimonial-lists-admin.component';
+// import { TestimonialListsAdminComponent } from './component/backend/testimonial-lists-admin/testimonial-lists-admin.component';
 import { ListingTestimonialComponent } from './component/backend/TestimonialApp/listing-testimonial/listing-testimonial.component';
 import { AddeditTestimonialComponent } from './component/backend/TestimonialApp/addedit-testimonial/addedit-testimonial.component';
 import { BlogManagementComponent } from './component/backend/blog-management/blog-management.component';
@@ -148,7 +148,7 @@ import { ManageWorkshopListingComponent } from './component/backend/events/manag
     AffiliateDashboardComponent,
     TesimonialComponent,
     TesimoniallistComponent,    
-    TestimonialListsAdminComponent,
+    // TestimonialListsAdminComponent,
     ListingTestimonialComponent,
     AddeditTestimonialComponent,
     BookAnAppointmentComponent,
@@ -188,6 +188,7 @@ import { ManageWorkshopListingComponent } from './component/backend/events/manag
     AddEditManageSpeakerEngagementComponent,
     AddEditManageWorkshopComponent,
     ManageWorkshopListingComponent,
+    NewslatterDialogComponent
   ],
   imports: [
     BlogModule,
@@ -204,7 +205,7 @@ import { ManageWorkshopListingComponent } from './component/backend/events/manag
     TestimonialModule,
     ServicelibModule,
     ContactusModule,
-    // FileUploadModule,
+    FileUploadModule,
     HttpClientModule,
     AppRoutingModule,MetaModule.forRoot(), BrowserAnimationsModule,
     ListingModule,
@@ -217,6 +218,6 @@ import { ManageWorkshopListingComponent } from './component/backend/events/manag
   providers: [CookieService, AuthGuard, ApiService, SidenavService],
   bootstrap: [AppComponent],
   schemas:[CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
-  entryComponents: [comingSoonDialog, DialogPrivacyDialog, DialogTermsDialog,CommonVideoModalComponent, VideoModalComponent]
+  entryComponents: [comingSoonDialog, DialogPrivacyDialog, DialogTermsDialog,CommonVideoModalComponent, NewslatterDialogComponent,VideoModalComponent]
 })
 export class AppModule { }

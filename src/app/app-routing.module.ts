@@ -57,7 +57,7 @@ import { BlogManagementComponent } from './component/backend/blog-management/blo
 import { AffiliateDashboardComponent } from './component/backend/affiliate-dashboard/affiliate-dashboard.component';
 
 
-import { TestimonialListsAdminComponent } from './component/backend/testimonial-lists-admin/testimonial-lists-admin.component';
+// import { TestimonialListsAdminComponent } from './component/backend/testimonial-lists-admin/testimonial-lists-admin.component';
 
 import { ListingTestimonialComponent } from './component/backend/TestimonialApp/listing-testimonial/listing-testimonial.component';
 import { AddeditTestimonialComponent } from './component/backend/TestimonialApp/addedit-testimonial/addedit-testimonial.component';
@@ -159,8 +159,9 @@ const routes: Routes = [
   { path: 'social-advo-admin', component: SocialAdvoComponent },
   { path: 'my-appointment-admin', component: MyAppointmentComponent },
   { path: 'commission-report', component: CommissionReportComponent },
-  { path: 'testimonial-lists-admin', component: TestimonialListsAdminComponent },
+  // { path: 'testimonial-lists-admin', component: ListingTestimonialComponent },
   { path: 'customer-list-admin', component: CustomerListComponent },
+  
   { path: 'testimonial/add', component: AddeditTestimonialComponent },
   {
     path: 'testimonial/edit/:_id', component: AddeditTestimonialComponent, resolve: { testimonialData: ResolveService },
@@ -185,15 +186,37 @@ const routes: Routes = [
   { path: 'speaker-engagements', component: SpeakerEngagementsComponent },
   { path: 'affiliate-admin', component: AffiliateComponent },
   { path: 'gallery-admin', component: GalleryAdminComponent },
+
+// ___________________manage event backend__________________//
+
+
+  //________________Manage Seminar____________//
+
   { path: 'manage-seminar-listing', component: ManageSeminarListingComponent },
   { path: 'add-edit-manage-seminar', component: AddEditManageSeminarComponent },
+
+
+
+//________________Manage Workshop____________//
+
+
+
+{ path: 'add-edit-manage-workshop', component:  AddEditManageWorkshopComponent},
+{ path: 'manage-workshop-listing', component: ManageWorkshopListingComponent },
+
+
+//________________Manage Speaker Engagement____________//
+
+
+
   { path: 'manage-speaker-engagement-listing', component: ManageSpeakerEngagementListingComponent },
   { path: 'add-edit-manage-speaker-engagement', component: AddEditManageSpeakerEngagementComponent },
-  { path: 'add-edit-manage-workshop', component:  AddEditManageWorkshopComponent},
-  { path: 'manage-workshop-listing', component: ManageWorkshopListingComponent },
 
 
 
+
+  //____________end event routing______________//
+  
   // ___________________BLOG MANAGEMENT_________________
   // =======================================================
 
