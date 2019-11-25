@@ -1,13 +1,11 @@
 import { Component, OnInit, HostListener, Inject, ViewChild  } from '@angular/core';
 import {Router, ActivatedRoute} from '@angular/router';
-import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import {MatDialog, MatDialogRef, MAT_DIALOG_DATA,} from '@angular/material/dialog';
 import {FormControl, FormBuilder, Validators, FormGroup} from '@angular/forms';
 import  {ApiService} from '../../api.service';
 
 
 export interface DialogData {
- /*   animal: string;
-    name: string;*/
 }
 
 
@@ -28,13 +26,9 @@ export class FooterComponent implements OnInit {
           email: ['', Validators.compose([Validators.required, Validators.pattern(/^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/)])],
 
       })
-
-
     
    }
 
-
-    
 
    termscondition() {
     const dialogRef = this.dialog.open(DialogTermsDialog);
@@ -91,6 +85,7 @@ export class FooterComponent implements OnInit {
         console.log('ok');
         this.data = this.myform.value;
         console.log(this.data);
+        this.newslatterViewModal();
         for (let i in this.myform.controls) {
             this.myform.controls[i].markAsTouched();
         }
@@ -98,8 +93,7 @@ export class FooterComponent implements OnInit {
 
            let link = '';
             let data = {data: this.myform.value};
-            this.apiService.postdata(data)
-                .subscribe(res => {
+            this.apiService.postdata(data).subscribe(res => {
 
                     let result: any = {};
                     result = res;
@@ -120,7 +114,17 @@ export class FooterComponent implements OnInit {
         }
 
     }
+/*Newslatter modal */
+newslatterViewModal(){
 
+    const dialogGenreRef = this.dialog.open(NewslatterDialogComponent, {
+      panelClass: ['modal-sm', 'infomodal'],
+      disableClose: true,
+    });
+
+    dialogGenreRef.afterClosed().subscribe(result => {
+    });
+  }
 
 
 
@@ -141,6 +145,19 @@ export class FooterComponent implements OnInit {
   })
   export class DialogPrivacyDialog {}
 
+// newslatter dialog component
+@Component({
+  selector: 'newslatter-dialog',
+  templateUrl: 'newsletter-dialog.html',
+})
+export class NewslatterDialogComponent {
+ 
+constructor(public dialogRef: MatDialogRef<NewslatterDialogComponent>,
+  @Inject(MAT_DIALOG_DATA) public data: DialogData) { }
+    
+  public onNoClick(): void {
+    this.dialogRef.close();
+  }
 
-
+}
 
