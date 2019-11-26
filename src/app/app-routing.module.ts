@@ -142,7 +142,12 @@ const routes: Routes = [
 
   //  static path
   {
-    path: "testimonial", component: TesimoniallistComponent
+    path: "testimonial", component: TesimoniallistComponent,
+    resolve: { testimonialListData: ResolveService },
+    data: {
+      requestcondition: { source: "testimonial_view", condition: {} },
+      endpoint: "datalistwithouttoken"
+    }
   },
 
   /**End Frontend Routing**/
