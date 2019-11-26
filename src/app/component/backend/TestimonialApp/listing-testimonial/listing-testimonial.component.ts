@@ -30,6 +30,7 @@ export class ListingTestimonialComponent implements OnInit {
 
   this.activatedRoute.data.subscribe(resolveData => {
     this.testimonialListConfig.datasource = resolveData.testimonialList.res;
+    console.log('---------------kbtest-------------', this.testimonialListConfig.datasource );
     this.testimonialListConfig.jwtToken = this.cookieService.get('jwtToken');
     
   });
