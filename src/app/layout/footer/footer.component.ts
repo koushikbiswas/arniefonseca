@@ -131,6 +131,7 @@ newslatterViewModal(){
     const dialogGenreRef = this.dialog.open(NewslatterDialogComponent, {
       panelClass: ['modal-sm', 'infomodal'],
       //disableClose: true,
+      //  data: {name:'testname', email:'test@mail.com', phone:'999999999', company:'companyname'}
     });
 
     dialogGenreRef.afterClosed().subscribe(result => {
@@ -169,7 +170,7 @@ public myformnews: FormGroup
  
 constructor(public dialogRef: MatDialogRef<NewslatterDialogComponent>,
 
-   @Inject(MAT_DIALOG_DATA) public data: DialogData, public formbuilder:FormBuilder, public dialog:MatDialog, public apiService: ApiService) {
+   @Inject(MAT_DIALOG_DATA) public data: DialogData, public formbuilder:FormBuilder, public dialog:MatDialog, public apiService: ApiService, ) {
 
     this.myformnews = this.formbuilder.group({
         email: ['', Validators.compose([Validators.required, Validators.pattern(/^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/)])],
