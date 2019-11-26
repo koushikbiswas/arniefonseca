@@ -102,6 +102,27 @@
     .bottom_blog .item_wrapper { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; flex-wrap: wrap; -webkit-justify-content: center;-moz-justify-content: center;-ms-justify-content: center;justify-content: center; }
     .bottom_blog .item_wrapper .item { width: 48%; margin: 1%; }    
     .singleteam{height: auto !important;box-sizing: border-box; margin-bottom: 30px; width: calc(1/1*100% - (1 - 1/1)*30px) !important;}
+    
+    .homeblock2listssingleitem .mat-list-item-content{flex-wrap: wrap;}
+    .homeblock2listssingleitem span {flex: 1 1 100% !important;}
+    .homeblock2servcontent h2 {
+      margin-top: 10px!important;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      text-align: center;
+    }
+    .homeblock2servcontent p {
+      padding: 0px 0px !important;
+      text-align: center !important;
+    }
+    .homeblock2servcontent h2 span.homeblock2iconcontent {
+      text-align: center !important;
+      margin-left: auto !important;
+    }
+    .homeblock2servcontent button {
+      float: none !important;
+      margin: 10px 15px !important;
+    }
   }
         
   @media only screen and (max-width: 768px) {
@@ -129,26 +150,6 @@
     .bottom_blog .item_wrapper .item .item_images img {width: 100%;}
     .listsimgwholewrap img {height: auto; width: 100%;}
     .probidhomeblock2inner .mat-list .mat-list-item {padding: 10px;}
-    .homeblock2listssingleitem .mat-list-item-content{flex-wrap: wrap;}
-    .homeblock2listssingleitem span {flex: 1 1 100% !important;}
-    .homeblock2servcontent h2 {
-      margin-top: 10px!important;
-      padding-left: 0 !important;
-      padding-right: 0 !important;
-      text-align: center;
-    }
-    .homeblock2servcontent p {
-      padding: 0px 0px !important;
-      text-align: center !important;
-    }
-    .homeblock2servcontent h2 span.homeblock2iconcontent {
-      text-align: center !important;
-      margin-left: auto !important;
-    }
-    .homeblock2servcontent button {
-      float: none !important;
-      margin: 10px 15px !important;
-    }
   }
 
   @media only screen and (max-width: 540px) {

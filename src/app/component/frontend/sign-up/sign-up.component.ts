@@ -15,7 +15,6 @@ export class SignUpComponent implements OnInit {
   public loginRouteingUrl: any = 'login';
 
   public formTitle: any = 'Sign Up';
-  // public serverUrl: any = 'https://9v41bpikik.execute-api.us-east-1.amazonaws.com/production/api/';
   public serverUrl: any = this.apiService.serverUrlDemo;
   public addEndpoint: any = {
     endpoint:'addorupdatedata',
