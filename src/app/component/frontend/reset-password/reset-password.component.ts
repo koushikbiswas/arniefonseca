@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MetaService } from '@ngx-meta/core';
+import { ApiService } from 'src/app/api.service';
 
 @Component({
   selector: 'app-reset-password',
@@ -16,13 +17,7 @@ export class ResetPasswordComponent implements OnInit {
     source:'usermanagement'
   };
   
-  constructor(private readonly meta: MetaService) {
-    
-    // this.meta.setTitle('Reset Password dynamic');
-    // this.meta.setTag('og:description', 'This is dynamic description');
-    // this.meta.setTag('og:title', 'This is dynamic title with meta og ');
-    // this.meta.setTag('og:type', 'website');
-    // this.meta.setTag('og:image', 'https://upload.wikimedia.org/wikipedia/commons/f/f8/superraton.jpg');
+  constructor(private readonly meta: MetaService, public apiService: ApiService) {
 
     this.meta.setTitle('Arniefonseca - Reset Password');
     this.meta.setTag('og:description', '');

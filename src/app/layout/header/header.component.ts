@@ -27,7 +27,8 @@ export class HeaderComponent implements OnInit {
   }
 
   public userCookies: any;
-public user_full_name: any = '';
+  public user_full_name: any = '';
+  public token:any='';
    
   constructor(public router: Router, public cookieService: CookieService, public dialog: MatDialog, public activeroute: ActivatedRoute) {
     console.log(router.url)
@@ -40,6 +41,13 @@ public user_full_name: any = '';
    }
 
   ngOnInit() {
+    this.token=this.cookieService.get('jwtToken');
+  }
+  
+  logOut() {
+    this.cookieService.deleteAll();
+    this.router.navigateByUrl('/');
+    console.log("logout");
   }
 
   openDialog(): void {
