@@ -28,7 +28,7 @@ export class BkHeaderComponent implements OnInit {
   toggleRightSidenav() {
     this.toggleActive = !this.toggleActive;
     this.sidenav.toggle();
-    console.log('Clicked');
+    // console.log('Clicked');
     
     
     
@@ -46,7 +46,7 @@ export class BkHeaderComponent implements OnInit {
   logOut() {
     this.cookieService.deleteAll();
     this.router.navigateByUrl('/');
-    console.log("logout");
+    // console.log("logout");
   }
 
 }

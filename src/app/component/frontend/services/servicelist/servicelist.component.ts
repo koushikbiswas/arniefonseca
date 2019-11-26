@@ -48,7 +48,7 @@ export class ServicelistComponent implements OnInit {
 
   showMoreFunc(){
     this.indexval = this.indexval + 3;   
-    console.log(this.indexval);
+    // console.log(this.indexval);
   }
 
 }

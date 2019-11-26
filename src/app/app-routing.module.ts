@@ -125,7 +125,7 @@ const routes: Routes = [
     component: TesimonialComponent,
     resolve: { testimonialListData: ResolveService },
     data: {
-      requestcondition: { source: "testimonals", condition: {} },
+      requestcondition: { source: "testimonal", condition: {} },
       endpoint: "datalistwithouttoken"
     }
   },
@@ -196,6 +196,11 @@ const routes: Routes = [
   { path: 'seminars', component: SeminarsComponent },
   { path: 'workshops', component: WorkshopsComponent },
   { path: 'speaker-engagements', component: SpeakerEngagementsComponent },
+
+  { path: 'seminars-detail', component: SeminarsDetailComponent },
+  { path: 'workshop-detail', component: WorkshopDetailComponent },
+  { path: 'speaker-engagements-detail', component: SpeakerEngagementsDetailComponent },
+
   { path: 'affiliate-admin', component: AffiliateComponent },
   { path: 'gallery-admin', component: GalleryAdminComponent },
 
