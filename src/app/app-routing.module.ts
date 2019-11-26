@@ -33,6 +33,12 @@ import { SeminarsComponent } from './component/frontend/events/seminars/seminars
 import { WorkshopsComponent } from './component/frontend/events/workshops/workshops.component';
 import { SpeakerEngagementsComponent } from './component/frontend/events/speaker-engagements/speaker-engagements.component';
 
+
+import { WorkshopDetailComponent } from './component/frontend/events/workshop-detail/workshop-detail.component';
+import { SeminarsDetailComponent } from './component/frontend/events/seminars-detail/seminars-detail.component';
+import { SpeakerEngagementsDetailComponent } from './component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component';
+
+
 /**End Frontend Routing**/
 
 /**Backend Routing**/
@@ -90,6 +96,8 @@ import { AddEditManageSpeakerEngagementComponent } from './component/backend/eve
 
 import { ManageWorkshopListingComponent } from './component/backend/events/manage-workshop/manage-workshop-listing/manage-workshop-listing.component';
 import { AddEditManageWorkshopComponent } from './component/backend/events/manage-workshop/add-edit-manage-workshop/add-edit-manage-workshop.component';
+
+
 
 
 import { from } from 'rxjs';
@@ -161,6 +169,10 @@ const routes: Routes = [
   { path: 'commission-report', component: CommissionReportComponent },
   // { path: 'testimonial-lists-admin', component: ListingTestimonialComponent },
   { path: 'customer-list-admin', component: CustomerListComponent },
+
+  { path: 'workshop-detail', component: WorkshopDetailComponent },
+  { path: 'seminars-detail', component: SeminarsDetailComponent },
+  { path: 'speaker-engagements-detail', component: SpeakerEngagementsDetailComponent },
   
   { path: 'testimonial/add', component: AddeditTestimonialComponent },
   {

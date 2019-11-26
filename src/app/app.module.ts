@@ -192,6 +192,7 @@ import { SpeakerEngagementsDetailComponent } from './component/frontend/events/s
     AddEditManageWorkshopComponent,
     ManageWorkshopListingComponent,
     NewslatterDialogComponent,
+    
     WorkshopDetailComponent,
     SeminarsDetailComponent,
     SpeakerEngagementsDetailComponent
