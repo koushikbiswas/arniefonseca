@@ -70,7 +70,7 @@ export class BlogdetailComponent implements OnInit {
       this.activatedRoute.data.forEach((data: any) => {
         this.blog = data.blogCatList.res;
         //console.log('>>>>>>>kb>>>>>>>',this.blog)  
-        this.blog_img=this.blog[0].blogs_image[0].basepath+this.blog[0].blogs_image[0].image;
+        this.blog_img=this.blog[0].blogs_image[0];
         
       })
  
