@@ -67,6 +67,8 @@
     .topsocialblock .mat-list{display:inline-flex;justify-content:center!important}
     .headerbottom .mainwrappercontent{width:100%!important}  
     .contact-form .main-div .from.mat-card{margin:4em auto!important;width:90%!important;padding:15px!important}
+    .adm_inner_banner .adm_inner_para {text-align: left; width:100%;}
+    .generalcls.blog .adm_inner_banner .adm_inner_title.mat-card-title {text-align: left;}
   }
 
   @media only screen and (max-width:991px) {
@@ -152,7 +154,41 @@
   @media only screen and (max-width: 540px) {
     .innerpagebanner.mat-card h1 {font-size: 36px;}
     .infoblock .mat-list-base {flex-wrap: wrap;}
-    .infoblock .mat-list .mat-list-item .mat-list-item-content{flex-wrap: wrap; justify-content: center;}
+    .infoblock .mat-list .mat-list-item .mat-list-item-content{flex-wrap: wrap; justify-content: center;}    
+    .singleteam .mat-list-item-content {
+        flex-wrap:wrap;
+    }
+    .teamimg {
+        margin: 0;
+        padding: 10px;
+        margin-right: 10px;
+        box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        overflow: hidden;
+        height: 250px;
+        position: relative;
+    }
+
+    .teamimg img {
+        -o-object-fit: cover;
+        object-fit: cover;
+        width: 100% !important;
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: auto !important;
+    }
+    .teamcontent h2 {
+        text-align: center;
+    }
+    .teamcontent p{
+      text-align: center;
+    }
+    .teamcontent .btnwhite {
+        float: none;
+    }
   }
 
   @media screen and (max-width: 480px){

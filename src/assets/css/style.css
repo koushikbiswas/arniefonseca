@@ -868,8 +868,7 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
 
 /* .adm_inner_banner{background: url("../images/managetype_banner.jpg") no-repeat center center;
   background-size: cover; border-top-left-radius: 10px; border-top-right-radius: 10px; padding: 50px; padding-right: 45%; } */
-  .adm_inner_banner{background: #000;
-    background-size: cover; border-top-left-radius: 10px; border-top-right-radius: 10px; padding: 50px; padding-right: 45%; }
+  .adm_inner_banner{background: #000; display: block !important; width: inherit !important; background-size: cover; border-top-left-radius: 10px; border-top-right-radius: 10px; padding: 50px; padding-right: 45%; }
   .generalcls.blog .adm_inner_banner .adm_inner_title.mat-card-title{ font-size: 48px !important; color: #fff !important; font-family: "HelveticaBold"; text-transform: uppercase !important;text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);  }
     .adm_inner_banner .adm_inner_para{ font-size: 24px; color: #ffffff; font-family: "HelveticaBold"; margin: 0;text-shadow: 3px 2px 3px rgba(255,255,255,.2); width: 80%;}
 /* 

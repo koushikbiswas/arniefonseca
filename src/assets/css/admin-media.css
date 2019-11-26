@@ -1,15 +1,19 @@
     @media only screen and (max-width: 1620px) {
-    .topmenulist .navigation-left .nav-item .mat-list-item-content {padding: 0 4px;}		
+    /* .topmenulist .navigation-left .nav-item .mat-list-item-content {padding: 0 4px;}		 */
     }	
 
     @media only screen and (max-width: 1540px) {		
-    .topmenulist .navigation-left .nav-item .mat-list-item-content {padding: 0 0px;}		
+    /* .topmenulist .navigation-left .nav-item .mat-list-item-content {padding: 0 0px;}		 */
     }
     
     @media only screen and (max-width: 1350px) {
     .topblock .mat-list .mat-list-item .mat-list-item-content button{margin:0;padding:0 10px}
     .topmenulist .navigation-left a {font-size: 12px; padding: 0px 0px;}
     .admcls .header .toolbar-row .logo {width: 150px;padding: 12px 13px;}
+    .tablediv .searchbar {height: auto;}
+    .bloglists .tablediv .searchbar, .blogcatlists .tablediv .searchbar {padding: 9px !important;}
+    .tablediv .searchbar {flex-wrap: wrap;}
+    .tablediv .searchbar .mat-form-field {margin: 4px !important;}
     }
 
     @media only screen and (max-width: 1300px) {		
@@ -17,11 +21,11 @@
     }
 
     @media only screen and (max-width: 1280px) {
-    .topmenulist .navigation-left .nav-item .mat-list-item-content {padding: 0 6px;}
+    /* .topmenulist .navigation-left .nav-item .mat-list-item-content {padding: 0 6px;} */
     }
 
     @media only screen and (max-width: 1199px) {
-    .tablediv {margin-top: 0;}		
+    .tablediv {margin-top: 0 !important;}		
     .bloglists .tablediv .searchbar, .blogcatlists .tablediv .searchbar {padding-right: 9px !important; background: #70daee;}		
     .tablediv .searchbar{padding-right: 9px !important; background: #70daee;}		
     .mat-form-field-appearance-legacy .mat-form-field-wrapper {padding-bottom: 0 !important;}
@@ -42,7 +46,7 @@
         .tablediv table td.tablebuttondiv{ padding-left: 0px !important;}		
         .tablediv table td.empycell{border:0px !important;border-bottom: 0px solid #ffffff !important; display: none;}		
         .tablediv table tr:last-child td.empycell {border-bottom: 0px solid #ddd !important;}		
-        .tablediv table tr:last-child td {border-bottom: 0px solid #ddd !important;}		
+        /* .tablediv table tr:last-child td {border-bottom: 0px solid #ddd !important;}		 */
         .newcheckboxdiv {text-align: left; float: right;}		
         .tablediv table th, .tablediv table td {border-bottom: 1px solid #646464 !important;}		
         .tablediv table td {padding: 10px;}		
@@ -57,7 +61,7 @@
         .tablediv table caption {font-size: 1.3em;}		
         .tablediv table thead {border: none;clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px;}		
         .tablediv table tr {border-bottom: 0px solid #ddd; width: 100%; margin-bottom: .625em;}		
-        .tablediv table td {border-bottom: 1px solid #ddd; display: inline-block; width: 100%;font-size: 13px; text-align: right; padding-left: 25%;}		
+        .tablediv table td {border-bottom: 1px solid #ddd; display: block; font-size: 13px; text-align: right; padding-left: 25%;}		
         .adminlisttable .whitebtnlists {text-align: right!important;}		
         .tablediv table td button, .tablediv table td button:hover{float: right;}		
         .tablediv table td:first-child::before {content: attr(data-label) !important; float: left;  font-weight: bold; text-transform: uppercase; text-align: left; margin-left: -18px;		
