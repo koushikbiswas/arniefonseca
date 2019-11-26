@@ -19,13 +19,11 @@
         </mat-card-content>
     </span>
     <span class="mainwrappercontent pt-30">                
-        <!-- <img src="../../../../assets/images/testimonial_blockimg1.jpg" style="width: 100%; display: block; margin: 0; padding: 0;"> -->
 
         <mat-list role="list">
             <!----START SINGLE TESTIMONIAL-->
 
                 <mat-list-item role="listitem" class="testimonialserv" *ngFor="let testmon of TestimonialListArray | slice:0:indexval; let i=index">
-                <!-- <mat-list-item role="listitem" class="testimonialserv"> -->
                     <mat-card>
                         <span class="testiimgwarpper">
                             <span class="testiimgwarpper-main">
@@ -48,8 +46,7 @@
                                     <img class="quoteendicon" src="../../../../assets/images/quoteend-icon.png">
                                 </p>
                            
-                            <a *ngIf="testmon.description != '' && testmon != '' && testmon.description.length >= 254 " [ngClass]="{'hide':testmon._id == p_id}" (click)="showmore(testmon)"> read more</a>
-                            <!-- <a> read more</a> -->
+                            <a *ngIf="testmon.description != '' && testmon != '' && testmon.description.length >= 254 " [ngClass]="{'hide':testmon._id == p_id}" (click)="showmore(testmon)"> read more</a>                        
                             </span>
                             
                            </mat-card-content>
@@ -74,7 +71,6 @@
 
             </mat-list>
             <button *ngIf="indexval.length > indexval" (click)="showMoreFunc()" mat-stroked-button class="btngeneral btngray">Load more</button>
-            <!-- <button (click)="showMoreFunc()" mat-stroked-button class="btngeneral btngray">Load more</button> -->
     </span> 
 </mat-card>
 

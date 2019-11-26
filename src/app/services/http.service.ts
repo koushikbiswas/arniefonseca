@@ -20,7 +20,7 @@ export class HttpService {
   public uploaderror: any = '';
   public accesstoken: any = this.cookieService.get('jwtToken');
   public fileservername: any = [];
-  public serverUrl: any = this.apiService.serverUrlDemo;
+  public serverUrl: any = this.apiService.serverUrl;
   public addendpointUrl: any;
   public updateendpointUrl: any;
   public deletesingle_endpointUrl: any;

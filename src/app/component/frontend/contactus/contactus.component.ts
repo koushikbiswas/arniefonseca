@@ -11,7 +11,7 @@ export class ContactusComponent implements OnInit {
   
   public formTitle: any = "Contact Us";      // Enter the Forl Title
   public pageUrl: any = 'home';
-  public serverUrl: any = this.apiService.serverUrlDemo;
+  public serverUrl: any = this.apiService.serverUrl;
   public addEndpoint: any = {
     endpoint:'addorupdatedata',
     source:'contactusForm'
@@ -21,7 +21,7 @@ export class ContactusComponent implements OnInit {
 
   constructor(private readonly meta: MetaService, public apiService: ApiService) {
 
-    //console.log('--koushikcontact-----', this.apiService.serverUrlDemo);    
+    //console.log('--koushikcontact-----', this.apiService.serverUrl);    
 
     this.meta.setTitle('Arniefonseca - Contact Us');
     this.meta.setTag('og:description', '');

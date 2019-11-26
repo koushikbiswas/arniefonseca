@@ -11,7 +11,7 @@ export class ListingBlogsComponent implements OnInit {
 
     //Blogs Lib List
     public blogListConfig: any = {
-      apiBaseUrl: this.apiService.serverUrlDemo,
+      apiBaseUrl: this.apiService.serverUrl,
       listEndPoint: "datalist",
       datasource: [],
       tableName: "blogs",

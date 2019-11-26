@@ -15,7 +15,7 @@ export class SignUpComponent implements OnInit {
   public loginRouteingUrl: any = 'login';
 
   public formTitle: any = 'Sign Up';
-  public serverUrl: any = this.apiService.serverUrlDemo;
+  public serverUrl: any = this.apiService.serverUrl;
   public addEndpoint: any = {
     endpoint:'addorupdatedata',
     source:'users'
