@@ -11,7 +11,7 @@ export class DashboardComponent implements OnInit {
 
   public formTitle: any = "Contact Us Listing Page";
   // public serverUrl: any = 'https://9v41bpikik.execute-api.us-east-1.amazonaws.com/production/api/';
-  public serverUrl: any = this.apiService.serverUrlDemo;
+  public serverUrl: any = this.apiService.serverUrl;
   public getDataUrl: any = {
     endpoint: 'datalist',
     source: 'contactusForm'
@@ -29,7 +29,7 @@ export class DashboardComponent implements OnInit {
   constructor(private readonly meta: MetaService, public apiService: ApiService) {
     
 
-    // console.log('--koushik dashboard-----', this.apiService.serverUrlDemo);    
+    // console.log('--koushik dashboard-----', this.apiService.serverUrl);    
 
     this.meta.setTitle('About us dynamic');
     this.meta.setTag('og:description', 'This is dynamic decription ');

@@ -12,7 +12,7 @@ export class ListingBlogcatComponent implements OnInit {
 
   //Listing for blog category
   public blogListConfig: any = {
-    apiBaseUrl:this.apiService.serverUrlDemo,
+    apiBaseUrl:this.apiService.serverUrl,
     listEndPoint: "datalist",
     datasource: "",
     tableName: "blog_category",

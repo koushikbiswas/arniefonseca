@@ -12,7 +12,7 @@ import {environment } from '../environments/environment';
 })
 export class ApiService {
 
-  public serverUrlDemo =  environment["API_URL"];
+  public serverUrl:any =  environment["API_URL"];
   public nodesslurl =  environment["nodesslurl"];
   public uploadurl =  environment["uploadurl"];
   public base64encode =  environment["base64encode"];
@@ -28,7 +28,7 @@ export class ApiService {
   public uploaderror: any = '';
   public accesstoken:any = this.cookieService.get('jwtToken');
   fileservername: any = [];
-  serverUrl: any;
+  // serverUrl: any;
   addendpointUrl: any;
   uploadEndpointUrl:any; //souresh
   updateendpointUrl: any;
@@ -55,7 +55,7 @@ export class ApiService {
   constructor(private _http: HttpClient, private cookieService :CookieService) {
 
 
-      // this._http.get(this.serverUrlDemo + 'gettemptoken').subscribe((res: any)=>{
+      // this._http.get(this.serverUrl + 'gettemptoken').subscribe((res: any)=>{
       //   this.tokenVal = res;
       //   console.log('token')
       //   console.log(this.tokenVal)
@@ -280,7 +280,7 @@ getDataForDatalist(endpoint: any) {
   };
 
   // this.isTokenExpired()
-  var result = this._http.post(this.serverUrlDemo + 'datalist', endpoint, httpOptions).pipe(map(res => res));
+  var result = this._http.post(this.serverUrl + 'datalist', endpoint, httpOptions).pipe(map(res => res));
 
   return result;
 }
@@ -294,7 +294,7 @@ getDatalist(requestdata: any) {
       'Authorization': this.accesstoken
     })
   };
-  var result = this._http.post(this.serverUrlDemo + requestdata.endpoint, JSON.stringify(requestdata), httpOptions).pipe(map(res => res));
+  var result = this._http.post(this.serverUrl + requestdata.endpoint, JSON.stringify(requestdata), httpOptions).pipe(map(res => res));
   return result;
 
 
@@ -306,12 +306,12 @@ getDatalistWithToken(requestdata: any, newdata: any){
         'Authorization': newdata.token
       })
     };
-    var result = this._http.post(this.serverUrlDemo + requestdata.endpoint, JSON.stringify(requestdata), httpOptions).pipe(map(res => res));
+    var result = this._http.post(this.serverUrl + requestdata.endpoint, JSON.stringify(requestdata), httpOptions).pipe(map(res => res));
     return result;
 }
 
 getTempToken() {
-  var result = this._http.get(this.serverUrlDemo + 'gettemptoken').pipe(map(res => res));
+  var result = this._http.get(this.serverUrl + 'gettemptoken').pipe(map(res => res));
   return result;
 }
 /*************** Added by himadri end here ***************/ 
@@ -325,7 +325,7 @@ getDatalistForResolve(requestdata: any) {
   };
   console.log(requestdata)
   
-  var result = this._http.post(this.serverUrlDemo + requestdata.endpoint, JSON.stringify(requestdata.requestcondition), httpOptions).pipe(map(res => res));
+  var result = this._http.post(this.serverUrl + requestdata.endpoint, JSON.stringify(requestdata.requestcondition), httpOptions).pipe(map(res => res));
   return result;
 
 
@@ -416,12 +416,12 @@ forgetPassword(requestdata: any) {
         'Authorization': this.accesstoken
       })
     };
-    var result = this._http.post(this.serverUrlDemo + endpoint, JSON.stringify(requestdata), httpOptions).pipe(map(res => res));
+    var result = this._http.post(this.serverUrl + endpoint, JSON.stringify(requestdata), httpOptions).pipe(map(res => res));
     return result;
   }
 
   gettemptoken(){
-    var result = this._http.get(this.serverUrlDemo + 'gettemptoken').pipe(map(res=>res));
+    var result = this._http.get(this.serverUrl + 'gettemptoken').pipe(map(res=>res));
     return result;
   }
 
