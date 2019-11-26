@@ -24,7 +24,8 @@
     router.url == '/workshops-detail' || 
     router.url == '/speaker-engagements'  || 
     router.url == '/speaker-engagements-detail' || 
-    activeroute.snapshot.routeConfig.path == 'blogdetail/:_id'
+    activeroute.snapshot.routeConfig.path == 'blogdetail/:_id' ||
+    router.url ==='/add-edit-newsletter'
   ">
   <span class="scroll-to-top" [ngClass]="{ 'show-scrollTop': windowScrolled }">
     <a (click)="scrollToTop()">
