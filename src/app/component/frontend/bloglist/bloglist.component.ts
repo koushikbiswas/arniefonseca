@@ -99,7 +99,7 @@ panelOpenState = false;
 
 //***********blog list view in blog detail************//
   blogdetail(val:any){
-    console.log(val)
+    // console.log(val)
     this.router.navigateByUrl('/blogdetail/' +val)
   }
   
@@ -110,13 +110,13 @@ panelOpenState = false;
 
     this.activatedRoute.data.forEach((data: any) => {
       this.blogList = data;
-       console.log('>>>>>>>>>>>>>>',this.blogList)
+      //  console.log('>>>>>>>>>>>>>>',this.blogList)
 
     })
     
    //****total blog list****//
           this.bloglisting = this.blogList.blogCatList.blogs
-          console.log('---------------',this.bloglisting)
+          // console.log('---------------',this.bloglisting)
           
 
 
@@ -138,10 +138,10 @@ panelOpenState = false;
 
      let url:any;
      url="https://www.youtube.com/embed/";
-      console.log('video url....>',url+val);
+      // console.log('video url....>',url+val);
       this.safeSrc =  this.sanitizer.bypassSecurityTrustResourceUrl(url + val);
       
-      console.log('>>>>>>>>>>>>>>>>>>',this.safeSrc)
+      // console.log('>>>>>>>>>>>>>>>>>>',this.safeSrc)
       const dialogRef = this.dialog.open(CommonVideoModalComponent, {
         panelClass:['modal-md','success-modal'],       
         width:'450px',
@@ -156,7 +156,7 @@ panelOpenState = false;
 //*********** sub blog list view in blog detail************//
     blog(val:any){
       this.blogcat = val._id;
-      this.router.navigateByUrl('/blogdetail/'+val._id)
+      // this.router.navigateByUrl('/blogdetail/'+val._id)
     }
 
 //*********** end sub blog list view in blog detail************//

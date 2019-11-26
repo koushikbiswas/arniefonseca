@@ -39,7 +39,7 @@ export class FooterComponent implements OnInit {
     const dialogRef = this.dialog.open(DialogTermsDialog);
 
     dialogRef.afterClosed().subscribe(result => {
-      console.log(`Dialog result: ${result}`);
+      // console.log(`Dialog result: ${result}`);
     });
   }
 
@@ -47,7 +47,7 @@ export class FooterComponent implements OnInit {
     const dialogRef = this.dialog.open(DialogPrivacyDialog);
 
     dialogRef.afterClosed().subscribe(result => {
-      console.log(`Dialog result: ${result}`);
+      // console.log(`Dialog result: ${result}`);
     });
   }
 
@@ -87,10 +87,11 @@ export class FooterComponent implements OnInit {
 
 
     doSubmit() {
-        console.log('ok');
+        // console.log('ok');
         this.data = this.myform.value;
         console.log(this.data);
        this.newslatterViewModal();
+
         for (let i in this.myform.controls) {
             this.myform.controls[i].markAsTouched();
         }
@@ -102,7 +103,7 @@ export class FooterComponent implements OnInit {
 
                     let result: any = {};
                     result = res;
-                    console.log(result);
+                    // console.log(result);
                     if (result.status == 'success') {
                       /*  this.newslatterViewModal();*/
                         this.myform.reset();

@@ -3,55 +3,21 @@
     <owl-carousel [options]="carouselOptions" [items]="TestimonialListArray" [carouselClasses]="['owl-theme', 'row', 'sliding']">
       <!----START SINGLE TESTIMONIAL-->
 
-        <!-- <div *ngFor="let image of TestimonialListArray;let i= index"> -->
-        <div>
+        <div *ngFor="let image of TestimonialListArray;let i= index">
           <span class="slide-image-wrapper">
-            <!-- <img class="slide-image" src="{{image.image}}" > -->
             <span class="slide-image-wrapper-main"> 
-                <img class="slide-image" src="../../../../assets/images/testimonial-img1.jpg" >
+                <img class="slide-image" src="{{image.testimonial_img}}" >
             </span>            
           </span>
           <span class="slide-text" (click)="showBut()">
               <p class="quatation demo cursor">
                 <!-- <span [innerHtml]="image.testimonial"></span> -->
-                <img class="quotestarticon" src="../../../../assets/images/quotestart-icon-yellow.png"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+                <img class="quotestarticon" src="../../../../assets/images/quotestart-icon-yellow.png"><span [innerHtml]="image.description"></span>
               </p>    
           </span>
         </div>  
         <!----END SINGLE TESTIMONIAL-->
 
-        <!----START SINGLE TESTIMONIAL-->
-        <div>
-            <span class="slide-image-wrapper">
-              <!-- <img class="slide-image" src="{{image.image}}" > -->
-              <span class="slide-image-wrapper-main">
-                <img class="slide-image" src="../../../../assets/images/testimonial-img2.jpg" >
-              </span>
-            </span>
-            <span class="slide-text" (click)="showBut()">
-                <p class="quatation demo cursor">
-                  <!-- <span [innerHtml]="image.testimonial"></span> -->
-                  <img class="quotestarticon" src="../../../../assets/images/quotestart-icon-yellow.png"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
-                </p>    
-            </span>
-          </div>
-          <!----END SINGLE TESTIMONIAL-->
-
-          <!----START SINGLE TESTIMONIAL-->
-          <div>
-              <span class="slide-image-wrapper">
-                <!-- <img class="slide-image" src="{{image.image}}" > -->
-                <span class="slide-image-wrapper-main">
-                  <img class="slide-image" src="../../../../assets/images/testimonial-img3.jpg" >
-                </span>
-              </span>
-              <span class="slide-text" (click)="showBut()">
-                  <p class="quatation demo cursor">
-                    <!-- <span [innerHtml]="image.testimonial"></span> -->
-                    <img class="quotestarticon" src="../../../../assets/images/quotestart-icon-yellow.png"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
-                  </p>    
-              </span>
-            </div>  
-            <!----END SINGLE TESTIMONIAL-->
+        
       </owl-carousel>
 

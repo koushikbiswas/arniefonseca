@@ -2,472 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6bba0bd0-3d33-4df9-bc5d-42627e12b863" name="Default Changelist" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/component/frontend/events/seminars-detail/seminars-detail.component.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/component/frontend/events/seminars-detail/seminars-detail.component.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/component/frontend/events/seminars-detail/seminars-detail.component.spec.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/component/frontend/events/seminars-detail/seminars-detail.component.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component.spec.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/component/frontend/events/workshop-detail/workshop-detail.component.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/component/frontend/events/workshop-detail/workshop-detail.component.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/component/frontend/events/workshop-detail/workshop-detail.component.spec.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/component/frontend/events/workshop-detail/workshop-detail.component.ts" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/3rdpartylicenses.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/Helvetica-Bold.a28460eab33a77368bcd.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/Helvetica-Bold.d3462480d213733cae92.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/Helvetica-Bold.d5a2c1bd209c1f60eb47.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/Helvetica-Bold.e9917ff874dd76c65df5.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/Helvetica-Bold.f1cc38ca96ff2e46e014.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/Helvetica-Normal.3e08ce384bc7248e6be1.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/Helvetica-Normal.ba814425bae745894ece.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/Helvetica-Normal.c6aee183dcde6e294988.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/Helvetica-Normal.e4bea87ea9d58c6e83a5.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/Helvetica-Normal.f1395e1814742ba760b4.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/MyriadPro-Bold_gdi.0ecacb6c92a6dcf51b28.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/MyriadPro-Bold_gdi.4a2801875b7491b49cf1.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/MyriadPro-Bold_gdi.61ea99e6d78b0e9266f8.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/MyriadPro-Bold_gdi.c5868d90263de9bb3452.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/MyriadPro-Regular_gdi.ba900f4ac4e34939c717.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/MyriadPro-Regular_gdi.ddb8b233396ca78600b0.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/MyriadPro-Regular_gdi.e0892ba1d751d6c84ce5.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/MyriadPro-Regular_gdi.ea1ada8aff40cd6f1d40.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/MyriadPro-Semibold_gdi.1ab0ff0a243091d3d91f.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/MyriadPro-Semibold_gdi.3bd5eb3e94d686b5819a.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/MyriadPro-Semibold_gdi.d6ac7c26fc4f13258bda.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/MyriadPro-Semibold_gdi.eb51e5945b50cefa9004.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/Orbitron-Bold.43a726fee1be0bd1e2b0.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/Orbitron-Bold.6d9f93698bad9cb9325f.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/Orbitron-Bold.82dd164af0d8b645f457.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/Orbitron-Bold.ac9fab68ae208a5b7b48.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/Orbitron-Bold.becbb03eb3de691ca9a5.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/aboutusbg.1c519dad4fa99c2ab79c.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/ami_amin_block1bg1.571fe876e7e70a897c5d.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/ami_amin_blockbg1.5e1cb78d8a2a9f35f204.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/ami_amin_blockbg2.40b53327355865694b67.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/ami_amin_blockcon2.0ec71cfecca5dc31359b.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/ami_amin_blockcon2_textarrow.9e61af35636bd2e1651c.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/ami_amin_blockcon4_icon1.91f458411e4bb4af84b9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/ami_amin_blockcon4_icon2.739a593de44c4fc9ebe7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/ami_amin_blockcon4_icon4.c2ec24255d964c0f6a23.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/css/admin-media.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/css/admin-style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/HELP-US-OUT.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/css/font-awesome.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/css/font-awesome.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/css/font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/fonts/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/fonts/fontawesome-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/fonts/specimen_files/grid_12-825-55-15.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/fonts/specimen_files/specimen_stylesheet.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/less/animated.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/less/bordered-pulled.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/less/core.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/less/extras.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/less/fixed-width.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/less/font-awesome.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/less/icons.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/less/larger.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/less/list.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/less/mixins.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/less/path.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/less/rotated-flipped.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/less/screen-reader.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/less/spinning.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/less/stacked.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/less/variables.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/scss/_animated.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/scss/_bordered-pulled.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/scss/_core.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/scss/_extras.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/scss/_fixed-width.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/scss/_icons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/scss/_larger.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/scss/_list.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/scss/_mixins.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/scss/_path.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/scss/_rotated-flipped.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/scss/_screen-reader.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/scss/_spinning.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/scss/_stacked.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/scss/_variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/scss/font-awesome.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/Helvetica-Bold.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/Helvetica-Bold.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/Helvetica-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/Helvetica-Bold.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/Helvetica-Bold.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/Helvetica-Normal.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/Helvetica-Normal.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/Helvetica-Normal.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/Helvetica-Normal.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/Helvetica-Normal.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/MyriadPro-Bold.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/MyriadPro-Bold_gdi.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/MyriadPro-Bold_gdi.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/MyriadPro-Bold_gdi.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/MyriadPro-Bold_gdi.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/MyriadPro-Regular.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/MyriadPro-Regular_gdi.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/MyriadPro-Regular_gdi.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/MyriadPro-Regular_gdi.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/MyriadPro-Regular_gdi.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/MyriadPro-Semibold.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/MyriadPro-Semibold_gdi.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/MyriadPro-Semibold_gdi.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/MyriadPro-Semibold_gdi.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/MyriadPro-Semibold_gdi.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/Orbitron-Bold.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/Orbitron-Bold.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/Orbitron-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/Orbitron-Bold.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/Orbitron-Bold.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/icomoon.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/icomoon.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/icomoon.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/icomoon.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/icomoon.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/opensans-regular-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/opensans-regular-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/opensans-regular-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/opensans-regular-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/opensans-regular-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/opensans-semibold-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/opensans-semibold-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/opensans-semibold-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/opensans-semibold-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/opensans-semibold-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/specimen_files/grid_12-825-55-15.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/specimen_files/specimen_stylesheet.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/aboutus-img1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/aboutus-img2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/aboutusbg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/adm-dashboard-img1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/adm-dashboard-img2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/adm-dashboard-img3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/adm-dashboard-img4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/adm-dashboard-img5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/admin_dashboard1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/admin_dashboard2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/admin_dashboard3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/admin_link1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/admin_link1_hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/admin_link2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/admin_link2_hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/admin_link3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/admin_link3_hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/admin_link4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/admin_link4_hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/admin_link5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/admin_link5_hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/admin_link6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/admin_link6_hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/advance-inventory-search.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/advanceinventorybg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/advanceinventorysearchbackend-dashboard-img1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/affiliate-admin-img1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/affiliate-dashboard-img1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/affiliate-dashboard-img2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/affiliate-dashboard-img3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/affiliate-dashboard-img4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/ami_amin_block1bg1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/ami_amin_blockbg1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/ami_amin_blockbg2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/ami_amin_blockcon2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/ami_amin_blockcon2_textarrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/ami_amin_blockcon3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/ami_amin_blockcon4_icon1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/ami_amin_blockcon4_icon2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/ami_amin_blockcon4_icon4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/ami_demo_img1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/analytics-blur-business-590045.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/android-chrome-192x192.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/android-chrome-48x48.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/android-chrome-512x512.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/apple-touch-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/arnehome-slide1img.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/audioicon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/background.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/basic-inventory-search-home.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/basic-inventory-search.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/basicinventorybg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/basicinventorysearchbackend-dashboard-img1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/basicsearchinventorybg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/blog-block1img.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/blog-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/blogbg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/blogbgadmin.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/blogicon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/bloglistimg1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/bloglistimg2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/bloglistimg3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/bloglistimg4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/blogmang-dashboard-img1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/bookanappointment-dashboard-img1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/booked-events.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/bookingreport-dashboard-img1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/borderleftimg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/browserconfig.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/clockicon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/commissionreport-dashboard-img1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/contacticon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/contactusbg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/contactusimageleft.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/contactusmainimg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/contactuswrapperbg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/createnewinventory-dashboard-img1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/cus-dashboard-img1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/cus-dashboard-img2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/cus-dashboard-img3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/cus-dashboard-img4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/cus-dashboard-img5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/customerlists-admin-img1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/dashboard_menuhover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/dashboard_menuhover2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/dblockimg1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/doublearrowicon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/employeetrainingbanner2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/employeetrainingbanner3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/employeetrainingicon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/event-user-img1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/favicon-16x16.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/favicon-32x32.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/footerbgimg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/gallery-admin-img.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/gallery-img1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/gallery-img10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/gallery-img11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/gallery-img12.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/gallery-img2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/gallery-img3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/gallery-img4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/gallery-img5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/gallery-img6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/gallery-img7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/gallery-img8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/gallery-img9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/getintouchbg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/getintouchimgleft.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/homeblock2icon1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/homeblock2icon2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/homeblock2icon3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/homeblock2icon4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/homeblock2itemimg1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/homeblock2itemimg2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/homeblock2itemimg3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/homeblock2itemimg4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/icon-comment.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/icon-dislike.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/icon-facebook.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/icon-instagram.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/icon-like.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/icon-linkedin.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/icon-twitter.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/iconlist1-icon1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/iconlist1-icon2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/iconlist1-icon3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/iconlist1-icon4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/iconlist1-icon5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/iconlist1-icon6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/imagegallery_blockimg1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/imagegallerybg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/leftbody_bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/listsbottomicon1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/listsbottomicon2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/listsbottomicon3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/loginicon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/logo-modal-pt.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/logomain.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/manageavail-dashboard-img1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/managecommission-dashboard-img1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/meetcoacharena-img1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/meetcoacharena-img2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/meetcoacharena-img3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/mstile-150x150.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/myappointment-dashboard-img1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/mycustomers-affiliate-img1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/mysalesrep-dashboard-img1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/mysalesrep-dashboard-img2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/mysalesrep-dashboard-img3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/mysalesrep-dashboard-img4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/newlettericon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/newsletter-dashboard-img1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/phoneicon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/phoneiconheader.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/preownedcarsicon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/pro-home-block1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/pro-home-block2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/pro-home-block3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/pro-home-block4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/pro-home-block5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/pro-home-block5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/pro-home-block6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/pro-home-block7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/pro-home-block8-ft.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/probidhomeblock2bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/quoteend-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/quotestart-icon-yellow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/quotestart-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/rep-dashboard-img1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/rep-dashboard-img2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/rep-dashboard-img3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/safari-pinned-tab.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/searchcarcion.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/searchlist-img.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/sellcarcion.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/seminars_blockimg1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/seminarsbannerbg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/service_blockimg1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/service_icon_style.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/servicebg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/servicelistbg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/servinfobg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/servinfobg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/site.webmanifest" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/slide1img-person.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/socialadvoworks-admindashboard-adminimg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/socialadvoworks-admindashboard-affiliateimg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/socialicon-fb.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/socialicon-insgram.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/socialicon-youtube.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/speakerengagements_blockimg1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/speakerengagementsbannerbg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/specialsicon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/team_blockimg1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/teambannerbg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/teamimg1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/teamimg2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/teamimg3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/teamimg4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/teamimg5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/teamimg6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/testimonial-img1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/testimonial-img2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/testimonial-img3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/testimonial-img4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/testimonial-img5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/testimonial_blockimg1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/testimonial_blockimg1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/testimonialbannerbg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/testimonialbg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/testimonialbg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/testimoniallists-dashboard-img1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/testimonialsicon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/videogallery_blockimg1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/videogallerybg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/videoicon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/whychooseusicon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/whychooseusimg1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/whychooseusimg2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/whychooseusimg3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/whychooseusimg4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/workshops_blockimg1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/workshopsbannerbg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/background.bce1f4a21233fa23e7de.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/basicsearchinventorybg.60aa3e6efb1248aaa470.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/blogbg.a205d09b63156008fa22.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/blogbgadmin.0eacc3d0e50bac6c5341.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/borderleftimg.8c6359dd876ae105c038.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/contactusbg.0068b189982001f24818.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/contactuswrapperbg.cf5ac02a9e598ddb4c89.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/employeetrainingbanner2.9c8a51d68a8847a4dbb0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/employeetrainingbanner3.d519e7bdc812b4cc9e42.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/employeetrainingicon.84ba99e73b0f86732ec0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/es2015-polyfills.bda95d5896422d031328.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/footerbgimg.cd1625bc296f3b5e4c7b.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/getintouchbg.041989c8bbf3266c752f.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/imagegallerybg.d7c217478be7f1d87da5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/leftbody_bg.dd25028e36f010915893.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/opensans-regular-webfont.2a6f0d57b4c776f107c9.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/opensans-regular-webfont.3fdf0b62ecb567e6444d.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/opensans-regular-webfont.9624dd10fdf28403c41f.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/opensans-regular-webfont.a9ee05eff0e880c14267.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/opensans-regular-webfont.ae45268d6078a4a80157.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/opensans-semibold-webfont.67633a5a3f06eccb5208.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/opensans-semibold-webfont.b45f18cd4a7f0175efc9.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/opensans-semibold-webfont.bbd2e07917e1f82949d1.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/opensans-semibold-webfont.f23bacb54efbce877e81.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/opensans-semibold-webfont.fecb73d6cc5f2d4d8833.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/owl.video.play.4a37f8008959c75f619b.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/polyfills.8bbb231b43165d65d357.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/runtime.26209474bfa8dc87a77c.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/scripts.d8598f2e9d7c5a30dc9c.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/seminarsbannerbg.d1e29623169a244adfd3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/servicelistbg.e7431d3ea3159de59725.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/servinfobg.454dbb13d50e79e3c185.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/speakerengagementsbannerbg.2548234e4c1557d6a456.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/teambannerbg.2caba84ee8645c9468be.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/testimonialbannerbg.ac1bc8e15d63b01cf5f7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/testimonialbg.3314ad6e50241a7591ac.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/videogallerybg.d7c217478be7f1d87da5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/workshopsbannerbg.7a9e76320255d5675d02.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/browser/assets/images/manage-seminars.jpg" afterPath="$PROJECT_DIR$/dist/browser/assets/images/manage-seminars.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/browser/assets/images/manage-speaker-engagements.jpg" afterPath="$PROJECT_DIR$/dist/browser/assets/images/manage-speaker-engagements.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/browser/assets/images/manage-workshops.jpg" afterPath="$PROJECT_DIR$/dist/browser/assets/images/manage-workshops.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/browser/assets/css/media.css" afterPath="$PROJECT_DIR$/dist/browser/assets/css/media.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/browser/assets/css/style.css" afterPath="$PROJECT_DIR$/dist/browser/assets/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/browser/index.html" afterPath="$PROJECT_DIR$/dist/browser/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/browser/main.532d70f2327ac9f504b9.js" afterPath="$PROJECT_DIR$/dist/browser/main.532d70f2327ac9f504b9.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/testimonial/bundles/testimonial.umd.js" afterPath="$PROJECT_DIR$/dist/testimonial/bundles/testimonial.umd.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/testimonial/bundles/testimonial.umd.js.map" afterPath="$PROJECT_DIR$/dist/testimonial/bundles/testimonial.umd.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/testimonial/bundles/testimonial.umd.min.js" afterPath="$PROJECT_DIR$/dist/testimonial/bundles/testimonial.umd.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/testimonial/bundles/testimonial.umd.min.js.map" afterPath="$PROJECT_DIR$/dist/testimonial/bundles/testimonial.umd.min.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/testimonial/esm2015/lib/Components/addedit/addedit.component.js" afterPath="$PROJECT_DIR$/dist/testimonial/esm2015/lib/Components/addedit/addedit.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/testimonial/esm2015/lib/testimonial.component.js" afterPath="$PROJECT_DIR$/dist/testimonial/esm2015/lib/testimonial.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/testimonial/esm2015/lib/testimonial.module.js" afterPath="$PROJECT_DIR$/dist/testimonial/esm2015/lib/testimonial.module.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/testimonial/esm2015/testimonial.js" afterPath="$PROJECT_DIR$/dist/testimonial/esm2015/testimonial.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/testimonial/esm5/lib/Components/addedit/addedit.component.js" afterPath="$PROJECT_DIR$/dist/testimonial/esm5/lib/Components/addedit/addedit.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/testimonial/esm5/lib/testimonial.component.js" afterPath="$PROJECT_DIR$/dist/testimonial/esm5/lib/testimonial.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/testimonial/esm5/lib/testimonial.module.js" afterPath="$PROJECT_DIR$/dist/testimonial/esm5/lib/testimonial.module.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/testimonial/esm5/testimonial.js" afterPath="$PROJECT_DIR$/dist/testimonial/esm5/testimonial.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/testimonial/fesm2015/testimonial.js" afterPath="$PROJECT_DIR$/dist/testimonial/fesm2015/testimonial.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/testimonial/fesm2015/testimonial.js.map" afterPath="$PROJECT_DIR$/dist/testimonial/fesm2015/testimonial.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/testimonial/fesm5/testimonial.js" afterPath="$PROJECT_DIR$/dist/testimonial/fesm5/testimonial.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/testimonial/fesm5/testimonial.js.map" afterPath="$PROJECT_DIR$/dist/testimonial/fesm5/testimonial.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/testimonial/lib/Components/addedit/addedit.component.d.ts" afterPath="$PROJECT_DIR$/dist/testimonial/lib/Components/addedit/addedit.component.d.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/testimonial/testimonial.d.ts" afterPath="$PROJECT_DIR$/dist/testimonial/testimonial.d.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/testimonial/testimonial.metadata.json" afterPath="$PROJECT_DIR$/dist/testimonial/testimonial.metadata.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.module.ts" afterPath="$PROJECT_DIR$/src/app/app.module.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/backend/ServiceApp/addedit-service/addedit-service.component.ts" afterPath="$PROJECT_DIR$/src/app/component/backend/ServiceApp/addedit-service/addedit-service.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/backend/ServiceApp/listing-service/listing-service.component.ts" afterPath="$PROJECT_DIR$/src/app/component/backend/ServiceApp/listing-service/listing-service.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/backend/TestimonialApp/listing-testimonial/listing-testimonial.component.html" afterPath="$PROJECT_DIR$/src/app/component/backend/TestimonialApp/listing-testimonial/listing-testimonial.component.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/backend/TestimonialApp/listing-testimonial/listing-testimonial.component.ts" afterPath="$PROJECT_DIR$/src/app/component/backend/TestimonialApp/listing-testimonial/listing-testimonial.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/backend/dashboard/dashboard.component.ts" afterPath="$PROJECT_DIR$/src/app/component/backend/dashboard/dashboard.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/blogdetail/blogdetail.component.html" afterPath="$PROJECT_DIR$/src/app/component/frontend/blogdetail/blogdetail.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/blogdetail/blogdetail.component.ts" afterPath="$PROJECT_DIR$/src/app/component/frontend/blogdetail/blogdetail.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/contactus/contactus.component.css" afterPath="$PROJECT_DIR$/src/app/component/frontend/contactus/contactus.component.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/contactus/contactus.component.ts" afterPath="$PROJECT_DIR$/src/app/component/frontend/contactus/contactus.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/events/seminars/seminars.component.html" afterPath="$PROJECT_DIR$/src/app/component/frontend/events/seminars/seminars.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements/speaker-engagements.component.html" afterPath="$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements/speaker-engagements.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/events/workshops/workshops.component.html" afterPath="$PROJECT_DIR$/src/app/component/frontend/events/workshops/workshops.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/forget-password/forget-password.component.ts" afterPath="$PROJECT_DIR$/src/app/component/frontend/forget-password/forget-password.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/login/login.component.ts" afterPath="$PROJECT_DIR$/src/app/component/frontend/login/login.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/reset-password/reset-password.component.ts" afterPath="$PROJECT_DIR$/src/app/component/frontend/reset-password/reset-password.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/sign-up/sign-up.component.ts" afterPath="$PROJECT_DIR$/src/app/component/frontend/sign-up/sign-up.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/layout/bk-footer/bk-footer.component.html" afterPath="$PROJECT_DIR$/src/app/layout/bk-footer/bk-footer.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/layout/bk-header/bk-header.component.html" afterPath="$PROJECT_DIR$/src/app/layout/bk-header/bk-header.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/blog/blog.component.ts" afterPath="$PROJECT_DIR$/src/app/component/frontend/blog/blog.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/bloglist/bloglist.component.html" afterPath="$PROJECT_DIR$/src/app/component/frontend/bloglist/bloglist.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/bloglist/bloglist.component.ts" afterPath="$PROJECT_DIR$/src/app/component/frontend/bloglist/bloglist.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/services/servicelist/servicelist.component.ts" afterPath="$PROJECT_DIR$/src/app/component/frontend/services/servicelist/servicelist.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/tesimonial/tesimonial.component.html" afterPath="$PROJECT_DIR$/src/app/component/frontend/tesimonial/tesimonial.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/tesimonial/tesimonial.component.ts" afterPath="$PROJECT_DIR$/src/app/component/frontend/tesimonial/tesimonial.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/tesimoniallist/tesimoniallist.component.ts" afterPath="$PROJECT_DIR$/src/app/component/frontend/tesimoniallist/tesimoniallist.component.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/layout/bk-header/bk-header.component.ts" afterPath="$PROJECT_DIR$/src/app/layout/bk-header/bk-header.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/layout/footer/footer.component.css" afterPath="$PROJECT_DIR$/src/app/layout/footer/footer.component.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/layout/footer/footer.component.html" afterPath="$PROJECT_DIR$/src/app/layout/footer/footer.component.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/layout/footer/footer.component.ts" afterPath="$PROJECT_DIR$/src/app/layout/footer/footer.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/layout/header/header.component.css" afterPath="$PROJECT_DIR$/src/app/layout/header/header.component.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/layout/header/header.component.html" afterPath="$PROJECT_DIR$/src/app/layout/header/header.component.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/layout/header/header.component.ts" afterPath="$PROJECT_DIR$/src/app/layout/header/header.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/css/admin-media.css" afterPath="$PROJECT_DIR$/src/assets/css/admin-media.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/css/admin-style.css" afterPath="$PROJECT_DIR$/src/assets/css/admin-style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/css/media.css" afterPath="$PROJECT_DIR$/src/assets/css/media.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/css/style.css" afterPath="$PROJECT_DIR$/src/assets/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles.css" afterPath="$PROJECT_DIR$/src/styles.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -486,9 +34,30 @@
         <entry file="file://$PROJECT_DIR$/src/app/app-routing.module.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="191">
-              <caret line="173" column="26" lean-forward="false" selection-start-line="173" selection-start-column="11" selection-end-line="173" selection-end-column="26" />
+              <caret line="173" column="26" lean-forward="false" selection-start-line="173" selection-start-column="26" selection-end-line="173" selection-end-column="26" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
+                <marker date="1574756707948" expanded="true" signature="7577:15941" ph="[...]" />
+                <marker date="1574756707948" expanded="true" signature="13222:13337" ph="//..." />
+                <marker date="1574756707948" expanded="true" signature="13341:13610" ph="{&quot;path&quot;: 'blog-management'...}" />
+                <marker date="1574756707948" expanded="true" signature="13483:13604" ph="{&quot;endpoint&quot;: 'datalist'...}" />
+                <marker date="1574756707948" expanded="true" signature="13509:13570" ph="{&quot;source&quot;: 'blogs_view'...}" />
+                <marker date="1574756707948" expanded="true" signature="13742:14006" ph="{&quot;path&quot;: 'blog-category/list'...}" />
+                <marker date="1574756707948" expanded="true" signature="13872:14001" ph="{&quot;endpoint&quot;: 'datalist'...}" />
+                <marker date="1574756707948" expanded="true" signature="13898:13967" ph="{&quot;source&quot;: 'blog_category_view'...}" />
+                <marker date="1574756707948" expanded="true" signature="14010:14280" ph="{&quot;path&quot;: 'blog-category/edit/:_id'...}" />
+                <marker date="1574756707948" expanded="true" signature="14146:14275" ph="{&quot;endpoint&quot;: 'datalist'...}" />
+                <marker date="1574756707948" expanded="true" signature="14172:14241" ph="{&quot;source&quot;: 'blog_category_view'...}" />
+                <marker date="1574756707948" expanded="true" signature="14339:14429" ph="//..." />
+                <marker date="1574756707948" expanded="true" signature="14494:14560" ph="{&quot;path&quot;: 'blogs/list'...}" />
+                <marker date="1574756707948" expanded="true" signature="14564:14809" ph="{&quot;path&quot;: 'blogs/edit/:_id'...}" />
+                <marker date="1574756707948" expanded="true" signature="14688:14804" ph="{&quot;endpoint&quot;: 'datalist'...}" />
+                <marker date="1574756707948" expanded="true" signature="14714:14770" ph="{&quot;source&quot;: 'blogs'...}" />
+                <marker date="1574756707948" expanded="true" signature="14866:14918" ph="/** User Management ...*/" />
+                <marker date="1574756707948" expanded="true" signature="14921:15121" ph="{&quot;path&quot;: 'user-management'...}" />
+                <marker date="1574756707948" expanded="true" signature="15541:15598" ph="/** Affiliate Management ...*/" />
+                <marker date="1574756707948" expanded="true" signature="15954:16026" ph="{...}" />
+                <marker date="1574756707948" expanded="true" signature="16058:16061" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -516,8 +85,8 @@
       <file leaf-file-name="footer.component.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/layout/footer/footer.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="762">
-              <caret line="225" column="0" lean-forward="true" selection-start-line="225" selection-start-column="0" selection-end-line="225" selection-end-column="0" />
+            <state relative-caret-position="-20">
+              <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
               <folding>
                 <element signature="e#0#84#0" expanded="true" />
                 <element signature="n#!!block;n#constructor#0;n#FooterComponent#0" expanded="false" />
@@ -1191,12 +760,12 @@
       <workItem from="1574662876567" duration="13060000" />
       <workItem from="1574681593078" duration="9046000" />
       <workItem from="1574744319257" duration="16000" />
-      <workItem from="1574745504385" duration="10416000" />
+      <workItem from="1574745504385" duration="10434000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37583000" />
+    <option name="totallyTimeSpent" value="37601000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1632,9 +1201,30 @@
     <entry file="file://$PROJECT_DIR$/src/app/app-routing.module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
-          <caret line="173" column="26" lean-forward="false" selection-start-line="173" selection-start-column="11" selection-end-line="173" selection-end-column="26" />
+          <caret line="173" column="26" lean-forward="false" selection-start-line="173" selection-start-column="26" selection-end-line="173" selection-end-column="26" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
+            <marker date="1574756707948" expanded="true" signature="7577:15941" ph="[...]" />
+            <marker date="1574756707948" expanded="true" signature="13222:13337" ph="//..." />
+            <marker date="1574756707948" expanded="true" signature="13341:13610" ph="{&quot;path&quot;: 'blog-management'...}" />
+            <marker date="1574756707948" expanded="true" signature="13483:13604" ph="{&quot;endpoint&quot;: 'datalist'...}" />
+            <marker date="1574756707948" expanded="true" signature="13509:13570" ph="{&quot;source&quot;: 'blogs_view'...}" />
+            <marker date="1574756707948" expanded="true" signature="13742:14006" ph="{&quot;path&quot;: 'blog-category/list'...}" />
+            <marker date="1574756707948" expanded="true" signature="13872:14001" ph="{&quot;endpoint&quot;: 'datalist'...}" />
+            <marker date="1574756707948" expanded="true" signature="13898:13967" ph="{&quot;source&quot;: 'blog_category_view'...}" />
+            <marker date="1574756707948" expanded="true" signature="14010:14280" ph="{&quot;path&quot;: 'blog-category/edit/:_id'...}" />
+            <marker date="1574756707948" expanded="true" signature="14146:14275" ph="{&quot;endpoint&quot;: 'datalist'...}" />
+            <marker date="1574756707948" expanded="true" signature="14172:14241" ph="{&quot;source&quot;: 'blog_category_view'...}" />
+            <marker date="1574756707948" expanded="true" signature="14339:14429" ph="//..." />
+            <marker date="1574756707948" expanded="true" signature="14494:14560" ph="{&quot;path&quot;: 'blogs/list'...}" />
+            <marker date="1574756707948" expanded="true" signature="14564:14809" ph="{&quot;path&quot;: 'blogs/edit/:_id'...}" />
+            <marker date="1574756707948" expanded="true" signature="14688:14804" ph="{&quot;endpoint&quot;: 'datalist'...}" />
+            <marker date="1574756707948" expanded="true" signature="14714:14770" ph="{&quot;source&quot;: 'blogs'...}" />
+            <marker date="1574756707948" expanded="true" signature="14866:14918" ph="/** User Management ...*/" />
+            <marker date="1574756707948" expanded="true" signature="14921:15121" ph="{&quot;path&quot;: 'user-management'...}" />
+            <marker date="1574756707948" expanded="true" signature="15541:15598" ph="/** Affiliate Management ...*/" />
+            <marker date="1574756707948" expanded="true" signature="15954:16026" ph="{...}" />
+            <marker date="1574756707948" expanded="true" signature="16058:16061" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1666,8 +1256,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/layout/footer/footer.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="762">
-          <caret line="225" column="0" lean-forward="true" selection-start-line="225" selection-start-column="0" selection-end-line="225" selection-end-column="0" />
+        <state relative-caret-position="-20">
+          <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
           <folding>
             <element signature="e#0#84#0" expanded="true" />
             <element signature="n#!!block;n#constructor#0;n#FooterComponent#0" expanded="false" />

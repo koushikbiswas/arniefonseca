@@ -29,7 +29,7 @@ export class ListingTestimonialComponent implements OnInit {
     //console.log('---------------kbtest serverUrl-------------', this.ApiService.serverUrlDemo);
   this.activatedRoute.data.subscribe(resolveData => {
     this.testimonialListConfig.datasource = resolveData.testimonialList.res;
-    console.log('---------------kbtest testimonialList-------------', this.testimonialListConfig.datasource );
+    //  console.log('---------------kbtest testimonialList-------------', this.testimonialListConfig.datasource );
     this.testimonialListConfig.jwtToken = this.cookieService.get('jwtToken');
     
   });

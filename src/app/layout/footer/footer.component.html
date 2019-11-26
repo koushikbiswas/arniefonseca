@@ -17,10 +17,14 @@
     router.url == '/ourservices' ||
     router.url == '/image-gallery' ||
     router.url == '/video-gallery' ||
-    router.url == '/team' ||
-    router.url == '/seminars' ||
-    router.url == '/workshops' ||
-    router.url == '/speaker-engagements'
+    router.url == '/team' || 
+    router.url == '/seminars'  || 
+    router.url == '/seminars-detail' || 
+    router.url == '/workshops'  || 
+    router.url == '/workshops-detail' || 
+    router.url == '/speaker-engagements'  || 
+    router.url == '/speaker-engagements-detail' || 
+    activeroute.snapshot.routeConfig.path == 'blogdetail/:_id'
   ">
   <span class="scroll-to-top" [ngClass]="{ 'show-scrollTop': windowScrolled }">
     <a (click)="scrollToTop()">
@@ -217,8 +221,7 @@
     router.url === '/booked-events' ||
     router.url === '/past-event-user' ||
     router.url === '/upcoming-event-user' ||
-    router.url === '/events'
-  ">
+    router.url === '/events'">
   <mat-card-content>
     <app-bk-footer></app-bk-footer>
   </mat-card-content>
