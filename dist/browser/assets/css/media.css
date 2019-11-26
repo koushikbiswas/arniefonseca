@@ -11,10 +11,25 @@
   .generalcls .mat-card-title{font-size:32px!important;line-height:36px!important}
   .singleservice .mat-card-title {font-size: 18px !important;line-height:normal!important}
   .generalcls p{font-size:16px;line-height:24px}
+  .homeblock1contentright .mat-list-base .mat-list-item {height: auto; width: 31.33%;}
+  .meetcoacharenaimg {width: 100% !important; height: auto !important;}
+  .meetcoacharenaimg img{width: 100%;}
   }
 
   @media only screen and (max-width: 1199px) {
-    
+    .homeblock1contentright .mat-list-base .mat-list-item {
+      height: auto;
+      width: 33.33%;
+    }
+      .meetcoacharenaimg {
+        width: 100% !important;
+        height: auto !important;
+    }
+    .homeblock1contentright {
+      width: 100% !important;
+      padding-left: 0!important;
+  }
+  .homeblock1contentright .mat-list-base .mat-list-item .mat-list-item-content{padding: 0 4px;}
     .singleteam{height: auto !important;box-sizing: border-box; margin-bottom: 30px; width: calc(1/2*100% - (1 - 1/2)*30px) !important;}
   .probidhomeblock4 .mat-list-base.lists .mat-list-item {padding: 13px;width: 46.5%;}
   .vpheaderwrapper .mat-nav-list a{font-size:13px}
@@ -112,6 +127,26 @@
     .bottom_blog .item_wrapper .item .item_images img {width: 100%;}
     .listsimgwholewrap img {height: auto; width: 100%;}
     .probidhomeblock2inner .mat-list .mat-list-item {padding: 10px;}
+    .homeblock2listssingleitem .mat-list-item-content{flex-wrap: wrap;}
+    .homeblock2listssingleitem span {flex: 1 1 100% !important;}
+    .homeblock2servcontent h2 {
+      margin-top: 10px!important;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      text-align: center;
+    }
+    .homeblock2servcontent p {
+      padding: 0px 0px !important;
+      text-align: center !important;
+    }
+    .homeblock2servcontent h2 span.homeblock2iconcontent {
+      text-align: center !important;
+      margin-left: auto !important;
+    }
+    .homeblock2servcontent button {
+      float: none !important;
+      margin: 10px 15px !important;
+    }
   }
 
   @media only screen and (max-width: 540px) {

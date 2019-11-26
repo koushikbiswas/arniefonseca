@@ -27,7 +27,7 @@ import { OwlModule } from 'ngx-owl-carousel';
 /**Frontend Component**/
 
 import { HeaderComponent, comingSoonDialog } from './layout/header/header.component';
-import { FooterComponent, DialogTermsDialog, DialogPrivacyDialog, NewslatterDialogComponent} from './layout/footer/footer.component';
+import { FooterComponent, DialogTermsDialog, DialogPrivacyDialog, NewslatterDialogComponent, NewslattersuccessDialogComponent} from './layout/footer/footer.component';
 import { HomeComponent } from './component/frontend/home/home.component';
 import { ContactusComponent } from './component/frontend/contactus/contactus.component';
 import { ForgetPasswordComponent } from './component/frontend/forget-password/forget-password.component';
@@ -188,7 +188,8 @@ import { ManageWorkshopListingComponent } from './component/backend/events/manag
     AddEditManageSpeakerEngagementComponent,
     AddEditManageWorkshopComponent,
     ManageWorkshopListingComponent,
-    NewslatterDialogComponent
+    NewslatterDialogComponent,
+    NewslattersuccessDialogComponent
   ],
   imports: [
     BlogModule,
@@ -218,6 +219,6 @@ import { ManageWorkshopListingComponent } from './component/backend/events/manag
   providers: [CookieService, AuthGuard, ApiService, SidenavService],
   bootstrap: [AppComponent],
   schemas:[CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
-  entryComponents: [comingSoonDialog, DialogPrivacyDialog, DialogTermsDialog,CommonVideoModalComponent, NewslatterDialogComponent,VideoModalComponent]
+  entryComponents: [comingSoonDialog, DialogPrivacyDialog, DialogTermsDialog,CommonVideoModalComponent, NewslatterDialogComponent,VideoModalComponent, NewslattersuccessDialogComponent]
 })
 export class AppModule { }

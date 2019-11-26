@@ -1216,6 +1216,7 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
 .newsletter_modal h2{ display: block; text-align: center; margin: 0; padding: 0; font-size: 30px; color: #3ab9d9; font-family: 'HelveticaBold';}
 .newsletter_modal h3{ display: block; text-align: center; margin: 0; padding:10px 0 15px 0; font-size: 18px; color: #111;  font-family: 'Helvetica-Normal'; font-weight: normal;}
 
+.newsletter_modal h4{ display: block; text-align: center; margin: 0; padding:10px 0 0px 0; font-size: 22px; color: #111;  font-family: 'Helvetica-Normal'; font-weight: normal;}
 
 .newsletter_modal button {color:#bdc3c3;background: rgb(1,1,1)!important;
   background: -moz-linear-gradient(0deg, rgba(1,1,1,1) 0%, rgba(54,55,55,1) 100%)!important;
@@ -1234,6 +1235,13 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
 }
 
 .newsletter_modal .mat-form-field-underline{ display: none!important;}
+
+
+@media only screen and (max-width: 680px) {
+
+  .newsletter_modal{ width: auto;}
+
+}
 
 /*----------amitava end------------*/
 

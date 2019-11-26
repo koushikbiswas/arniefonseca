@@ -5,8 +5,7 @@ import {FormControl, FormBuilder, Validators, FormGroup} from '@angular/forms';
 import  {ApiService} from '../../api.service';
 
 
-export interface DialogData {
-}
+export interface DialogData {}
 
 
 @Component({
@@ -91,7 +90,7 @@ export class FooterComponent implements OnInit {
         console.log('ok');
         this.data = this.myform.value;
         console.log(this.data);
-        this.newslatterViewModal();
+       this.newslatterViewModal();
         for (let i in this.myform.controls) {
             this.myform.controls[i].markAsTouched();
         }
@@ -105,7 +104,7 @@ export class FooterComponent implements OnInit {
                     result = res;
                     console.log(result);
                     if (result.status == 'success') {
-
+                      /*  this.newslatterViewModal();*/
                         this.myform.reset();
                         // this.opencontactDialog();
                        /* const dialogRef = this.dialog.open(SubmitpopupComponent);*/
@@ -135,6 +134,7 @@ newslatterViewModal(){
 
     dialogGenreRef.afterClosed().subscribe(result => {
     });
+
   }
 
 
@@ -164,10 +164,11 @@ newslatterViewModal(){
 export class NewslatterDialogComponent {
 
 public myformnews: FormGroup
+
  
 constructor(public dialogRef: MatDialogRef<NewslatterDialogComponent>,
 
-   @Inject(MAT_DIALOG_DATA) public data: DialogData, public formbuilder:FormBuilder) {
+   @Inject(MAT_DIALOG_DATA) public data: DialogData, public formbuilder:FormBuilder, public dialog:MatDialog, public apiService: ApiService) {
 
     this.myformnews = this.formbuilder.group({
         email: ['', Validators.compose([Validators.required, Validators.pattern(/^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/)])],
@@ -177,11 +178,87 @@ constructor(public dialogRef: MatDialogRef<NewslatterDialogComponent>,
 
     })
 
+
+
+
 }
     
   public onNoClick(): void {
     this.dialogRef.close();
   }
+
+
+    donewsSubmit() {
+        console.log('ok');
+        this.data = this.myformnews.value;
+        console.log(this.data);
+        this.newslattersuccessViewModal();
+        for (let i in this.myformnews.controls) {
+            this.myformnews.controls[i].markAsTouched();
+        }
+        if (this.myformnews.valid) {
+
+            let link = '';
+            let data = {data: this.myformnews.value};
+            this.apiService.postdata(data).subscribe(res => {
+
+                let result: any = {};
+                result = res;
+                console.log(result);
+                if (result.status == 'success') {
+
+                    this.myformnews.reset();
+
+
+
+
+                    this.myformnews.controls['email'].updateValueAndValidity();
+                    this.myformnews.controls['name'].updateValueAndValidity();
+                    this.myformnews.controls['phone'].updateValueAndValidity();
+                    this.myformnews.controls['company'].updateValueAndValidity();
+
+                }
+
+
+            })
+
+        }
+
+    }
+
+
+
+    newslattersuccessViewModal(){
+
+        const dialogGenreRef = this.dialog.open(NewslattersuccessDialogComponent, {
+            panelClass: ['modal-sm', 'infomodal'],
+            //disableClose: true,
+        });
+
+        dialogGenreRef.afterClosed().subscribe(result => {
+        });
+        setTimeout(function(){
+            dialogGenreRef.close();
+        }, 2000);
+    }
+}
+
+
+// newslatter success dialog component
+@Component({
+    selector: 'newslatter-success-dialog',
+    templateUrl: 'newsletter-success-dialog.html',
+})
+export class NewslattersuccessDialogComponent {
+
+    public myformnews: FormGroup
+
+    constructor(public dialogRef: MatDialogRef<NewslattersuccessDialogComponent>,
+                /* @Inject(MAT_DIALOG_DATA) public data: DialogData*/) {}
+
+    public onNoClick(): void {
+        this.dialogRef.close();
+    }
 
 }
 
