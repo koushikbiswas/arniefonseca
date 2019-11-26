@@ -18,6 +18,8 @@
       "es2018",
       "dom"
     ],
+
+
     "paths": {
       "on-page-editor": [
         "dist/on-page-editor"
@@ -90,7 +92,16 @@
       ],
       "file-upload/*": [
         "dist/file-upload/*"
+      ],
+
+      "news-title": [
+        "dist/news-title"
+      ],
+      "news-title/*": [
+        "dist/news-title/*"
       ]
+
+
  
     }
   }
