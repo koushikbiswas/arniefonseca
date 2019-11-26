@@ -33,6 +33,12 @@ import { SeminarsComponent } from './component/frontend/events/seminars/seminars
 import { WorkshopsComponent } from './component/frontend/events/workshops/workshops.component';
 import { SpeakerEngagementsComponent } from './component/frontend/events/speaker-engagements/speaker-engagements.component';
 
+
+import { WorkshopDetailComponent } from './component/frontend/events/workshop-detail/workshop-detail.component';
+import { SeminarsDetailComponent } from './component/frontend/events/seminars-detail/seminars-detail.component';
+import { SpeakerEngagementsDetailComponent } from './component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component';
+
+
 /**End Frontend Routing**/
 
 /**Backend Routing**/
@@ -92,6 +98,8 @@ import { ManageWorkshopListingComponent } from './component/backend/events/manag
 import { AddEditManageWorkshopComponent } from './component/backend/events/manage-workshop/add-edit-manage-workshop/add-edit-manage-workshop.component';
 
 
+
+
 import { from } from 'rxjs';
 
 /**End Backend Routing**/
@@ -130,7 +138,7 @@ const routes: Routes = [
   data: { requestcondition: { condition: {"limit": 4, "skip":1} }, endpoint: 'blogdata' } },
 
   { path: 'blogdetail/:_id', component: BlogdetailComponent, resolve: { blogCatList: ResolveService },
-  data: { requestcondition: { source: 'blogs', condition: {} }, endpoint: 'datalistwithouttoken' }  },
+  data: { requestcondition: { source: 'blogs_view', condition: {} }, endpoint: 'datalistwithouttoken' }  },
 
   //  static path
   {
@@ -161,6 +169,10 @@ const routes: Routes = [
   { path: 'commission-report', component: CommissionReportComponent },
   // { path: 'testimonial-lists-admin', component: ListingTestimonialComponent },
   { path: 'customer-list-admin', component: CustomerListComponent },
+
+  { path: 'workshop-detail', component: WorkshopDetailComponent },
+  { path: 'seminars-detail', component: SeminarsDetailComponent },
+  { path: 'speaker-engagements-detail', component: SpeakerEngagementsDetailComponent },
   
   { path: 'testimonial/add', component: AddeditTestimonialComponent },
   {
@@ -168,7 +180,7 @@ const routes: Routes = [
     data: { requestcondition: { source: 'testimonial', condition: {} }, endpoint: 'datalist' }
   },
   {
-    path: 'testimonial-listing', component: ListingTestimonialComponent, resolve: { testimonialList: ResolveService },
+    path: 'testimonial/list', component: ListingTestimonialComponent, resolve: { testimonialList: ResolveService },
     data: { requestcondition: { source: 'testimonial_view', condition: {} }, endpoint: 'datalist' }
   },
 

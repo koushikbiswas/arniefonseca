@@ -13,16 +13,17 @@ import { HeaderComponent } from '../header/header.component';
   styleUrls: ['./bk-header.component.css']
 })
 export class BkHeaderComponent implements OnInit {
-  public userCookies: any;
-  public user_full_name: any = '';
-     
+  public userCookies: any;     
   public user_data: any;
+
+
+  public user_full_name: any;
+
   constructor(public cookieService: CookieService, private sidenav: SidenavService, public dialog: MatDialog, public router: Router, public Header: HeaderComponent) {
 
-    // this.user_data = JSON.parse(this.cookieService.get('user_details'));
-    // console.log(this.user_data);
 
   }
+
   toggleActive:boolean = false;
   toggleRightSidenav() {
     this.toggleActive = !this.toggleActive;
@@ -34,11 +35,18 @@ export class BkHeaderComponent implements OnInit {
    }
 
   ngOnInit() {
-    // this.userCookies = JSON.parse(this.cookieService.get('user_details'));
-  
-    // console.log(this.userCookies);
-    // this.user_full_name = this.userCookies.firstname +' '+this.userCookies.lastname;
-    // console.log(this.user_full_name);
+    if (this.cookieService.get('user_details') != undefined && this.cookieService.get('user_details') != null && this.cookieService.get('user_details') != '') {
+      this.userCookies = JSON.parse(this.cookieService.get('user_details'));
+      //console.log(this.userCookies.type);
+      this.user_full_name = this.userCookies.firstname + ' '+ this.userCookies.lastname ;
+      // this.userid = this.userCookies._id;    
+      }
+  }
+
+  logOut() {
+    this.cookieService.deleteAll();
+    this.router.navigateByUrl('/');
+    console.log("logout");
   }
 
 }

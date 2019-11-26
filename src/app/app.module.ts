@@ -110,6 +110,9 @@ import { ManageSpeakerEngagementListingComponent } from './component/backend/eve
 import { AddEditManageSpeakerEngagementComponent } from './component/backend/events/manage-speaker-engagement/add-edit-manage-speaker-engagement/add-edit-manage-speaker-engagement.component';
 import { AddEditManageWorkshopComponent } from './component/backend/events/manage-workshop/add-edit-manage-workshop/add-edit-manage-workshop.component';
 import { ManageWorkshopListingComponent } from './component/backend/events/manage-workshop/manage-workshop-listing/manage-workshop-listing.component';
+import { WorkshopDetailComponent } from './component/frontend/events/workshop-detail/workshop-detail.component';
+import { SeminarsDetailComponent } from './component/frontend/events/seminars-detail/seminars-detail.component';
+import { SpeakerEngagementsDetailComponent } from './component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component';
 
 /**End Backend Component** */
 
@@ -189,7 +192,14 @@ import { ManageWorkshopListingComponent } from './component/backend/events/manag
     AddEditManageWorkshopComponent,
     ManageWorkshopListingComponent,
     NewslatterDialogComponent,
-    NewslattersuccessDialogComponent
+
+    NewslattersuccessDialogComponent,
+
+    
+    WorkshopDetailComponent,
+    SeminarsDetailComponent,
+    SpeakerEngagementsDetailComponent
+
   ],
   imports: [
     BlogModule,

@@ -27,8 +27,6 @@ export class LoginComponent implements OnInit {
   // public fullUrl: any = "https://63zzhpnoti.execute-api.us-east-1.amazonaws.com/production/api/";  // server url
   public fullUrl: any = this.apiService.serverUrlDemo;
   public endpoint: any = "login";  // login endpoint
-  // public signUpRouteingUrl: any = 'sign-up';      // navigate the sign up page
-  // public forgetRouteingUrl: any = 'forget-password';      // navigate the Forget password page
   public buttonName:any= 'Login';
   public signUpRouteingUrl: any = { 
     "path":"sign-up",
@@ -47,12 +45,6 @@ export class LoginComponent implements OnInit {
   public userData: any = {};
     constructor(private readonly meta: MetaService, public apiService:ApiService, public router: Router, public cookieService: CookieService) { 
 
-    // this.meta.setTitle('Login Form dynamic');
-    // this.meta.setTag('og:description', 'This is dynamic decription');
-    // this.meta.setTag('og:title', 'This is dynamic title with meta og ');
-    // this.meta.setTag('og:type', 'website');
-    // this.meta.setTag('og:image', 'https://upload.wikimedia.org/wikipedia/commons/f/f8/superraton.jpg');
-
     this.meta.setTitle('Arniefonseca - Login');
     this.meta.setTag('og:description', '');
     this.meta.setTag('twitter:description', '');
@@ -66,7 +58,7 @@ export class LoginComponent implements OnInit {
     this.meta.setTag('og:image', '../../assets/images/logo.png');
     this.meta.setTag('twitter:image', '../../assets/images/logo.png');
 
-      this.routerStatus = {           // this is use for if login succcess then navigate which page 
+      this.routerStatus = {   
         "data": [
           {
            "type":"admin",
@@ -82,18 +74,18 @@ export class LoginComponent implements OnInit {
     }
   
     ngOnInit() {
-      console.log(this.apiService.serverUrlDemo)
+      //console.log(this.apiService.serverUrlDemo)
     }
   
 
     goto() {
-      console.log('sadfdff');
+      //console.log('sadfdff');
       if (this.router.url == '/login') {
         this.router.navigateByUrl('/admin-dashboard');
   
       } else if (this.router.url == '/login') {
   
-        this.router.navigateByUrl('/rep-dashboard');
+        this.router.navigateByUrl('/affiliate-dashboard');
   
       } 
     }

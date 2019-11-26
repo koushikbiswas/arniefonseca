@@ -10,7 +10,6 @@ import { ApiService } from 'src/app/api.service';
 })
 export class ListingTestimonialComponent implements OnInit {
 
-
   /************** lib list setup start here *************/
   public testimonialListConfig:any = {
     // apiBaseUrl: "https://9v41bpikik.execute-api.us-east-1.amazonaws.com/production/api/",
@@ -27,9 +26,10 @@ export class ListingTestimonialComponent implements OnInit {
   }
 
   constructor(private router: Router, private activatedRoute: ActivatedRoute, private cookieService: CookieService, public ApiService: ApiService) { 
-
+    //console.log('---------------kbtest serverUrl-------------', this.ApiService.serverUrlDemo);
   this.activatedRoute.data.subscribe(resolveData => {
     this.testimonialListConfig.datasource = resolveData.testimonialList.res;
+    console.log('---------------kbtest testimonialList-------------', this.testimonialListConfig.datasource );
     this.testimonialListConfig.jwtToken = this.cookieService.get('jwtToken');
     
   });
