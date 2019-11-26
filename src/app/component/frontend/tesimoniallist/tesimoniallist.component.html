@@ -40,11 +40,13 @@
                             </span>
                            
                             <span class="quatation">
-                                <p class="truncate" [ngClass]="{'truncate truncateopen':testmon._id == p_id }">
                                     <img class="quotestarticon" src="../../../../assets/images/quotestart-icon.png">
+                                <p class="truncate" [ngClass]="{'truncate truncateopen':testmon._id == p_id }">
+                                    
                                     <span [innerHtml]="testmon.description"></span>
-                                    <img class="quoteendicon" src="../../../../assets/images/quoteend-icon.png">
+                                   
                                 </p>
+                                <img class="quoteendicon" src="../../../../assets/images/quoteend-icon.png">
                            
                             <a *ngIf="testmon.description != '' && testmon != '' && testmon.description.length >= 254 " [ngClass]="{'hide':testmon._id == p_id}" (click)="showmore(testmon)"> read more</a>                        
                             </span>

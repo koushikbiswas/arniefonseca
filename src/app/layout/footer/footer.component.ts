@@ -18,7 +18,7 @@ export class FooterComponent implements OnInit {
   windowScrolled: boolean;
   public data:any;
 
-  constructor(public router: Router, public route: ActivatedRoute, public dialog: MatDialog, public formbuilder: FormBuilder, public apiService: ApiService) {
+  constructor(public router: Router, public route: ActivatedRoute, public dialog: MatDialog, public formbuilder: FormBuilder, public apiService: ApiService, public activeroute: ActivatedRoute) {
     // console.log(router.url);
 
       this.myform = this.formbuilder.group({

@@ -17,6 +17,9 @@
 html,body{height:100%;background: #fff;}
 h1,h2,h3,h4,h5,h6{padding:0;margin:0}
 ul.list-inline{margin:0!important;padding:0!important;width:100%}
+.hide{
+  display: none;
+}
 ul.list-inline li{margin:0!important;padding:0!important}
 .wrap{width:100%;height:100%;min-height:100%;padding:0}
 ul,li{list-style:none;outline:none;padding:0;margin:0}
@@ -168,7 +171,7 @@ a{cursor:pointer;outline:none}
 .mat-card{border-radius:0!important;box-shadow:none}
 .vpblock1bg.mat-card{padding-top:238px!important;box-shadow:none!important}
 .mat-form-field{margin-top:5px}
-.mat-form-field .errortext{font-size:12px;color:red;display:block;margin-top:-4px};
+.mat-form-field .errortext{font-size:12px;color:red;display:block;margin-top:-4px;}
 .contact-form .main-div{height:auto!important;display:inherit!important;justify-content:inherit!important;align-items:inherit!important}
 
 .innerpagebanner{background-color:#01110d;padding:20px}
@@ -295,9 +298,15 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
 .modelthumbimginnerwarpper.active .testimonialcontent .quatation{font-size: 16px !important;}
 .testimonialwrappercontent .mat-card-title {-webkit-justify-content: center;-moz-justify-content: center;-ms-justify-content: center;justify-content: center; }
 .generalcls .testibottomcontent .mat-card-title {font-size: 24px!important;line-height: normal!important; margin-bottom: 15px !important; font-family: 'Helvetica-Normal'; text-align: center;}
-.generalcls .testicontent .quatation p{text-align:left;}
-.generalcls .testicontent .quatation p .quotestarticon{ float: left; margin-right: 10px;margin-top: -10px; width: 28px;}
-.generalcls .testicontent .quatation p .quoteendicon{float: right;margin-left: 10px; margin-bottom: -10px; width: 28px;}
+.generalcls .testicontent .quatation p{text-align:left; overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 18px;
+  max-height: 90px;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;}
+.generalcls .testicontent .quatation .quotestarticon{ float: left; margin-right: 10px;margin-top: -10px; width: 28px;}
+.generalcls .testicontent .quatation .quoteendicon{float: right;margin-left: 10px; margin-bottom: -10px; width: 28px;}
 .generalcls.blog .mat-card-title {font-size: 24px!important;line-height: normal!important;justify-content: space-between;    margin-bottom: 15px!important; margin-top: 15px!important;text-transform: capitalize;}
 
 
@@ -868,8 +877,7 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
 
 /* .adm_inner_banner{background: url("../images/managetype_banner.jpg") no-repeat center center;
   background-size: cover; border-top-left-radius: 10px; border-top-right-radius: 10px; padding: 50px; padding-right: 45%; } */
-  .adm_inner_banner{background: #000;
-    background-size: cover; border-top-left-radius: 10px; border-top-right-radius: 10px; padding: 50px; padding-right: 45%; }
+  .adm_inner_banner{background: #000; display: block !important; width: inherit !important; background-size: cover; border-top-left-radius: 10px; border-top-right-radius: 10px; padding: 50px; padding-right: 45%; }
   .generalcls.blog .adm_inner_banner .adm_inner_title.mat-card-title{ font-size: 48px !important; color: #fff !important; font-family: "HelveticaBold"; text-transform: uppercase !important;text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);  }
     .adm_inner_banner .adm_inner_para{ font-size: 24px; color: #ffffff; font-family: "HelveticaBold"; margin: 0;text-shadow: 3px 2px 3px rgba(255,255,255,.2); width: 80%;}
 /* 
@@ -1216,6 +1224,7 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
 .newsletter_modal h2{ display: block; text-align: center; margin: 0; padding: 0; font-size: 30px; color: #3ab9d9; font-family: 'HelveticaBold';}
 .newsletter_modal h3{ display: block; text-align: center; margin: 0; padding:10px 0 15px 0; font-size: 18px; color: #111;  font-family: 'Helvetica-Normal'; font-weight: normal;}
 
+.newsletter_modal h4{ display: block; text-align: center; margin: 0; padding:10px 0 0px 0; font-size: 22px; color: #111;  font-family: 'Helvetica-Normal'; font-weight: normal;}
 
 .newsletter_modal button {color:#bdc3c3;background: rgb(1,1,1)!important;
   background: -moz-linear-gradient(0deg, rgba(1,1,1,1) 0%, rgba(54,55,55,1) 100%)!important;
@@ -1235,6 +1244,13 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
 
 .newsletter_modal .mat-form-field-underline{ display: none!important;}
 
+
+@media only screen and (max-width: 680px) {
+
+  .newsletter_modal{ width: auto;}
+
+}
+
 /*----------amitava end------------*/
 
 
@@ -1242,3 +1258,7 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
 
 
 .homeblock2servcontent button{float: right !important; margin: 10px 15px !important;}
+
+.truncate{overflow: ellipsis;text-overflow: -o-ellipsis-lastline; display: -webkit-box; line-height: normal; max-height: 108px; -webkit-line-clamp: 5;}
+.truncateopen{overflow: inherit !important; max-height: 100% !important; height: auto !important; text-overflow: inherit !important; -webkit-line-clamp: inherit !important;    display: block !important}
+.truncateopen p{ max-height: 100% !important;}
