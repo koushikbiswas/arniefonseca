@@ -114,6 +114,8 @@ import { WorkshopDetailComponent } from './component/frontend/events/workshop-de
 import { SeminarsDetailComponent } from './component/frontend/events/seminars-detail/seminars-detail.component';
 import { SpeakerEngagementsDetailComponent } from './component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component';
 
+import { AddEditNewsletterComponent } from './component/backend/newsletterlists/add-edit-newsletter/add-edit-newsletter.component';
+
 /**End Backend Component** */
 
 
@@ -198,7 +200,8 @@ import { SpeakerEngagementsDetailComponent } from './component/frontend/events/s
     
     WorkshopDetailComponent,
     SeminarsDetailComponent,
-    SpeakerEngagementsDetailComponent
+    SpeakerEngagementsDetailComponent,
+    AddEditNewsletterComponent
 
   ],
   imports: [

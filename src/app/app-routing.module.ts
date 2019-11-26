@@ -97,8 +97,7 @@ import { AddEditManageSpeakerEngagementComponent } from './component/backend/eve
 import { ManageWorkshopListingComponent } from './component/backend/events/manage-workshop/manage-workshop-listing/manage-workshop-listing.component';
 import { AddEditManageWorkshopComponent } from './component/backend/events/manage-workshop/add-edit-manage-workshop/add-edit-manage-workshop.component';
 
-
-
+import { AddEditNewsletterComponent } from './component/backend/newsletterlists/add-edit-newsletter/add-edit-newsletter.component';
 
 import { from } from 'rxjs';
 
@@ -233,6 +232,10 @@ const routes: Routes = [
 
   { path: 'manage-speaker-engagement-listing', component: ManageSpeakerEngagementListingComponent },
   { path: 'add-edit-manage-speaker-engagement', component: AddEditManageSpeakerEngagementComponent },
+
+
+  //_____________________Newsletter____________//
+  { path: 'add-edit-newsletter', component: AddEditNewsletterComponent },
 
 
 
