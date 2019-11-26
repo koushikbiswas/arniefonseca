@@ -194,6 +194,12 @@ constructor(public dialogRef: MatDialogRef<NewslatterDialogComponent>,
         this.data = this.myformnews.value;
         console.log(this.data);
         this.newslattersuccessViewModal();
+
+        setTimeout(()=>{
+            this.onNoClick();
+
+        },2000);
+
         for (let i in this.myformnews.controls) {
             this.myformnews.controls[i].markAsTouched();
         }
@@ -219,11 +225,7 @@ constructor(public dialogRef: MatDialogRef<NewslatterDialogComponent>,
                     this.myformnews.controls['company'].updateValueAndValidity();
 
 
-          /*          setTimeout(()=>{
 
-                        dialogRef.close();
-                    },2000);
-*/
 
 
 
