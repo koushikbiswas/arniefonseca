@@ -54,12 +54,14 @@ export class TesimoniallistComponent implements OnInit {
       this.indexvallength = this.TestimonialListArray.length;
     })
   }
+
+  
   
   btnBackClick = function () {
     this.router.navigateByUrl('testimonial');
   };
 
-  showMoreFunc() {
+  blogloadmore() {
     this.indexval = this.indexval + 3;
     // console.log(this.indexval);
   }

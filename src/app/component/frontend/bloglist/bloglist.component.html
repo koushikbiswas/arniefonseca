@@ -29,7 +29,7 @@
                               <form class="example-form">
                                   <mat-form-field class="example-full-width">
                                       <span matPrefix></span>
-                                      <input type="text" matInput placeholder="search by title, keyword">
+                                      <input type="text" matInput placeholder="search by title, keyword" (keyup)="titleSearchblogListFilter($event.target.value)">
                                       <button mat-button>
                                         <i class="material-icons">
                                           search
@@ -38,7 +38,7 @@
                                     </mat-form-field>
                                 <mat-form-field class="example-full-width">
                                   <span matPrefix></span>
-                                  <input type="text" matInput placeholder="search Category">
+                                  <input type="text" matInput placeholder="search Category" (keyup)="titleSearchCategoryFilter($event.target.value)">
                                   <button mat-button>
                                     <i class="material-icons">
                                       search
@@ -52,8 +52,8 @@
                         <span class="item" *ngFor="let item of bloglisting | slice:0:indexval ; let i=index">
                             <span class="item_images" (click)="blogdetail(item._id)"><img [src]="item.blogs_image"></span>
                             <span class="contentsection">
-                                <span class="bnticons" *ngFor="let vurl of item.credentials">
-                                    <button *ngIf="vurl.video_url !='' && vurl.video_url !=null " (click)="openvideourl(vurl.video_url)"><img src="../../../../assets/images/videoicon.png"></button>
+                                <span class="bnticons">
+                                    <button *ngIf="item.video_url !='' && item.video_url !=null " (click)="openvideourl(item.video_url)"><img src="../../../../assets/images/videoicon.png"></button>
                                 </span>
                                 <h2 (click)="blogdetail(item._id)">{{item.blogtitle}}</h2>
                                 <p class="description"><span [innerHtml]="item.description"></span></p>
@@ -103,7 +103,8 @@
                 </span>   
 
                 <span class="categorywrapper">  
-                      <h2 class="blogtitle">Categories ({{blogcategorycount}}) <button mat-raised-button (click)="openAll()">Open All</button><button mat-raised-button (click)="closeAll()">close All</button></h2>                        
+                      <h2 class="blogtitle">Categories ({{blogcategorycount}}) <button mat-raised-button (click)="openAll()">Open All</button></h2>            
+                      <!-- <button mat-raised-button (click)="closeAll()">close All</button>             -->
                       <mat-accordion #myaccordion="matAccordion" multi="true" class="category">
                           <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" *ngFor="let item of blogcategory">
                             <mat-expansion-panel-header>

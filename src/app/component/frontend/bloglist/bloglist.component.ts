@@ -130,6 +130,20 @@ panelOpenState = false;
           // console.log('>>>>>>>>>>>>>>>>>',this.blogcategorycount)
 }
 
+/**total blog Searchlist*/  
+titleSearchblogListFilter(filterValue: string) {
+  this.bloglisting.filter = filterValue.trim().toLowerCase();
+  //console.log('---kb---', this.bloglisting.filter);
+}
+
+/**total blog Categorylist*/  
+titleSearchCategoryFilter(filterValue: string) {
+  this.blogcategory.filter = filterValue.trim().toLowerCase();
+  //console.log('---kb---', this.bloglisting.filter);
+}
+
+
+
   /** end api service for blog_catagory total count by uttam */
 
     //*********view Video modal section***********//

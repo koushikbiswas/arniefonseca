@@ -301,9 +301,9 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
 .generalcls .testicontent .quatation p{text-align:left; overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  line-height: 18px;
-  max-height: 90px;
-  -webkit-line-clamp: 5;
+  line-height: 24px;
+  max-height: 94px;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;}
 .generalcls .testicontent .quatation .quotestarticon{ float: left; margin-right: 10px;margin-top: -10px; width: 28px;}
 .generalcls .testicontent .quatation .quoteendicon{float: right;margin-left: 10px; margin-bottom: -10px; width: 28px;}
@@ -1273,11 +1273,12 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
 
 .testimonialserv .testiimgwarpper .bnticons {
   position: absolute;
-  right: 30px;
-  top: -100%;
+  right: -38px;
+  top: 50%;
   display: flex;
   flex-wrap: wrap;
   width: 47px;
+  transform: translateY(-50%);
 }
 
 .testimonialserv .testiimgwarpper .bnticons button {

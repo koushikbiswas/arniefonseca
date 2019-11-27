@@ -33,6 +33,9 @@ export class ListingTestimonialComponent implements OnInit {
     this.testimonialListConfig.jwtToken = this.cookieService.get('jwtToken');
     
   });
+
+ 
+
 }
 
   ngOnInit() {

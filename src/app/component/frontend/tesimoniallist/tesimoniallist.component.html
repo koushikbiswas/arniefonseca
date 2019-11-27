@@ -31,6 +31,7 @@
                             </span>
                             <span class="bnticons">
                                 <button *ngIf="testmon.video_url !='' && testmon.video_url !=null " (click)="openvideourl(testmon.video_url)"><img src="../../../../assets/images/videoicon.png"></button>
+                                <button *ngIf="testmon.audio_url !='' && testmon.audio_url !=null " (click)="openaudiourl(testmon.audio_url)"><img src="../../../../assets/images/audioicon.png"></button>
                             </span>
                         </span>
                         <mat-card-content class="testicontent">
@@ -73,11 +74,13 @@
                 </mat-list-item>
                 <!----END SINGLE TESTIMONIAL-->
 
-
+                <!--<button *ngIf="indexval.length > indexval" (click)="showMoreFunc()" mat-stroked-button class="btngeneral btngray">Load more</button> -->
                 
-
             </mat-list>
-            <button *ngIf="indexval.length > indexval" (click)="showMoreFunc()" mat-stroked-button class="btngeneral btngray">Load more</button>
+
+            <button mat-button class="btnblue sim-button" *ngIf="TestimonialListArray !=null && indexval < TestimonialListArray.length"
+                (click)="testimonialloadmore()">Load More</button>
+            
     </span> 
 </mat-card>
 
