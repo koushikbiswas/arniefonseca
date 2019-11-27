@@ -43,7 +43,7 @@ import { AboutusComponent } from './component/frontend/aboutus/aboutus.component
 import { ServiceComponent } from './component/frontend/service/service.component';
 import { ServicelistComponent } from './component/frontend/services/servicelist/servicelist.component';
 import { TesimonialComponent } from './component/frontend/tesimonial/tesimonial.component';
-import { TesimoniallistComponent } from './component/frontend/tesimoniallist/tesimoniallist.component';
+import { TesimoniallistComponent, CommonTestimonialVideoModalComponent } from './component/frontend/tesimoniallist/tesimoniallist.component';
 import { EmployeeTrainingComponent } from './component/frontend/services/employee-training/employee-training.component';
 import { CouplesCounselingComponent } from './component/frontend/services/couples-counseling/couples-counseling.component';
 import { PersonalDevelopmentCoachingComponent } from './component/frontend/services/personal-development-coaching/personal-development-coaching.component';
@@ -115,8 +115,15 @@ import { SeminarsDetailComponent } from './component/frontend/events/seminars-de
 import { SpeakerEngagementsDetailComponent } from './component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component';
 
 import { AddEditNewsletterComponent } from './component/backend/newsletterlists/add-edit-newsletter/add-edit-newsletter.component';
+<<<<<<< HEAD
 import { NewsTitleModule } from 'news-title';
 
+=======
+import { AddEditSubscriberComponent } from './component/backend/newsletterlists/add-edit-subscriber/add-edit-subscriber.component';
+import { AddEditSubscriberGroupComponent } from './component/backend/newsletterlists/add-edit-subscriber-group/add-edit-subscriber-group.component';
+import { AddEditSendersComponent } from './component/backend/newsletterlists/add-edit-senders/add-edit-senders.component';
+import { AddEditTestemailComponent } from './component/backend/newsletterlists/add-edit-testemail/add-edit-testemail.component';
+>>>>>>> b56b486c2dc9477d8bb26ca4645c05e0f2106eca
 
 /**End Backend Component** */
 
@@ -124,7 +131,8 @@ import { NewsTitleModule } from 'news-title';
 @NgModule({
   declarations: [
     VideoModalComponent,
-    CommonVideoModalComponent,
+    CommonVideoModalComponent,    
+    CommonTestimonialVideoModalComponent,
     AppComponent,
     LoginComponent,
     ContactusComponent,
@@ -204,7 +212,15 @@ import { NewsTitleModule } from 'news-title';
     SeminarsDetailComponent,
     SpeakerEngagementsDetailComponent,
     AddEditNewsletterComponent,
+<<<<<<< HEAD
     
+=======
+    AddEditSubscriberComponent,
+    AddEditSubscriberGroupComponent,
+    AddEditSendersComponent,
+    AddEditTestemailComponent
+
+>>>>>>> b56b486c2dc9477d8bb26ca4645c05e0f2106eca
   ],
   imports: [
     BlogModule,
@@ -229,9 +245,13 @@ import { NewsTitleModule } from 'news-title';
     MatCarouselModule.forRoot(),
     OwlModule,
     FormsModule,
+<<<<<<< HEAD
     ReactiveFormsModule,
     NewsTitleModule
 
+=======
+    ReactiveFormsModule
+>>>>>>> b56b486c2dc9477d8bb26ca4645c05e0f2106eca
   ],
   providers: [CookieService, AuthGuard, ApiService, SidenavService],
   bootstrap: [AppComponent],

@@ -298,15 +298,15 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
 .modelthumbimginnerwarpper.active .testimonialcontent .quatation{font-size: 16px !important;}
 .testimonialwrappercontent .mat-card-title {-webkit-justify-content: center;-moz-justify-content: center;-ms-justify-content: center;justify-content: center; }
 .generalcls .testibottomcontent .mat-card-title {font-size: 24px!important;line-height: normal!important; margin-bottom: 15px !important; font-family: 'Helvetica-Normal'; text-align: center;}
-.generalcls .testicontent .quatation p{text-align:left;    overflow: hidden;
+.generalcls .testicontent .quatation p{text-align:left; overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   line-height: 18px;
-  max-height: 86px;
+  max-height: 90px;
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;}
-.generalcls .testicontent .quatation p .quotestarticon{ float: left; margin-right: 10px;margin-top: -10px; width: 28px;}
-.generalcls .testicontent .quatation p .quoteendicon{float: right;margin-left: 10px; margin-bottom: -10px; width: 28px;}
+.generalcls .testicontent .quatation .quotestarticon{ float: left; margin-right: 10px;margin-top: -10px; width: 28px;}
+.generalcls .testicontent .quatation .quoteendicon{float: right;margin-left: 10px; margin-bottom: -10px; width: 28px;}
 .generalcls.blog .mat-card-title {font-size: 24px!important;line-height: normal!important;justify-content: space-between;    margin-bottom: 15px!important; margin-top: 15px!important;text-transform: capitalize;}
 
 
@@ -1260,5 +1260,9 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
 .homeblock2servcontent button{float: right !important; margin: 10px 15px !important;}
 
 .truncate{overflow: ellipsis;text-overflow: -o-ellipsis-lastline; display: -webkit-box; line-height: normal; max-height: 108px; -webkit-line-clamp: 5;}
-.truncateopen{overflow: inherit !important; max-height: 100% !important; height: auto !important; text-overflow: inherit !important; -webkit-line-clamp: inherit !important;}
+.truncateopen{overflow: inherit !important; max-height: 100% !important; height: auto !important; text-overflow: inherit !important; -webkit-line-clamp: inherit !important;    display: block !important}
 .truncateopen p{ max-height: 100% !important;}
+
+
+
+.testimonial .owl-carousel.owl-drag .owl-item .title1{font-size: 20px !important; margin-top: 20px !important; color: #03aed4;}

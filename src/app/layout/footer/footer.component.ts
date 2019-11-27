@@ -21,8 +21,12 @@ export class FooterComponent implements OnInit {
   public serverUrl:any;
   // public tokenViaCookie : any;
 
+
   constructor(public router: Router, public route: ActivatedRoute, public dialog: MatDialog, public formbuilder: FormBuilder,
               public apiService: ApiService,public cookie : CookieService) {
+
+  constructor(public router: Router, public route: ActivatedRoute, public dialog: MatDialog, public formbuilder: FormBuilder, public apiService: ApiService, public activeroute: ActivatedRoute) {
+
     // console.log(router.url);
       this.serverUrl = apiService.serverUrl;
       console.log("souresh",this.serverUrl);
