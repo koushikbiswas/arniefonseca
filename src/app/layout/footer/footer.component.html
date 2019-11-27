@@ -200,12 +200,17 @@
     router.url === '/blog-management' ||
     router.url === '/add-edit-blogs' ||
     router.url === '/add-edit-blogcat' ||
-    router.url === 'blogs/add' ||
-    router.url === 'blog-category/add' ||
+    router.url === '/blogs/add' ||
+    router.url === '/blog-category/add' ||
     router.url === '/manage-commission' ||
     router.url === '/testimonial/list' ||
     router.url === '/social-advo-admin' ||
-    router.url === '/newsletter-list' ||
+    router.url ==='/newsletter-list' || 
+    router.url ==='/newsletter/add' || 
+    router.url ==='/subscriber/add' || 
+    router.url ==='/subscriber-group/add' || 
+    router.url ==='/sender/add' || 
+    router.url ==='/testemail/add' ||
     router.url === '/manage-commission-affiliate' ||
     router.url === '/social-advo-affiliate' ||
     router.url === '/book-an-appointment-user' ||
@@ -222,7 +227,12 @@
     router.url === '/booked-events' ||
     router.url === '/past-event-user' ||
     router.url === '/upcoming-event-user' ||
-    router.url === '/events'">
+    router.url === '/events' || 
+    activeroute.snapshot.routeConfig.path == '/testemail/edit/:_id' || 
+    activeroute.snapshot.routeConfig.path == '/sender/edit/:_id' || 
+    activeroute.snapshot.routeConfig.path == '/subscriber-group/edit/:_id' || 
+    activeroute.snapshot.routeConfig.path == '/subscriber/edit/:_id' || 
+    activeroute.snapshot.routeConfig.path == '/newsletter/edit/:_id'">
   <mat-card-content>
     <app-bk-footer></app-bk-footer>
   </mat-card-content>

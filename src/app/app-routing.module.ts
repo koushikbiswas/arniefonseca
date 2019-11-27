@@ -100,6 +100,10 @@ import { AddEditManageWorkshopComponent } from './component/backend/events/manag
 import { AddEditNewsletterComponent } from './component/backend/newsletterlists/add-edit-newsletter/add-edit-newsletter.component';
 
 import { from } from 'rxjs';
+import { AddEditSubscriberComponent } from './component/backend/newsletterlists/add-edit-subscriber/add-edit-subscriber.component';
+import { AddEditSubscriberGroupComponent } from './component/backend/newsletterlists/add-edit-subscriber-group/add-edit-subscriber-group.component';
+import { AddEditSendersComponent } from './component/backend/newsletterlists/add-edit-senders/add-edit-senders.component';
+import { AddEditTestemailComponent } from './component/backend/newsletterlists/add-edit-testemail/add-edit-testemail.component';
 
 /**End Backend Routing**/
 
@@ -234,10 +238,85 @@ const routes: Routes = [
   { path: 'add-edit-manage-speaker-engagement', component: AddEditManageSpeakerEngagementComponent },
 
 
-  //_____________________Newsletter____________//
-  { path: 'add-edit-newsletter', component: AddEditNewsletterComponent },
+  //_____________________Newsletter/subscriber/sender/testemail____________//
+  { path: 'newsletter/add', component: AddEditNewsletterComponent },
+  {
+    path: 'newsletter/edit/:_id',
+    component: AddEditBlogcatComponent,
 
+    resolve: { newLetterList: ResolveService },
+    data: {
+      requestcondition: {
+        source: '',
+        condition: {}
+      },
+      endpoint: ''
+    },
+  },
 
+  { path: 'subscriber/add', component: AddEditSubscriberComponent },
+
+  {
+    path: 'subscriber/edit/:_id',
+    component: AddEditSubscriberComponent,
+
+    resolve: { subscriberList: ResolveService },
+    data: {
+      requestcondition: {
+        source: '',
+        condition: {}
+      },
+      endpoint: ''
+    },
+  },
+
+  { path: 'subscriber-group/add', component: AddEditSubscriberGroupComponent },
+
+  {
+    path: 'subscriber-group/edit/:_id',
+    component: AddEditSubscriberGroupComponent,
+
+    resolve: { subscriberGroupList: ResolveService },
+    data: {
+      requestcondition: {
+        source: '',
+        condition: {}
+      },
+      endpoint: ''
+    },
+  },
+
+  { path: 'sender/add', component: AddEditSendersComponent },
+
+  {
+    path: 'sender/edit/:_id',
+    component: AddEditSendersComponent,
+
+    resolve: { senderList: ResolveService },
+    data: {
+      requestcondition: {
+        source: '',
+        condition: {}
+      },
+      endpoint: ''
+    },
+  },
+
+  { path: 'testemail/add', component: AddEditTestemailComponent },
+
+  {
+    path: 'testemail/edit/:_id',
+    component: AddEditTestemailComponent,
+
+    resolve: { senderList: ResolveService },
+    data: {
+      requestcondition: {
+        source: '',
+        condition: {}
+      },
+      endpoint: ''
+    },
+  },
 
 
   //____________end event routing______________//
