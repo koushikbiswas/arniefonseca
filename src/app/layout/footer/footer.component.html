@@ -17,10 +17,15 @@
     router.url == '/ourservices' ||
     router.url == '/image-gallery' ||
     router.url == '/video-gallery' ||
-    router.url == '/team' ||
-    router.url == '/seminars' ||
-    router.url == '/workshops' ||
-    router.url == '/speaker-engagements'
+    router.url == '/team' || 
+    router.url == '/seminars'  || 
+    router.url == '/seminars-detail' || 
+    router.url == '/workshops'  || 
+    router.url == '/workshops-detail' || 
+    router.url == '/speaker-engagements'  || 
+    router.url == '/speaker-engagements-detail' || 
+    activeroute.snapshot.routeConfig.path == 'blogdetail/:_id' ||
+    router.url ==='/add-edit-newsletter'
   ">
   <span class="scroll-to-top" [ngClass]="{ 'show-scrollTop': windowScrolled }">
     <a (click)="scrollToTop()">
@@ -39,9 +44,9 @@
               <form [formGroup]="myform" name="myform" (ngSubmit)="doSubmit()">
                 <span>
                   <mat-form-field>
-                    <input matInput placeholder="Email Address" [formControl]="myform.controls['email']">
+                    <input matInput placeholder="Email Address" id="newsEmail" [formControl]="myform.controls['email']">
                   </mat-form-field>
-                  <button mat-raised-button><img src="../../assets/images/newlettericon.png"></button>
+                  <button mat-raised-button ><img src="../../assets/images/newlettericon.png"></button>
 
                 </span>
                 <mat-error *ngIf="myform.controls['email'].touched && !myform.controls['email'].valid
@@ -195,12 +200,17 @@
     router.url === '/blog-management' ||
     router.url === '/add-edit-blogs' ||
     router.url === '/add-edit-blogcat' ||
-    router.url === 'blogs/add' ||
-    router.url === 'blog-category/add' ||
+    router.url === '/blogs/add' ||
+    router.url === '/blog-category/add' ||
     router.url === '/manage-commission' ||
     router.url === '/testimonial/list' ||
     router.url === '/social-advo-admin' ||
-    router.url === '/newsletter-list' ||
+    router.url ==='/newsletter-list' || 
+    router.url ==='/newsletter/add' || 
+    router.url ==='/subscriber/add' || 
+    router.url ==='/subscriber-group/add' || 
+    router.url ==='/sender/add' || 
+    router.url ==='/testemail/add' ||
     router.url === '/manage-commission-affiliate' ||
     router.url === '/social-advo-affiliate' ||
     router.url === '/book-an-appointment-user' ||
@@ -217,8 +227,12 @@
     router.url === '/booked-events' ||
     router.url === '/past-event-user' ||
     router.url === '/upcoming-event-user' ||
-    router.url === '/events'
-  ">
+    router.url === '/events' || 
+    activeroute.snapshot.routeConfig.path == '/testemail/edit/:_id' || 
+    activeroute.snapshot.routeConfig.path == '/sender/edit/:_id' || 
+    activeroute.snapshot.routeConfig.path == '/subscriber-group/edit/:_id' || 
+    activeroute.snapshot.routeConfig.path == '/subscriber/edit/:_id' || 
+    activeroute.snapshot.routeConfig.path == '/newsletter/edit/:_id'">
   <mat-card-content>
     <app-bk-footer></app-bk-footer>
   </mat-card-content>

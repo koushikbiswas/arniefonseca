@@ -11,8 +11,8 @@ export class AddEditBlogcatComponent implements OnInit {
   //Add editfor blog category
   public configAddEdit: any = {
     action: "add",
-    endpoint: this.apiService.serverUrlDemo+'addorupdatedata',
-    endpoint2: this.apiService.serverUrlDemo,
+    endpoint: this.apiService.serverUrl+'addorupdatedata',
+    endpoint2: this.apiService.serverUrl,
     source: "blog_category",
     condition: {},
     defaultData: null,

@@ -19,45 +19,40 @@
         </mat-card-content>
     </span>
     <span class="mainwrappercontent pt-30">                
-        <!-- <img src="../../../../assets/images/testimonial_blockimg1.jpg" style="width: 100%; display: block; margin: 0; padding: 0;"> -->
 
         <mat-list role="list">
             <!----START SINGLE TESTIMONIAL-->
 
-                <!-- <mat-list-item role="listitem" class="testimonialserv" *ngFor="let testmon of TestimonialListArray | slice:0:indexval; let i=index"> -->
-                <mat-list-item role="listitem" class="testimonialserv">
+                <mat-list-item role="listitem" class="testimonialserv" *ngFor="let testmon of TestimonialListArray | slice:0:indexval; let i=index">
                     <mat-card>
                         <span class="testiimgwarpper">
                             <span class="testiimgwarpper-main">
-                            <!-- <img src="{{testmon.image}}" class="iconcls"> -->
-                            <img src="../../../../assets/images/testimonial-img1.jpg" class="iconcls">
+                            <img src="{{testmon.testimonial_img}}" class="iconcls">
                             </span>
                         </span>
                         <mat-card-content class="testicontent">
-                            <!-- <span class="bnticons">
-                                <button *ngIf="testmon.video" (click)="showvideo()"><img src="../../../../assets/images/videoicon.png"></button>
-                                <button *ngIf="testmon.audio" (click)="showaudio()"><img src="../../../../assets/images/audioicon.png"></button>
-                            </span> -->
-                            <span class="testibottomcontent">
-                                <!-- <mat-card-title class="title1">{{testmon.name}}</mat-card-title> -->
-                                <mat-card-title class="title1">Lorem ipsum dolor sit amet</mat-card-title>
+                            <span class="bnticons">
+                                <button *ngIf="testmon.video_url !='' && testmon.video_url !=null " (click)="openvideourl(testmon.video_url)"><img src="../../../../assets/images/videoicon.png"></button>
                             </span>
-                            <!--<span class="rateingdiv">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                            </span>-->
+
+                            <!-- <span class="bnticons" *ngFor="let vurl of item.credentials">
+                                <button *ngIf="vurl.video_url !='' && vurl.video_url !=null " (click)="openvideourl(vurl.video_url)"><img src="../../../../assets/images/videoicon.png"></button>
+                                <button *ngIf="vurl.audio_url !='' && vurl.audio_url !=null " (click)="openaudiourl(vurl.audio_url)"><img src="../../../../assets/images/audioicon.png"></button>
+                            </span>                             -->
+                            <span class="testibottomcontent">
+                                <mat-card-title class="title1">{{testmon.name}}</mat-card-title>
+                            </span>
+                           
                             <span class="quatation">
-                            <!-- <p class="truncate" [ngClass]="{'truncate truncateopen':testmon._id == p_id }">
-                                <span [innerHtml]="testmon.testimonial"></span>
-                            </p> -->
-                            <p class="truncate">
-                                <img class="quotestarticon" src="../../../../assets/images/quotestart-icon.png"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span><img class="quoteendicon" src="../../../../assets/images/quoteend-icon.png">
-                            </p>
-                            <!-- <a *ngIf="testmon.testimonial != '' && testmon != '' && testmon.testimonial.length >= 254 " [ngClass]="{'hide':testmon._id == p_id}" (click)="showmore(testmon)"> read more</a> -->
-                            <a> read more</a>
+                                    <img class="quotestarticon" src="../../../../assets/images/quotestart-icon.png">
+                                <p class="truncate" [ngClass]="{'truncate truncateopen':testmon._id == p_id }">
+                                    
+                                    <span [innerHtml]="testmon.description"></span>
+                                   
+                                </p>
+                                <img class="quoteendicon" src="../../../../assets/images/quoteend-icon.png">
+                           
+                            <a *ngIf="testmon.description != '' && testmon != '' && testmon.description.length >= 254 " [ngClass]="{'hide':testmon._id == p_id}" (click)="showmore(testmon)"> read more</a>                        
                             </span>
                             
                            </mat-card-content>
@@ -72,298 +67,16 @@
                                 <a class="sociallink fa env"><fa name="envelope" class="fa-envelope"></fa></a>
                                 <a class="sociallink fa share"><fa name="share" class="fa-share"></fa></a>
                             </span>
-                            <span class="author"><p class="date">Date: 12-11-2019</p></span>                                    
+                            <span class="author"><p class="date">Date: {{testmon.date_added}}</p></span>                                    
                         </span>
                 </mat-list-item>
                 <!----END SINGLE TESTIMONIAL-->
 
 
-                <!----START SINGLE TESTIMONIAL-->
-
-                <!-- <mat-list-item role="listitem" class="testimonialserv" *ngFor="let testmon of TestimonialListArray | slice:0:indexval; let i=index"> -->
-                        <mat-list-item role="listitem" class="testimonialserv">
-                                <mat-card>
-                                    <span class="testiimgwarpper">
-                                        <span class="testiimgwarpper-main">
-                                            <!-- <img src="{{testmon.image}}" class="iconcls"> -->
-                                            <img src="../../../../assets/images/testimonial-img2.jpg" class="iconcls">
-                                        </span>
-                                    </span>
-                                    <mat-card-content class="testicontent">
-                                        <!-- <span class="bnticons">
-                                            <button *ngIf="testmon.video" (click)="showvideo()"><img src="../../../../assets/images/videoicon.png"></button>
-                                            <button *ngIf="testmon.audio" (click)="showaudio()"><img src="../../../../assets/images/audioicon.png"></button>
-                                        </span> -->
-                                        <span class="testibottomcontent">
-                                            <!-- <mat-card-title class="title1">{{testmon.name}}</mat-card-title> -->
-                                            <mat-card-title class="title1">Lorem ipsum dolor</mat-card-title>
-                                        </span>
-                                        <!--<span class="rateingdiv">
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star"></span>
-                                        </span>-->
-                                        <span class="quatation">
-                                        <!-- <p class="truncate" [ngClass]="{'truncate truncateopen':testmon._id == p_id }">
-                                            <span [innerHtml]="testmon.testimonial"></span>
-                                        </p> -->
-                                        <p class="truncate">
-                                                <img class="quotestarticon" src="../../../../assets/images/quotestart-icon.png"><span>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span><img class="quoteendicon" src="../../../../assets/images/quoteend-icon.png">
-                                        </p>
-                                        <!-- <a *ngIf="testmon.testimonial != '' && testmon != '' && testmon.testimonial.length >= 254 " [ngClass]="{'hide':testmon._id == p_id}" (click)="showmore(testmon)"> read more</a> -->
-                                        <a> read more</a>
-                                        </span>
-                                        
-                                       </mat-card-content>
-                                       
-                                </mat-card>
-                                <span class="contentsection absolute">
-                                        <span class="blogsociallists">
-                                            <a class="sociallink fa fb"><fa name="facebook" class="fa-facebook"></fa></a>
-                                            <a class="sociallink fa twi"><fa name="twitter" class="fa-twitter"></fa></a>
-                                            <a class="sociallink fa pin"><fa name="pinterest" class="fa-pinterest"></fa></a>
-                                            <a class="sociallink fa lin"><fa name="linkedin" class="fa-linkedin"></fa></a>
-                                            <a class="sociallink fa env"><fa name="envelope" class="fa-envelope"></fa></a>
-                                            <a class="sociallink fa share"><fa name="share" class="fa-share"></fa></a>
-                                        </span>
-                                        <span class="author"><p class="date">Date: 12-11-2019</p></span>                                    
-                                    </span>
-                            </mat-list-item>
-            
-                            <!----END SINGLE TESTIMONIAL-->
-
-                            <!----START SINGLE TESTIMONIAL-->
-
-                <!-- <mat-list-item role="listitem" class="testimonialserv" *ngFor="let testmon of TestimonialListArray | slice:0:indexval; let i=index"> -->
-                        <mat-list-item role="listitem" class="testimonialserv">
-                                <mat-card>
-                                    <span class="testiimgwarpper">
-                                        <span class="testiimgwarpper-main">
-                                            <!-- <img src="{{testmon.image}}" class="iconcls"> -->
-                                            <img src="../../../../assets/images/testimonial-img3.jpg" class="iconcls">
-                                        </span>
-                                    </span>
-                                    <mat-card-content class="testicontent">
-                                        <!-- <span class="bnticons">
-                                            <button *ngIf="testmon.video" (click)="showvideo()"><img src="../../../../assets/images/videoicon.png"></button>
-                                            <button *ngIf="testmon.audio" (click)="showaudio()"><img src="../../../../assets/images/audioicon.png"></button>
-                                        </span> -->
-                                        <span class="testibottomcontent">
-                                            <!-- <mat-card-title class="title1">{{testmon.name}}</mat-card-title> -->
-                                            <mat-card-title class="title1">Lorem ipsum dolor</mat-card-title>
-                                        </span>
-                                        <!--<span class="rateingdiv">
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star"></span>
-                                        </span>-->
-                                        <span class="quatation">
-                                        <!-- <p class="truncate" [ngClass]="{'truncate truncateopen':testmon._id == p_id }">
-                                            <span [innerHtml]="testmon.testimonial"></span>
-                                        </p> -->
-                                        <p class="truncate">
-                                                <img class="quotestarticon" src="../../../../assets/images/quotestart-icon.png"><span>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span><img class="quoteendicon" src="../../../../assets/images/quoteend-icon.png">
-                                        </p>
-                                        <!-- <a *ngIf="testmon.testimonial != '' && testmon != '' && testmon.testimonial.length >= 254 " [ngClass]="{'hide':testmon._id == p_id}" (click)="showmore(testmon)"> read more</a> -->
-                                        <a> read more</a>
-                                        </span>
-                                        
-                                       </mat-card-content>
-                                       
-                                </mat-card>
-                                <span class="contentsection absolute">
-                                        <span class="blogsociallists">
-                                            <a class="sociallink fa fb"><fa name="facebook" class="fa-facebook"></fa></a>
-                                            <a class="sociallink fa twi"><fa name="twitter" class="fa-twitter"></fa></a>
-                                            <a class="sociallink fa pin"><fa name="pinterest" class="fa-pinterest"></fa></a>
-                                            <a class="sociallink fa lin"><fa name="linkedin" class="fa-linkedin"></fa></a>
-                                            <a class="sociallink fa env"><fa name="envelope" class="fa-envelope"></fa></a>
-                                            <a class="sociallink fa share"><fa name="share" class="fa-share"></fa></a>
-                                        </span>
-                                        <span class="author"><p class="date">Date: 12-11-2019</p></span>                                    
-                                    </span>
-                            </mat-list-item>
-            
-                            <!----END SINGLE TESTIMONIAL-->
-
-                            <!----START SINGLE TESTIMONIAL-->
-
-                        <!-- <mat-list-item role="listitem" class="testimonialserv" *ngFor="let testmon of TestimonialListArray | slice:0:indexval; let i=index"> -->
-                        <mat-list-item role="listitem" class="testimonialserv">
-                                <mat-card>
-                                    <span class="testiimgwarpper">
-                                        <span class="testiimgwarpper-main">
-                                            <!-- <img src="{{testmon.image}}" class="iconcls"> -->
-                                            <img src="../../../../assets/images/testimonial-img4.jpg" class="iconcls">
-                                        </span>
-                                    </span>
-                                    <mat-card-content class="testicontent">
-                                        <!-- <span class="bnticons">
-                                            <button *ngIf="testmon.video" (click)="showvideo()"><img src="../../../../assets/images/videoicon.png"></button>
-                                            <button *ngIf="testmon.audio" (click)="showaudio()"><img src="../../../../assets/images/audioicon.png"></button>
-                                        </span> -->
-                                        <span class="testibottomcontent">
-                                            <!-- <mat-card-title class="title1">{{testmon.name}}</mat-card-title> -->
-                                            <mat-card-title class="title1">Lorem ipsum dolor</mat-card-title>
-                                        </span>
-                                        <!--<span class="rateingdiv">
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star"></span>
-                                        </span>-->
-                                        <span class="quatation">
-                                        <!-- <p class="truncate" [ngClass]="{'truncate truncateopen':testmon._id == p_id }">
-                                            <span [innerHtml]="testmon.testimonial"></span>
-                                        </p> -->
-                                        <p class="truncate">
-                                                <img class="quotestarticon" src="../../../../assets/images/quotestart-icon.png"><span>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span><img class="quoteendicon" src="../../../../assets/images/quoteend-icon.png">
-                                        </p>
-                                        <!-- <a *ngIf="testmon.testimonial != '' && testmon != '' && testmon.testimonial.length >= 254 " [ngClass]="{'hide':testmon._id == p_id}" (click)="showmore(testmon)"> read more</a> -->
-                                        <a> read more</a>
-                                        </span>
-                                                                      
-                                    </mat-card-content>
-                                    
-                                                
-                                </mat-card>
-                                <span class="contentsection absolute">
-                                        <span class="blogsociallists">
-                                            <a class="sociallink fa fb"><fa name="facebook" class="fa-facebook"></fa></a>
-                                            <a class="sociallink fa twi"><fa name="twitter" class="fa-twitter"></fa></a>
-                                            <a class="sociallink fa pin"><fa name="pinterest" class="fa-pinterest"></fa></a>
-                                            <a class="sociallink fa lin"><fa name="linkedin" class="fa-linkedin"></fa></a>
-                                            <a class="sociallink fa env"><fa name="envelope" class="fa-envelope"></fa></a>
-                                            <a class="sociallink fa share"><fa name="share" class="fa-share"></fa></a>
-                                        </span>
-                                        <span class="author"><p class="date">Date: 12-11-2019</p></span>                                    
-                                    </span>
-                            </mat-list-item>
-            
-                            <!----END SINGLE TESTIMONIAL-->
-
-                            <!----START SINGLE TESTIMONIAL-->
-
-                        <!-- <mat-list-item role="listitem" class="testimonialserv" *ngFor="let testmon of TestimonialListArray | slice:0:indexval; let i=index"> -->
-                        <mat-list-item role="listitem" class="testimonialserv">
-                            <mat-card>
-                                <span class="testiimgwarpper">
-                                    <span class="testiimgwarpper-main">
-                                        <!-- <img src="{{testmon.image}}" class="iconcls"> -->
-                                        <img src="../../../../assets/images/testimonial-img5.jpg" class="iconcls">
-                                    </span>
-                                </span>
-                                <mat-card-content class="testicontent">
-                                    <!-- <span class="bnticons">
-                                        <button *ngIf="testmon.video" (click)="showvideo()"><img src="../../../../assets/images/videoicon.png"></button>
-                                        <button *ngIf="testmon.audio" (click)="showaudio()"><img src="../../../../assets/images/audioicon.png"></button>
-                                    </span> -->
-                                    <span class="testibottomcontent">
-                                        <!-- <mat-card-title class="title1">{{testmon.name}}</mat-card-title> -->
-                                        <mat-card-title class="title1">Lorem ipsum dolor</mat-card-title>
-                                    </span>
-                                    <!--<span class="rateingdiv">
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star"></span>
-                                    </span>-->
-                                    <span class="quatation">
-                                    <!-- <p class="truncate" [ngClass]="{'truncate truncateopen':testmon._id == p_id }">
-                                        <span [innerHtml]="testmon.testimonial"></span>
-                                    </p> -->
-                                    <p class="truncate">
-                                            <img class="quotestarticon" src="../../../../assets/images/quotestart-icon.png"><span>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span><img class="quoteendicon" src="../../../../assets/images/quoteend-icon.png">
-                                    </p>
-                                    <!-- <a *ngIf="testmon.testimonial != '' && testmon != '' && testmon.testimonial.length >= 254 " [ngClass]="{'hide':testmon._id == p_id}" (click)="showmore(testmon)"> read more</a> -->
-                                    <a> read more</a>
-                                    </span>
-                                                                  
-                                </mat-card-content>
-                                
-                                            
-                            </mat-card>
-                            <span class="contentsection absolute">
-                                    <span class="blogsociallists">
-                                        <a class="sociallink fa fb"><fa name="facebook" class="fa-facebook"></fa></a>
-                                        <a class="sociallink fa twi"><fa name="twitter" class="fa-twitter"></fa></a>
-                                        <a class="sociallink fa pin"><fa name="pinterest" class="fa-pinterest"></fa></a>
-                                        <a class="sociallink fa lin"><fa name="linkedin" class="fa-linkedin"></fa></a>
-                                        <a class="sociallink fa env"><fa name="envelope" class="fa-envelope"></fa></a>
-                                        <a class="sociallink fa share"><fa name="share" class="fa-share"></fa></a>
-                                    </span>
-                                    <span class="author"><p class="date">Date: 12-11-2019</p></span>                                    
-                                </span>
-                        </mat-list-item>
-        
-                        <!----END SINGLE TESTIMONIAL-->
-
-                        <!----START SINGLE TESTIMONIAL-->
-
-                        <!-- <mat-list-item role="listitem" class="testimonialserv" *ngFor="let testmon of TestimonialListArray | slice:0:indexval; let i=index"> -->
-                            <mat-list-item role="listitem" class="testimonialserv">
-                                <mat-card>
-                                    <span class="testiimgwarpper">
-                                        <span class="testiimgwarpper-main">
-                                            <!-- <img src="{{testmon.image}}" class="iconcls"> -->
-                                            <img src="../../../../assets/images/testimonial-img6.jpg" class="iconcls">
-                                        </span>
-                                    </span>
-                                    <mat-card-content class="testicontent">
-                                        <!-- <span class="bnticons">
-                                            <button *ngIf="testmon.video" (click)="showvideo()"><img src="../../../../assets/images/videoicon.png"></button>
-                                            <button *ngIf="testmon.audio" (click)="showaudio()"><img src="../../../../assets/images/audioicon.png"></button>
-                                        </span> -->
-                                        <span class="testibottomcontent">
-                                            <!-- <mat-card-title class="title1">{{testmon.name}}</mat-card-title> -->
-                                            <mat-card-title class="title1">Lorem ipsum dolor</mat-card-title>
-                                        </span>
-                                        <!--<span class="rateingdiv">
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star"></span>
-                                        </span>-->
-                                        <span class="quatation">
-                                        <!-- <p class="truncate" [ngClass]="{'truncate truncateopen':testmon._id == p_id }">
-                                            <span [innerHtml]="testmon.testimonial"></span>
-                                        </p> -->
-                                        <p class="truncate">
-                                                <img class="quotestarticon" src="../../../../assets/images/quotestart-icon.png"><span>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span><img class="quoteendicon" src="../../../../assets/images/quoteend-icon.png">
-                                        </p>
-                                        <!-- <a *ngIf="testmon.testimonial != '' && testmon != '' && testmon.testimonial.length >= 254 " [ngClass]="{'hide':testmon._id == p_id}" (click)="showmore(testmon)"> read more</a> -->
-                                        <a> read more</a>
-                                        </span>
-                                                                      
-                                    </mat-card-content>
-                                    
-                                                
-                                </mat-card>
-                                <span class="contentsection absolute">
-                                        <span class="blogsociallists">
-                                            <a class="sociallink fa fb"><fa name="facebook" class="fa-facebook"></fa></a>
-                                            <a class="sociallink fa twi"><fa name="twitter" class="fa-twitter"></fa></a>
-                                            <a class="sociallink fa pin"><fa name="pinterest" class="fa-pinterest"></fa></a>
-                                            <a class="sociallink fa lin"><fa name="linkedin" class="fa-linkedin"></fa></a>
-                                            <a class="sociallink fa env"><fa name="envelope" class="fa-envelope"></fa></a>
-                                            <a class="sociallink fa share"><fa name="share" class="fa-share"></fa></a>
-                                        </span>
-                                        <span class="author"><p class="date">Date: 12-11-2019</p></span>                                    
-                                    </span>
-                            </mat-list-item>
-            
-                            <!----END SINGLE TESTIMONIAL-->
+                
 
             </mat-list>
             <button *ngIf="indexval.length > indexval" (click)="showMoreFunc()" mat-stroked-button class="btngeneral btngray">Load more</button>
-            <!-- <button (click)="showMoreFunc()" mat-stroked-button class="btngeneral btngray">Load more</button> -->
     </span> 
 </mat-card>
 

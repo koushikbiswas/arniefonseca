@@ -4,7 +4,7 @@ import { SidenavService } from '../../../app/services/sidenav.service';
 
 import {MatDialog} from '@angular/material/dialog';
 import { CookieService } from 'ngx-cookie-service';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { HeaderComponent } from '../header/header.component';
 
 @Component({
@@ -19,7 +19,7 @@ export class BkHeaderComponent implements OnInit {
 
   public user_full_name: any;
 
-  constructor(public cookieService: CookieService, private sidenav: SidenavService, public dialog: MatDialog, public router: Router, public Header: HeaderComponent) {
+  constructor(public cookieService: CookieService, private sidenav: SidenavService, public dialog: MatDialog, public router: Router, public Header: HeaderComponent, public activeroute: ActivatedRoute) {
 
 
   }
@@ -28,7 +28,7 @@ export class BkHeaderComponent implements OnInit {
   toggleRightSidenav() {
     this.toggleActive = !this.toggleActive;
     this.sidenav.toggle();
-    console.log('Clicked');
+    // console.log('Clicked');
     
     
     
@@ -46,7 +46,7 @@ export class BkHeaderComponent implements OnInit {
   logOut() {
     this.cookieService.deleteAll();
     this.router.navigateByUrl('/');
-    console.log("logout");
+    // console.log("logout");
   }
 
 }

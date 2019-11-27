@@ -33,6 +33,12 @@ import { SeminarsComponent } from './component/frontend/events/seminars/seminars
 import { WorkshopsComponent } from './component/frontend/events/workshops/workshops.component';
 import { SpeakerEngagementsComponent } from './component/frontend/events/speaker-engagements/speaker-engagements.component';
 
+
+import { WorkshopDetailComponent } from './component/frontend/events/workshop-detail/workshop-detail.component';
+import { SeminarsDetailComponent } from './component/frontend/events/seminars-detail/seminars-detail.component';
+import { SpeakerEngagementsDetailComponent } from './component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component';
+
+
 /**End Frontend Routing**/
 
 /**Backend Routing**/
@@ -91,8 +97,13 @@ import { AddEditManageSpeakerEngagementComponent } from './component/backend/eve
 import { ManageWorkshopListingComponent } from './component/backend/events/manage-workshop/manage-workshop-listing/manage-workshop-listing.component';
 import { AddEditManageWorkshopComponent } from './component/backend/events/manage-workshop/add-edit-manage-workshop/add-edit-manage-workshop.component';
 
+import { AddEditNewsletterComponent } from './component/backend/newsletterlists/add-edit-newsletter/add-edit-newsletter.component';
 
 import { from } from 'rxjs';
+import { AddEditSubscriberComponent } from './component/backend/newsletterlists/add-edit-subscriber/add-edit-subscriber.component';
+import { AddEditSubscriberGroupComponent } from './component/backend/newsletterlists/add-edit-subscriber-group/add-edit-subscriber-group.component';
+import { AddEditSendersComponent } from './component/backend/newsletterlists/add-edit-senders/add-edit-senders.component';
+import { AddEditTestemailComponent } from './component/backend/newsletterlists/add-edit-testemail/add-edit-testemail.component';
 
 /**End Backend Routing**/
 
@@ -117,7 +128,7 @@ const routes: Routes = [
     component: TesimonialComponent,
     resolve: { testimonialListData: ResolveService },
     data: {
-      requestcondition: { source: "testimonals", condition: {} },
+      requestcondition: { source: "testimonal", condition: {} },
       endpoint: "datalistwithouttoken"
     }
   },
@@ -130,11 +141,16 @@ const routes: Routes = [
   data: { requestcondition: { condition: {"limit": 4, "skip":1} }, endpoint: 'blogdata' } },
 
   { path: 'blogdetail/:_id', component: BlogdetailComponent, resolve: { blogCatList: ResolveService },
-  data: { requestcondition: { source: 'blogs', condition: {} }, endpoint: 'datalistwithouttoken' }  },
+  data: { requestcondition: { source: 'blogs_view', condition: {} }, endpoint: 'datalistwithouttoken' }  },
 
   //  static path
   {
-    path: "testimonial", component: TesimoniallistComponent
+    path: "testimonial", component: TesimoniallistComponent,
+    resolve: { testimonialListData: ResolveService },
+    data: {
+      requestcondition: { source: "testimonial_view", condition: {} },
+      endpoint: "datalistwithouttoken"
+    }
   },
 
   /**End Frontend Routing**/
@@ -161,6 +177,10 @@ const routes: Routes = [
   { path: 'commission-report', component: CommissionReportComponent },
   // { path: 'testimonial-lists-admin', component: ListingTestimonialComponent },
   { path: 'customer-list-admin', component: CustomerListComponent },
+
+  { path: 'workshop-detail', component: WorkshopDetailComponent },
+  { path: 'seminars-detail', component: SeminarsDetailComponent },
+  { path: 'speaker-engagements-detail', component: SpeakerEngagementsDetailComponent },
   
   { path: 'testimonial/add', component: AddeditTestimonialComponent },
   {
@@ -184,6 +204,11 @@ const routes: Routes = [
   { path: 'seminars', component: SeminarsComponent },
   { path: 'workshops', component: WorkshopsComponent },
   { path: 'speaker-engagements', component: SpeakerEngagementsComponent },
+
+  { path: 'seminars-detail', component: SeminarsDetailComponent },
+  { path: 'workshop-detail', component: WorkshopDetailComponent },
+  { path: 'speaker-engagements-detail', component: SpeakerEngagementsDetailComponent },
+
   { path: 'affiliate-admin', component: AffiliateComponent },
   { path: 'gallery-admin', component: GalleryAdminComponent },
 
@@ -213,6 +238,85 @@ const routes: Routes = [
   { path: 'add-edit-manage-speaker-engagement', component: AddEditManageSpeakerEngagementComponent },
 
 
+  //_____________________Newsletter/subscriber/sender/testemail____________//
+  { path: 'newsletter/add', component: AddEditNewsletterComponent },
+  {
+    path: 'newsletter/edit/:_id',
+    component: AddEditBlogcatComponent,
+
+    resolve: { newLetterList: ResolveService },
+    data: {
+      requestcondition: {
+        source: '',
+        condition: {}
+      },
+      endpoint: ''
+    },
+  },
+
+  { path: 'subscriber/add', component: AddEditSubscriberComponent },
+
+  {
+    path: 'subscriber/edit/:_id',
+    component: AddEditSubscriberComponent,
+
+    resolve: { subscriberList: ResolveService },
+    data: {
+      requestcondition: {
+        source: '',
+        condition: {}
+      },
+      endpoint: ''
+    },
+  },
+
+  { path: 'subscriber-group/add', component: AddEditSubscriberGroupComponent },
+
+  {
+    path: 'subscriber-group/edit/:_id',
+    component: AddEditSubscriberGroupComponent,
+
+    resolve: { subscriberGroupList: ResolveService },
+    data: {
+      requestcondition: {
+        source: '',
+        condition: {}
+      },
+      endpoint: ''
+    },
+  },
+
+  { path: 'sender/add', component: AddEditSendersComponent },
+
+  {
+    path: 'sender/edit/:_id',
+    component: AddEditSendersComponent,
+
+    resolve: { senderList: ResolveService },
+    data: {
+      requestcondition: {
+        source: '',
+        condition: {}
+      },
+      endpoint: ''
+    },
+  },
+
+  { path: 'testemail/add', component: AddEditTestemailComponent },
+
+  {
+    path: 'testemail/edit/:_id',
+    component: AddEditTestemailComponent,
+
+    resolve: { senderList: ResolveService },
+    data: {
+      requestcondition: {
+        source: '',
+        condition: {}
+      },
+      endpoint: ''
+    },
+  },
 
 
   //____________end event routing______________//

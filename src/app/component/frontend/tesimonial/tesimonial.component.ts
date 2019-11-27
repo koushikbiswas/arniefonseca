@@ -62,24 +62,23 @@ export class TesimonialComponent implements OnInit {
   constructor(private activatedRoute: ActivatedRoute, private router: Router, public apiService: ApiService) { }
 
   ngOnInit() {
-    // var data: any = {};
-    // data = {
-    //   source:"testimonial_view",
-    //   endpoint: "datalist"
-    // }
-    // this.apiService.getTempToken().subscribe((res:any)=>{
-      
-    //   if(res.status == 'success') {
-    //     this.apiService.getDatalistWithToken(data, res).subscribe((res2:any)=>{
-    //       this.TestimonialListArray = res2.res;
+    var data: any = {};
+    data = {
+      source:"testimonial_view",
+      endpoint: "datalist"
+    }
 
-    //     });
-    //   }
-    // });
-    this.activatedRoute.data.forEach((data:any)=>{
-      this.TestimonialListArray=data.testimonialListData;
-      console.log('>>>>>>>>>>>>>>>',this.TestimonialListArray)
-    })
+    this.apiService.getTempToken().subscribe((res:any)=>{      
+      if(res.status == 'success') {
+        this.apiService.getDatalistWithToken(data, res).subscribe((res2:any)=>{
+          this.TestimonialListArray = res2.res;
+        });
+      }
+    });
+    // this.activatedRoute.data.forEach((data:any)=>{
+    //   this.TestimonialListArray=data.testimonialListData;
+    //   //console.log('>>>>>>koushik testimonial>>>>>>>>>',this.TestimonialListArray)
+    // })
 
   }
 

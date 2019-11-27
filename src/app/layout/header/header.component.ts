@@ -31,8 +31,8 @@ export class HeaderComponent implements OnInit {
   public token:any='';
    
   constructor(public router: Router, public cookieService: CookieService, public dialog: MatDialog, public activeroute: ActivatedRoute) {
-    console.log(router.url)
-    console.log('++++++++++++++++++',activeroute.snapshot.routeConfig.path)
+    // console.log(router.url)
+    // console.log('++++++++++++++++++',activeroute.snapshot.routeConfig.path)
     // this.userCookies = JSON.parse(this.cookieService.get('user_details'));
 
     // console.log(this.userCookies.firstname);
@@ -47,7 +47,7 @@ export class HeaderComponent implements OnInit {
   logOut() {
     this.cookieService.deleteAll();
     this.router.navigateByUrl('/');
-    console.log("logout");
+    // console.log("logout");
   }
 
   openDialog(): void {

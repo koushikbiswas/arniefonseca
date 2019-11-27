@@ -35,7 +35,7 @@ export class BlogComponent implements OnInit {
 
     }
 
-    console.log(this.safeSrc);
+    // console.log(this.safeSrc);
 
 
   }
@@ -45,12 +45,12 @@ export class BlogComponent implements OnInit {
     if (this.currentSlide === this.savedUrl.length) return;
     this.currentSlide = (this.currentSlide - 1) % this.savedUrl.length;
 
-    console.log(this.currentSlide)
+    // console.log(this.currentSlide)
   }
   next() {
     if (this.currentSlide === this.savedUrl.length) return;
     this.currentSlide = (this.currentSlide + 1) % this.savedUrl.length;
-    console.log(this.currentSlide)
+    // console.log(this.currentSlide)
   }
 
 
@@ -65,13 +65,13 @@ export class BlogComponent implements OnInit {
 
 
   onSelect(video) {
-    console.log(video)
+    // console.log(video)
 
     this.video1 = "https://www.youtube.com/embed/" + video;
       this.safeSrc = this.video1;
 
       this.temp = this.safeSrc;
-    console.log(this.temp)
+    // console.log(this.temp)
   }
 
 }

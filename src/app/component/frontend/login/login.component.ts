@@ -25,7 +25,7 @@ export class LoginComponent implements OnInit {
   public logo: any = '../../assets/images/logo.png';      // logo url 
   public fromTitle: any = "Login";    // This is a From Title 
   // public fullUrl: any = "https://63zzhpnoti.execute-api.us-east-1.amazonaws.com/production/api/";  // server url
-  public fullUrl: any = this.apiService.serverUrlDemo;
+  public fullUrl: any = this.apiService.serverUrl;
   public endpoint: any = "login";  // login endpoint
   public buttonName:any= 'Login';
   public signUpRouteingUrl: any = { 
@@ -74,7 +74,7 @@ export class LoginComponent implements OnInit {
     }
   
     ngOnInit() {
-      //console.log(this.apiService.serverUrlDemo)
+      //console.log(this.apiService.serverUrl)
     }
   
 

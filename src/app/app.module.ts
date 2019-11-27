@@ -27,7 +27,7 @@ import { OwlModule } from 'ngx-owl-carousel';
 /**Frontend Component**/
 
 import { HeaderComponent, comingSoonDialog } from './layout/header/header.component';
-import { FooterComponent, DialogTermsDialog, DialogPrivacyDialog, NewslatterDialogComponent} from './layout/footer/footer.component';
+import { FooterComponent, DialogTermsDialog, DialogPrivacyDialog, NewslatterDialogComponent, NewslattersuccessDialogComponent} from './layout/footer/footer.component';
 import { HomeComponent } from './component/frontend/home/home.component';
 import { ContactusComponent } from './component/frontend/contactus/contactus.component';
 import { ForgetPasswordComponent } from './component/frontend/forget-password/forget-password.component';
@@ -43,7 +43,7 @@ import { AboutusComponent } from './component/frontend/aboutus/aboutus.component
 import { ServiceComponent } from './component/frontend/service/service.component';
 import { ServicelistComponent } from './component/frontend/services/servicelist/servicelist.component';
 import { TesimonialComponent } from './component/frontend/tesimonial/tesimonial.component';
-import { TesimoniallistComponent } from './component/frontend/tesimoniallist/tesimoniallist.component';
+import { TesimoniallistComponent, CommonTestimonialVideoModalComponent } from './component/frontend/tesimoniallist/tesimoniallist.component';
 import { EmployeeTrainingComponent } from './component/frontend/services/employee-training/employee-training.component';
 import { CouplesCounselingComponent } from './component/frontend/services/couples-counseling/couples-counseling.component';
 import { PersonalDevelopmentCoachingComponent } from './component/frontend/services/personal-development-coaching/personal-development-coaching.component';
@@ -110,6 +110,17 @@ import { ManageSpeakerEngagementListingComponent } from './component/backend/eve
 import { AddEditManageSpeakerEngagementComponent } from './component/backend/events/manage-speaker-engagement/add-edit-manage-speaker-engagement/add-edit-manage-speaker-engagement.component';
 import { AddEditManageWorkshopComponent } from './component/backend/events/manage-workshop/add-edit-manage-workshop/add-edit-manage-workshop.component';
 import { ManageWorkshopListingComponent } from './component/backend/events/manage-workshop/manage-workshop-listing/manage-workshop-listing.component';
+import { WorkshopDetailComponent } from './component/frontend/events/workshop-detail/workshop-detail.component';
+import { SeminarsDetailComponent } from './component/frontend/events/seminars-detail/seminars-detail.component';
+import { SpeakerEngagementsDetailComponent } from './component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component';
+
+import { AddEditNewsletterComponent } from './component/backend/newsletterlists/add-edit-newsletter/add-edit-newsletter.component';
+import { NewsTitleModule } from 'news-title';
+
+import { AddEditSubscriberComponent } from './component/backend/newsletterlists/add-edit-subscriber/add-edit-subscriber.component';
+import { AddEditSubscriberGroupComponent } from './component/backend/newsletterlists/add-edit-subscriber-group/add-edit-subscriber-group.component';
+import { AddEditSendersComponent } from './component/backend/newsletterlists/add-edit-senders/add-edit-senders.component';
+import { AddEditTestemailComponent } from './component/backend/newsletterlists/add-edit-testemail/add-edit-testemail.component';
 
 /**End Backend Component** */
 
@@ -117,7 +128,8 @@ import { ManageWorkshopListingComponent } from './component/backend/events/manag
 @NgModule({
   declarations: [
     VideoModalComponent,
-    CommonVideoModalComponent,
+    CommonVideoModalComponent,    
+    CommonTestimonialVideoModalComponent,
     AppComponent,
     LoginComponent,
     ContactusComponent,
@@ -188,7 +200,21 @@ import { ManageWorkshopListingComponent } from './component/backend/events/manag
     AddEditManageSpeakerEngagementComponent,
     AddEditManageWorkshopComponent,
     ManageWorkshopListingComponent,
-    NewslatterDialogComponent
+    NewslatterDialogComponent,
+
+    NewslattersuccessDialogComponent,
+
+    
+    WorkshopDetailComponent,
+    SeminarsDetailComponent,
+    SpeakerEngagementsDetailComponent,
+    AddEditNewsletterComponent,
+    
+    AddEditSubscriberComponent,
+    AddEditSubscriberGroupComponent,
+    AddEditSendersComponent,
+    AddEditTestemailComponent
+
   ],
   imports: [
     BlogModule,
@@ -214,10 +240,11 @@ import { ManageWorkshopListingComponent } from './component/backend/events/manag
     OwlModule,
     FormsModule,
     ReactiveFormsModule,
+    NewsTitleModule
   ],
   providers: [CookieService, AuthGuard, ApiService, SidenavService],
   bootstrap: [AppComponent],
   schemas:[CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
-  entryComponents: [comingSoonDialog, DialogPrivacyDialog, DialogTermsDialog,CommonVideoModalComponent, NewslatterDialogComponent,VideoModalComponent]
+  entryComponents: [comingSoonDialog, DialogPrivacyDialog, DialogTermsDialog,CommonVideoModalComponent, NewslatterDialogComponent,VideoModalComponent, NewslattersuccessDialogComponent, CommonTestimonialVideoModalComponent]
 })
 export class AppModule { }

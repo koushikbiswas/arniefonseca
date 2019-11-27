@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CookieService } from 'ngx-cookie-service';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-bk-footer',
@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 export class BkFooterComponent implements OnInit {
 
   public user_data: any;
-  constructor(public router: Router, public cookieService: CookieService) {
+  constructor(public router: Router, public cookieService: CookieService, public activeroute: ActivatedRoute) {
     // this.user_data = JSON.parse(this.cookieService.get('user_details'))
     // console.log(this.user_data)
    }

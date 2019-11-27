@@ -12,7 +12,7 @@ export class ResetPasswordComponent implements OnInit {
   public logo: any = '../../assets/images/logo.png';
   public fromTitleName: any = 'Reset Password';
   // public serverUrl: any = 'https://9v41bpikik.execute-api.us-east-1.amazonaws.com/production/api/';
-  public serverUrl: any = this.apiService.serverUrlDemo;
+  public serverUrl: any = this.apiService.serverUrl;
   public addEndpoint: any = {
     endpoint:'addorupdatedata',
     source:'usermanagement'

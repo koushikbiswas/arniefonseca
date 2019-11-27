@@ -15,7 +15,7 @@ export class ListingServiceComponent implements OnInit {
     /************** lib list setup start here *************/
     public serviceListConfig:any = {
       // apiBaseUrl: "https://9v41bpikik.execute-api.us-east-1.amazonaws.com/production/api/",
-      endpoint: this.apiService.serverUrlDemo,
+      endpoint: this.apiService.serverUrl,
       listEndPoint: "datalist",
       datasource: "",
       tableName: "services",

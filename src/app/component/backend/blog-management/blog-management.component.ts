@@ -13,7 +13,7 @@ export class BlogManagementComponent implements OnInit {
 
   //Blogs Lib List
   public blogListConfig: any = {
-    apiBaseUrl: this.apiService.serverUrlDemo,
+    apiBaseUrl: this.apiService.serverUrl,
     listEndPoint: "datalist",
     datasource: [],
     tableName: "blogs",
@@ -29,7 +29,7 @@ export class BlogManagementComponent implements OnInit {
 
   //Listing for blog category
   public blogCatConfig: any = {
-    apiBaseUrl:this.apiService.serverUrlDemo,
+    apiBaseUrl:this.apiService.serverUrl,
     listEndPoint: "datalistwithouttoken",
     datasource: [],
     tableName: "blog_category",

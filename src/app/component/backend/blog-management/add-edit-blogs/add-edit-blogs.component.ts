@@ -10,7 +10,7 @@ import { ApiService } from 'src/app/api.service';
 export class AddEditBlogsComponent implements OnInit {
 
 
-  server: any =this.apiService.serverUrlDemo;
+  server: any =this.apiService.serverUrl;
   addUrl: any = 'addorupdatedata';
   getDataUrl: any= 'datalist';
   public editdata: any = [];

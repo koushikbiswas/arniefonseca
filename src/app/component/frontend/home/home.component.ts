@@ -30,6 +30,10 @@ export class HomeComponent implements OnInit {
     var data: any = {};
   }
 
+  ngAfterViewInit(): void {
+    this.cdr.detectChanges();
+  }
+
   btnClick() {
     this.router.navigateByUrl('/testimonial');
   };
