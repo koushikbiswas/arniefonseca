@@ -27,13 +27,14 @@
                     <mat-card>
                         <span class="testiimgwarpper">
                             <span class="testiimgwarpper-main">
-                            <img src="{{testmon.testimonial_img}}" class="iconcls">
+                                <img src="{{testmon.testimonial_img}}" class="iconcls">
                             </span>
-                        </span>
-                        <mat-card-content class="testicontent">
                             <span class="bnticons">
                                 <button *ngIf="testmon.video_url !='' && testmon.video_url !=null " (click)="openvideourl(testmon.video_url)"><img src="../../../../assets/images/videoicon.png"></button>
                             </span>
+                        </span>
+                        <mat-card-content class="testicontent">
+                           
 
                             <!-- <span class="bnticons" *ngFor="let vurl of item.credentials">
                                 <button *ngIf="vurl.video_url !='' && vurl.video_url !=null " (click)="openvideourl(vurl.video_url)"><img src="../../../../assets/images/videoicon.png"></button>

@@ -1266,3 +1266,29 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
 
 
 .testimonial .owl-carousel.owl-drag .owl-item .title1{font-size: 20px !important; margin-top: 20px !important; color: #03aed4;}
+
+.testimonialserv .testiimgwarpper{
+  position: relative;
+}
+
+.testimonialserv .testiimgwarpper .bnticons {
+  position: absolute;
+  right: 30px;
+  top: -100%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 47px;
+}
+
+.testimonialserv .testiimgwarpper .bnticons button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: transparent;
+  margin-left: 0;
+  flex: 1 1 100%;
+}
+
+.testimonialserv .testiimgwarpper .bnticons button img {
+  max-width: 100%;
+}
