@@ -115,6 +115,8 @@ import { SeminarsDetailComponent } from './component/frontend/events/seminars-de
 import { SpeakerEngagementsDetailComponent } from './component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component';
 
 import { AddEditNewsletterComponent } from './component/backend/newsletterlists/add-edit-newsletter/add-edit-newsletter.component';
+import { NewsTitleModule } from 'news-title';
+
 import { AddEditSubscriberComponent } from './component/backend/newsletterlists/add-edit-subscriber/add-edit-subscriber.component';
 import { AddEditSubscriberGroupComponent } from './component/backend/newsletterlists/add-edit-subscriber-group/add-edit-subscriber-group.component';
 import { AddEditSendersComponent } from './component/backend/newsletterlists/add-edit-senders/add-edit-senders.component';
@@ -207,6 +209,7 @@ import { AddEditTestemailComponent } from './component/backend/newsletterlists/a
     SeminarsDetailComponent,
     SpeakerEngagementsDetailComponent,
     AddEditNewsletterComponent,
+    
     AddEditSubscriberComponent,
     AddEditSubscriberGroupComponent,
     AddEditSendersComponent,
@@ -236,7 +239,8 @@ import { AddEditTestemailComponent } from './component/backend/newsletterlists/a
     MatCarouselModule.forRoot(),
     OwlModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NewsTitleModule
   ],
   providers: [CookieService, AuthGuard, ApiService, SidenavService],
   bootstrap: [AppComponent],
