@@ -43,7 +43,7 @@ import { AboutusComponent } from './component/frontend/aboutus/aboutus.component
 import { ServiceComponent } from './component/frontend/service/service.component';
 import { ServicelistComponent } from './component/frontend/services/servicelist/servicelist.component';
 import { TesimonialComponent } from './component/frontend/tesimonial/tesimonial.component';
-import { TesimoniallistComponent } from './component/frontend/tesimoniallist/tesimoniallist.component';
+import { TesimoniallistComponent, CommonTestimonialVideoModalComponent } from './component/frontend/tesimoniallist/tesimoniallist.component';
 import { EmployeeTrainingComponent } from './component/frontend/services/employee-training/employee-training.component';
 import { CouplesCounselingComponent } from './component/frontend/services/couples-counseling/couples-counseling.component';
 import { PersonalDevelopmentCoachingComponent } from './component/frontend/services/personal-development-coaching/personal-development-coaching.component';
@@ -115,6 +115,10 @@ import { SeminarsDetailComponent } from './component/frontend/events/seminars-de
 import { SpeakerEngagementsDetailComponent } from './component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component';
 
 import { AddEditNewsletterComponent } from './component/backend/newsletterlists/add-edit-newsletter/add-edit-newsletter.component';
+import { AddEditSubscriberComponent } from './component/backend/newsletterlists/add-edit-subscriber/add-edit-subscriber.component';
+import { AddEditSubscriberGroupComponent } from './component/backend/newsletterlists/add-edit-subscriber-group/add-edit-subscriber-group.component';
+import { AddEditSendersComponent } from './component/backend/newsletterlists/add-edit-senders/add-edit-senders.component';
+import { AddEditTestemailComponent } from './component/backend/newsletterlists/add-edit-testemail/add-edit-testemail.component';
 
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 // import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
@@ -125,8 +129,7 @@ import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 
 @NgModule({
   declarations: [
-    VideoModalComponent,
-    CommonVideoModalComponent,
+
     AppComponent,
     LoginComponent,
     ContactusComponent,
@@ -205,7 +208,11 @@ import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
     WorkshopDetailComponent,
     SeminarsDetailComponent,
     SpeakerEngagementsDetailComponent,
-    AddEditNewsletterComponent
+    AddEditNewsletterComponent,
+    AddEditSubscriberComponent,
+    AddEditSubscriberGroupComponent,
+    AddEditSendersComponent,
+    AddEditTestemailComponent
 
   ],
   imports: [
@@ -233,14 +240,11 @@ import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
     MatCarouselModule.forRoot(),
     OwlModule,
     FormsModule,
-    ReactiveFormsModule,
-   
-    
-
+    ReactiveFormsModule
   ],
   providers: [CookieService, AuthGuard, ApiService, SidenavService],
   bootstrap: [AppComponent],
   schemas:[CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
-  entryComponents: [comingSoonDialog, DialogPrivacyDialog, DialogTermsDialog,CommonVideoModalComponent, NewslatterDialogComponent,VideoModalComponent, NewslattersuccessDialogComponent]
+  entryComponents: [comingSoonDialog, DialogPrivacyDialog, DialogTermsDialog,CommonVideoModalComponent, NewslatterDialogComponent,VideoModalComponent, NewslattersuccessDialogComponent,CommonTestimonialVideoModalComponent]
 })
 export class AppModule { }

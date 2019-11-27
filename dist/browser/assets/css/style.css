@@ -1262,3 +1262,7 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
 .truncate{overflow: ellipsis;text-overflow: -o-ellipsis-lastline; display: -webkit-box; line-height: normal; max-height: 108px; -webkit-line-clamp: 5;}
 .truncateopen{overflow: inherit !important; max-height: 100% !important; height: auto !important; text-overflow: inherit !important; -webkit-line-clamp: inherit !important;    display: block !important}
 .truncateopen p{ max-height: 100% !important;}
+
+
+
+.testimonial .owl-carousel.owl-drag .owl-item .title1{font-size: 20px !important; margin-top: 20px !important; color: #03aed4;}

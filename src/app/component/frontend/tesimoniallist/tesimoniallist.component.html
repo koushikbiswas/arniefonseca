@@ -32,9 +32,13 @@
                         </span>
                         <mat-card-content class="testicontent">
                             <span class="bnticons">
-                                <button *ngIf="testmon.video" (click)="showvideo()"><img src="../../../../assets/images/videoicon.png"></button>
-                                <button *ngIf="testmon.audio" (click)="showaudio()"><img src="../../../../assets/images/audioicon.png"></button>
+                                <button *ngIf="testmon.video_url !='' && testmon.video_url !=null " (click)="openvideourl(testmon.video_url)"><img src="../../../../assets/images/videoicon.png"></button>
                             </span>
+
+                            <!-- <span class="bnticons" *ngFor="let vurl of item.credentials">
+                                <button *ngIf="vurl.video_url !='' && vurl.video_url !=null " (click)="openvideourl(vurl.video_url)"><img src="../../../../assets/images/videoicon.png"></button>
+                                <button *ngIf="vurl.audio_url !='' && vurl.audio_url !=null " (click)="openaudiourl(vurl.audio_url)"><img src="../../../../assets/images/audioicon.png"></button>
+                            </span>                             -->
                             <span class="testibottomcontent">
                                 <mat-card-title class="title1">{{testmon.name}}</mat-card-title>
                             </span>
