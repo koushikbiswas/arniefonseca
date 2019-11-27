@@ -241,6 +241,6 @@ import { AddEditTestemailComponent } from './component/backend/newsletterlists/a
   providers: [CookieService, AuthGuard, ApiService, SidenavService],
   bootstrap: [AppComponent],
   schemas:[CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
-  entryComponents: [comingSoonDialog, DialogPrivacyDialog, DialogTermsDialog,CommonVideoModalComponent, NewslatterDialogComponent,VideoModalComponent, NewslattersuccessDialogComponent]
+  entryComponents: [comingSoonDialog, DialogPrivacyDialog, DialogTermsDialog,CommonVideoModalComponent, NewslatterDialogComponent,VideoModalComponent, NewslattersuccessDialogComponent, CommonTestimonialVideoModalComponent]
 })
 export class AppModule { }
