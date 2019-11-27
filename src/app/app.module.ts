@@ -115,6 +115,8 @@ import { SeminarsDetailComponent } from './component/frontend/events/seminars-de
 import { SpeakerEngagementsDetailComponent } from './component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component';
 
 import { AddEditNewsletterComponent } from './component/backend/newsletterlists/add-edit-newsletter/add-edit-newsletter.component';
+import { NewsTitleModule } from 'news-title';
+
 
 /**End Backend Component** */
 
@@ -201,8 +203,8 @@ import { AddEditNewsletterComponent } from './component/backend/newsletterlists/
     WorkshopDetailComponent,
     SeminarsDetailComponent,
     SpeakerEngagementsDetailComponent,
-    AddEditNewsletterComponent
-
+    AddEditNewsletterComponent,
+    
   ],
   imports: [
     BlogModule,
@@ -228,6 +230,8 @@ import { AddEditNewsletterComponent } from './component/backend/newsletterlists/
     OwlModule,
     FormsModule,
     ReactiveFormsModule,
+    NewsTitleModule
+
   ],
   providers: [CookieService, AuthGuard, ApiService, SidenavService],
   bootstrap: [AppComponent],
