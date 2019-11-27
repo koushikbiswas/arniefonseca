@@ -27,14 +27,20 @@
                     <mat-card>
                         <span class="testiimgwarpper">
                             <span class="testiimgwarpper-main">
-                            <img src="{{testmon.testimonial_img}}" class="iconcls">
+                                <img src="{{testmon.testimonial_img}}" class="iconcls">
+                            </span>
+                            <span class="bnticons">
+                                <button *ngIf="testmon.video_url !='' && testmon.video_url !=null " (click)="openvideourl(testmon.video_url)"><img src="../../../../assets/images/videoicon.png"></button>
+                                <button *ngIf="testmon.audio_url !='' && testmon.audio_url !=null " (click)="openaudiourl(testmon.audio_url)"><img src="../../../../assets/images/audioicon.png"></button>
                             </span>
                         </span>
                         <mat-card-content class="testicontent">
-                            <span class="bnticons">
-                                <button *ngIf="testmon.video" (click)="showvideo()"><img src="../../../../assets/images/videoicon.png"></button>
-                                <button *ngIf="testmon.audio" (click)="showaudio()"><img src="../../../../assets/images/audioicon.png"></button>
-                            </span>
+                           
+
+                            <!-- <span class="bnticons" *ngFor="let vurl of item.credentials">
+                                <button *ngIf="vurl.video_url !='' && vurl.video_url !=null " (click)="openvideourl(vurl.video_url)"><img src="../../../../assets/images/videoicon.png"></button>
+                                <button *ngIf="vurl.audio_url !='' && vurl.audio_url !=null " (click)="openaudiourl(vurl.audio_url)"><img src="../../../../assets/images/audioicon.png"></button>
+                            </span>                             -->
                             <span class="testibottomcontent">
                                 <mat-card-title class="title1">{{testmon.name}}</mat-card-title>
                             </span>
@@ -68,11 +74,13 @@
                 </mat-list-item>
                 <!----END SINGLE TESTIMONIAL-->
 
-
+                <!--<button *ngIf="indexval.length > indexval" (click)="showMoreFunc()" mat-stroked-button class="btngeneral btngray">Load more</button> -->
                 
-
             </mat-list>
-            <button *ngIf="indexval.length > indexval" (click)="showMoreFunc()" mat-stroked-button class="btngeneral btngray">Load more</button>
+
+            <button mat-button class="btnblue sim-button" *ngIf="TestimonialListArray !=null && indexval < TestimonialListArray.length"
+                (click)="testimonialloadmore()">Load More</button>
+            
     </span> 
 </mat-card>
 

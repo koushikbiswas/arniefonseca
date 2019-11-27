@@ -84,55 +84,27 @@
           <!-- end video section -->
         </span>
         <span class="categorywrapper">
-          <h2 class="blogtitle">Categories <button mat-raised-button (click)="openAll()">Open All</button><button mat-raised-button (click)="closeAll()">close All</button></h2>                        
-                        <mat-accordion  #myaccordion="matAccordion" multi="true" class="category">
-                          <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-                            <mat-expansion-panel-header>
-                              <mat-panel-title>
-                                cvvcbbbvc &nbsp;
-                              </mat-panel-title>
-                            </mat-expansion-panel-header>
-                            <ng-container>
-                              <span>
-                                <div class="categorysub">
-                                  <h5 class="inner_header">cv</h5>
-                                </div>
-                              </span>
-                            </ng-container>
-                          </mat-expansion-panel>
-                          <mat-expansion-panel>
-                                <mat-expansion-panel-header>
-                                  <mat-panel-title>
-                                    cvvcbbbvc &nbsp;
-                                  </mat-panel-title>
-                                </mat-expansion-panel-header>
-                                <ng-container>
-                                  <span>
-                                    <div class="categorysub">
-                                      <h5 class="inner_header">cv</h5>
-                                    </div>
-                                  </span>
-                                </ng-container>
-                            </mat-expansion-panel>
-
-                            <mat-expansion-panel>
-                                    <mat-expansion-panel-header>
-                                      <mat-panel-title>
-                                        cvvcbbbvc &nbsp;
-                                      </mat-panel-title>
-                                    </mat-expansion-panel-header>
-                                    <ng-container>
-                                      <span>
-                                        <div class="categorysub">
-                                          <h5 class="inner_header">cv</h5>
-                                        </div>
-                                      </span>
-                                    </ng-container>
-                            </mat-expansion-panel>
-                        </mat-accordion>
+          <h2 class="blogtitle">Categories <button mat-raised-button (click)="openAll()">Open All</button></h2>                
+          <!-- <button mat-raised-button (click)="closeAll()">close All</button>         -->
+          <mat-accordion #myaccordion="matAccordion" multi="true" class="category">
+              <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" *ngFor="let item of blogcategory">
+                <mat-expansion-panel-header>
+                  <mat-panel-title (click)="openblog(item._id)">
+                    {{item.blogtitle}} ({{item.blogcount}}) &nbsp;
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <ng-container>
+                    <span>
+                        <div class="categorysub" (click)="blogdetail()" [ngClass]="{'active': blogcat }">
+                          <h5 class="inner_header"></h5>
+                        </div>
+                      </span>
+                </ng-container>
+              </mat-expansion-panel>                          
+          </mat-accordion>
         </span>
       </span>
-      <span class="mostviewedblogs">
+      <!-- <span class="mostviewedblogs">
           <h2>Most Viewed Blogs</h2>
           <mat-card-content class="bottom_blog">
               <span class="item_wrapper">
@@ -477,7 +449,7 @@
               <button mat-button class="btnblue sim-button">Load More</button>
             </mat-card-content>
   
-      </span>
+      </span> -->
     </span>
   </mat-card>
 

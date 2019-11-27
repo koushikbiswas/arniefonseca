@@ -33,6 +33,8 @@ export class ListingServiceComponent implements OnInit {
     this.serviceListConfig.datasource = resolveData.serviceList.res;
     this.serviceListConfig.jwtToken = this.cookieService.get('jwtToken');   
   });
+
+  
 }
 
   ngOnInit() {

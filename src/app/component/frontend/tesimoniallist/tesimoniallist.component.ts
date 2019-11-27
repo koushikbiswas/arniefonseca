@@ -1,8 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import * as moment from 'moment'; // add this 1 of 4
 import { ApiService } from 'src/app/api.service';
 import { MetaService } from '@ngx-meta/core';
+import { MAT_DIALOG_DATA, MatDialogRef, MatDialog } from '@angular/material';
+import { SafeResourceUrl, DomSanitizer } from '@angular/platform-browser';
+
+export interface DialogData {data: any;} 
 
 @Component({
   selector: 'app-tesimoniallist',
@@ -18,7 +22,9 @@ export class TesimoniallistComponent implements OnInit {
   public dataformate: any;
   public p_id: any;
 
-  constructor(private activatedRoute: ActivatedRoute, private router: Router, public apiService: ApiService, private readonly meta: MetaService) { 
+  safeSrc: SafeResourceUrl;
+
+  constructor(private activatedRoute: ActivatedRoute, private router: Router, public apiService: ApiService, private readonly meta: MetaService,private sanitizer: DomSanitizer,public dialog:MatDialog) { 
 
     this.meta.setTitle('Arniefonseca - Testimonial lists');
     this.meta.setTag('og:description', '');
@@ -36,6 +42,7 @@ export class TesimoniallistComponent implements OnInit {
     this.dataformate = moment();
   }
 
+  
 
   ngOnInit() {    
 
@@ -47,12 +54,14 @@ export class TesimoniallistComponent implements OnInit {
       this.indexvallength = this.TestimonialListArray.length;
     })
   }
+
+  
   
   btnBackClick = function () {
     this.router.navigateByUrl('testimonial');
   };
 
-  showMoreFunc() {
+  blogloadmore() {
     this.indexval = this.indexval + 3;
     // console.log(this.indexval);
   }
@@ -69,4 +78,38 @@ export class TesimoniallistComponent implements OnInit {
     console.log('showvideo function is wirking')
   }
 
+  //*********view Video modal section***********//
+
+  openvideourl(val:any){
+
+    let url:any;
+    url="https://www.youtube.com/embed/";
+     // console.log('video url....>',url+val);
+     this.safeSrc =  this.sanitizer.bypassSecurityTrustResourceUrl(url + val);
+     
+     // console.log('>>>>>>>>>>>>>>>>>>',this.safeSrc)
+     const dialogRef = this.dialog.open(CommonTestimonialVideoModalComponent, {
+       panelClass:['modal-md','success-modal'],       
+       width:'450px',
+       data:this.safeSrc, 
+     });
+     dialogRef.afterClosed().subscribe(result => {  
+     });
+   }
+
+//********* end Video modal section***********//
+
+
+}
+
+//**********video modal component************//
+
+@Component({
+  selector:'app-commontestimonialvideomodal',
+  templateUrl:'./commontestimonialvideomodal.html'
+})
+export class CommonTestimonialVideoModalComponent {
+  constructor( public dialogRef: MatDialogRef<CommonTestimonialVideoModalComponent>,
+               @Inject(MAT_DIALOG_DATA) public data: DialogData){
+  }
 }
