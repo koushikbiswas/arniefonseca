@@ -1,3 +1,84 @@
 <div class="adminwrappercls">
-<app-header></app-header>
+    <app-header></app-header>
+</div>
+<br><br><br><br>
+<div>
+    <h1><u>Event Form</u></h1>
+    <form [formGroup]="eventForm" (ngSubmit)="submit()">
+
+        <mat-form-field>
+        <mat-label>Title</mat-label>
+        <input matInput (blur)="inputBlur('title')" formControlName="title">
+
+        <mat-error
+            *ngIf="!eventForm.controls['title'].valid && eventForm.controls['title'].errors.required && eventForm.controls['title'].touched ">
+            title field can not be blank</mat-error>
+    </mat-form-field><br>
+       
+
+
+
+        <!-- sub titlr field  -->
+        <mat-form-field>
+            <input matInput placeholder="sub title" (blur)="inputBlur('subTitle')" formControlName="subTitle">
+            <mat-error
+                *ngIf="!eventForm.controls['subTitle'].valid && eventForm.controls['subTitle'].errors.required && eventForm.controls['subTitle'].touched ">
+                sub title field can not be blank</mat-error>
+        </mat-form-field><br>
+
+
+        <!-- date field  -->
+        <mat-form-field>
+            <input matInput [matDatepicker]="picker" (blur)="inputBlur('date')" formControlName="date"
+                placeholder="Choose a date">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+            <mat-error
+                *ngIf="!eventForm.controls['date'].valid && eventForm.controls['date'].errors.required && eventForm.controls['date'].touched ">
+                date field can not be blank</mat-error>
+        </mat-form-field><br>
+
+
+        <!-- time field  -->
+        <!-- <div class="ngx-material-timepicker-example__form-group">
+            Choose Time:<input placeholder="Default time 11:11 pm" aria-label="default time" formControlName="time"
+                [ngxTimepicker]="defaultTime" readonly>
+            <ngx-material-timepicker #defaultTime [defaultTime]="'11:11 pm'"></ngx-material-timepicker>
+        </div><br> -->
+
+
+        <!-- location field  -->
+        <mat-form-field>
+            <input matInput placeholder="location" (blur)="inputBlur('location')" formControlName="location">
+            <mat-error
+                *ngIf="!eventForm.controls['location'].valid && eventForm.controls['location'].errors.required && eventForm.controls['location'].touched ">
+                location field can not be blank</mat-error>
+
+        </mat-form-field><br>
+
+
+        <!-- ckeditor  -->
+        <ckeditor [editor]="Editor" [config]="editorConfig" formControlName="description">
+
+        </ckeditor><br>
+
+
+        <!-- booking link yes or no  -->
+        <mat-label>Booking Link:</mat-label>
+        <mat-radio-group formControlName="booking">
+            <mat-radio-button value="yes" (click)="booking_flag=true"> Yes</mat-radio-button>&nbsp;
+            <mat-radio-button value="no" (click)="booking_flag=false">No</mat-radio-button>
+        </mat-radio-group><br>
+
+        <!-- if yes then add link field  -->
+        <mat-form-field *ngIf="booking_flag==true">
+            <input matInput placeholder="booking link" formControlName="bookingLink">
+        </mat-form-field><br>
+
+
+        <button mat-raised-button color="primary" type="button">submit</button>
+
+    </form>
+
+
 </div>

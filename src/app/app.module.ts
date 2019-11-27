@@ -116,6 +116,10 @@ import { SpeakerEngagementsDetailComponent } from './component/frontend/events/s
 
 import { AddEditNewsletterComponent } from './component/backend/newsletterlists/add-edit-newsletter/add-edit-newsletter.component';
 
+import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
+// import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
+// import { IgxTimePickerModule } from 'igniteui-angular';
+// import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
 /**End Backend Component** */
 
 
@@ -206,12 +210,14 @@ import { AddEditNewsletterComponent } from './component/backend/newsletterlists/
   ],
   imports: [
     BlogModule,
+    CKEditorModule,
     AngularFontAwesomeModule,
     DragScrollModule,
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     DemoMaterialModule,
     CommonModule,
+    // NgxMaterialTimepickerModule,
     TransferHttpCacheModule,
     HttpClientModule,
     NgtUniversalModule,
@@ -228,6 +234,9 @@ import { AddEditNewsletterComponent } from './component/backend/newsletterlists/
     OwlModule,
     FormsModule,
     ReactiveFormsModule,
+   
+    
+
   ],
   providers: [CookieService, AuthGuard, ApiService, SidenavService],
   bootstrap: [AppComponent],
