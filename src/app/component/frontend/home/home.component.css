@@ -99,5 +99,18 @@
 
 
 
-.meetcoacharenaimg {width: 250px; height: 300px;}
-.meetcoacharenaimg img{width: 100%;}
+@media only screen and (max-width:1199px) {
+    .getintouch .getintouchmain {
+        width: 100% !important;
+    }
+    .getintouchiconcontent {
+        flex: 1 1 100% !important;
+        flex-basis: 100% !important;
+        border-left: 0px solid #32546b !important;
+        padding-left: 15px !important;
+        margin-left: auto !important;
+    }
+    .getintouch p br{
+        display: none !important;
+    }
+}

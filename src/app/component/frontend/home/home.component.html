@@ -179,7 +179,7 @@
     </mat-card-content>
     <mat-card-content class="blockcontent">  
       <app-tesimonial></app-tesimonial>
-      <button mat-button class="btnblue sim-button" [routerLink]="['/testimonial']">View More</button>
+      <button mat-button class="btnblue sim-button" (click)="btnClick();">View More</button>
     </mat-card-content>
   </span>
 </mat-card>

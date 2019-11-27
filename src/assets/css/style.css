@@ -868,8 +868,7 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
 
 /* .adm_inner_banner{background: url("../images/managetype_banner.jpg") no-repeat center center;
   background-size: cover; border-top-left-radius: 10px; border-top-right-radius: 10px; padding: 50px; padding-right: 45%; } */
-  .adm_inner_banner{background: #000;
-    background-size: cover; border-top-left-radius: 10px; border-top-right-radius: 10px; padding: 50px; padding-right: 45%; }
+  .adm_inner_banner{background: #000; display: block !important; width: inherit !important; background-size: cover; border-top-left-radius: 10px; border-top-right-radius: 10px; padding: 50px; padding-right: 45%; }
   .generalcls.blog .adm_inner_banner .adm_inner_title.mat-card-title{ font-size: 48px !important; color: #fff !important; font-family: "HelveticaBold"; text-transform: uppercase !important;text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);  }
     .adm_inner_banner .adm_inner_para{ font-size: 24px; color: #ffffff; font-family: "HelveticaBold"; margin: 0;text-shadow: 3px 2px 3px rgba(255,255,255,.2); width: 80%;}
 /* 
@@ -1178,6 +1177,8 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
 }
 
 
+/* --------------- avijit css end ----------------------- */
+
 
 /*----------amitava------------*/
 
@@ -1195,5 +1196,48 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
 
 .newsletterwrapper .mat-form-field-underline{ display: none!important;}
 .newsletterwrapper .mat-error{display: flex!important; flex: 1 1 100%;}
-/* --------------- avijit css end ----------------------- */
 
+.newsletter_modal{ width: 480px; border: solid 2px #3ab9d9; border-radius: 5px!important; padding: 15px!important;}
+
+.newsletter_modal .mat-form-field{ display: block;   }
+
+.newsletter_modal .mat-form-field-appearance-legacy .mat-form-field-infix {
+  padding: 1em !important;
+  background: #e1e0e6!important;
+  margin-bottom: 0px; margin: 5px 0;
+}
+
+.newsletter_modal .mat-form-field {
+  margin: 0 0!important;
+}
+
+
+.newsletter_modal h2{ display: block; text-align: center; margin: 0; padding: 0; font-size: 30px; color: #3ab9d9; font-family: 'HelveticaBold';}
+.newsletter_modal h3{ display: block; text-align: center; margin: 0; padding:10px 0 15px 0; font-size: 18px; color: #111;  font-family: 'Helvetica-Normal'; font-weight: normal;}
+
+
+.newsletter_modal button {color:#bdc3c3;background: rgb(1,1,1)!important;
+  background: -moz-linear-gradient(0deg, rgba(1,1,1,1) 0%, rgba(54,55,55,1) 100%)!important;
+  background: -webkit-linear-gradient(0deg, rgba(1,1,1,1) 0%, rgba(54,55,55,1) 100%)!important;
+  background: linear-gradient(0deg, rgba(1,1,1,1) 0%, rgba(54,55,55,1) 100%)!important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#010101",endColorstr="#363737",GradientType=1)!important;
+  font-size:24px;line-height:normal;width:auto!important;height:auto!important; font-family:"HelveticaBold"; text-transform:uppercase; border-radius: 5px; padding: 14px 15px 8px 15px!important; margin-top: 10px!important;}
+
+
+.newsletter_modal input.mat-input-element {
+  height: 20px!important;
+}
+
+.newsletter_modal .mat-form-field-appearance-legacy .mat-form-field-wrapper {
+  padding-bottom: 0!important;
+}
+
+.newsletter_modal .mat-form-field-underline{ display: none!important;}
+
+/*----------amitava end------------*/
+
+
+
+
+
+.homeblock2servcontent button{float: right !important; margin: 10px 15px !important;}

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router , ActivatedRoute } from '@angular/router';
 import { CookieService } from 'ngx-cookie-service';
+import { ApiService } from 'src/app/api.service';
 
 @Component({
   selector: 'app-addedit-service',
@@ -10,7 +11,8 @@ import { CookieService } from 'ngx-cookie-service';
 export class AddeditServiceComponent implements OnInit {
   public configAddEdit: any = {
     action: "add",
-    endpoint: "https://9v41bpikik.execute-api.us-east-1.amazonaws.com/production/api/addorupdatedata",
+    // endpoint: "https://9v41bpikik.execute-api.us-east-1.amazonaws.com/production/api/addorupdatedata",
+    endpoint: this.ApiService.serverUrlDemo + 'addorupdatedata',
     source: "services",
     condition: {},
     defaultData: null,
@@ -20,7 +22,10 @@ export class AddeditServiceComponent implements OnInit {
   }
 
 
-  constructor(private router : Router , private activatedRoute : ActivatedRoute ,private cookieService : CookieService) { }
+  constructor(private router : Router , private activatedRoute : ActivatedRoute ,private cookieService : CookieService, public ApiService: ApiService) {
+
+    
+   }
 
  
   ngOnInit() {

@@ -168,7 +168,7 @@ const routes: Routes = [
     data: { requestcondition: { source: 'testimonial', condition: {} }, endpoint: 'datalist' }
   },
   {
-    path: 'testimonial-listing', component: ListingTestimonialComponent, resolve: { testimonialList: ResolveService },
+    path: 'testimonial/list', component: ListingTestimonialComponent, resolve: { testimonialList: ResolveService },
     data: { requestcondition: { source: 'testimonial_view', condition: {} }, endpoint: 'datalist' }
   },
 

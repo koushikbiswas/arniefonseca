@@ -49,11 +49,13 @@
                   Email field can not be blank</mat-error>
                 <mat-error *ngIf="myform.controls['email'].touched && !myform.controls['email'].valid
                 && myform.controls['email'].errors.pattern">
+
                   Email is not Valid</mat-error>
               </form>
             </div>
             <h5>We’ll never share your email address</h5>
           </span>
+
         </span>
         <span class="footertopwrapper footernavlist footerborder">
           <h3>Navigation</h3>
@@ -196,7 +198,7 @@
     router.url === 'blogs/add' ||
     router.url === 'blog-category/add' ||
     router.url === '/manage-commission' ||
-    router.url === '/testimonial-listing' ||
+    router.url === '/testimonial/list' ||
     router.url === '/social-advo-admin' ||
     router.url === '/newsletter-list' ||
     router.url === '/manage-commission-affiliate' ||

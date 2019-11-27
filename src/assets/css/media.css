@@ -11,10 +11,25 @@
   .generalcls .mat-card-title{font-size:32px!important;line-height:36px!important}
   .singleservice .mat-card-title {font-size: 18px !important;line-height:normal!important}
   .generalcls p{font-size:16px;line-height:24px}
+  .homeblock1contentright .mat-list-base .mat-list-item {height: auto; width: 31.33%;}
+  .meetcoacharenaimg {width: 100% !important; height: auto !important;}
+  .meetcoacharenaimg img{width: 100%;}
   }
 
   @media only screen and (max-width: 1199px) {
-    
+    .homeblock1contentright .mat-list-base .mat-list-item {
+      height: auto;
+      width: 33.33%;
+    }
+      .meetcoacharenaimg {
+        width: 100% !important;
+        height: auto !important;
+    }
+    .homeblock1contentright {
+      width: 100% !important;
+      padding-left: 0!important;
+  }
+  .homeblock1contentright .mat-list-base .mat-list-item .mat-list-item-content{padding: 0 4px;}
     .singleteam{height: auto !important;box-sizing: border-box; margin-bottom: 30px; width: calc(1/2*100% - (1 - 1/2)*30px) !important;}
   .probidhomeblock4 .mat-list-base.lists .mat-list-item {padding: 13px;width: 46.5%;}
   .vpheaderwrapper .mat-nav-list a{font-size:13px}
@@ -52,6 +67,8 @@
     .topsocialblock .mat-list{display:inline-flex;justify-content:center!important}
     .headerbottom .mainwrappercontent{width:100%!important}  
     .contact-form .main-div .from.mat-card{margin:4em auto!important;width:90%!important;padding:15px!important}
+    .adm_inner_banner .adm_inner_para {text-align: left; width:100%;}
+    .generalcls.blog .adm_inner_banner .adm_inner_title.mat-card-title {text-align: left;}
   }
 
   @media only screen and (max-width:991px) {
@@ -85,6 +102,27 @@
     .bottom_blog .item_wrapper { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; flex-wrap: wrap; -webkit-justify-content: center;-moz-justify-content: center;-ms-justify-content: center;justify-content: center; }
     .bottom_blog .item_wrapper .item { width: 48%; margin: 1%; }    
     .singleteam{height: auto !important;box-sizing: border-box; margin-bottom: 30px; width: calc(1/1*100% - (1 - 1/1)*30px) !important;}
+    
+    .homeblock2listssingleitem .mat-list-item-content{flex-wrap: wrap;}
+    .homeblock2listssingleitem span {flex: 1 1 100% !important;}
+    .homeblock2servcontent h2 {
+      margin-top: 10px!important;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      text-align: center;
+    }
+    .homeblock2servcontent p {
+      padding: 0px 0px !important;
+      text-align: center !important;
+    }
+    .homeblock2servcontent h2 span.homeblock2iconcontent {
+      text-align: center !important;
+      margin-left: auto !important;
+    }
+    .homeblock2servcontent button {
+      float: none !important;
+      margin: 10px 15px !important;
+    }
   }
         
   @media only screen and (max-width: 768px) {
@@ -117,7 +155,41 @@
   @media only screen and (max-width: 540px) {
     .innerpagebanner.mat-card h1 {font-size: 36px;}
     .infoblock .mat-list-base {flex-wrap: wrap;}
-    .infoblock .mat-list .mat-list-item .mat-list-item-content{flex-wrap: wrap; justify-content: center;}
+    .infoblock .mat-list .mat-list-item .mat-list-item-content{flex-wrap: wrap; justify-content: center;}    
+    .singleteam .mat-list-item-content {
+        flex-wrap:wrap;
+    }
+    .teamimg {
+        margin: 0;
+        padding: 10px;
+        margin-right: 10px;
+        box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        overflow: hidden;
+        height: 250px;
+        position: relative;
+    }
+
+    .teamimg img {
+        -o-object-fit: cover;
+        object-fit: cover;
+        width: 100% !important;
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: auto !important;
+    }
+    .teamcontent h2 {
+        text-align: center;
+    }
+    .teamcontent p{
+      text-align: center;
+    }
+    .teamcontent .btnwhite {
+        float: none;
+    }
   }
 
   @media screen and (max-width: 480px){

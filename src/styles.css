@@ -68,7 +68,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .homeblock2servcontent h2 span.homeblock2iconcontent span{display: block;font-family: 'Helvetica-Normal'; font-size: 14px!important; line-height: normal!important;}
 .homeblock2servcontent p{padding: 0px 30px; text-align: left;}
 .homeblock2servimg{overflow: hidden;}
-.homeblock2servcontent button{float: right !important; margin: 10px 15px !important;}
+
 .homeblock2listssingleitem.mat-list-item:nth-child(even) .mat-list-item-content{flex-direction: row-reverse !important;}
 .homeblock2listssingleitem .mat-list-item-content{align-items: stretch !important;}
 .homeblock2 .blockcontent .btnmiddle {margin: 30px auto 0px !important; display: block !important; float: none;}
@@ -175,3 +175,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
 .threecolumnlist .mat-list-item .mat-list-item-content{align-items: stretch !important;height: 100% !important;padding: 36px 10px !important;}
+
+.contact-form .mat-form-field-appearance-legacy .mat-form-field-infix {padding: 0 !important;}
+.login-form .mat-form-field-appearance-legacy .mat-form-field-infix {padding: 0 !important;}
+
+.searchdiv .mat-form-field-appearance-legacy .mat-form-field-infix {padding: 10px !important;}
