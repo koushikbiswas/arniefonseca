@@ -52,8 +52,8 @@
                         <span class="item" *ngFor="let item of bloglisting | slice:0:indexval ; let i=index">
                             <span class="item_images" (click)="blogdetail(item._id)"><img [src]="item.blogs_image"></span>
                             <span class="contentsection">
-                                <span class="bnticons">
-                                    <button><img src="../../../../assets/images/videoicon.png"></button>
+                                <span class="bnticons" *ngFor="let vurl of item.credentials">
+                                    <button *ngIf="vurl.video_url !='' && vurl.video_url !=null " (click)="openvideourl(vurl.video_url)"><img src="../../../../assets/images/videoicon.png"></button>
                                 </span>
                                 <h2 (click)="blogdetail(item._id)">{{item.blogtitle}}</h2>
                                 <p class="description"><span [innerHtml]="item.description"></span></p>
