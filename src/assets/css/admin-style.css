@@ -207,7 +207,12 @@ border-radius: 0px !important;}
 .tablediv table th {font-family:'Helvetica-Normal'; text-transform:uppercase; font-size:18px; color:#fff; background:#465157; padding:10px; letter-spacing: .1em; text-transform: capitalize;}		
 .tablediv table td {font-family:'Helvetica-Normal';font-size:16px;padding:6px;white-space: normal;word-break: break-word;  color: rgba(0,0,0,.87);}		
 .tablediv table td br{display: none;}		
-.tablediv table td.text-center{text-align: center !important;}		
+.tablediv table td.text-center{text-align: center !important;}
+
+
+.tablediv table td.mat-column-Actions{width: 96px;}	
+.tablediv table th.mat-column-date_added{width: 114px;}
+
 .tablediv table th.descriptiondiv{width: 26%;}		
 .norecordfound{color: #ee680f !important; padding: 18px !important; text-align: center !important; text-transform: uppercase !important;}		
 .tablediv .btnedit, .tablediv .btndelete, .tablediv .btnedit:hover, .tablediv .btndelete:hover{padding: 6px 5px !important; text-align: center; display: -webkit-box; display: -moz-box;		
