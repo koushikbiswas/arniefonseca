@@ -9,6 +9,10 @@
     list-style-type: none;
 }
 
+.example-tree ul, .example-tree ul ul, .example-tree ul ul{
+    margin-left: 10px;
+}
+
 .mat-tree {
     background: transparent !important;
 }
