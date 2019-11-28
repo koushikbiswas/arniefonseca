@@ -2,15 +2,15 @@ import { Component, OnInit } from '@angular/core';
 import { CookieService } from 'ngx-cookie-service';
 import { Router, ActivatedRoute } from '@angular/router';
 import { HttpService } from 'src/app/services/http.service';
-import {environment } from '../../../../../../environments/environment.prod';
+import {environment } from '../../../../../environments/environment.prod';
 
 
 @Component({
-  selector: 'app-manage-seminar-listing',
-  templateUrl: './manage-seminar-listing.component.html',
-  styleUrls: ['./manage-seminar-listing.component.css']
+  selector: 'app-manage-event-listing',
+  templateUrl: './manage-event-listing.component.html',
+  styleUrls: ['./manage-event-listing.component.css']
 })
-export class ManageSeminarListingComponent implements OnInit {
+export class ManageEventListingComponent implements OnInit {
   public eventDataList:any[];
   public baseUrl: any = environment["API_URL"];
 
@@ -24,7 +24,7 @@ export class ManageSeminarListingComponent implements OnInit {
  public UpdateEndpoint: any = "addorupdatedata";
  public deleteEndpoint: any = "deletesingledata";
  public searchingEndpoint: any = "datalist";
- public editUrl: any = '/add-edit-manage-seminar';
+ public editUrl: any = '/manage-event/edit/';
 public user_cookie:any=this.cookieService.get('jwtToken');
 public apiUrl: any = this.baseUrl;
 public status: any = [{ val: 1, 'name': 'Active' }, { val: 0, 'name': 'Inactive' }];

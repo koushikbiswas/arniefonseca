@@ -5,7 +5,7 @@ import { FormGroup, FormBuilder, Validators ,FormControl} from '@angular/forms';
 import * as moment_ from 'moment';
 import { IgxTimePickerComponent } from "igniteui-angular";
 import * as ClassicEditor from '@ckeditor/ckeditor5-build-classic';
-import {environment } from '../../../../../../environments/environment.prod';
+import {environment } from '../../../../../environments/environment.prod';
 import { CookieService } from 'ngx-cookie-service';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import {Router,ActivatedRoute} from '@angular/router'
@@ -23,11 +23,11 @@ const moment = moment_;
 
 
 @Component({
-  selector: 'app-add-edit-manage-seminar',
-  templateUrl: './add-edit-manage-seminar.component.html',
-  styleUrls: ['./add-edit-manage-seminar.component.css']
+  selector: 'app-add-edit-manage-event',
+  templateUrl: './add-edit-manage-event.component.html',
+  styleUrls: ['./add-edit-manage-event.component.css']
 })
-export class AddEditManageSeminarComponent implements OnInit {
+export class AddEditManageEventComponent implements OnInit {
   
   public eventForm:FormGroup;
   public booking_flag:boolean=false;
@@ -68,7 +68,7 @@ export class AddEditManageSeminarComponent implements OnInit {
     prefix: "event_picture_"
   }
 
-  constructor(public fb:FormBuilder,public _http: HttpService, private _authHttp: HttpClient, private cookieService: CookieService,public router:Router,public activatedRoute:ActivatedRoute,public dialog: MatDialog) { 
+  constructor(public fb:FormBuilder,public _http: HttpService, private _authHttp: HttpClient, private cookieService: CookieService,public router:Router,public activatedRoute:ActivatedRoute,public dialog: MatDialog, public activeroute: ActivatedRoute) { 
 
     this.activatedRoute.params.subscribe(params => {
       if (params['_id'] != null) {

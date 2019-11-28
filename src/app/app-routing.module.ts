@@ -88,14 +88,9 @@ import { ListingBlogcatComponent } from './component/backend/blog-management/lis
 import { AddEditBlogsComponent } from './component/backend/blog-management/add-edit-blogs/add-edit-blogs.component';
 import { ListingBlogsComponent } from './component/backend/blog-management/listing-blogs/listing-blogs.component';
 
-import { ManageSeminarListingComponent } from './component/backend/events/manage-seminar/manage-seminar-listing/manage-seminar-listing.component';
-import { AddEditManageSeminarComponent } from './component/backend/events/manage-seminar/add-edit-manage-seminar/add-edit-manage-seminar.component';
+import { ManageEventListingComponent } from './component/backend/events/manage-event-listing/manage-event-listing.component';
+import { AddEditManageEventComponent } from './component/backend/events/add-edit-manage-event/add-edit-manage-event.component';
 
-import { ManageSpeakerEngagementListingComponent } from './component/backend/events/manage-speaker-engagement/manage-speaker-engagement-listing/manage-speaker-engagement-listing.component';
-import { AddEditManageSpeakerEngagementComponent } from './component/backend/events/manage-speaker-engagement/add-edit-manage-speaker-engagement/add-edit-manage-speaker-engagement.component';
-
-import { ManageWorkshopListingComponent } from './component/backend/events/manage-workshop/manage-workshop-listing/manage-workshop-listing.component';
-import { AddEditManageWorkshopComponent } from './component/backend/events/manage-workshop/add-edit-manage-workshop/add-edit-manage-workshop.component';
 
 import { AddEditNewsletterComponent } from './component/backend/newsletterlists/add-edit-newsletter/add-edit-newsletter.component';
 
@@ -217,10 +212,10 @@ const routes: Routes = [
 
   //________________Manage Seminar____________//
 
-  { path: 'add-edit-manage-seminar', component: AddEditManageSeminarComponent },
+  { path: 'manage-event/add', component: AddEditManageEventComponent },
 
-  { path: 'manage-seminar-listing', 
-  component: ManageSeminarListingComponent,
+  { path: 'manage-event-listing', 
+  component: ManageEventListingComponent,
   canActivate:[AuthGuard],
   resolve:{eventList:ResolveService},
   data:{
@@ -233,7 +228,7 @@ const routes: Routes = [
   },
 
 },
-{ path: 'add-edit-manage-seminar/:_id', component: AddEditManageSeminarComponent ,
+{ path: 'manage-event/edit/:_id', component: AddEditManageEventComponent,
 canActivate:[AuthGuard],
 resolve:{eventList:ResolveService},
 data:{
@@ -248,21 +243,6 @@ data:{
 
   
 
-
-//______________Manage Workshop____________//
-
-
-
-{ path: 'add-edit-manage-workshop', component:  AddEditManageWorkshopComponent},
-{ path: 'manage-workshop-listing', component: ManageWorkshopListingComponent },
-
-
-//________________Manage Speaker Engagement____________//
-
-
-
-  { path: 'manage-speaker-engagement-listing', component: ManageSpeakerEngagementListingComponent },
-  { path: 'add-edit-manage-speaker-engagement', component: AddEditManageSpeakerEngagementComponent },
 
 
   //_____________________Newsletter/subscriber/sender/testemail____________//
