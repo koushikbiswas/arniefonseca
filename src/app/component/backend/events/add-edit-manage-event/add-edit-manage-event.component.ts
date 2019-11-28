@@ -2,7 +2,8 @@ import { Component, OnInit,Inject } from '@angular/core';
 import { FormGroup, FormBuilder, Validators ,FormControl} from '@angular/forms';
 // import 'angular-material-time-picker/dist/md-time-picker.css';
 // import {ngTimePicker} from '@angular-material-time-picker';
-import * as moment_ from 'moment';
+import * as _moment from 'moment';
+
 import { IgxTimePickerComponent } from "igniteui-angular";
 import * as ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 import {environment } from '../../../../../environments/environment.prod';
@@ -11,15 +12,18 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import {Router,ActivatedRoute} from '@angular/router'
 import { HttpService} from 'src/app/services/http.service';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+// import {MAT_MOMENT_DATE_FORMATS, MomentDateAdapter} from '@angular/material-moment-adapter';
+// import {DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE} from '@angular/material/core';
+// import {default as _rollupMoment} from 'moment';
 
-
+const moment = _moment;
 
 export interface DialogData {
   msg: string;
 }
 
 
-const moment = moment_;
+// const moment = moment_;
 
 
 @Component({
@@ -27,6 +31,8 @@ const moment = moment_;
   templateUrl: './add-edit-manage-event.component.html',
   styleUrls: ['./add-edit-manage-event.component.css']
 })
+
+
 export class AddEditManageEventComponent implements OnInit {
   
   public eventForm:FormGroup;
@@ -99,7 +105,7 @@ export class AddEditManageEventComponent implements OnInit {
         /* Button text */
         this.btn_text = "UPDATE";
         this.header_txt="Edit Event"
-        this.name_txt="Edit Events";
+        this.name_txt="Edit Event";
         this.successMessage = "One row updated";
         this.setDefaultValue(this.defaultData);            
         this.header_txt = "Edit Event";
@@ -132,7 +138,7 @@ export class AddEditManageEventComponent implements OnInit {
   // set default value //
   setDefaultValue(defaultValue:any){
 
-    console.log('#########',defaultValue);
+    // console.log('#########',defaultValue);
     this.eventForm.patchValue({
       title:defaultValue.title,
       date:defaultValue.date,

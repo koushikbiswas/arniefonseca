@@ -264,7 +264,7 @@ const routes: Routes = [
   resolve:{eventList:ResolveService},
   data:{
     requestcondition:{
-      source:'event',
+      source:'events_view',
       condition:{}
     },
     endpoint:'datalist'

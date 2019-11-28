@@ -5,7 +5,7 @@
             <!-- <img src="../../../../assets/images/manage-seminars.jpg" style="width: 100%; display: block; margin: 0; padding: 0;"> -->
             
               <mat-card-content class="bred_cram_wrapper">
-                <a mat-list-item routerLinkActive="active"> Dashboard </a>
+                <a mat-list-item routerLinkActive="active"[routerLink]="'/admin-dashboard'"> Dashboard </a>
                 <a mat-list-item routerLinkActive="active" [routerLink]="'/manage-event-listing'"> Manage Events </a>
                 <a mat-list-item routerLinkActive="active activebread"> {{name_txt}}</a>
             </mat-card-content>
@@ -46,7 +46,7 @@
                         <!-- image upload field  -->
                         <h3>Event Image</h3>
                         <lib-file-upload [config]="configData"></lib-file-upload>
-                        <mat-error *ngIf="ErrCode==true">Please add just one service image.</mat-error>
+                        <mat-error *ngIf="ErrCode==true">Please add just one image.</mat-error>
 
                         <!-- Card view for Image  -->
                 <mat-card-content class="files-view" *ngIf="img_flag==true">
@@ -102,15 +102,15 @@
 
                         <mat-form-field>
                             <mat-label>Select Type</mat-label>
-                            <select matNativeControl formControlName="type" (blur)="inputBlur('type')">
-                                <option value="seminars">Seminars</option>
-                                <option value="workshops">Workshops</option>
-                                <option value="speaker_engagement">Speaker Engagements</option>
-                            </select>
+                            <mat-select  formControlName="type" (blur)="inputBlur('type')">
+                              <mat-option value="seminars">Seminars</mat-option>
+                              <mat-option value="workshops">Workshops</mat-option>
+                              <mat-option value="speaker_engagement">Speaker Engagements</mat-option>
+                            </mat-select>
                             <mat-error
                                 *ngIf="!eventForm.controls['type'].valid && eventForm.controls['type'].errors.required && eventForm.controls['type'].touched ">
                                 type field can not be blank</mat-error>
-                        </mat-form-field>
+                          </mat-form-field>
                         
 
 
@@ -136,10 +136,21 @@
                         </mat-radio-group><br><br>
 
 
+
+
                         <!-- if yes then add link field  -->
-                        <mat-form-field *ngIf="booking_flag==true">
+                        <!-- <mat-form-field *ngIf="booking_flag==true">
                             <input matInput placeholder="booking link" formControlName="bookingLink">
-                        </mat-form-field><br>
+                        </mat-form-field><br> -->
+
+                        <ckeditor *ngIf="booking_flag==true" [editor]="Editor" [config]="editorConfig" formControlName="bookingLink"
+                            (blur)="inputBlur('bookingLink')">
+                        </ckeditor>
+                        <mat-error
+                            *ngIf="!eventForm.controls['bookingLink'].valid && eventForm.controls['bookingLink'].errors.required && eventForm.controls['bookingLink'].touched ">
+                            bookingLink field can not be blank</mat-error>
+
+                        <br><br>
 
 
                         <!-- status -->
