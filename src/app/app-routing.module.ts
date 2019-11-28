@@ -197,13 +197,56 @@ const routes: Routes = [
   { path: 'video-gallery', component: VideoGalleryComponent },
   { path: 'team', component: TeamComponent },
   { path: 'booking-report', component: BookingReportComponent },
-  { path: 'seminars', component: SeminarsComponent },
-  { path: 'workshops', component: WorkshopsComponent },
-  { path: 'speaker-engagements', component: SpeakerEngagementsComponent },
 
-  { path: 'seminars-detail', component: SeminarsDetailComponent },
-  { path: 'workshop-detail', component: WorkshopDetailComponent },
-  { path: 'speaker-engagements-detail', component: SpeakerEngagementsDetailComponent },
+
+// ___________________event frontend__________________//
+
+  { path: 'seminars', component: SeminarsComponent,
+    resolve: { seminarsListData: ResolveService },
+    data: {
+      requestcondition: { source: "seminars", condition: {type:"seminars"} },
+      endpoint: "datalistwithouttoken"
+    }
+  },
+  { path: 'workshops', component: WorkshopsComponent,
+    resolve: { workshopsListData: ResolveService },
+    data: {
+      requestcondition: { source: "workshops", condition: {type:"workshops"} },
+      endpoint: "datalistwithouttoken"
+    }
+  },
+  { path: 'speaker-engagements', component: SpeakerEngagementsComponent,
+    resolve: { speakerEngagementsListData: ResolveService },
+    data: {
+      requestcondition: { source: "speaker-engagements", condition: {type:"speaker-engagements"} },
+      endpoint: "datalistwithouttoken"
+    }
+  },
+
+  { path: 'seminars-detail', component: SeminarsDetailComponent,
+    resolve: { seminarsDetailData: ResolveService },
+    data: {
+      requestcondition: { source: "seminars", condition: {type:"seminars"} },
+      endpoint: "datalistwithouttoken"
+    }
+  },
+  { path: 'workshop-detail', component: WorkshopDetailComponent,
+    resolve: { workshopsDetailData: ResolveService },
+    data: {
+      requestcondition: { source: "workshops", condition: {type:"workshops"} },
+      endpoint: "datalistwithouttoken"
+    }
+  },
+  { path: 'speaker-engagements-detail', component: SpeakerEngagementsDetailComponent,
+  resolve: { speakerEngagementsDetailData: ResolveService },
+  data: {
+    requestcondition: { source: "speaker-engagements", condition: {type:"speaker-engagements"} },
+    endpoint: "datalistwithouttoken"
+    }
+  },
+  
+// ___________________ end event frontend__________________//
+
 
   { path: 'affiliate-admin', component: AffiliateComponent },
   { path: 'gallery-admin', component: GalleryAdminComponent },
