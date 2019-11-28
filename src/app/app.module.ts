@@ -104,15 +104,12 @@ import { ListingBlogcatComponent } from './component/backend/blog-management/lis
 import { AddEditBlogsComponent } from './component/backend/blog-management/add-edit-blogs/add-edit-blogs.component';
 import { ListingBlogsComponent } from './component/backend/blog-management/listing-blogs/listing-blogs.component';
 
-import { ManageSeminarListingComponent } from './component/backend/events/manage-seminar/manage-seminar-listing/manage-seminar-listing.component';
-import { AddEditManageSeminarComponent } from './component/backend/events/manage-seminar/add-edit-manage-seminar/add-edit-manage-seminar.component';
+import { ManageEventListingComponent} from './component/backend/events/manage-event-listing/manage-event-listing.component';
+import { AddEditManageEventComponent, EventModal } from './component/backend/events/add-edit-manage-event/add-edit-manage-event.component';
 // import { BlogModule } from '../../dist/blog';
 
 import {BlogModule} from 'blog';
-import { ManageSpeakerEngagementListingComponent } from './component/backend/events/manage-speaker-engagement/manage-speaker-engagement-listing/manage-speaker-engagement-listing.component';
-import { AddEditManageSpeakerEngagementComponent } from './component/backend/events/manage-speaker-engagement/add-edit-manage-speaker-engagement/add-edit-manage-speaker-engagement.component';
-import { AddEditManageWorkshopComponent } from './component/backend/events/manage-workshop/add-edit-manage-workshop/add-edit-manage-workshop.component';
-import { ManageWorkshopListingComponent } from './component/backend/events/manage-workshop/manage-workshop-listing/manage-workshop-listing.component';
+
 import { WorkshopDetailComponent } from './component/frontend/events/workshop-detail/workshop-detail.component';
 import { SeminarsDetailComponent } from './component/frontend/events/seminars-detail/seminars-detail.component';
 import { SpeakerEngagementsDetailComponent } from './component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component';
@@ -125,14 +122,15 @@ import { AddEditSubscriberGroupComponent } from './component/backend/newsletterl
 import { AddEditSendersComponent } from './component/backend/newsletterlists/add-edit-senders/add-edit-senders.component';
 import { AddEditTestemailComponent } from './component/backend/newsletterlists/add-edit-testemail/add-edit-testemail.component';
 
+import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
+// import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
+import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
 /**End Backend Component** */
 
 
 @NgModule({
   declarations: [
-    VideoModalComponent,
-    CommonVideoModalComponent,    
-    CommonTestimonialVideoModalComponent,
+
     AppComponent,
     LoginComponent,
     ContactusComponent,
@@ -197,12 +195,8 @@ import { AddEditTestemailComponent } from './component/backend/newsletterlists/a
     AddEditBlogsComponent,
     ListingBlogsComponent,
     
-    ManageSeminarListingComponent,
-    AddEditManageSeminarComponent,
-    ManageSpeakerEngagementListingComponent,
-    AddEditManageSpeakerEngagementComponent,
-    AddEditManageWorkshopComponent,
-    ManageWorkshopListingComponent,
+    ManageEventListingComponent,
+    AddEditManageEventComponent,
     NewslatterDialogComponent,
 
     NewslattersuccessDialogComponent,
@@ -216,18 +210,25 @@ import { AddEditTestemailComponent } from './component/backend/newsletterlists/a
     AddEditSubscriberComponent,
     AddEditSubscriberGroupComponent,
     AddEditSendersComponent,
-    AddEditTestemailComponent
+    AddEditTestemailComponent,
+    CommonVideoModalComponent,
+    CommonTestimonialVideoModalComponent,
+    VideoModalComponent,
+    EventModal
+    
 
   ],
   imports: [
     AmazingTimePickerModule,
     BlogModule,
+    CKEditorModule,
     AngularFontAwesomeModule,
     DragScrollModule,
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     DemoMaterialModule,
     CommonModule,
+    NgxMaterialTimepickerModule, 
     TransferHttpCacheModule,
     HttpClientModule,
     NgtUniversalModule,
@@ -249,6 +250,6 @@ import { AddEditTestemailComponent } from './component/backend/newsletterlists/a
   providers: [CookieService, AuthGuard, ApiService, SidenavService],
   bootstrap: [AppComponent],
   schemas:[CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
-  entryComponents: [comingSoonDialog, DialogPrivacyDialog, DialogTermsDialog,CommonVideoModalComponent, NewslatterDialogComponent,VideoModalComponent, NewslattersuccessDialogComponent, CommonTestimonialVideoModalComponent]
+  entryComponents: [comingSoonDialog, DialogPrivacyDialog, DialogTermsDialog,CommonVideoModalComponent, NewslatterDialogComponent,VideoModalComponent, NewslattersuccessDialogComponent, CommonTestimonialVideoModalComponent,EventModal]
 })
 export class AppModule { }

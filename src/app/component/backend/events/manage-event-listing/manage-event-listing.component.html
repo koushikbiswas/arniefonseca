@@ -11,7 +11,7 @@
             <mat-card-content class="bred_cram_wrapper">
               <a mat-list-item routerLinkActive="active"> Dashboard </a>
               <a mat-list-item routerLinkActive="active"> Manage Events </a>
-              <a mat-list-item routerLinkActive="active activebread" [routerLink]="'/manage-seminar-listing'"> manage seminar listing</a>
+              <a mat-list-item routerLinkActive="active activebread" [routerLink]="'/manage-event-listing'"> manage seminar listing</a>
           </mat-card-content>
 
           <mat-card class="generalcls blog" style="padding: 0 !important;">  
@@ -27,14 +27,36 @@
                                 <h2>manage seminar listing</h2>
                             </span>
                             <span>
-                                <button mat-button class="btngreen sim-button" [routerLink]="['/add-edit-manage-seminar']"><i class="material-icons">add</i> Add New seminar</button>
+                                <button mat-button class="btngreen sim-button" [routerLink]="['/manage-event/add']"><i class="material-icons">add</i> Add New seminar</button>
                             </span>                    
                         </span>
                     </span>
                     <div class="tablediv">
 
-                        <img src="../../../../assets/images/manage-seminars.jpg" style="width: 100%; display: block; margin: 0; padding: 0;">
+                        <!-- <img src="../../../../assets/images/manage-seminars.jpg" style="width: 100%; display: block; margin: 0; padding: 0;"> -->
                         <!-- <lib-listing-blogmanagementlib class="formfilterdiv" *ngIf="blogListConfig.datasource != null && blogListConfig.datasource.length > 0" [config]="blogListConfig"></lib-listing-blogmanagementlib> -->
+
+                       <!-- Listing goes here  -->
+        <lib-listing *ngIf="eventDataList != null && eventDataList.length>0"
+            [datasource]="eventDataList"
+            [skip]="eventDataList" 
+            [modify_header_array]="eventDataList_modify_header"
+            [sourcedata]="tableName" 
+            [apiurl]="apiUrl"
+            [editroute]="editUrl"
+            [jwttoken]="user_cookie"
+            [statusarr]="status" 
+            [updateendpoint]="UpdateEndpoint" 
+            [deleteendpoint]="deleteEndpoint"
+            [date_search_endpoint]="searchingEndpoint" 
+            [date_search_source]="view" 
+            [search_settings]="search_settings"
+            [detail_datatype]="image_detail_datatype"
+            [detail_skip_array]="detail_skip_array">
+        </lib-listing>
+
+        <h2 *ngIf="eventDataList.length == 0">No record found.</h2>
+        <!-- Listing ends here  -->
 
                     </div>
                 </mat-card>

@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AddEditManageSeminarComponent } from './add-edit-manage-seminar.component';
+import { AddEditManageSeminarComponent } from './add-edit-manage-event.component';
 
 describe('AddEditManageSeminarComponent', () => {
   let component: AddEditManageSeminarComponent;
