@@ -204,21 +204,21 @@ const routes: Routes = [
   { path: 'seminars', component: SeminarsComponent,
     resolve: { seminarsListData: ResolveService },
     data: {
-      requestcondition: { source: "seminars", condition: {type:"seminars"} },
+      requestcondition: { source: "events_view", condition: {type:"seminars"} },
       endpoint: "datalistwithouttoken"
     }
   },
   { path: 'workshops', component: WorkshopsComponent,
     resolve: { workshopsListData: ResolveService },
     data: {
-      requestcondition: { source: "workshops", condition: {type:"workshops"} },
+      requestcondition: { source: "events_view", condition: {type:"workshops"} },
       endpoint: "datalistwithouttoken"
     }
   },
   { path: 'speaker-engagements', component: SpeakerEngagementsComponent,
     resolve: { speakerEngagementsListData: ResolveService },
     data: {
-      requestcondition: { source: "speaker-engagements", condition: {type:"speaker-engagements"} },
+      requestcondition: { source: "events_view", condition: {type:"speaker_engagement"} },
       endpoint: "datalistwithouttoken"
     }
   },
@@ -226,7 +226,7 @@ const routes: Routes = [
   { path: 'seminars-detail', component: SeminarsDetailComponent,
     resolve: { seminarsDetailData: ResolveService },
     data: {
-      requestcondition: { source: "seminars", condition: {type:"seminars"} },
+      requestcondition: { source: "seminars-detail", condition: {type:"seminars"} },
       endpoint: "datalistwithouttoken"
     }
   },

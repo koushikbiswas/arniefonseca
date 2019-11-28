@@ -227,7 +227,7 @@
     padding-left: inherit;
     width: inherit;
 }
-
-
+.newsletterwrapper {width: 100%;}
 .footertopwrapper .mat-list-item:before {display: none;}
+
 }
