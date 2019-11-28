@@ -427,6 +427,17 @@ app-bk-leftdiv{position: relative; z-index: 999;}
     margin-bottom: 0;
 }
 
+.adminwrappercls .bloglists .mat-card{
+    display: block !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    padding: 0px !important;
+    flex-wrap: wrap !important;
+    background: transparent !important;
+    height: auto !important;
+  }
+
+
 @media only screen and (max-width: 1760px) {
 .dashboard_block1{ background-position: 790px top!important;}
 .dashboard_block1 mat-card-content{ width: 1000px;}
