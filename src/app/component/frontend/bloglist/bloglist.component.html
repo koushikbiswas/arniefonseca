@@ -57,15 +57,22 @@
           </span>
           <span class="item_wrapper">
             <span class="item" *ngFor="let item of bloglisting | slice:0:indexval ; let i=index">
-              <span class="item_images" (click)="blogdetail(item._id)"><img [src]="item.blogs_image"></span>
+             
+              <mat-card>
+                <span class="item_images" (click)="blogdetail(item._id)"><img [src]="item.blogs_image"></span>
+                <mat-card-content>
+                    <span class="bnticons">
+                        <button *ngIf="item.video_url !='' && item.video_url !=null "
+                          (click)="openvideourl(item.video_url)"><img src="../../../../assets/images/videoicon.png"></button>
+                      </span>
+                      <h2 (click)="blogdetail(item._id)">{{item.blogtitle}}</h2>
+                      <p class="description"><span [innerHtml]="item.description"></span></p>
+                      <a class="next_page" (click)="blogdetail(item._id)">read more</a>
+                </mat-card-content>
+                
+              </mat-card>
               <span class="contentsection">
-                <span class="bnticons">
-                  <button *ngIf="item.video_url !='' && item.video_url !=null "
-                    (click)="openvideourl(item.video_url)"><img src="../../../../assets/images/videoicon.png"></button>
-                </span>
-                <h2 (click)="blogdetail(item._id)">{{item.blogtitle}}</h2>
-                <p class="description"><span [innerHtml]="item.description"></span></p>
-                <a class="next_page" (click)="blogdetail(item._id)">read more</a>
+                
                 <span class="bottom-blog-wrapper">
                   <span class="date">{{item.date_added}}</span>
                   <!-- <span class="likecomment">
@@ -111,16 +118,15 @@
         </span>
         <span class="categorywrapper">
           <h2 class="blogtitle">Categories ({{blogcategorycount}})</h2>
-          <mat-tree [dataSource]="blogCategoryDataSource" [treeControl]="nestedTreeControl" class="example-tree">
-            <!-- This is the tree node template for leaf Item -->
+          
+          <mat-tree [dataSource]="blogCategoryDataSource" [treeControl]="nestedTreeControl" class="example-tree">            
             <mat-tree-node *matTreeNodeDef="let item" matTreeNodePadding>
-                <!-- use a disabled button to provide padding for tree leaf -->
                 <li class="mat-tree-node">
                     <button mat-icon-button disabled></button>
                     {{item.blogtitle}}
                 </li>               
             </mat-tree-node>
-            <!-- This is the tree node template for expandable Items -->
+
             <mat-tree-node *matTreeNodeDef="let item;when: hasNestedChild">
                 <li>
                     <div class="mat-tree-node">
@@ -137,6 +143,7 @@
                 </li>
             </mat-tree-node>
           </mat-tree>
+
           <!-- <span class="categorywrapper">  
                         <h2 class="blogtitle">Categories ({{blogcategorycount}}) <button mat-raised-button (click)="openAll()">Open All</button></h2>            
                         <button mat-raised-button (click)="closeAll()">close All</button> 

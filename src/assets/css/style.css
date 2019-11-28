@@ -302,7 +302,7 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
   text-overflow: ellipsis;
   display: -webkit-box;
   line-height: 24px;
-  max-height: 94px;
+  height: 94px;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;}
 .generalcls .testicontent .quatation .quotestarticon{ float: left; margin-right: 10px;margin-top: -10px; width: 28px;}
@@ -330,6 +330,7 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
 .bloglists .item_wrapper > .item .item_images{ max-width: 100%; display: flex; justify-content: center; align-items: center; height: 174px; overflow: hidden;}
 .bloglists .item_wrapper > .item .item_images img{ height: 100% !important; -o-object-fit: cover; object-fit: cover; width: 100% !important; width: auto; height: auto;}
 
+.bloglists .item_wrapper > .item .contentsection{align-items: stretch; height: 56%;}
 
 .bloglists .bloglistinner{
   display: flex;
@@ -337,7 +338,15 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
   justify-content: space-between;
 }
 
-.bloglists .mat-card{padding:16px 0px;}
+.bloglists .mat-card{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0px;
+  flex-wrap: wrap;
+  background: transparent !important;
+  height: 88%;
+}
 .blogcatlists .mat-card{padding:16px 0px;}
 
 
@@ -382,14 +391,19 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
 
 }
 
-.generalcls.bloglists .contentsection h2 {
+.generalcls.bloglists .mat-card-content{
+  padding:20px;
+  height: 100%;
+}
+
+.generalcls.bloglists .item .mat-card-content h2 {
   font-family: 'Helvetica-Normal';
   font-size: 24px!important;
   line-height: 30px!important;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   margin-top: 0;
   color: #06a2b8;
   white-space: normal!important;
@@ -1196,7 +1210,7 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
   padding-bottom: 0!important;
 }
 
-.newsletterwrapper  .mat-form-field-appearance-legacy .mat-form-field-infix{ margin-bottom: 0px!important;     padding: 14px!important;}
+.newsletterwrapper  .mat-form-field-appearance-legacy .mat-form-field-infix{ margin-bottom: 0px!important;     padding: 11px 14px!important;}
 
 .newsletterwrapper .mat-form-field-appearance-legacy .mat-form-field-label {
   top: 24px;
@@ -1260,9 +1274,17 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
 .homeblock2servcontent button{float: right !important; margin: 10px 15px !important;}
 
 .truncate{overflow: ellipsis;text-overflow: -o-ellipsis-lastline; display: -webkit-box; line-height: normal; max-height: 108px; -webkit-line-clamp: 5;}
-.truncateopen{overflow: inherit !important; max-height: 100% !important; height: auto !important; text-overflow: inherit !important; -webkit-line-clamp: inherit !important;    display: block !important}
-.truncateopen p{ max-height: 100% !important;}
-
+.truncateopen{overflow: inherit !important; min-height: 94px; height: 100% !important; height: auto !important; text-overflow: inherit !important; -webkit-line-clamp: inherit !important; }
+.truncateopen p{ height: auto !important;    overflow: inherit; min-height: auto !important;
+  text-overflow: inherit;
+  display: inherit;
+  line-height: 24px;
+  height: auto !important;
+  -webkit-line-clamp: inherit !important;}
+  .generalcls .testicontent .quatation .truncate.truncateopen{
+    max-height: inherit !important;
+  }
+  .generalcls .testicontent .quatation .truncate.truncateopen p{height: auto !important;}
 
 
 .testimonial .owl-carousel.owl-drag .owl-item .title1{font-size: 20px !important; margin-top: 20px !important; color: #03aed4;}
@@ -1293,3 +1315,4 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
 .testimonialserv .testiimgwarpper .bnticons button img {
   max-width: 100%;
 }
+

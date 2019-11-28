@@ -24,11 +24,6 @@ export class FileNode{
 })
 export class BloglistComponent implements OnInit {
 
-  public nestedTreeControl: NestedTreeControl<FileNode>;
-  private blogCategoryDataSource:MatTreeNestedDataSource<FileNode>;
-  public dataChange:BehaviorSubject<FileNode[]> = new BehaviorSubject<FileNode[]>([]);
-
-
   public blogList: any;
   public blogCategory:any;
   public blogcount:any;
@@ -55,6 +50,14 @@ export class BloglistComponent implements OnInit {
   }
 
 
+  /*------------TREE NESTEDDATA-----*/
+
+  public nestedTreeControl: NestedTreeControl<FileNode>;
+  private blogCategoryDataSource:MatTreeNestedDataSource<FileNode>;
+  public dataChange:BehaviorSubject<FileNode[]> = new BehaviorSubject<FileNode[]>([]);
+
+  /*------------TREE NESTEDDATA-----*/
+
   constructor(private readonly meta: MetaService, private router: Router, private activatedRoute: ActivatedRoute, private cookieService: CookieService, public apiService: ApiService,private sanitizer: DomSanitizer,public dialog:MatDialog) {
 
     this.meta.setTitle('Arniefonseca - Blog');
@@ -71,14 +74,12 @@ export class BloglistComponent implements OnInit {
     this.meta.setTag('twitter:image', '../../assets/images/logo.png');
 
 
-
+      /*------------TREE NESTEDDATA-----*/
     this.nestedTreeControl = new NestedTreeControl<FileNode> (this._getChildren);
     this.blogCategoryDataSource = new MatTreeNestedDataSource();
 
     this.dataChange.subscribe(data => this.blogCategoryDataSource.data = data);
 
-
-    
     this.dataChange.next([
       {
         filename: "test",
@@ -102,6 +103,8 @@ export class BloglistComponent implements OnInit {
    private _getChildren = (item: FileNode) => { return observableOf(item.children); };
    hasNestedChild = (_: number, nodeData: FileNode) => { return ! (nodeData.type); };
 
+     /*------------TREE NESTEDDATA-----*/
+     
 
 panelOpenState = false;
 

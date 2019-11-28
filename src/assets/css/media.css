@@ -141,7 +141,13 @@
   }
 
   @media screen and (max-width: 600px){
+    .search-sec .example-form {flex-wrap: wrap;}
     .bottom_blog .item_wrapper .item { width: 100%; margin: 1%; }
+    .bloglists .bloglistinner {flex-wrap: wrap;}
+    .bloglists .bloglistinner span{flex: 1 1 100%; margin-right: auto;}
+    .generalcls.bloglists .contentsection h2 {text-align: center;}
+    .bloglists .item_wrapper > .item .contentsection .next_page{display: block; margin: 10px auto 20px;}
+    .bloglists .item_wrapper > .item .contentsection {align-items: stretch; height: 59%;}
   }
 
   @media only screen and (max-width: 600px) {
