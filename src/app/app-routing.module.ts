@@ -211,7 +211,7 @@ const routes: Routes = [
 // ___________________manage event backend__________________//
 
 
-  //________________Manage Seminar____________//
+  //________________Manage event____________//
 
   { path: 'manage-event/add', component: AddEditManageEventComponent },
 

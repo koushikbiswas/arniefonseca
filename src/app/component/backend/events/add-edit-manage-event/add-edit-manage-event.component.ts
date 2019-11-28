@@ -191,9 +191,9 @@ export class AddEditManageEventComponent implements OnInit {
 
 
 
-    let date:any;
-    date=this.eventForm.value.date;
-    date=moment(new Date()).format("DD/MM/YYYY");
+    // let date:any;
+    // date=this.eventForm.value.date;
+    // date=moment(new Date()).format("DD/MM/YYYY");
 
     //blur function
     for(let i in this.eventForm.controls){
@@ -205,7 +205,7 @@ export class AddEditManageEventComponent implements OnInit {
 
     if(this.eventForm.valid){
 
-      this.eventForm.value.date=date;
+      // this.eventForm.value.date=date;
       console.log(this.eventForm.value);
 
        //status
@@ -236,7 +236,7 @@ export class AddEditManageEventComponent implements OnInit {
             this.dialogRef.close();
           }, 2000);
 
-          this.router.navigateByUrl('/manage-seminar-listing');
+          this.router.navigateByUrl('/manage-event-listing');
         }
 
       })
