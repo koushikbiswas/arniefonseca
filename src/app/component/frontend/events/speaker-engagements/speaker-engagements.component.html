@@ -27,11 +27,11 @@
             <span class="event_right_blog" *ngFor="let pasteventsem of SpeakerListArry | slice:0:indexval; let i=index">
 
                 <span class="event_right_blog_img">
-                    <img src="{{pasteventsem.event_image}}"   >
+                    <img src="{{pasteventsem.image}}"   >
                 </span>
                 <span class="event_right_blog_text">
 
-                    <p [innerHtml]="pasteventsem.description"></p>
+                    <p [innerHtml]="pasteventsem.title"></p>
 
                     <label>{{pasteventsem.date}}</label>
 
@@ -56,7 +56,7 @@
              </span>
                 <h3>{{eventsem.title}} – {{eventsem.time}}</h3>
 
-            <img src="{{eventsem.event_image}}" class="event_img"  >
+            <img src="{{eventsem.image}}" class="event_img"  >
 
              <p class="event_text">  <span [innerHtml]="eventsem.description"></span> <a href="javascript:void(0);" [routerLink]="['/seminars-detail']">Continue Reading</a></p>
 
