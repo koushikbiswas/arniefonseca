@@ -27,6 +27,9 @@
 .event_share_block{ display: inline-block; background: #fff; padding: 6px; padding-bottom:3px; margin-top: 16px;}
 .event_share_block img{ width: 29px;}
 
+.event_text .spantext{ display: block; height: 125px; margin-bottom: 15px; overflow: hidden;}
+
+
 .eventpagination{ overflow: hidden; background: #0fc47e; display: block; text-align: center; padding: 30px 15px;  font-family:"Helvetica-Regular"; font-size: 18px; color: #fefefe;}
 
 .eventpagination span{ display: inline-block; padding: 0 6px; position: relative;}

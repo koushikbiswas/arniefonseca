@@ -12,7 +12,7 @@
 <mat-card class="ptb-40 generalcls workshopswrapper" style="background: #f2f4f4 !important;">
     <span class="mainwrappercontent bloghead">
         <mat-card-content>
-            <h2>upcoming workshops</h2>
+            <h2>workshops</h2>
             <p>
                 Check out some of the pictures from the many conferences, seminars, workshops and other such events that I have been a part of in the past.This <br>Image Gallery is updated after every event I attend. So, you can always check back regularly for the pictures from the latest and upcoming events.
             </p>
@@ -59,7 +59,7 @@
 
             <img src="{{eventsem.image}}" class="event_img"  >
 
-             <p class="event_text">  <span [innerHtml]="eventsem.description"></span> <a href="javascript:void(0);" [routerLink]="['/seminars-detail']">Continue Reading</a></p>
+             <p class="event_text">  <span class="spantext" [innerHtml]="eventsem.description"></span> <a href="javascript:void(0);" [routerLink]="['/seminars-detail']">Continue Reading</a></p>
 
 
                 <span class="event_share_block">

@@ -25,6 +25,8 @@
 
 .event_text{ display: block; margin-top: 35px; font-size: 18px; color: #24252c; font-family:"Helvetica-Regular";}
 
+.event_text .spantext{ display: block; height: 125px; margin-bottom: 15px; overflow: hidden;}
+
 .event_text a{ color: #ff3333;}
 
 .event_share_block{ display: inline-block; background: #fff; padding: 6px; padding-bottom:3px; margin-top: 16px;}
@@ -47,11 +49,11 @@
 
 .event_right_blog_text{ display: block; width:52%; float: right; padding-right: 2%; }
 
-.event_right_blog_text p{ margin: 8px 0; padding: 0px; font-size: 18px; color: #ffffff; font-family:"Helvetica-Regular";   line-height: 22px;}
+.event_right_blog_text p{ margin: 8px 0; padding: 0px; font-size: 18px; color: #24252c; font-family:"Helvetica-Regular";   line-height: 22px;}
 
 .event_right_blog_text label{ display: inline-block; float: left; font-size: 14px; color: #ffffff; font-family:"Helvetica-Regular";  margin: 2px 0 0 0;}
 
-.event_right_blog_text button{ display: block; float: right; width: 110px; height: 20px; background: #fff; box-shadow: 0 0 10px #ccc; font-size: 14px; font-family:"Helvetica-Regular"; text-transform: uppercase; color: #000; border: none; cursor: pointer; line-height: 24px; margin-top: 10px;}
+.event_right_blog_text button{ display: block; float: right; width: 110px; height: 20px; background: #fff; box-shadow: 0 0 10px #ccc; font-size: 14px; font-family:"Helvetica-Regular"; text-transform: uppercase; color: #000; border: none; cursor: pointer; line-height: 24px; margin-top: 10px; margin-bottom: 10px;}
 
 @media only screen and (max-width: 1700px) {
     .event_wrapper{   width: 96%!important; padding: 0px!important;}
