@@ -128,7 +128,7 @@ export class BlogdetailComponent implements OnInit {
  
 
        /**api service for blog_catagory total count by uttam */  
-       this.blogcategorycount = this.blogList.blogCatList.blog_category.length;
+      //  this.blogcategorycount = this.blogList.blogCatList.blog_category.length;
        // console.log('>>>>>>>>>>>>>>>>>',this.blogcategorycount)
        
   }
