@@ -102,7 +102,7 @@ import { AddEditBlogsComponent } from './component/backend/blog-management/add-e
 import { ListingBlogsComponent } from './component/backend/blog-management/listing-blogs/listing-blogs.component';
 
 import { ManageSeminarListingComponent } from './component/backend/events/manage-seminar/manage-seminar-listing/manage-seminar-listing.component';
-import { AddEditManageSeminarComponent } from './component/backend/events/manage-seminar/add-edit-manage-seminar/add-edit-manage-seminar.component';
+import { AddEditManageSeminarComponent, EventModal } from './component/backend/events/manage-seminar/add-edit-manage-seminar/add-edit-manage-seminar.component';
 // import { BlogModule } from '../../dist/blog';
 
 import {BlogModule} from 'blog';
@@ -122,8 +122,7 @@ import { AddEditTestemailComponent } from './component/backend/newsletterlists/a
 
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 // import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
-// import { IgxTimePickerModule } from 'igniteui-angular';
-// import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
+import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
 /**End Backend Component** */
 
 
@@ -212,7 +211,12 @@ import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
     AddEditSubscriberComponent,
     AddEditSubscriberGroupComponent,
     AddEditSendersComponent,
-    AddEditTestemailComponent
+    AddEditTestemailComponent,
+    CommonVideoModalComponent,
+    CommonTestimonialVideoModalComponent,
+    VideoModalComponent,
+    EventModal
+    
 
   ],
   imports: [
@@ -224,7 +228,7 @@ import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
     AppRoutingModule,
     DemoMaterialModule,
     CommonModule,
-    // NgxMaterialTimepickerModule,
+    NgxMaterialTimepickerModule, 
     TransferHttpCacheModule,
     HttpClientModule,
     NgtUniversalModule,
@@ -245,6 +249,6 @@ import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
   providers: [CookieService, AuthGuard, ApiService, SidenavService],
   bootstrap: [AppComponent],
   schemas:[CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
-  entryComponents: [comingSoonDialog, DialogPrivacyDialog, DialogTermsDialog,CommonVideoModalComponent, NewslatterDialogComponent,VideoModalComponent, NewslattersuccessDialogComponent,CommonTestimonialVideoModalComponent]
+  entryComponents: [comingSoonDialog, DialogPrivacyDialog, DialogTermsDialog,CommonVideoModalComponent, NewslatterDialogComponent,VideoModalComponent, NewslattersuccessDialogComponent, CommonTestimonialVideoModalComponent,EventModal]
 })
 export class AppModule { }

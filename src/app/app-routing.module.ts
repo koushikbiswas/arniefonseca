@@ -217,12 +217,39 @@ const routes: Routes = [
 
   //________________Manage Seminar____________//
 
-  { path: 'manage-seminar-listing', component: ManageSeminarListingComponent },
   { path: 'add-edit-manage-seminar', component: AddEditManageSeminarComponent },
 
+  { path: 'manage-seminar-listing', 
+  component: ManageSeminarListingComponent,
+  canActivate:[AuthGuard],
+  resolve:{eventList:ResolveService},
+  data:{
+    requestcondition:{
+      source:'event',
+      condition:{}
+    },
+    endpoint:'datalist'
+
+  },
+
+},
+{ path: 'add-edit-manage-seminar/:_id', component: AddEditManageSeminarComponent ,
+canActivate:[AuthGuard],
+resolve:{eventList:ResolveService},
+data:{
+  requestcondition:{
+    source:'event',
+    condition:{}
+  },
+  endpoint:'datalist'
+
+},
+},
+
+  
 
 
-//________________Manage Workshop____________//
+//______________Manage Workshop____________//
 
 
 
