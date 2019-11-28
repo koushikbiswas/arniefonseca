@@ -169,7 +169,8 @@ const routes: Routes = [
     data: { requestcondition: { source: 'services', condition: {} }, endpoint: 'datalist' }
   },
 
-  { path: 'newsletter-list', component: NewsletterlistsComponent },
+ 
+
   { path: 'manage-commission', component: ManageCommissionComponent },
   { path: 'manage-availability', component: ManageAvailabilityComponent },
   { path: 'social-advo-admin', component: SocialAdvoComponent },
@@ -239,18 +240,58 @@ const routes: Routes = [
 
 
   //_____________________Newsletter/subscriber/sender/testemail____________//
+
+
+  { path: 'newsletter-list', component: NewsletterlistsComponent },
+
+  {
+    path: 'newsletter-list',
+    component: NewsletterlistsComponent,
+
+    resolve: { subscriptionCatData: ResolveService },
+    data: {
+      requestcondition: {
+        source: 'news_category_view',
+        condition: {}
+      },
+      endpoint: 'datalist'
+    },
+  },
+
+
+
+  { path: 'subscriber-group/add', component: AddEditSubscriberGroupComponent },
+
+  {
+    path: 'subscriber-group/edit/:_id',
+    component: AddEditSubscriberGroupComponent,
+
+    resolve: { subscriptionCatData: ResolveService },
+    data: {
+      requestcondition: {
+        source: 'news_category',
+        condition: {}
+      },
+      endpoint: 'datalist'
+    },
+  },
+
+
+  
+
+
   { path: 'newsletter/add', component: AddEditNewsletterComponent },
   {
     path: 'newsletter/edit/:_id',
-    component: AddEditBlogcatComponent,
+    component: AddEditNewsletterComponent,
 
-    resolve: { newLetterList: ResolveService },
+    resolve: { newsLetterData: ResolveService },
     data: {
       requestcondition: {
-        source: '',
+        source: 'newsLetterAdd',
         condition: {}
       },
-      endpoint: ''
+      endpoint: 'datalist'
     },
   },
 
@@ -263,28 +304,14 @@ const routes: Routes = [
     resolve: { subscriberList: ResolveService },
     data: {
       requestcondition: {
-        source: '',
+        source: 'newsLetterSubscriber',
         condition: {}
       },
-      endpoint: ''
+      endpoint: 'datalist'
     },
   },
 
-  { path: 'subscriber-group/add', component: AddEditSubscriberGroupComponent },
-
-  {
-    path: 'subscriber-group/edit/:_id',
-    component: AddEditSubscriberGroupComponent,
-
-    resolve: { subscriberGroupList: ResolveService },
-    data: {
-      requestcondition: {
-        source: '',
-        condition: {}
-      },
-      endpoint: ''
-    },
-  },
+ 
 
   { path: 'sender/add', component: AddEditSendersComponent },
 
@@ -295,10 +322,10 @@ const routes: Routes = [
     resolve: { senderList: ResolveService },
     data: {
       requestcondition: {
-        source: '',
+        source: 'newsletterSender',
         condition: {}
       },
-      endpoint: ''
+      endpoint: 'datalist'
     },
   },
 
@@ -311,10 +338,10 @@ const routes: Routes = [
     resolve: { senderList: ResolveService },
     data: {
       requestcondition: {
-        source: '',
+        source: 'testEmail',
         condition: {}
       },
-      endpoint: ''
+      endpoint: 'datalist'
     },
   },
 

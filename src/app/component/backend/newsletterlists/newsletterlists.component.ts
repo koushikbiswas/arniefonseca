@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router , ActivatedRoute } from '@angular/router';
 import { CookieService } from 'ngx-cookie-service';
 import { ApiService } from 'src/app/api.service';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-newsletterlists',
@@ -11,29 +12,74 @@ import { ApiService } from 'src/app/api.service';
 export class NewsletterlistsComponent implements OnInit {
 
 
-  public newsConfigForm: any = {
-    endpoint: this.apiservice.serverUrl,
+
+  public subscriptionCatForm: any = {
+    // apiBaseUrl: "https://9v41bpikik.execute-api.us-east-1.amazonaws.com/dev/api/",
+
+    apiBaseUrl: environment.API_URL,
     listEndPoint: "datalist",
-    datasource: "",
-    tableName: "newsletters",
+    datasource: "newsLetter",
+    tableName: "resources",
     updateurl: "addorupdatedata",
-    editUrl: "newsletter/edit",
+    editUrl: "subscriber-group/add",
     jwtToken: "",
     deleteEndPoint: "deletesingledata",
-    addLink: "/newsletter/add",
-    view: ""
+    addLink: "subscriber-group/add",
+    view: "news_category_view"
 
   }
-  constructor(private router: Router, private activatedRoute: ActivatedRoute, private cookieService: CookieService, public apiservice: ApiService) {
+  
+  
 
-    this.activatedRoute.data.subscribe(resolveData => {
-      this.newsConfigForm.datasource = resolveData.newsData.res;
-      this.newsConfigForm.jwtToken = this.cookieService.get('jwtToken');
 
-    });
-  }
+  constructor(private router: Router, private activatedRoute: ActivatedRoute, private cookieService: CookieService, public apiservice: ApiService) { }
 
   ngOnInit() {
+
+
+    this.activatedRoute.data.subscribe(resolveData => {
+      this.subscriptionCatForm.datasource = resolveData.subscriptionCatData.res;
+      this.subscriptionCatForm.jwtToken = this.cookieService.get('jwtToken');
+
+      console.log('test', this.subscriptionCatForm.datasource);
+
+    });
+
+
+    // this.activatedRoute.data.subscribe(resolveData => {
+    //   this.newsConfigForm.datasource = resolveData.newLetterList.res;
+
+    //   this.newsConfigForm.jwtToken = this.cookieService.get('jwtToken');
+
+     
+
+    
+    // });
+
+    // this.activatedRoute.data.subscribe(resolveData => {
+    //   this.subscriptionCatForm.datasource = resolveData.subscriptionCatData.res;
+    //   this.subscriptionCatForm.jwtToken = this.cookieService.get('jwtToken');
+
+    // });
+
+    // this.activatedRoute.data.subscribe(resolveData => {
+    //   this.subscriptionForm.datasource = resolveData.subscriptionData.res;
+    //   this.subscriptionForm.jwtToken = this.cookieService.get('jwtToken');
+
+    // });
+
+    // this.activatedRoute.data.subscribe(resolveData => {
+    //   this.senderConfigForm.datasource = resolveData.senderData.res;
+    //   this.senderConfigForm.jwtToken = this.cookieService.getAll();
+
+    // });
+
+
+    // this.activatedRoute.data.subscribe(resolveData => {
+    //   this.testemailConfigForm.datasource = resolveData.testData.res;
+    //   this.testemailConfigForm.jwtToken = this.cookieService.get('jwtToken');
+
+    // });
   }
 
 }
