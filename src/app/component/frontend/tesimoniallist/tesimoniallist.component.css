@@ -39,7 +39,6 @@
     height: 231px;
     border-radius: 100%;
     background-color: #efefef;
-    overflow: hidden;
     display: block;
     position: relative;
     margin: 0 auto;
@@ -89,7 +88,7 @@
 
   @media only screen and (max-width:1199px) {
       .testimonialwrapper .mat-list .mat-list-item.testimonialserv {
-        width: 42.91% !important;
+        width: 41.91% !important;
     }
   }
 
