@@ -242,16 +242,20 @@ const routes: Routes = [
   //_____________________Newsletter/subscriber/sender/testemail____________//
 
 
-  { path: 'newsletter-list', component: NewsletterlistsComponent },
+
+  { path: 'subscriber-group/add', component: AddEditSubscriberGroupComponent },
+  
+
+ 
 
   {
     path: 'newsletter-list',
     component: NewsletterlistsComponent,
 
-    resolve: { subscriptionCatData: ResolveService },
+    resolve: { subscriptionListData: ResolveService },
     data: {
       requestcondition: {
-        source: 'news_category_view',
+        source: 'subscriptiongroupadd',
         condition: {}
       },
       endpoint: 'datalist'
@@ -260,16 +264,16 @@ const routes: Routes = [
 
 
 
-  { path: 'subscriber-group/add', component: AddEditSubscriberGroupComponent },
+ 
 
   {
     path: 'subscriber-group/edit/:_id',
     component: AddEditSubscriberGroupComponent,
 
-    resolve: { subscriptionCatData: ResolveService },
+    resolve: { subscriptiongroupData: ResolveService },
     data: {
       requestcondition: {
-        source: 'news_category',
+        source: 'subscriptiongroupadd',
         condition: {}
       },
       endpoint: 'datalist'
@@ -277,7 +281,7 @@ const routes: Routes = [
   },
 
 
-  
+
 
 
   { path: 'newsletter/add', component: AddEditNewsletterComponent },

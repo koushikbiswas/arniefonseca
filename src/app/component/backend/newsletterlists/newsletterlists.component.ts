@@ -11,21 +11,22 @@ import { environment } from 'src/environments/environment';
 })
 export class NewsletterlistsComponent implements OnInit {
 
+public BaseUrl:any= environment["API_URL"];
 
 
   public subscriptionCatForm: any = {
-    // apiBaseUrl: "https://9v41bpikik.execute-api.us-east-1.amazonaws.com/dev/api/",
+    apiBaseUrl: this.BaseUrl,
 
-    apiBaseUrl: environment.API_URL,
+    // apiBaseUrl: environment.API_URL,
     listEndPoint: "datalist",
-    datasource: "newsLetter",
+    datasource: "subscriptiongrouplist",
     tableName: "resources",
     updateurl: "addorupdatedata",
-    editUrl: "subscriber-group/add",
+    editUrl: "/subscriber-group/edit/",
     jwtToken: "",
     deleteEndPoint: "deletesingledata",
     addLink: "subscriber-group/add",
-    view: "news_category_view"
+    //view: "news_category_view"
 
   }
   
@@ -38,10 +39,10 @@ export class NewsletterlistsComponent implements OnInit {
 
 
     this.activatedRoute.data.subscribe(resolveData => {
-      this.subscriptionCatForm.datasource = resolveData.subscriptionCatData.res;
+      this.subscriptionCatForm.datasource = resolveData.subscriptionListData.res;
       this.subscriptionCatForm.jwtToken = this.cookieService.get('jwtToken');
 
-      console.log('test', this.subscriptionCatForm.datasource);
+      // console.log('test', this.subscriptionCatForm.datasource);
 
     });
 
