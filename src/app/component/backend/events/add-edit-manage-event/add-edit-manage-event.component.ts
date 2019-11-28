@@ -34,7 +34,7 @@ export class AddEditManageEventComponent implements OnInit {
   public data: any ={};
   public action:any;
   public header_txt: any = 'Add Event';
-  public name_txt:any="ADD";
+  public name_txt:any="ADD EVENTS";
   public btn_text:any='SUBMIT';
   public successMessage:any="Submitted Successfully!!!";
   public img_flag:any=false;
@@ -99,6 +99,7 @@ export class AddEditManageEventComponent implements OnInit {
         /* Button text */
         this.btn_text = "UPDATE";
         this.header_txt="Edit Event"
+        this.name_txt="Edit Events";
         this.successMessage = "One row updated";
         this.setDefaultValue(this.defaultData);            
         this.header_txt = "Edit Event";
