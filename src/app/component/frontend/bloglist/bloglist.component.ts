@@ -1,12 +1,21 @@
 import { Component, OnInit, ViewChild, Inject} from '@angular/core';
-import { MatAccordion, MatDialog, MAT_DIALOG_DATA, MatDialogRef } from '@angular/material';
+import { MatAccordion, MatDialog, MAT_DIALOG_DATA, MatDialogRef} from '@angular/material';
+import { MatTreeNestedDataSource } from '@angular/material/tree';
 import { Router, ActivatedRoute } from '@angular/router';
 import { CookieService } from 'ngx-cookie-service';
 import { ApiService } from 'src/app/api.service';
 import { MetaService } from '@ngx-meta/core';
 import { SafeResourceUrl, DomSanitizer } from '@angular/platform-browser';
+import { NestedTreeControl } from '@angular/cdk/tree';
+import { BehaviorSubject, observable, of as observableOf } from 'rxjs';
 
 export interface DialogData {data: any;} 
+
+export class FileNode{
+  children: FileNode[];
+  filename: string;
+  type:any;
+}
 
 @Component({
   selector: 'app-bloglist',
@@ -15,10 +24,13 @@ export interface DialogData {data: any;}
 })
 export class BloglistComponent implements OnInit {
 
-  
-  
+  public nestedTreeControl: NestedTreeControl<FileNode>;
+  private blogCategoryDataSource:MatTreeNestedDataSource<FileNode>;
+  public dataChange:BehaviorSubject<FileNode[]> = new BehaviorSubject<FileNode[]>([]);
+
+
   public blogList: any;
-  public blogcategory:any;
+  public blogCategory:any;
   public blogcount:any;
   public blogcategorysearch:any;
   public blogcategorycount:any;
@@ -44,6 +56,7 @@ export class BloglistComponent implements OnInit {
 
 
   constructor(private readonly meta: MetaService, private router: Router, private activatedRoute: ActivatedRoute, private cookieService: CookieService, public apiService: ApiService,private sanitizer: DomSanitizer,public dialog:MatDialog) {
+
     this.meta.setTitle('Arniefonseca - Blog');
     this.meta.setTag('og:description', '');
     this.meta.setTag('twitter:description', '');
@@ -56,44 +69,39 @@ export class BloglistComponent implements OnInit {
     this.meta.setTag('og:type', 'website');
     this.meta.setTag('og:image', '../../assets/images/logo.png');
     this.meta.setTag('twitter:image', '../../assets/images/logo.png');
+
+
+
+    this.nestedTreeControl = new NestedTreeControl<FileNode> (this._getChildren);
+    this.blogCategoryDataSource = new MatTreeNestedDataSource();
+
+    this.dataChange.subscribe(data => this.blogCategoryDataSource.data = data);
+
+
+    
+    this.dataChange.next([
+      {
+        filename: "test",
+        type: "",
+        children:[
+          {
+            filename: "test3",
+            type: "exe",
+            children: [],
+          }
+        ],
+      },
+      {
+        filename: "test2",
+        type: "exe",
+        children:[],
+      },
+    ]);
    }
 
-//    panelOpenState = false;
+   private _getChildren = (item: FileNode) => { return observableOf(item.children); };
+   hasNestedChild = (_: number, nodeData: FileNode) => { return ! (nodeData.type); };
 
- 
-//   //***********blog list view in blog detail************//
-//   blogdetail(val:any){
-//     console.log(val)
-//     this.router.navigateByUrl('/blogdetail/' +val)
-//   }
-
-
-//   ngOnInit() {
-// //**all blog category and blog list from resolve in routing**//
-
-//   this.activatedRoute.data.forEach((data: any) => {
-//     this.blogList = data;
-//   //console.log('>>>>>>>kb>>>>>>>',this.blogList)
-
-//   //****total blog list****//
-//   this.bloglisting = this.blogList.blogCatList.blogs
-//  console.log('---------------',this.bloglisting)
-
-
-//   /**api service for total blog_catagory */
-   
-//   this.blogcategory =this.blogList.blogCatList.blog_category;
-//   console.log('+++++++blogcategory+++++++++++',this.blogcategory)
-
-
-//   /**api service for blog_catagory total count */
-
-//    this.blogcategorycount = this.blogList.blogCatList.blog_category.length;
-//    // console.log('>>>>>>>>>>>>>>>>>',this.blogcategorycount)
-
-// })
-
-// }
 
 panelOpenState = false;
 
@@ -122,7 +130,7 @@ panelOpenState = false;
 
     /**api service for total blog_catagory by uttam */
    
-          this.blogcategory =this.blogList.blogCatList.blog_category;
+          this.blogCategoryDataSource =this.blogList.blogCatList.blog_category;
           // console.log('++++++++++++++++++',this.blogcategory)
 
     /**api service for blog_catagory total count by uttam */  
@@ -138,7 +146,7 @@ titleSearchblogListFilter(filterValue: string) {
 
 /**total blog Categorylist*/  
 titleSearchCategoryFilter(filterValue: string) {
-  this.blogcategory.filter = filterValue.trim().toLowerCase();
+    this.blogCategory.filter = filterValue.trim().toLowerCase();
   //console.log('---kb---', this.bloglisting.filter);
 }
 

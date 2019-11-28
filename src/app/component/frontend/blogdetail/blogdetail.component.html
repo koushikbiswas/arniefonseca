@@ -86,7 +86,7 @@
         <span class="categorywrapper">
           <h2 class="blogtitle">Categories <button mat-raised-button (click)="openAll()">Open All</button></h2>                
           <!-- <button mat-raised-button (click)="closeAll()">close All</button>         -->
-          <mat-accordion #myaccordion="matAccordion" multi="true" class="category">
+          <!-- <mat-accordion #myaccordion="matAccordion" multi="true" class="category">
               <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" *ngFor="let item of blogcategory">
                 <mat-expansion-panel-header>
                   <mat-panel-title (click)="openblog(item._id)">
@@ -101,7 +101,33 @@
                       </span>
                 </ng-container>
               </mat-expansion-panel>                          
-          </mat-accordion>
+          </mat-accordion> -->
+          <mat-tree [dataSource]="blogCategoryDataSource" [treeControl]="nestedTreeControl" class="example-tree">
+              <!-- This is the tree node template for leaf Item -->
+              <mat-tree-node *matTreeNodeDef="let item" matTreeNodePadding>
+                  <!-- use a disabled button to provide padding for tree leaf -->
+                  <li class="mat-tree-node">
+                      <button mat-icon-button disabled></button>
+                      {{item.blogtitle}}
+                  </li>               
+              </mat-tree-node>
+              <!-- This is the tree node template for expandable Items -->
+              <mat-tree-node *matTreeNodeDef="let item;when: hasNestedChild">
+                  <li>
+                      <div class="mat-tree-node">
+                          <button mat-icon-button matTreeNodeToggle [attr.aria-label]="'toggle ' + item.blogtitle">
+                              <mat-icon class="mat-icon-rtl-mirror">
+                                  {{nestedTreeControl.isExpanded(item) ? 'expand_more' : 'chevron_right'}}
+                              </mat-icon>
+                          </button>
+                          {{item.blogtitle}} ({{item.blogcount}})
+                      </div>
+                      <ul [class.example-tree-invisible]="!nestedTreeControl.isExpanded(item)">
+                          <ng-container matTreeNodeOutlet></ng-container>
+                      </ul>
+                  </li>
+              </mat-tree-node>
+          </mat-tree>
         </span>
       </span>
       <!-- <span class="mostviewedblogs">
