@@ -1196,7 +1196,7 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
   padding-bottom: 0!important;
 }
 
-.newsletterwrapper  .mat-form-field-appearance-legacy .mat-form-field-infix{ margin-bottom: 0px!important;     padding: 14px!important;}
+.newsletterwrapper  .mat-form-field-appearance-legacy .mat-form-field-infix{ margin-bottom: 0px!important;     padding: 11px!important;}
 
 .newsletterwrapper .mat-form-field-appearance-legacy .mat-form-field-label {
   top: 24px;
