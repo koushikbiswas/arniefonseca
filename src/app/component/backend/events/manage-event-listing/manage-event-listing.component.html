@@ -11,29 +11,30 @@
             <mat-card-content class="bred_cram_wrapper">
               <a mat-list-item routerLinkActive="active" [routerLink]="'/admin-dashboard'"> Dashboard </a>
               <a mat-list-item routerLinkActive="active activebread" [routerLink]="'/manage-event-listing'"> manage Events</a>
-          </mat-card-content>
+            </mat-card-content>
 
-          <mat-card class="generalcls blog" style="padding: 0 !important;">  
-            <!-- <img src="../../../../assets/images/manage-speaker-engagements.jpg" style="width: 100%; display: block; margin: 0; padding: 0;"> -->
-            <span class="bloglists">      
-                          
-              <!-- Selector -->
-                <!-- <app-listing-blogs></app-listing-blogs> -->
-                <mat-card>
-                    <span class="searchblock">
-                        <span class="searchblockwrapper">
-                            <span>
-                                <h2>Events listing</h2>
-                            </span>
-                            <span>
-                                <button mat-button class="btngreen sim-button" [routerLink]="['/manage-event/add']"><i class="material-icons">add</i> Add New EVENT</button>
-                            </span>                    
-                        </span>
-                    </span>
-                    <div class="tablediv">
+          
+              <!-- <img src="../../../../assets/images/manage-speaker-engagements.jpg" style="width: 100%; display: block; margin: 0; padding: 0;"> -->
+              <span class="bloglists">      
+                            
+                <!-- Selector -->
+                  <!-- <app-listing-blogs></app-listing-blogs> -->
+                  <mat-card>
+                      <span class="searchblock">
+                          <span class="searchblockwrapper">
+                              <span>
+                                  <h2>manage seminar listing</h2>
+                              </span>
+                              <span>
+                                  <button mat-button class="btngreen sim-button" [routerLink]="['/manage-event/add']"><i class="material-icons">add</i> Add New EVENT</button>
+                              </span>                    
+                          </span>
+                      </span>
+                      <div class="tablediv">
 
-                        <!-- <img src="../../../../assets/images/manage-seminars.jpg" style="width: 100%; display: block; margin: 0; padding: 0;"> -->
-                        <!-- <lib-listing-blogmanagementlib class="formfilterdiv" *ngIf="blogListConfig.datasource != null && blogListConfig.datasource.length > 0" [config]="blogListConfig"></lib-listing-blogmanagementlib> -->
+                          <!-- <img src="../../../../assets/images/manage-seminars.jpg" style="width: 100%; display: block; margin: 0; padding: 0;"> -->
+                          <!-- <lib-listing-blogmanagementlib class="formfilterdiv" *ngIf="blogListConfig.datasource != null && blogListConfig.datasource.length > 0" [config]="blogListConfig"></lib-listing-blogmanagementlib> -->
+
 
                        <!-- Listing goes here  -->
         <lib-listing *ngIf="eventDataList != null && eventDataList.length>0"
@@ -57,15 +58,14 @@
             >
         </lib-listing>
 
-        <h2 *ngIf="eventDataList.length == 0">No record found.</h2>
-        <!-- Listing ends here  -->
+          <h2 *ngIf="eventDataList.length == 0">No record found.</h2>
+          <!-- Listing ends here  -->
 
-                    </div>
-                </mat-card>
-            </span>
-            
-          
-        </mat-card>
+                      </div>
+                  </mat-card>
+              </span>
+              
+           
 
 
         </mat-card>
