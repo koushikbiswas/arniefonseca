@@ -410,6 +410,22 @@ float: left;}
 app-bk-leftdiv{position: relative; z-index: 999;}		
 
 
+.formspan {
+    background-color: #e7e9ea;
+    border: 6px solid #fff;
+    border-bottom: 10px solid #fff;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+}
+.formspan .example-container{
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    padding: 14px;
+    margin-bottom: 0;
+}
 
 @media only screen and (max-width: 1760px) {
 .dashboard_block1{ background-position: 790px top!important;}

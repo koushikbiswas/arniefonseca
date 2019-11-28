@@ -31,7 +31,7 @@ export class BlogdetailComponent implements OnInit {
 
 
   public nestedTreeControl: NestedTreeControl<FileNode>;
-  private blogCategoryDataSource:MatTreeNestedDataSource<FileNode>;
+  public blogCategoryDataSource:MatTreeNestedDataSource<FileNode>;
   public dataChange:BehaviorSubject<FileNode[]> = new BehaviorSubject<FileNode[]>([]);
 
 

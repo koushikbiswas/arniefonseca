@@ -11,7 +11,10 @@ import { SafeResourceUrl, DomSanitizer } from '@angular/platform-browser';
   styleUrls: ['./seminars.component.css']
 })
 export class SeminarsComponent implements OnInit {
-  private indexvallength: any;
+  private indexvallength: any=4;
+
+  
+  public indexval:any=4;
 
   public SeminarsListArry: any = []
   public dataformate: any;
@@ -49,6 +52,14 @@ export class SeminarsComponent implements OnInit {
       this.indexvallength = this.SeminarsListArry.length;
     })
 
+
+  }
+
+
+  //***********load more view blog *************//
+  blogloadmore(){
+    // console.log('load more')
+    this.indexval=this.indexval+2;
 
   }
 

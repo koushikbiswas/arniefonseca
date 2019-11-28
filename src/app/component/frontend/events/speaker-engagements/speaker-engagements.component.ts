@@ -13,6 +13,8 @@ export class SpeakerEngagementsComponent implements OnInit {
 
   private indexvallength: any;
 
+  public indexval:any=4;
+
   public  SpeakerListArry: any = []
   public dataformate: any;
   public eventImage:any;
@@ -52,5 +54,12 @@ export class SpeakerEngagementsComponent implements OnInit {
 
 
   }
+
+    //***********load more view blog *************//
+    blogloadmore(){
+      // console.log('load more')
+      this.indexval=this.indexval+2;
+  
+    }
 
 }
