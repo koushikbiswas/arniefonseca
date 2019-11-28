@@ -22,117 +22,18 @@
 
 
         <mat-card-content class="event_right">
-            <h2>PAst seminers</h2>
+            <h2>PAst WORKSHOPS</h2>
 
-            <span class="event_right_blog">
+            <span class="event_right_blog" *ngFor="let pasteventsem of WorkshopsListArry | slice:0:indexval; let i=index">
 
                 <span class="event_right_blog_img">
-                     <img src="../../../../assets/images/event_img1.jpg"  >
+                    <img src="{{pasteventsem.event_image}}"   >
                 </span>
                 <span class="event_right_blog_text">
 
-                    <p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected </p>
+                    <p [innerHtml]="pasteventsem.description"></p>
 
-                    <label>Oct 17, 2019</label>
-
-                    <button>Know more</button>
-
-                     <span class="clear"></span>
-                </span>
-                <span class="clear"></span>
-
-
-            </span>
-
-            <span class="event_right_blog">
-
-                <span class="event_right_blog_img">
-                     <img src="../../../../assets/images/event_img1.jpg"  >
-                </span>
-                <span class="event_right_blog_text">
-
-                    <p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected </p>
-
-                    <label>Oct 17, 2019</label>
-
-                    <button>Know more</button>
-
-                     <span class="clear"></span>
-                </span>
-                <span class="clear"></span>
-
-
-            </span>
-
-            <span class="event_right_blog">
-
-                <span class="event_right_blog_img">
-                     <img src="../../../../assets/images/event_img1.jpg"  >
-                </span>
-                <span class="event_right_blog_text">
-
-                    <p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected </p>
-
-                    <label>Oct 17, 2019</label>
-
-                    <button>Know more</button>
-
-                     <span class="clear"></span>
-                </span>
-                <span class="clear"></span>
-
-
-            </span>
-
-            <span class="event_right_blog">
-
-                <span class="event_right_blog_img">
-                     <img src="../../../../assets/images/event_img1.jpg"  >
-                </span>
-                <span class="event_right_blog_text">
-
-                    <p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected </p>
-
-                    <label>Oct 17, 2019</label>
-
-                    <button>Know more</button>
-
-                     <span class="clear"></span>
-                </span>
-                <span class="clear"></span>
-
-
-            </span>
-            <span class="event_right_blog">
-
-                <span class="event_right_blog_img">
-                     <img src="../../../../assets/images/event_img1.jpg"  >
-                </span>
-                <span class="event_right_blog_text">
-
-                    <p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected </p>
-
-                    <label>Oct 17, 2019</label>
-
-                    <button>Know more</button>
-
-                     <span class="clear"></span>
-                </span>
-                <span class="clear"></span>
-
-
-            </span>
-
-            <span class="event_right_blog">
-
-                <span class="event_right_blog_img">
-                     <img src="../../../../assets/images/event_img1.jpg"  >
-                </span>
-                <span class="event_right_blog_text">
-
-                    <p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected </p>
-
-                    <label>Oct 17, 2019</label>
+                    <label>{{pasteventsem.date}}</label>
 
                     <button>Know more</button>
 
@@ -148,16 +49,17 @@
 
         <mat-card-content class="event_left">
 
-            <span class="event_blog">
+            <span class="event_blog" *ngFor="let eventsem of WorkshopsListArry | slice:0:indexval; let i=index">
             <span class="event_blog_top">
-            <label>Thursday October 17, 2019</label>
-            <p>Conference Room • The University of Utah 200 S. South Campus Dr. • A. Ray Building</p>
+
+           <label>{{eventsem.date}}</label>
+            <p>Conference Room • {{eventsem.location}}</p>
              </span>
-                <h3>2nd Annual Economics Fair October 17th, 2019 – 7:00pm – 10:00pm</h3>
+                 <h3>{{eventsem.title}} – {{eventsem.time}}</h3>
 
-            <img src="../../../../assets/images/event_img1.jpg" class="event_img"  >
+            <img src="{{eventsem.event_image}}" class="event_img"  >
 
-             <p class="event_text">  <span> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage... </span> <a href="javascript:void(0);" [routerLink]="['/workshop-detail']">Continue Reading</a></p>
+             <p class="event_text">  <span [innerHtml]="eventsem.description"></span> <a href="javascript:void(0);" [routerLink]="['/seminars-detail']">Continue Reading</a></p>
 
 
                 <span class="event_share_block">
@@ -173,47 +75,6 @@
            </span>
 
 
-            <span class="event_blog">
-            <span class="event_blog_top">
-            <label>Thursday October 17, 2019</label>
-            <p>Conference Room • The University of Utah 200 S. South Campus Dr. • A. Ray Building</p>
-             </span>
-                <h3>2nd Annual Economics Fair October 17th, 2019 – 7:00pm – 10:00pm</h3>
-
-            <img src="../../../../assets/images/event_img2.jpg" class="event_img"  >
-
-             <p class="event_text">  <span> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage... </span> <a href="javascript:void(0);" [routerLink]="['/workshop-detail']">Continue Reading</a></p>
-
-
-                <span class="event_share_block">
-                    <img src="../../../../assets/images/share_img1.jpg"  >
-                    <img src="../../../../assets/images/share_img2.jpg"  >
-                    <img src="../../../../assets/images/share_img3.jpg"  >
-                    <img src="../../../../assets/images/share_img4.jpg"  >
-                    <img src="../../../../assets/images/share_img5.jpg"  >
-                    <img src="../../../../assets/images/share_img6.jpg"  >
-
-                </span>
-
-           </span>
-
-
-
-            <span class="eventpagination">
-
-                <span><i class="material-icons">
-keyboard_arrow_left
-</i> Previous</span>
-                <span>1</span>
-                <span>2</span>
-                <span>3</span>
-                <span>4</span>
-                <span>...</span>
-                <span>5</span>
-                <span>Next <i class="material-icons">
-keyboard_arrow_right
-</i></span>
-            </span>
 
 
         </mat-card-content>

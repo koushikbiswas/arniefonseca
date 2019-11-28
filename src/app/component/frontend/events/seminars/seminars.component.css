@@ -7,8 +7,7 @@
 .event_wrapper .event_left{ width: 1155px; float: left; margin-bottom: 0px!important;}
 .event_wrapper .event_right{ width: 495px; float: right; margin-bottom: 0px!important;}
 
-.event_wrapper .event_right h2{ background: #292b33; text-transform: uppercase; padding: 18px 30px 12px 30px; text-align: left; font-size: 30px!important; font-family:"Helvetica-Regular"; color: #fff; font-weight: normal; }
-
+.event_wrapper .event_right h2{ background: #292b33; text-transform: uppercase; padding: 18px 18px 12px 18px; text-align: left; font-size: 22px!important; font-family:"Helvetica-Regular"; color: #fff; font-weight: normal; }
 .event_blog{ display: block; margin-bottom: 40px; border-bottom: solid 2px #3ab9d9; padding-bottom: 36px;}
 
 .event_blog .event_blog_top{ display: block;}
