@@ -7,9 +7,20 @@ import { ApiService } from 'src/app/api.service';
 import { MetaService } from '@ngx-meta/core';
 import { SafeResourceUrl, DomSanitizer } from '@angular/platform-browser';
 
+import { NestedTreeControl } from '@angular/cdk/tree';
+import { BehaviorSubject, observable, of as observableOf } from 'rxjs';
+import { MatTreeNestedDataSource } from '@angular/material/tree';
+
+
 export interface DialogData {
   data: any;  
 } 
+
+export class FileNode{
+  children: FileNode[];
+  filename: string;
+  type:any;
+}
 
 @Component({
   selector: 'app-blogdetail',
@@ -18,6 +29,15 @@ export interface DialogData {
 })
 export class BlogdetailComponent implements OnInit {
 
+
+  public nestedTreeControl: NestedTreeControl<FileNode>;
+  private blogCategoryDataSource:MatTreeNestedDataSource<FileNode>;
+  public dataChange:BehaviorSubject<FileNode[]> = new BehaviorSubject<FileNode[]>([]);
+
+
+
+
+  public blogCategory:any;
   public blogDetail:any;
   public blog:any = '';
   public blogList:any;
@@ -58,7 +78,39 @@ export class BlogdetailComponent implements OnInit {
     this.meta.setTag('og:type', 'website');
     this.meta.setTag('og:image', '../../assets/images/logo.png');
     this.meta.setTag('twitter:image', '../../assets/images/logo.png');
+
+
+
+    this.nestedTreeControl = new NestedTreeControl<FileNode> (this._getChildren);
+    this.blogCategoryDataSource = new MatTreeNestedDataSource();
+
+    this.dataChange.subscribe(data => this.blogCategoryDataSource.data = data);
+
+
+    
+    this.dataChange.next([
+      {
+        filename: "test",
+        type: "",
+        children:[
+          {
+            filename: "test3",
+            type: "exe",
+            children: [],
+          }
+        ],
+      },
+      {
+        filename: "test2",
+        type: "exe",
+        children:[],
+      },
+    ]);   
+
   }
+
+  private _getChildren = (item: FileNode) => { return observableOf(item.children); };
+  hasNestedChild = (_: number, nodeData: FileNode) => { return ! (nodeData.type); };
 
   panelOpenState = false;
 

@@ -23,6 +23,9 @@ import {MatIconModule} from '@angular/material/icon';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { MatCarouselModule } from '@ngmodule/material-carousel';
 import { OwlModule } from 'ngx-owl-carousel';
+import { AmazingTimePickerModule } from 'amazing-time-picker'; // this line you need
+
+
 
 /**Frontend Component**/
 
@@ -115,6 +118,8 @@ import { SeminarsDetailComponent } from './component/frontend/events/seminars-de
 import { SpeakerEngagementsDetailComponent } from './component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component';
 
 import { AddEditNewsletterComponent } from './component/backend/newsletterlists/add-edit-newsletter/add-edit-newsletter.component';
+import { NewsTitleModule } from 'news-title';
+
 import { AddEditSubscriberComponent } from './component/backend/newsletterlists/add-edit-subscriber/add-edit-subscriber.component';
 import { AddEditSubscriberGroupComponent } from './component/backend/newsletterlists/add-edit-subscriber-group/add-edit-subscriber-group.component';
 import { AddEditSendersComponent } from './component/backend/newsletterlists/add-edit-senders/add-edit-senders.component';
@@ -208,6 +213,7 @@ import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
     SeminarsDetailComponent,
     SpeakerEngagementsDetailComponent,
     AddEditNewsletterComponent,
+    
     AddEditSubscriberComponent,
     AddEditSubscriberGroupComponent,
     AddEditSendersComponent,
@@ -220,6 +226,7 @@ import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
 
   ],
   imports: [
+    AmazingTimePickerModule,
     BlogModule,
     CKEditorModule,
     AngularFontAwesomeModule,
@@ -244,7 +251,8 @@ import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
     MatCarouselModule.forRoot(),
     OwlModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NewsTitleModule
   ],
   providers: [CookieService, AuthGuard, ApiService, SidenavService],
   bootstrap: [AppComponent],

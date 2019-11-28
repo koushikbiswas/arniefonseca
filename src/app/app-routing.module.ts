@@ -165,7 +165,7 @@ const routes: Routes = [
   },
   { path: 'service/add', component: AddeditServiceComponent },
   {
-    path: 'service/edit/:_id', component: AddeditServiceComponent, resolve: { serviceList: ResolveService },
+    path: 'service/edit/:_id', component: AddeditServiceComponent, resolve: { serviceData: ResolveService },
     data: { requestcondition: { source: 'services', condition: {} }, endpoint: 'datalist' }
   },
 

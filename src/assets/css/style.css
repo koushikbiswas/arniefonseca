@@ -301,9 +301,9 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
 .generalcls .testicontent .quatation p{text-align:left; overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  line-height: 18px;
-  max-height: 90px;
-  -webkit-line-clamp: 5;
+  line-height: 24px;
+  max-height: 94px;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;}
 .generalcls .testicontent .quatation .quotestarticon{ float: left; margin-right: 10px;margin-top: -10px; width: 28px;}
 .generalcls .testicontent .quatation .quoteendicon{float: right;margin-left: 10px; margin-bottom: -10px; width: 28px;}
@@ -1196,7 +1196,7 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
   padding-bottom: 0!important;
 }
 
-.newsletterwrapper  .mat-form-field-appearance-legacy .mat-form-field-infix{ margin-bottom: 0px!important;     padding: 11px 12px!important;}
+.newsletterwrapper  .mat-form-field-appearance-legacy .mat-form-field-infix{ margin-bottom: 0px!important;     padding: 14px!important;}
 
 .newsletterwrapper .mat-form-field-appearance-legacy .mat-form-field-label {
   top: 24px;
@@ -1266,3 +1266,30 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
 
 
 .testimonial .owl-carousel.owl-drag .owl-item .title1{font-size: 20px !important; margin-top: 20px !important; color: #03aed4;}
+
+.testimonialserv .testiimgwarpper{
+  position: relative;
+}
+
+.testimonialserv .testiimgwarpper .bnticons {
+  position: absolute;
+  right: -38px;
+  top: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 47px;
+  transform: translateY(-50%);
+}
+
+.testimonialserv .testiimgwarpper .bnticons button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: transparent;
+  margin-left: 0;
+  flex: 1 1 100%;
+}
+
+.testimonialserv .testiimgwarpper .bnticons button img {
+  max-width: 100%;
+}
