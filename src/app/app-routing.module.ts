@@ -261,14 +261,14 @@ const routes: Routes = [
       endpoint: "datalistwithouttoken"
     }
   },
-  { path: 'workshop-detail', component: WorkshopDetailComponent,
+  { path: 'workshop-detail/:_id', component: WorkshopDetailComponent,
     resolve: { workshopsDetailData: ResolveService },
     data: {
       requestcondition: { source: "events_view", condition: {type:"workshops"} },
       endpoint: "datalistwithouttoken"
     }
   },
-  { path: 'speaker-engagements-detail', component: SpeakerEngagementsDetailComponent,
+  { path: 'speaker-engagements-detail/:_id', component: SpeakerEngagementsDetailComponent,
   resolve: { speakerEngagementsDetailData: ResolveService },
   data: {
     requestcondition: { source: "events_view", condition: {type:"speaker-engagements"} },

@@ -11,10 +11,17 @@ import { SafeResourceUrl, DomSanitizer } from '@angular/platform-browser';
   styleUrls: ['./seminars.component.css']
 })
 export class SeminarsComponent implements OnInit {
-  private indexvallength: any=4;
+  private indexvallength: any=1;
 
   
-  public indexval:any=4;
+  public indexval:any=6;
+
+
+  private indexvalleftlengthlength: any=1;
+
+
+  public indexvalleft:any=2;
+
 
   public SeminarsListArry: any = []
   public dataformate: any;
@@ -22,15 +29,15 @@ export class SeminarsComponent implements OnInit {
 
   constructor(private activatedRoute: ActivatedRoute, private router: Router, public apiService: ApiService, private readonly meta: MetaService,private sanitizer: DomSanitizer ) {
 
-    this.meta.setTitle('Arniefonseca - Reset Password');
+    this.meta.setTitle('Arniefonseca - Event Seminars');
     this.meta.setTag('og:description', '');
     this.meta.setTag('twitter:description', '');
 
     this.meta.setTag('og:keyword', '');
     this.meta.setTag('twitter:keyword', '');
 
-    this.meta.setTag('og:title', 'Arniefonseca - Reset Password');
-    this.meta.setTag('twitter:title', 'Arniefonseca - Reset Password');
+    this.meta.setTag('og:title', 'Arniefonseca - Event Seminars');
+    this.meta.setTag('twitter:title', 'Arniefonseca - Event Seminars');
     this.meta.setTag('og:type', 'website');
     this.meta.setTag('og:image', '../../assets/images/logo.png');
     this.meta.setTag('twitter:image', '../../assets/images/logo.png');
@@ -52,6 +59,8 @@ export class SeminarsComponent implements OnInit {
 
      
       this.indexvallength = this.SeminarsListArry.length;
+
+      this.indexvalleftlengthlength = this.SeminarsListArry.length;
     })
 
 
@@ -62,6 +71,12 @@ export class SeminarsComponent implements OnInit {
   blogloadmore(){
     // console.log('load more')
     this.indexval=this.indexval+1;
+
+  }
+
+  blogloadmorenew(){
+    // console.log('load more')
+    this.indexvalleft=this.indexvalleft+1;
 
   }
 

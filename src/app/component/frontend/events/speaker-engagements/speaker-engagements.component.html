@@ -25,7 +25,9 @@
             <h2>PAst speaker engagements</h2>
 
             <span class="event_right_blog" *ngFor="let pasteventsem of SpeakerListArry | slice:0:indexval; let i=index">
+                <span class="event_right_blog_wrapper">
 
+                      <span class="event_right_blog_wrapperrow">
                 <span class="event_right_blog_img">
                     <img src="{{pasteventsem.image}}"   >
                 </span>
@@ -35,13 +37,14 @@
 
                     <label>{{pasteventsem.date}}</label>
 
-                    <button>Know more</button>
+                    <button (click)="detail(pasteventsem._id)">Know more</button>
 
                      <span class="clear"></span>
                 </span>
                 <span class="clear"></span>
 
-
+</span>
+                    </span>
             </span>
 
             <button *ngIf="indexvallength > indexval && indexvallength !=null" class="viewalleventbtn" (click)="blogloadmore()">View More</button>
@@ -50,7 +53,7 @@
 
         <mat-card-content class="event_left">
 
-            <span class="event_blog" *ngFor="let eventsem of SpeakerListArry">
+            <span class="event_blog" *ngFor="let eventsem of SpeakerListArry | slice:0:indexvalleft; let i=index" >
             <span class="event_blog_top">
 
            <label>{{eventsem.date}}</label>
@@ -58,9 +61,9 @@
              </span>
                 <h3>{{eventsem.title}} – {{eventsem.time}}</h3>
 
-            <img src="{{eventsem.image}}" class="event_img"  >
+           <span  class="event_img"> <img src="{{eventsem.image}}"  ></span>
 
-             <p class="event_text">  <span class="spantext" [innerHtml]="eventsem.description"></span> <a href="javascript:void(0);" [routerLink]="['/seminars-detail']">Continue Reading</a></p>
+             <p class="event_text">  <span class="spantext" [innerHtml]="eventsem.description"></span> <a href="javascript:void(0);" (click)="detail(eventsem._id)">Continue Reading</a></p>
 
 
                 <span class="event_share_block">
@@ -76,7 +79,7 @@
            </span>
 
 
-
+            <button *ngIf="indexvalleftlengthlength > indexvalleft && indexvalleftlengthlength !=null" class="viewalleventbtn" (click)="blogloadmorenew()">View More</button>
 
         </mat-card-content>
 

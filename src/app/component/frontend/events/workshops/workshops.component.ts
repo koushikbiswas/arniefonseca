@@ -12,22 +12,33 @@ import { SafeResourceUrl, DomSanitizer } from '@angular/platform-browser';
 })
 export class WorkshopsComponent implements OnInit {
 
-  private indexvallength: any;
-  public indexval:any=4;
+  private indexvallength: any=1;
+
+
+  public indexval:any=6;
+
+
+  private indexvalleftlengthlength: any=1;
+
+
+  public indexvalleft:any=2;
+
+
+
   public  WorkshopsListArry: any = []
   public dataformate: any;
   public eventImage:any;
 
   constructor(private activatedRoute: ActivatedRoute, private router: Router, public apiService: ApiService, private readonly meta: MetaService,private sanitizer: DomSanitizer ) {
-    this.meta.setTitle('Arniefonseca - Workshops');
+    this.meta.setTitle('Arniefonseca - Event');
     this.meta.setTag('og:description', '');
     this.meta.setTag('twitter:description', '');
 
     this.meta.setTag('og:keyword', '');
     this.meta.setTag('twitter:keyword', '');
 
-    this.meta.setTag('og:title', 'Arniefonseca - Workshops');
-    this.meta.setTag('twitter:title', 'Arniefonseca - Workshops');
+    this.meta.setTag('og:title', 'Arniefonseca - Event');
+    this.meta.setTag('twitter:title', 'Arniefonseca - Event');
     this.meta.setTag('og:type', 'website');
     this.meta.setTag('og:image', '../../assets/images/logo.png');
     this.meta.setTag('twitter:image', '../../assets/images/logo.png');
@@ -47,6 +58,8 @@ export class WorkshopsComponent implements OnInit {
       this.WorkshopsListArry = result;
 
       this.indexvallength = this.WorkshopsListArry.length;
+
+      this.indexvalleftlengthlength = this.WorkshopsListArry.length;
     })
 
 
@@ -59,5 +72,19 @@ export class WorkshopsComponent implements OnInit {
     this.indexval=this.indexval+1;
 
   }
+
+
+  blogloadmorenew(){
+    // console.log('load more')
+    this.indexvalleft=this.indexvalleft+1;
+
+  }
+
+  detail(val:any){
+    console.log(val)
+    this.router.navigateByUrl("/workshop-detail/"+val);
+  }
+
+
 
 }
