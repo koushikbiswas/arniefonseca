@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute,Router} from '@angular/router';
 import { MetaService } from '@ngx-meta/core';
-import { ApiService } from '../../../../api.service';
+import { ApiService } from 'src/app/api.service';
+import { relative } from 'path';
 
 @Component({
   selector: 'app-servicelist',
@@ -14,6 +15,7 @@ export class ServicelistComponent implements OnInit {
   public ServiceListArray:any=[];
   // showMore = false;
   showme=true;
+  
   public indexval:any = 4;
 
   constructor(private activatedRoute: ActivatedRoute, private router: Router, private readonly meta: MetaService, public apiservice: ApiService) { 
@@ -62,3 +64,13 @@ export class ServicelistComponent implements OnInit {
   }
 
 }
+
+
+
+
+
+
+
+
+
+

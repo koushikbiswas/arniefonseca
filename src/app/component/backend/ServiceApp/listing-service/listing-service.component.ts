@@ -20,7 +20,7 @@ export class ListingServiceComponent implements OnInit {
       apiBaseUrl: environment.API_URL,
       listEndPoint: "datalist",
       datasource: "",
-      tableName: "services",
+      tableName: "service",
       updateurl: "addorupdatedata",
       editUrl: "service/edit",
       jwtToken: "",
