@@ -40,6 +40,7 @@ export class SeminarsComponent implements OnInit {
   ngOnInit() {
 
     this.activatedRoute.data.forEach(data => {
+      // console.log('test',data);
       let result: any = {};
       result = data.seminarsListData.res;
       // console.warn(result);
@@ -48,6 +49,7 @@ export class SeminarsComponent implements OnInit {
       // console.log('+++++>>>>>>>>>>>>', this.eventImage)
       // console.log('>>>>>>>>>>>>>>>>',result);
       this.SeminarsListArry = result;
+
      
       this.indexvallength = this.SeminarsListArry.length;
     })
@@ -59,8 +61,13 @@ export class SeminarsComponent implements OnInit {
   //***********load more view blog *************//
   blogloadmore(){
     // console.log('load more')
-    this.indexval=this.indexval+2;
+    this.indexval=this.indexval+1;
 
+  }
+
+  detail(val:any){
+    console.log(val)
+    this.router.navigateByUrl("/seminars-detail/"+val);
   }
 
 }

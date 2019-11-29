@@ -223,24 +223,24 @@ const routes: Routes = [
     }
   },
 
-  { path: 'seminars-detail', component: SeminarsDetailComponent,
+  { path: 'seminars-detail/:_id', component: SeminarsDetailComponent,
     resolve: { seminarsDetailData: ResolveService },
     data: {
-      requestcondition: { source: "seminars-detail", condition: {type:"seminars"} },
+      requestcondition: { source: "events_view", condition: {type:"seminars"} },
       endpoint: "datalistwithouttoken"
     }
   },
   { path: 'workshop-detail', component: WorkshopDetailComponent,
     resolve: { workshopsDetailData: ResolveService },
     data: {
-      requestcondition: { source: "workshops", condition: {type:"workshops"} },
+      requestcondition: { source: "events_view", condition: {type:"workshops"} },
       endpoint: "datalistwithouttoken"
     }
   },
   { path: 'speaker-engagements-detail', component: SpeakerEngagementsDetailComponent,
   resolve: { speakerEngagementsDetailData: ResolveService },
   data: {
-    requestcondition: { source: "speaker-engagements", condition: {type:"speaker-engagements"} },
+    requestcondition: { source: "events_view", condition: {type:"speaker-engagements"} },
     endpoint: "datalistwithouttoken"
     }
   },
