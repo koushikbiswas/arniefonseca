@@ -1217,6 +1217,8 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
 }
 
 
+.as_servicemainwraooer .mat-list{box-shadow: 0 2px 5px #ddd;padding: 0;}
+.as_servicemainwraooer .mat-list .mat-list-item-content{padding: 0 !important;}
 /* --------------- avijit css end ----------------------- */
 
 

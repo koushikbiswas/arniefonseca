@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute,Router} from '@angular/router';
 import { MetaService } from '@ngx-meta/core';
 import { ApiService } from 'src/app/api.service';
+import { relative } from 'path';
 
 @Component({
   selector: 'app-servicelist',
@@ -63,3 +64,13 @@ export class ServicelistComponent implements OnInit {
   }
 
 }
+
+
+
+
+
+
+
+
+
+

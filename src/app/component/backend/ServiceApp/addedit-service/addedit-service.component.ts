@@ -23,7 +23,7 @@ export class AddeditServiceComponent implements OnInit {
     userData: { id: "18801017007", name: "Admin" },
   }
   public configImgUploadData: any = {
-    baseUrl: "http://3.15.236.141:5005/",
+    baseUrl: "https://fileupload.influxhostserver.com/",
     endpoint: "uploads",
     size: "51200", // kb
     format: ["jpg", "jpeg", "png"], // use all small font
@@ -33,7 +33,7 @@ export class AddeditServiceComponent implements OnInit {
   }
 
   public configIconUploadData: any = {
-    baseUrl: "http://3.15.236.141:5005/",
+    baseUrl: "https://fileupload.influxhostserver.com/",
     endpoint: "uploads",
     size: "51200", // kb
     format: ["jpg", "jpeg", "png"], // use all small font
