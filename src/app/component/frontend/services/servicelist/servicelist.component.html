@@ -24,14 +24,41 @@
                 </p>
         </mat-card-content>
     </span>
-    <span class="mainwrappercontent pt-30">                
+    <span class="mainwrappercontent as_servicemainwraooer pt-30">                
+        <!-- <img src="../../../../assets/images/service_blockimg1.jpg" style="width: 100%; display: block; margin: 0; padding: 0;"> -->
         <mat-list>
             <mat-list-item class="homeblock2listssingleitem" *ngFor="let item of serviceData | slice:0:indexval ; let i=index">
                   <span class="homeblock2servimg">
-                    <img src="../../../../assets/images/homeblock2itemimg1.jpg">
+                    <img src="{{ item.service_img }}">
+
+                    <span class="sharelinkswrapper">
+                      <span class="blogsociallists">
+                         <a class="sociallink fa fb">
+                            <fa class="fa-facebook" name="facebook" ng-reflect-name="facebook"><i aria-hidden="true" class="fa fa-facebook" ng-reflect-klass="fa fa-facebook" ng-reflect-ng-class=""></i></fa>
+                         </a>
+                         <a class="sociallink fa twi">
+                            <fa class="fa-twitter" name="twitter" ng-reflect-name="twitter"><i aria-hidden="true" class="fa fa-twitter" ng-reflect-klass="fa fa-twitter" ng-reflect-ng-class=""></i></fa>
+                         </a>
+                         <a class="sociallink fa pin">
+                            <fa class="fa-pinterest" name="pinterest" ng-reflect-name="pinterest"><i aria-hidden="true" class="fa fa-pinterest" ng-reflect-klass="fa fa-pinterest" ng-reflect-ng-class=""></i></fa>
+                         </a>
+                         <a class="sociallink fa lin">
+                            <fa class="fa-linkedin" name="linkedin" ng-reflect-name="linkedin"><i aria-hidden="true" class="fa fa-linkedin" ng-reflect-klass="fa fa-linkedin" ng-reflect-ng-class=""></i></fa>
+                         </a>
+                         <a class="sociallink fa env">
+                            <fa class="fa-envelope" name="envelope" ng-reflect-name="envelope"><i aria-hidden="true" class="fa fa-envelope" ng-reflect-klass="fa fa-envelope" ng-reflect-ng-class=""></i></fa>
+                         </a>
+                         <a class="sociallink fa share">
+                            <fa class="fa-share" name="share" ng-reflect-name="share"><i aria-hidden="true" class="fa fa-share" ng-reflect-klass="fa fa-share" ng-reflect-ng-class=""></i></fa>
+                         </a>
+                      </span>
+                   </span>
+
+
                   </span>
                   <span class="homeblock2servcontent">
-                    <h2><span class="homeblock2icon"><img src="../../../../assets/images/homeblock2icon1.png"></span> <span class="homeblock2iconcontent">Employee Training <span class="small">(Revenue through Attitude)</span></span></h2>
+                    <h2><span class="homeblock2icon"><img src="{{ item.additional_img }}"></span> 
+                      <span class="homeblock2iconcontent" [innerHtml]="item.service_title"> <span class="small">(Revenue through Attitude)</span></span></h2>
                     <p><span [innerHtml]="item.description"></span></p>
                     <button mat-button class="btntransparent sim-button">view more</button>
                   </span>

@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { CookieService } from 'ngx-cookie-service';
 import { Router,ActivatedRoute } from '@angular/router';
-import { ApiService } from 'src/app/api.service';
-import { environment } from 'src/environments/environment';
+import { ApiService } from '../../../../api.service';
+import { environment } from '../../../../../environments/environment';
 
 @Component({
   selector: 'app-add-edit-newsletter',

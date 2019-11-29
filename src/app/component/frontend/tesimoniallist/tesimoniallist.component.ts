@@ -1,7 +1,7 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import * as moment from 'moment'; // add this 1 of 4
-import { ApiService } from 'src/app/api.service';
+import { ApiService } from '../../../api.service';
 import { MetaService } from '@ngx-meta/core';
 import { MAT_DIALOG_DATA, MatDialogRef, MatDialog } from '@angular/material';
 import { SafeResourceUrl, DomSanitizer } from '@angular/platform-browser';
@@ -24,9 +24,14 @@ export class TesimoniallistComponent implements OnInit {
 
   safeSrc: SafeResourceUrl;
 
-  constructor(private activatedRoute: ActivatedRoute, private router: Router, public apiService: ApiService, private readonly meta: MetaService,private sanitizer: DomSanitizer,public dialog:MatDialog) { 
+  copyText(val:any){
+    console.log('copyText');
+  }
+
+  constructor(private activatedRoute: ActivatedRoute, private router: Router, public apiService: ApiService, private readonly meta: MetaService,  private sanitizer: DomSanitizer,public dialog:MatDialog) { 
 
     this.meta.setTitle('Arniefonseca - Testimonial lists');
+
     this.meta.setTag('og:description', '');
     this.meta.setTag('twitter:description', '');
 
@@ -35,7 +40,9 @@ export class TesimoniallistComponent implements OnInit {
 
     this.meta.setTag('og:title', 'Arniefonseca - Testimonial lists');
     this.meta.setTag('twitter:title', 'Arniefonseca - Testimonial lists');
+
     this.meta.setTag('og:type', 'website');
+
     this.meta.setTag('og:image', '../../assets/images/logo.png');
     this.meta.setTag('twitter:image', '../../assets/images/logo.png');
 
