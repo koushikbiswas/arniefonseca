@@ -13,7 +13,7 @@ import { SafeResourceUrl, DomSanitizer } from '@angular/platform-browser';
 export class WorkshopDetailComponent implements OnInit {
 
 
-  private indexvallength: any=1;
+  public indexvallength: any=1;
 
 
   public indexval:any=6;

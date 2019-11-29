@@ -13,7 +13,7 @@ import { SafeResourceUrl, DomSanitizer } from '@angular/platform-browser';
 })
 export class SeminarsDetailComponent implements OnInit {
 
-  private indexvallength: any=1;
+  public indexvallength: any=1;
 
 
   public indexval:any=6;
@@ -72,6 +72,11 @@ public seminer:any;
     // console.log('load more')
     this.indexval=this.indexval+1;
 
+  }
+
+
+  copyText(val:any){
+    console.log('copyText');
   }
 
 }

@@ -12,13 +12,13 @@ import { SafeResourceUrl, DomSanitizer } from '@angular/platform-browser';
 })
 export class WorkshopsComponent implements OnInit {
 
-  private indexvallength: any=1;
+  public indexvallength: any=1;
 
 
   public indexval:any=6;
 
 
-  private indexvalleftlengthlength: any=1;
+  public indexvalleftlengthlength: any=1;
 
 
   public indexvalleft:any=2;
