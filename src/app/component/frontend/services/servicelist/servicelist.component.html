@@ -27,7 +27,7 @@
     <span class="mainwrappercontent pt-30">                
         <!-- <img src="../../../../assets/images/service_blockimg1.jpg" style="width: 100%; display: block; margin: 0; padding: 0;"> -->
         <mat-list>
-            <mat-list-item class="homeblock2listssingleitem" *ngFor="let item of serviceData">
+            <mat-list-item class="homeblock2listssingleitem" *ngFor="let item of serviceData | slice:0:indexval ; let i=index">
                   <span class="homeblock2servimg">
                     <img src="../../../../assets/images/homeblock2itemimg1.jpg">
                   </span>

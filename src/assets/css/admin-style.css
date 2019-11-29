@@ -177,7 +177,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#32393f', end
 .starimgnew{ width: 43px!important; position: absolute; left: 1px; top:1px; border: none!important;}
 
 
-.footerbg.mat-card{width: 100%; display: block; background: #dde2e5 !important; padding: 10px; text-align: left; color: #fff;}
+.footerbg.mat-card{display: block; background: #dde2e5 !important; padding: 10px; text-align: left; color: #fff;}
 .footerbg .mat-card{background: #dde2e5 !important;}
 .footerblock.mat-card{background: #dde2e5 !important;}
 
@@ -195,12 +195,12 @@ font-family: 'Ralewaybold'; text-decoration: none!important; line-height: normal
 border-radius: 0px !important;}		
 .adminbtnred span{text-transform: uppercase !important; color: #fff!important; margin-left: 0px !important;}		
 /*---Table CSS---*/		
-.tablediv table {border: 0px solid #ccc; border-collapse: collapse; padding: 0; width: 100%; max-width: 100%;}		
+/* .tablediv table {border: 0px solid #ccc; border-collapse: collapse; padding: 0; width: 100%; max-width: 100%;}		
 .tablediv table caption {font-size: 1.5em; margin: .5em 0 .75em;}		
 .tablediv table tr {background-color: #ffffff; border:0px; padding: .35em; display: table-row; color:#ffffff;}		
 .tablediv table tr:nth-child(odd) {background-color: #dde2e5;}		
 .tablediv table tr:last-child{border-bottom: 0px !important;}		
-/* .tablediv table tr:last-child td{border-bottom: 0px !important;}		 */
+/* .tablediv table tr:last-child td{border-bottom: 0px !important;}		
 .tablediv lib-listing .container {width: 100%;padding: 0px;}		
 .tablediv table .empycell{border-bottom: 0px solid #ffffff !important;}		
 .tablediv table th, .tablediv table td {padding: .625em; text-align: left; display: table-cell; border-bottom: 1px solid #959595 !important;}		
@@ -210,8 +210,7 @@ border-radius: 0px !important;}
 .tablediv table td.text-center{text-align: center !important;}
 
 
-.tablediv table td.mat-column-Actions{width: 96px;}	
-.tablediv table th.mat-column-date_added{width: 114px;}
+
 
 .tablediv table th.descriptiondiv{width: 26%;}		
 .norecordfound{color: #ee680f !important; padding: 18px !important; text-align: center !important; text-transform: uppercase !important;}		
@@ -240,7 +239,7 @@ outline: none;}
 .graburlcls .linktxt2 span{color:#f7a311; font-size: 13px; text-transform: capitalize;}		
 .statusactive{color:#70c71d;}		
 .statusinactive{color:#f58b8b;}		
-.statuspendinng{color:#FF8C00;}	
+.statuspendinng{color:#FF8C00;}	 */
 
 
 
@@ -334,8 +333,8 @@ text-transform: uppercase!important; font-family: 'Ralewaybold'; text-decoration
 .formfilterdiv {margin-top: -10% !important;}
 .formfilterdiv .container{width: 100%;}
 
-.tablediv{margin-top: -73px;}
-.tablediv .searchbar {padding-right: 173px;flex-direction: row-reverse; justify-content: inherit !important;}
+.tablediv{margin-top: -87px;}
+.tablediv .searchbar {padding-right: 173px;flex-direction: row-reverse; justify-content: inherit !important;margin-top: 0px; margin-bottom: 23px;}
 .tablediv .searchbar .mat-form-field{z-index: 99; position: relative;}
 .tablediv .mat-form-field-flex {align-items: stretch;}
 .tablediv table td span .material-icons{color: #4f5051 !important;}
@@ -346,13 +345,13 @@ text-transform: uppercase!important; font-family: 'Ralewaybold'; text-decoration
 
 .searchblock{margin: 0; padding: 0; position: relative; display: block;}
 .searchblock .btnorange{min-width: 160px; border-radius: 0px; padding: 9px 18px 7px !important; margin: 0 !important; display: flex !important; align-items: center;}
-.searchblock{background: #dde2e5 !important; padding: 10px 10px 10px 22px !important;display: block; margin:0 auto !important;}
+.searchblock{background: #dde2e5 !important; padding: 10px 10px 10px 22px !important;display: block; margin:10px auto !important;}
 .searchblock span{display: flex; align-items: center; position: relative; z-index: 99;}
 .searchblock .searchblockwrapper {display: flex; align-items: stretch; justify-content: space-between; flex-direction: row;}
 .searchblock span h2{font-family: "Helvetica-Normal"; color:#373b3d; font-size: 24px!important;margin: 0;}
 
 .tablediv .searchbar .mat-form-field .mat-form-field-infix{margin-bottom: 0;}
-.bloglists .tablediv {margin-top: -73px;}
+/* .bloglists .tablediv {margin-top: -73px;} */
 
 .tablediv .searchbar .mat-form-field .mat-form-field-prefix, .tablediv .searchbar .mat-form-field .mat-form-field-suffix {
     display: -webkit-box;
@@ -360,7 +359,11 @@ text-transform: uppercase!important; font-family: 'Ralewaybold'; text-decoration
     -webkit-box-align: center;
     align-items: center;
 }
+.bloglists .tablediv .searchbar {padding-right: 200px;}
+.blogcatlists .tablediv .searchbar {padding-right: 252px;}
 
+.tablediv table td.mat-column-Actions{width: 98px;}	
+.tablediv table th.mat-column-date_added{width: 114px;}
 
 /******Dialog CSS********/		
 .mat-dialog-content {padding: 0 !important;}		
@@ -410,6 +413,39 @@ float: left;}
 app-bk-leftdiv{position: relative; z-index: 999;}		
 
 
+.formspan {
+    background-color: #e7e9ea;
+    border: 6px solid #fff;
+    border-bottom: 10px solid #fff;
+    display: block !important;
+    width: auto !important;
+    position: relative;
+    z-index: 9;
+}
+
+.formspan .mat-checkbox {
+    float: left;
+}
+
+.formspan .example-container{
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    padding: 14px;
+    margin-bottom: 0;
+}
+
+.adminwrappercls .bloglists .mat-card{
+    display: block !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    padding: 0px !important;
+    flex-wrap: wrap !important;
+    background: transparent !important;
+    height: auto !important;
+  }
+  .adminwrappercls .mat-form-field-appearance-legacy .mat-form-field-wrapper {padding-bottom: 0 !important;}
+.adminwrappercls .mat-form-field-appearance-legacy .mat-form-field-infix {margin-bottom: 0 !important;}
 
 @media only screen and (max-width: 1760px) {
 .dashboard_block1{ background-position: 790px top!important;}
@@ -438,3 +474,14 @@ app-bk-leftdiv{position: relative; z-index: 999;}
 .dashboard_block1{ background-position: 370px top!important;}
 .dashboard_block1 mat-card-content{ width: 600px;}
 } 
+
+@media only screen and (max-width: 540px) {
+    .formspan .mat-form-field-flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .adminwrappercls .generalcls.blog.mat-card .mat-card {
+        padding: 5px;
+    }
+    
+}

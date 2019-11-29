@@ -210,7 +210,7 @@ border-radius: 0px !important;}
 .tablediv table td.text-center{text-align: center !important;}
 
 
-.tablediv table td.mat-column-Actions{width: 96px;}	
+.tablediv table td.mat-column-Actions{width: 98px;}	
 .tablediv table th.mat-column-date_added{width: 114px;}
 
 .tablediv table th.descriptiondiv{width: 26%;}		
@@ -409,6 +409,33 @@ float: left;}
 .breadcrumb li a:hover:after { border-left-color: #b5bdbf !important; }  		
 app-bk-leftdiv{position: relative; z-index: 999;}		
 
+
+.formspan {
+    background-color: #e7e9ea;
+    border: 6px solid #fff;
+    border-bottom: 10px solid #fff;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+}
+.formspan .example-container{
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    padding: 14px;
+    margin-bottom: 0;
+}
+
+.adminwrappercls .bloglists .mat-card{
+    display: block !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    padding: 0px !important;
+    flex-wrap: wrap !important;
+    background: transparent !important;
+    height: auto !important;
+  }
 
 
 @media only screen and (max-width: 1760px) {

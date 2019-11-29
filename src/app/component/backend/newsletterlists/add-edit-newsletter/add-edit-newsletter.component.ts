@@ -2,45 +2,58 @@ import { Component, OnInit } from '@angular/core';
 import { CookieService } from 'ngx-cookie-service';
 import { Router,ActivatedRoute } from '@angular/router';
 import { ApiService } from 'src/app/api.service';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-add-edit-newsletter',
   templateUrl: './add-edit-newsletter.component.html',
   styleUrls: ['./add-edit-newsletter.component.css']
+  
 })
 export class AddEditNewsletterComponent implements OnInit {
 
   public configAddEdit: any = {
     action: "add",
    
-     endpoint: "https://r245816wug.execute-api.us-east-1.amazonaws.com/dev/api/addorupdatedata",
-     endpoint2: "https://r245816wug.execute-api.us-east-1.amazonaws.com/dev/api/",
+    //  endpoint: "https://r245816wug.execute-api.us-east-1.amazonaws.com/dev/api/addorupdatedata",
+    //  endpoint2: "https://r245816wug.execute-api.us-east-1.amazonaws.com/dev/api/",
+    endpoint: environment.API_URL+'addorupdatedata',
+   // endpoint: this.apiservice.serverUrl + 'addorupdatedata',
     source: "newsletters",
     condition: {},
     defaultData: null,
     jwtToken: this.cookieService.get('jwtToken'),
-    callBack: "newsletter/list",
+    callBack: "newsletter-list",
     userData: { id: "18801017007", name: "Admin" },
     defaultDataAlways: null,
     group_table:'news_category',
     sender_table:'senders'
-  }
-  constructor(public cookieService: CookieService, private activatedRoute: ActivatedRoute, public apiservice: ApiService) {
 
+  
+    
+  }  
+  
+  constructor(public cookieService: CookieService, private activatedRoute: ActivatedRoute, public apiservice: ApiService) {
+    console.log('data',this.configAddEdit.endpoint );
   }
 
 
 
   ngOnInit() {
-    // this.activatedRoute.params.subscribe(params => {
-    //   if (params._id) {
-    //     this.activatedRoute.data.subscribe(resolveData => {
-    //       this.configAddEdit.defaultData = resolveData.groupData.res[0];
-    //       this.configAddEdit.action = "edit";
-    //       this.configAddEdit.condition = { id: params._id };
-    //     });
-    //   }
-    // });
+    this.activatedRoute.params.subscribe(params => {
+      if(params._id) {
+        this.activatedRoute.data.subscribe(resolveData => {
+          this.configAddEdit.defaultData = resolveData.newsLetterAdd.res;
+
+          console.log( this.configAddEdit.defaultData );
+          this.configAddEdit.action = "edit";
+          this.configAddEdit.condition = { id: params._id };
+
+        });
+      }
+    });
   }
 
 }
+
+

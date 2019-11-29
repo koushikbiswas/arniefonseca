@@ -88,14 +88,9 @@ import { ListingBlogcatComponent } from './component/backend/blog-management/lis
 import { AddEditBlogsComponent } from './component/backend/blog-management/add-edit-blogs/add-edit-blogs.component';
 import { ListingBlogsComponent } from './component/backend/blog-management/listing-blogs/listing-blogs.component';
 
-import { ManageSeminarListingComponent } from './component/backend/events/manage-seminar/manage-seminar-listing/manage-seminar-listing.component';
-import { AddEditManageSeminarComponent } from './component/backend/events/manage-seminar/add-edit-manage-seminar/add-edit-manage-seminar.component';
+import { ManageEventListingComponent } from './component/backend/events/manage-event-listing/manage-event-listing.component';
+import { AddEditManageEventComponent } from './component/backend/events/add-edit-manage-event/add-edit-manage-event.component';
 
-import { ManageSpeakerEngagementListingComponent } from './component/backend/events/manage-speaker-engagement/manage-speaker-engagement-listing/manage-speaker-engagement-listing.component';
-import { AddEditManageSpeakerEngagementComponent } from './component/backend/events/manage-speaker-engagement/add-edit-manage-speaker-engagement/add-edit-manage-speaker-engagement.component';
-
-import { ManageWorkshopListingComponent } from './component/backend/events/manage-workshop/manage-workshop-listing/manage-workshop-listing.component';
-import { AddEditManageWorkshopComponent } from './component/backend/events/manage-workshop/add-edit-manage-workshop/add-edit-manage-workshop.component';
 
 import { AddEditNewsletterComponent } from './component/backend/newsletterlists/add-edit-newsletter/add-edit-newsletter.component';
 
@@ -200,7 +195,8 @@ const routes: Routes = [
     data: { requestcondition: { source: 'service', condition: {} }, endpoint: 'datalist' }
   },
 
-  { path: 'newsletter-list', component: NewsletterlistsComponent },
+ 
+
   { path: 'manage-commission', component: ManageCommissionComponent },
   { path: 'manage-availability', component: ManageAvailabilityComponent },
   { path: 'social-advo-admin', component: SocialAdvoComponent },
@@ -232,13 +228,56 @@ const routes: Routes = [
   { path: 'video-gallery', component: VideoGalleryComponent },
   { path: 'team', component: TeamComponent },
   { path: 'booking-report', component: BookingReportComponent },
-  { path: 'seminars', component: SeminarsComponent },
-  { path: 'workshops', component: WorkshopsComponent },
-  { path: 'speaker-engagements', component: SpeakerEngagementsComponent },
 
-  { path: 'seminars-detail', component: SeminarsDetailComponent },
-  { path: 'workshop-detail', component: WorkshopDetailComponent },
-  { path: 'speaker-engagements-detail', component: SpeakerEngagementsDetailComponent },
+
+// ___________________event frontend__________________//
+
+  { path: 'seminars', component: SeminarsComponent,
+    resolve: { seminarsListData: ResolveService },
+    data: {
+      requestcondition: { source: "events_view", condition: {type:"seminars"} },
+      endpoint: "datalistwithouttoken"
+    }
+  },
+  { path: 'workshops', component: WorkshopsComponent,
+    resolve: { workshopsListData: ResolveService },
+    data: {
+      requestcondition: { source: "events_view", condition: {type:"workshops"} },
+      endpoint: "datalistwithouttoken"
+    }
+  },
+  { path: 'speaker-engagements', component: SpeakerEngagementsComponent,
+    resolve: { speakerEngagementsListData: ResolveService },
+    data: {
+      requestcondition: { source: "events_view", condition: {type:"speaker_engagement"} },
+      endpoint: "datalistwithouttoken"
+    }
+  },
+
+  { path: 'seminars-detail', component: SeminarsDetailComponent,
+    resolve: { seminarsDetailData: ResolveService },
+    data: {
+      requestcondition: { source: "seminars-detail", condition: {type:"seminars"} },
+      endpoint: "datalistwithouttoken"
+    }
+  },
+  { path: 'workshop-detail', component: WorkshopDetailComponent,
+    resolve: { workshopsDetailData: ResolveService },
+    data: {
+      requestcondition: { source: "workshops", condition: {type:"workshops"} },
+      endpoint: "datalistwithouttoken"
+    }
+  },
+  { path: 'speaker-engagements-detail', component: SpeakerEngagementsDetailComponent,
+  resolve: { speakerEngagementsDetailData: ResolveService },
+  data: {
+    requestcondition: { source: "speaker-engagements", condition: {type:"speaker-engagements"} },
+    endpoint: "datalistwithouttoken"
+    }
+  },
+  
+// ___________________ end event frontend__________________//
+
 
   { path: 'affiliate-admin', component: AffiliateComponent },
   { path: 'gallery-admin', component: GalleryAdminComponent },
@@ -246,42 +285,101 @@ const routes: Routes = [
   // ___________________manage event backend__________________//
 
 
-  //________________Manage Seminar____________//
+  //________________Manage event____________//
 
-  { path: 'manage-seminar-listing', component: ManageSeminarListingComponent },
-  { path: 'add-edit-manage-seminar', component: AddEditManageSeminarComponent },
+  { path: 'manage-event/add', component: AddEditManageEventComponent },
 
+  { path: 'manage-event-listing', 
+  component: ManageEventListingComponent,
+  canActivate:[AuthGuard],
+  resolve:{eventList:ResolveService},
+  data:{
+    requestcondition:{
+      source:'events_view',
+      condition:{}
+    },
+    endpoint:'datalist'
 
+  },
 
   //________________Manage Workshop____________//
+},
+{ path: 'manage-event/edit/:_id', component: AddEditManageEventComponent,
+canActivate:[AuthGuard],
+resolve:{eventList:ResolveService},
+data:{
+  requestcondition:{
+    source:'event',
+    condition:{}
+  },
+  endpoint:'datalist'
 
+},
+},
 
-
-  { path: 'add-edit-manage-workshop', component: AddEditManageWorkshopComponent },
-  { path: 'manage-workshop-listing', component: ManageWorkshopListingComponent },
+  
 
 
   //________________Manage Speaker Engagement____________//
 
 
-
-  { path: 'manage-speaker-engagement-listing', component: ManageSpeakerEngagementListingComponent },
-  { path: 'add-edit-manage-speaker-engagement', component: AddEditManageSpeakerEngagementComponent },
-
-
   //_____________________Newsletter/subscriber/sender/testemail____________//
+
+
+
+  { path: 'subscriber-group/add', component: AddEditSubscriberGroupComponent },
+  
+
+ 
+
+  {
+    path: 'newsletter-list',
+    component: NewsletterlistsComponent,
+
+    resolve: { subscriptionListData: ResolveService },
+    data: {
+      requestcondition: {
+        source: 'subscriptiongroupadd',
+        condition: {}
+      },
+      endpoint: 'datalist'
+    },
+  },
+
+
+
+ 
+
+  {
+    path: 'subscriber-group/edit/:_id',
+    component: AddEditSubscriberGroupComponent,
+
+    resolve: { subscriptiongroupData: ResolveService },
+    data: {
+      requestcondition: {
+        source: 'subscriptiongroupadd',
+        condition: {}
+      },
+      endpoint: 'datalist'
+    },
+  },
+
+
+
+
+
   { path: 'newsletter/add', component: AddEditNewsletterComponent },
   {
     path: 'newsletter/edit/:_id',
-    component: AddEditBlogcatComponent,
+    component: AddEditNewsletterComponent,
 
-    resolve: { newLetterList: ResolveService },
+    resolve: { newsLetterData: ResolveService },
     data: {
       requestcondition: {
-        source: '',
+        source: 'newsLetterAdd',
         condition: {}
       },
-      endpoint: ''
+      endpoint: 'datalist'
     },
   },
 
@@ -294,28 +392,14 @@ const routes: Routes = [
     resolve: { subscriberList: ResolveService },
     data: {
       requestcondition: {
-        source: '',
+        source: 'newsLetterSubscriber',
         condition: {}
       },
-      endpoint: ''
+      endpoint: 'datalist'
     },
   },
 
-  { path: 'subscriber-group/add', component: AddEditSubscriberGroupComponent },
-
-  {
-    path: 'subscriber-group/edit/:_id',
-    component: AddEditSubscriberGroupComponent,
-
-    resolve: { subscriberGroupList: ResolveService },
-    data: {
-      requestcondition: {
-        source: '',
-        condition: {}
-      },
-      endpoint: ''
-    },
-  },
+ 
 
   { path: 'sender/add', component: AddEditSendersComponent },
 
@@ -326,10 +410,10 @@ const routes: Routes = [
     resolve: { senderList: ResolveService },
     data: {
       requestcondition: {
-        source: '',
+        source: 'newsletterSender',
         condition: {}
       },
-      endpoint: ''
+      endpoint: 'datalist'
     },
   },
 
@@ -342,10 +426,10 @@ const routes: Routes = [
     resolve: { senderList: ResolveService },
     data: {
       requestcondition: {
-        source: '',
+        source: 'testEmail',
         condition: {}
       },
-      endpoint: ''
+      endpoint: 'datalist'
     },
   },
 

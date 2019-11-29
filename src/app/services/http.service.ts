@@ -5,6 +5,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, Subject, Subscription } from 'rxjs';
 import { CookieService } from 'ngx-cookie-service';
 import { ApiService } from '../api.service';
+import {environment } from '../../environments/environment.prod';
 
 @Injectable({
   providedIn: 'root'
@@ -28,8 +29,9 @@ export class HttpService {
   public deletemultiple_endpointUrl: any;
   public updatestatus_multiple_endpointUrl: any;
   public getdata_endpointUrl: any = 'datalist';
+  public baseUrl: any = environment["API_URL"];
 
-  constructor(private _http: HttpClient, private _authHttp: HttpClient, private cookieService: CookieService, public apiService: ApiService) { }
+  constructor(public _http: HttpClient, private _authHttp: HttpClient, private cookieService: CookieService, public apiService: ApiService) { }
 
   isTokenExpired() {
     // const helper = new JwtHelperService();
@@ -71,6 +73,20 @@ export class HttpService {
       })
     };
     var result = this._http.post(this.serverUrl + this.getdata_endpointUrl, JSON.stringify(requestdata), httpOptions).pipe(map(res => res));
+    return result;
+  }
+
+
+  /* call api via post method */
+  httpViaPost(endpoint:any, jsonData:any): Observable<any> {
+    /* set common header */
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json',
+        'Authorization': this.accesstoken
+      })
+    };
+    var result = this._http.post(this.serverUrl + endpoint, JSON.stringify(jsonData), httpOptions).pipe(map(res => res));
     return result;
   }
 

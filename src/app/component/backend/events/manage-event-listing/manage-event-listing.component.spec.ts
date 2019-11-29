@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ManageSeminarListingComponent } from './manage-seminar-listing.component';
+import { ManageSeminarListingComponent } from './manage-event-listing.component';
 
 describe('ManageSeminarListingComponent', () => {
   let component: ManageSeminarListingComponent;

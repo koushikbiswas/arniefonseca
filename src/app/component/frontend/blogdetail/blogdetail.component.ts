@@ -31,7 +31,7 @@ export class BlogdetailComponent implements OnInit {
 
 
   public nestedTreeControl: NestedTreeControl<FileNode>;
-  private blogCategoryDataSource:MatTreeNestedDataSource<FileNode>;
+  public blogCategoryDataSource:MatTreeNestedDataSource<FileNode>;
   public dataChange:BehaviorSubject<FileNode[]> = new BehaviorSubject<FileNode[]>([]);
 
 
@@ -126,6 +126,11 @@ export class BlogdetailComponent implements OnInit {
         
       })
  
+
+       /**api service for blog_catagory total count by uttam */  
+      //  this.blogcategorycount = this.blogList.blogCatList.blog_category.length;
+       // console.log('>>>>>>>>>>>>>>>>>',this.blogcategorycount)
+       
   }
 
   openvideourl(val: any){

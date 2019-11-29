@@ -170,6 +170,7 @@ newslatterViewModal(deta:any){
   export class DialogPrivacyDialog {}
 
 // newslatter dialog component
+
 @Component({
   selector: 'newslatter-dialog',
   templateUrl: 'newsletter-dialog.html',
@@ -193,7 +194,7 @@ constructor(public dialogRef: MatDialogRef<NewslatterDialogComponent>,
 
     })
 
-
+// this.myformnews.value.email.setvalue();
 
 
 }
