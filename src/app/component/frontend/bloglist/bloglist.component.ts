@@ -3,8 +3,9 @@ import { MatAccordion, MatDialog, MAT_DIALOG_DATA, MatDialogRef} from '@angular/
 import { MatTreeNestedDataSource } from '@angular/material/tree';
 import { Router, ActivatedRoute } from '@angular/router';
 import { CookieService } from 'ngx-cookie-service';
-import { ApiService } from 'src/app/api.service';
+import { ApiService } from '../../../api.service';
 import { MetaService } from '@ngx-meta/core';
+import { Title } from '@angular/platform-browser';
 import { SafeResourceUrl, DomSanitizer } from '@angular/platform-browser';
 import { NestedTreeControl } from '@angular/cdk/tree';
 import { BehaviorSubject, observable, of as observableOf } from 'rxjs';
@@ -49,7 +50,9 @@ export class BloglistComponent implements OnInit {
     this.myPanels.closeAll();
   }
 
-
+  copyText(val:any){
+    console.log('copyText');
+  }
   /*------------TREE NESTEDDATA-----*/
 
   public nestedTreeControl: NestedTreeControl<FileNode>;
@@ -58,7 +61,7 @@ export class BloglistComponent implements OnInit {
 
   /*------------TREE NESTEDDATA-----*/
 
-  constructor(private readonly meta: MetaService, private router: Router, private activatedRoute: ActivatedRoute, private cookieService: CookieService, public apiService: ApiService,private sanitizer: DomSanitizer,public dialog:MatDialog) {
+  constructor(private readonly meta: MetaService, private readonly title: Title, private router: Router, private activatedRoute: ActivatedRoute, private cookieService: CookieService, public apiService: ApiService,private sanitizer: DomSanitizer,public dialog:MatDialog) {
 
     this.meta.setTitle('Arniefonseca - Blog');
     this.meta.setTag('og:description', '');
@@ -69,6 +72,7 @@ export class BloglistComponent implements OnInit {
 
     this.meta.setTag('og:title', 'Arniefonseca - Blog');
     this.meta.setTag('twitter:title', 'Arniefonseca - Blog');
+
     this.meta.setTag('og:type', 'website');
     this.meta.setTag('og:image', '../../assets/images/logo.png');
     this.meta.setTag('twitter:image', '../../assets/images/logo.png');

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute,Router} from '@angular/router';
 import { MetaService } from '@ngx-meta/core';
-import { ApiService } from 'src/app/api.service';
+import { ApiService } from '../../../../api.service';
 
 @Component({
   selector: 'app-servicelist',
@@ -16,7 +16,7 @@ export class ServicelistComponent implements OnInit {
   showme=true;
   public indexval:any = 4;
 
-  constructor(private activatedRoute: ActivatedRoute, private router: Router, private readonly meta: MetaService) { 
+  constructor(private activatedRoute: ActivatedRoute, private router: Router, private readonly meta: MetaService, public apiservice: ApiService) { 
 
     this.meta.setTitle('Arniefonseca - Services');
     this.meta.setTag('og:description', '');

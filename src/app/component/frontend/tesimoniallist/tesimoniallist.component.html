@@ -62,12 +62,24 @@
                     </mat-card>
                     <span class="contentsection absolute">
                             <span class="blogsociallists">
-                                <a class="sociallink fa fb"><fa name="facebook" class="fa-facebook"></fa></a>
-                                <a class="sociallink fa twi"><fa name="twitter" class="fa-twitter"></fa></a>
-                                <a class="sociallink fa pin"><fa name="pinterest" class="fa-pinterest"></fa></a>
-                                <a class="sociallink fa lin"><fa name="linkedin" class="fa-linkedin"></fa></a>
-                                <a class="sociallink fa env"><fa name="envelope" class="fa-envelope"></fa></a>
-                                <a class="sociallink fa share"><fa name="share" class="fa-share"></fa></a>
+                                <a class="sociallink fa fb" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fdev.arniefonseca.influxiq.com%2Ftestimonial%2F{{testmon._id}}" target="_blank">
+                                    <fa name="facebook" class="fa-facebook"></fa>
+                                  </a>
+                                  <a class="sociallink fa twi" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fdev.arniefonseca.influxiq.com%2Ftestimonial%2F{{testmon._id}}" target="_blank">
+                                    <fa name="twitter" class="fa-twitter"></fa>
+                                  </a>
+                                  <a class="sociallink fa tumblr" href="https://www.tumblr.com/widgets/share/tool?shareSource=legacy&canonicalUrl=https%3A%2F%2Fdev.arniefonseca.influxiq.com%2Ftestimonial%2F{{testmon._id}}" target="_blank">
+                                    <fa name="tumblr" class="fa-tumblr"></fa>
+                                  </a>
+                                  <a class="sociallink fa lin" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fdev.arniefonseca.influxiq.com%2Ftestimonial%2F{{testmon._id}}" target="_blank">
+                                    <fa name="linkedin" class="fa-linkedin"></fa>
+                                  </a>
+                                  <!-- <a class="sociallink fa env">
+                                    <fa name="envelope" class="fa-envelope"></fa>
+                                  </a> -->
+                                  <a class="sociallink fa share" (click)="copyText('https://dev.arniefonseca.influxiq.com/blog%2F?affid='+testmon._id)">
+                                    <fa name="share" class="fa-share"></fa>
+                                  </a>
                             </span>
                             <span class="author"><p class="date">Date: {{testmon.date_added}}</p></span>                                    
                         </span>
