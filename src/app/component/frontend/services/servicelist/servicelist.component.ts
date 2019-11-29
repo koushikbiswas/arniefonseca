@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute,Router} from '@angular/router';
 import { MetaService } from '@ngx-meta/core';
+import { ApiService } from 'src/app/api.service';
 
 @Component({
   selector: 'app-servicelist',
@@ -8,7 +9,7 @@ import { MetaService } from '@ngx-meta/core';
   styleUrls: ['./servicelist.component.css']
 })
 export class ServicelistComponent implements OnInit {
-  
+  public serviceData: any =[];
   private indexvallength:any;
   public ServiceListArray:any=[];
   // showMore = false;
@@ -33,6 +34,15 @@ export class ServicelistComponent implements OnInit {
   }
 
   ngOnInit() {
+/**getting data from resolve service**/
+    this.activatedRoute.data.subscribe(resolveData => {
+      // console.log(resolveData.serviceList.res)
+      this.serviceData = resolveData.serviceList.res;
+      console.log("The Service datalist",this.serviceData)
+
+    });
+
+   
     // this.activatedRoute.data.forEach(data=>{
     //   let result:any;
     //   result=data.serviceListData.res;

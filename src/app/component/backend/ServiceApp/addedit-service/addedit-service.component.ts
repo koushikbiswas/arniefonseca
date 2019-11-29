@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router , ActivatedRoute } from '@angular/router';
 import { CookieService } from 'ngx-cookie-service';
 import { ApiService } from 'src/app/api.service';
+import {environment} from '../../../../../environments/environment.dev'
 
 @Component({
   selector: 'app-addedit-service',
@@ -12,18 +13,38 @@ export class AddeditServiceComponent implements OnInit {
   public configAddEdit: any = {
     action: "add",
     // endpoint: "https://9v41bpikik.execute-api.us-east-1.amazonaws.com/production/api/addorupdatedata",
-    endpoint: this.ApiService.serverUrl + 'addorupdatedata',
-    source: "services",
+    endpoint: environment.API_URL+'addorupdatedata',
+  
+    source: "service",
     condition: {},
     defaultData: null,
     jwtToken: this.cookieService.get('jwtToken'),
     callBack: "service/list",
     userData: { id: "18801017007", name: "Admin" },
   }
+  public configImgUploadData: any = {
+    baseUrl: "http://3.15.236.141:5005/",
+    endpoint: "uploads",
+    size: "51200", // kb
+    format: ["jpg", "jpeg", "png"], // use all small font
+    type: "service-image",
+    path: "services",
+    prefix: "service-image_"
+  }
+
+  public configIconUploadData: any = {
+    baseUrl: "http://3.15.236.141:5005/",
+    endpoint: "uploads",
+    size: "51200", // kb
+    format: ["jpg", "jpeg", "png"], // use all small font
+    type: "additional-image",
+    path: "services",
+    prefix: "additional-image_"
+  }
 
 
   constructor(private router : Router , private activatedRoute : ActivatedRoute ,private cookieService : CookieService, public ApiService: ApiService) {
-
+   
     
    }
 

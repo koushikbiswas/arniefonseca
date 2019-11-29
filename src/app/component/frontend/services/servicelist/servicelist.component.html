@@ -27,17 +27,18 @@
     <span class="mainwrappercontent pt-30">                
         <!-- <img src="../../../../assets/images/service_blockimg1.jpg" style="width: 100%; display: block; margin: 0; padding: 0;"> -->
         <mat-list>
-            <mat-list-item class="homeblock2listssingleitem">
+            <mat-list-item class="homeblock2listssingleitem" *ngFor="let item of serviceData">
                   <span class="homeblock2servimg">
                     <img src="../../../../assets/images/homeblock2itemimg1.jpg">
                   </span>
                   <span class="homeblock2servcontent">
                     <h2><span class="homeblock2icon"><img src="../../../../assets/images/homeblock2icon1.png"></span> <span class="homeblock2iconcontent">Employee Training <span class="small">(Revenue through Attitude)</span></span></h2>
-                    <p>Empower your employees with the necessary skills and attitude for optimum performance in your organization for increased revenue generation. Your employees will be able to counter workplace challenges with greater efficiency, achieving great things for your organization as well as for themselves individually.</p>
+                    <p><span [innerHtml]="item.description"></span></p>
                     <button mat-button class="btntransparent sim-button">view more</button>
                   </span>
             </mat-list-item>
-            <mat-list-item class="homeblock2listssingleitem">
+
+            <!-- <mat-list-item class="homeblock2listssingleitem">
                   <span class="homeblock2servimg">
                     <img src="../../../../assets/images/homeblock2itemimg2.jpg">
                   </span>
@@ -66,7 +67,7 @@
                     <p>Get rid of all the inadequacies and limitations that stop you from performing at the top level, and take your business to unprecedented heights. Learn new and innovative ways to deal with challenges and come up with creative ideas to take your business forward. Realize your business goals with expert coaching.</p>
                     <button mat-button class="btntransparent sim-button">view more</button>
                   </span>
-            </mat-list-item>
+            </mat-list-item> -->
         </mat-list>
         <button (click)="showMoreFunc()" mat-stroked-button class="btngeneral btngray">Show more</button>
     </span> 

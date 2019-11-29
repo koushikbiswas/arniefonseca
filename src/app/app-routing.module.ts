@@ -134,14 +134,39 @@ const routes: Routes = [
   },
 
   //  static path
-  { path: 'ourservices', component: ServicelistComponent},
-  { path: 'bloghome', component: BlogComponent},
+  {
+    path: 'ourservices', component: ServicelistComponent,
+    resolve: {
+      serviceList: ResolveService
+    },
+    data:
+    {
+      requestcondition:
+      {
+        source: 'service_view', condition: {}
+      }, endpoint: 'datalistwithouttoken'
+    }
+  },
+  { path: 'bloghome', component: BlogComponent },
 
-  { path: 'blog', component: BloglistComponent, resolve: { blogCatList: ResolveService },
-  data: { requestcondition: { condition: {"limit": 4, "skip":1} }, endpoint: 'blogdata' } },
+  {
+    path: 'blog', component: BloglistComponent, resolve: { blogCatList: ResolveService },
+    data: { requestcondition: { condition: { "limit": 4, "skip": 1 } }, endpoint: 'blogdata' }
+  },
 
-  { path: 'blogdetail/:_id', component: BlogdetailComponent, resolve: { blogCatList: ResolveService },
-  data: { requestcondition: { source: 'blogs_view', condition: {} }, endpoint: 'datalistwithouttoken' }  },
+  {
+    path: 'blogdetail/:_id', component: BlogdetailComponent,
+    resolve: {
+      blogCatList: ResolveService
+    },
+    data:
+    {
+      requestcondition:
+      {
+        source: 'blogs_view', condition: {}
+      }, endpoint: 'datalistwithouttoken'
+    }
+  },
 
   //  static path
   {
@@ -161,12 +186,18 @@ const routes: Routes = [
   { path: 'bk-leftdiv', component: BkLeftdivComponent },
   {
     path: 'service-listing', component: ListingServiceComponent, resolve: { serviceList: ResolveService },
-    data: { requestcondition: { source: 'services_view', condition: {} }, endpoint: 'datalist' }
+    data: { requestcondition: { source: 'service', condition: {} }, endpoint: 'datalist' }
   },
   { path: 'service/add', component: AddeditServiceComponent },
   {
+    path: 'service/list',
+    component: ListingServiceComponent,
+    resolve: { serviceList: ResolveService },
+    data: { requestcondition: { source: 'service_view', condition: {} }, endpoint: 'datalist' }
+  },
+  {
     path: 'service/edit/:_id', component: AddeditServiceComponent, resolve: { serviceData: ResolveService },
-    data: { requestcondition: { source: 'services', condition: {} }, endpoint: 'datalist' }
+    data: { requestcondition: { source: 'service', condition: {} }, endpoint: 'datalist' }
   },
 
   { path: 'newsletter-list', component: NewsletterlistsComponent },
@@ -181,7 +212,7 @@ const routes: Routes = [
   { path: 'workshop-detail', component: WorkshopDetailComponent },
   { path: 'seminars-detail', component: SeminarsDetailComponent },
   { path: 'speaker-engagements-detail', component: SpeakerEngagementsDetailComponent },
-  
+
   { path: 'testimonial/add', component: AddeditTestimonialComponent },
   {
     path: 'testimonial/edit/:_id', component: AddeditTestimonialComponent, resolve: { testimonialData: ResolveService },
@@ -212,7 +243,7 @@ const routes: Routes = [
   { path: 'affiliate-admin', component: AffiliateComponent },
   { path: 'gallery-admin', component: GalleryAdminComponent },
 
-// ___________________manage event backend__________________//
+  // ___________________manage event backend__________________//
 
 
   //________________Manage Seminar____________//
@@ -222,15 +253,15 @@ const routes: Routes = [
 
 
 
-//________________Manage Workshop____________//
+  //________________Manage Workshop____________//
 
 
 
-{ path: 'add-edit-manage-workshop', component:  AddEditManageWorkshopComponent},
-{ path: 'manage-workshop-listing', component: ManageWorkshopListingComponent },
+  { path: 'add-edit-manage-workshop', component: AddEditManageWorkshopComponent },
+  { path: 'manage-workshop-listing', component: ManageWorkshopListingComponent },
 
 
-//________________Manage Speaker Engagement____________//
+  //________________Manage Speaker Engagement____________//
 
 
 
@@ -320,11 +351,12 @@ const routes: Routes = [
 
 
   //____________end event routing______________//
-  
+
   // ___________________BLOG MANAGEMENT_________________
   // =======================================================
 
-  { path: 'blog-management', component: BlogManagementComponent, canActivate:[AuthGuard],
+  {
+    path: 'blog-management', component: BlogManagementComponent, canActivate: [AuthGuard],
     resolve: { blogsList: ResolveService },
     data: {
       requestcondition: {
@@ -333,7 +365,7 @@ const routes: Routes = [
       },
       endpoint: 'datalist'
     },
-   },
+  },
 
 
   // _____________________BLOG CATEGORY________________
