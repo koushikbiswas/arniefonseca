@@ -29,11 +29,11 @@ public user_cookie:any=this.cookieService.get('jwtToken');
 public apiUrl: any = this.baseUrl;
 public status: any = [{ val: 1, 'name': 'Active' }, { val: 0, 'name': 'Inactive' }];
 public view:any="events_view";
-public date_search_source:any="";
+// public date_search_source:any="events_view";
 public date_search_endpoint:any="datalist";
  public search_settings: any = {
      selectsearch: [{ label: 'Search By Status', field: 'status', values: this.status }],
-     datesearch:[{startdatelabel:"Start Date",enddatelabel:"End Date",submit:"Search By Date",  field:"created_at"}],   // this is use for  date search 
+     datesearch:[{startdatelabel:"Start Date",enddatelabel:"End Date", submit:"Search By Date",  field:"created_at"}],   // this is use for  date search 
 
    };
  // ====================================================================
