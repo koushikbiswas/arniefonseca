@@ -65,7 +65,7 @@ a{cursor:pointer;outline:none}
 .ptb-77.mat-card{padding-top:57px!important;padding-bottom:73px!important;box-shadow:none!important}
 .ptb-35.mat-card{padding-top:35px;padding-bottom:35px;box-shadow:none!important}
 .btnblueround{display:inline-block;background:#00c0ff;font-size:18px;color:#fff!important;text-transform:uppercase;font-family:'HelveticaBold';text-decoration:none!important;line-height:normal;text-align:center;margin:0;margin-top:20px;margin-bottom:20px;border-radius:50px;padding:2px 25px}
-.btnblue{display: inline-block !important; background: #03aed4 !important; background-size: 12px !important; font-size: 16px !important; color: #fff!important; text-transform: uppercase; font-family: 'HelveticaBold' !important; text-decoration: none!important; line-height: normal !important; text-align: center !important; margin: 10px 6px !important; border-radius: 0px;text-decoration:none!important;box-shadow: none !Important;padding: 15px 50px 10px!important;}
+.btnblue{display: inline-block !important; background: #03aed4 !important; background-size: 12px !important; font-size: 16px !important; color: #fff!important; text-transform: uppercase; font-family: 'HelveticaBold' !important; text-decoration: none!important; line-height: normal !important; text-align: center !important; margin: 10px 6px !important; border-radius: 0px;text-decoration:none!important;box-shadow: none !Important;padding: 15px 20px 10px!important;}
 
 .btntransparent {
   display: inline-block !important;
@@ -96,7 +96,7 @@ a{cursor:pointer;outline:none}
 	text-decoration:none!important;	margin: 0; margin-top: 0; margin-bottom: 0; border-radius: 0px; padding: 14px 18px 10px !important; margin-top: 10px !important;box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);}
 .btnwhite{display: inline-block !important; background: #fff !important; background-size: 12px !important; font-size: 16px !important; color: #333!important; text-transform: uppercase; font-family: 'HelveticaBold' !important; text-decoration: none!important; line-height: normal !important; text-align: center !important; margin: 10px 6px !important; border-radius: 0px;text-decoration:none!important;box-shadow: none !Important;padding: 15px 50px 10px!important;}
 
-
+.homeblock2listssingleitem .mat-list-item-content{width: 100%;}
 
 .overlaybg{position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,0.7);z-index:9}
 .overlaybg1{position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,0.7);z-index:9}
@@ -307,7 +307,7 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
   -webkit-box-orient: vertical;}
 .generalcls .testicontent .quatation .quotestarticon{ float: left; margin-right: 10px;margin-top: -10px; width: 28px;}
 .generalcls .testicontent .quatation .quoteendicon{float: right;margin-left: 10px; margin-bottom: -10px; width: 28px;}
-.generalcls.blog .mat-card-title {font-size: 24px!important;line-height: normal!important;justify-content: space-between;    margin-bottom: 15px!important; margin-top: 15px!important;text-transform: capitalize;}
+.generalcls.blog .mat-card-title {font-size: 24px!important;line-height: normal!important;justify-content: space-between;    margin-bottom: 15px!important; margin-top: 15px!important;text-transform: capitalize; white-space: normal; word-break: break-word;}
 
 
 
@@ -327,7 +327,7 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
   background: #d8dde2;
 }
 
-.bloglists .item_wrapper > .item .item_images{ max-width: 100%; display: flex; justify-content: center; align-items: center; height: 174px; overflow: hidden;}
+.bloglists .item_wrapper > .item .item_images{ width: 100%; display: flex; justify-content: center; align-items: center; height: 174px; overflow: hidden;}
 .bloglists .item_wrapper > .item .item_images img{ height: 100% !important; -o-object-fit: cover; object-fit: cover; width: 100% !important; width: auto; height: auto;}
 
 .bloglists .item_wrapper > .item .contentsection{align-items: stretch; height: 56%;}
@@ -395,7 +395,7 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
 
 .generalcls.bloglists .mat-card-content{
   padding:20px;
-  height: 100%;
+  height: 70%;
 }
 
 .generalcls.bloglists .item .mat-card-content h2 {
@@ -430,6 +430,13 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
 
 .generalcls.bloglists .bloglistswrapper h2.blogtitle{
   width:100%
+}
+
+.bloglistswrapper .item .mat-card-content a{
+  margin-top: 0px;
+  display: block;
+  color: #06a2b8;
+  text-transform: capitalize;
 }
 
 .categorywrapper h2 .mat-raised-button {
@@ -1037,11 +1044,12 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
-  align-items: center;
+  align-items: stretch;
   -webkit-box-pack: justify;
   justify-content: center;
   padding: 0;
   position: relative;
+  margin-bottom: 25px;
 }
 
 .blogcategorycls{
@@ -1064,6 +1072,12 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
   margin-top: -3px;
 }
 
+.bottom_blog .item_wrapper .item .next_page {
+  color: #21c4e1;
+  text-align: left;
+  display: block;
+  text-transform: capitalize;
+}
 
 .blogdetail .date {
   font-family: 'Helvetica-Normal';
@@ -1094,8 +1108,6 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
 .blogdetail .bottom_blog .item_wrapper .item .author .authornmimg {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-left: 25px;
   position: relative;
 }
 
@@ -1118,6 +1130,8 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
   margin-top: 0;
   margin-left: 25px;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .blogdetail .bloglistinner .bottom_blog .item_wrapper .item .description {
@@ -1166,6 +1180,7 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
     color: #333!important;
     font-size: 24px!important;
     line-height: 26px!important;
+    text-align: left;
 }
 
 
@@ -1283,6 +1298,10 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
   line-height: 24px;
   height: auto !important;
   -webkit-line-clamp: inherit !important;}
+  .generalcls .testicontent .quatation .truncate a{
+    margin-right: 5px;
+  }
+
   .generalcls .testicontent .quatation .truncate.truncateopen{
     max-height: inherit !important;
   }
