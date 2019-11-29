@@ -18,7 +18,7 @@ export class ServicelistComponent implements OnInit {
   
   public indexval:any = 4;
 
-  constructor(private activatedRoute: ActivatedRoute, private router: Router, private readonly meta: MetaService) { 
+  constructor(private activatedRoute: ActivatedRoute, private router: Router, private readonly meta: MetaService, public apiservice: ApiService) { 
 
     this.meta.setTitle('Arniefonseca - Services');
     this.meta.setTag('og:description', '');

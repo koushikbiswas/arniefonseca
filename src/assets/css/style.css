@@ -542,6 +542,7 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
 
 .fa-facebook i{display: none;}
 .fa-twitter i{display: none;}
+.fa-tumblr i{display: none;}
 .fa-pinterest i{display: none;}
 .fa-linkedin i{display: none;}
 .fa-envelope i{display: none;}
@@ -549,6 +550,7 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
 
 .sociallink.fb fa{background-color: #5170b1; }
 .sociallink.twi fa{background-color: #1bbef7; }
+.sociallink.tumblr fa{background-color: #34526f; }
 .sociallink.pin fa{background-color: #c64348; }
 .sociallink.lin fa{background-color: #1786b1; }
 .sociallink.env fa{background-color: #70787a; }
@@ -1300,6 +1302,10 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
   line-height: 24px;
   height: auto !important;
   -webkit-line-clamp: inherit !important;}
+  .generalcls .testicontent .quatation .truncate a{
+    margin-right: 5px;
+  }
+
   .generalcls .testicontent .quatation .truncate.truncateopen{
     max-height: inherit !important;
   }

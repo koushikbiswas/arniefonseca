@@ -58,6 +58,7 @@ import { TeamComponent } from './component/frontend/team/team.component';
 import { SeminarsComponent } from './component/frontend/events/seminars/seminars.component';
 import { WorkshopsComponent } from './component/frontend/events/workshops/workshops.component';
 import { SpeakerEngagementsComponent } from './component/frontend/events/speaker-engagements/speaker-engagements.component';
+import { BioComponent } from './component/frontend/bio/bio.component';
 
 /**End Frontend Component**/
 
@@ -72,16 +73,11 @@ import { NewsletterlistsComponent } from './component/backend/newsletterlists/ne
 import { CustomerListComponent } from './component/backend/customer-list/customer-list.component';
 import { AddeditServiceComponent } from './component/backend/ServiceApp/addedit-service/addedit-service.component';
 import { ListingServiceComponent } from './component/backend/ServiceApp/listing-service/listing-service.component';
-// import { ServicelibModule } from 'servicelib';
-import { FileUploadModule } from 'dist/file-upload';
+
 import { BkLeftdivComponent } from './layout/bk-leftdiv/bk-leftdiv.component';
 import { MaindashboardComponent } from './component/backend/maindashboard/maindashboard.component';
 import { UserManagementComponent } from './component/backend/user-management/user-management.component';
-import { LoginModule } from 'login';
-import { ServicelibModule } from 'servicelib';
-import { ContactusModule } from 'contactus';
-import { TestimonialModule } from 'testimonial';
-// import { TestimonialListsAdminComponent } from './component/backend/testimonial-lists-admin/testimonial-lists-admin.component';
+
 import { ListingTestimonialComponent } from './component/backend/TestimonialApp/listing-testimonial/listing-testimonial.component';
 import { AddeditTestimonialComponent } from './component/backend/TestimonialApp/addedit-testimonial/addedit-testimonial.component';
 import { BlogManagementComponent } from './component/backend/blog-management/blog-management.component';
@@ -106,16 +102,14 @@ import { ListingBlogsComponent } from './component/backend/blog-management/listi
 
 import { ManageEventListingComponent} from './component/backend/events/manage-event-listing/manage-event-listing.component';
 import { AddEditManageEventComponent, EventModal } from './component/backend/events/add-edit-manage-event/add-edit-manage-event.component';
-// import { BlogModule } from '../../dist/blog';
 
-import {BlogModule} from 'blog';
 
 import { WorkshopDetailComponent } from './component/frontend/events/workshop-detail/workshop-detail.component';
 import { SeminarsDetailComponent } from './component/frontend/events/seminars-detail/seminars-detail.component';
 import { SpeakerEngagementsDetailComponent } from './component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component';
 
 import { AddEditNewsletterComponent } from './component/backend/newsletterlists/add-edit-newsletter/add-edit-newsletter.component';
-import { NewsTitleModule } from 'news-title';
+
 
 import { AddEditSubscriberComponent } from './component/backend/newsletterlists/add-edit-subscriber/add-edit-subscriber.component';
 import { AddEditSubscriberGroupComponent } from './component/backend/newsletterlists/add-edit-subscriber-group/add-edit-subscriber-group.component';
@@ -123,8 +117,16 @@ import { AddEditSendersComponent } from './component/backend/newsletterlists/add
 import { AddEditTestemailComponent } from './component/backend/newsletterlists/add-edit-testemail/add-edit-testemail.component';
 
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
-// import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
 import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
+
+
+import { TestimonialModule } from 'testimonial';
+import { LoginModule } from 'login';
+import { FileUploadModule } from 'file-upload';
+import { ContactusModule } from 'contactus';
+import { BlogModule } from 'blog';
+import { NewsTitleModule } from 'news-title';
+import { ServicelibModule } from 'servicelib';
 /**End Backend Component** */
 
 
@@ -214,7 +216,8 @@ import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
     CommonVideoModalComponent,
     CommonTestimonialVideoModalComponent,
     VideoModalComponent,
-    EventModal
+    EventModal,
+    BioComponent
     
 
   ],

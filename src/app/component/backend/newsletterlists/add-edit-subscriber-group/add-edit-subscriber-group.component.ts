@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { CookieService } from 'ngx-cookie-service';
 import { ActivatedRoute } from '@angular/router';
-import { environment } from 'src/environments/environment';
-import { ApiService } from 'src/app/api.service';
+import { environment } from '../../../../../environments/environment';
+import { ApiService } from '../../../../api.service';
 
 @Component({
   selector: 'app-add-edit-subscriber-group',

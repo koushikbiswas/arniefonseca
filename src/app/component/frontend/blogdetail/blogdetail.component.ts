@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild, Inject} from '@angular/core';
 import { MatAccordion,MatDialog,MatDialogRef, MAT_DIALOG_DATA, } from '@angular/material';
 import { Router, ActivatedRoute } from '@angular/router';
 import { CookieService } from 'ngx-cookie-service';
-import { ApiService } from 'src/app/api.service';
+import { ApiService } from '../../../api.service';
 
 import { MetaService } from '@ngx-meta/core';
 import { SafeResourceUrl, DomSanitizer } from '@angular/platform-browser';
@@ -62,7 +62,9 @@ export class BlogdetailComponent implements OnInit {
 
   safeSrc: SafeResourceUrl;
 
-
+  copyText(val:any){
+    console.log('copyText');
+  }
 
   constructor(private readonly meta: MetaService, private router: Router, private activatedRoute: ActivatedRoute, private cookieService: CookieService, public apiService: ApiService,private sanitizer: DomSanitizer,public dialog:MatDialog) { 
     
@@ -86,6 +88,7 @@ export class BlogdetailComponent implements OnInit {
 
     this.dataChange.subscribe(data => this.blogCategoryDataSource.data = data);
 
+   
 
     
     this.dataChange.next([
