@@ -112,9 +112,7 @@
               </span>
             </span>
           </span>
-          <button mat-button class="btnblue sim-button" *ngIf="bloglisting !=null && indexval < bloglisting.length"
-            (click)="blogloadmore()">Load More</button>
-
+          <button mat-button class="btnblue sim-button" *ngIf="bloglisting !=null && indexval < bloglisting.length" (click)="blogloadmore()">Load More</button>
         </span>
         <span class="categorywrapper">
           <h2 class="blogtitle">Categories ({{blogcategorycount}})</h2>
@@ -126,7 +124,6 @@
                     {{item.blogtitle}}
                 </li>               
             </mat-tree-node>
-
             <mat-tree-node *matTreeNodeDef="let item;when: hasNestedChild">
                 <li>
                     <div class="mat-tree-node">
