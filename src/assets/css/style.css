@@ -1298,6 +1298,10 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
   line-height: 24px;
   height: auto !important;
   -webkit-line-clamp: inherit !important;}
+  .generalcls .testicontent .quatation .truncate a{
+    margin-right: 5px;
+  }
+
   .generalcls .testicontent .quatation .truncate.truncateopen{
     max-height: inherit !important;
   }
