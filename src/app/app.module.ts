@@ -117,19 +117,21 @@ import { AddEditSendersComponent } from './component/backend/newsletterlists/add
 import { AddEditTestemailComponent } from './component/backend/newsletterlists/add-edit-testemail/add-edit-testemail.component';
 
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
-import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
+import { NgxMaterialTimepickerModule } from 'ngx-material-timepicker';
 
-
-import { TestimonialModule } from 'testimonial';
-import { LoginModule } from 'login';
-import { FileUploadModule } from 'file-upload';
 import { ContactusModule } from 'contactus';
-import { BlogModule } from 'blog';
-import { NewsTitleModule } from 'news-title';
-import { ServicelibModule } from 'servicelib';
+
+ 
 import { HomeEventComponent } from './component/backend/events/home-event/home-event.component';
 
-/**End Backend Component** */
+
+import { NewsTitleModule } from 'news-title-lib-influxiq';
+import { ServicelibModule } from 'service-lib-influxiq';
+import { TestimonialModule } from 'testimonial-lib-influxiq';
+import { FileUploadModule } from 'file-upload-lib-influxiq';
+import { LoginModule } from 'login-lib-influxiq';
+import { BlogModule } from 'blog-lib-influxiq';
+
 
 
 @NgModule({
@@ -227,7 +229,7 @@ import { HomeEventComponent } from './component/backend/events/home-event/home-e
   ],
   imports: [
     AmazingTimePickerModule,
-    BlogModule,
+   
     CKEditorModule,
     AngularFontAwesomeModule,
     DragScrollModule,
@@ -240,6 +242,7 @@ import { HomeEventComponent } from './component/backend/events/home-event/home-e
     HttpClientModule,
     NgtUniversalModule,
     LoginModule,
+    BlogModule,
     TestimonialModule,
     ServicelibModule,
     ContactusModule,
