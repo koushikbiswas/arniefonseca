@@ -17,22 +17,23 @@ export class WorkshopDetailComponent implements OnInit {
 
 
   public indexval:any=6;
-
-  public WorkshopsdetailArry: any = []
+  public workshop_img:any
+  public workshop:any;
+  // public SeminarsdetailArry: any = []
   public dataformate: any;
   public eventImage:any;
 
   constructor(private activatedRoute: ActivatedRoute, private router: Router, public apiService: ApiService, private readonly meta: MetaService,private sanitizer: DomSanitizer ) {
 
-    this.meta.setTitle('Arniefonseca - Event');
+    this.meta.setTitle('Arniefonseca - Event Workshop Detail');
     this.meta.setTag('og:description', '');
     this.meta.setTag('twitter:description', '');
 
     this.meta.setTag('og:keyword', '');
     this.meta.setTag('twitter:keyword', '');
 
-    this.meta.setTag('og:title', 'Arniefonseca - Event');
-    this.meta.setTag('twitter:title', 'Arniefonseca - Event');
+    this.meta.setTag('og:title', 'Arniefonseca - Event Workshop Detail');
+    this.meta.setTag('twitter:title', 'Arniefonseca - Event Workshop Detail');
     this.meta.setTag('og:type', 'website');
     this.meta.setTag('og:image', '../../assets/images/logo.png');
     this.meta.setTag('twitter:image', '../../assets/images/logo.png');
@@ -41,20 +42,10 @@ export class WorkshopDetailComponent implements OnInit {
 
   ngOnInit() {
 
-    this.activatedRoute.data.forEach(data => {
-      //console.log('test 12',data);
-      let result: any = {};
-      result = data.workshopsDetailData.res;
-
-      this.WorkshopsdetailArry = result;
-
-      this.indexvallength = this.WorkshopsdetailArry.length;
-
-      console.warn(result);
-
-      // this.eventImage=result.event_image[0].basepath[0]+result.event_image[0].image[0];
-      // console.log('+++++>>>>>>>>>>>>', this.eventImage)
-      // console.log('>>>>>>>>>>>>>>>>',result);
+    this.activatedRoute.data.forEach((data: any) => {
+      this.workshop = data.workshopsDetailData.res;
+      //console.log('>>>>>>>kb>>>>>>>',this.workshop)
+      this.workshop_img=this.workshop[0].Image[0];
 
     })
   }
@@ -66,6 +57,10 @@ export class WorkshopDetailComponent implements OnInit {
     // console.log('load more')
     this.indexval=this.indexval+1;
 
+  }
+
+  copyText(val:any){
+    console.log('copyText');
   }
 
 }

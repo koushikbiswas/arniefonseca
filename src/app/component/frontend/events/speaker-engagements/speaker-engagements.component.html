@@ -66,15 +66,28 @@
              <p class="event_text">  <span class="spantext" [innerHtml]="eventsem.description"></span> <a href="javascript:void(0);" (click)="detail(eventsem._id)">Continue Reading</a></p>
 
 
-                <span class="event_share_block">
-                    <img src="../../../../assets/images/share_img1.jpg"  >
-                    <img src="../../../../assets/images/share_img2.jpg"  >
-                    <img src="../../../../assets/images/share_img3.jpg"  >
-                    <img src="../../../../assets/images/share_img4.jpg"  >
-                    <img src="../../../../assets/images/share_img5.jpg"  >
-                    <img src="../../../../assets/images/share_img6.jpg"  >
+             <span class="event_share_block">
+                <a class="sociallink fa fb" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fdev.arniefonseca.influxiq.com%2Fspeaker-engagements{{eventsem._id}}" target="_blank">
+                                 <img src="../../../../assets/images/share_img1.jpg"  >
+                               </a>
+                               <a class="sociallink fa twi" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fdev.arniefonseca.influxiq.com%2Fspeaker-engagements{{eventsem._id}}" target="_blank">
+                                <img src="../../../../assets/images/share_img2.jpg"  >
+                               </a>
+                               <a class="sociallink fa tumblr" href="https://www.tumblr.com/widgets/share/tool?shareSource=legacy&canonicalUrl=https%3A%2F%2Fdev.arniefonseca.influxiq.com%2Fspeaker-engagements{{eventsem._id}}" target="_blank">
+                                 <img src="../../../../assets/images/share_img3.jpg"  >
+                               </a>
+                               <a class="sociallink fa lin" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fdev.arniefonseca.influxiq.com%2Fspeaker-engagements{{eventsem._id}}" target="_blank">
+                              <img src="../../../../assets/images/share_img4.jpg"  >
+                               </a>
+                 <!-- <a class="sociallink fa env">
+                   <fa name="envelope" class="fa-envelope"></fa>
+                 </a> -->
+                               <a class="sociallink fa share" (click)="copyText('https://dev.arniefonseca.influxiq.com/speaker-engagements%2F?affid='+eventsem._id)">
+                                <img src="../../../../assets/images/share_img6.jpg"  >
+                               </a>
 
-                </span>
+
+             </span>
 
            </span>
 
