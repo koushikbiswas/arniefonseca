@@ -120,11 +120,11 @@ import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
 
 
-import { TestimonialModule } from 'testimonial';
-import { LoginModule } from 'login';
+import { TestimonialModule } from '../../node_modules/testimonial-lib-influxiq/fesm5/testimonial-lib-influxiq.js';
+import { BlogModule } from '../../node_modules/blog-lib-influxiq/fesm5/blog-lib-influxiq.js';
 import { FileUploadModule } from 'file-upload';
 import { ContactusModule } from 'contactus';
-import { BlogModule } from 'blog';
+import { LoginModule } from 'login';
 import { NewsTitleModule } from 'news-title';
 import { ServicelibModule } from 'servicelib';
 /**End Backend Component** */
