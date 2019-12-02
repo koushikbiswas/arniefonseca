@@ -270,13 +270,16 @@ const routes: Routes = [
       endpoint: "datalistwithouttoken"
     }
   },
+  
+ 
+
   { path: 'speaker-engagements-detail/:_id', component: SpeakerEngagementsDetailComponent,
-  resolve: { speakerEngagementsDetailData: ResolveService },
+  resolve: { speakerengagementsDetailData: ResolveService },
   data: {
-    requestcondition: { source: "events_view", condition: {type:"speaker-engagements"} },
+    requestcondition: { source: "events_view", condition: {type:"speaker_engagement"} },
     endpoint: "datalistwithouttoken"
-    }
-  },
+  }
+},
   
 // ___________________ end event frontend__________________//
 
