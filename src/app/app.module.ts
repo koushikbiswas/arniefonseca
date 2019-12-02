@@ -118,13 +118,14 @@ import { AddEditTestemailComponent } from './component/backend/newsletterlists/a
 
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 import { NgxMaterialTimepickerModule } from 'ngx-material-timepicker';
-import { FileUploadModule } from 'file-upload-lib-influxiq';
+
 import { ContactusModule } from 'contactus';
-import { LoginModule } from 'login-lib-influxiq';
-import { NewsTitleModule } from 'news-title';
+import { NewsTitleModule } from 'news-title-lib-influxiq';
 import { ServicelibModule } from 'service-lib-influxiq';
 import { TestimonialModule } from 'testimonial-lib-influxiq';
-// import { BlogModule } from 'blog-lib-influxiq';
+import { FileUploadModule } from 'file-upload-lib-influxiq';
+import { LoginModule } from 'login-lib-influxiq';
+import { BlogModule } from 'blog-lib-influxiq';
 /**End Backend Component** */
 
 
@@ -234,11 +235,11 @@ import { TestimonialModule } from 'testimonial-lib-influxiq';
     HttpClientModule,
     NgtUniversalModule,
     LoginModule,
+    BlogModule,
     TestimonialModule,
     ServicelibModule,
     ContactusModule,
     FileUploadModule,
-    // BlogModule,
     HttpClientModule,
     AppRoutingModule,MetaModule.forRoot(), BrowserAnimationsModule,
     ListingModule,
