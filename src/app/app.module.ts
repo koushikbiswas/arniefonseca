@@ -117,16 +117,14 @@ import { AddEditSendersComponent } from './component/backend/newsletterlists/add
 import { AddEditTestemailComponent } from './component/backend/newsletterlists/add-edit-testemail/add-edit-testemail.component';
 
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
-import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
-
-
-import { TestimonialModule } from '../../node_modules/testimonial-lib-influxiq/fesm5/testimonial-lib-influxiq.js';
-import { BlogModule } from '../../node_modules/blog-lib-influxiq/fesm5/blog-lib-influxiq.js';
-import { FileUploadModule } from 'file-upload';
+import { NgxMaterialTimepickerModule } from 'ngx-material-timepicker';
+import { FileUploadModule } from 'file-upload-lib-influxiq';
 import { ContactusModule } from 'contactus';
-import { LoginModule } from 'login';
+import { LoginModule } from 'login-lib-influxiq';
 import { NewsTitleModule } from 'news-title';
-import { ServicelibModule } from 'servicelib';
+import { ServicelibModule } from 'service-lib-influxiq';
+import { TestimonialModule } from 'testimonial-lib-influxiq';
+// import { BlogModule } from 'blog-lib-influxiq';
 /**End Backend Component** */
 
 
@@ -223,7 +221,7 @@ import { ServicelibModule } from 'servicelib';
   ],
   imports: [
     AmazingTimePickerModule,
-    BlogModule,
+   
     CKEditorModule,
     AngularFontAwesomeModule,
     DragScrollModule,
@@ -240,6 +238,7 @@ import { ServicelibModule } from 'servicelib';
     ServicelibModule,
     ContactusModule,
     FileUploadModule,
+    // BlogModule,
     HttpClientModule,
     AppRoutingModule,MetaModule.forRoot(), BrowserAnimationsModule,
     ListingModule,
