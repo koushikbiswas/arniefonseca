@@ -1341,3 +1341,43 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
   max-width: 100%;
 }
 
+
+
+
+
+
+/*-----------------amitava- 02-12-2019---------------*/
+
+
+.home_event_list .mat-toolbar-row{display: none!important;}
+
+.home_event_list{ background: #dde2e6!important; display: block!important;  width: 97%!important; margin: 0 auto!important;}
+
+.home_event_list .mat-card{ background: none!important; padding: 0px!important;}
+.home_event_list .container{ background: none!important;}
+
+.home_event_list *{ box-shadow: none!important; }
+.home_event_list td.mat-cell{ box-shadow: none!important; border: none!important;}
+
+.home_event_list th.mat-header-cell{ box-shadow: none!important; border: none!important;}
+
+.home_event_list h2{ margin: 0px;   display: block; text-align: left; padding: 18px 18px 10px 18px;}
+
+.home_event_list table{ border: solid 1px #bfc2c5!important;}
+
+.home_event_list tbody tr:nth-child(even){ background: #dee2e5!important;}
+
+.home_event_list thead{background: #475258!important; font-size: 14px!important; color: #fff!important; text-transform: capitalize!important;}
+.home_event_list .mat-sort-header-button{ font-size: 14px!important; color: #fff!important; text-transform: capitalize!important;}
+.home_event_list th{ font-size: 14px!important; color: #fff!important; text-transform: capitalize!important;}
+
+.home_event_list th .mat-checkbox-frame{ border-color: #fff!important;}
+
+.eventviewallbtn{ float: right; margin: 10px; background: #03aed4 !important;
+  font-size: 16px !important;
+  color: #fff!important; display: block; width: 130px;     height: 36px; text-align: center;
+  line-height: 40px;
+  font-family: 'HelveticaBold' !important;}
+
+.clear{display: block!important; margin: 0!important; padding: 0!important; overflow: hidden!important;}
+/*-----------------amitava- 02-12-2019 end---------------*/

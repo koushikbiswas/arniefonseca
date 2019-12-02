@@ -127,6 +127,8 @@ import { ContactusModule } from 'contactus';
 import { BlogModule } from 'blog';
 import { NewsTitleModule } from 'news-title';
 import { ServicelibModule } from 'servicelib';
+import { HomeEventComponent } from './component/backend/events/home-event/home-event.component';
+
 /**End Backend Component** */
 
 
@@ -217,7 +219,9 @@ import { ServicelibModule } from 'servicelib';
     CommonTestimonialVideoModalComponent,
     VideoModalComponent,
     EventModal,
-    BioComponent
+    BioComponent,
+    HomeEventComponent,
+
     
 
   ],

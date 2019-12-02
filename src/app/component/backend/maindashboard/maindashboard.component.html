@@ -1,11 +1,30 @@
 <div class="adminwrappercls">
   <app-header></app-header>
       <div class="main-content-wrap">
-        <mat-card class="generalcls blog" style="padding: 0 !important;">  
+        <mat-card  class="generalcls blog" style="padding: 0 !important;">
             <img src="../../../../assets/images/adm-dashboard-img1.jpg" style="width: 100%; display: block; margin: 0; padding: 0;">
             <img src="../../../../assets/images/adm-dashboard-img2.jpg" style="width: 100%; display: block; margin: 0; padding: 0;">
             <img src="../../../../assets/images/adm-dashboard-img3.jpg" style="width: 100%; display: block; margin: 0; padding: 0;">
-            <img src="../../../../assets/images/adm-dashboard-img4.jpg" style="width: 100%; display: block; margin: 0; padding: 0;">
+            <!--<img src="../../../../assets/images/adm-dashboard-img4.jpg" style="width: 100%; display: block; margin: 0; padding: 0;">-->
+
+
+     <span class="home_event_list">
+         <h2>Event</h2>
+
+         <app-home-event></app-home-event>
+
+
+
+
+          <a class="eventviewallbtn" [routerLink]="['/manage-event-listing']">
+                    View All
+                  </a>
+
+         <span class="clear"></span>
+
+     </span>
+
+
             <img src="../../../../assets/images/adm-dashboard-img5.jpg" style="width: 100%; display: block; margin: 0; padding: 0;">
         </mat-card>
           <!-- <mat-card class="dashboard_block1">

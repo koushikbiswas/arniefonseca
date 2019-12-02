@@ -4,10 +4,11 @@
     <list default="true" id="6bba0bd0-3d33-4df9-bc5d-42627e12b863" name="Default Changelist" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component.html" afterPath="$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component.ts" afterPath="$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.module.ts" afterPath="$PROJECT_DIR$/src/app/app.module.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/backend/events/manage-event-listing/manage-event-listing.component.css" afterPath="$PROJECT_DIR$/src/app/component/backend/events/manage-event-listing/manage-event-listing.component.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/backend/maindashboard/maindashboard.component.html" afterPath="$PROJECT_DIR$/src/app/component/backend/maindashboard/maindashboard.component.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/events/workshop-detail/workshop-detail.component.html" afterPath="$PROJECT_DIR$/src/app/component/frontend/events/workshop-detail/workshop-detail.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/events/workshop-detail/workshop-detail.component.ts" afterPath="$PROJECT_DIR$/src/app/component/frontend/events/workshop-detail/workshop-detail.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/css/style.css" afterPath="$PROJECT_DIR$/src/assets/css/style.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,91 +26,62 @@
       <file leaf-file-name="app-routing.module.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/app-routing.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="276" column="9" lean-forward="false" selection-start-line="276" selection-start-column="9" selection-end-line="276" selection-end-column="9" />
+            <state relative-caret-position="267">
+              <caret line="334" column="31" lean-forward="false" selection-start-line="334" selection-start-column="11" selection-end-line="334" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="327">
+              <caret line="223" column="0" lean-forward="false" selection-start-line="223" selection-start-column="0" selection-end-line="223" selection-end-column="0" />
               <folding>
-                <element signature="e#3219#3306#0" expanded="true" />
-                <element signature="e#4563#4694#0" expanded="true" />
-                <marker date="1575036271777" expanded="true" signature="14060:14193" ph="{&quot;endpoint&quot;: &quot;datalistwithouttoken&quot;...}" />
-                <marker date="1575036271777" expanded="true" signature="14582:14890" ph="{&quot;path&quot;: 'manage-event-listing'...}" />
-                <marker date="1575036271777" expanded="true" signature="14729:14836" ph="{&quot;endpoint&quot;: 'datalist'...}" />
-                <marker date="1575036271777" expanded="true" signature="14752:14806" ph="{&quot;source&quot;: 'events_view'...}" />
-                <marker date="1575036271777" expanded="true" signature="14892:15124" ph="{&quot;path&quot;: 'manage-event/edit/:_id'...}" />
-                <marker date="1575036271777" expanded="true" signature="15032:15121" ph="{&quot;endpoint&quot;: 'datalist'...}" />
-                <marker date="1575036271777" expanded="true" signature="15053:15095" ph="{&quot;source&quot;: 'event'...}" />
-                <marker date="1575036271777" expanded="true" signature="15364:15638" ph="{&quot;path&quot;: 'newsletter-list'...}" />
-                <marker date="1575036271777" expanded="true" signature="15502:15633" ph="{&quot;endpoint&quot;: 'datalist'...}" />
-                <marker date="1575036271777" expanded="true" signature="15528:15599" ph="{&quot;source&quot;: 'subscriptiongroupadd'...}" />
-                <marker date="1575036271777" expanded="true" signature="15648:15941" ph="{&quot;path&quot;: 'subscriber-group/edit/:_id'...}" />
-                <marker date="1575036271777" expanded="true" signature="15805:15936" ph="{&quot;endpoint&quot;: 'datalist'...}" />
-                <marker date="1575036271777" expanded="true" signature="15831:15902" ph="{&quot;source&quot;: 'subscriptiongroupadd'...}" />
-                <marker date="1575036271777" expanded="true" signature="16019:16287" ph="{&quot;path&quot;: 'newsletter/edit/:_id'...}" />
-                <marker date="1575036271777" expanded="true" signature="16158:16282" ph="{&quot;endpoint&quot;: 'datalist'...}" />
-                <marker date="1575036271777" expanded="true" signature="16184:16248" ph="{&quot;source&quot;: 'newsLetterAdd'...}" />
-                <marker date="1575036271777" expanded="true" signature="16362:16637" ph="{&quot;path&quot;: 'subscriber/edit/:_id'...}" />
-                <marker date="1575036271777" expanded="true" signature="16501:16632" ph="{&quot;endpoint&quot;: 'datalist'...}" />
-                <marker date="1575036271777" expanded="true" signature="16527:16598" ph="{&quot;source&quot;: 'newsLetterSubscriber'...}" />
-                <marker date="1575036271777" expanded="true" signature="16708:16968" ph="{&quot;path&quot;: 'sender/edit/:_id'...}" />
-                <marker date="1575036271777" expanded="true" signature="16836:16963" ph="{&quot;endpoint&quot;: 'datalist'...}" />
-                <marker date="1575036271777" expanded="true" signature="16862:16929" ph="{&quot;source&quot;: 'newsletterSender'...}" />
-                <marker date="1575036271777" expanded="true" signature="17041:17299" ph="{&quot;path&quot;: 'testemail/edit/:_id'...}" />
-                <marker date="1575036271777" expanded="true" signature="17174:17294" ph="{&quot;endpoint&quot;: 'datalist'...}" />
-                <marker date="1575036271777" expanded="true" signature="17200:17260" ph="{&quot;source&quot;: 'testEmail'...}" />
-                <marker date="1575036271777" expanded="true" signature="17356:17471" ph="//..." />
-                <marker date="1575036271777" expanded="true" signature="17475:17748" ph="{&quot;path&quot;: 'blog-management'...}" />
-                <marker date="1575036271777" expanded="true" signature="17622:17743" ph="{&quot;endpoint&quot;: 'datalist'...}" />
-                <marker date="1575036271777" expanded="true" signature="17648:17709" ph="{&quot;source&quot;: 'blogs_view'...}" />
-                <marker date="1575036271777" expanded="true" signature="17880:18144" ph="{&quot;path&quot;: 'blog-category/list'...}" />
-                <marker date="1575036271777" expanded="true" signature="18010:18139" ph="{&quot;endpoint&quot;: 'datalist'...}" />
-                <marker date="1575036271777" expanded="true" signature="18036:18105" ph="{&quot;source&quot;: 'blog_category_view'...}" />
-                <marker date="1575036271777" expanded="true" signature="18148:18418" ph="{&quot;path&quot;: 'blog-category/edit/:_id'...}" />
-                <marker date="1575036271777" expanded="true" signature="18284:18413" ph="{&quot;endpoint&quot;: 'datalist'...}" />
-                <marker date="1575036271777" expanded="true" signature="18310:18379" ph="{&quot;source&quot;: 'blog_category_view'...}" />
-                <marker date="1575036271777" expanded="true" signature="18477:18567" ph="//..." />
-                <marker date="1575036271777" expanded="true" signature="18632:18698" ph="{&quot;path&quot;: 'blogs/list'...}" />
-                <marker date="1575036271777" expanded="true" signature="18702:18947" ph="{&quot;path&quot;: 'blogs/edit/:_id'...}" />
-                <marker date="1575036271777" expanded="true" signature="18826:18942" ph="{&quot;endpoint&quot;: 'datalist'...}" />
-                <marker date="1575036271777" expanded="true" signature="18852:18908" ph="{&quot;source&quot;: 'blogs'...}" />
-                <marker date="1575036271777" expanded="true" signature="19004:19056" ph="/** User Management ...*/" />
-                <marker date="1575036271777" expanded="true" signature="19059:19259" ph="{&quot;path&quot;: 'user-management'...}" />
-                <marker date="1575036271777" expanded="true" signature="19679:19736" ph="/** Affiliate Management ...*/" />
-                <marker date="1575036271777" expanded="true" signature="20092:20164" ph="{...}" />
+                <element signature="e#4337#4404#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="speaker-engagements-detail.component.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component.ts">
+      <file leaf-file-name="home-event.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/component/backend/events/home-event/home-event.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="50" column="6" lean-forward="false" selection-start-line="50" selection-start-column="6" selection-end-line="50" selection-end-column="6" />
+            <state relative-caret-position="238">
+              <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="maindashboard.component.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/component/backend/maindashboard/maindashboard.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="136" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="136" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/assets/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="1377" column="92" lean-forward="false" selection-start-line="1377" selection-start-column="92" selection-end-line="1377" selection-end-column="92" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home-event.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/component/backend/events/home-event/home-event.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="411">
+              <caret line="30" column="40" lean-forward="false" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
-                <element signature="n#!!block;n#constructor#0;n#SpeakerEngagementsDetailComponent#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="speaker-engagements-detail.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="190" column="37" lean-forward="false" selection-start-line="190" selection-start-column="37" selection-end-line="190" selection-end-column="37" />
-              <folding>
-                <element signature="n#span#0;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-                <element signature="n#span#0;n#span#0;n#span#0;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-                <element signature="n#span#1;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-                <element signature="n#span#0;n#span#0;n#span#1;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-                <element signature="n#span#2;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-                <element signature="n#span#0;n#span#0;n#span#2;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-                <element signature="n#span#3;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-                <element signature="n#span#0;n#span#0;n#span#3;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-                <element signature="n#span#4;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-                <element signature="n#span#0;n#span#0;n#span#4;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-                <element signature="n#span#5;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-                <element signature="n#span#0;n#span#0;n#span#5;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -126,23 +98,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>TestimonialListArray</find>
-      <find>activatedRoute</find>
-      <find>dataformate</find>
-      <find>testimonial_img</find>
-      <find>testimonialListData</find>
-      <find>testmon</find>
-      <find>location</find>
-      <find>callBack</find>
-      <find>ActivatedRoute</find>
-      <find>event</find>
-      <find>.event_right_blog_text button</find>
-      <find>.event_right_blog_text p</find>
-      <find>UPCOMING SEMINARS</find>
-      <find>.event_text</find>
-      <find>event_text</find>
-      <find>SeminarsListArry</find>
-      <find>index</find>
       <find>indexvalleftlength</find>
       <find>blogloadmore</find>
       <find>event_right_blog</find>
@@ -156,6 +111,23 @@
       <find>speakerengagementsDetailData</find>
       <find>seminarsDetailData</find>
       <find>seminer</find>
+      <find>home-event</find>
+      <find>HomeEventComponent</find>
+      <find>admin-</find>
+      <find>blog</find>
+      <find>environment</find>
+      <find>HttpService</find>
+      <find>maindashboard</find>
+      <find>home-event</find>
+      <find>blog_category_view</find>
+      <find>blogs_view</find>
+      <find>BlogManagementComponent</find>
+      <find>blogCatConfig</find>
+      <find>blogsList</find>
+      <find>admin-dashboard</find>
+      <find>event</find>
+      <find>manage-event-listing</find>
+      <find>datasource</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -173,8 +145,6 @@
         <option value="$PROJECT_DIR$/src/app/layout/footer/footer.component.ts" />
         <option value="$PROJECT_DIR$/src/app/component/backend/newsletterlists/add-edit-newsletter/add-edit-newsletter.component.html" />
         <option value="$PROJECT_DIR$/src/app/component/backend/newsletterlists/add-edit-newsletter/add-edit-newsletter.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/src/assets/css/style.css" />
         <option value="$PROJECT_DIR$/src/app/component/frontend/events/seminars/seminars.component.css" />
         <option value="$PROJECT_DIR$/src/app/component/frontend/events/seminars-detail/seminars-detail.component.css" />
         <option value="$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component.css" />
@@ -193,8 +163,16 @@
         <option value="$PROJECT_DIR$/src/app/component/frontend/events/workshop-detail/workshop-detail.component.ts" />
         <option value="$PROJECT_DIR$/src/app/component/frontend/events/workshop-detail/workshop-detail.component.html" />
         <option value="$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component.html" />
-        <option value="$PROJECT_DIR$/src/app/app-routing.module.ts" />
         <option value="$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/component/backend/dashboard/dashboard.component.html" />
+        <option value="$PROJECT_DIR$/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/src/app/component/backend/maindashboard/maindashboard.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/app-routing.module.ts" />
+        <option value="$PROJECT_DIR$/src/app/component/backend/events/home-event/home-event.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/component/backend/events/home-event/home-event.component.html" />
+        <option value="$PROJECT_DIR$/src/app/component/backend/events/home-event/home-event.component.css" />
+        <option value="$PROJECT_DIR$/src/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/src/app/component/backend/maindashboard/maindashboard.component.html" />
       </list>
     </option>
   </component>
@@ -291,7 +269,165 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arniefonseca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arniefonseca" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arniefonseca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arniefonseca" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arniefonseca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arniefonseca" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arniefonseca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arniefonseca" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arniefonseca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arniefonseca" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="header" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arniefonseca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arniefonseca" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bk-header" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arniefonseca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arniefonseca" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="component" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -317,7 +453,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
+              <option name="myItemId" value="backend" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -343,7 +479,101 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newsletterlists" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arniefonseca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arniefonseca" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="component" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newsletterlists" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="add-edit-subscriber-group" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arniefonseca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arniefonseca" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="component" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="maindashboard" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arniefonseca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arniefonseca" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="component" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -351,7 +581,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="workshops" />
+              <option name="myItemId" value="manage-event-listing" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -377,7 +607,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
+              <option name="myItemId" value="backend" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -385,7 +615,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="workshop-detail" />
+              <option name="myItemId" value="home-event" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -411,17 +641,13 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
+              <option name="myItemId" value="backend" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="events" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="speaker-engagements-detail" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -445,15 +671,11 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
+              <option name="myItemId" value="backend" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="events" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="speaker-engagements" />
+              <option name="myItemId" value="blog-management" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -467,120 +689,14 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="component" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="events" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="seminars-detail" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="arniefonseca" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="arniefonseca" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="component" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="events" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="seminars" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="arniefonseca" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="arniefonseca" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="component" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blogdetail" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="arniefonseca" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="arniefonseca" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="component" />
+              <option name="myItemId" value="dist" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -597,6 +713,9 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\angular_2\arniefonseca\src\app\component\backend\events" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\angular_2\arniefonseca\src\assets\images" />
     </key>
@@ -720,11 +839,12 @@
       <workItem from="1574933751958" duration="13555000" />
       <workItem from="1574951189904" duration="33000" />
       <workItem from="1575004322706" duration="26179000" />
+      <workItem from="1575268632520" duration="13511000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94329000" />
+    <option name="totallyTimeSpent" value="107840000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -800,122 +920,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app/component/backend/blog-management/add-edit-blogcat/add-edit-blogcat.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/layout/footer/newsletter-success-dialog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/environments/environment.prod.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/backend/blog-management/blog-management.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-292">
-          <caret line="15" column="41" lean-forward="false" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/layout/footer/newsletter-dialog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="47" lean-forward="true" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/layout/footer/footer.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="48" column="44" lean-forward="false" selection-start-line="48" selection-start-column="44" selection-end-line="48" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/layout/footer/footer.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="221" column="20" lean-forward="false" selection-start-line="221" selection-start-column="20" selection-end-line="221" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/environments/environment.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/api.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="451" column="40" lean-forward="false" selection-start-line="451" selection-start-column="40" selection-end-line="451" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/backend/blog-management/add-edit-blogs/add-edit-blogs.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/backend/blog-management/add-edit-blogcat/add-edit-blogcat.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="23" lean-forward="false" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/backend/affiliate/affiliate.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/backend/blog-management/add-edit-blogs/add-edit-blogs.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/PowerApp/src/app/Components/NewsletterApp/add-edit-newsletter/add-edit-newsletter.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="74" lean-forward="true" selection-start-line="0" selection-start-column="74" selection-end-line="0" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tsconfig.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1632">
           <caret line="96" column="17" lean-forward="false" selection-start-line="96" selection-start-column="7" selection-end-line="96" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="247" column="0" lean-forward="false" selection-start-line="247" selection-start-column="0" selection-end-line="247" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -937,13 +945,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="1198" column="122" lean-forward="false" selection-start-line="1198" selection-start-column="122" selection-end-line="1198" selection-end-column="122" />
         </state>
       </provider>
     </entry>
@@ -972,20 +973,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-408">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/backend/newsletterlists/add-edit-subscriber-group/add-edit-subscriber-group.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/backend/events/add-edit-manage-event/add-edit-manage-event.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1296">
-          <caret line="110" column="0" lean-forward="true" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1049,9 +1036,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#73#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1059,7 +1043,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="385">
           <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1067,7 +1050,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="58" lean-forward="false" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1076,7 +1058,7 @@
         <state relative-caret-position="334">
           <caret line="39" column="68" lean-forward="false" selection-start-line="39" selection-start-column="68" selection-end-line="39" selection-end-column="68" />
           <folding>
-            <element signature="e#0#50#0" expanded="true" />
+            <element signature="e#0#50#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1085,10 +1067,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="359">
           <caret line="91" column="38" lean-forward="true" selection-start-line="91" selection-start-column="38" selection-end-line="91" selection-end-column="38" />
-          <folding>
-            <element signature="n#span#0;n#span#0;n#span#0;n#span#0;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-            <element signature="n#span#1;n#span#0;n#span#0;n#span#0;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1096,7 +1074,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="71" lean-forward="true" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="71" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1104,7 +1081,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="43" column="2" lean-forward="false" selection-start-line="43" selection-start-column="2" selection-end-line="43" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1112,9 +1088,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="355">
           <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="79" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1122,21 +1095,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="253" selection-end-column="25" />
-          <folding>
-            <element signature="n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-            <element signature="n#span#0;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-            <element signature="n#span#0;n#span#0;n#span#0;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-            <element signature="n#span#1;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-            <element signature="n#span#0;n#span#0;n#span#1;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-            <element signature="n#span#2;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-            <element signature="n#span#0;n#span#0;n#span#2;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-            <element signature="n#span#3;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-            <element signature="n#span#0;n#span#0;n#span#3;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-            <element signature="n#span#4;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-            <element signature="n#span#0;n#span#0;n#span#4;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-            <element signature="n#span#5;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-            <element signature="n#span#0;n#span#0;n#span#5;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1144,7 +1102,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="569">
           <caret line="66" column="0" lean-forward="true" selection-start-line="42" selection-start-column="2" selection-end-line="66" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1152,22 +1109,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="253" selection-end-column="25" />
-          <folding>
-            <element signature="n#span#0;n#mat-card#0;n#!!top" expanded="false" />
-            <element signature="n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-            <element signature="n#span#0;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-            <element signature="n#span#0;n#span#0;n#span#0;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-            <element signature="n#span#1;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-            <element signature="n#span#0;n#span#0;n#span#1;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-            <element signature="n#span#2;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-            <element signature="n#span#0;n#span#0;n#span#2;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-            <element signature="n#span#3;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-            <element signature="n#span#0;n#span#0;n#span#3;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-            <element signature="n#span#4;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-            <element signature="n#span#0;n#span#0;n#span#4;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-            <element signature="n#span#5;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-            <element signature="n#span#0;n#span#0;n#span#5;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1175,9 +1116,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="35" column="33" lean-forward="false" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
-          <folding>
-            <element signature="n#span#0;n#span#0;n#span#0;n#span#0;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1185,7 +1123,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="688">
           <caret line="84" column="58" lean-forward="false" selection-start-line="84" selection-start-column="58" selection-end-line="84" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1193,70 +1130,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="379">
           <caret line="65" column="161" lean-forward="false" selection-start-line="65" selection-start-column="158" selection-end-line="65" selection-end-column="161" />
-          <folding>
-            <element signature="n#span#0;n#span#0;n#span#0;n#span#0;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app-routing.module.ts">
+    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="276" column="9" lean-forward="false" selection-start-line="276" selection-start-column="9" selection-end-line="276" selection-end-column="9" />
+        <state relative-caret-position="476">
+          <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
           <folding>
-            <element signature="e#3219#3306#0" expanded="true" />
-            <element signature="e#4563#4694#0" expanded="true" />
-            <marker date="1575036271777" expanded="true" signature="14060:14193" ph="{&quot;endpoint&quot;: &quot;datalistwithouttoken&quot;...}" />
-            <marker date="1575036271777" expanded="true" signature="14582:14890" ph="{&quot;path&quot;: 'manage-event-listing'...}" />
-            <marker date="1575036271777" expanded="true" signature="14729:14836" ph="{&quot;endpoint&quot;: 'datalist'...}" />
-            <marker date="1575036271777" expanded="true" signature="14752:14806" ph="{&quot;source&quot;: 'events_view'...}" />
-            <marker date="1575036271777" expanded="true" signature="14892:15124" ph="{&quot;path&quot;: 'manage-event/edit/:_id'...}" />
-            <marker date="1575036271777" expanded="true" signature="15032:15121" ph="{&quot;endpoint&quot;: 'datalist'...}" />
-            <marker date="1575036271777" expanded="true" signature="15053:15095" ph="{&quot;source&quot;: 'event'...}" />
-            <marker date="1575036271777" expanded="true" signature="15364:15638" ph="{&quot;path&quot;: 'newsletter-list'...}" />
-            <marker date="1575036271777" expanded="true" signature="15502:15633" ph="{&quot;endpoint&quot;: 'datalist'...}" />
-            <marker date="1575036271777" expanded="true" signature="15528:15599" ph="{&quot;source&quot;: 'subscriptiongroupadd'...}" />
-            <marker date="1575036271777" expanded="true" signature="15648:15941" ph="{&quot;path&quot;: 'subscriber-group/edit/:_id'...}" />
-            <marker date="1575036271777" expanded="true" signature="15805:15936" ph="{&quot;endpoint&quot;: 'datalist'...}" />
-            <marker date="1575036271777" expanded="true" signature="15831:15902" ph="{&quot;source&quot;: 'subscriptiongroupadd'...}" />
-            <marker date="1575036271777" expanded="true" signature="16019:16287" ph="{&quot;path&quot;: 'newsletter/edit/:_id'...}" />
-            <marker date="1575036271777" expanded="true" signature="16158:16282" ph="{&quot;endpoint&quot;: 'datalist'...}" />
-            <marker date="1575036271777" expanded="true" signature="16184:16248" ph="{&quot;source&quot;: 'newsLetterAdd'...}" />
-            <marker date="1575036271777" expanded="true" signature="16362:16637" ph="{&quot;path&quot;: 'subscriber/edit/:_id'...}" />
-            <marker date="1575036271777" expanded="true" signature="16501:16632" ph="{&quot;endpoint&quot;: 'datalist'...}" />
-            <marker date="1575036271777" expanded="true" signature="16527:16598" ph="{&quot;source&quot;: 'newsLetterSubscriber'...}" />
-            <marker date="1575036271777" expanded="true" signature="16708:16968" ph="{&quot;path&quot;: 'sender/edit/:_id'...}" />
-            <marker date="1575036271777" expanded="true" signature="16836:16963" ph="{&quot;endpoint&quot;: 'datalist'...}" />
-            <marker date="1575036271777" expanded="true" signature="16862:16929" ph="{&quot;source&quot;: 'newsletterSender'...}" />
-            <marker date="1575036271777" expanded="true" signature="17041:17299" ph="{&quot;path&quot;: 'testemail/edit/:_id'...}" />
-            <marker date="1575036271777" expanded="true" signature="17174:17294" ph="{&quot;endpoint&quot;: 'datalist'...}" />
-            <marker date="1575036271777" expanded="true" signature="17200:17260" ph="{&quot;source&quot;: 'testEmail'...}" />
-            <marker date="1575036271777" expanded="true" signature="17356:17471" ph="//..." />
-            <marker date="1575036271777" expanded="true" signature="17475:17748" ph="{&quot;path&quot;: 'blog-management'...}" />
-            <marker date="1575036271777" expanded="true" signature="17622:17743" ph="{&quot;endpoint&quot;: 'datalist'...}" />
-            <marker date="1575036271777" expanded="true" signature="17648:17709" ph="{&quot;source&quot;: 'blogs_view'...}" />
-            <marker date="1575036271777" expanded="true" signature="17880:18144" ph="{&quot;path&quot;: 'blog-category/list'...}" />
-            <marker date="1575036271777" expanded="true" signature="18010:18139" ph="{&quot;endpoint&quot;: 'datalist'...}" />
-            <marker date="1575036271777" expanded="true" signature="18036:18105" ph="{&quot;source&quot;: 'blog_category_view'...}" />
-            <marker date="1575036271777" expanded="true" signature="18148:18418" ph="{&quot;path&quot;: 'blog-category/edit/:_id'...}" />
-            <marker date="1575036271777" expanded="true" signature="18284:18413" ph="{&quot;endpoint&quot;: 'datalist'...}" />
-            <marker date="1575036271777" expanded="true" signature="18310:18379" ph="{&quot;source&quot;: 'blog_category_view'...}" />
-            <marker date="1575036271777" expanded="true" signature="18477:18567" ph="//..." />
-            <marker date="1575036271777" expanded="true" signature="18632:18698" ph="{&quot;path&quot;: 'blogs/list'...}" />
-            <marker date="1575036271777" expanded="true" signature="18702:18947" ph="{&quot;path&quot;: 'blogs/edit/:_id'...}" />
-            <marker date="1575036271777" expanded="true" signature="18826:18942" ph="{&quot;endpoint&quot;: 'datalist'...}" />
-            <marker date="1575036271777" expanded="true" signature="18852:18908" ph="{&quot;source&quot;: 'blogs'...}" />
-            <marker date="1575036271777" expanded="true" signature="19004:19056" ph="/** User Management ...*/" />
-            <marker date="1575036271777" expanded="true" signature="19059:19259" ph="{&quot;path&quot;: 'user-management'...}" />
-            <marker date="1575036271777" expanded="true" signature="19679:19736" ph="/** Affiliate Management ...*/" />
-            <marker date="1575036271777" expanded="true" signature="20092:20164" ph="{...}" />
+            <element signature="e#0#50#0" expanded="false" />
+            <marker date="1575037198328" expanded="true" signature="565:2010" ph="{...}" />
+            <marker date="1575037198328" expanded="true" signature="1879:1952" ph="{...}" />
+            <marker date="1575037198328" expanded="true" signature="1973:2007" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
+        <state relative-caret-position="782">
           <caret line="190" column="37" lean-forward="false" selection-start-line="190" selection-start-column="37" selection-end-line="190" selection-end-column="37" />
           <folding>
             <element signature="n#span#0;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
@@ -1275,14 +1167,177 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component.ts">
+    <entry file="file://$PROJECT_DIR$/src/app/component/backend/dashboard/dashboard.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="50" column="6" lean-forward="false" selection-start-line="50" selection-start-column="6" selection-end-line="50" selection-end-column="6" />
+        <state relative-caret-position="289">
+          <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="132" />
+          <folding>
+            <element signature="n#style#0;n#img#3;n#mat-card#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/layout/footer/footer.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="227" column="34" lean-forward="false" selection-start-line="227" selection-start-column="24" selection-end-line="227" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/backend/events/add-edit-manage-event/add-edit-manage-event.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/api.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#87#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/backend/events/add-edit-manage-event/add-edit-manage-event.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="244" column="58" lean-forward="false" selection-start-line="244" selection-start-column="38" selection-end-line="244" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/backend/newsletterlists/add-edit-subscriber-group/add-edit-subscriber-group.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="24" column="28" lean-forward="false" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/backend/blog-management/blog-management.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="47" column="1" lean-forward="true" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="24" />
+          <folding>
+            <element signature="e#1#51#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="223" column="0" lean-forward="false" selection-start-line="223" selection-start-column="0" selection-end-line="223" selection-end-column="0" />
+          <folding>
+            <element signature="e#4337#4404#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/backend/events/manage-event-listing/manage-event-listing.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="60" column="69" lean-forward="true" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/backend/blog-management/blog-management.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="36" column="171" lean-forward="false" selection-start-line="36" selection-start-column="171" selection-end-line="36" selection-end-column="196" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/backend/maindashboard/maindashboard.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#50#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/backend/events/manage-event-listing/manage-event-listing.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-281">
+          <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#50#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/backend/events/home-event/home-event.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/layout/header/header.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="7" column="66" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="334" column="31" lean-forward="false" selection-start-line="334" selection-start-column="11" selection-end-line="334" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/layout/bk-header/bk-header.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="52" column="22" lean-forward="true" selection-start-line="50" selection-start-column="17" selection-end-line="52" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/backend/events/home-event/home-event.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/backend/events/home-event/home-event.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="30" column="40" lean-forward="false" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
-            <element signature="n#!!block;n#constructor#0;n#SpeakerEngagementsDetailComponent#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="1377" column="92" lean-forward="false" selection-start-line="1377" selection-start-column="92" selection-end-line="1377" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/backend/maindashboard/maindashboard.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="136" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="136" />
+          <folding />
         </state>
       </provider>
     </entry>
