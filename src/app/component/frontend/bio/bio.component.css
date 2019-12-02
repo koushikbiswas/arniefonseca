@@ -54,6 +54,15 @@
     .textwrapper p{padding-right: 44%;}
 }
 
-@media only screen and (max-width: 1400px) {
+
+@media only screen and (max-width: 1400px) {         
     .textwrapper h3{padding-right: 8%;}
+}
+@media only screen and (max-width: 1199px) {         
+    .imgwrapper{float: none; display: block;margin: 0 auto;margin-bottom: 30px;}
+    .imgwrapper img{display: block;}
+    .textwrapper h2{text-align: center;}
+    .textwrapper h3{text-align: center;padding-right: 0;}
+    .textwrapper p{text-align: center;padding-right: 0;}
+    .textwrapper{background: #f2f4f4;background-image: inherit !important;}
 }
