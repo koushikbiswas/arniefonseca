@@ -38,6 +38,7 @@ import { WorkshopDetailComponent } from './component/frontend/events/workshop-de
 import { SeminarsDetailComponent } from './component/frontend/events/seminars-detail/seminars-detail.component';
 import { SpeakerEngagementsDetailComponent } from './component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component';
 
+import { BioComponent } from './component/frontend/bio/bio.component';
 
 /**End Frontend Routing**/
 
@@ -99,6 +100,7 @@ import { AddEditSubscriberComponent } from './component/backend/newsletterlists/
 import { AddEditSubscriberGroupComponent } from './component/backend/newsletterlists/add-edit-subscriber-group/add-edit-subscriber-group.component';
 import { AddEditSendersComponent } from './component/backend/newsletterlists/add-edit-senders/add-edit-senders.component';
 import { AddEditTestemailComponent } from './component/backend/newsletterlists/add-edit-testemail/add-edit-testemail.component';
+
 
 /**End Backend Routing**/
 
@@ -228,7 +230,7 @@ const routes: Routes = [
   { path: 'video-gallery', component: VideoGalleryComponent },
   { path: 'team', component: TeamComponent },
   { path: 'booking-report', component: BookingReportComponent },
-
+  { path: 'bio', component: BioComponent },
 
 // ___________________event frontend__________________//
 
@@ -254,24 +256,24 @@ const routes: Routes = [
     }
   },
 
-  { path: 'seminars-detail', component: SeminarsDetailComponent,
+  { path: 'seminars-detail/:_id', component: SeminarsDetailComponent,
     resolve: { seminarsDetailData: ResolveService },
     data: {
-      requestcondition: { source: "seminars-detail", condition: {type:"seminars"} },
+      requestcondition: { source: "events_view", condition: {type:"seminars"} },
       endpoint: "datalistwithouttoken"
     }
   },
-  { path: 'workshop-detail', component: WorkshopDetailComponent,
+  { path: 'workshop-detail/:_id', component: WorkshopDetailComponent,
     resolve: { workshopsDetailData: ResolveService },
     data: {
-      requestcondition: { source: "workshops", condition: {type:"workshops"} },
+      requestcondition: { source: "events_view", condition: {type:"workshops"} },
       endpoint: "datalistwithouttoken"
     }
   },
-  { path: 'speaker-engagements-detail', component: SpeakerEngagementsDetailComponent,
+  { path: 'speaker-engagements-detail/:_id', component: SpeakerEngagementsDetailComponent,
   resolve: { speakerEngagementsDetailData: ResolveService },
   data: {
-    requestcondition: { source: "speaker-engagements", condition: {type:"speaker-engagements"} },
+    requestcondition: { source: "events_view", condition: {type:"speaker-engagements"} },
     endpoint: "datalistwithouttoken"
     }
   },

@@ -86,24 +86,46 @@
                                                         <img src="../../../../assets/images/icon-comment.png"> <span class="count"><span>6</span> comment</span>
                                                 </span>
                                             </span> -->
+
+                                            <!-- <div class="sherelinkwrapper">
+                                              <div class="ascol ascol1">
+                                                <p>Share Link for Rep Sign Up</p>
+                                              </div>
+                                              <div class="ascol ascol2">
+                                                <div class="urllink">
+                                                  <a style="pointer-events: none;cursor: default;" href="https://www.betoparedes.com/sales-associate.php?affid={{userId}}">https://www.betoparedes.com/sales-associate.php?affid={{userId}}</a>
+                                                </div>
+                                                  <button class="urlcopybtn" (click)="copyText('https://www.betoparedes.com/sales-associate.php?affid='+userId)"><i class="fa fa-link" aria-hidden="true"></i></button>
+                                              </div>
+                                              <div class="ascol ascol3">
+                                                  <a target="_blank" href="https://www.facebook.com/sharer.php?url=https%3A%2F%2Fwww.betoparedes.com%2Fsales-associate.php%3Faffid%3D{{userId}}" class="icon-button facebook"><i class="fa fa-facebook"></i></a>
+                                                 <a href="#" class="icon-button google-plus"><i class="fa fa-twitter"></i></a>   
+                                                  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.betoparedes.com%2Fsales-associate.php%3Faffid%3D{{userId}}" target="_blank" class="icon-button linkedin"><i class="fa fa-linkedin"></i></a>
+                                                  <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.betoparedes.com%2Fsales-associate.php%3Faffid%3D{{userId}}"  target="_blank" class="icon-button twitter"><i class="fa fa-twitter"></i></a>
+                                                  <a href="https://www.tumblr.com/widgets/share/tool?shareSource=legacy&canonicalUrl=https%3A%2F%2Fwww.betoparedes.com%2Fsales-associate.php%3Faffid%3D{{userId}}" target="_blank" class="icon-button tumblr"><i class="fa fa-tumblr"></i></a>
+                                              </div>
+                                            </div> -->
+
+
+
                   <span class="sharelinkswrapper">
                     <span class="blogsociallists">
-                      <a class="sociallink fa fb">
+                      <a class="sociallink fa fb" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fdev.arniefonseca.influxiq.com%2Fblog%2F{{item._id}}" target="_blank">
                         <fa name="facebook" class="fa-facebook"></fa>
                       </a>
-                      <a class="sociallink fa twi">
+                      <a class="sociallink fa twi" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fdev.arniefonseca.influxiq.com%2Fblog%2F{{item._id}}" target="_blank">
                         <fa name="twitter" class="fa-twitter"></fa>
                       </a>
-                      <a class="sociallink fa pin">
-                        <fa name="pinterest" class="fa-pinterest"></fa>
+                      <a class="sociallink fa tumblr" href="https://www.tumblr.com/widgets/share/tool?shareSource=legacy&canonicalUrl=https%3A%2F%2Fdev.arniefonseca.influxiq.com%2Fblog%2F{{item._id}}" target="_blank">
+                        <fa name="tumblr" class="fa-tumblr"></fa>
                       </a>
-                      <a class="sociallink fa lin">
+                      <a class="sociallink fa lin" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fdev.arniefonseca.influxiq.com%2Fblog%2F{{item._id}}" target="_blank">
                         <fa name="linkedin" class="fa-linkedin"></fa>
                       </a>
-                      <a class="sociallink fa env">
+                      <!-- <a class="sociallink fa env">
                         <fa name="envelope" class="fa-envelope"></fa>
-                      </a>
-                      <a class="sociallink fa share">
+                      </a> -->
+                      <a class="sociallink fa share" (click)="copyText('https://dev.arniefonseca.influxiq.com/blog%2F?affid='+item._id)">
                         <fa name="share" class="fa-share"></fa>
                       </a>
                     </span>

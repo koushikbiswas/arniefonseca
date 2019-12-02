@@ -25,7 +25,8 @@
     router.url == '/speaker-engagements'  || 
     router.url == '/speaker-engagements-detail' || 
     activeroute.snapshot.routeConfig.path == 'blogdetail/:_id' ||
-    router.url ==='/add-edit-newsletter'
+    router.url ==='/add-edit-newsletter'|| 
+    router.url == '/bio'
   ">
   <span class="scroll-to-top" [ngClass]="{ 'show-scrollTop': windowScrolled }">
     <a (click)="scrollToTop()">
@@ -229,7 +230,8 @@
     activeroute.snapshot.routeConfig.path == '/sender/edit/:_id' || 
     activeroute.snapshot.routeConfig.path == '/subscriber-group/edit/:_id' || 
     activeroute.snapshot.routeConfig.path == '/subscriber/edit/:_id' || 
-    activeroute.snapshot.routeConfig.path == '/newsletter/edit/:_id'">
+    activeroute.snapshot.routeConfig.path == '/newsletter/edit/:_id' || 
+    router.url == '/bio'">
   <mat-card-content>
     <app-bk-footer></app-bk-footer>
   </mat-card-content>

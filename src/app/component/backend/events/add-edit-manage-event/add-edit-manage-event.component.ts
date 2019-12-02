@@ -10,7 +10,7 @@ import {environment } from '../../../../../environments/environment.prod';
 import { CookieService } from 'ngx-cookie-service';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import {Router,ActivatedRoute} from '@angular/router'
-import { HttpService} from 'src/app/services/http.service';
+import { HttpService} from '../../../../services/http.service';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 // import {MAT_MOMENT_DATE_FORMATS, MomentDateAdapter} from '@angular/material-moment-adapter';
 // import {DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE} from '@angular/material/core';

@@ -70,13 +70,7 @@
       "lib-listing/*": [
         "dist/listing/*"
       ],
-     
-      "news-title": [
-        "dist/news-title"
-      ],
-      "news-title/*": [
-        "dist/news-title/*"
-      ],"testimonial": [
+      "testimonial": [
         "dist/testimonial"
       ],
       "testimonial/*": [
@@ -101,8 +95,6 @@
       "news-title/*": [
         "dist/news-title/*"
       ]
-
-
  
     }
   }

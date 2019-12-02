@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CookieService } from 'ngx-cookie-service';
 import { Router, ActivatedRoute } from '@angular/router';
-import { HttpService } from 'src/app/services/http.service';
+import { HttpService } from '../../../../services/http.service';
 import {environment } from '../../../../../environments/environment.prod';
 
 

@@ -1,6 +1,6 @@
 import { Component, OnInit, Inject  } from '@angular/core';
 import { BkLeftdivComponent } from '../../../app/layout/bk-leftdiv/bk-leftdiv.component';
-import { SidenavService } from '../../../app/services/sidenav.service';
+import { SidenavService } from '../../services/sidenav.service';
 
 import {MatDialog} from '@angular/material/dialog';
 import { CookieService } from 'ngx-cookie-service';

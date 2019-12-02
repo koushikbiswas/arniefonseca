@@ -12,7 +12,7 @@
 <mat-card class="ptb-40 generalcls workshopswrapper" style="background: #f2f4f4 !important;">
     <span class="mainwrappercontent bloghead">
         <mat-card-content>
-            <h2>upcoming workshops</h2>
+            <h2>workshops</h2>
             <p>
                 Check out some of the pictures from the many conferences, seminars, workshops and other such events that I have been a part of in the past.This <br>Image Gallery is updated after every event I attend. So, you can always check back regularly for the pictures from the latest and upcoming events.
             </p>
@@ -26,6 +26,10 @@
 
             <span class="event_right_blog" *ngFor="let pasteventsem of WorkshopsListArry | slice:0:indexval; let i=index">
 
+
+                  <span class="event_right_blog_wrapper">
+
+                      <span class="event_right_blog_wrapperrow">
                 <span class="event_right_blog_img">
                     <img src="{{pasteventsem.image}}"   >
                 </span>
@@ -35,21 +39,22 @@
 
                     <label>{{pasteventsem.date}}</label>
 
-                    <button>Know more</button>
+                    <button (click)="detail(pasteventsem._id)">Know more</button>
 
                      <span class="clear"></span>
                 </span>
                 <span class="clear"></span>
-
+</span>
+         </span>
 
             </span>
-
+            <button *ngIf="indexvallength > indexval && indexvallength !=null" class="viewalleventbtn" (click)="blogloadmore()">View More</button>
         </mat-card-content>
 
 
         <mat-card-content class="event_left">
 
-            <span class="event_blog" *ngFor="let eventsem of WorkshopsListArry | slice:0:indexval; let i=index">
+            <span class="event_blog" *ngFor="let eventsem of WorkshopsListArry | slice:0:indexvalleft; let i=index">
             <span class="event_blog_top">
 
            <label>{{eventsem.date}}</label>
@@ -57,9 +62,9 @@
              </span>
                  <h3>{{eventsem.title}} – {{eventsem.time}}</h3>
 
-            <img src="{{eventsem.image}}" class="event_img"  >
+          <span class="event_img">  <img src="{{eventsem.image}}"   ></span>
 
-             <p class="event_text">  <span [innerHtml]="eventsem.description"></span> <a href="javascript:void(0);" [routerLink]="['/seminars-detail']">Continue Reading</a></p>
+             <p class="event_text">  <span class="spantext" [innerHtml]="eventsem.description"></span>  <a href="javascript:void(0);" (click)="detail(eventsem._id)" >Continue Reading</a></p>
 
 
                 <span class="event_share_block">
@@ -75,7 +80,7 @@
            </span>
 
 
-
+            <button *ngIf="indexvalleftlengthlength > indexvalleft && indexvalleftlengthlength !=null" class="viewalleventbtn" (click)="blogloadmorenew()">View More</button>
 
         </mat-card-content>
 

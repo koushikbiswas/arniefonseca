@@ -37,7 +37,8 @@
     .topblock .mat-list{display:block;float:none;margin:22px auto;padding:0;clear:both;width:586px}	
     }
 
-    @media only screen and (max-width: 991px) {		
+    @media only screen and (max-width: 991px) {	
+        	
         .tablediv table td{text-align: right !important;}		
         .tabblock .tablists ul li.nav-item a.nav-link {font-size: 20px; line-height: 24px;  padding: 15px 15px;}		
         .tablediv table td.tablebuttondiv{border:0px !important;border-bottom: 0px solid #ffffff !important;}		
@@ -48,7 +49,7 @@
         .tablediv table tr:last-child td.empycell {border-bottom: 0px solid #ddd !important;}		
         /* .tablediv table tr:last-child td {border-bottom: 0px solid #ddd !important;}		 */
         .newcheckboxdiv {text-align: left; float: right;}		
-        .tablediv table th, .tablediv table td {border-bottom: 1px solid #646464 !important;}		
+        .tablediv table th, .tablediv table td {border-bottom: 1px solid #c0c1c3 !important;}		
         .tablediv table td {padding: 10px;}		
         .tablediv.affiliatetree table.mat-table tr:nth-child(even){background-color: #353434;}		
         .n-audiodeadeline_admin_header .n-audiodeadeline_admin_header_user .n-audiodeadeline_user {width: 37px; height: auto;}		
@@ -60,21 +61,38 @@
         .tablediv table {border: 0;}		
         .tablediv table caption {font-size: 1.3em;}		
         .tablediv table thead {border: none;clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px;}		
-        .tablediv table tr {border-bottom: 0px solid #ddd; width: 100%; margin-bottom: .625em;}		
-        .tablediv table td {border-bottom: 1px solid #ddd; display: block; font-size: 13px; text-align: right; padding-left: 25%;}		
+        .tablediv table tr {border-bottom: 0px solid #c0c1c3; width: 100%; margin-bottom: .625em;}		
+        .tablediv table td {border-bottom: 1px solid #c0c1c3; display: block; font-size: 13px; text-align: right; padding-left: 25%;}
+        .tablediv table tr:last-child td{border-bottom: 1px solid #c0c1c3 !important;}
+
         .adminlisttable .whitebtnlists {text-align: right!important;}		
         .tablediv table td button, .tablediv table td button:hover{float: right;}		
         .tablediv table td:first-child::before {content: attr(data-label) !important; float: left;  font-weight: bold; text-transform: uppercase; text-align: left; margin-left: -18px;		
          color: #000;}		
         .adminlisttable.adminlisttabledashboard .tablediv table tr {display: table-row !important;}		
         .tablediv table td:last-child::before {content: attr(data-label) !important; float: left; font-weight: bold; text-transform: uppercase; text-align: left; color: #000;}		
-        .tablediv table td::after {content: attr(data-label);float: left;font-weight: bold; text-transform: uppercase; text-align: left; margin-left: -33%; color: #000;}		
+        /* .tablediv table td::after {content: attr(data-label);float: left;font-weight: bold; text-transform: uppercase; text-align: left; margin-left: -33%; color: #000;}		 */
+        .tablediv table td::after{display: none;}
         .tablediv .mytranningcategory .admin_table_wrapper table td::before {content: attr(datalabel) !important; float: left;font-weight: bold;text-transform: uppercase; text-align: left;		
         margin-left: 0%; color: #000;}		
         .tablediv table td::before {content: attr(title); float: left; font-weight: bold; text-transform: uppercase; text-align: left;margin-left: -33%;color: #000;}		
-        .tablediv table td:last-child {border-bottom: 0;} 		
+        .tablediv table td:last-child {border-bottom: 0;} 
+        .tablediv table td.mat-column-Actions {
+            width: auto;
+            padding-right: 10px;
+        }		
     }
 
+    @media only screen and (max-width: 767px) {
+      
+        .tablediv .searchbar .mat-form-field {
+            display: flex !important;
+            flex: 1 1 50%;
+        }
+        .bloglists .tablediv .searchbar span.textsearch, .blogcatlists .tablediv .searchbar  span.textsearch {
+            width: 100%;
+        }
+    }
    
     @media only screen and (max-width: 667px) {
     .topmenudevider2{display:block;width:30px;height:78px;float:left}
@@ -89,4 +107,11 @@
     @media only screen and (max-width: 540px) {
     .headerlogo{width:100%;float:none;background:#222!important;padding:10px 2px;display:block}
     .headerlogo img{width:auto;max-width:90%}
+    .searchblock .searchblockwrapper {
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
     }

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MetaService } from '@ngx-meta/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import * as moment from 'moment';
-import { ApiService } from 'src/app/api.service';
+import { ApiService } from '../../../../api.service';
 import { SafeResourceUrl, DomSanitizer } from '@angular/platform-browser';
 @Component({
   selector: 'app-speaker-engagements',
@@ -11,9 +11,18 @@ import { SafeResourceUrl, DomSanitizer } from '@angular/platform-browser';
 })
 export class SpeakerEngagementsComponent implements OnInit {
 
-  private indexvallength: any;
+  public indexvallength: any=1;
 
-  public indexval:any=4;
+
+  public indexval:any=6;
+
+
+  public indexvalleftlengthlength: any=1;
+
+
+  public indexvalleft:any=2;
+
+
 
   public  SpeakerListArry: any = []
   public dataformate: any;
@@ -50,6 +59,8 @@ export class SpeakerEngagementsComponent implements OnInit {
       this.SpeakerListArry = result;
 
       this.indexvallength = this.SpeakerListArry.length;
+
+      this.indexvalleftlengthlength = this.SpeakerListArry.length;
     })
 
 
@@ -58,8 +69,20 @@ export class SpeakerEngagementsComponent implements OnInit {
     //***********load more view blog *************//
     blogloadmore(){
       // console.log('load more')
-      this.indexval=this.indexval+2;
+      this.indexval=this.indexval+1;
   
     }
+
+
+  blogloadmorenew(){
+    // console.log('load more')
+    this.indexvalleft=this.indexvalleft+1;
+
+  }
+
+  detail(val:any){
+    console.log(val)
+    this.router.navigateByUrl("/speaker-engagements-detail/"+val);
+  }
 
 }
