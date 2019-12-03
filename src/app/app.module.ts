@@ -121,12 +121,12 @@ import { NgxMaterialTimepickerModule } from 'ngx-material-timepicker';
 
 import { ContactusModule } from 'contactus';
 import { HomeEventComponent } from './component/backend/events/home-event/home-event.component';
-// import { NewsTitleModule } from 'news-title-lib-influxiq';
-// import { ServicelibModule } from 'service-lib-influxiq';
-// import { TestimonialModule } from 'testimonial-lib-influxiq';
-// import { FileUploadModule } from 'file-upload-lib-influxiq';
-// import { LoginModule } from 'login-lib-influxiq';
-// import { BlogModule } from 'blog-lib-influxiq';
+import { NewsTitleModule } from 'news-title-lib-influxiq';
+import { ServicelibModule } from 'service-lib-influxiq';
+import { TestimonialModule } from 'testimonial-lib-influxiq';
+import { FileUploadModule } from 'file-upload-lib-influxiq';
+import { LoginModule } from 'login-lib-influxiq';
+import { BlogModule } from 'blog-lib-influxiq';
 /**End Backend Component** */
 
 
@@ -237,12 +237,12 @@ import { HomeEventComponent } from './component/backend/events/home-event/home-e
     TransferHttpCacheModule,
     HttpClientModule,
     NgtUniversalModule,
-    // LoginModule,
-    // BlogModule,
-    // TestimonialModule,
-    // ServicelibModule,
-    // ContactusModule,
-    // FileUploadModule,
+    LoginModule,
+    BlogModule,
+    TestimonialModule,
+    ServicelibModule,
+    ContactusModule,
+    FileUploadModule,
     HttpClientModule,
     AppRoutingModule,MetaModule.forRoot(), BrowserAnimationsModule,
     ListingModule,
