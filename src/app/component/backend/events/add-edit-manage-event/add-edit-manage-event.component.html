@@ -62,14 +62,17 @@
 
                         <!-- date field  -->
                         <mat-form-field>
-                            <input matInput [matDatepicker]="picker" (blur)="inputBlur('date')" formControlName="date"
-                                placeholder="Choose a date">
+                            <input matInput [matDatepicker]="picker" (blur)="inputBlur('date')" formControlName="date"  placeholder="Choose a date">  
                             <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                             <mat-datepicker #picker></mat-datepicker>
                             <mat-error
                                 *ngIf="!eventForm.controls['date'].valid && eventForm.controls['date'].errors.required && eventForm.controls['date'].touched ">
                                 choose a valid date</mat-error>
                         </mat-form-field><br>
+
+
+
+                        <!-- date new  -->
 
 
                         <!-- time field  -->
@@ -83,8 +86,23 @@
                         </div>
                        
 
-
                         <br>
+
+                        <!-- Zone  -->
+
+
+                        <mat-form-field>
+                            <mat-label>Select Time Zone</mat-label>
+                            <mat-select  formControlName="timeZone" (blur)="inputBlur('timeZone')">
+                              <mat-option *ngFor="let zone of timeZoneList" [value]="zone.value">{{zone.name}}</mat-option>
+                            </mat-select>
+                            <mat-error
+                                *ngIf="!eventForm.controls['timeZone'].valid && eventForm.controls['timeZone'].errors.required && eventForm.controls['timeZone'].touched ">
+                                timeZone field can not be blank</mat-error>
+                          </mat-form-field>
+                        
+
+
 
 
 
@@ -158,7 +176,7 @@
                         <mat-checkbox formControlName="status">Active</mat-checkbox><br><br>
 
 
-                        <button mat-raised-button color="primary" type="reset">reset</button>&nbsp;
+                        <button mat-raised-button color="primary" type="reset">RESET</button>&nbsp;
 
                         <button mat-raised-button color="primary" type="button" (click)="submit()">{{btn_text}}</button>
 

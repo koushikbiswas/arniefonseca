@@ -119,19 +119,26 @@ import { AddEditTestemailComponent } from './component/backend/newsletterlists/a
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 import { NgxMaterialTimepickerModule } from 'ngx-material-timepicker';
 
-import { ContactusModule } from 'contactus';
+import {DatePipe} from '@angular/common';
+
 
 
 import { HomeEventComponent } from './component/backend/events/home-event/home-event.component';
 
 
+
+// import { TestimonialModule } from 'testimonial';
+// import { LoginModule } from 'login';
+// import { FileUploadModule } from 'file-upload';
+import { ContactusModule } from 'contactus';
+import { HomeEventComponent } from './component/backend/events/home-event/home-event.component';
 import { NewsTitleModule } from 'news-title-lib-influxiq';
 import { ServicelibModule } from 'service-lib-influxiq';
 import { TestimonialModule } from 'testimonial-lib-influxiq';
 import { FileUploadModule } from 'file-upload-lib-influxiq';
 import { LoginModule } from 'login-lib-influxiq';
 import { BlogModule } from 'blog-lib-influxiq';
-
+/**End Backend Component** */
 
 
 @NgModule({
@@ -257,7 +264,7 @@ import { BlogModule } from 'blog-lib-influxiq';
     ReactiveFormsModule,
     NewsTitleModule
   ],
-  providers: [CookieService, AuthGuard, ApiService, SidenavService],
+  providers: [CookieService, AuthGuard, ApiService, SidenavService,DatePipe],
   bootstrap: [AppComponent],
   schemas:[CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
   entryComponents: [comingSoonDialog, DialogPrivacyDialog, DialogTermsDialog,CommonVideoModalComponent, NewslatterDialogComponent,VideoModalComponent, NewslattersuccessDialogComponent, CommonTestimonialVideoModalComponent,EventModal]

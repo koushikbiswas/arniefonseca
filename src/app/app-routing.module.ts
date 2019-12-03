@@ -212,6 +212,12 @@ const routes: Routes = [
     data: { requestcondition: { source: 'service_view', condition: {} }, endpoint: 'datalist' }
   },
   {
+    path: 'service',
+    component: ServiceComponent,
+    resolve: { serviceList: ResolveService },
+    data: { requestcondition: { source: 'service_view', condition: {} }, endpoint: 'datalist' }
+  },
+  {
     path: 'service/edit/:_id', component: AddeditServiceComponent, resolve: { serviceData: ResolveService },
     data: { requestcondition: { source: 'service', condition: {} }, endpoint: 'datalist' }
   },

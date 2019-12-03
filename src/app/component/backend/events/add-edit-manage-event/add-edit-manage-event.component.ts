@@ -1,4 +1,4 @@
-import { Component, OnInit,Inject } from '@angular/core';
+import { Component, OnInit,Inject ,HostListener} from '@angular/core';
 import { FormGroup, FormBuilder, Validators ,FormControl} from '@angular/forms';
 // import 'angular-material-time-picker/dist/md-time-picker.css';
 // import {ngTimePicker} from '@angular-material-time-picker';
@@ -12,35 +12,62 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import {Router,ActivatedRoute} from '@angular/router'
 import { HttpService} from '../../../../services/http.service';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-// import {MAT_MOMENT_DATE_FORMATS, MomentDateAdapter} from '@angular/material-moment-adapter';
-// import {DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE} from '@angular/material/core';
-// import {default as _rollupMoment} from 'moment';
+import {MAT_MOMENT_DATE_FORMATS, MomentDateAdapter} from '@angular/material-moment-adapter';
+import {DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE} from '@angular/material/core';
+import {default as _rollupMoment} from 'moment';
+import {DatePipe, getLocaleDateFormat} from '@angular/common';
+import { analyzeAndValidateNgModules } from '@angular/compiler';
 
-const moment = _moment;
+
+const moment = _rollupMoment || _moment;
 
 export interface DialogData {
   msg: string;
 }
 
 
-// const moment = moment_;
+// See the Moment.js docs for the meaning of these formats:
+// https://momentjs.com/docs/#/displaying/format/
+
+// export const MY_FORMATS = {
+//   parse: {
+//     dateInput: 'LL',
+//   },
+//   display: {
+//     dateInput: 'LL',
+//     monthYearLabel: 'MMM YYYY',
+//     dateA11yLabel: 'LL',
+//     monthYearA11yLabel: 'MMMM YYYY',
+//   },
+// };
+//================================================================
+
 
 
 @Component({
   selector: 'app-add-edit-manage-event',
   templateUrl: './add-edit-manage-event.component.html',
-  styleUrls: ['./add-edit-manage-event.component.css']
+  styleUrls: ['./add-edit-manage-event.component.css'],
+  providers: [
+    // `MomentDateAdapter` and `MAT_MOMENT_DATE_FORMATS` can be automatically provided by importing
+    // `MatMomentDateModule` in your applications root module. We provide it at the component level
+    // here, due to limitations of our example generation script.
+    {provide: DateAdapter, useClass: MomentDateAdapter, deps: [MAT_DATE_LOCALE]},
+    {provide: MAT_DATE_FORMATS, useValue:MAT_MOMENT_DATE_FORMATS},
+  ]
 })
 
 
 export class AddEditManageEventComponent implements OnInit {
+
+public image_url:any=environment['imageUpload_url'];
   
   public eventForm:FormGroup;
   public booking_flag:boolean=false;
   public data: any ={};
   public action:any;
   public header_txt: any = 'Add Event';
-  public name_txt:any="ADD EVENTS";
+  public name_txt:any="Add Event";
   public btn_text:any='SUBMIT';
   public successMessage:any="Submitted Successfully!!!";
   public img_flag:any=false;
@@ -52,12 +79,22 @@ export class AddEditManageEventComponent implements OnInit {
   public ErrCode: boolean;
   public dialogRef: any;
 
+  // sticky section
+  isSticky: boolean = false;
+  stickyRight: boolean = false;
+  @HostListener('window:scroll', ['$event'])
+  checkScroll() {
+    this.isSticky = window.pageYOffset >= 50;
+  }
+
 
    /**ckeditor start here*/
    public Editor = ClassicEditor;  //for ckeditor
    editorConfig = {
      placeholder: 'Description..',
+     
    };
+  
    public model = {
      editorData: ''
    };
@@ -65,7 +102,7 @@ export class AddEditManageEventComponent implements OnInit {
 
 //image uplolad
    public configData: any = {
-    baseUrl: "http://3.15.236.141:5005/",
+    baseUrl: this.image_url,
     endpoint: "uploads",
     size: "51200", // kb
     format: ["jpg", "jpeg", "png", "bmp", "zip", 'html'], // use all small font
@@ -73,8 +110,43 @@ export class AddEditManageEventComponent implements OnInit {
     path: "files",
     prefix: "event_picture_"
   }
+  
 
-  constructor(public fb:FormBuilder,public _http: HttpService, private _authHttp: HttpClient, private cookieService: CookieService,public router:Router,public activatedRoute:ActivatedRoute,public dialog: MatDialog, public activeroute: ActivatedRoute) { 
+  //time zone json
+
+  public timeZoneList:any=[
+    {
+      "name":"Central Standard Time",
+      "value":"CST"
+    },
+    {
+      "name":"Mountain Standard Time(GMT-07:00)",
+      "value":"MST(GMT-07:00)" 
+    },
+    {
+      "name":"Mountain StandardT ime (GMT-06:00)",
+      "value":"MST(GMT-06:00)" 
+    },
+    {
+      "name":"Pacific Standard Time",
+      "value":"PST" 
+    },
+    {
+      "name":"Alaska Standard Time",
+      "value":"AST" 
+    },
+    {
+      "name":"Hawaii-Aleutian Standard Time",
+      "value":"HST" 
+    },
+    {
+      "name":"Eastern Standard Time",
+      "value":"EST" 
+    }
+
+  ]
+
+  constructor(public fb:FormBuilder,public _http: HttpService, private _authHttp: HttpClient, private cookieService: CookieService,public router:Router,public activatedRoute:ActivatedRoute,public dialog: MatDialog, public activeroute: ActivatedRoute,public datePipe:DatePipe) { 
 
     this.activatedRoute.params.subscribe(params => {
       if (params['_id'] != null) {
@@ -94,6 +166,8 @@ export class AddEditManageEventComponent implements OnInit {
 
   ngOnInit() {
     this.generateForm();
+    // this.getDate();
+   
 
     // Case 
     switch (this.action) {
@@ -107,11 +181,11 @@ export class AddEditManageEventComponent implements OnInit {
         this.header_txt="Edit Event"
         this.name_txt="Edit Event";
         this.successMessage = "One row updated";
-        this.setDefaultValue(this.defaultData);            
-        this.header_txt = "Edit Event";
+        this.setDefaultValue(this.defaultData);
         this.img_flag = true;
         break;
     }
+    
   }
 
 
@@ -120,6 +194,7 @@ export class AddEditManageEventComponent implements OnInit {
     this.eventForm=this.fb.group({
       title:['',Validators.required],
       date:['',Validators.required],
+      event_date:[],
       location:['',Validators.required],
       description:['',Validators.required],
       booking:['No'],
@@ -127,7 +202,8 @@ export class AddEditManageEventComponent implements OnInit {
       time:['',Validators.required],
       status:[],
       type:['',Validators.required],
-      event_image:[]
+      event_image:[],
+      timeZone:[]
 
     }) 
    
@@ -138,10 +214,12 @@ export class AddEditManageEventComponent implements OnInit {
   // set default value //
   setDefaultValue(defaultValue:any){
 
-    // console.log('#########',defaultValue);
+
+    // console.log('#########+++++++++++++++',defaultValue);
+
     this.eventForm.patchValue({
       title:defaultValue.title,
-      date:defaultValue.date,
+      event_date:defaultValue.date,
       location:defaultValue.location,
       description:defaultValue.description,
       booking:defaultValue.booking,
@@ -149,13 +227,19 @@ export class AddEditManageEventComponent implements OnInit {
       time:defaultValue.time,
       status:defaultValue.status,
       type:defaultValue.type,
-      event_image:defaultValue.event_image
+      event_image:defaultValue.event_image,
+      timeZone:defaultValue.timeZone
 
     })
-    this.fullImagePath=defaultValue.event_image.basepath + defaultValue.event_image.image;
+    let sDateArr: any = defaultValue.event_date.split("-");
+    this.eventForm.controls['date'].patchValue(moment([sDateArr[2], sDateArr[1] - 1, sDateArr[0]]));
+
+
+  this.fullImagePath=defaultValue.event_image.basepath + defaultValue.event_image.image;
   this.imageName=defaultValue.event_image.name;
   this.imageType=defaultValue.event_image.type;
   }
+
 
 
 
@@ -195,11 +279,24 @@ export class AddEditManageEventComponent implements OnInit {
     console.log('>>>>>>>>>>>>>>',this.eventForm.value.event_image)
 
 
+    let eventDate:any;
+    eventDate=this.eventForm.value.date;
+    console.log('$$$$$$$$$$$$',this.eventForm.value.date);
+
+    let dateFormat:any;
+    //change format date
+
+    dateFormat=this.datePipe.transform(this.eventForm.value.date,"MM-dd-yyyy");
+
+    console.log("******",dateFormat)
+
+    //unix code converted date
+
+    eventDate=moment(this.eventForm.value.date).format('x');
+
+    console.log('eventDate',eventDate)
 
 
-    // let date:any;
-    // date=this.eventForm.value.date;
-    // date=moment(new Date()).format("DD/MM/YYYY");
 
     //blur function
     for(let i in this.eventForm.controls){
@@ -211,7 +308,12 @@ export class AddEditManageEventComponent implements OnInit {
 
     if(this.eventForm.valid){
 
-      // this.eventForm.value.date=date;
+      this.eventForm.value.date=parseInt(eventDate);
+
+      this.eventForm.value.event_date=dateFormat;
+
+    
+
       console.log(this.eventForm.value);
 
        //status
@@ -264,6 +366,7 @@ export class AddEditManageEventComponent implements OnInit {
   clear_image(){
     this.img_flag=false;
   }
+
 }
 
 

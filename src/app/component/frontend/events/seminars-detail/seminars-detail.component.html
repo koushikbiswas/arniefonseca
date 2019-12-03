@@ -10,7 +10,7 @@
     </span>
 </mat-card>
 
-<mat-card class="ptb-40 generalcls workshopswrapper" style="background: #f2f4f4 !important;">
+<mat-card class="ptb-40 generalcls workshopswrapper" style="background: #f2f4f2 !important;">
 
   <mat-card class="event_wrapper">
 
@@ -26,13 +26,13 @@
                       <span class="event_right_blog_wrapperrow">
 
                 <span class="event_right_blog_img">
-                    <img src="../../../../assets/images/event_img1.jpg"   >
+                    <img src="{{seminer[0].image}}"   >
                 </span>
                 <span class="event_right_blog_text">
 
-                    <p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected</p>
+                    <p>{{seminer[0].description}}</p>
 
-                    <label>Oct 17, 2019</label>
+                    <label>{{seminer[0].event_date}}</label>
 
                     <button>Know more</button>
 
@@ -43,7 +43,7 @@
                 </span>
 
             </span>
-        <span class="event_right_blog">
+        <!-- <span class="event_right_blog">
 
 
                 <span class="event_right_blog_wrapper">
@@ -166,9 +166,7 @@
                 </span>
                 <span class="clear"></span>
                   </span>
-                </span>
-
-            </span>
+                </span> -->
 
        <!-- <button *ngIf="indexvallength > indexval && indexvallength !=null" class="viewalleventbtn" (click)="blogloadmore()">View More</button>-->
 
@@ -181,11 +179,11 @@
 
              <span class="event_blog">
             <span class="event_blog_top">
-           <label>{{seminer[0].date}} </label>
+           <label>{{seminer[0].event_date}} </label>
 
              <p>Conference Room • {{seminer[0].location}} </p>
              </span>
-               <h3>{{seminer[0].title}} – {{seminer[0].time}}</h3>
+               <h3>{{seminer[0].title}} – {{seminer[0].time}}-{{seminer[0].timeZone}}</h3>
 
              <span class="event_img">
             <img src="{{seminer[0].image}}" >

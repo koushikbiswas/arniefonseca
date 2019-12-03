@@ -32,7 +32,7 @@
             <span class="event_right_blog" *ngFor="let pasteventsem of SeminarsListArry | slice:0:indexval; let i=index">
 
 
-                <span class="event_right_blog_wrapper">
+                <span class="event_right_blog_wrapper" >
 
                       <span class="event_right_blog_wrapperrow">
 
@@ -43,7 +43,7 @@
 
                     <p [innerHtml]="pasteventsem.title"></p>
 
-                    <label>{{pasteventsem.date}}</label>
+                    <label>{{pasteventsem.event_date}}</label>
 
                     <button (click)="detail(pasteventsem._id)">Know more</button>
 
@@ -65,10 +65,10 @@
             <span class="event_blog" *ngFor="let eventsem of SeminarsListArry | slice:0:indexvalleft; let i=index">
             <span class="event_blog_top">
 
-           <label>{{eventsem.date}}</label>
+           <label>{{eventsem.event_date}}</label>
             <p>Conference Room • {{eventsem.location}}</p>
              </span>
-                <h3>{{eventsem.title}} – {{eventsem.time}}</h3>
+                <h3>{{eventsem.title}} – {{eventsem.time}}-{{eventsem.timeZone}}</h3>
 
                 <span class="event_img">
             <img src="{{eventsem.image}}"    >

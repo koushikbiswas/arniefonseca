@@ -14,12 +14,14 @@ export class ManageEventListingComponent implements OnInit {
   public eventDataList:any[];
   public baseUrl: any = environment["API_URL"];
 
+  public base_file_url:any=environment['file_url']
+
 
 
   // ===============================Declarations=========================
- public eventDataList_skip: any = ["_id","description_html","description","created_at","image","booking","bookingLink"];
- public detail_skip_array:any=["_id"]
- public eventDataList_modify_header: any = {"status":"Status"};
+ public eventDataList_skip: any = ["_id","description_html","description","created_at","image","booking","bookingLink","date_unix","date"];
+ public detail_skip_array:any=["_id","date_unix"]
+ public eventDataList_modify_header: any = {"status":"Status","event date":"Date","timeZone":"Time Zone"};
  public tableName: any = 'event';
  public UpdateEndpoint: any = "addorupdatedata";
  public deleteEndpoint: any = "deletesingledata";
@@ -29,11 +31,11 @@ public user_cookie:any=this.cookieService.get('jwtToken');
 public apiUrl: any = this.baseUrl;
 public status: any = [{ val: 1, 'name': 'Active' }, { val: 0, 'name': 'Inactive' }];
 public view:any="events_view";
-public date_search_source:any="";
+// public date_search_source:any="events_view";
 public date_search_endpoint:any="datalist";
  public search_settings: any = {
      selectsearch: [{ label: 'Search By Status', field: 'status', values: this.status }],
-     datesearch:[{startdatelabel:"Start Date",enddatelabel:"End Date",submit:"Search By Date",  field:"created_at"}],   // this is use for  date search 
+     datesearch:[{startdatelabel:"Start Date",enddatelabel:"End Date", submit:"Search By Date",  field:"date_unix"}],   // this is use for  date search 
 
    };
  // ====================================================================
@@ -41,7 +43,7 @@ public date_search_endpoint:any="datalist";
    image_detail_datatype:any = [{
      key: "image",
      value: 'image',
-     fileurl: 'https://s3.us-east-2.amazonaws.com/crmfiles.influxhostserver/files/'      // Image path 
+     fileurl: this.base_file_url      // Image path 
    }]
 
 
