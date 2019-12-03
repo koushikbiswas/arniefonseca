@@ -62,14 +62,17 @@
 
                         <!-- date field  -->
                         <mat-form-field>
-                            <input matInput [matDatepicker]="picker" (blur)="inputBlur('date')" formControlName="date"
-                                placeholder="Choose a date">
+                            <input matInput [matDatepicker]="picker" (blur)="inputBlur('date')" formControlName="date"  placeholder="Choose a date">  
                             <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                             <mat-datepicker #picker></mat-datepicker>
                             <mat-error
                                 *ngIf="!eventForm.controls['date'].valid && eventForm.controls['date'].errors.required && eventForm.controls['date'].touched ">
                                 choose a valid date</mat-error>
                         </mat-form-field><br>
+
+
+
+                        <!-- date new  -->
 
 
                         <!-- time field  -->

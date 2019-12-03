@@ -60,7 +60,7 @@ export const MY_FORMATS = {
 
 export class AddEditManageEventComponent implements OnInit {
 
-
+public image_url:any=environment['imageUpload_url'];
   
   public eventForm:FormGroup;
   public booking_flag:boolean=false;
@@ -100,7 +100,7 @@ export class AddEditManageEventComponent implements OnInit {
 
 //image uplolad
    public configData: any = {
-    baseUrl: "http://3.15.236.141:5005/",
+    baseUrl: this.image_url,
     endpoint: "uploads",
     size: "51200", // kb
     format: ["jpg", "jpeg", "png", "bmp", "zip", 'html'], // use all small font
@@ -108,8 +108,7 @@ export class AddEditManageEventComponent implements OnInit {
     path: "files",
     prefix: "event_picture_"
   }
-
-
+  
 
   //time zone json
 
@@ -373,6 +372,7 @@ export class AddEditManageEventComponent implements OnInit {
   clear_image(){
     this.img_flag=false;
   }
+
 }
 
 

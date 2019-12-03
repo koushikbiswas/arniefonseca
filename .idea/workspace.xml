@@ -2,27 +2,717 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6bba0bd0-3d33-4df9-bc5d-42627e12b863" name="Default Changelist" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/images/share_img3.jpg" afterPath="$PROJECT_DIR$/src/assets/images/share_img3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/events/seminars-detail/seminars-detail.component.css" afterPath="$PROJECT_DIR$/src/app/component/frontend/events/seminars-detail/seminars-detail.component.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/events/seminars-detail/seminars-detail.component.html" afterPath="$PROJECT_DIR$/src/app/component/frontend/events/seminars-detail/seminars-detail.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/events/seminars-detail/seminars-detail.component.ts" afterPath="$PROJECT_DIR$/src/app/component/frontend/events/seminars-detail/seminars-detail.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/events/seminars/seminars.component.css" afterPath="$PROJECT_DIR$/src/app/component/frontend/events/seminars/seminars.component.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/events/seminars/seminars.component.html" afterPath="$PROJECT_DIR$/src/app/component/frontend/events/seminars/seminars.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/events/seminars/seminars.component.ts" afterPath="$PROJECT_DIR$/src/app/component/frontend/events/seminars/seminars.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component.css" afterPath="$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component.html" afterPath="$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/blog.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/blog.metadata.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/bundles/blog.umd.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/bundles/blog.umd.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/bundles/blog.umd.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/bundles/blog.umd.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/esm2015/blog.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/esm2015/lib/add-blog/add-blog.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/esm2015/lib/addedit-blogmanagement/addedit-blogmanagement.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/esm2015/lib/api.service.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/esm2015/lib/app-routing.module.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/esm2015/lib/blog.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/esm2015/lib/blog.module.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/esm2015/lib/blog.service.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/esm2015/lib/listing-blogmanagementlib/listing-blogmanagementlib.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/esm2015/lib/material-module.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/esm2015/lib/youtubeplayer/youtubeplayer.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/esm2015/public-api.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/esm5/blog.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/esm5/lib/add-blog/add-blog.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/esm5/lib/addedit-blogmanagement/addedit-blogmanagement.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/esm5/lib/api.service.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/esm5/lib/app-routing.module.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/esm5/lib/blog.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/esm5/lib/blog.module.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/esm5/lib/blog.service.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/esm5/lib/listing-blogmanagementlib/listing-blogmanagementlib.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/esm5/lib/material-module.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/esm5/lib/youtubeplayer/youtubeplayer.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/esm5/public-api.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/fesm2015/blog.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/fesm2015/blog.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/fesm5/blog.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/fesm5/blog.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/lib/add-blog/add-blog.component.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/lib/addedit-blogmanagement/addedit-blogmanagement.component.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/lib/api.service.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/lib/app-routing.module.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/lib/blog.component.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/lib/blog.module.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/lib/blog.service.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/lib/listing-blogmanagementlib/listing-blogmanagementlib.component.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/lib/material-module.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/lib/youtubeplayer/youtubeplayer.component.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/blog/public-api.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/3rdpartylicenses.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/Helvetica-Bold.a28460eab33a77368bcd.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/Helvetica-Bold.d3462480d213733cae92.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/Helvetica-Bold.d5a2c1bd209c1f60eb47.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/Helvetica-Bold.e9917ff874dd76c65df5.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/Helvetica-Bold.f1cc38ca96ff2e46e014.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/Helvetica-Normal.3e08ce384bc7248e6be1.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/Helvetica-Normal.ba814425bae745894ece.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/Helvetica-Normal.c6aee183dcde6e294988.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/Helvetica-Normal.e4bea87ea9d58c6e83a5.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/Helvetica-Normal.f1395e1814742ba760b4.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/MyriadPro-Bold_gdi.0ecacb6c92a6dcf51b28.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/MyriadPro-Bold_gdi.4a2801875b7491b49cf1.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/MyriadPro-Bold_gdi.61ea99e6d78b0e9266f8.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/MyriadPro-Bold_gdi.c5868d90263de9bb3452.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/MyriadPro-Regular_gdi.ba900f4ac4e34939c717.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/MyriadPro-Regular_gdi.ddb8b233396ca78600b0.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/MyriadPro-Regular_gdi.e0892ba1d751d6c84ce5.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/MyriadPro-Regular_gdi.ea1ada8aff40cd6f1d40.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/MyriadPro-Semibold_gdi.1ab0ff0a243091d3d91f.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/MyriadPro-Semibold_gdi.3bd5eb3e94d686b5819a.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/MyriadPro-Semibold_gdi.d6ac7c26fc4f13258bda.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/MyriadPro-Semibold_gdi.eb51e5945b50cefa9004.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/Orbitron-Bold.43a726fee1be0bd1e2b0.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/Orbitron-Bold.6d9f93698bad9cb9325f.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/Orbitron-Bold.82dd164af0d8b645f457.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/Orbitron-Bold.ac9fab68ae208a5b7b48.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/Orbitron-Bold.becbb03eb3de691ca9a5.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/aboutusbg.1c519dad4fa99c2ab79c.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/ami_amin_block1bg1.571fe876e7e70a897c5d.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/ami_amin_blockbg1.5e1cb78d8a2a9f35f204.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/ami_amin_blockbg2.40b53327355865694b67.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/ami_amin_blockcon2.0ec71cfecca5dc31359b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/ami_amin_blockcon2_textarrow.9e61af35636bd2e1651c.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/ami_amin_blockcon4_icon1.91f458411e4bb4af84b9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/ami_amin_blockcon4_icon2.739a593de44c4fc9ebe7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/ami_amin_blockcon4_icon4.c2ec24255d964c0f6a23.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/css/admin-media.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/css/admin-style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/css/media.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/HELP-US-OUT.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/css/font-awesome.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/css/font-awesome.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/css/font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/fonts/FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/fonts/fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/fonts/fontawesome-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/fonts/specimen_files/grid_12-825-55-15.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/fonts/specimen_files/specimen_stylesheet.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/less/animated.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/less/bordered-pulled.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/less/core.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/less/extras.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/less/fixed-width.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/less/font-awesome.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/less/icons.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/less/larger.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/less/list.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/less/mixins.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/less/path.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/less/rotated-flipped.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/less/screen-reader.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/less/spinning.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/less/stacked.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/less/variables.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/scss/_animated.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/scss/_bordered-pulled.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/scss/_core.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/scss/_extras.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/scss/_fixed-width.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/scss/_icons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/scss/_larger.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/scss/_list.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/scss/_mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/scss/_path.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/scss/_rotated-flipped.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/scss/_screen-reader.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/scss/_spinning.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/scss/_stacked.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/scss/_variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/font-awesome/scss/font-awesome.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/Helvetica-Bold.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/Helvetica-Bold.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/Helvetica-Bold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/Helvetica-Bold.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/Helvetica-Bold.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/Helvetica-Normal.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/Helvetica-Normal.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/Helvetica-Normal.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/Helvetica-Normal.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/Helvetica-Normal.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/MyriadPro-Bold.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/MyriadPro-Bold_gdi.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/MyriadPro-Bold_gdi.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/MyriadPro-Bold_gdi.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/MyriadPro-Bold_gdi.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/MyriadPro-Regular.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/MyriadPro-Regular_gdi.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/MyriadPro-Regular_gdi.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/MyriadPro-Regular_gdi.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/MyriadPro-Regular_gdi.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/MyriadPro-Semibold.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/MyriadPro-Semibold_gdi.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/MyriadPro-Semibold_gdi.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/MyriadPro-Semibold_gdi.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/MyriadPro-Semibold_gdi.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/Orbitron-Bold.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/Orbitron-Bold.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/Orbitron-Bold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/Orbitron-Bold.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/Orbitron-Bold.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/icomoon.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/icomoon.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/icomoon.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/icomoon.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/icomoon.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/opensans-regular-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/opensans-regular-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/opensans-regular-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/opensans-regular-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/opensans-regular-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/opensans-semibold-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/opensans-semibold-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/opensans-semibold-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/opensans-semibold-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/opensans-semibold-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/specimen_files/grid_12-825-55-15.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/fonts/specimen_files/specimen_stylesheet.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/Couplesimg1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/Couplesimg2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/Couplesimg3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/Couplesimg4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/aboutus-img1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/aboutus-img2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/aboutusbg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/adm-dashboard-img1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/adm-dashboard-img2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/adm-dashboard-img3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/adm-dashboard-img4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/adm-dashboard-img5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/admin_dashboard1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/admin_dashboard2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/admin_dashboard3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/admin_link1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/admin_link1_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/admin_link2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/admin_link2_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/admin_link3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/admin_link3_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/admin_link4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/admin_link4_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/admin_link5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/admin_link5_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/admin_link6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/admin_link6_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/advance-inventory-search.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/advanceinventorybg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/advanceinventorysearchbackend-dashboard-img1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/affiliate-admin-img1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/affiliate-dashboard-img1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/affiliate-dashboard-img2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/affiliate-dashboard-img3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/affiliate-dashboard-img4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/ami_amin_block1bg1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/ami_amin_blockbg1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/ami_amin_blockbg2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/ami_amin_blockcon2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/ami_amin_blockcon2_textarrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/ami_amin_blockcon3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/ami_amin_blockcon4_icon1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/ami_amin_blockcon4_icon2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/ami_amin_blockcon4_icon4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/ami_demo_img1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/analytics-blur-business-590045.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/android-chrome-192x192.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/android-chrome-48x48.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/android-chrome-512x512.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/apple-touch-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/arnehome-slide1img.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/audioicon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/background.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/basic-inventory-search-home.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/basic-inventory-search.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/basicinventorybg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/basicinventorysearchbackend-dashboard-img1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/basicsearchinventorybg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/biobanner1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/biodemoimage2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/blog-block1img.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/blog-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/blogbg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/blogbgadmin.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/blogicon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/bloglistimg1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/bloglistimg2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/bloglistimg3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/bloglistimg4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/blogmang-dashboard-img1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/bookanappointment-dashboard-img1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/booked-events.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/bookingreport-dashboard-img1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/borderleftimg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/browserconfig.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/clockicon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/commissionreport-dashboard-img1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/contacticon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/contactusbg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/contactusimageleft.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/contactusmainimg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/contactuswrapperbg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/createnewinventory-dashboard-img1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/cus-dashboard-img1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/cus-dashboard-img2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/cus-dashboard-img3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/cus-dashboard-img4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/cus-dashboard-img5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/customerlists-admin-img1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/dashboard_menuhover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/dashboard_menuhover2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/dblockimg1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/doublearrowicon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/employeetrainingbanner2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/employeetrainingbanner3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/employeetrainingbanner4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/employeetrainingbanner5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/employeetrainingicon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/event-user-img1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/event_img1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/event_img2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/favicon-16x16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/favicon-32x32.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/footerbgimg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/gallery-admin-img.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/gallery-img1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/gallery-img10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/gallery-img11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/gallery-img12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/gallery-img2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/gallery-img3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/gallery-img4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/gallery-img5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/gallery-img6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/gallery-img7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/gallery-img8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/gallery-img9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/getintouchbg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/getintouchimgleft.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/highserviceimg1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/highserviceimg2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/highserviceimg3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/highserviceimg4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/homeblock2icon1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/homeblock2icon2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/homeblock2icon3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/homeblock2icon4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/homeblock2itemimg1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/homeblock2itemimg2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/homeblock2itemimg3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/homeblock2itemimg4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/icon-comment.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/icon-dislike.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/icon-facebook.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/icon-instagram.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/icon-like.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/icon-linkedin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/icon-twitter.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/iconlist1-icon1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/iconlist1-icon2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/iconlist1-icon3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/iconlist1-icon4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/iconlist1-icon5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/iconlist1-icon6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/imagegallery_blockimg1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/imagegallerybg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/leftbody_bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/listsbottomicon1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/listsbottomicon2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/listsbottomicon3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/loginicon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/logo-modal-pt.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/logomain.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/manage-seminars.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/manage-speaker-engagements.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/manage-workshops.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/manageavail-dashboard-img1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/managecommission-dashboard-img1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/meetcoacharena-img1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/meetcoacharena-img2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/meetcoacharena-img3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/mstile-150x150.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/myappointment-dashboard-img1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/mycustomers-affiliate-img1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/mysalesrep-dashboard-img1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/mysalesrep-dashboard-img2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/mysalesrep-dashboard-img3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/mysalesrep-dashboard-img4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/newlettericon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/newsletter-dashboard-img1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/personalservice1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/personalservice2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/personalservice3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/personalservice4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/phoneicon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/phoneiconheader.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/preownedcarsicon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/pro-home-block1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/pro-home-block2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/pro-home-block3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/pro-home-block4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/pro-home-block5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/pro-home-block5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/pro-home-block6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/pro-home-block7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/pro-home-block8-ft.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/probidhomeblock2bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/quoteend-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/quotestart-icon-yellow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/quotestart-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/rep-dashboard-img1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/rep-dashboard-img2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/rep-dashboard-img3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/safari-pinned-tab.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/searchcarcion.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/searchlist-img.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/sellcarcion.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/seminars_blockimg1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/seminarsbannerbg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/service_blockimg1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/service_icon_style.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/servicebg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/servicelistbg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/servinfobg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/servinfobg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/share_img1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/share_img2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/share_img3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/share_img4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/share_img5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/share_img6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/site.webmanifest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/slide1img-person.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/socialadvoworks-admindashboard-adminimg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/socialadvoworks-admindashboard-affiliateimg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/socialicon-fb.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/socialicon-insgram.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/socialicon-youtube.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/speakerengagements_blockimg1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/speakerengagementsbannerbg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/specialserviceimg1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/specialserviceimg2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/specialserviceimg3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/specialsicon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/team_blockimg1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/teambannerbg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/teamimg1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/teamimg2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/teamimg3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/teamimg4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/teamimg5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/teamimg6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/testimonial-img1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/testimonial-img2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/testimonial-img3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/testimonial-img4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/testimonial-img5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/testimonial_blockimg1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/testimonial_blockimg1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/testimonialbannerbg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/testimonialbg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/testimonialbg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/testimoniallists-dashboard-img1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/testimonialsicon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/videogallery_blockimg1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/videogallerybg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/videoicon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/whychooseusicon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/whychooseusimg1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/whychooseusimg2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/whychooseusimg3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/whychooseusimg4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/workshops_blockimg1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/assets/images/workshopsbannerbg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/background.bce1f4a21233fa23e7de.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/basicsearchinventorybg.60aa3e6efb1248aaa470.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/biobanner1.9efe2eec280afb239dc5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/blogbg.a205d09b63156008fa22.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/blogbgadmin.0eacc3d0e50bac6c5341.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/borderleftimg.8c6359dd876ae105c038.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/contactusbg.0068b189982001f24818.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/contactuswrapperbg.cf5ac02a9e598ddb4c89.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/employeetrainingbanner2.9c8a51d68a8847a4dbb0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/employeetrainingbanner3.d519e7bdc812b4cc9e42.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/employeetrainingbanner5.8bcd35a85e17b517dcd2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/employeetrainingicon.84ba99e73b0f86732ec0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/es2015-polyfills.bda95d5896422d031328.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/footerbgimg.cd1625bc296f3b5e4c7b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/getintouchbg.041989c8bbf3266c752f.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/imagegallerybg.d7c217478be7f1d87da5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/leftbody_bg.dd25028e36f010915893.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/main.62752780e79b0b0d9b98.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/opensans-regular-webfont.2a6f0d57b4c776f107c9.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/opensans-regular-webfont.3fdf0b62ecb567e6444d.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/opensans-regular-webfont.9624dd10fdf28403c41f.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/opensans-regular-webfont.a9ee05eff0e880c14267.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/opensans-regular-webfont.ae45268d6078a4a80157.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/opensans-semibold-webfont.67633a5a3f06eccb5208.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/opensans-semibold-webfont.b45f18cd4a7f0175efc9.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/opensans-semibold-webfont.bbd2e07917e1f82949d1.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/opensans-semibold-webfont.f23bacb54efbce877e81.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/opensans-semibold-webfont.fecb73d6cc5f2d4d8833.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/owl.video.play.4a37f8008959c75f619b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/polyfills.8bbb231b43165d65d357.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/runtime.26209474bfa8dc87a77c.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/scripts.d8598f2e9d7c5a30dc9c.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/seminarsbannerbg.d1e29623169a244adfd3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/servicelistbg.e7431d3ea3159de59725.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/servinfobg.454dbb13d50e79e3c185.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/speakerengagementsbannerbg.2548234e4c1557d6a456.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/styles.b61c3555e0b4eabc6590.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/teambannerbg.2caba84ee8645c9468be.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/testimonialbannerbg.ac1bc8e15d63b01cf5f7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/testimonialbg.3314ad6e50241a7591ac.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/videogallerybg.d7c217478be7f1d87da5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/workshopsbannerbg.7a9e76320255d5675d02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/file-upload/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/file-upload/bundles/file-upload.umd.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/file-upload/bundles/file-upload.umd.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/file-upload/bundles/file-upload.umd.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/file-upload/bundles/file-upload.umd.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/file-upload/esm2015/file-upload.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/file-upload/esm2015/lib/Module/material-module.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/file-upload/esm2015/lib/component/alert-message/alert-message.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/file-upload/esm2015/lib/component/dialog-box/dialog-box.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/file-upload/esm2015/lib/component/preview-files/preview-files.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/file-upload/esm2015/lib/directive/drag-drop.directive.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/file-upload/esm2015/lib/file-upload.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/file-upload/esm2015/lib/file-upload.module.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/file-upload/esm2015/lib/file-upload.service.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/file-upload/esm2015/projects.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/file-upload/esm5/file-upload.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/file-upload/esm5/lib/Module/material-module.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/file-upload/esm5/lib/component/alert-message/alert-message.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/file-upload/esm5/lib/component/dialog-box/dialog-box.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/file-upload/esm5/lib/component/preview-files/preview-files.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/file-upload/esm5/lib/directive/drag-drop.directive.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/file-upload/esm5/lib/file-upload.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/file-upload/esm5/lib/file-upload.module.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/file-upload/esm5/lib/file-upload.service.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/file-upload/esm5/projects.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/file-upload/fesm2015/file-upload.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/file-upload/fesm2015/file-upload.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/file-upload/fesm5/file-upload.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/file-upload/fesm5/file-upload.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/file-upload/file-upload.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/file-upload/file-upload.metadata.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/file-upload/lib/Module/material-module.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/file-upload/lib/component/alert-message/alert-message.component.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/file-upload/lib/component/dialog-box/dialog-box.component.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/file-upload/lib/component/preview-files/preview-files.component.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/file-upload/lib/directive/drag-drop.directive.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/file-upload/lib/file-upload.component.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/file-upload/lib/file-upload.module.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/file-upload/lib/file-upload.service.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/file-upload/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/file-upload/projects.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/login/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/login/bundles/login.umd.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/login/bundles/login.umd.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/login/bundles/login.umd.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/login/bundles/login.umd.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/login/esm2015/lib/api.service.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/login/esm2015/lib/forget-password/forget-password.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/login/esm2015/lib/login.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/login/esm2015/lib/login.module.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/login/esm2015/lib/login.service.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/login/esm2015/lib/material-module.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/login/esm2015/lib/reset-password/reset-password.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/login/esm2015/lib/sign-up/sign-up.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/login/esm2015/login.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/login/esm2015/public-api.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/login/esm5/lib/api.service.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/login/esm5/lib/forget-password/forget-password.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/login/esm5/lib/login.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/login/esm5/lib/login.module.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/login/esm5/lib/login.service.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/login/esm5/lib/material-module.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/login/esm5/lib/reset-password/reset-password.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/login/esm5/lib/sign-up/sign-up.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/login/esm5/login.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/login/esm5/public-api.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/login/fesm2015/login.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/login/fesm2015/login.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/login/fesm5/login.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/login/fesm5/login.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/login/lib/api.service.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/login/lib/forget-password/forget-password.component.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/login/lib/login.component.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/login/lib/login.module.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/login/lib/login.service.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/login/lib/material-module.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/login/lib/reset-password/reset-password.component.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/login/lib/sign-up/sign-up.component.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/login/login.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/login/login.metadata.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/login/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/login/public-api.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/bundles/news-title.umd.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/bundles/news-title.umd.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/bundles/news-title.umd.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/bundles/news-title.umd.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/esm2015/lib/Components/add-edit-subscriptiongroup/add-edit-subscriptiongroup.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/esm2015/lib/Components/listing-newsletter/listing-newsletter.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/esm2015/lib/Components/newsletter/add-edit-newsletterlib/add-edit-newsletterlib.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/esm2015/lib/Components/newsletter/listing-newsletterlib/listing-newsletterlib.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/esm2015/lib/Components/senderslist/add-edit-sender/add-edit-sender.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/esm2015/lib/Components/senderslist/listing-sender/listing-sender.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/esm2015/lib/Components/subscriptioncategory/add-edit-subcategory/add-edit-subcategory.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/esm2015/lib/Components/subscriptioncategory/listing-subcategory/listing-subcategory.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/esm2015/lib/Components/testemails/add-edit-testemaillib/add-edit-testemaillib.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/esm2015/lib/Components/testemails/listing-testemaillib/listing-testemaillib.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/esm2015/lib/api.service.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/esm2015/lib/material-module.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/esm2015/lib/news-title.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/esm2015/lib/news-title.module.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/esm2015/lib/news-title.service.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/esm2015/news-title.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/esm2015/public-api.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/esm5/lib/Components/add-edit-subscriptiongroup/add-edit-subscriptiongroup.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/esm5/lib/Components/listing-newsletter/listing-newsletter.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/esm5/lib/Components/newsletter/add-edit-newsletterlib/add-edit-newsletterlib.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/esm5/lib/Components/newsletter/listing-newsletterlib/listing-newsletterlib.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/esm5/lib/Components/senderslist/add-edit-sender/add-edit-sender.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/esm5/lib/Components/senderslist/listing-sender/listing-sender.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/esm5/lib/Components/subscriptioncategory/add-edit-subcategory/add-edit-subcategory.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/esm5/lib/Components/subscriptioncategory/listing-subcategory/listing-subcategory.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/esm5/lib/Components/testemails/add-edit-testemaillib/add-edit-testemaillib.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/esm5/lib/Components/testemails/listing-testemaillib/listing-testemaillib.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/esm5/lib/api.service.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/esm5/lib/material-module.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/esm5/lib/news-title.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/esm5/lib/news-title.module.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/esm5/lib/news-title.service.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/esm5/news-title.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/esm5/public-api.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/fesm2015/news-title.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/fesm2015/news-title.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/fesm5/news-title.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/fesm5/news-title.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/lib/Components/add-edit-subscriptiongroup/add-edit-subscriptiongroup.component.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/lib/Components/listing-newsletter/listing-newsletter.component.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/lib/Components/newsletter/add-edit-newsletterlib/add-edit-newsletterlib.component.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/lib/Components/newsletter/listing-newsletterlib/listing-newsletterlib.component.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/lib/Components/senderslist/add-edit-sender/add-edit-sender.component.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/lib/Components/senderslist/listing-sender/listing-sender.component.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/lib/Components/subscriptioncategory/add-edit-subcategory/add-edit-subcategory.component.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/lib/Components/subscriptioncategory/listing-subcategory/listing-subcategory.component.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/lib/Components/testemails/add-edit-testemaillib/add-edit-testemaillib.component.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/lib/Components/testemails/listing-testemaillib/listing-testemaillib.component.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/lib/api.service.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/lib/material-module.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/lib/news-title.component.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/lib/news-title.module.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/lib/news-title.service.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/news-title.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/news-title.metadata.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/news-title/public-api.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/servicelib/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/servicelib/bundles/servicelib.umd.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/servicelib/bundles/servicelib.umd.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/servicelib/bundles/servicelib.umd.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/servicelib/bundles/servicelib.umd.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/servicelib/esm2015/lib/Component/addedit-service/addedit-service.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/servicelib/esm2015/lib/modules/material-module.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/servicelib/esm2015/lib/servicelib.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/servicelib/esm2015/lib/servicelib.module.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/servicelib/esm2015/lib/servicelib.service.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/servicelib/esm2015/public-api.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/servicelib/esm2015/servicelib.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/servicelib/esm5/lib/Component/addedit-service/addedit-service.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/servicelib/esm5/lib/modules/material-module.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/servicelib/esm5/lib/servicelib.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/servicelib/esm5/lib/servicelib.module.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/servicelib/esm5/lib/servicelib.service.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/servicelib/esm5/public-api.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/servicelib/esm5/servicelib.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/servicelib/fesm2015/servicelib.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/servicelib/fesm2015/servicelib.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/servicelib/fesm5/servicelib.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/servicelib/fesm5/servicelib.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/servicelib/lib/Component/addedit-service/addedit-service.component.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/servicelib/lib/modules/material-module.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/servicelib/lib/servicelib.component.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/servicelib/lib/servicelib.module.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/servicelib/lib/servicelib.service.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/servicelib/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/servicelib/public-api.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/servicelib/servicelib.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/servicelib/servicelib.metadata.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/testimonial/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/testimonial/bundles/testimonial.umd.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/testimonial/bundles/testimonial.umd.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/testimonial/bundles/testimonial.umd.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/testimonial/bundles/testimonial.umd.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/testimonial/esm2015/lib/Components/addedit/addedit.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/testimonial/esm2015/lib/Modules/material-module.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/testimonial/esm2015/lib/testimonial.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/testimonial/esm2015/lib/testimonial.module.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/testimonial/esm2015/lib/testimonial.service.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/testimonial/esm2015/public-api.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/testimonial/esm2015/testimonial.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/testimonial/esm5/lib/Components/addedit/addedit.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/testimonial/esm5/lib/Modules/material-module.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/testimonial/esm5/lib/testimonial.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/testimonial/esm5/lib/testimonial.module.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/testimonial/esm5/lib/testimonial.service.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/testimonial/esm5/public-api.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/testimonial/esm5/testimonial.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/testimonial/fesm2015/testimonial.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/testimonial/fesm2015/testimonial.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/testimonial/fesm5/testimonial.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/testimonial/fesm5/testimonial.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/testimonial/lib/Components/addedit/addedit.component.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/testimonial/lib/Modules/material-module.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/testimonial/lib/testimonial.component.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/testimonial/lib/testimonial.module.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/testimonial/lib/testimonial.service.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/testimonial/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/testimonial/public-api.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/testimonial/testimonial.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/testimonial/testimonial.metadata.json" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/contactus/bundles/contactus.umd.js" afterPath="$PROJECT_DIR$/dist/contactus/bundles/contactus.umd.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/contactus/bundles/contactus.umd.js.map" afterPath="$PROJECT_DIR$/dist/contactus/bundles/contactus.umd.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/contactus/bundles/contactus.umd.min.js" afterPath="$PROJECT_DIR$/dist/contactus/bundles/contactus.umd.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/contactus/bundles/contactus.umd.min.js.map" afterPath="$PROJECT_DIR$/dist/contactus/bundles/contactus.umd.min.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/contactus/contactus.metadata.json" afterPath="$PROJECT_DIR$/dist/contactus/contactus.metadata.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/contactus/esm2015/contactus.js" afterPath="$PROJECT_DIR$/dist/contactus/esm2015/contactus.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/contactus/esm2015/lib/contactus.component.js" afterPath="$PROJECT_DIR$/dist/contactus/esm2015/lib/contactus.component.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/contactus/esm2015/lib/contactus.module.js" afterPath="$PROJECT_DIR$/dist/contactus/esm2015/lib/contactus.module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/contactus/esm2015/public-api.js" afterPath="$PROJECT_DIR$/dist/contactus/esm2015/public-api.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/contactus/esm5/contactus.js" afterPath="$PROJECT_DIR$/dist/contactus/esm5/contactus.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/contactus/esm5/lib/contactus.component.js" afterPath="$PROJECT_DIR$/dist/contactus/esm5/lib/contactus.component.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/contactus/esm5/lib/contactus.module.js" afterPath="$PROJECT_DIR$/dist/contactus/esm5/lib/contactus.module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/contactus/esm5/public-api.js" afterPath="$PROJECT_DIR$/dist/contactus/esm5/public-api.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/contactus/fesm2015/contactus.js" afterPath="$PROJECT_DIR$/dist/contactus/fesm2015/contactus.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/contactus/fesm2015/contactus.js.map" afterPath="$PROJECT_DIR$/dist/contactus/fesm2015/contactus.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/contactus/fesm5/contactus.js" afterPath="$PROJECT_DIR$/dist/contactus/fesm5/contactus.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/contactus/fesm5/contactus.js.map" afterPath="$PROJECT_DIR$/dist/contactus/fesm5/contactus.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/contactus/lib/contactus.component.d.ts" afterPath="$PROJECT_DIR$/dist/contactus/lib/contactus.component.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.module.ts" afterPath="$PROJECT_DIR$/src/app/app.module.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component.ts" afterPath="$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements/speaker-engagements.component.css" afterPath="$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements/speaker-engagements.component.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements/speaker-engagements.component.html" afterPath="$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements/speaker-engagements.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements/speaker-engagements.component.ts" afterPath="$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements/speaker-engagements.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/events/workshop-detail/workshop-detail.component.css" afterPath="$PROJECT_DIR$/src/app/component/frontend/events/workshop-detail/workshop-detail.component.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/events/workshop-detail/workshop-detail.component.html" afterPath="$PROJECT_DIR$/src/app/component/frontend/events/workshop-detail/workshop-detail.component.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/events/workshop-detail/workshop-detail.component.ts" afterPath="$PROJECT_DIR$/src/app/component/frontend/events/workshop-detail/workshop-detail.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/events/workshops/workshops.component.css" afterPath="$PROJECT_DIR$/src/app/component/frontend/events/workshops/workshops.component.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/events/workshops/workshops.component.html" afterPath="$PROJECT_DIR$/src/app/component/frontend/events/workshops/workshops.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/events/workshops/workshops.component.ts" afterPath="$PROJECT_DIR$/src/app/component/frontend/events/workshops/workshops.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/services/servicelist/servicelist.component.ts" afterPath="$PROJECT_DIR$/src/app/component/frontend/services/servicelist/servicelist.component.ts" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,70 +730,64 @@
       <file leaf-file-name="app-routing.module.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/app-routing.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="257" column="33" lean-forward="false" selection-start-line="257" selection-start-column="15" selection-end-line="257" selection-end-column="33" />
+            <state relative-caret-position="267">
+              <caret line="334" column="31" lean-forward="false" selection-start-line="334" selection-start-column="11" selection-end-line="334" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="seminars-detail.component.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/seminars-detail/seminars-detail.component.html">
+      <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="250" selection-end-column="13" />
+            <state relative-caret-position="102">
+              <caret line="123" column="1" lean-forward="false" selection-start-line="123" selection-start-column="1" selection-end-line="123" selection-end-column="1" />
               <folding>
-                <element signature="n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-                <element signature="n#span#0;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-                <element signature="n#span#0;n#span#0;n#span#0;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-                <element signature="n#span#1;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-                <element signature="n#span#0;n#span#0;n#span#1;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-                <element signature="n#span#2;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-                <element signature="n#span#0;n#span#0;n#span#2;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-                <element signature="n#span#3;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-                <element signature="n#span#0;n#span#0;n#span#3;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-                <element signature="n#span#4;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-                <element signature="n#span#0;n#span#0;n#span#4;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-                <element signature="n#span#5;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-                <element signature="n#span#0;n#span#0;n#span#5;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
+                <element signature="e#0#58#0" expanded="true" />
+                <element signature="e#1389#1474#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="seminars-detail.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/seminars-detail/seminars-detail.component.ts">
+      <file leaf-file-name="home-event.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/component/backend/events/home-event/home-event.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="59" column="44" lean-forward="false" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="44" />
+            <state relative-caret-position="238">
+              <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="maindashboard.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/component/backend/maindashboard/maindashboard.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="136" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="136" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/assets/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-977">
+              <caret line="1377" column="92" lean-forward="false" selection-start-line="1377" selection-start-column="92" selection-end-line="1377" selection-end-column="92" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home-event.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/component/backend/events/home-event/home-event.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="411">
+              <caret line="30" column="40" lean-forward="false" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="workshop-detail.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/workshop-detail/workshop-detail.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="45" column="142" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="45" selection-end-column="142" />
-              <folding>
-                <element signature="n#span#0;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-                <element signature="n#span#0;n#span#0;n#span#0;n#span#0;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-                <element signature="n#span#1;n#span#0;n#span#0;n#span#0;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-                <element signature="n#mat-card-content#1;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="workshop-detail.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/workshop-detail/workshop-detail.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="44" column="8" lean-forward="false" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -119,25 +803,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>AddEditNewsletterComponent</find>
-      <find>TestimonialList</find>
-      <find>TestimonialListArray</find>
-      <find>activatedRoute</find>
-      <find>dataformate</find>
-      <find>testimonial_img</find>
-      <find>testimonialListData</find>
-      <find>testmon</find>
-      <find>location</find>
-      <find>callBack</find>
-      <find>ActivatedRoute</find>
-      <find>event</find>
-      <find>.event_right_blog_text button</find>
-      <find>.event_right_blog_text p</find>
-      <find>UPCOMING SEMINARS</find>
-      <find>.event_text</find>
-      <find>event_text</find>
-      <find>SeminarsListArry</find>
-      <find>index</find>
       <find>indexvalleftlength</find>
       <find>blogloadmore</find>
       <find>event_right_blog</find>
@@ -148,7 +813,26 @@
       <find>blogCatList</find>
       <find>blogcategory</find>
       <find>blog_img</find>
+      <find>speakerengagementsDetailData</find>
       <find>seminarsDetailData</find>
+      <find>seminer</find>
+      <find>home-event</find>
+      <find>HomeEventComponent</find>
+      <find>admin-</find>
+      <find>blog</find>
+      <find>environment</find>
+      <find>HttpService</find>
+      <find>maindashboard</find>
+      <find>home-event</find>
+      <find>blog_category_view</find>
+      <find>blogs_view</find>
+      <find>BlogManagementComponent</find>
+      <find>blogCatConfig</find>
+      <find>blogsList</find>
+      <find>admin-dashboard</find>
+      <find>event</find>
+      <find>manage-event-listing</find>
+      <find>datasource</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -166,9 +850,6 @@
         <option value="$PROJECT_DIR$/src/app/layout/footer/footer.component.ts" />
         <option value="$PROJECT_DIR$/src/app/component/backend/newsletterlists/add-edit-newsletter/add-edit-newsletter.component.html" />
         <option value="$PROJECT_DIR$/src/app/component/backend/newsletterlists/add-edit-newsletter/add-edit-newsletter.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/src/assets/css/style.css" />
-        <option value="$PROJECT_DIR$/src/app/app-routing.module.ts" />
         <option value="$PROJECT_DIR$/src/app/component/frontend/events/seminars/seminars.component.css" />
         <option value="$PROJECT_DIR$/src/app/component/frontend/events/seminars-detail/seminars-detail.component.css" />
         <option value="$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component.css" />
@@ -177,17 +858,26 @@
         <option value="$PROJECT_DIR$/src/app/component/frontend/events/workshop-detail/workshop-detail.component.css" />
         <option value="$PROJECT_DIR$/src/app/component/frontend/events/workshops/workshops.component.html" />
         <option value="$PROJECT_DIR$/src/app/component/frontend/events/workshops/workshops.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/component/frontend/events/workshop-detail/workshop-detail.component.html" />
         <option value="$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements/speaker-engagements.component.html" />
         <option value="$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements/speaker-engagements.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/component/frontend/events/workshop-detail/workshop-detail.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component.html" />
-        <option value="$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component.ts" />
         <option value="$PROJECT_DIR$/src/app/component/frontend/events/seminars/seminars.component.html" />
         <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/app/component/frontend/events/seminars/seminars.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/component/frontend/events/seminars-detail/seminars-detail.component.ts" />
         <option value="$PROJECT_DIR$/src/app/component/frontend/events/seminars-detail/seminars-detail.component.html" />
+        <option value="$PROJECT_DIR$/src/app/component/frontend/events/seminars-detail/seminars-detail.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/component/frontend/events/workshop-detail/workshop-detail.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/component/frontend/events/workshop-detail/workshop-detail.component.html" />
+        <option value="$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component.html" />
+        <option value="$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/component/backend/dashboard/dashboard.component.html" />
+        <option value="$PROJECT_DIR$/src/app/component/backend/maindashboard/maindashboard.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/app-routing.module.ts" />
+        <option value="$PROJECT_DIR$/src/app/component/backend/events/home-event/home-event.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/component/backend/events/home-event/home-event.component.html" />
+        <option value="$PROJECT_DIR$/src/app/component/backend/events/home-event/home-event.component.css" />
+        <option value="$PROJECT_DIR$/src/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/src/app/component/backend/maindashboard/maindashboard.component.html" />
+        <option value="$PROJECT_DIR$/src/app/app.module.ts" />
       </list>
     </option>
   </component>
@@ -284,7 +974,165 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arniefonseca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arniefonseca" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arniefonseca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arniefonseca" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arniefonseca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arniefonseca" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arniefonseca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arniefonseca" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arniefonseca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arniefonseca" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="header" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arniefonseca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arniefonseca" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bk-header" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arniefonseca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arniefonseca" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="component" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -310,7 +1158,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
+              <option name="myItemId" value="backend" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -336,7 +1184,101 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newsletterlists" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arniefonseca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arniefonseca" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="component" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newsletterlists" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="add-edit-subscriber-group" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arniefonseca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arniefonseca" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="component" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="maindashboard" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arniefonseca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arniefonseca" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="component" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -344,7 +1286,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="workshops" />
+              <option name="myItemId" value="manage-event-listing" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -370,7 +1312,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
+              <option name="myItemId" value="backend" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -378,7 +1320,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="workshop-detail" />
+              <option name="myItemId" value="home-event" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -404,17 +1346,13 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
+              <option name="myItemId" value="backend" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="events" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="speaker-engagements-detail" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -438,15 +1376,11 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
+              <option name="myItemId" value="backend" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="events" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="speaker-engagements" />
+              <option name="myItemId" value="blog-management" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -460,120 +1394,14 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="component" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="events" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="seminars-detail" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="arniefonseca" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="arniefonseca" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="component" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="events" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="seminars" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="arniefonseca" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="arniefonseca" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="component" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blogdetail" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="arniefonseca" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="arniefonseca" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="component" />
+              <option name="myItemId" value="dist" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -590,6 +1418,9 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\angular_2\arniefonseca\src\app\component\backend\events" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\angular_2\arniefonseca\src\assets\images" />
     </key>
@@ -712,12 +1543,13 @@
       <workItem from="1574920956277" duration="536000" />
       <workItem from="1574933751958" duration="13555000" />
       <workItem from="1574951189904" duration="33000" />
-      <workItem from="1575004322706" duration="21914000" />
+      <workItem from="1575004322706" duration="26179000" />
+      <workItem from="1575268632520" duration="14013000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90064000" />
+    <option name="totallyTimeSpent" value="108342000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -793,122 +1625,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app/component/backend/blog-management/add-edit-blogcat/add-edit-blogcat.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/layout/footer/newsletter-success-dialog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/environments/environment.prod.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/backend/blog-management/blog-management.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-292">
-          <caret line="15" column="41" lean-forward="false" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/layout/footer/newsletter-dialog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="47" lean-forward="true" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/layout/footer/footer.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="48" column="44" lean-forward="false" selection-start-line="48" selection-start-column="44" selection-end-line="48" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/layout/footer/footer.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="221" column="20" lean-forward="false" selection-start-line="221" selection-start-column="20" selection-end-line="221" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/environments/environment.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/api.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="451" column="40" lean-forward="false" selection-start-line="451" selection-start-column="40" selection-end-line="451" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/backend/blog-management/add-edit-blogs/add-edit-blogs.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/backend/blog-management/add-edit-blogcat/add-edit-blogcat.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="23" lean-forward="false" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/backend/affiliate/affiliate.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/backend/blog-management/add-edit-blogs/add-edit-blogs.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/PowerApp/src/app/Components/NewsletterApp/add-edit-newsletter/add-edit-newsletter.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="74" lean-forward="true" selection-start-line="0" selection-start-column="74" selection-end-line="0" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tsconfig.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1632">
           <caret line="96" column="17" lean-forward="false" selection-start-line="96" selection-start-column="7" selection-end-line="96" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="247" column="0" lean-forward="false" selection-start-line="247" selection-start-column="0" selection-end-line="247" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -930,13 +1650,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="1198" column="122" lean-forward="false" selection-start-line="1198" selection-start-column="122" selection-end-line="1198" selection-end-column="122" />
         </state>
       </provider>
     </entry>
@@ -965,20 +1678,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-408">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/backend/newsletterlists/add-edit-subscriber-group/add-edit-subscriber-group.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/backend/events/add-edit-manage-event/add-edit-manage-event.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1296">
-          <caret line="110" column="0" lean-forward="true" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1038,51 +1737,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/workshops/workshops.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="66" column="160" lean-forward="true" selection-start-line="66" selection-start-column="151" selection-end-line="66" selection-end-column="160" />
-          <folding>
-            <element signature="n#span#0;n#span#0;n#span#0;n#span#0;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements/speaker-engagements.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="83" column="20" lean-forward="true" selection-start-line="83" selection-start-column="20" selection-end-line="83" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="n#span#0;n#span#0;n#span#0;n#span#0;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="59" column="8" lean-forward="false" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#50#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/seminars/seminars.component.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#73#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1090,7 +1748,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="385">
           <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1098,7 +1755,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="58" lean-forward="false" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1107,7 +1763,7 @@
         <state relative-caret-position="334">
           <caret line="39" column="68" lean-forward="false" selection-start-line="39" selection-start-column="68" selection-end-line="39" selection-end-column="68" />
           <folding>
-            <element signature="e#0#50#0" expanded="true" />
+            <element signature="e#0#50#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1116,10 +1772,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="359">
           <caret line="91" column="38" lean-forward="true" selection-start-line="91" selection-start-column="38" selection-end-line="91" selection-end-column="38" />
-          <folding>
-            <element signature="n#span#0;n#span#0;n#span#0;n#span#0;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-            <element signature="n#span#1;n#span#0;n#span#0;n#span#0;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1127,17 +1779,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="71" lean-forward="true" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements/speaker-engagements.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="61" column="63" lean-forward="true" selection-start-line="61" selection-start-column="63" selection-end-line="61" selection-end-column="63" />
-          <folding>
-            <element signature="n#span#0;n#span#0;n#span#0;n#span#0;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1145,55 +1786,76 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="43" column="2" lean-forward="false" selection-start-line="43" selection-start-column="2" selection-end-line="43" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app-routing.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="257" column="33" lean-forward="false" selection-start-line="257" selection-start-column="15" selection-end-line="257" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/workshop-detail/workshop-detail.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="44" column="8" lean-forward="false" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/workshop-detail/workshop-detail.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="45" column="142" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="45" selection-end-column="142" />
-          <folding>
-            <element signature="n#span#0;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-            <element signature="n#span#0;n#span#0;n#span#0;n#span#0;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-            <element signature="n#span#1;n#span#0;n#span#0;n#span#0;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-            <element signature="n#mat-card-content#1;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/seminars-detail/seminars-detail.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="59" column="44" lean-forward="false" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="355">
+          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="79" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/seminars-detail/seminars-detail.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="250" selection-end-column="13" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="253" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/workshop-detail/workshop-detail.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="569">
+          <caret line="66" column="0" lean-forward="true" selection-start-line="42" selection-start-column="2" selection-end-line="66" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/workshop-detail/workshop-detail.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="253" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/workshops/workshops.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="35" column="33" lean-forward="false" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements/speaker-engagements.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="688">
+          <caret line="84" column="58" lean-forward="false" selection-start-line="84" selection-start-column="58" selection-end-line="84" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements/speaker-engagements.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="65" column="161" lean-forward="false" selection-start-line="65" selection-start-column="158" selection-end-line="65" selection-end-column="161" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
           <folding>
-            <element signature="n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
+            <element signature="e#0#50#0" expanded="false" />
+            <marker date="1575284904825" expanded="true" signature="569:2014" ph="{...}" />
+            <marker date="1575284904825" expanded="true" signature="1883:1956" ph="{...}" />
+            <marker date="1575284904825" expanded="true" signature="1977:2011" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="190" column="37" lean-forward="false" selection-start-line="190" selection-start-column="37" selection-end-line="190" selection-end-column="37" />
+          <folding>
             <element signature="n#span#0;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
             <element signature="n#span#0;n#span#0;n#span#0;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
             <element signature="n#span#1;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
@@ -1206,6 +1868,181 @@
             <element signature="n#span#0;n#span#0;n#span#4;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
             <element signature="n#span#5;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
             <element signature="n#span#0;n#span#0;n#span#5;n#mat-card-content#0;n#mat-card#0;n#mat-card#1;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/backend/dashboard/dashboard.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="132" />
+          <folding>
+            <element signature="n#style#0;n#img#3;n#mat-card#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/layout/footer/footer.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="227" column="34" lean-forward="false" selection-start-line="227" selection-start-column="24" selection-end-line="227" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/backend/events/add-edit-manage-event/add-edit-manage-event.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/api.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#87#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/backend/events/add-edit-manage-event/add-edit-manage-event.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="244" column="58" lean-forward="false" selection-start-line="244" selection-start-column="38" selection-end-line="244" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/backend/newsletterlists/add-edit-subscriber-group/add-edit-subscriber-group.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="24" column="28" lean-forward="false" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/backend/blog-management/blog-management.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="47" column="1" lean-forward="true" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="24" />
+          <folding>
+            <element signature="e#1#51#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/backend/events/manage-event-listing/manage-event-listing.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="60" column="69" lean-forward="true" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/backend/blog-management/blog-management.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="36" column="171" lean-forward="false" selection-start-line="36" selection-start-column="171" selection-end-line="36" selection-end-column="196" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/backend/maindashboard/maindashboard.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#50#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/backend/events/manage-event-listing/manage-event-listing.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-281">
+          <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#50#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/backend/events/home-event/home-event.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/layout/header/header.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="7" column="66" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="334" column="31" lean-forward="false" selection-start-line="334" selection-start-column="11" selection-end-line="334" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/layout/bk-header/bk-header.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="52" column="22" lean-forward="true" selection-start-line="50" selection-start-column="17" selection-end-line="52" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/backend/events/home-event/home-event.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/backend/events/home-event/home-event.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="30" column="40" lean-forward="false" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-977">
+          <caret line="1377" column="92" lean-forward="false" selection-start-line="1377" selection-start-column="92" selection-end-line="1377" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/backend/maindashboard/maindashboard.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="136" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="136" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="123" column="1" lean-forward="false" selection-start-line="123" selection-start-column="1" selection-end-line="123" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+            <element signature="e#1389#1474#0" expanded="true" />
           </folding>
         </state>
       </provider>

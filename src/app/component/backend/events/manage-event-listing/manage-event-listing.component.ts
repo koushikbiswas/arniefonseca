@@ -14,12 +14,14 @@ export class ManageEventListingComponent implements OnInit {
   public eventDataList:any[];
   public baseUrl: any = environment["API_URL"];
 
+  public base_file_url:any=environment['file_url']
+
 
 
   // ===============================Declarations=========================
  public eventDataList_skip: any = ["_id","description_html","description","created_at","image","booking","bookingLink","date_unix","date"];
  public detail_skip_array:any=["_id","date_unix"]
- public eventDataList_modify_header: any = {"status":"Status","event date":"Date"};
+ public eventDataList_modify_header: any = {"status":"Status","event date":"Date","timeZone":"Time Zone"};
  public tableName: any = 'event';
  public UpdateEndpoint: any = "addorupdatedata";
  public deleteEndpoint: any = "deletesingledata";
@@ -41,7 +43,7 @@ public date_search_endpoint:any="datalist";
    image_detail_datatype:any = [{
      key: "image",
      value: 'image',
-     fileurl: 'https://s3.us-east-2.amazonaws.com/crmfiles.influxhostserver/files/'      // Image path 
+     fileurl: this.base_file_url      // Image path 
    }]
 
 

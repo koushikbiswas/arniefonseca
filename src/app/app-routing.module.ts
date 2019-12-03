@@ -100,6 +100,7 @@ import { AddEditSubscriberComponent } from './component/backend/newsletterlists/
 import { AddEditSubscriberGroupComponent } from './component/backend/newsletterlists/add-edit-subscriber-group/add-edit-subscriber-group.component';
 import { AddEditSendersComponent } from './component/backend/newsletterlists/add-edit-senders/add-edit-senders.component';
 import { AddEditTestemailComponent } from './component/backend/newsletterlists/add-edit-testemail/add-edit-testemail.component';
+import {HomeEventComponent} from "./component/backend/events/home-event/home-event.component";
 
 
 /**End Backend Routing**/
@@ -179,7 +180,25 @@ const routes: Routes = [
   /**Backend Routing**/
   // {path: 'customer-dashboard', component:DashboardComponent, canActivate:[AuthGuard]},       // Useing for canActive
   { path: 'customer-dashboard', component: DashboardComponent },
-  { path: 'admin-dashboard', component: MaindashboardComponent },
+  { path: 'admin-dashboard', component: MaindashboardComponent,
+
+    canActivate:[AuthGuard],
+    resolve:{eventList:ResolveService},
+    data:{
+      requestcondition:{
+        source:'events_view',
+        condition:{}
+      },
+      endpoint:'datalist'
+
+    },
+  },
+
+
+
+
+
+
   { path: 'bk-leftdiv', component: BkLeftdivComponent },
   {
     path: 'service-listing', component: ListingServiceComponent, resolve: { serviceList: ResolveService },
@@ -189,6 +208,12 @@ const routes: Routes = [
   {
     path: 'service/list',
     component: ListingServiceComponent,
+    resolve: { serviceList: ResolveService },
+    data: { requestcondition: { source: 'service_view', condition: {} }, endpoint: 'datalist' }
+  },
+  {
+    path: 'service',
+    component: ServiceComponent,
     resolve: { serviceList: ResolveService },
     data: { requestcondition: { source: 'service_view', condition: {} }, endpoint: 'datalist' }
   },
@@ -270,13 +295,16 @@ const routes: Routes = [
       endpoint: "datalistwithouttoken"
     }
   },
+  
+ 
+
   { path: 'speaker-engagements-detail/:_id', component: SpeakerEngagementsDetailComponent,
-  resolve: { speakerEngagementsDetailData: ResolveService },
+  resolve: { speakerengagementsDetailData: ResolveService },
   data: {
-    requestcondition: { source: "events_view", condition: {type:"speaker-engagements"} },
+    requestcondition: { source: "events_view", condition: {type:"speaker_engagement"} },
     endpoint: "datalistwithouttoken"
-    }
-  },
+  }
+},
   
 // ___________________ end event frontend__________________//
 
@@ -288,6 +316,25 @@ const routes: Routes = [
 
 
   //________________Manage event____________//
+
+
+  { path: 'admineventlist',
+    component: HomeEventComponent,
+    canActivate:[AuthGuard],
+    resolve:{eventList:ResolveService},
+    data:{
+      requestcondition:{
+        source:'events_view',
+        condition:{}
+      },
+      endpoint:'datalist'
+
+    },
+
+
+  },
+
+
 
   { path: 'manage-event/add', component: AddEditManageEventComponent },
 
@@ -304,8 +351,16 @@ const routes: Routes = [
 
   },
 
+
+
+
   //________________Manage Workshop____________//
 },
+
+
+
+
+
 { path: 'manage-event/edit/:_id', component: AddEditManageEventComponent,
 canActivate:[AuthGuard],
 resolve:{eventList:ResolveService},
