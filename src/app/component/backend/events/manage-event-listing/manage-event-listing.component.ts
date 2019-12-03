@@ -17,9 +17,9 @@ export class ManageEventListingComponent implements OnInit {
 
 
   // ===============================Declarations=========================
- public eventDataList_skip: any = ["_id","description_html","description","created_at","image","booking","bookingLink"];
- public detail_skip_array:any=["_id"]
- public eventDataList_modify_header: any = {"status":"Status"};
+ public eventDataList_skip: any = ["_id","description_html","description","created_at","image","booking","bookingLink","date_unix","date"];
+ public detail_skip_array:any=["_id","date_unix"]
+ public eventDataList_modify_header: any = {"status":"Status","event date":"Date"};
  public tableName: any = 'event';
  public UpdateEndpoint: any = "addorupdatedata";
  public deleteEndpoint: any = "deletesingledata";
@@ -33,7 +33,7 @@ public view:any="events_view";
 public date_search_endpoint:any="datalist";
  public search_settings: any = {
      selectsearch: [{ label: 'Search By Status', field: 'status', values: this.status }],
-     datesearch:[{startdatelabel:"Start Date",enddatelabel:"End Date", submit:"Search By Date",  field:"created_at"}],   // this is use for  date search 
+     datesearch:[{startdatelabel:"Start Date",enddatelabel:"End Date", submit:"Search By Date",  field:"date_unix"}],   // this is use for  date search 
 
    };
  // ====================================================================

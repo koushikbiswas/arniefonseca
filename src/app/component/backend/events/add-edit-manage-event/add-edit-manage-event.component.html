@@ -83,8 +83,23 @@
                         </div>
                        
 
-
                         <br>
+
+                        <!-- Zone  -->
+
+
+                        <mat-form-field>
+                            <mat-label>Select Time Zone</mat-label>
+                            <mat-select  formControlName="timeZone" (blur)="inputBlur('timeZone')">
+                              <mat-option *ngFor="let zone of timeZoneList" [value]="zone.value">{{zone.name}}</mat-option>
+                            </mat-select>
+                            <mat-error
+                                *ngIf="!eventForm.controls['timeZone'].valid && eventForm.controls['timeZone'].errors.required && eventForm.controls['timeZone'].touched ">
+                                timeZone field can not be blank</mat-error>
+                          </mat-form-field>
+                        
+
+
 
 
 

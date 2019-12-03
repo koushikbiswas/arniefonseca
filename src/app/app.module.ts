@@ -119,6 +119,9 @@ import { AddEditTestemailComponent } from './component/backend/newsletterlists/a
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
 
+import {DatePipe} from '@angular/common';
+
+
 
 import { TestimonialModule } from 'testimonial';
 import { LoginModule } from 'login';
@@ -250,7 +253,7 @@ import { ServicelibModule } from 'servicelib';
     ReactiveFormsModule,
     NewsTitleModule
   ],
-  providers: [CookieService, AuthGuard, ApiService, SidenavService],
+  providers: [CookieService, AuthGuard, ApiService, SidenavService,DatePipe],
   bootstrap: [AppComponent],
   schemas:[CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
   entryComponents: [comingSoonDialog, DialogPrivacyDialog, DialogTermsDialog,CommonVideoModalComponent, NewslatterDialogComponent,VideoModalComponent, NewslattersuccessDialogComponent, CommonTestimonialVideoModalComponent,EventModal]

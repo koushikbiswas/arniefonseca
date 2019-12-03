@@ -6,5 +6,6 @@ export const environment = {
     // nodesslurl : 'https://dev.api.influxhostserver.com/',
     nodesslurl : 'https://9v41bpikik.execute-api.us-east-1.amazonaws.com/dev/api/',
     download_url : 'https://api.influxhostserver.com/download',
+   
   };
   
