@@ -123,9 +123,6 @@ import {DatePipe} from '@angular/common';
 
 
 
-import { HomeEventComponent } from './component/backend/events/home-event/home-event.component';
-
-
 
 // import { TestimonialModule } from 'testimonial';
 // import { LoginModule } from 'login';

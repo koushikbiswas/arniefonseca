@@ -22,7 +22,7 @@ export class FooterComponent implements OnInit {
   // public tokenViaCookie : any;
 
 
-  constructor(public router: Router, public route: ActivatedRoute, public dialog: MatDialog, public formbuilder: FormBuilder, public apiService: ApiService, public activeroute: ActivatedRoute) {
+  constructor(public router: Router, public route: ActivatedRoute, public dialog: MatDialog, public formbuilder: FormBuilder, public apiService: ApiService, public activeroute: ActivatedRoute, public cookie: CookieService) {
 
     // console.log(router.url);
       this.serverUrl = apiService.serverUrl;
@@ -96,9 +96,12 @@ export class FooterComponent implements OnInit {
 
     doSubmit() {
         // console.log('ok');
-        this.data = this.myform.value;
-        console.log(this.data);
+        // this.data = this.myform.value;
+        // console.log(this.data);
 
+        this.data = this.myform.get('email').value;
+
+        this.cookie.set('email_modal',this.data);
 
         for (let i in this.myform.controls) {
             this.myform.controls[i].markAsTouched();
@@ -195,7 +198,10 @@ constructor(public dialogRef: MatDialogRef<NewslatterDialogComponent>,
     })
 
 // this.myformnews.value.email.setvalue();
+    this.myformnews.patchValue({
+        email: this.cookie.get('email_modal'),
 
+    });
 
 }
     
