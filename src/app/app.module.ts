@@ -120,6 +120,7 @@ import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 import { NgxMaterialTimepickerModule } from 'ngx-material-timepicker';
 
 import { ContactusModule } from 'contactus';
+import { HomeEventComponent } from './component/backend/events/home-event/home-event.component';
 // import { NewsTitleModule } from 'news-title-lib-influxiq';
 // import { ServicelibModule } from 'service-lib-influxiq';
 // import { TestimonialModule } from 'testimonial-lib-influxiq';
@@ -216,7 +217,9 @@ import { ContactusModule } from 'contactus';
     CommonTestimonialVideoModalComponent,
     VideoModalComponent,
     EventModal,
-    BioComponent
+    BioComponent,
+    HomeEventComponent,
+
     
 
   ],
