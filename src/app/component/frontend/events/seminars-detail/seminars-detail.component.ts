@@ -58,8 +58,8 @@ public seminer:any;
 
     this.activatedRoute.data.forEach((data: any) => {
       this.seminer = data.seminarsDetailData.res;
-      //console.log('>>>>>>>kb>>>>>>>',this.seminer)
-      this.seminer_img=this.seminer[0].Image[0];
+      console.log('>>>>>>>kb>>>>>>>',this.seminer)
+      this.seminer_img=this.seminer[0].Image;
 
     })
 

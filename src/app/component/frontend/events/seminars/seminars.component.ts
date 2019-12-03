@@ -50,7 +50,7 @@ export class SeminarsComponent implements OnInit {
       // console.log('test',data);
       let result: any = {};
       result = data.seminarsListData.res;
-      // console.warn(result);
+      console.log(result);
 
       // this.eventImage=result.event_image[0].basepath[0]+result.event_image[0].image[0];
       // console.log('+++++>>>>>>>>>>>>', this.eventImage)

@@ -29,17 +29,17 @@ export interface DialogData {
 // See the Moment.js docs for the meaning of these formats:
 // https://momentjs.com/docs/#/displaying/format/
 
-export const MY_FORMATS = {
-  parse: {
-    dateInput: 'LL',
-  },
-  display: {
-    dateInput: 'LL',
-    monthYearLabel: 'MMM YYYY',
-    dateA11yLabel: 'LL',
-    monthYearA11yLabel: 'MMMM YYYY',
-  },
-};
+// export const MY_FORMATS = {
+//   parse: {
+//     dateInput: 'LL',
+//   },
+//   display: {
+//     dateInput: 'LL',
+//     monthYearLabel: 'MMM YYYY',
+//     dateA11yLabel: 'LL',
+//     monthYearA11yLabel: 'MMMM YYYY',
+//   },
+// };
 //================================================================
 
 
@@ -53,7 +53,7 @@ export const MY_FORMATS = {
     // `MatMomentDateModule` in your applications root module. We provide it at the component level
     // here, due to limitations of our example generation script.
     {provide: DateAdapter, useClass: MomentDateAdapter, deps: [MAT_DATE_LOCALE]},
-    {provide: MAT_DATE_FORMATS, useValue:MY_FORMATS},
+    {provide: MAT_DATE_FORMATS, useValue:MAT_MOMENT_DATE_FORMATS},
   ]
 })
 
@@ -92,7 +92,9 @@ public image_url:any=environment['imageUpload_url'];
    public Editor = ClassicEditor;  //for ckeditor
    editorConfig = {
      placeholder: 'Description..',
+     
    };
+  
    public model = {
      editorData: ''
    };
@@ -183,7 +185,6 @@ public image_url:any=environment['imageUpload_url'];
         this.img_flag = true;
         break;
     }
-
     
   }
 
@@ -218,7 +219,7 @@ public image_url:any=environment['imageUpload_url'];
 
     this.eventForm.patchValue({
       title:defaultValue.title,
-      event_date:defaultValue.date_unix,
+      event_date:defaultValue.date,
       location:defaultValue.location,
       description:defaultValue.description,
       booking:defaultValue.booking,
@@ -233,19 +234,12 @@ public image_url:any=environment['imageUpload_url'];
     let sDateArr: any = defaultValue.event_date.split("-");
     this.eventForm.controls['date'].patchValue(moment([sDateArr[2], sDateArr[1] - 1, sDateArr[0]]));
 
-    this.fullImagePath=defaultValue.event_image.basepath + defaultValue.event_image.image;
+
+  this.fullImagePath=defaultValue.event_image.basepath + defaultValue.event_image.image;
   this.imageName=defaultValue.event_image.name;
   this.imageType=defaultValue.event_image.type;
   }
 
-
-  // getDate(){
-  //   var dateValue = new Date(this.eventForm.value.date),
-  //   mnth = ("0" + (dateValue.getMonth() + 1)).slice(-2),
-  //   day = ("0" + dateValue.getDate()).slice(-2);
-  // return [dateValue.getFullYear(), mnth, day].join("-");
-
-  // }
 
 
 
