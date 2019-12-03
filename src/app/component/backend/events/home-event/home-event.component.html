@@ -1,0 +1,15 @@
+<!--lib-listing for event-->
+<lib-listing *ngIf="eventhomelist != null && eventhomelist.length>0" [datasource]="eventhomelist"
+             [skip]="eventDataList_skip"
+             [sourcedata]="tableName"
+             [apiurl]="apiUrl"
+             [editroute]="editUrl"
+             [jwttoken]="user_cookie"
+             [statusarr]="status"
+             [updateendpoint]="UpdateEndpoint"
+             [deleteendpoint]="deleteEndpoint"
+>
+</lib-listing>
+<h2 *ngIf="eventhomelist.length == 0">No record found.</h2>
+
+<!--lib-listing for event end -->
