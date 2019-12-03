@@ -204,7 +204,13 @@ constructor(public dialogRef: MatDialogRef<NewslatterDialogComponent>,
     });
 
 }
-    
+
+    inputUntouch(form: any, val: any) {
+        console.log('on blur .....');
+        form.controls[val].markAsUntouched();
+    }
+
+
   public onNoClick(): void {
     this.dialogRef.close();
   }
