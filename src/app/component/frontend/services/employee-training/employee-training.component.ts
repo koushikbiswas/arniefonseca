@@ -8,16 +8,16 @@ import { MetaService } from '@ngx-meta/core';
 })
 export class EmployeeTrainingComponent implements OnInit {
 
-  constructor(private readonly meta: MetaService) { 
-    this.meta.setTitle('Arniefonseca - Employee Training');
-    this.meta.setTag('og:description', '');
-    this.meta.setTag('twitter:description', '');
+  constructor(private readonly meta: MetaService) {
+    this.meta.setTitle('Arnie Fonseca - Employee Training Program');
+    this.meta.setTag('og:description', 'Train your employees to improve their performance using Arnie Fonseca’s Employee Training Program, and increase the overall output of your organization manifolds.');
+    this.meta.setTag('twitter:description', 'Train your employees to improve their performance using Arnie Fonseca’s Employee Training Program, and increase the overall output of your organization manifolds.');
 
-    this.meta.setTag('og:keyword', '');
-    this.meta.setTag('twitter:keyword', '');
+    this.meta.setTag('og:keyword', 'Employee Training Program, Employee Coaching Program, Training For Employees, Coaching For Employees');
+    this.meta.setTag('twitter:keyword', 'Employee Training Program, Employee Coaching Program, Training For Employees, Coaching For Employees');
 
-    this.meta.setTag('og:title', 'Arniefonseca - Employee Training');
-    this.meta.setTag('twitter:title', 'Arniefonseca - Employee Training');
+    this.meta.setTag('og:title', 'Arnie Fonseca - Employee Training Program');
+    this.meta.setTag('twitter:title', 'Arnie Fonseca - Employee Training Program');
     this.meta.setTag('og:type', 'website');
     this.meta.setTag('og:image', '../../assets/images/logo.png');
     this.meta.setTag('twitter:image', '../../assets/images/logo.png');

@@ -18,17 +18,17 @@ export class ServicelistComponent implements OnInit {
   
   public indexval:any = 4;
 
-  constructor(private activatedRoute: ActivatedRoute, private router: Router, private readonly meta: MetaService, public apiservice: ApiService) { 
+  constructor(private activatedRoute: ActivatedRoute, private router: Router, private readonly meta: MetaService, public apiservice: ApiService) {
 
-    this.meta.setTitle('Arniefonseca - Services');
-    this.meta.setTag('og:description', '');
-    this.meta.setTag('twitter:description', '');
+    this.meta.setTitle('Arnie Fonseca - Services Overview');
+    this.meta.setTag('og:description', 'Arnie Fonseca’s varied Personal Development Programs cover different areas of your life, and will help you become the best version of yourself so that you can live a fulfilling life.');
+    this.meta.setTag('twitter:description', 'Arnie Fonseca’s varied Personal Development Programs cover different areas of your life, and will help you become the best version of yourself so that you can live a fulfilling life.');
 
-    this.meta.setTag('og:keyword', '');
-    this.meta.setTag('twitter:keyword', '');
+    this.meta.setTag('og:keyword', 'Arnie Fonseca Personal Development Programs, Arnie Fonseca Services, Arnie Fonseca Coaching');
+    this.meta.setTag('twitter:keyword', 'Arnie Fonseca Personal Development Programs, Arnie Fonseca Services, Arnie Fonseca Coaching');
 
-    this.meta.setTag('og:title', 'Arniefonseca - Services');
-    this.meta.setTag('twitter:title', 'Arniefonseca - Services');
+    this.meta.setTag('og:title', 'Arnie Fonseca - Services Overview');
+    this.meta.setTag('twitter:title', 'Arnie Fonseca - Services Overview');
     this.meta.setTag('og:type', 'website');
     this.meta.setTag('og:image', '../../assets/images/logo.png');
     this.meta.setTag('twitter:image', '../../assets/images/logo.png');

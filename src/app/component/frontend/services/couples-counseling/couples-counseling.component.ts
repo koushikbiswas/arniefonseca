@@ -9,15 +9,15 @@ import { MetaService } from '@ngx-meta/core';
 export class CouplesCounselingComponent implements OnInit {
 
   constructor(private readonly meta: MetaService) {
-    this.meta.setTitle('Arniefonseca - Couples Counseling');
-    this.meta.setTag('og:description', '');
-    this.meta.setTag('twitter:description', '');
+    this.meta.setTitle('Arnie Fonseca - Couples Counseling Program');
+    this.meta.setTag('og:description', 'Allow your relationship with your partner or spouse to thrive by getting rid of the many nuances, with the help of Arnie Fonseca’s Couples Counseling Program, and enjoy a fulfilling relationship.');
+    this.meta.setTag('twitter:description', 'Allow your relationship with your partner or spouse to thrive by getting rid of the many nuances, with the help of Arnie Fonseca’s Couples Counseling Program, and enjoy a fulfilling relationship.');
 
-    this.meta.setTag('og:keyword', '');
-    this.meta.setTag('twitter:keyword', '');
+    this.meta.setTag('og:keyword', 'Couples Counseling Program, Counseling For Couples, Counseling Program For Couples');
+    this.meta.setTag('twitter:keyword', 'Couples Counseling Program, Counseling For Couples, Counseling Program For Couples');
 
-    this.meta.setTag('og:title', 'Arniefonseca - Couples Counseling');
-    this.meta.setTag('twitter:title', 'Arniefonseca - Couples Counseling');
+    this.meta.setTag('og:title', 'Arnie Fonseca - Couples Counseling Program');
+    this.meta.setTag('twitter:title', 'Arnie Fonseca - Couples Counseling Program');
     this.meta.setTag('og:type', 'website');
     this.meta.setTag('og:image', '../../assets/images/logo.png');
     this.meta.setTag('twitter:image', '../../assets/images/logo.png');

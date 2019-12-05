@@ -30,16 +30,16 @@ export class TesimoniallistComponent implements OnInit {
 
   constructor(private activatedRoute: ActivatedRoute, private router: Router, public apiService: ApiService, private readonly meta: MetaService,  private sanitizer: DomSanitizer,public dialog:MatDialog) { 
 
-    this.meta.setTitle('Arniefonseca - Testimonial lists');
+    this.meta.setTitle('Arnie Fonseca - Testimonials');
 
-    this.meta.setTag('og:description', '');
-    this.meta.setTag('twitter:description', '');
+    this.meta.setTag('og:description', 'Check out what Coach Arnie’s students, clients and other people from the Personal Development Industry have to say about him and the many programs that he offers.');
+    this.meta.setTag('twitter:description', 'Check out what Coach Arnie’s students, clients and other people from the Personal Development Industry have to say about him and the many programs that he offers.');
 
-    this.meta.setTag('og:keyword', '');
-    this.meta.setTag('twitter:keyword', '');
+    this.meta.setTag('og:keyword', 'Arnie Fonseca Reviews, Arnie Fonseca Testimonials, Arnie Fonseca Customer Reviews');
+    this.meta.setTag('twitter:keyword', 'Arnie Fonseca Reviews, Arnie Fonseca Testimonials, Arnie Fonseca Customer Reviews');
 
-    this.meta.setTag('og:title', 'Arniefonseca - Testimonial lists');
-    this.meta.setTag('twitter:title', 'Arniefonseca - Testimonial lists');
+    this.meta.setTag('og:title', 'Arnie Fonseca - Testimonials');
+    this.meta.setTag('twitter:title', 'Arnie Fonseca - Testimonials');
 
     this.meta.setTag('og:type', 'website');
 

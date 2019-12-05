@@ -9,15 +9,15 @@ import { MetaService } from '@ngx-meta/core';
 export class SpecialProgramsForYoungMenComponent implements OnInit {
 
   constructor(private readonly meta: MetaService) { 
-    this.meta.setTitle('Arniefonseca - Special Program for young men');
-    this.meta.setTag('og:description', '');
-    this.meta.setTag('twitter:description', '');
+    this.meta.setTitle('Arnie Fonseca - Special Programs For Young Men');
+    this.meta.setTag('og:description', 'Allow your child to learn and grow within the protected environment of your home with Arnie Fonseca’s Special Programs For Young Men with custom subjects, lessons, and assessment methods.');
+    this.meta.setTag('twitter:description', 'Allow your child to learn and grow within the protected environment of your home with Arnie Fonseca’s Special Programs For Young Men with custom subjects, lessons, and assessment methods.');
 
-    this.meta.setTag('og:keyword', '');
-    this.meta.setTag('twitter:keyword', '');
+    this.meta.setTag('og:keyword', 'Arnie Fonseca’s Special Programs For Young Men, Special Programs For Young Men By Coach Arnie, K12 Education For Young Ones');
+    this.meta.setTag('twitter:keyword', 'Arnie Fonseca’s Special Programs For Young Men, Special Programs For Young Men By Coach Arnie, K12 Education For Young Ones');
 
-    this.meta.setTag('og:title', 'Arniefonseca - Special Program for young men');
-    this.meta.setTag('twitter:title', 'Arniefonseca - Special Program for young men');
+    this.meta.setTag('og:title', 'Arnie Fonseca - Special Programs For Young Men');
+    this.meta.setTag('twitter:title', 'Arnie Fonseca - Special Programs For Young Men');
     this.meta.setTag('og:type', 'website');
     this.meta.setTag('og:image', '../../assets/images/logo.png');
     this.meta.setTag('twitter:image', '../../assets/images/logo.png');
