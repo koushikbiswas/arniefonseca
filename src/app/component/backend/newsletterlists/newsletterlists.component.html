@@ -1,168 +1,171 @@
-
 <div class="adminwrappercls">
-        <app-header></app-header>
-            <div class="main-content-wrap">
-              <mat-card class="generalcls blog" style="padding: 0 !important;">  
-                  <!-- <img src="../../../../assets/images/blogmang-dashboard-img1.jpg" style="width: 100%; display: block; margin: 0; padding: 0;"> -->
-                  <mat-card-content class="adm_inner_banner manageblog">
-                    <mat-card-title class="adm_inner_title">Newsletter</mat-card-title>
-                    <p class="adm_inner_para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  </mat-card-content>
-                  <mat-card-content class="bred_cram_wrapper">
-                    <a mat-list-item routerLinkActive="active"> Dashboard </a>
-                    <a mat-list-item routerLinkActive="active"> Manage Website </a>
-                    <a mat-list-item routerLinkActive="active activebread" [routerLink]="'/newsletter-list'"> Newsletter </a>
-                </mat-card-content>
-                <mat-tab-group class="tabwrapper">
-                        <mat-tab> 
-                            <ng-template mat-tab-label>
-                                <h2 class="innertitle2">Newsletter List</h2>
-                            </ng-template>          
-                          <ng-template matTabContent>    
-                            <span class="bloglists">      
-                              
-                              <!-- Selector -->
-                                <!-- <app-listing-blogs></app-listing-blogs> -->
-                                <mat-card>
-                                    <span class="searchblock">
-                                        <span class="searchblockwrapper">
-                                            <span>
-                                                <h2>Newsletter List</h2>
-                                            </span>
-                                            <span>
-                                                <button mat-button class="btngreen sim-button" [routerLink]="['/blogs/add']"><i class="material-icons">add</i> Add Newsletter</button>
-                                            </span>                    
+    <app-header></app-header>
+    <div class="main-content-wrap">
+        <mat-card class="generalcls blog" style="padding: 0 !important;">
+            <!-- <img src="../../../../assets/images/blogmang-dashboard-img1.jpg" style="width: 100%; display: block; margin: 0; padding: 0;"> -->
+            <mat-card-content class="adm_inner_banner manageblog">
+                <mat-card-title class="adm_inner_title">Newsletter</mat-card-title>
+                <p class="adm_inner_para">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </mat-card-content>
+            <mat-card-content class="bred_cram_wrapper">
+                <a mat-list-item routerLinkActive="active"> Dashboard </a>
+                <a mat-list-item routerLinkActive="active"> Manage Website </a>
+                <a mat-list-item routerLinkActive="active activebread" [routerLink]="'/newsletter-list'"> Newsletter
+                </a>
+            </mat-card-content>
+            <mat-tab-group class="tabwrapper">
+                <mat-tab>
+                    <ng-template mat-tab-label>
+                        <h2 class="innertitle2">Newsletter List</h2>
+                    </ng-template>
+                    <ng-template matTabContent>
+                        <span class="bloglists">
+
+                            <!-- Selector -->
+                            <!-- <app-listing-blogs></app-listing-blogs> -->
+                            <mat-card>
+                                <span class="searchblock">
+                                    <span class="searchblockwrapper">
+                                        <span>
+                                            <h2>Newsletter List</h2>
+                                        </span>
+                                        <span>
+                                            <button mat-button class="btngreen sim-button"
+                                                [routerLink]="['/blogs/add']"><i class="material-icons">add</i> Add
+                                                Newsletter</button>
                                         </span>
                                     </span>
-                                    <div class="tablediv">
-                                     
-
-            
+                                </span>
+                                <div class="tablediv">
 
 
 
 
-                                    </div>
-                                </mat-card>
-                            </span>
-                          </ng-template>
-                        </mat-tab>
+
+                                </div>
+                            </mat-card>
+                        </span>
+                    </ng-template>
+                </mat-tab>
 
 
-                        <mat-tab> 
-                            <ng-template mat-tab-label>
-                                <h2 class="innertitle2"> Subscriber List </h2>
-                            </ng-template>          
-                          <ng-template matTabContent>    
-                            <span class="bloglists">      
-                              
-                              <!-- Selector -->
-                                <!-- <app-listing-blogs></app-listing-blogs> -->
-                                <mat-card>
-                                    <span class="searchblock">
-                                        <span class="searchblockwrapper">
-                                            <span>
-                                                <h2> Subscriber List </h2>
-                                            </span>
-                                            <span>
-                                                <button mat-button class="btngreen sim-button" [routerLink]="['/subscriber/add']"><i class="material-icons">add</i> Add Subscriber</button>
-                                            </span>                    
+                <mat-tab>
+                    <ng-template mat-tab-label>
+                        <h2 class="innertitle2"> Subscriber List </h2>
+                    </ng-template>
+                    <ng-template matTabContent>
+                        <span class="bloglists">
+
+                            <!-- Selector -->
+                            <!-- <app-listing-blogs></app-listing-blogs> -->
+                            <mat-card>
+                                <span class="searchblock">
+                                    <span class="searchblockwrapper">
+                                        <span>
+                                            <h2> Subscriber List </h2>
+                                        </span>
+                                        <span>
+                                            <button mat-button class="btngreen sim-button"
+                                                [routerLink]="['/subscriber/add']"><i class="material-icons">add</i> Add
+                                                Subscriber</button>
                                         </span>
                                     </span>
-                                    <div class="tablediv">
-                                     
-
-            
+                                </span>
+                                <div class="tablediv">
 
 
 
-
-                                    </div>
-                                </mat-card>
-                            </span>
-                          </ng-template>
-                        </mat-tab>
+                                    <lib-listing-newsletter [config]="subscriptionForm" ></lib-listing-newsletter>
 
 
-                        <mat-tab> 
-                            <ng-template mat-tab-label>
-                                <h2 class="innertitle2">Subscribers Group List</h2>
-                            </ng-template>          
-                          <ng-template matTabContent>    
-                            <span class="bloglists">      
-                              
-                              <!-- Selector -->
-                                <!-- <app-listing-blogs></app-listing-blogs> -->
-                                <mat-card>
-                                    <span class="searchblock">
-                                        <span class="searchblockwrapper">
-                                            <span>
-                                                <h2>Subscribers Group List</h2>
-                                            </span>
-                                            <span>
-                                                <button mat-button class="btngreen sim-button" [routerLink]="['/subscriber-group/add']"><i class="material-icons">add</i> Add Subscribers</button>
-                                            </span>                    
+
+                                </div>
+                            </mat-card>
+                        </span>
+                    </ng-template>
+                </mat-tab>
+
+
+                <mat-tab>
+                    <ng-template mat-tab-label>
+                        <h2 class="innertitle2">Subscribers Group List</h2>
+                    </ng-template>
+                    <ng-template matTabContent>
+                        <span class="bloglists">
+
+                            <!-- Selector -->
+                            <!-- <app-listing-blogs></app-listing-blogs> -->
+                            <mat-card>
+                                <span class="searchblock">
+                                    <span class="searchblockwrapper">
+                                        <span>
+                                            <h2>Subscribers Group List</h2>
+                                        </span>
+                                        <span>
+                                            <button mat-button class="btngreen sim-button"
+                                                [routerLink]="['/subscriber-group/add']"><i
+                                                    class="material-icons">add</i> Add Subscribers</button>
                                         </span>
                                     </span>
-                                    <div class="tablediv">
-                                     
-                                        <lib-listing-subcategory [config]="subscriptionCatForm"></lib-listing-subcategory>
-            
+                                </span>
+                                <div class="tablediv">
+
+                                    <lib-listing-subcategory [config]="subscriptionCatForm"></lib-listing-subcategory>
 
 
 
 
-                                    </div>
-                                </mat-card>
-                            </span>
-                          </ng-template>
-                        </mat-tab>
+
+                                </div>
+                            </mat-card>
+                        </span>
+                    </ng-template>
+                </mat-tab>
 
 
 
-                        <mat-tab> 
-                            <ng-template mat-tab-label>
-                                <h2 class="innertitle2">Settings</h2>
-                            </ng-template>          
-                          <ng-template matTabContent>    
-                            <span class="bloglists">      
-                              
-                              <!-- Selector -->
-                                <!-- <app-listing-blogs></app-listing-blogs> -->
-                                <mat-card>
-                                    <span class="searchblock">
-                                        <span class="searchblockwrapper">
-                                            <span>
-                                                <h2>Settings</h2>
-                                            </span>
-                                            <span>
-                                                <!-- <button mat-button class="btngreen sim-button" [routerLink]="['/blogs/add']"><i class="material-icons">add</i> Add Newsletter List</button> -->
-                                            </span>                    
+                <mat-tab>
+                    <ng-template mat-tab-label>
+                        <h2 class="innertitle2">Settings</h2>
+                    </ng-template>
+                    <ng-template matTabContent>
+                        <span class="bloglists">
+
+                            <!-- Selector -->
+                            <!-- <app-listing-blogs></app-listing-blogs> -->
+                            <mat-card>
+                                <span class="searchblock">
+                                    <span class="searchblockwrapper">
+                                        <span>
+                                            <h2>Settings</h2>
+                                        </span>
+                                        <span>
+                                            <!-- <button mat-button class="btngreen sim-button" [routerLink]="['/blogs/add']"><i class="material-icons">add</i> Add Newsletter List</button> -->
                                         </span>
                                     </span>
-                                    <div class="tablediv">
-                                     
-
-            
+                                </span>
+                                <div class="tablediv">
 
 
 
 
-                                    </div>
-                                </mat-card>
-                            </span>
-                          </ng-template>
-                        </mat-tab>
+
+
+
+                                </div>
+                            </mat-card>
+                        </span>
+                    </ng-template>
+                </mat-tab>
 
 
 
 
-                     
-                               
-                     </mat-tab-group>
-              </mat-card>
-            </div>
-        </div>
-    <app-footer></app-footer>
-    
 
+
+            </mat-tab-group>
+        </mat-card>
+    </div>
+</div>
+<app-footer></app-footer>

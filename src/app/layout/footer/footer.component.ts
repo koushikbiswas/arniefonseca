@@ -246,15 +246,10 @@ constructor(public dialogRef: MatDialogRef<NewslatterDialogComponent>,
                     this.myformnews.reset();
 
 
-
-
                     this.myformnews.controls['email'].updateValueAndValidity();
                     this.myformnews.controls['name'].updateValueAndValidity();
                     this.myformnews.controls['phone'].updateValueAndValidity();
                     this.myformnews.controls['company'].updateValueAndValidity();
-
-
-
 
 
 

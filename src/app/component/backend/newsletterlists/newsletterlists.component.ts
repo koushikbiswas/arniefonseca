@@ -29,7 +29,21 @@ public BaseUrl:any= environment["API_URL"];
     //view: "news_category_view"
 
   }
-  
+
+
+  public subscriptionForm: any = {
+    apiBaseUrl: this.BaseUrl,
+    listEndPoint: "datalist",
+    datasource: "",
+    tableName: "subscriptions",
+    updateurl: "addorupdatedata",
+    editUrl: "newsletter/add-group/edit/",
+    jwtToken: this.cookieService.get('jwtToken'),
+    deleteEndPoint: "deletesingledata",
+    addLink: "subscriber/add",
+    view: "subscriptions"
+
+  }
   
 
 
@@ -47,14 +61,17 @@ public BaseUrl:any= environment["API_URL"];
     });
 
 
+    //apiservice for subscriber
+
+
+
+
     // this.activatedRoute.data.subscribe(resolveData => {
     //   this.newsConfigForm.datasource = resolveData.newLetterList.res;
 
     //   this.newsConfigForm.jwtToken = this.cookieService.get('jwtToken');
 
      
-
-    
     // });
 
     // this.activatedRoute.data.subscribe(resolveData => {
