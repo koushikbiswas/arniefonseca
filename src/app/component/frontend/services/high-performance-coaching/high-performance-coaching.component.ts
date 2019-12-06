@@ -8,16 +8,16 @@ import { MetaService } from '@ngx-meta/core';
 })
 export class HighPerformanceCoachingComponent implements OnInit {
 
-  constructor(private readonly meta: MetaService) { 
-    this.meta.setTitle('Arniefonseca - High performance coaching');
-    this.meta.setTag('og:description', '');
-    this.meta.setTag('twitter:description', '');
+  constructor(private readonly meta: MetaService) {
+    this.meta.setTitle('Arnie Fonseca - High-Performance Coaching Program');
+    this.meta.setTag('og:description', 'Arnie Fonseca’s High-Performance Coaching Program will help you improve and perform in your workplace at very high levels of success, enabling you and your organization to grow.');
+    this.meta.setTag('twitter:description', 'Arnie Fonseca’s High-Performance Coaching Program will help you improve and perform in your workplace at very high levels of success, enabling you and your organization to grow.');
 
-    this.meta.setTag('og:keyword', '');
-    this.meta.setTag('twitter:keyword', '');
+    this.meta.setTag('og:keyword', 'High-Performance Coaching, High-Performance Coaching By Coach Arnie, Arnie Fonseca’s High-Performance Coaching');
+    this.meta.setTag('twitter:keyword', 'High-Performance Coaching, High-Performance Coaching By Coach Arnie, Arnie Fonseca’s High-Performance Coaching');
 
-    this.meta.setTag('og:title', 'Arniefonseca - High performance coaching');
-    this.meta.setTag('twitter:title', 'Arniefonseca - High performance coaching');
+    this.meta.setTag('og:title', 'Arnie Fonseca - High-Performance Coaching Program');
+    this.meta.setTag('twitter:title', 'Arnie Fonseca - High-Performance Coaching Program');
     this.meta.setTag('og:type', 'website');
     this.meta.setTag('og:image', '../../assets/images/logo.png');
     this.meta.setTag('twitter:image', '../../assets/images/logo.png');

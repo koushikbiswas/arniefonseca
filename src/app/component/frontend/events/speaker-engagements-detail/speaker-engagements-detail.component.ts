@@ -26,18 +26,19 @@ export class SpeakerEngagementsDetailComponent implements OnInit {
 
   constructor(private activatedRoute: ActivatedRoute, private router: Router, public apiService: ApiService, private readonly meta: MetaService,private sanitizer: DomSanitizer ) {
 
-    this.meta.setTitle('Arniefonseca - Speaker Engagements Event Detail');
-    this.meta.setTag('og:description', '');
-    this.meta.setTag('twitter:description', '');
+    this.meta.setTitle('Arnie Fonseca - Speaker Engagements');
+    this.meta.setTag('og:description', 'Check out the dates and locations of upcoming Arnie Fonseca Speaker Engagements, and hear Coach Arnie speak. Attend one of these Speaker Engagements By Coach Arnie so that he can help you achieve all you want.');
+    this.meta.setTag('twitter:description', 'Check out the dates and locations of upcoming Arnie Fonseca Speaker Engagements, and hear Coach Arnie speak. Attend one of these Speaker Engagements By Coach Arnie so that he can help you achieve all you want.');
 
-    this.meta.setTag('og:keyword', '');
-    this.meta.setTag('twitter:keyword', '');
+    this.meta.setTag('og:keyword', 'Arnie Fonseca Speaker Engagements, Speaker Engagements By Arnie Fonseca, Speaker Engagements By Coach Arnie');
+    this.meta.setTag('twitter:keyword', 'Arnie Fonseca Speaker Engagements, Speaker Engagements By Arnie Fonseca, Speaker Engagements By Coach Arnie');
 
-    this.meta.setTag('og:title', 'Arniefonseca - Speaker Engagements Event Detail');
-    this.meta.setTag('twitter:title', 'Arniefonseca - Speaker Engagements Event Detail');
+    this.meta.setTag('og:title', 'Arnie Fonseca - Speaker Engagements');
+    this.meta.setTag('twitter:title', 'Arnie Fonseca - Speaker Engagements');
     this.meta.setTag('og:type', 'website');
     this.meta.setTag('og:image', '../../assets/images/logo.png');
     this.meta.setTag('twitter:image', '../../assets/images/logo.png');
+
     this.dataformate = moment();
   }
 

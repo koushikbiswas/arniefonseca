@@ -63,15 +63,15 @@ export class BloglistComponent implements OnInit {
 
   constructor(private readonly meta: MetaService, private readonly title: Title, private router: Router, private activatedRoute: ActivatedRoute, private cookieService: CookieService, public apiService: ApiService,private sanitizer: DomSanitizer,public dialog:MatDialog) {
 
-    this.meta.setTitle('Arniefonseca - Blog');
-    this.meta.setTag('og:description', '');
-    this.meta.setTag('twitter:description', '');
+    this.meta.setTitle('Arnie Fonseca - Blogs');
+    this.meta.setTag('og:description', 'Check out the latest blogs by “Coach Arnie” about everything that is happening in the Personal Development industry and learn of the best ways to improve your lives and achieve success.');
+    this.meta.setTag('twitter:description', 'Check out the latest blogs by “Coach Arnie” about everything that is happening in the Personal Development industry and learn of the best ways to improve your lives and achieve success.');
 
-    this.meta.setTag('og:keyword', '');
-    this.meta.setTag('twitter:keyword', '');
+    this.meta.setTag('og:keyword', 'Arnie Fonseca Blogs, Personal Development Blogs, Blogs on Personal Development');
+    this.meta.setTag('twitter:keyword', 'Arnie Fonseca Blogs, Personal Development Blogs, Blogs on Personal Development');
 
-    this.meta.setTag('og:title', 'Arniefonseca - Blog');
-    this.meta.setTag('twitter:title', 'Arniefonseca - Blog');
+    this.meta.setTag('og:title', 'Arnie Fonseca - Blogs');
+    this.meta.setTag('twitter:title', 'Arnie Fonseca - Blogs');
 
     this.meta.setTag('og:type', 'website');
     this.meta.setTag('og:image', '../../assets/images/logo.png');
