@@ -29,8 +29,8 @@ public BaseUrl:any= environment["API_URL"];
     //view: "news_category_view"
 
   }
-  
-  
+
+
 
 
   constructor(private router: Router, private activatedRoute: ActivatedRoute, private cookieService: CookieService, public apiservice: ApiService) { }
@@ -52,9 +52,9 @@ public BaseUrl:any= environment["API_URL"];
 
     //   this.newsConfigForm.jwtToken = this.cookieService.get('jwtToken');
 
-     
 
-    
+
+
     // });
 
     // this.activatedRoute.data.subscribe(resolveData => {
