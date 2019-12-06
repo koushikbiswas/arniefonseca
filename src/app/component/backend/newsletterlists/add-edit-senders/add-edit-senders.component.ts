@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { CookieService } from 'ngx-cookie-service';
 import { ActivatedRoute } from '@angular/router';
+
 @Component({
-  selector: 'app-add-edit-senders',
-  templateUrl: './add-edit-senders.component.html',
-  styleUrls: ['./add-edit-senders.component.css']
+  selector: 'app-add-edit-senderapp',
+  templateUrl: './add-edit-senderapp.component.html',
+  styleUrls: ['./add-edit-senderapp.component.css']
 })
-export class AddEditSendersComponent implements OnInit {
+export class AddEditSenderappComponent implements OnInit {
 
   public configAddEdit: any = {
     action: "add",
@@ -16,11 +17,10 @@ export class AddEditSendersComponent implements OnInit {
     condition: {},
     defaultData: null,
     jwtToken: this.cookieService.get('jwtToken'),
-    callBack: "newsletter-list",
+    callBack: "sender/list",
     userData: { id: "18801017007", name: "Admin" },
     defaultDataAlways: null
   }
-
   constructor(private cookieService: CookieService, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {

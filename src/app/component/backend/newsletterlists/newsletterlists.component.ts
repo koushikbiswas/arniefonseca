@@ -13,74 +13,150 @@ export class NewsletterlistsComponent implements OnInit {
 
 public BaseUrl:any= environment["API_URL"];
 
+public newsConfigForm: any = {
+  apiBaseUrl: this.BaseUrl,
+  listEndPoint: "datalist",
+  datasource: "",
+  tableName: "newsletters",
+  updateurl: "addorupdatedata",
+  editUrl: "newsletter/edit",
+  jwtToken: "",
+  deleteEndPoint: "deletesingledata",
+  addLink: "newsletter/add",
+  view: ""
+}
+
+
+public subscriptionForm: any = {
+  apiBaseUrl: this.BaseUrl,
+  listEndPoint: "datalist",
+  datasource: "",
+  tableName: "subscriptions",
+  updateurl: "addorupdatedata",
+  editUrl: "subscriber/add-group/edit/",
+  jwtToken: "",  
+  deleteEndPoint: "deletesingledata",
+  addLink: "subscriber/add-subscription-admin",
+  view: "subscriptions_view"
+
+}
 
   public subscriptionCatForm: any = {
     apiBaseUrl: this.BaseUrl,
-
-    // apiBaseUrl: environment.API_URL,
     listEndPoint: "datalist",
-    datasource: "subscriptiongrouplist",
+    datasource: "",
     tableName: "resources",
     updateurl: "addorupdatedata",
-    editUrl: "/subscriber-group/edit/",
+    editUrl: "subscriber-group/edit/",
     jwtToken: "",
     deleteEndPoint: "deletesingledata",
     addLink: "subscriber-group/add",
-    //view: "news_category_view"
+    view: "news_category_view"
 
   }
 
 
 
+  public senderConfigForm: any = {
+    // apiBaseUrl: "https://r245816wug.execute-api.us-east-1.amazonaws.com/dev/api/",
+    apiBaseUrl: this.BaseUrl,
+    listEndPoint: "datalist",
+    datasource: "",
+    tableName: "senders",
+    updateurl: "addorupdatedata",
+    editUrl: "test/edit",
+    jwtToken: "",
+    deleteEndPoint: "deletesingledata",
+    addLink: "/test/add",
+    view: "testemail_view"
 
-  constructor(private router: Router, private activatedRoute: ActivatedRoute, private cookieService: CookieService, public apiservice: ApiService) { }
-
-  ngOnInit() {
+  }
 
 
-    this.activatedRoute.data.subscribe(resolveData => {
-      this.subscriptionCatForm.datasource = resolveData.subscriptionListData.res;
-      this.subscriptionCatForm.jwtToken = this.cookieService.get('jwtToken');
+  public testEmailConfigForm: any = {
+    // apiBaseUrl: "https://r245816wug.execute-api.us-east-1.amazonaws.com/dev/api/",
+    apiBaseUrl: this.BaseUrl,
+    listEndPoint: "datalist",
+    datasource: "",
+    tableName: "senders",
+    updateurl: "addorupdatedata",
+    editUrl: "test/edit",
+    jwtToken: "",
+    deleteEndPoint: "deletesingledata",
+    addLink: "/test/add",
+    view: "testemail_view"
 
-      // console.log('test', this.subscriptionCatForm.datasource);
+  }
 
+
+ 
+  
+
+
+  constructor(private router: Router, private activatedRoute: ActivatedRoute, private cookieService: CookieService, public apiservice: ApiService) { 
+
+
+    
+
+
+     // SubscriptionsList
+
+    let data: any = {
+      source:"subscriptions_view",
+      endpoint: "datalist"
+
+    }
+    this.apiservice.getDatalist(data).subscribe((result: any)=>{
+      this.subscriptionForm.datasource = result.res;
+      console.log('>>>>>>>>>>>>koushik subscription>>>>>>>>>>>>>', this.subscriptionForm.datasource);
     });
 
 
-    // this.activatedRoute.data.subscribe(resolveData => {
-    //   this.newsConfigForm.datasource = resolveData.newLetterList.res;
 
-    //   this.newsConfigForm.jwtToken = this.cookieService.get('jwtToken');
+    // SubscriptionsCATEGORYList
 
+    let dataSubCat: any = {
+      source:"news_category_view",
+      endpoint: "datalist"
 
+    }
+    this.apiservice.getDatalist(dataSubCat).subscribe((result: any)=>{
+      this.subscriptionCatForm.datasource = result.res;
+      // console.log('>>>>>>>>>>>>koushik subscription Category>>>>>>>>>>>>>', this.subscriptionCatForm.datasource);
+    });
+        
 
+       // testemail 
 
-    // });
-
-    // this.activatedRoute.data.subscribe(resolveData => {
-    //   this.subscriptionCatForm.datasource = resolveData.subscriptionCatData.res;
-    //   this.subscriptionCatForm.jwtToken = this.cookieService.get('jwtToken');
-
-    // });
-
-    // this.activatedRoute.data.subscribe(resolveData => {
-    //   this.subscriptionForm.datasource = resolveData.subscriptionData.res;
-    //   this.subscriptionForm.jwtToken = this.cookieService.get('jwtToken');
-
-    // });
-
-    // this.activatedRoute.data.subscribe(resolveData => {
-    //   this.senderConfigForm.datasource = resolveData.senderData.res;
-    //   this.senderConfigForm.jwtToken = this.cookieService.getAll();
-
-    // });
+       let dataTestemail: any = {
+        source:"testemail_view",
+        endpoint: "datalist"
+  
+      }
+      this.apiservice.getDatalist(dataTestemail).subscribe((result: any)=>{
+        this.testEmailConfigForm.datasource = result.res;
+         console.log('>>>>>>>>>>>>amitavatestemail>>>>>>>>>>>>>', this.testEmailConfigForm.datasource);
+      });
 
 
-    // this.activatedRoute.data.subscribe(resolveData => {
-    //   this.testemailConfigForm.datasource = resolveData.testData.res;
-    //   this.testemailConfigForm.jwtToken = this.cookieService.get('jwtToken');
 
-    // });
+      
+          
+
+
+
+  }
+
+  ngOnInit() {
+
+  // NewsletterList 
+
+  this.activatedRoute.data.subscribe(resolveData => {
+    this.newsConfigForm.datasource = resolveData.newsData.res;
+    this.newsConfigForm.jwtToken = this.cookieService.get('jwtToken');
+    // console.log('test', this.newsConfigForm.datasource);
+
+  });
   }
 
 }

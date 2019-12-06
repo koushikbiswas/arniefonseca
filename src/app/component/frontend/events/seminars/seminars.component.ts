@@ -4,6 +4,9 @@ import { ActivatedRoute, Router } from '@angular/router';
 import * as moment from 'moment';
 import { ApiService } from '../../../../api.service';
 import { SafeResourceUrl, DomSanitizer } from '@angular/platform-browser';
+import { getLocaleDateFormat } from '@angular/common';
+import { format } from 'url';
+import {DatePipe} from '@angular/common';
 
 @Component({
   selector: 'app-seminars',
@@ -27,7 +30,7 @@ export class SeminarsComponent implements OnInit {
   public dataformate: any;
   public eventImage:any;
 
-  constructor(private activatedRoute: ActivatedRoute, private router: Router, public apiService: ApiService, private readonly meta: MetaService,private sanitizer: DomSanitizer ) {
+  constructor(private activatedRoute: ActivatedRoute, private router: Router, public apiService: ApiService, private readonly meta: MetaService,private sanitizer: DomSanitizer,public datePipe:DatePipe ) {
 
     this.meta.setTitle('Arnie Fonseca - Seminars');
     this.meta.setTag('og:description', 'Check out the dates and locations of upcoming Seminars By Arnie Fonseca, and book your seats to Seminars By Coach Arnie near you. Attend Arnie Fonseca Seminars to help improve your life.');
@@ -50,7 +53,7 @@ export class SeminarsComponent implements OnInit {
       // console.log('test',data);
       let result: any = {};
       result = data.seminarsListData.res;
-      console.log(result);
+      console.log('>>>>>>>',result);
 
       // this.eventImage=result.event_image[0].basepath[0]+result.event_image[0].image[0];
       // console.log('+++++>>>>>>>>>>>>', this.eventImage)
@@ -62,6 +65,8 @@ export class SeminarsComponent implements OnInit {
 
       this.indexvalleftlengthlength = this.SeminarsListArry.length;
     })
+
+    // this.getCurrentDate();
 
 
   }
@@ -77,12 +82,24 @@ export class SeminarsComponent implements OnInit {
   blogloadmorenew(){
     // console.log('load more')
     this.indexvalleft=this.indexvalleft+1;
-
   }
 
   detail(val:any){
     console.log(val)
     this.router.navigateByUrl("/seminars-detail/"+val);
   }
+
+  //current date
+// getCurrentDate(){
+  
+//   let dateFormat = require('dateformat');
+//   let now = new Date();
+//   // dateFormat(now,"mm-dd-yyyy");
+//   let currentDate=this.datePipe.transform(now,"MM-dd-yyyy")
+
+//   console.log('>>>>>>>>',currentDate);
+      
+//     }
+
 
 }
