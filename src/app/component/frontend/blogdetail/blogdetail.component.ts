@@ -41,7 +41,7 @@ export class BlogdetailComponent implements OnInit {
   public blogDetail:any;
   public blog:any = '';
   public blogList:any;
-  public blog_img:any
+  public blog_img:any;
   public blog_image:any;
 
   public blogcategorysearch:any;

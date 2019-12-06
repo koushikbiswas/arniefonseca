@@ -54,6 +54,7 @@ import { CustomerListComponent } from './component/backend/customer-list/custome
 import { MaindashboardComponent } from './component/backend/maindashboard/maindashboard.component';
 
 import { AddeditServiceComponent } from './component/backend/ServiceApp/addedit-service/addedit-service.component';
+
 import { ListingServiceComponent } from './component/backend/ServiceApp/listing-service/listing-service.component';
 
 import { UserManagementComponent } from './component/backend/user-management/user-management.component';
@@ -145,6 +146,11 @@ const routes: Routes = [
       }, endpoint: 'datalistwithouttoken'
     }
   },
+
+
+
+
+
   { path: 'bloghome', component: BlogComponent },
 
   {
@@ -200,10 +206,19 @@ const routes: Routes = [
 
 
   { path: 'bk-leftdiv', component: BkLeftdivComponent },
+
+  // {
+  //   path: 'service-listing', component: ListingServiceComponent, resolve: { serviceList: ResolveService },
+  //   data: { requestcondition: { source: 'service', condition: {} }, endpoint: 'datalist' }
+  // },
+
   {
-    path: 'service-listing', component: ListingServiceComponent, resolve: { serviceList: ResolveService },
-    data: { requestcondition: { source: 'service', condition: {} }, endpoint: 'datalist' }
+    path: 'service',
+    component: ServiceComponent,
+    resolve: { serviceList: ResolveService },
+    data: { requestcondition: { source: 'service_view', condition: {} }, endpoint: 'datalist' }
   },
+
   { path: 'service/add', component: AddeditServiceComponent },
   {
     path: 'service/list',
@@ -211,12 +226,7 @@ const routes: Routes = [
     resolve: { serviceList: ResolveService },
     data: { requestcondition: { source: 'service_view', condition: {} }, endpoint: 'datalist' }
   },
-  {
-    path: 'service',
-    component: ServiceComponent,
-    resolve: { serviceList: ResolveService },
-    data: { requestcondition: { source: 'service_view', condition: {} }, endpoint: 'datalist' }
-  },
+
   {
     path: 'service/edit/:_id', component: AddeditServiceComponent, resolve: { serviceData: ResolveService },
     data: { requestcondition: { source: 'service', condition: {} }, endpoint: 'datalist' }
