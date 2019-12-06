@@ -30,15 +30,15 @@ export class WorkshopsComponent implements OnInit {
   public eventImage:any;
 
   constructor(private activatedRoute: ActivatedRoute, private router: Router, public apiService: ApiService, private readonly meta: MetaService,private sanitizer: DomSanitizer ) {
-    this.meta.setTitle('Arniefonseca - Event');
-    this.meta.setTag('og:description', '');
-    this.meta.setTag('twitter:description', '');
+    this.meta.setTitle('Arnie Fonseca - Workshops');
+    this.meta.setTag('og:description', 'Check out the dates and locations of upcoming Workshops By Arnie Fonseca, and let Coach Arnie help you with your Personal Development at one of these Arnie Fonseca Workshops.');
+    this.meta.setTag('twitter:description', 'Check out the dates and locations of upcoming Workshops By Arnie Fonseca, and let Coach Arnie help you with your Personal Development at one of these Arnie Fonseca Workshops.');
 
-    this.meta.setTag('og:keyword', '');
-    this.meta.setTag('twitter:keyword', '');
+    this.meta.setTag('og:keyword', 'Arnie Fonseca Workshops, Workshops By Arnie Fonseca, Workshops By Coach Arnie');
+    this.meta.setTag('twitter:keyword', 'Arnie Fonseca Workshops, Workshops By Arnie Fonseca, Workshops By Coach Arnie');
 
-    this.meta.setTag('og:title', 'Arniefonseca - Event');
-    this.meta.setTag('twitter:title', 'Arniefonseca - Event');
+    this.meta.setTag('og:title', 'Arnie Fonseca - Workshops');
+    this.meta.setTag('twitter:title', 'Arnie Fonseca - Workshops');
     this.meta.setTag('og:type', 'website');
     this.meta.setTag('og:image', '../../assets/images/logo.png');
     this.meta.setTag('twitter:image', '../../assets/images/logo.png');

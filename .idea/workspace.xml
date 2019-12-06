@@ -2,9 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6bba0bd0-3d33-4df9-bc5d-42627e12b863" name="Default Changelist" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/layout/footer/footer.component.ts" afterPath="$PROJECT_DIR$/src/app/layout/footer/footer.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/layout/footer/newsletter-dialog.html" afterPath="$PROJECT_DIR$/src/app/layout/footer/newsletter-dialog.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/layout/footer/newsletter-success-dialog.html" afterPath="$PROJECT_DIR$/src/app/layout/footer/newsletter-success-dialog.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/bio/bio.component.ts" afterPath="$PROJECT_DIR$/src/app/component/frontend/bio/bio.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/blogdetail/blogdetail.component.ts" afterPath="$PROJECT_DIR$/src/app/component/frontend/blogdetail/blogdetail.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/bloglist/bloglist.component.ts" afterPath="$PROJECT_DIR$/src/app/component/frontend/bloglist/bloglist.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/contactus/contactus.component.ts" afterPath="$PROJECT_DIR$/src/app/component/frontend/contactus/contactus.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/events/seminars-detail/seminars-detail.component.ts" afterPath="$PROJECT_DIR$/src/app/component/frontend/events/seminars-detail/seminars-detail.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/events/seminars/seminars.component.ts" afterPath="$PROJECT_DIR$/src/app/component/frontend/events/seminars/seminars.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component.ts" afterPath="$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements/speaker-engagements.component.ts" afterPath="$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements/speaker-engagements.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/events/workshop-detail/workshop-detail.component.ts" afterPath="$PROJECT_DIR$/src/app/component/frontend/events/workshop-detail/workshop-detail.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/events/workshops/workshops.component.ts" afterPath="$PROJECT_DIR$/src/app/component/frontend/events/workshops/workshops.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/gallery/image-gallery/image-gallery.component.ts" afterPath="$PROJECT_DIR$/src/app/component/frontend/gallery/image-gallery/image-gallery.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/gallery/video-gallery/video-gallery.component.ts" afterPath="$PROJECT_DIR$/src/app/component/frontend/gallery/video-gallery/video-gallery.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/home/home.component.ts" afterPath="$PROJECT_DIR$/src/app/component/frontend/home/home.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/services/couples-counseling/couples-counseling.component.ts" afterPath="$PROJECT_DIR$/src/app/component/frontend/services/couples-counseling/couples-counseling.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/services/employee-training/employee-training.component.ts" afterPath="$PROJECT_DIR$/src/app/component/frontend/services/employee-training/employee-training.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/services/high-performance-coaching/high-performance-coaching.component.ts" afterPath="$PROJECT_DIR$/src/app/component/frontend/services/high-performance-coaching/high-performance-coaching.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/services/personal-development-coaching/personal-development-coaching.component.ts" afterPath="$PROJECT_DIR$/src/app/component/frontend/services/personal-development-coaching/personal-development-coaching.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/services/servicelist/servicelist.component.ts" afterPath="$PROJECT_DIR$/src/app/component/frontend/services/servicelist/servicelist.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/services/special-programs-for-young-men/special-programs-for-young-men.component.ts" afterPath="$PROJECT_DIR$/src/app/component/frontend/services/special-programs-for-young-men/special-programs-for-young-men.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/frontend/tesimoniallist/tesimoniallist.component.ts" afterPath="$PROJECT_DIR$/src/app/component/frontend/tesimoniallist/tesimoniallist.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/layout/footer/footer.component.html" afterPath="$PROJECT_DIR$/src/app/layout/footer/footer.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/layout/header/header.component.html" afterPath="$PROJECT_DIR$/src/app/layout/header/header.component.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,22 +38,14 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="newsletter-dialog.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/layout/footer/newsletter-dialog.html">
+      <file leaf-file-name="contactus.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/component/frontend/contactus/contactus.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="7" column="130" lean-forward="false" selection-start-line="7" selection-start-column="130" selection-end-line="7" selection-end-column="130" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="newsletter-success-dialog.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/layout/footer/newsletter-success-dialog.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="77" lean-forward="false" selection-start-line="2" selection-start-column="77" selection-end-line="2" selection-end-column="77" />
-              <folding />
+            <state relative-caret-position="238">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -42,8 +53,8 @@
       <file leaf-file-name="footer.component.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/layout/footer/footer.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="211" column="0" lean-forward="true" selection-start-line="211" selection-start-column="0" selection-end-line="211" selection-end-column="0" />
+            <state relative-caret-position="756">
+              <caret line="214" column="24" lean-forward="false" selection-start-line="214" selection-start-column="19" selection-end-line="214" selection-end-column="24" />
               <folding>
                 <element signature="n#!!block;n#ngOnInit#0;n#FooterComponent#0" expanded="false" />
                 <element signature="n#!!block;n#newslatterViewModal#0;n#FooterComponent#0" expanded="false" />
@@ -68,13 +79,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>admin-</find>
-      <find>blog</find>
-      <find>environment</find>
-      <find>HttpService</find>
-      <find>maindashboard</find>
-      <find>blog_category_view</find>
-      <find>blogs_view</find>
       <find>BlogManagementComponent</find>
       <find>blogCatConfig</find>
       <find>blogsList</find>
@@ -98,6 +102,13 @@
       <find>addorupdatedata</find>
       <find>HomeEventComponent</find>
       <find>doSubmit</find>
+      <find>activeroute.snapshot.routeConfig.path == 'seminars-detail/:_id' ||</find>
+      <find>workshop_img</find>
+      <find>speaker_img</find>
+      <find>ourservices</find>
+      <find>ServicelistComponent</find>
+      <find>employee-training</find>
+      <find>bio</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -106,10 +117,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/app/layout/footer/footer.component.css" />
         <option value="$PROJECT_DIR$/tsconfig.json" />
         <option value="$PROJECT_DIR$/src/app/api.service.ts" />
-        <option value="$PROJECT_DIR$/src/app/layout/footer/footer.component.html" />
         <option value="$PROJECT_DIR$/src/app/component/backend/newsletterlists/add-edit-newsletter/add-edit-newsletter.component.html" />
         <option value="$PROJECT_DIR$/src/app/component/backend/newsletterlists/add-edit-newsletter/add-edit-newsletter.component.ts" />
         <option value="$PROJECT_DIR$/src/app/component/frontend/events/seminars/seminars.component.css" />
@@ -119,18 +128,12 @@
         <option value="$PROJECT_DIR$/src/app/component/frontend/events/workshops/workshops.component.css" />
         <option value="$PROJECT_DIR$/src/app/component/frontend/events/workshop-detail/workshop-detail.component.css" />
         <option value="$PROJECT_DIR$/src/app/component/frontend/events/workshops/workshops.component.html" />
-        <option value="$PROJECT_DIR$/src/app/component/frontend/events/workshops/workshops.component.ts" />
         <option value="$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements/speaker-engagements.component.html" />
-        <option value="$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements/speaker-engagements.component.ts" />
         <option value="$PROJECT_DIR$/src/app/component/frontend/events/seminars/seminars.component.html" />
         <option value="$PROJECT_DIR$/src/index.html" />
-        <option value="$PROJECT_DIR$/src/app/component/frontend/events/seminars/seminars.component.ts" />
         <option value="$PROJECT_DIR$/src/app/component/frontend/events/seminars-detail/seminars-detail.component.html" />
-        <option value="$PROJECT_DIR$/src/app/component/frontend/events/seminars-detail/seminars-detail.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/component/frontend/events/workshop-detail/workshop-detail.component.ts" />
         <option value="$PROJECT_DIR$/src/app/component/frontend/events/workshop-detail/workshop-detail.component.html" />
         <option value="$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component.html" />
-        <option value="$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component.ts" />
         <option value="$PROJECT_DIR$/src/app/component/backend/dashboard/dashboard.component.html" />
         <option value="$PROJECT_DIR$/src/app/component/backend/maindashboard/maindashboard.component.ts" />
         <option value="$PROJECT_DIR$/src/app/app-routing.module.ts" />
@@ -143,6 +146,28 @@
         <option value="$PROJECT_DIR$/src/app/layout/footer/newsletter-success-dialog.html" />
         <option value="$PROJECT_DIR$/src/app/layout/footer/footer.component.ts" />
         <option value="$PROJECT_DIR$/src/app/layout/footer/newsletter-dialog.html" />
+        <option value="$PROJECT_DIR$/src/app/layout/footer/footer.component.html" />
+        <option value="$PROJECT_DIR$/src/app/layout/header/header.component.html" />
+        <option value="$PROJECT_DIR$/src/app/component/frontend/home/home.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/component/frontend/bloglist/bloglist.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/component/frontend/blogdetail/blogdetail.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/component/frontend/services/servicelist/servicelist.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/component/frontend/services/employee-training/employee-training.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/component/frontend/services/couples-counseling/couples-counseling.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/component/frontend/services/personal-development-coaching/personal-development-coaching.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/component/frontend/services/high-performance-coaching/high-performance-coaching.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/component/frontend/services/special-programs-for-young-men/special-programs-for-young-men.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/component/frontend/gallery/image-gallery/image-gallery.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/component/frontend/gallery/video-gallery/video-gallery.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/component/frontend/events/seminars/seminars.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/component/frontend/events/seminars-detail/seminars-detail.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/component/frontend/events/workshops/workshops.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/component/frontend/events/workshop-detail/workshop-detail.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements/speaker-engagements.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/component/frontend/bio/bio.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/component/frontend/tesimoniallist/tesimoniallist.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/component/frontend/contactus/contactus.component.ts" />
       </list>
     </option>
   </component>
@@ -182,6 +207,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -302,55 +328,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="arniefonseca" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="arniefonseca" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="arniefonseca" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="arniefonseca" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="header" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -398,59 +376,15 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bk-header" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="arniefonseca" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="arniefonseca" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="component" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="arniefonseca" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="arniefonseca" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="component" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tesimoniallist" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -476,11 +410,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newsletterlists" />
+              <option name="myItemId" value="frontend" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -506,139 +436,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newsletterlists" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="add-edit-subscriber-group" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="arniefonseca" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="arniefonseca" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="component" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maindashboard" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="arniefonseca" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="arniefonseca" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="component" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="events" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manage-event-listing" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="arniefonseca" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="arniefonseca" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="component" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="events" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="home-event" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="arniefonseca" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="arniefonseca" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="component" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
+              <option name="myItemId" value="frontend" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -668,11 +466,33 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
+              <option name="myItemId" value="frontend" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="blog-management" />
+              <option name="myItemId" value="contactus" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arniefonseca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arniefonseca" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="component" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -692,7 +512,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -845,12 +664,13 @@
       <workItem from="1575367543015" duration="126000" />
       <workItem from="1575369968752" duration="30000" />
       <workItem from="1575378943076" duration="1744000" />
-      <workItem from="1575381390068" duration="282000" />
+      <workItem from="1575381390068" duration="590000" />
+      <workItem from="1575521549908" duration="13097000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125872000" />
+    <option name="totallyTimeSpent" value="139277000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -930,211 +750,18 @@
           <line>277</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/component/frontend/blog/blog.component.ts</url>
+          <line>5</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="4" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/tesimoniallist/tesimoniallist.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="44" column="79" lean-forward="true" selection-start-line="44" selection-start-column="63" selection-end-line="44" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/tesimoniallist/tesimoniallist.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/backend/newsletterlists/add-edit-subscriber/add-edit-subscriber.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/backend/newsletterlists/newsletterlists.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-408">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/phrase.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="328" column="16" lean-forward="false" selection-start-line="328" selection-start-column="16" selection-end-line="328" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2788">
-          <caret line="160" column="1" lean-forward="false" selection-start-line="160" selection-start-column="1" selection-end-line="160" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/seminars/seminars.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2183">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="152" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements/speaker-engagements.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2652">
-          <caret line="152" column="1" lean-forward="false" selection-start-line="152" selection-start-column="1" selection-end-line="152" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/workshops/workshops.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="152" column="1" lean-forward="false" selection-start-line="152" selection-start-column="1" selection-end-line="152" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/seminars-detail/seminars-detail.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2788">
-          <caret line="160" column="1" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="160" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/workshop-detail/workshop-detail.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2788">
-          <caret line="160" column="1" lean-forward="false" selection-start-line="160" selection-start-column="1" selection-end-line="160" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/seminars/seminars.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/workshops/workshops.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="58" lean-forward="false" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/seminars/seminars.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="39" column="68" lean-forward="false" selection-start-line="39" selection-start-column="68" selection-end-line="39" selection-end-column="68" />
-          <folding>
-            <element signature="e#0#50#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/seminars/seminars.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="91" column="38" lean-forward="true" selection-start-line="91" selection-start-column="38" selection-end-line="91" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/blogdetail/blogdetail.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="71" lean-forward="true" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/blogdetail/blogdetail.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="43" column="2" lean-forward="false" selection-start-line="43" selection-start-column="2" selection-end-line="43" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/seminars-detail/seminars-detail.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="79" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/seminars-detail/seminars-detail.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="253" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/workshop-detail/workshop-detail.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
-          <caret line="66" column="0" lean-forward="true" selection-start-line="42" selection-start-column="2" selection-end-line="66" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/workshop-detail/workshop-detail.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="253" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/workshops/workshops.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="35" column="33" lean-forward="false" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements/speaker-engagements.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="688">
-          <caret line="84" column="58" lean-forward="false" selection-start-line="84" selection-start-column="58" selection-end-line="84" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements/speaker-engagements.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="65" column="161" lean-forward="false" selection-start-line="65" selection-start-column="158" selection-end-line="65" selection-end-column="161" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="190" column="37" lean-forward="false" selection-start-line="190" selection-start-column="37" selection-end-line="190" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/backend/dashboard/dashboard.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="132" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/component/backend/events/add-edit-manage-event/add-edit-manage-event.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1198,25 +825,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/layout/header/header.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="7" column="66" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/layout/bk-header/bk-header.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="52" column="22" lean-forward="true" selection-start-line="50" selection-start-column="17" selection-end-line="52" selection-end-column="22" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app-routing.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="319" column="24" lean-forward="true" selection-start-line="319" selection-start-column="24" selection-end-line="319" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -1249,16 +862,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/layout/footer/footer.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="43" lean-forward="false" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
-          <folding>
-            <element signature="n#style#0;n#mat-card#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tslint.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1285,8 +888,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/layout/footer/newsletter-dialog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="130" lean-forward="false" selection-start-line="7" selection-start-column="130" selection-end-line="7" selection-end-column="130" />
+        <state relative-caret-position="325">
+          <caret line="31" column="24" lean-forward="true" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -1299,10 +902,290 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/layout/header/header.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="34" column="1136" lean-forward="false" selection-start-line="34" selection-start-column="1136" selection-end-line="34" selection-end-column="1136" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/seminars-detail/seminars-detail.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="36" column="37" lean-forward="false" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/layout/footer/footer.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="65" lean-forward="true" selection-start-line="29" selection-start-column="65" selection-end-line="29" selection-end-column="65" />
+          <folding>
+            <element signature="n#style#0;n#mat-card#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/blogdetail/blogdetail.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="31" lean-forward="true" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/blog/blog.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/home/home.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="155" lean-forward="false" selection-start-line="18" selection-start-column="155" selection-end-line="18" selection-end-column="155" />
+          <folding>
+            <element signature="e#0#90#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/blogdetail/blogdetail.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="75" column="119" lean-forward="false" selection-start-line="75" selection-start-column="119" selection-end-line="75" selection-end-column="119" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/bloglist/bloglist.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="69" column="114" lean-forward="false" selection-start-line="69" selection-start-column="114" selection-end-line="69" selection-end-column="114" />
+          <folding>
+            <element signature="e#0#68#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/services/servicelist/servicelist.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/services/servicelist/servicelist.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#73#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/services/employee-training/employee-training.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#73#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/services/servicelist/servicelist.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="33" column="70" lean-forward="false" selection-start-line="33" selection-start-column="70" selection-end-line="33" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#50#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/services/employee-training/employee-training.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="16" column="141" lean-forward="false" selection-start-line="16" selection-start-column="141" selection-end-line="16" selection-end-column="141" />
+          <folding>
+            <element signature="e#0#50#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/services/couples-counseling/couples-counseling.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="16" column="123" lean-forward="false" selection-start-line="16" selection-start-column="123" selection-end-line="16" selection-end-column="123" />
+          <folding>
+            <element signature="e#0#50#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/services/personal-development-coaching/personal-development-coaching.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="16" column="143" lean-forward="false" selection-start-line="16" selection-start-column="143" selection-end-line="16" selection-end-column="143" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/services/high-performance-coaching/high-performance-coaching.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="16" column="151" lean-forward="false" selection-start-line="16" selection-start-column="151" selection-end-line="16" selection-end-column="151" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/services/special-programs-for-young-men/special-programs-for-young-men.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="16" column="164" lean-forward="false" selection-start-line="16" selection-start-column="164" selection-end-line="16" selection-end-column="164" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/gallery/image-gallery/image-gallery.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/gallery/image-gallery/image-gallery.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="16" column="115" lean-forward="false" selection-start-line="16" selection-start-column="115" selection-end-line="16" selection-end-column="115" />
+          <folding>
+            <element signature="e#0#50#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/gallery/video-gallery/video-gallery.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="33" column="114" lean-forward="false" selection-start-line="33" selection-start-column="114" selection-end-line="33" selection-end-column="114" />
+          <folding>
+            <element signature="e#0#50#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/seminars-detail/seminars-detail.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="32" column="115" lean-forward="false" selection-start-line="32" selection-start-column="115" selection-end-line="32" selection-end-column="115" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/workshop-detail/workshop-detail.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="37" column="70" lean-forward="false" selection-start-line="37" selection-start-column="70" selection-end-line="37" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/workshops/workshops.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="43" column="70" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="43" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#50#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements/speaker-engagements.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/bio/bio.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/events/seminars/seminars.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="42" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/bio/bio.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="19" column="121" lean-forward="false" selection-start-line="19" selection-start-column="121" selection-end-line="19" selection-end-column="121" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/tesimoniallist/tesimoniallist.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="38" column="122" lean-forward="false" selection-start-line="38" selection-start-column="122" selection-end-line="38" selection-end-column="122" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="257" column="14" lean-forward="false" selection-start-line="257" selection-start-column="11" selection-end-line="257" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/frontend/contactus/contactus.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/layout/footer/footer.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="211" column="0" lean-forward="true" selection-start-line="211" selection-start-column="0" selection-end-line="211" selection-end-column="0" />
+        <state relative-caret-position="756">
+          <caret line="214" column="24" lean-forward="false" selection-start-line="214" selection-start-column="19" selection-end-line="214" selection-end-column="24" />
           <folding>
             <element signature="n#!!block;n#ngOnInit#0;n#FooterComponent#0" expanded="false" />
             <element signature="n#!!block;n#newslatterViewModal#0;n#FooterComponent#0" expanded="false" />

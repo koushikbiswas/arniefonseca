@@ -26,15 +26,15 @@ export class VideoGalleryComponent implements OnInit {
 
 
   constructor(private readonly meta: MetaService) {
-    this.meta.setTitle('Arniefonseca - Video Gallery');
-    this.meta.setTag('og:description', '');
-    this.meta.setTag('twitter:description', '');
+    this.meta.setTitle('Arnie Fonseca - Video Gallery');
+    this.meta.setTag('og:description', 'Check out the latest videos from the events attended or hosted by Arnie Fonseca. This gallery is updated after each event, so you can regularly check it for the videos from the latest events.');
+    this.meta.setTag('twitter:description', 'Check out the latest videos from the events attended or hosted by Arnie Fonseca. This gallery is updated after each event, so you can regularly check it for the videos from the latest events.');
 
-    this.meta.setTag('og:keyword', '');
-    this.meta.setTag('twitter:keyword', '');
+    this.meta.setTag('og:keyword', 'Arnie Fonseca Videos, Arnie Fonseca Event Videos, Videos Of Arnie Fonseca');
+    this.meta.setTag('twitter:keyword', 'Arnie Fonseca Videos, Arnie Fonseca Event Videos, Videos Of Arnie Fonseca');
 
-    this.meta.setTag('og:title', 'Arniefonseca - Video Gallery');
-    this.meta.setTag('twitter:title', 'Arniefonseca - Video Gallery');
+    this.meta.setTag('og:title', 'Arnie Fonseca - Video Gallery');
+    this.meta.setTag('twitter:title', 'Arnie Fonseca - Video Gallery');
     this.meta.setTag('og:type', 'website');
     this.meta.setTag('og:image', '../../assets/images/logo.png');
     this.meta.setTag('twitter:image', '../../assets/images/logo.png');
