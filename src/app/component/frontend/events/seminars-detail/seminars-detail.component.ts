@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MetaService } from '@ngx-meta/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import * as moment from 'moment';
-import { ApiService } from 'src/app/api.service';
+import { ApiService } from '../../../../api.service';
 import { SafeResourceUrl, DomSanitizer } from '@angular/platform-browser';
 
 

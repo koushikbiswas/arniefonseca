@@ -60,7 +60,7 @@ export interface DialogData {
 
 export class AddEditManageEventComponent implements OnInit {
 
-public image_url:any=environment['imageUpload_url'];
+public image_url:any=environment['https://fileupload.influxhostserver.com/'];
   
   public eventForm:FormGroup;
   public booking_flag:boolean=false;

@@ -142,9 +142,10 @@ import { ListingSenderappComponent } from './component/backend/newsletterlists/l
 import { ListingSubscriptionComponent } from './component/backend/newsletterlists/listing-subscription/listing-subscription.component';
 import { ListingSubcategoryComponent } from './component/backend/newsletterlists/listing-subcategory/listing-subcategory.component';
 
+
 import { AddEditSenderappComponent } from './component/backend/newsletterlists/add-edit-senderapp/add-edit-senderapp.component';
 
- 
+
 
 /**End Backend Component** */
 
@@ -258,7 +259,9 @@ import { AddEditSenderappComponent } from './component/backend/newsletterlists/a
      
     ListingSubcategoryComponent,
 
+
     AddEditSenderappComponent
+
     
 
   ],
