@@ -141,6 +141,10 @@ import { LisitngTestemailappComponent } from './component/backend/newsletterlist
 import { ListingSenderappComponent } from './component/backend/newsletterlists/listing-senderapp/listing-senderapp.component';
 import { ListingSubscriptionComponent } from './component/backend/newsletterlists/listing-subscription/listing-subscription.component';
 import { ListingSubcategoryComponent } from './component/backend/newsletterlists/listing-subcategory/listing-subcategory.component';
+import { AddEditSendersComponent } from './component/backend/newsletterlists/add-edit-senders/add-edit-senders.component';
+
+
+
 /**End Backend Component** */
 
 
@@ -252,7 +256,13 @@ import { ListingSubcategoryComponent } from './component/backend/newsletterlists
  
      
     ListingSubcategoryComponent,
-
+     
+ 
+     
+    AddEditSendersComponent,
+     
+ 
+    
     
 
   ],
