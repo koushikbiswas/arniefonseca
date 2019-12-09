@@ -445,7 +445,7 @@ data:{
 
   {
     path: 'subscriber/list',
-    component: ListingNewsletterComponent
+    component: ListingSubscriptionComponent 
   },
   {
     path: 'subscriber/add-group/edit/:_id',
@@ -461,7 +461,7 @@ data:{
 
     {
       path: 'subscriber-group/list',
-      component: ListingNewsletterComponent
+      component: ListingSubcategoryComponent 
     },
     {
       path: 'subscriber-group/edit/:_id',
@@ -476,7 +476,7 @@ data:{
   { path: 'test/add', component: AddEditTestemailComponent },
   {
     path: 'test/list',
-    component: ListingNewsletterComponent
+    component: LisitngTestemailappComponent 
   
   },
   {
@@ -491,14 +491,30 @@ data:{
     { path: 'sender/add', component: AddEditSenderappComponent },
     {
       path: 'sender/list',
-      component: ListingNewsletterComponent
+      component: ListingSenderappComponent 
     },
+
     {
       path: 'sender/edit/:_id',
       component: AddEditSenderappComponent
- 
-     
+      
+    
+      
     },
+    // {
+    //   path: 'sender/edit/:_id',
+    //   component: AddEditSenderappComponent,
+    //   canActivate:[AuthGuard],
+    //   resolve:{eventList:ResolveService},
+    //   data:{
+    //     requestcondition:{
+    //       source:'senders',
+    //       condition:{}
+    //     },
+    //     endpoint:'datalist'
+    //   }
+     
+    // },
 
   // { path: 'subscriber-group/add', component: AddEditSubscriberGroupComponent },
   

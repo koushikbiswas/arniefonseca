@@ -44,13 +44,11 @@ export class AddEditSenderappComponent implements OnInit {
 
   ngOnInit() {
     this.activatedRoute.params.subscribe(params => {
+      console.log(params._id)
       if (params._id) {
         this.activatedRoute.data.subscribe(resolveData => {
-          this.configAddEditSender.defaultData = resolveData.res;
-          console.log('xcjvsdhgdshgdshcgfdstcfsdhgcfstf', this.configAddEditSender.defaultData)
-
-
-
+          console.log(resolveData)
+          this.configAddEditSender.defaultData = resolveData.eventList.res;
           this.configAddEditSender.action = "edit";
           this.configAddEditSender.condition = { id: params._id };
         });

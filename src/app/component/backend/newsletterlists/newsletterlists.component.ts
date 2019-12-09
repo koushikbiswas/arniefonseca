@@ -86,7 +86,7 @@ public subscriptionForm: any = {
     datasource: "",
     tableName: "senders",
     updateurl: "addorupdatedata",
-    editUrl: "sender/edit",
+    editUrl: "/sender/edit",
     jwtToken: "",
     deleteEndPoint: "deletesingledata",
     addLink: "/sender/add",
