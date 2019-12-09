@@ -113,7 +113,6 @@ import { AddEditNewsletterComponent } from './component/backend/newsletterlists/
 
 import { AddEditSubscriberComponent } from './component/backend/newsletterlists/add-edit-subscriber/add-edit-subscriber.component';
 import { AddEditSubscriberGroupComponent } from './component/backend/newsletterlists/add-edit-subscriber-group/add-edit-subscriber-group.component';
-import { AddEditSendersComponent } from './component/backend/newsletterlists/add-edit-senders/add-edit-senders.component';
 import { AddEditTestemailComponent } from './component/backend/newsletterlists/add-edit-testemail/add-edit-testemail.component';
 
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
@@ -135,6 +134,13 @@ import { TestimonialModule } from 'testimonial-lib-influxiq';
 import { FileUploadModule } from 'file-upload-lib-influxiq';
 import { LoginModule } from 'login-lib-influxiq';
 import { BlogModule } from 'blog-lib-influxiq';
+ 
+ 
+import { ListingNewsletterComponent } from './component/backend/newsletterlists/listing-newsletter/listing-newsletter.component';
+import { LisitngTestemailappComponent } from './component/backend/newsletterlists/lisitng-testemailapp/lisitng-testemailapp.component';
+import { ListingSenderappComponent } from './component/backend/newsletterlists/listing-senderapp/listing-senderapp.component';
+import { ListingSubscriptionComponent } from './component/backend/newsletterlists/listing-subscription/listing-subscription.component';
+import { ListingSubcategoryComponent } from './component/backend/newsletterlists/listing-subcategory/listing-subcategory.component';
 /**End Backend Component** */
 
 
@@ -219,7 +225,6 @@ import { BlogModule } from 'blog-lib-influxiq';
     
     AddEditSubscriberComponent,
     AddEditSubscriberGroupComponent,
-    AddEditSendersComponent,
     AddEditTestemailComponent,
     CommonVideoModalComponent,
     CommonTestimonialVideoModalComponent,
@@ -227,6 +232,26 @@ import { BlogModule } from 'blog-lib-influxiq';
     EventModal,
     BioComponent,
     HomeEventComponent,
+     
+ 
+     
+    ListingNewsletterComponent,
+     
+ 
+     
+    LisitngTestemailappComponent,
+     
+ 
+     
+    ListingSenderappComponent,
+     
+ 
+     
+    ListingSubscriptionComponent,
+     
+ 
+     
+    ListingSubcategoryComponent,
 
     
 

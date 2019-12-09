@@ -99,9 +99,16 @@ import { AddEditNewsletterComponent } from './component/backend/newsletterlists/
 import { from } from 'rxjs';
 import { AddEditSubscriberComponent } from './component/backend/newsletterlists/add-edit-subscriber/add-edit-subscriber.component';
 import { AddEditSubscriberGroupComponent } from './component/backend/newsletterlists/add-edit-subscriber-group/add-edit-subscriber-group.component';
-import { AddEditSendersComponent } from './component/backend/newsletterlists/add-edit-senders/add-edit-senders.component';
+// import { AddEditSendersComponent } from './component/backend/newsletterlists/add-edit-senders/add-edit-senders.component';
 import { AddEditTestemailComponent } from './component/backend/newsletterlists/add-edit-testemail/add-edit-testemail.component';
 import {HomeEventComponent} from "./component/backend/events/home-event/home-event.component";
+
+import { ListingNewsletterComponent } from './component/backend/newsletterlists/listing-newsletter/listing-newsletter.component';
+
+import { LisitngTestemailappComponent } from './component/backend/newsletterlists/lisitng-testemailapp/lisitng-testemailapp.component';
+import { ListingSenderappComponent } from './component/backend/newsletterlists/listing-senderapp/listing-senderapp.component';
+import { ListingSubscriptionComponent } from './component/backend/newsletterlists/listing-subscription/listing-subscription.component';
+import { ListingSubcategoryComponent } from './component/backend/newsletterlists/listing-subcategory/listing-subcategory.component';
 
 
 /**End Backend Routing**/
@@ -267,6 +274,8 @@ const routes: Routes = [
   { path: 'booking-report', component: BookingReportComponent },
   { path: 'bio', component: BioComponent },
 
+  
+
 // ___________________event frontend__________________//
 
   { path: 'seminars', component: SeminarsComponent,
@@ -394,111 +403,193 @@ data:{
 
 
 
-  { path: 'subscriber-group/add', component: AddEditSubscriberGroupComponent },
+  // ___________________Newsletter MANAGEMENT_________________
+  // =======================================================
+
+  {
+    path: 'newsletter-list', component: NewsletterlistsComponent, canActivate: [AuthGuard],
+    resolve: { newsData: ResolveService },
+    data: {
+      requestcondition: {
+        source: 'newsletters',
+        condition: {}
+      },
+      endpoint: 'datalist'
+    },
+  },
+
+
+  // _____________________newsletter________________
+  { path: 'newsletter/add', component: AddEditNewsletterComponent },
+
+  {
+    path: 'newsletter/list',
+    component: ListingNewsletterComponent
+  },
+  {
+    path: 'newsletter/edit/:_id',
+    component: AddEditNewsletterComponent
+  },
+  // -----------------------------------------------
+
+
+  
+  // _____________________Subscriber________________
+  { path: 'subscriber/add-subscription-admin', component: AddEditSubscriberComponent },
+
+  {
+    path: 'subscriber/list',
+    component: ListingNewsletterComponent
+  },
+  {
+    path: 'subscriber/add-group/edit/:_id',
+    component: AddEditSubscriberComponent
+  },
+  // -----------------------------------------------
+  // -------------------------------------------
+
+
+
+    // _____________________Subscriber GROUP________________
+    { path: 'subscriber-group/add', component: AddEditSubscriberGroupComponent },
+
+    {
+      path: 'subscriber-group/list',
+      component: ListingSubcategoryComponent
+    },
+    {
+      path: 'subscriber-group/edit/:_id',
+      component: AddEditSubscriberGroupComponent
+    },
+    // -----------------------------------------------
+    // -------------------------------------------
+  
+
+
+  // ________________________test email _____________________
+  { path: 'test/add', component: AddEditTestemailComponent },
+  {
+    path: 'test/list',
+    component: LisitngTestemailappComponent,
+  
+  },
+  {
+    path: 'test/edit/:_id',
+    component: AddEditTestemailComponent,
+    
+    resolve: { testData: ResolveService },
+    
+  },
+  
+
+  // { path: 'subscriber-group/add', component: AddEditSubscriberGroupComponent },
   
 
  
 
-  {
-    path: 'newsletter-list',
-    component: NewsletterlistsComponent,
+  // {
+  //   path: 'newsletter-list',
+  //   component: NewsletterlistsComponent,
 
-    resolve: { subscriptionListData: ResolveService },
-    data: {
-      requestcondition: {
-        source: 'subscriptiongroupadd',
-        condition: {}
-      },
-      endpoint: 'datalist'
-    },
-  },
+  //   resolve: { subscriptionListData: ResolveService },
+  //   data: {
+  //     requestcondition: {
+  //       source: 'subscriptiongroupadd',
+  //       condition: {}
+  //     },
+  //     endpoint: 'datalist'
+  //   },
+  // },
 
 
 
  
 
-  {
-    path: 'subscriber-group/edit/:_id',
-    component: AddEditSubscriberGroupComponent,
+  // {
+  //   path: 'subscriber-group/edit/:_id',
+  //   component: AddEditSubscriberGroupComponent,
 
-    resolve: { subscriptiongroupData: ResolveService },
-    data: {
-      requestcondition: {
-        source: 'subscriptiongroupadd',
-        condition: {}
-      },
-      endpoint: 'datalist'
-    },
-  },
-
-
+  //   resolve: { subscriptiongroupData: ResolveService },
+  //   data: {
+  //     requestcondition: {
+  //       source: 'subscriptiongroupadd',
+  //       condition: {}
+  //     },
+  //     endpoint: 'datalist'
+  //   },
+  // },
 
 
 
-  { path: 'newsletter/add', component: AddEditNewsletterComponent },
-  {
-    path: 'newsletter/edit/:_id',
-    component: AddEditNewsletterComponent,
 
-    resolve: { newsLetterData: ResolveService },
-    data: {
-      requestcondition: {
-        source: 'newsLetterAdd',
-        condition: {}
-      },
-      endpoint: 'datalist'
-    },
-  },
 
-  { path: 'subscriber/add', component: AddEditSubscriberComponent },
+  // { path: 'newsletter/add', component: AddEditNewsletterComponent },
+  // {
+  //   path: 'newsletter/edit/:_id',
+  //   component: AddEditNewsletterComponent,
 
-  {
-    path: 'subscriber/edit/:_id',
-    component: AddEditSubscriberComponent,
+  //   resolve: { newsLetterData: ResolveService },
+  //   data: {
+  //     requestcondition: {
+  //       source: 'newsLetterAdd',
+  //       condition: {}
+  //     },
+  //     endpoint: 'datalist'
+  //   },
+  // },
 
-    resolve: { subscriberList: ResolveService },
-    data: {
-      requestcondition: {
-        source: 'newsLetterSubscriber',
-        condition: {}
-      },
-      endpoint: 'datalist'
-    },
-  },
+
+
+  
+  // { path: 'subscriber/add', component: AddEditSubscriberComponent },
+
+  // {
+  //   path: 'subscriber/edit/:_id',
+  //   component: AddEditSubscriberComponent,
+
+  //   resolve: { subscriberList: ResolveService },
+  //   data: {
+  //     requestcondition: {
+  //       source: 'newsLetterSubscriber',
+  //       condition: {}
+  //     },
+  //     endpoint: 'datalist'
+  //   },
+  // },
 
  
 
-  { path: 'sender/add', component: AddEditSendersComponent },
+  // { path: 'sender/add', component: AddEditSendersComponent },
 
-  {
-    path: 'sender/edit/:_id',
-    component: AddEditSendersComponent,
+  // {
+  //   path: 'sender/edit/:_id',
+  //   component: AddEditSendersComponent,
 
-    resolve: { senderList: ResolveService },
-    data: {
-      requestcondition: {
-        source: 'newsletterSender',
-        condition: {}
-      },
-      endpoint: 'datalist'
-    },
-  },
+  //   resolve: { senderList: ResolveService },
+  //   data: {
+  //     requestcondition: {
+  //       source: 'newsletterSender',
+  //       condition: {}
+  //     },
+  //     endpoint: 'datalist'
+  //   },
+  // },
 
-  { path: 'testemail/add', component: AddEditTestemailComponent },
+  // { path: 'testemail/add', component: AddEditTestemailComponent },
 
-  {
-    path: 'testemail/edit/:_id',
-    component: AddEditTestemailComponent,
+  // {
+  //   path: 'testemail/edit/:_id',
+  //   component: AddEditTestemailComponent,
 
-    resolve: { senderList: ResolveService },
-    data: {
-      requestcondition: {
-        source: 'testEmail',
-        condition: {}
-      },
-      endpoint: 'datalist'
-    },
-  },
+  //   resolve: { senderList: ResolveService },
+  //   data: {
+  //     requestcondition: {
+  //       source: 'testEmail',
+  //       condition: {}
+  //     },
+  //     endpoint: 'datalist'
+  //   },
+  // },
 
 
   //____________end event routing______________//

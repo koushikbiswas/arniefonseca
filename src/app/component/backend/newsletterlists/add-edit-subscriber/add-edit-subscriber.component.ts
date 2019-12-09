@@ -15,6 +15,7 @@ export class AddEditSubscriberComponent implements OnInit {
     // endpoint: "https://r245816wug.execute-api.us-east-1.amazonaws.com/dev/api/addorupdatedata",
     // endpoint2: "https://r245816wug.execute-api.us-east-1.amazonaws.com/dev/api/",
     endpoint: this.ApiService.serverUrl + 'addorupdatedata',
+    endpoint2 : this.ApiService.serverUrl,
     source: "subscriberList",
     condition: {},
     defaultData: null,
