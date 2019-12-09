@@ -259,7 +259,7 @@ import { AddEditSendersComponent } from './component/backend/newsletterlists/add
      
  
      
-    AddEditSendersComponent,
+    AddEditSendersComponent
      
  
     
