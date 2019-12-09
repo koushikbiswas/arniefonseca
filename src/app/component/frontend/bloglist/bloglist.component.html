@@ -156,8 +156,8 @@
                         </button>
                         {{item.blogtitle}} ({{item.blogcount}})
                     </div>
-                    <ul [class.example-tree-invisible]="!nestedTreeControl.isExpanded(item)">
-                        <ng-container matTreeNodeOutlet></ng-container>
+                    <ul *ngFor="let item of blogListing; let i = index" [class.example-tree-invisible]="!nestedTreeControl.isExpanded(item)">
+                        <ng-container matTreeNodeOutlet> {{ item.blogtitle }}</ng-container>
                     </ul>
                 </li>
             </mat-tree-node>
