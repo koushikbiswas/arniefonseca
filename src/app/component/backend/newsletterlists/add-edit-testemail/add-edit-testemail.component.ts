@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CookieService } from 'ngx-cookie-service';
 import { ActivatedRoute } from '@angular/router';
-import { ApiService } from '../../../../api.service';
+import { ApiService } from 'src/app/api.service';
 @Component({
   selector: 'app-add-edit-testemail',
   templateUrl: './add-edit-testemail.component.html',

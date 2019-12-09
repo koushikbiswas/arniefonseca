@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AddEditSendersComponent } from './add-edit-senders.component';
+import { AddEditSenderappComponent } from './add-edit-senderapp.component';
 
-describe('AddEditSendersComponent', () => {
-  let component: AddEditSendersComponent;
-  let fixture: ComponentFixture<AddEditSendersComponent>;
+describe('AddEditSenderappComponent', () => {
+  let component: AddEditSenderappComponent;
+  let fixture: ComponentFixture<AddEditSenderappComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AddEditSendersComponent ]
+      declarations: [ AddEditSenderappComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AddEditSendersComponent);
+    fixture = TestBed.createComponent(AddEditSenderappComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

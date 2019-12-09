@@ -1,0 +1,8 @@
+.Settings_tab_block{ display: block!important; width: 49%; float: left;     background: #dde2e5;}
+.Settings_tab_block:nth-of-type(2){ display: block!important; width: 49%; float: right;}
+
+.clear{ display: block!important; clear: both!important;}
+
+.tablediv_Settings{ margin-top: 0px!important;}
+
+.tablediv_Settings .tablediv{ display: block;}

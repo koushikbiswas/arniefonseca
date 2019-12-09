@@ -15,9 +15,9 @@ export class AddEditNewsletterComponent implements OnInit {
   public configAddEdit: any = {
     action: "add",
    
-    //  endpoint: "https://r245816wug.execute-api.us-east-1.amazonaws.com/dev/api/addorupdatedata",
-    //  endpoint2: "https://r245816wug.execute-api.us-east-1.amazonaws.com/dev/api/",
-    endpoint: environment.API_URL+'addorupdatedata',
+     endpoint: environment.API_URL+'/addorupdatedata',
+     endpoint2: environment.API_URL,
+    // endpoint: environment.API_URL+'addorupdatedata',
    // endpoint: this.apiservice.serverUrl + 'addorupdatedata',
     source: "newsletters",
     condition: {},

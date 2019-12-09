@@ -137,20 +137,58 @@
                                         </span>
                                     </span>
                                 </span>
-                                <div class="tablediv">
-                                    <button mat-button class="btngreen sim-button"
-                                    [routerLink]="['/test/add']"><i
-                                        class="material-icons">add</i> Test Email</button>
+                                <div class="tablediv tablediv_Settings">
+                                 
+                                    <span class="Settings_tab_block">
 
+
+                                            <span class="searchblock">
+                                                    <span class="searchblockwrapper">
+                                                        <span>
+                                                            <h2>Test Email</h2>
+                                                        </span>
+                                                        <span>
+                                                                <button mat-button class="btngreen sim-button"
+                                                                [routerLink]="['/test/add']"><i
+                                                                    class="material-icons">add</i> Test Email</button>
+                                                        </span>
+                                                    </span>
+                                                </span>
+
+                                   
+                                                <span class="tablediv">
 
                                         <lib-listing-testemaillib [config]="testEmailConfigForm"></lib-listing-testemaillib>
 
+                                        </span>
 
 
+                                    </span>
+
+                                    <span class="Settings_tab_block">
+
+                                            <span class="searchblock">
+                                                    <span class="searchblockwrapper">
+                                                        <span>
+                                                            <h2>Sender Email</h2>
+                                                        </span>
+                                                        <span>
+                                                                <button mat-button class="btngreen sim-button"
+                                                                [routerLink]="['/sender/add']"><i
+                                                                    class="material-icons">add</i> Sender Email</button>
+                                                        </span>
+                                                    </span>
+                                                </span>
 
                                     
 
+                                    <span class="tablediv">
+                                        <lib-listing-sender [config]="senderConfigForm"></lib-listing-sender>
+                                    </span>
 
+                                    </span>
+
+                                    <span class="clear"></span>
 
                                 </div>
                             </mat-card>

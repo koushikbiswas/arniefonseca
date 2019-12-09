@@ -11,6 +11,8 @@ import { environment } from '../../../../environments/environment';
 })
 export class NewsletterlistsComponent implements OnInit {
 
+  public indexval:any;
+
 public BaseUrl:any= environment["API_URL"];
 
 public newsConfigForm: any = {
@@ -57,20 +59,7 @@ public subscriptionForm: any = {
 
 
 
-  public senderConfigForm: any = {
-    // apiBaseUrl: "https://r245816wug.execute-api.us-east-1.amazonaws.com/dev/api/",
-    apiBaseUrl: this.BaseUrl,
-    listEndPoint: "datalist",
-    datasource: "",
-    tableName: "senders",
-    updateurl: "addorupdatedata",
-    editUrl: "test/edit",
-    jwtToken: "",
-    deleteEndPoint: "deletesingledata",
-    addLink: "/test/add",
-    view: "testemail_view"
-
-  }
+ 
 
 
   public testEmailConfigForm: any = {
@@ -78,18 +67,32 @@ public subscriptionForm: any = {
     apiBaseUrl: this.BaseUrl,
     listEndPoint: "datalist",
     datasource: "",
-    tableName: "senders",
+    tableName: "testemail",
     updateurl: "addorupdatedata",
     editUrl: "test/edit",
     jwtToken: "",
     deleteEndPoint: "deletesingledata",
     addLink: "/test/add",
-    view: "testemail_view"
+    view: ""
 
   }
 
 
  
+  public senderConfigForm: any = {
+    // apiBaseUrl: "https://r245816wug.execute-api.us-east-1.amazonaws.com/dev/api/",
+    apiBaseUrl: this.BaseUrl,
+    listEndPoint: "datalist",
+    datasource: "",
+    tableName: "senders",
+    updateurl: "addorupdatedata",
+    editUrl: "sender/edit",
+    jwtToken: "",
+    deleteEndPoint: "deletesingledata",
+    addLink: "/sender/add",
+    view: ""
+
+  }
   
 
 
@@ -136,6 +139,20 @@ public subscriptionForm: any = {
       this.apiservice.getDatalist(dataTestemail).subscribe((result: any)=>{
         this.testEmailConfigForm.datasource = result.res;
          console.log('>>>>>>>>>>>>amitavatestemail>>>>>>>>>>>>>', this.testEmailConfigForm.datasource);
+      });
+
+
+      
+       // sender 
+
+       let dataSenderapp: any = {
+        source:"senders_view",
+        endpoint: "datalist"
+  
+      }
+      this.apiservice.getDatalist(dataSenderapp).subscribe((result: any)=>{
+        this.senderConfigForm.datasource = result.res;
+         console.log('>>>>>>>>>>>>amitavasender>>>>>>>>>>>>>', this.senderConfigForm.datasource);
       });
 
 

@@ -103,6 +103,9 @@ export class FooterComponent implements OnInit {
 
         this.cookie.set('email_modal',this.data);
 
+
+       
+
         for (let i in this.myform.controls) {
             this.myform.controls[i].markAsTouched();
         }
@@ -180,6 +183,8 @@ newslatterViewModal(deta:any){
 })
 export class NewslatterDialogComponent {
 
+    
+
 public myformnews: FormGroup
 
  public serverUrl:any;
@@ -191,17 +196,24 @@ constructor(public dialogRef: MatDialogRef<NewslatterDialogComponent>,
     this.tokenViaCookie = cookie.get('jwtToken');
     this.myformnews = this.formbuilder.group({
         email: ['', Validators.compose([Validators.required, Validators.pattern(/^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/)])],
-        name: ['', Validators.required],
+        fullname: ['', Validators.required],
         phone: ['', Validators.required],
         company: ['', Validators.required],
+        group: ['',],
 
     })
 
 // this.myformnews.value.email.setvalue();
     this.myformnews.patchValue({
         email: this.cookie.get('email_modal'),
+        
 
     });
+
+    this.myformnews.patchValue({
+        "group":"0"
+
+       });
 
 }
 
@@ -237,7 +249,7 @@ constructor(public dialogRef: MatDialogRef<NewslatterDialogComponent>,
 
             // let  link = this.serverUrl +;
             let data = {
-                source:"newsletter",
+                source:"subscriberList",
                 token : this.tokenViaCookie,
                 data: this.myformnews.value
             };
@@ -253,9 +265,10 @@ constructor(public dialogRef: MatDialogRef<NewslatterDialogComponent>,
 
 
                     this.myformnews.controls['email'].updateValueAndValidity();
-                    this.myformnews.controls['name'].updateValueAndValidity();
+                    this.myformnews.controls['fullname'].updateValueAndValidity();
                     this.myformnews.controls['phone'].updateValueAndValidity();
                     this.myformnews.controls['company'].updateValueAndValidity();
+                    this.myformnews.controls['group'].updateValueAndValidity();
 
 
 
