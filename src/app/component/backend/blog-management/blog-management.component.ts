@@ -56,7 +56,7 @@ export class BlogManagementComponent implements OnInit {
 
     }
     this.apiService.getDatalist(data).subscribe((result: any)=>{
-      console.log(result.res);
+      // console.log(result.res);
       this.blogCatConfig.datasource = result.res;
       //console.log('>>>>>>>>>>>>>>>>>>>>>>>>>', this.blogCatConfig.datasource);
     });
