@@ -123,10 +123,7 @@ import {DatePipe} from '@angular/common';
 
 
 
-// import { TestimonialModule } from 'testimonial';
-// import { LoginModule } from 'login';
-// import { FileUploadModule } from 'file-upload';
-import { ContactusModule } from 'contactus';
+
 import { HomeEventComponent } from './component/backend/events/home-event/home-event.component';
 import { NewsTitleModule } from 'news-title-lib-influxiq';
 import { ServicelibModule } from 'service-lib-influxiq';
@@ -144,6 +141,8 @@ import { ListingSubcategoryComponent } from './component/backend/newsletterlists
 
 
 import { AddEditSenderappComponent } from './component/backend/newsletterlists/add-edit-senderapp/add-edit-senderapp.component';
+import { ContactusModule } from 'contactus';
+
 
 
 
@@ -266,8 +265,7 @@ import { AddEditSenderappComponent } from './component/backend/newsletterlists/a
 
   ],
   imports: [
-    AmazingTimePickerModule,
-   
+    AmazingTimePickerModule,   
     CKEditorModule,
     AngularFontAwesomeModule,
     DragScrollModule,
