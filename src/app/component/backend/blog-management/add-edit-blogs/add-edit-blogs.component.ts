@@ -37,14 +37,14 @@ export class AddEditBlogsComponent implements OnInit {
     path: "blogs",
     prefix: "blogs-file"
   }
-  constructor(private cookieService: CookieService, private activatedRoute: ActivatedRoute,public apiService: ApiService) { }
+  constructor(private cookieService: CookieService, public router:Router, public activatedRoute: ActivatedRoute,public apiService: ApiService) { }
 
   ngOnInit() {
 
     this.activatedRoute.params.subscribe(params => {
       if (params._id) {
         this.activatedRoute.data.subscribe(resolveData => {         
-          this.editdata= resolveData.blogsList.res[0];  
+          this.editdata= resolveData.blogsData.res[0];  
           this.action="edit";    
         });
       }
