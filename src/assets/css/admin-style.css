@@ -447,6 +447,8 @@ app-bk-leftdiv{position: relative; z-index: 999;}
   .adminwrappercls .mat-form-field-appearance-legacy .mat-form-field-wrapper {padding-bottom: 0 !important;}
 .adminwrappercls .mat-form-field-appearance-legacy .mat-form-field-infix {margin-bottom: 0 !important;}
 
+.mat-toolbar.mat-primary{ display: none!important;}
+
 @media only screen and (max-width: 1760px) {
 .dashboard_block1{ background-position: 790px top!important;}
 .dashboard_block1 mat-card-content{ width: 1000px;}

@@ -38,7 +38,7 @@ public subscriptionForm: any = {
   editUrl: "subscriber/add-group/edit/",
   jwtToken: "",  
   deleteEndPoint: "deletesingledata",
-  addLink: "subscriber/add-subscription-admin",
+  addLink: "subscriber/add",
   view: "subscriptions_view"
 
 }

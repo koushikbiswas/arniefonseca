@@ -441,10 +441,10 @@ data:{
 
   
   // _____________________Subscriber________________
-  { path: 'subscriber/add-subscription-admin', component: AddEditSubscriberComponent },
+  { path: 'subscriber/add', component: AddEditSubscriberComponent },
 
   {
-    path: 'subscriber/list',
+    path: 'newsletter-list',
     component: ListingSubscriptionComponent 
   },
   {
@@ -460,7 +460,7 @@ data:{
     { path: 'subscriber-group/add', component: AddEditSubscriberGroupComponent },
 
     {
-      path: 'subscriber-group/list',
+      path: 'newsletter-list',
       component: ListingSubcategoryComponent 
     },
     {
@@ -475,7 +475,7 @@ data:{
   // ________________________test email _____________________
   { path: 'test/add', component: AddEditTestemailComponent },
   {
-    path: 'test/list',
+    path: 'newsletter-list',
     component: LisitngTestemailappComponent 
   
   },
@@ -490,7 +490,7 @@ data:{
     // ________________________sender's list_____________________
     { path: 'sender/add', component: AddEditSenderappComponent },
     {
-      path: 'sender/list',
+      path: 'newsletter-list',
       component: ListingSenderappComponent 
     },
 
@@ -689,7 +689,7 @@ data:{
     path: 'blogs/edit/:_id',
     component: AddEditBlogsComponent,
 
-    resolve: { blogsList: ResolveService },
+    resolve: { blogsData: ResolveService },
     data: {
       requestcondition: {
         source: 'blogs',

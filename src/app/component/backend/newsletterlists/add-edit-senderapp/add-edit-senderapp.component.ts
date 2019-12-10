@@ -35,7 +35,7 @@ export class AddEditSenderappComponent implements OnInit {
     condition: {},
     defaultData: null,
     jwtToken: this.cookieService.get('jwtToken'),
-    callBack: "newsletter-list",
+    callBack: "/newsletter-list",
     userData: { id: "18801017007", name: "Admin" },
     defaultDataAlways: null
   }
