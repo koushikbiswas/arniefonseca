@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ManageSeminarListingComponent } from './manage-event-listing.component';
+import { ManageEventListingComponent } from './manage-event-listing.component';
 
-describe('ManageSeminarListingComponent', () => {
-  let component: ManageSeminarListingComponent;
-  let fixture: ComponentFixture<ManageSeminarListingComponent>;
+describe('ManageEventListingComponent', () => {
+  let component: ManageEventListingComponent;
+  let fixture: ComponentFixture<ManageEventListingComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ManageSeminarListingComponent ]
+      declarations: [ ManageEventListingComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ManageSeminarListingComponent);
+    fixture = TestBed.createComponent(ManageEventListingComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
