@@ -26,7 +26,7 @@ export class FooterComponent implements OnInit {
 
     // console.log(router.url);
       this.serverUrl = apiService.serverUrl;
-      console.log("souresh",this.serverUrl);
+    //   console.log("souresh",this.serverUrl);
       this.myform = this.formbuilder.group({
           email: ['', Validators.compose([Validators.required, Validators.pattern(/^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/)])],
 

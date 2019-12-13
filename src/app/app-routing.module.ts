@@ -417,7 +417,7 @@ data:{
     resolve: { newsData: ResolveService },
     data: {
       requestcondition: {
-        source: 'newsletters',
+        source: 'newsletters_view',
         condition: {}
       },
       endpoint: 'datalist'
