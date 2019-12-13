@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AddEditManageSeminarComponent } from './add-edit-manage-event.component';
+import { AddEditManageEventComponent } from './add-edit-manage-event.component';
 
-describe('AddEditManageSeminarComponent', () => {
-  let component: AddEditManageSeminarComponent;
-  let fixture: ComponentFixture<AddEditManageSeminarComponent>;
+describe('AddEditManageEventComponent', () => {
+  let component: AddEditManageEventComponent;
+  let fixture: ComponentFixture<AddEditManageEventComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AddEditManageSeminarComponent ]
+      declarations: [ AddEditManageEventComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AddEditManageSeminarComponent);
+    fixture = TestBed.createComponent(AddEditManageEventComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
