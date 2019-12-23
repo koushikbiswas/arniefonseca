@@ -4,12 +4,16 @@ import { CookieService } from 'ngx-cookie-service';
 import { ApiService } from '../../../api.service';
 import { environment } from '../../../../environments/environment';
 
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+
 @Component({
   selector: 'app-newsletterlists',
   templateUrl: './newsletterlists.component.html',
   styleUrls: ['./newsletterlists.component.css']
 })
 export class NewsletterlistsComponent implements OnInit {
+
+  public myformsetting: FormGroup;
 
   public indexval:any;
 
@@ -96,7 +100,7 @@ public subscriptionForm: any = {
   
 
 
-  constructor(private router: Router, private activatedRoute: ActivatedRoute, private cookieService: CookieService, public apiservice: ApiService) { 
+  constructor(private router: Router, private activatedRoute: ActivatedRoute, private cookieService: CookieService, public apiservice: ApiService,  public fb: FormBuilder) { 
 
 
     
@@ -158,8 +162,11 @@ public subscriptionForm: any = {
 
 
       
-          
-
+      this.myformsetting = this.fb.group({ 
+        email: [null, [Validators.required, Validators.email, Validators.maxLength(100)]],
+       
+      })
+ 
 
 
   }
@@ -175,5 +182,39 @@ public subscriptionForm: any = {
 
   });
   }
+
+
+  dosettingSubmit() {
+
+    // console.log(this.myform.value);
+    let x: any;
+    for (x in this.myformsetting.controls) {
+      this.myformsetting.controls[x].markAsTouched();
+    }
+    if (this.myformsetting.valid) {
+
+      /**form value insert */
+      let data = { "source": "user", data: this.myformsetting.value };
+      this.apiservice.CustomRequest(data, 'addorupdatedata').subscribe(res => {
+        let result: any = {};
+        result = res;
+        console.log(result);
+        if (result.status == 'success') {
+
+          this.myformsetting.reset();
+          
+           
+
+        }
+      })
+    }
+  }
+
+    /**blur function */
+    inputUntouch(form: any, val: any) {
+      form.controls[val].markAsUntouched();
+      //console.log('on blur .....');
+    }
+  
 
 }
