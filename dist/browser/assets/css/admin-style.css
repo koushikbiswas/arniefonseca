@@ -447,7 +447,65 @@ app-bk-leftdiv{position: relative; z-index: 999;}
   .adminwrappercls .mat-form-field-appearance-legacy .mat-form-field-wrapper {padding-bottom: 0 !important;}
 .adminwrappercls .mat-form-field-appearance-legacy .mat-form-field-infix {margin-bottom: 0 !important;}
 
-.mat-toolbar.mat-primary{ display: none!important;}
+/* .mat-toolbar.mat-primary{ display: none!important;} */
+
+
+/*-------------amitava-----------*/
+.setting_formblock{ display: block; margin: 40px 0 10px 0;}
+
+.setting_formblock label{ display: inline-block; float: left; font-size: 14px; color: #111; margin: 10px 0 0 0; font-weight: normal;}
+
+.setting_formblock .mat-form-field{ display: inline-block; float:left; margin: 0 20px;}
+
+.setting_formblock .mat-form-field input{ background: #f0f0f2; padding: 5px; border: solid 1px #eaeaea; width: 350px; height: 35px;}
+
+.mat-radio-group{ display: inline-block; float: left; margin: 0 0 0 20px;}
+
+
+
+.setting_formblock .mat-form-field-infix{ width: auto!important;}
+
+.setting_formblock  .mat-form-field-appearance-legacy .mat-form-field-infix {
+  padding: 0!important;
+  background: #fff;
+  margin: 0;
+}
+
+
+.setting_formblock .mat-radio-label-content{ display: inline-block; float: left;     padding: 0 20px 0 8px!important;}
+
+.setting_formblock .mat-radio-container{ display: inline-block; float: left;}
+
+.setting_formblock_btngroup{ display: block; margin-top:25px; padding-top: 20px; text-align: right; border-top: solid 1px #eaeaea;}
+
+.setting_formblock_btngroup button{ display: inline-block; border: none; box-shadow: none; width: 98px; height: 35px; text-align: center; line-height: 30px; font-size: 16px; cursor: pointer; text-transform: uppercase; color: #fff; background: #323234;}
+
+.setting_formblock_btngroup button:nth-of-type(2){ background: #12c3e3; margin-left: 10px;}
+
+
+@media only screen and (max-width: 1199px) {
+
+.setting_formblock label {
+  display: block;
+  float: none; 
+  margin: 10px 0 10px 0; 
+}
+
+.setting_formblock .mat-form-field{ display: block; float:none; margin: 0 0 20px 0;}
+
+.mat-radio-group {
+  display:  block;
+  float: none;
+  margin: 0 0 0 0;
+}
+.setting_formblock_btngroup{float: none;  text-align: left;}
+
+}
+
+@media only screen and (max-width: 480px) {
+  .setting_formblock .mat-form-field input{ width: auto; }
+}
+/*-------------amitava---end--------*/
 
 @media only screen and (max-width: 1760px) {
 .dashboard_block1{ background-position: 790px top!important;}
@@ -487,3 +545,6 @@ app-bk-leftdiv{position: relative; z-index: 999;}
     }
     
 }
+
+
+

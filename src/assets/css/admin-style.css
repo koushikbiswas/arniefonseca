@@ -447,19 +447,19 @@ app-bk-leftdiv{position: relative; z-index: 999;}
   .adminwrappercls .mat-form-field-appearance-legacy .mat-form-field-wrapper {padding-bottom: 0 !important;}
 .adminwrappercls .mat-form-field-appearance-legacy .mat-form-field-infix {margin-bottom: 0 !important;}
 
-.mat-toolbar.mat-primary{ display: none!important;}
+/* .mat-toolbar.mat-primary{ display: none!important;} */
 
 
 /*-------------amitava-----------*/
 .setting_formblock{ display: block; margin: 40px 0 10px 0;}
 
-.setting_formblock label{ display: inline-block; float: left; font-size: 14px; color: #111; margin: 10px 0 0 0; font-weight: normal;}
+.setting_formblock label{ display: inline-block; font-size: 14px; color: #111; margin: 10px 0 0 0; font-weight: normal;}
 
-.setting_formblock .mat-form-field{ display: inline-block; float:left; margin: 0 20px;}
+.setting_formblock .mat-form-field{ display: inline-block; margin: 0 20px;}
 
 .setting_formblock .mat-form-field input{ background: #f0f0f2; padding: 5px; border: solid 1px #eaeaea; width: 350px; height: 35px;}
 
-.mat-radio-group{ display: inline-block; float: left; margin: 0 0 0 20px;}
+.mat-radio-group{ display: inline-block; margin: 0 0 0 20px;}
 
 
 

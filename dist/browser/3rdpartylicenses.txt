@@ -278,7 +278,7 @@ THE SOFTWARE.
 
 blog-lib-influxiq
 
-contactus-lib-influxiq
+contactus
 
 core-js
 MIT

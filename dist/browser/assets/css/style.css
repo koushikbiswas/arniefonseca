@@ -1381,3 +1381,16 @@ background: -ms-linear-gradient(top, rgba(13, 113, 173,1) 0%, rgba(6,12,28,1) 10
 
 .clear{display: block!important; margin: 0!important; padding: 0!important; overflow: hidden!important;}
 /*-----------------amitava- 02-12-2019 end---------------*/
+
+
+.setting_formblock .mat-form-field-appearance-legacy .mat-form-field-label {
+  top: 7px!important;
+}
+
+.setting_formblock  .mat-form-field-underline{ display: none;}
+
+
+.setting_formblock .mat-error {
+  display: block!important;
+  margin-top: 18px!important;
+}
