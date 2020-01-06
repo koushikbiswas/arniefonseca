@@ -79,7 +79,6 @@ import { ManageAvailabilityComponent } from './component/backend/manage-availabi
 import { CommissionReportComponent } from './component/backend/commission-report/commission-report.component';
 import { BookingReportComponent } from './component/backend/booking-report/booking-report.component';
 import { AffiliateComponent } from './component/backend/affiliate/affiliate.component';
-import { GalleryAdminComponent } from './component/backend/gallery-admin/gallery-admin.component';
 import { BookedEventsComponent } from './component/backend/booked-events/booked-events.component';
 import { PastEventUserComponent } from './component/backend/past-event-user/past-event-user.component';
 import { UpcomingEventUserComponent } from './component/backend/upcoming-event-user/upcoming-event-user.component';
@@ -112,8 +111,13 @@ import { ListingSubcategoryComponent } from './component/backend/newsletterlists
  
 import { AddEditSenderappComponent } from './component/backend/newsletterlists/add-edit-senderapp/add-edit-senderapp.component';
 
- 
 
+/**image management**/
+import {AddeditImageComponent } from './component/backend/ImageGallery/ImageManagement/addedit-image/addedit-image.component';
+import { ListImagesComponent} from './component/backend/ImageGallery/ImageManagement/list-images/list-images.component';
+/**image category */
+import {AddeditImageCategoryComponent } from './component/backend/ImageGallery/categoryManagement/addedit-image-category/addedit-image-category.component';
+import { ListingCategoryComponent} from './component/backend/ImageGallery/categoryManagement/listing-category/listing-category.component';
 
 
 
@@ -129,6 +133,7 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'contact', component: ContactusComponent },
+  
   {
     path: 'servicehome',
     component: ServiceComponent,
@@ -197,6 +202,68 @@ const routes: Routes = [
 
   /**End Frontend Routing**/
   /**Backend Routing**/
+  {
+    path : 'imagegallery/add',component:AddeditImageComponent
+  },
+
+  {
+    path : 'imagegallery/edit/:_id',component:AddeditImageComponent,
+    canActivate:[AuthGuard],
+    resolve:{ImageData:ResolveService},
+    data:{
+      requestcondition:{
+        source:'imageGallery_management',
+        condition:{}
+      },
+      endpoint:'datalist'
+    },
+  },
+
+
+  {
+    path : 'imagegallery/list',component:ListImagesComponent,
+    canActivate:[AuthGuard],
+    resolve:{ImageList:ResolveService},
+    data:{
+      requestcondition:{
+        source:'imageGallery_management_view',
+        condition:{}
+      },
+      endpoint:'datalist'
+    },
+  },
+
+  {
+    path : 'imagecategory/add',component:AddeditImageCategoryComponent
+  },
+
+  
+  {
+    path : 'imagecategory/edit/:_id',component:AddeditImageCategoryComponent,
+    canActivate:[AuthGuard],
+    resolve:{ImageData:ResolveService},
+    data:{
+      requestcondition:{
+        source:'imageGallery_category',
+        condition:{}
+      },
+      endpoint:'datalist'
+    },
+  },
+
+  {
+    path : 'imagecategory/list',component:ListingCategoryComponent,
+    canActivate:[AuthGuard],
+    resolve:{ImageCatList:ResolveService},
+    data:{
+      requestcondition:{
+        source:'imageGallery_category_view',
+        condition:{}
+      },
+      endpoint:'datalist'
+    },
+  },
+
   // {path: 'customer-dashboard', component:DashboardComponent, canActivate:[AuthGuard]},       // Useing for canActive
   { path: 'customer-dashboard', component: DashboardComponent },
   { path: 'admin-dashboard', component: MaindashboardComponent,
@@ -211,6 +278,7 @@ const routes: Routes = [
       endpoint:'datalist'
 
     },
+
   },
 
 
@@ -335,7 +403,6 @@ const routes: Routes = [
 
 
   { path: 'affiliate-admin', component: AffiliateComponent },
-  { path: 'gallery-admin', component: GalleryAdminComponent },
 
   // ___________________manage event backend__________________//
 

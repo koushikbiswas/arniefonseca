@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
 import { FormsModule, ReactiveFormsModule  }   from '@angular/forms'
+import { NgModule} from '@angular/core';
 
 import { DemoMaterialModule } from "../material-module";
 import { DragScrollModule } from 'ngx-drag-scroll';
@@ -89,7 +90,6 @@ import { SocialAdvoComponent } from './component/backend/social-advo/social-advo
 import { CommissionReportComponent } from './component/backend/commission-report/commission-report.component';
 import { BookingReportComponent } from './component/backend/booking-report/booking-report.component';
 import { AffiliateComponent } from './component/backend/affiliate/affiliate.component';
-import { GalleryAdminComponent } from './component/backend/gallery-admin/gallery-admin.component';
 import { BookedEventsComponent } from './component/backend/booked-events/booked-events.component';
 import { PastEventUserComponent } from './component/backend/past-event-user/past-event-user.component';
 import { UpcomingEventUserComponent } from './component/backend/upcoming-event-user/upcoming-event-user.component';
@@ -119,6 +119,8 @@ import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 import { NgxMaterialTimepickerModule } from 'ngx-material-timepicker';
 
 import {DatePipe} from '@angular/common';
+import { Component } from '@angular/core';
+
 
 
 
@@ -131,6 +133,10 @@ import { TestimonialModule } from 'testimonial-lib-influxiq';
 import { FileUploadModule } from 'file-upload-lib-influxiq';
 import { LoginModule } from 'login-lib-influxiq';
 import { BlogModule } from 'blog-lib-influxiq';
+
+// import { ImageGalleryModule } from 'image-gallery-lib-influxiq';
+
+
 // import { ContactusModule } from 'contactus-lib-influxiq';
  
  
@@ -144,7 +150,13 @@ import { ListingSubcategoryComponent } from './component/backend/newsletterlists
 import { AddEditSenderappComponent } from './component/backend/newsletterlists/add-edit-senderapp/add-edit-senderapp.component';
  import { ContactusModule } from 'contactus';
 
-
+ 
+/**image management**/
+// import {AddeditImageComponent } from './component/backend/ImageGallery/ImageManagement/addedit-image/addedit-image.component';
+// import { ListImagesComponent} from './component/backend/ImageGallery/ImageManagement/list-images/list-images.component';
+/**image category */
+// import {AddeditImageCategoryComponent } from './component/backend/ImageGallery/categoryManagement/addedit-image-category/addedit-image-category.component';
+// import { ListingCategoryComponent} from './component/backend/ImageGallery/categoryManagement/listing-category/listing-category.component';
 
 
 /**End Backend Component** */
@@ -152,7 +164,6 @@ import { AddEditSenderappComponent } from './component/backend/newsletterlists/a
 
 @NgModule({
   declarations: [
-
     AppComponent,
     LoginComponent,
     ContactusComponent,
@@ -207,7 +218,6 @@ import { AddEditSenderappComponent } from './component/backend/newsletterlists/a
     WorkshopsComponent, 
     SpeakerEngagementsComponent, 
     AffiliateComponent, 
-    GalleryAdminComponent, 
     BookedEventsComponent, 
     PastEventUserComponent, 
     UpcomingEventUserComponent, 
@@ -237,35 +247,21 @@ import { AddEditSenderappComponent } from './component/backend/newsletterlists/a
     VideoModalComponent,
     EventModal,
     BioComponent,
-    HomeEventComponent,
-     
- 
-     
-    ListingNewsletterComponent,
-     
- 
-     
+    HomeEventComponent, 
+    ListingNewsletterComponent,     
     LisitngTestemailappComponent,
-     
- 
-     
     ListingSenderappComponent,
-     
- 
-     
     ListingSubscriptionComponent,
-     
- 
-     
     ListingSubcategoryComponent,
-
-
-    AddEditSenderappComponent
-
-    
-
+    AddEditSenderappComponent,
+    // AddeditImageComponent, 
+    // ListImagesComponent,
+    // AddeditImageCategoryComponent,
+    // ListingCategoryComponent,
   ],
   imports: [
+    Component,
+    BrowserModule,
     AmazingTimePickerModule,   
     CKEditorModule,
     AngularFontAwesomeModule,
@@ -281,6 +277,7 @@ import { AddEditSenderappComponent } from './component/backend/newsletterlists/a
     LoginModule,
     BlogModule,
     TestimonialModule,
+    // ImageGalleryModule,
     ServicelibModule,
     ContactusModule,
     FileUploadModule,
@@ -292,7 +289,7 @@ import { AddEditSenderappComponent } from './component/backend/newsletterlists/a
     OwlModule,
     FormsModule,
     ReactiveFormsModule,
-    NewsTitleModule
+    NewsTitleModule,
   ],
   providers: [CookieService, AuthGuard, ApiService, SidenavService,DatePipe],
   bootstrap: [AppComponent],
