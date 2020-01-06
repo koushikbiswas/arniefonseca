@@ -64,6 +64,12 @@ import { BioComponent } from './component/frontend/bio/bio.component';
 
 
 /**Backend Component**/
+import { ImageGalleryModule } from 'image-gallery-lib-influxiq';
+import { AddeditImageComponent } from './../app/component/backend/ImageGallery/ImageManagement/addedit-image/addedit-image.component';
+import { ListImagesComponent } from './../app/component/backend/ImageGallery/ImageManagement/list-images/list-images.component';
+import { AddeditImageCategoryComponent} from '../app/component/backend/ImageGallery/categoryManagement/addedit-image-category/addedit-image-category.component';
+import { ListingCategoryComponent} from '../app/component/backend/ImageGallery/categoryManagement/listing-category/listing-category.component';
+
 import { SidenavService } from './../app/services/sidenav.service';
 import { DashboardComponent } from './component/backend/dashboard/dashboard.component';
 import { BkHeaderComponent } from './layout/bk-header/bk-header.component';
@@ -260,7 +266,11 @@ import { AddEditSenderappComponent } from './component/backend/newsletterlists/a
     ListingSubcategoryComponent,
 
 
-    AddEditSenderappComponent
+    AddEditSenderappComponent,
+    AddeditImageComponent,
+    ListImagesComponent,
+    AddeditImageCategoryComponent,
+    ListingCategoryComponent
 
     
 
@@ -292,7 +302,8 @@ import { AddEditSenderappComponent } from './component/backend/newsletterlists/a
     OwlModule,
     FormsModule,
     ReactiveFormsModule,
-    NewsTitleModule
+    NewsTitleModule,
+    ImageGalleryModule
   ],
   providers: [CookieService, AuthGuard, ApiService, SidenavService,DatePipe],
   bootstrap: [AppComponent],

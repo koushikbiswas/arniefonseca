@@ -43,6 +43,12 @@ import { BioComponent } from './component/frontend/bio/bio.component';
 /**End Frontend Routing**/
 
 /**Backend Routing**/
+/**image gallery route**/
+import { AddeditImageComponent } from './../app/component/backend/ImageGallery/ImageManagement/addedit-image/addedit-image.component';
+import { ListImagesComponent } from './../app/component/backend/ImageGallery/ImageManagement/list-images/list-images.component';
+import { AddeditImageCategoryComponent} from '../app/component/backend/ImageGallery/categoryManagement/addedit-image-category/addedit-image-category.component';
+import { ListingCategoryComponent} from '../app/component/backend/ImageGallery/categoryManagement/listing-category/listing-category.component';
+
 import { DashboardComponent } from './component/backend/dashboard/dashboard.component';
 import { BkLeftdivComponent } from './layout/bk-leftdiv/bk-leftdiv.component';
 
@@ -120,7 +126,39 @@ import { AddEditSenderappComponent } from './component/backend/newsletterlists/a
 /**End Backend Routing**/
 
 const routes: Routes = [
-
+/**Image Gallery start here**/
+{
+  path : 'image-gallery/category-management/add',
+  component : AddeditImageCategoryComponent
+},
+{
+  path : 'image-gallery/category-management/edit/:_id',
+  component : AddeditImageCategoryComponent,
+  resolve : {ImageData : ResolveService },
+  data : { requestcondition : { source : 'imageGallery_category',condition : {}}, endpoint :'datalist'},
+},
+{
+  path : 'image-gallery/category-management/list',
+  component : ListingCategoryComponent,
+  resolve:{ ImageData : ResolveService},
+  data:{ requestcondition : {source:'imageGallery_category_view',condition:{} },endpoint:'datalist'}
+},
+{
+  path : 'image-gallery/add',
+  component : AddeditImageComponent
+ },
+ {
+  path : 'image-gallery/edit/:_id',
+  component : AddeditImageComponent,
+  resolve: { ImageData : ResolveService},
+  data :{ requestcondition : {source :'imageGallery_management',condition:{}},endpoint :'datalist'}
+ },
+{
+  path : 'image-gallery/list',
+  component :ListImagesComponent,
+  resolve: { ImageData : ResolveService},
+  data :{ requestcondition : {source :'imageGallery_management_view',condition:{}},endpoint :'datalist'}
+},
   /**Frontend Routing**/
   { path: 'login', component: LoginComponent },
   { path: 'forget-password', component: ForgetPasswordComponent },
