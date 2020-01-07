@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CookieService } from 'ngx-cookie-service';
+import { ApiService } from '../../../../../api.service';
+
 @Component({
   selector: 'app-list-images',
   templateUrl: './list-images.component.html',
@@ -8,7 +10,8 @@ import { CookieService } from 'ngx-cookie-service';
 })
 export class ListImagesComponent implements OnInit {
   public imageGalleryallData: any = [];
-  public serverUrl: any = "https://9ozbyvv5v0.execute-api.us-east-1.amazonaws.com/production/api/";
+  // public serverUrl: any = "https://9v41bpikik.execute-api.us-east-1.amazonaws.com/dev/api/";
+  public serverUrl: any = this.apiService.serverUrl;
   public updatedEndpoint: any = "addorupdatedata";
   public SourceName: any = "imageGallery_management";
   public DeleteEndpoint: any = "deletesingledata";
@@ -18,7 +21,7 @@ export class ListImagesComponent implements OnInit {
   public searchSourcename: any = "imageGallery_management_view";
   public token = this.cookies.get('jwtToken');
   
-  constructor(public activatedRoute: ActivatedRoute, public cookies: CookieService) { }
+  constructor(public activatedRoute: ActivatedRoute, public cookies: CookieService,public apiService:ApiService) { }
 
   ngOnInit() {
     this.activatedRoute.data.forEach(data => {

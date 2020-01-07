@@ -69,7 +69,14 @@ import { AddeditImageComponent } from './../app/component/backend/ImageGallery/I
 import { ListImagesComponent } from './../app/component/backend/ImageGallery/ImageManagement/list-images/list-images.component';
 import { AddeditImageCategoryComponent} from '../app/component/backend/ImageGallery/categoryManagement/addedit-image-category/addedit-image-category.component';
 import { ListingCategoryComponent} from '../app/component/backend/ImageGallery/categoryManagement/listing-category/listing-category.component';
+/**video library route start here**/
+import { VideoModule } from 'video-lib-influxiq';
 
+import { ListVideosComponent } from '../app/component/backend/video-management/list-videos/list-videos.component';
+import { VideoCategoryManagementComponent } from '../app/component/backend/video-management/video-category-management/video-category-management.component';
+import { AddEditVideosComponent } from '../app/component/backend/video-management/video-library-management/add-edit-videos/add-edit-videos.component';
+import { ListVideoManagementComponent }from '../app/component/backend/video-management/video-library-management/list-video-management/list-video-management.component';
+/**video library route end here**/
 import { SidenavService } from './../app/services/sidenav.service';
 import { DashboardComponent } from './component/backend/dashboard/dashboard.component';
 import { BkHeaderComponent } from './layout/bk-header/bk-header.component';
@@ -244,33 +251,24 @@ import { AddEditSenderappComponent } from './component/backend/newsletterlists/a
     EventModal,
     BioComponent,
     HomeEventComponent,
-     
- 
-     
     ListingNewsletterComponent,
-     
- 
-     
     LisitngTestemailappComponent,
-     
- 
-     
     ListingSenderappComponent,
-     
- 
      
     ListingSubscriptionComponent,
      
- 
-     
     ListingSubcategoryComponent,
-
 
     AddEditSenderappComponent,
     AddeditImageComponent,
     ListImagesComponent,
     AddeditImageCategoryComponent,
-    ListingCategoryComponent
+    ListingCategoryComponent,
+    
+    ListVideosComponent,
+    VideoCategoryManagementComponent,
+    AddEditVideosComponent,
+    ListVideoManagementComponent
 
     
 
@@ -303,7 +301,8 @@ import { AddEditSenderappComponent } from './component/backend/newsletterlists/a
     FormsModule,
     ReactiveFormsModule,
     NewsTitleModule,
-    ImageGalleryModule
+    ImageGalleryModule,
+    VideoModule
   ],
   providers: [CookieService, AuthGuard, ApiService, SidenavService,DatePipe],
   bootstrap: [AppComponent],
