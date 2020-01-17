@@ -83,6 +83,9 @@ export class TesimonialComponent implements OnInit {
 
   }
 
+
+  
+
   showBut() {
     console.log('show button')
   }

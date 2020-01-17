@@ -43,6 +43,18 @@ import { BioComponent } from './component/frontend/bio/bio.component';
 /**End Frontend Routing**/
 
 /**Backend Routing**/
+/**image gallery route start here**/
+import { AddeditImageComponent } from './../app/component/backend/ImageGallery/ImageManagement/addedit-image/addedit-image.component';
+import { ListImagesComponent } from './../app/component/backend/ImageGallery/ImageManagement/list-images/list-images.component';
+import { AddeditImageCategoryComponent} from '../app/component/backend/ImageGallery/categoryManagement/addedit-image-category/addedit-image-category.component';
+import { ListingCategoryComponent} from '../app/component/backend/ImageGallery/categoryManagement/listing-category/listing-category.component';
+/**image gallery route end here**/
+/**video library route start here**/
+import { ListVideosComponent } from '../app/component/backend/video-management/list-videos/list-videos.component';
+import { VideoCategoryManagementComponent } from '../app/component/backend/video-management/video-category-management/video-category-management.component';
+import { AddEditVideosComponent } from '../app/component/backend/video-management/video-library-management/add-edit-videos/add-edit-videos.component';
+import { ListVideoManagementComponent }from '../app/component/backend/video-management/video-library-management/list-video-management/list-video-management.component';
+/**video library route end here**/
 import { DashboardComponent } from './component/backend/dashboard/dashboard.component';
 import { BkLeftdivComponent } from './layout/bk-leftdiv/bk-leftdiv.component';
 
@@ -112,19 +124,89 @@ import { ListingSubcategoryComponent } from './component/backend/newsletterlists
 import { AddEditSenderappComponent } from './component/backend/newsletterlists/add-edit-senderapp/add-edit-senderapp.component';
 
 
-/**image management**/
-import {AddeditImageComponent } from './component/backend/ImageGallery/ImageManagement/addedit-image/addedit-image.component';
-import { ListImagesComponent} from './component/backend/ImageGallery/ImageManagement/list-images/list-images.component';
-/**image category */
-import {AddeditImageCategoryComponent } from './component/backend/ImageGallery/categoryManagement/addedit-image-category/addedit-image-category.component';
-import { ListingCategoryComponent} from './component/backend/ImageGallery/categoryManagement/listing-category/listing-category.component';
+
 
 
 
 /**End Backend Routing**/
 
 const routes: Routes = [
+/**Image Gallery start here**/
+{
+  path : 'image-gallery/category-management/add',
+  component : AddeditImageCategoryComponent
+},
+{
+  path : 'image-gallery/category-management/edit/:_id',
+  component : AddeditImageCategoryComponent,
+  resolve : {ImageData : ResolveService },
+  data : { requestcondition : { source : 'imageGallery_category',condition : {}}, endpoint :'datalist'},
+},
+{
+  path : 'image-gallery/category-management/list',
+  component : ListingCategoryComponent,
+  resolve:{ ImageData : ResolveService},
+  data:{ requestcondition : {source:'imageGallery_category_view',condition:{} },endpoint:'datalist'}
+},
+{
+  path : 'image-gallery/add',
+  component : AddeditImageComponent
+ },
+ {
+  path : 'image-gallery/edit/:_id',
+  component : AddeditImageComponent,
+  resolve: { ImageData : ResolveService},
+  data :{ requestcondition : {source :'imageGallery_management',condition:{}},endpoint :'datalist'}
+ },
+{
+  path : 'image-gallery/list',
+  component :ListImagesComponent,
+  resolve: { ImageData : ResolveService},
+  data :{ requestcondition : {source :'imageGallery_management_view',condition:{}},endpoint :'datalist'}
+},
+/**Image Gallery end here**/
+/** Video category Library start Route here**/
+{ 
+  path:'video-category/list',
+  component: ListVideosComponent,
+  resolve:{ videoData : ResolveService},
+  data:{ requestcondition : {source:'video_category_view',condition:{} },endpoint:'datalist'}
+  
+},
+{ 
+  path:'video-category/add',
+  component: VideoCategoryManagementComponent,
+  
+},
+{ 
 
+  path:'video-category/edit/:_id',
+  component: VideoCategoryManagementComponent,
+  resolve:{ videoData : ResolveService},
+  data:{ requestcondition : {source:'video_category',condition:{} },endpoint:'datalist'}
+},
+
+/** Video Library End Route here**/
+/** Video Library management start here**/
+{ 
+  path:'video-library-management/add',
+  component: AddEditVideosComponent
+  
+},
+
+ { 
+  path:'video-library-management/edit/:_id',
+  component: AddEditVideosComponent,
+  resolve : {videodata : ResolveService },
+  data : { requestcondition : {source : 'video_management', condition : {} },endpoint :'datalist'}
+  
+},
+{ 
+  path:'video-library-management/list',
+  component: ListVideoManagementComponent,
+  resolve:{ videoData : ResolveService },
+  data : {requestcondition : {source :'video_management_view',condition : {} }, endpoint : 'datalist'}
+},
   /**Frontend Routing**/
   { path: 'login', component: LoginComponent },
   { path: 'forget-password', component: ForgetPasswordComponent },
