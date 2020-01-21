@@ -131,3 +131,86 @@
   @media screen and (max-width: 480px) {
   .logomodalwrapper{width:90%;margin:0 auto;display:block}
   }
+
+
+
+  @media only screen and (max-width: 1700px) {
+
+
+ .meetcoacharenaimg{ width: 100%!important; height: auto!important;}
+
+ .homeblock1content{ display: block;}
+
+ .homeblock1contentleft  {
+  width: 40%;
+  display: block;
+  float: left;
+}
+
+.homeblock1contentright {
+  width: 59%;
+  display: block;
+  float: right;
+}
+
+.homeblock1contentright  .mat-list { display: block;}
+
+.homeblock1contentright .mat-list-base .mat-list-item {
+  height: auto;
+  width: 33.3%;
+  float: left;
+}
+
+.homeblock1contentright .mat-list-base .mat-list-item .meetcoacharenaimg img{ width: 100%;}
+    
+  }
+
+  @media only screen and (max-width: 1360px) {
+    .carousalinfo { width: 90%;}
+  }
+
+  
+  @media only screen and (max-width: 1250px) {
+    .carousalinfo {
+      width: 90%; left: 5%;
+  }
+
+  .slide1imgperson{ width: 200px;}
+  }
+
+  @media only screen and (max-width: 1199px) {
+  .carousalinfoinner{ display: block; width: 100px;} 
+
+  .carousalinfo{ position: initial; left: 0; top: 0; 
+    width: 90%;
+    margin: 0 auto;}
+
+    
+  }
+
+
+  @media only screen and (max-width: 767px) {
+
+.homeblock1contentlefttop h2{ text-align: center!important;}
+
+.homeblock1contentlefttop  h3{ text-align: center!important;}
+
+.generalcls p{ text-align: center!important;}
+
+
+  }
+
+
+  @media only screen and (max-width: 480px) {
+    .homeblock1contentright  .mat-list { display: block!important;}
+
+
+
+    .homeblock1contentright .mat-list-base .mat-list-item {
+      height: auto;
+      width: auto;
+      float: none;
+      max-width: 100%;
+    }
+
+  }
