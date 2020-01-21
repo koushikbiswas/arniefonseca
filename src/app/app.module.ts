@@ -225,7 +225,7 @@ import { AddEditSenderappComponent } from './component/backend/newsletterlists/a
     ListVideosComponent,
     VideoCategoryManagementComponent,
     AddEditVideosComponent,
-    ListVideoManagementComponent
+    ListVideoManagementComponent,
     
   ],
   imports: [
