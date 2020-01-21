@@ -22,7 +22,7 @@ export class LoginComponent implements OnInit {
   // }
 
   
-  public logo: any = '../../assets/images/logo.png';      // logo url 
+  public logo: any = 'https://dev.arniefonseca.influxiq.com/assets/images/logo.png';      // logo url 
   public fromTitle: any = "Login";    // This is a From Title 
   // public fullUrl: any = "https://63zzhpnoti.execute-api.us-east-1.amazonaws.com/production/api/";  // server url
   public fullUrl: any = this.apiService.serverUrl;
@@ -55,8 +55,8 @@ export class LoginComponent implements OnInit {
     this.meta.setTag('og:title', 'Arniefonseca - Login');
     this.meta.setTag('twitter:title', 'Arniefonseca - Login');
     this.meta.setTag('og:type', 'website');
-    this.meta.setTag('og:image', '../../assets/images/logo.png');
-    this.meta.setTag('twitter:image', '../../assets/images/logo.png');
+    this.meta.setTag('og:image', 'https://dev.arniefonseca.influxiq.com/assets/images/logo.png');
+    this.meta.setTag('twitter:image', 'https://dev.arniefonseca.influxiq.com/assets/images/logo.png');
 
       this.routerStatus = {   
         "data": [

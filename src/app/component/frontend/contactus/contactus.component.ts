@@ -33,8 +33,8 @@ export class ContactusComponent implements OnInit {
     this.meta.setTag('og:title', 'Arnie Fonseca - Contact Me');
     this.meta.setTag('twitter:title', 'Arnie Fonseca - Contact Me');
     this.meta.setTag('og:type', 'website');
-    this.meta.setTag('og:image', '../../assets/images/logo.png');
-    this.meta.setTag('twitter:image', '../../assets/images/logo.png');
+    this.meta.setTag('og:image', 'https://dev.arniefonseca.influxiq.com/assets/images/logo.png');
+    this.meta.setTag('twitter:image', 'https://dev.arniefonseca.influxiq.com/assets/images/logo.png');
 
   }
 

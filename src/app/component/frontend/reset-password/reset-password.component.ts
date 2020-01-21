@@ -9,7 +9,7 @@ import { ApiService } from '../../../api.service';
 })
 export class ResetPasswordComponent implements OnInit {
 
-  public logo: any = '../../assets/images/logo.png';
+  public logo: any = 'https://dev.arniefonseca.influxiq.com/assets/images/logo.png';
   public fromTitleName: any = 'Reset Password';
   // public serverUrl: any = 'https://9v41bpikik.execute-api.us-east-1.amazonaws.com/production/api/';
   public serverUrl: any = this.apiService.serverUrl;
@@ -30,8 +30,8 @@ export class ResetPasswordComponent implements OnInit {
     this.meta.setTag('og:title', 'Arniefonseca - Reset Password');
     this.meta.setTag('twitter:title', 'Arniefonseca - Reset Password');
     this.meta.setTag('og:type', 'website');
-    this.meta.setTag('og:image', '../../assets/images/logo.png');
-    this.meta.setTag('twitter:image', '../../assets/images/logo.png');
+    this.meta.setTag('og:image', 'https://dev.arniefonseca.influxiq.com/assets/images/logo.png');
+    this.meta.setTag('twitter:image', 'https://dev.arniefonseca.influxiq.com/assets/images/logo.png');
 
  }
 
