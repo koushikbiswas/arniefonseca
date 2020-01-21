@@ -252,7 +252,7 @@ a{cursor:pointer;outline:none}
 .bottom-blog-wrapper .date{color:#ff6b02;font-family:'Helvetica-Normal';font-size:14px;text-transform:uppercase}
 .bottom-blog-wrapper .likecomment{display:flex;align-items:center}
 .bottom-blog-wrapper .likecomment span{color:#252231;font-family:'Helvetica-Normal';font-size:14px;text-transform:uppercase;margin:0 3px;display:flex;align-items:center}
-.mat-menu-panel.activedropmenu{margin-top:3px;background-color:#cdd4da!important}
+.mat-menu-panel.activedropmenu{margin-top:10px;background-color:#cdd4da!important}
 .mat-menu-panel{min-width:140px}
 .mat-menu-panel.activedropmenu .mat-menu-content{background-color:#222!important}
 .activemenu{background-color:#12c3e3}
@@ -314,7 +314,7 @@ a{cursor:pointer;outline:none}
 .carousalinfo{position:absolute;left:7%;top:50%;width:1105px;height:auto;transform:translateY(-50%)}
 .carousel-indicators > button{width:10px;height:10px;margin:7.5px}
 .carousel .carousel-indicators>button{width:12px!important;height:12px!important;margin:2.5px!important;background-color:#fff;border-radius:0;box-shadow:none}
-.carousalinfo h1{color:#fff;font-family:"HelveticaBold";font-size:110px;font-weight:600;line-height:100px;text-transform:uppercase;text-align:left;margin-top:20px;text-shadow:2px 2px 8px rgba(0,0,0,0.1);margin-left:15px}
+.carousalinfo h1{color:#fff;font-family:"HelveticaBold";font-size:110px!important;font-weight:600;line-height:100px!important;text-transform:uppercase;text-align:left;margin-top:20px;text-shadow:2px 2px 8px rgba(0,0,0,0.1);margin-left:15px}
 .carousalinfo h3{color:#fff;font-family:"HelveticaBold";font-size:60px;font-weight:600;line-height:60px;text-transform:capitalize;text-align:left;margin-top:8px;text-shadow:2px 2px 8px rgba(0,0,0,0.1);margin-left:15px}
 .carousalinfo p{color:#24252c;font-family:"Helvetica-Normal";font-size:18px;text-align:left;margin-top:10px}
 .carousalinfo p b{color:#24252c;font-family:"HelveticaBold";font-size:18px}
@@ -446,7 +446,7 @@ a{cursor:pointer;outline:none}
 .newsletterwrapper .mat-form-field-appearance-legacy .mat-form-field-label{top:24px}
 .newsletterwrapper .mat-form-field-underline{display:none!important}
 .newsletterwrapper .mat-error{display:flex!important;flex:1 1 100%}
-.newsletter_modal{width:480px;border:solid 2px #3ab9d9;border-radius:5px!important;padding:15px!important}
+.newsletter_modal{border:solid 2px #3ab9d9;border-radius:5px!important;padding:15px!important}
 .newsletter_modal .mat-form-field{display:block}
 .newsletter_modal .mat-form-field-appearance-legacy .mat-form-field-infix{padding:1em!important;background:#e1e0e6!important;margin:5px 0}
 .newsletter_modal .mat-form-field{margin:0!important}

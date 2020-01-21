@@ -9,6 +9,47 @@ import { MetaService } from '@ngx-meta/core';
 export class HomeComponent implements OnInit {
 
 
+  public slides: any = ["https://dev.arniefonseca.influxiq.com/assets/images/arnehome-slide1img.jpg","https://dev.arniefonseca.influxiq.com/assets/images/arnehome-slide1img.jpg","https://dev.arniefonseca.influxiq.com/assets/images/arnehome-slide1img.jpg"];
+  
+  carouselBannerOptions = {
+    margin: 0,
+    nav: false,
+    loop: false,
+    rewind: true,
+    autoplayTimeout: 6000,
+    autoplay: false,
+    autoplayHoverPause: true,
+    center: false,
+    responsiveClass: true,
+    dots: true,
+    autoWidth: true,
+    autoHeight:true,
+    navText: ["<div class='nav-btn prev-slide'><i class='material-icons'>keyboard_backspace</i></div>", "<div class='nav-btn next-slide'><i class='material-icons'>keyboard_backspace</i></div>"],
+    responsive: {
+      0: {
+        items: 1,
+        nav: false,
+      },
+      600: {
+        items: 1,
+        nav: false,
+      },
+      991: {
+        items: 1,
+        nav: false,
+      },
+      992: {
+        items: 1,
+        nav: false,
+      },
+      1199: {
+        items: 1,
+        nav: false,
+      }
+    }
+  }
+
+
   constructor(private cdr: ChangeDetectorRef, private router: Router, private readonly meta: MetaService) {
 
     this.meta.setTitle('Arnie Fonseca - Personal Development Mentor');

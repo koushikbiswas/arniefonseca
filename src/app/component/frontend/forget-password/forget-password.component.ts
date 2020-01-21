@@ -17,7 +17,7 @@ export class ForgetPasswordComponent implements OnInit {
   };
   public signUpRouteingUrl: any = { 
     "path":"",
-    "buttonName":"Sign-Up",
+    "buttonName":"Sign Up",
     "customLink":"/sign-up",
     "customURl":""
   };

@@ -159,11 +159,14 @@ background-color: #010101;
 
   .infoblock .mat-list .mat-list-item span{
     text-transform: capitalize !important;
+    text-transform: uppercase;
+    font-size: 14px;
   }
 
 
   .infoblock .mat-list .mat-list-item a, .infoblock .mat-list .mat-list-item a:hover{
     color: #a7a6a6;
+    text-transform: uppercase;
   }
   .infoblock .mat-list .mat-list-item span {
     border-right: 1px solid #333;
@@ -200,7 +203,7 @@ background-color: #010101;
 }
 
 .infoblock .mat-list-base {
-    display: inline-flex;
+    display: flex;
     padding-top: 0;
 }
 
@@ -318,7 +321,8 @@ background-color: #010101;
     .vpheaderwrapper {position: relative !important; z-index: 999;color: #fff;width: 100%;}
     .vpheaderwrapper.mat-card {background-color: #ffffff !important;box-shadow: none !important;  padding: 0px !important;}
     .vpheaderwrapper .mat-nav-list {display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;justify-content: space-between; padding-top: 0; align-items: center;}
-    .vpheaderwrapper .mat-nav-list .mat-list-item a {font-family: 'open_sanssemibold';font-size: 14px;color:#1e1e1e;padding: 0;margin: 0 auto;line-height: 16px;letter-spacing: 0px;margin-top: 0px;text-transform: uppercase; cursor: pointer; height: 60px;
+    .vpheaderwrapper .mat-nav-list .mat-list-item .mat-list-item-content{padding:0 !important}
+    .vpheaderwrapper .mat-nav-list .mat-list-item a {font-family: 'open_sanssemibold';font-size: 14px;color:#1e1e1e;padding: 0 16px;margin: 0 auto;line-height: 16px;letter-spacing: 0px;margin-top: 0px;text-transform: uppercase; cursor: pointer; height: 60px;
       line-height: 60px;}
     .vpheaderwrapper .mat-nav-list .mat-list-item:hover a {color:#1e1e1e;}
     .vpheaderwrapper .mat-nav-list .mat-list-item:not(.mat-list-item-disabled):hover {background: #fff; border-bottom:3px solid #0fc47e;}
@@ -347,6 +351,10 @@ background-color: #010101;
     max-width: 100%;
   }
 
+  @media screen and (max-width:1670px) {
+      .homemain .smlmenudiv {width: 100%; margin: 0 auto;}
+    .vpheaderwrapper .mat-toolbar.mat-primary {width: 100%;}
+  }
 
 @media screen and (max-width:991px) {.vpheaderwrapper .mat-nav-list a{width: 100%; display: inline-block; padding: 15px 10px;}.homemain .mat-list-item {height: auto;width: 100%;}
 .vpheaderwrapper {position: inherit !important;top:0;}

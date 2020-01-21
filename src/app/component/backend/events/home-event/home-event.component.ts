@@ -43,11 +43,7 @@ export class HomeEventComponent implements OnInit {
 
   constructor(public http: HttpService, public cookieService: CookieService,
               public router: Router, public activatedRoute: ActivatedRoute,public apiService: ApiService) {
-
-
-
-
-
+            
   }
 
   ngOnInit() {

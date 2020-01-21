@@ -19,11 +19,7 @@ export class BkHeaderComponent implements OnInit {
 
   public user_full_name: any;
 
-  constructor(public cookieService: CookieService, private sidenav: SidenavService, public dialog: MatDialog, public router: Router, public Header: HeaderComponent, public activeroute: ActivatedRoute) {
-
-
-  }
-
+  constructor(public cookieService: CookieService, private sidenav: SidenavService, public dialog: MatDialog, public router: Router, public Header: HeaderComponent, public activeroute: ActivatedRoute) {}
   toggleActive:boolean = false;
   toggleRightSidenav() {
     this.toggleActive = !this.toggleActive;

@@ -26,11 +26,10 @@
           <button class="controls" id="next"><mat-icon aria-hidden="false">arrow_forward_ios</mat-icon></button>          
         </mat-card-content>    
 </mat-card> -->
-<mat-card class="homebanner" style="padding: 0">    
-  <mat-card-content>
+<mat-card class="homebanner generalcls" style="padding: 0 !important">    
     <!-- <img src="../../../../assets/images/pro-home-block1.jpg" style="width: 100%; display: block; margin: 0; padding: 0;"> -->
 
-    <mat-carousel timings="250ms ease-in" [autoplay]="true" interval="5000" color="primary" maxWidth="auto" proportion="25" slides="3" [loop]="true" [hideArrows]="true" [hideIndicators]="false" [useKeyboard]="true" [useMouseWheel]="true" orientation="ltr" >
+    <!-- <mat-carousel timings="250ms ease-in" [autoplay]="true" interval="5000" color="primary" maxWidth="auto" proportion="25" slides="3" [loop]="true" [hideArrows]="true" [hideIndicators]="false" [useKeyboard]="true" [useMouseWheel]="true" orientation="ltr" >
       <mat-carousel-slide #matCarouselSlide overlayColor="#00000040" [hideOverlay]="false">  
           <div class="carousalinfo">
             <div class="carousalinfoinner">
@@ -79,8 +78,21 @@
             </div>
             <img class="d-block w-100" src="../../assets/images/arnehome-slide1img.jpg">
         </mat-carousel-slide>
-    </mat-carousel>
-  </mat-card-content>
+    </mat-carousel> -->
+
+    <owl-carousel [options]="carouselBannerOptions" [items]="slides" [carouselClasses]="['owl-theme', 'row', 'sliding']">
+      <div class="itemcls"  *ngFor="let item of slides">    
+          <img class="slide-image" [src]="item">
+            <div class="carousalinfo">
+              <div class="carousalinfoinner">
+                <span class="slide1imgperson"><img class="d-block w-100" src="../../assets/images/slide1img-person.jpg"></span>
+                <span class="slide1info"><h1>Arnie <br>Fonseca</h1><h3>Personal Development Mentor</h3></span>           
+              </div>
+              <p>Invite your audience to be mentored by me at your event, and learn <b>some simple, but powerful methods that will make immediate improvements in your lives.</b></p>
+              <button mat-button class="btngray" [routerLink]="['/']">view more</button>
+            </div>
+      </div>
+    </owl-carousel>
 </mat-card>
 
 <!-- <mat-card class="generalcls ptb-40" style="background: #fff !important;">  
