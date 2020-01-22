@@ -122,7 +122,7 @@
         "server": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {
-            "outputPath": "dist/server_arnifonseca",
+            "outputPath": "dist/server",
             "main": "src/main.server.ts",
             "tsConfig": "src/tsconfig.server.json"
           },
