@@ -4,6 +4,7 @@ import { CookieService } from 'ngx-cookie-service';
 import { ApiService } from '../../../../api.service';
 import {} from '../../../../../environments/environment.dev';
 import { environment } from '../../../../../environments/environment';
+import { MetaService } from '@ngx-meta/core';
 
 
 
@@ -29,7 +30,20 @@ export class ListingServiceComponent implements OnInit {
       view:"service"
     }
   
-  constructor( private router: Router, private activatedRoute: ActivatedRoute, private cookieService: CookieService, public apiService: ApiService ) { 
+  constructor( private router: Router, private activatedRoute: ActivatedRoute, private cookieService: CookieService, public apiService: ApiService, private readonly meta: MetaService ) { 
+
+    this.meta.setTitle('Arniefonseca - Service');
+    this.meta.setTag('og:description', '');
+    this.meta.setTag('twitter:description', '');
+
+    this.meta.setTag('og:keyword', '');
+    this.meta.setTag('twitter:keyword', '');
+
+    this.meta.setTag('og:title', 'Arniefonseca -  Service');
+    this.meta.setTag('twitter:title', 'Arniefonseca -  Service');
+    this.meta.setTag('og:type', 'website');
+    this.meta.setTag('og:image', 'https://dev.arniefonseca.influxiq.com/assets/images/logo.png');
+    this.meta.setTag('twitter:image', 'https://dev.arniefonseca.influxiq.com/assets/images/logo.png');
 
   this.activatedRoute.data.subscribe(resolveData => {
     this.serviceListConfig.datasource = resolveData.serviceList.res;    

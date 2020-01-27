@@ -1,1 +1,30 @@
 .singleButton{ margin-left: auto;}
+
+
+.testimoniallistsadmin { background:url(../../../../../assets/images/testimonialbannerbg.jpg) no-repeat center center !important;background-size: cover !important;}
+
+ 
+
+@media only screen and (max-width: 1199px) {
+
+    .testimoniallistsadmin  {
+        background-position: right top!important;
+        background-size: 200%!important;     height: auto;
+        padding: 15px;
+    padding-right: 15px;
+    text-align: center!important;
+    padding-top: 28%;
+    background-color: #2ca7db!important;
+    padding-bottom: 30px;
+    }
+
+  
+}
+
+
+@media only screen and (max-width: 991px) {
+
+    .testimoniallistsadmin  {    background-size: 290%!important;     padding-top: 40%;}
+
+ 
+}

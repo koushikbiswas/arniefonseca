@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ApiService } from '../../../../../api.service';
 
+import { MetaService } from '@ngx-meta/core';
+
 @Component({
   selector: 'app-addedit-image-category',
   templateUrl: './addedit-image-category.component.html',
@@ -16,8 +18,21 @@ export class AddeditImageCategoryComponent implements OnInit {
   public sourceName:any="imageGallery_category";
   public dataList:any=[];
   public editedData:any=[];
-  constructor(public activeRoute :ActivatedRoute,public apiService : ApiService) { 
+  constructor(public activeRoute :ActivatedRoute,public apiService : ApiService,  private readonly meta: MetaService) { 
     console.log("server url",this.serverUrl);
+    
+    this.meta.setTitle('Arniefonseca - Image Gallery');
+    this.meta.setTag('og:description', '');
+    this.meta.setTag('twitter:description', '');
+
+    this.meta.setTag('og:keyword', '');
+    this.meta.setTag('twitter:keyword', '');
+
+    this.meta.setTag('og:title', 'Arniefonseca - Image Gallery');
+    this.meta.setTag('twitter:title', 'Arniefonseca - Image Gallery');
+    this.meta.setTag('og:type', 'website');
+    this.meta.setTag('og:image', 'https://dev.arniefonseca.influxiq.com/assets/images/logo.png');
+    this.meta.setTag('twitter:image', 'https://dev.arniefonseca.influxiq.com/assets/images/logo.png');
   }
 
   ngOnInit() {

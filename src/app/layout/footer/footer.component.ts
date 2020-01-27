@@ -44,15 +44,21 @@ export class FooterComponent implements OnInit {
 
 
    termscondition() {
-    const dialogRef = this.dialog.open(DialogTermsDialog);
+    const dialogRef = this.dialog.open(DialogTermsDialog,{
+       panelClass:'footewrmoadbox',
+    });
 
     dialogRef.afterClosed().subscribe(result => {
+     
       // console.log(`Dialog result: ${result}`);
     });
   }
 
   privacypolicy() {
-    const dialogRef = this.dialog.open(DialogPrivacyDialog);
+    const dialogRef = this.dialog.open(DialogPrivacyDialog,{
+      panelClass:'footewrmoadbox',
+
+    });
 
     dialogRef.afterClosed().subscribe(result => {
       // console.log(`Dialog result: ${result}`);

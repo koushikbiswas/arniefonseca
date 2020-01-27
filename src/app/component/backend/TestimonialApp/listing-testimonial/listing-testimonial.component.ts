@@ -3,6 +3,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { CookieService } from 'ngx-cookie-service';
 import { ApiService } from '../../../../api.service';
 
+import { MetaService } from '@ngx-meta/core';
+
 @Component({
   selector: 'app-listing-testimonial',
   templateUrl: './listing-testimonial.component.html',
@@ -25,7 +27,21 @@ export class ListingTestimonialComponent implements OnInit {
     view: "testimonial_view"
   }
 
-  constructor(private router: Router, private activatedRoute: ActivatedRoute, private cookieService: CookieService, public ApiService: ApiService) { 
+  constructor(private router: Router, private activatedRoute: ActivatedRoute, private cookieService: CookieService, public ApiService: ApiService, private readonly meta: MetaService) { 
+
+    this.meta.setTitle('Arniefonseca - Testimonial');
+    this.meta.setTag('og:description', '');
+    this.meta.setTag('twitter:description', '');
+
+    this.meta.setTag('og:keyword', '');
+    this.meta.setTag('twitter:keyword', '');
+
+    this.meta.setTag('og:title', 'Arniefonseca -  Testimonial');
+    this.meta.setTag('twitter:title', 'Arniefonseca -  Testimonial');
+    this.meta.setTag('og:type', 'website');
+    this.meta.setTag('og:image', 'https://dev.arniefonseca.influxiq.com/assets/images/logo.png');
+    this.meta.setTag('twitter:image', 'https://dev.arniefonseca.influxiq.com/assets/images/logo.png');
+
     //console.log('---------------kbtest serverUrl-------------', this.ApiService.serverUrl);
   this.activatedRoute.data.subscribe(resolveData => {
     this.testimonialListConfig.datasource = resolveData.testimonialList.res;

@@ -4,6 +4,8 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { HttpService } from '../../../../services/http.service';
 import {environment } from '../../../../../environments/environment.prod';
 
+import { MetaService } from '@ngx-meta/core';
+
 
 @Component({
   selector: 'app-manage-event-listing',
@@ -50,7 +52,23 @@ public date_search_endpoint:any="datalist";
 
 
   constructor(public http: HttpService, public cookieService: CookieService,
-    public router: Router, public activatedRoute: ActivatedRoute) { }
+    public router: Router, public activatedRoute: ActivatedRoute, private readonly meta: MetaService) {
+
+
+      this.meta.setTitle('Arniefonseca - Event');
+      this.meta.setTag('og:description', '');
+      this.meta.setTag('twitter:description', '');
+  
+      this.meta.setTag('og:keyword', '');
+      this.meta.setTag('twitter:keyword', '');
+  
+      this.meta.setTag('og:title', 'Arniefonseca - Event');
+      this.meta.setTag('twitter:title', 'Arniefonseca - Event');
+      this.meta.setTag('og:type', 'website');
+      this.meta.setTag('og:image', 'https://dev.arniefonseca.influxiq.com/assets/images/logo.png');
+      this.meta.setTag('twitter:image', 'https://dev.arniefonseca.influxiq.com/assets/images/logo.png');
+
+     }
 
   ngOnInit() {
 

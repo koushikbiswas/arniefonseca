@@ -4,6 +4,8 @@ import { CookieService } from 'ngx-cookie-service';
 import { ApiService } from '../../../../api.service';
 import {environment} from '../../../../../environments/environment.dev'
 
+import { MetaService } from '@ngx-meta/core';
+
 @Component({
   selector: 'app-addedit-service',
   templateUrl: './addedit-service.component.html',
@@ -43,8 +45,19 @@ export class AddeditServiceComponent implements OnInit {
   }
 
 
-  constructor(private router : Router , private activatedRoute : ActivatedRoute ,private cookieService : CookieService, public ApiService: ApiService) {
-   
+  constructor(private router : Router , private activatedRoute : ActivatedRoute ,private cookieService : CookieService, public ApiService: ApiService, private readonly meta: MetaService) {
+    this.meta.setTitle('Arniefonseca - Service');
+    this.meta.setTag('og:description', '');
+    this.meta.setTag('twitter:description', '');
+
+    this.meta.setTag('og:keyword', '');
+    this.meta.setTag('twitter:keyword', '');
+
+    this.meta.setTag('og:title', 'Arniefonseca -  Service');
+    this.meta.setTag('twitter:title', 'Arniefonseca -  Service');
+    this.meta.setTag('og:type', 'website');
+    this.meta.setTag('og:image', 'https://dev.arniefonseca.influxiq.com/assets/images/logo.png');
+    this.meta.setTag('twitter:image', 'https://dev.arniefonseca.influxiq.com/assets/images/logo.png');
     
    }
 

@@ -3,6 +3,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { CookieService } from 'ngx-cookie-service';
 import { ApiService } from '../../../../api.service';
 
+import { MetaService } from '@ngx-meta/core';
+
 @Component({
   selector: 'app-list-videos',
   templateUrl: './list-videos.component.html',
@@ -24,7 +26,22 @@ export class ListVideosComponent implements OnInit {
   public videoManagementRoute:any="video-library-management/list";
   public searchEndpoint:any="datalist";
   public searchSourcename:any="video_category_view";
-  constructor(public activatedRoute: ActivatedRoute, public cookies :CookieService,public apiService : ApiService) { }
+  constructor(public activatedRoute: ActivatedRoute, public cookies :CookieService,public apiService : ApiService, private readonly meta: MetaService) {
+
+    this.meta.setTitle('Arniefonseca - Videos');
+    this.meta.setTag('og:description', '');
+    this.meta.setTag('twitter:description', '');
+
+    this.meta.setTag('og:keyword', '');
+    this.meta.setTag('twitter:keyword', '');
+
+    this.meta.setTag('og:title', 'Arniefonseca -   Videos');
+    this.meta.setTag('twitter:title', 'Arniefonseca -   Videos');
+    this.meta.setTag('og:type', 'website');
+    this.meta.setTag('og:image', 'https://dev.arniefonseca.influxiq.com/assets/images/logo.png');
+    this.meta.setTag('twitter:image', 'https://dev.arniefonseca.influxiq.com/assets/images/logo.png');
+
+   }
 
   ngOnInit() {
     this.activatedRoute.data.forEach(data => {

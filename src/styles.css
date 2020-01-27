@@ -137,3 +137,21 @@ ckeditor{margin-bottom:9px!important;display:inline-block;width:100%}
 .homebanner .owl-theme .owl-dots .owl-dot.active span{background:#24252c;opacity: 1; border-radius: 0px;}
 .homebanner .owl-carousel .owl-nav button.owl-prev,.homebanner .owl-carousel .owl-nav button.owl-next{background:#fdfdfd!important;background:-webkit-gradient(linear,left top,left bottom,from(rgba(253,253,253,0.1)),to(rgba(225,225,225,0.1)))!important;background:linear-gradient(180deg,rgba(253,253,253,0.1) 0%,rgba(225,225,225,0.1) 100%)!important;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#fdfdfd",endColorstr="#e1e1e1",GradientType=1)!important;width:73px;height:73px;border-radius:100%}
 .homebanner .owl-next.disabled,.homebanner .owl-prev.disabled{display:none!important}
+
+.footewrmoadbox {padding: 15px!Important;  height: 80vh!Important;  background: #fff; box-shadow: inset 0 0 10px #000 inset; border: solid 1px #ddd;}
+.footewrmoadbox .mat-dialog-container{ width: 80vw!Important; max-width: inherit!Important; padding: 0px!important;} 
+
+.footewrmoadbox .generalmodalcls .modal-content{ box-shadow: none!important;}
+
+
+
+.footewrmoadbox  .generalmodalcls h1{ text-align: center; font-family: 'HelveticaBold';
+    font-size: 30px!important;
+    line-height: 36px!important;     color: #21c4e1 !important; margin: 0; padding:15px 0 10px 0;}
+
+.footewrmoadbox  .generalmodalcls h2{ text-align: left; font-family: 'HelveticaBold';
+    font-size: 28px!important;
+    line-height: 30px!important;   margin: 0; padding: 10px 0;   color: #333 !important;}
+
+.footewrmoadbox  .generalmodalcls p{ text-align: left; font-family: 'Helvetica-Normal';
+    font-size: 18px;  color: #333 !important; margin: 0; padding: 10px 0;}

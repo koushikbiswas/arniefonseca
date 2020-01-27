@@ -4,6 +4,13 @@
     
         <!-- routes will be rendered here -->
         
-<router-outlet></router-outlet>
+<router-outlet>
+
+        <div class="loder_body"  *ngIf="loading">
+                <img src="assets/images/logo.png" style="display: block; margin: 10px auto;">
+                <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+
+        </div>
+</router-outlet>
 
     

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CookieService } from 'ngx-cookie-service';
 import { ApiService } from '../../../../api.service';
+import { MetaService } from '@ngx-meta/core';
 @Component({
   selector: 'app-listing-blogs',
   templateUrl: './listing-blogs.component.html',
@@ -25,7 +26,7 @@ export class ListingBlogsComponent implements OnInit {
 
     // public blogsList: any;
 
-  constructor(private router: Router, private activatedRoute: ActivatedRoute, private cookieService: CookieService,public apiService: ApiService) {
+  constructor(private router: Router, private activatedRoute: ActivatedRoute, private cookieService: CookieService,public apiService: ApiService , private readonly meta: MetaService,) {
     let data: any = {
       source:"blogs_view",
       endpoint: "datalist"
@@ -35,6 +36,20 @@ export class ListingBlogsComponent implements OnInit {
       this.blogListConfig.datasource = result.res;
       this.blogListConfig.jwtToken = this.cookieService.get('jwtToken');
     });
+
+
+    this.meta.setTitle('Arniefonseca - BLOG MANAGEMENT');
+    this.meta.setTag('og:description', '');
+    this.meta.setTag('twitter:description', '');
+
+    this.meta.setTag('og:keyword', '');
+    this.meta.setTag('twitter:keyword', '');
+
+    this.meta.setTag('og:title', 'Arniefonseca - BLOG MANAGEMENT');
+    this.meta.setTag('twitter:title', 'Arniefonseca - BLOG MANAGEMENT');
+    this.meta.setTag('og:type', 'website');
+    this.meta.setTag('og:image', 'https://dev.arniefonseca.influxiq.com/assets/images/logo.png');
+    this.meta.setTag('twitter:image', 'https://dev.arniefonseca.influxiq.com/assets/images/logo.png');
   }
 
   ngOnInit() {

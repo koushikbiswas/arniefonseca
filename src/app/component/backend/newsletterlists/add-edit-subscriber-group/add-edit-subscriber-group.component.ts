@@ -4,6 +4,8 @@ import { ActivatedRoute } from '@angular/router';
 // import { environment } from '../../../../../environments/environment';
 import { ApiService } from '../../../../api.service';
 
+import { MetaService } from '@ngx-meta/core';
+
 @Component({
   selector: 'app-add-edit-subscriber-group',
   templateUrl: './add-edit-subscriber-group.component.html',
@@ -46,7 +48,22 @@ export class AddEditSubscriberGroupComponent implements OnInit {
   }
 
 
-  constructor( private cookieService : CookieService, private activatedRoute : ActivatedRoute, public apiservice: ApiService ) { }
+  constructor( private cookieService : CookieService, private activatedRoute : ActivatedRoute, public apiservice: ApiService, private readonly meta: MetaService ) {
+
+    this.meta.setTitle('Arniefonseca - Newsletter');
+    this.meta.setTag('og:description', '');
+    this.meta.setTag('twitter:description', '');
+
+    this.meta.setTag('og:keyword', '');
+    this.meta.setTag('twitter:keyword', '');
+
+    this.meta.setTag('og:title', 'Arniefonseca -  Newsletter');
+    this.meta.setTag('twitter:title', 'Arniefonseca -  Newsletter');
+    this.meta.setTag('og:type', 'website');
+    this.meta.setTag('og:image', 'https://dev.arniefonseca.influxiq.com/assets/images/logo.png');
+    this.meta.setTag('twitter:image', 'https://dev.arniefonseca.influxiq.com/assets/images/logo.png');
+
+   }
 
   ngOnInit() {
     this.activatedRoute.params.subscribe(params => {

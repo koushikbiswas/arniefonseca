@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CookieService } from 'ngx-cookie-service';
 import { ApiService } from '../../../../api.service';
+import { MetaService } from '@ngx-meta/core';
 @Component({
   selector: 'app-add-edit-blogs',
   templateUrl: './add-edit-blogs.component.html',
@@ -37,7 +38,23 @@ export class AddEditBlogsComponent implements OnInit {
     path: "blogs",
     prefix: "blogs-file"
   }
-  constructor(private cookieService: CookieService, public router:Router, public activatedRoute: ActivatedRoute,public apiService: ApiService) { }
+  constructor(private cookieService: CookieService, public router:Router, public activatedRoute: ActivatedRoute,public apiService: ApiService, private readonly meta: MetaService, ) { 
+
+
+    this.meta.setTitle('Arniefonseca - BLOG MANAGEMENT');
+    this.meta.setTag('og:description', '');
+    this.meta.setTag('twitter:description', '');
+
+    this.meta.setTag('og:keyword', '');
+    this.meta.setTag('twitter:keyword', '');
+
+    this.meta.setTag('og:title', 'Arniefonseca - BLOG MANAGEMENT');
+    this.meta.setTag('twitter:title', 'Arniefonseca - BLOG MANAGEMENT');
+    this.meta.setTag('og:type', 'website');
+    this.meta.setTag('og:image', 'https://dev.arniefonseca.influxiq.com/assets/images/logo.png');
+    this.meta.setTag('twitter:image', 'https://dev.arniefonseca.influxiq.com/assets/images/logo.png');
+
+  }
 
   ngOnInit() {
 

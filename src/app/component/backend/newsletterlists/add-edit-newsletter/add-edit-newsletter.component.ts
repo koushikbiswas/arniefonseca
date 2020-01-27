@@ -4,6 +4,8 @@ import { Router,ActivatedRoute } from '@angular/router';
 import { ApiService } from '../../../../api.service';
 import { environment } from '../../../../../environments/environment';
 
+import { MetaService } from '@ngx-meta/core';
+
 @Component({
   selector: 'app-add-edit-newsletter',
   templateUrl: './add-edit-newsletter.component.html',
@@ -33,8 +35,21 @@ export class AddEditNewsletterComponent implements OnInit {
     
   }  
   
-  constructor(public cookieService: CookieService, private activatedRoute: ActivatedRoute, public apiservice: ApiService) {
+  constructor(public cookieService: CookieService, private activatedRoute: ActivatedRoute, public apiservice: ApiService, private readonly meta: MetaService ) {
     console.log('data',this.configAddEdit.endpoint );
+
+    this.meta.setTitle('Arniefonseca - Newsletter');
+    this.meta.setTag('og:description', '');
+    this.meta.setTag('twitter:description', '');
+
+    this.meta.setTag('og:keyword', '');
+    this.meta.setTag('twitter:keyword', '');
+
+    this.meta.setTag('og:title', 'Arniefonseca -  Newsletter');
+    this.meta.setTag('twitter:title', 'Arniefonseca -  Newsletter');
+    this.meta.setTag('og:type', 'website');
+    this.meta.setTag('og:image', 'https://dev.arniefonseca.influxiq.com/assets/images/logo.png');
+    this.meta.setTag('twitter:image', 'https://dev.arniefonseca.influxiq.com/assets/images/logo.png');
   }
 
 

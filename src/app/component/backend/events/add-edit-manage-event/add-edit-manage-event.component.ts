@@ -19,6 +19,9 @@ import {DatePipe, getLocaleDateFormat} from '@angular/common';
 import { analyzeAndValidateNgModules } from '@angular/compiler';
 
 
+import { MetaService } from '@ngx-meta/core';
+
+
 const moment = _rollupMoment || _moment;
 
 export interface DialogData {
@@ -146,7 +149,7 @@ public image_url:any=environment['https://fileupload.influxhostserver.com/'];
 
   ]
 
-  constructor(public fb:FormBuilder,public _http: HttpService, private _authHttp: HttpClient, private cookieService: CookieService,public router:Router,public activatedRoute:ActivatedRoute,public dialog: MatDialog, public activeroute: ActivatedRoute,public datePipe:DatePipe) { 
+  constructor(public fb:FormBuilder,public _http: HttpService, private _authHttp: HttpClient, private cookieService: CookieService,public router:Router,public activatedRoute:ActivatedRoute,public dialog: MatDialog, public activeroute: ActivatedRoute,public datePipe:DatePipe, private readonly meta: MetaService) { 
 
     this.activatedRoute.params.subscribe(params => {
       if (params['_id'] != null) {
@@ -160,6 +163,21 @@ public image_url:any=environment['https://fileupload.influxhostserver.com/'];
       else
         this.action = "add";
     });
+
+
+
+    this.meta.setTitle('Arniefonseca - Event');
+    this.meta.setTag('og:description', '');
+    this.meta.setTag('twitter:description', '');
+
+    this.meta.setTag('og:keyword', '');
+    this.meta.setTag('twitter:keyword', '');
+
+    this.meta.setTag('og:title', 'Arniefonseca - Event');
+    this.meta.setTag('twitter:title', 'Arniefonseca - Event');
+    this.meta.setTag('og:type', 'website');
+    this.meta.setTag('og:image', 'https://dev.arniefonseca.influxiq.com/assets/images/logo.png');
+    this.meta.setTag('twitter:image', 'https://dev.arniefonseca.influxiq.com/assets/images/logo.png');
   }
 
 
