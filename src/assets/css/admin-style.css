@@ -1,5 +1,5 @@
-.btnorange{display:inline-block!important;background:#f7462e!important;font-size:16px!important;color:#fff!important;text-transform:uppercase;font-family:'HelveticaBold'!important;text-decoration:none!important;line-height:normal!important;text-align:center!important;text-decoration:none!important;margin:0;margin-top:0;margin-bottom:0;border-radius:5px;padding:14px 18px 10px!important;margin-top:10px!important;box-shadow:0 1px 2px rgba(0,0,0,0.5)}
-.btngreen{display:inline-block!important;background:#0fc47e!important;font-size:16px!important;color:#fff!important;text-transform:uppercase;font-family:'HelveticaBold'!important;text-decoration:none!important;line-height:normal!important;text-align:center!important;text-decoration:none!important;margin:0;margin-top:0;margin-bottom:0;border-radius:5px;padding:14px 18px 10px!important;margin-top:10px!important;box-shadow:0 1px 2px rgba(0,0,0,0.5)}
+.btnorange{display:inline-block!important;background:#f7462e!important;font-size:16px!important;color:#fff!important;text-transform:uppercase;font-family:'HelveticaBold'!important;text-decoration:none!important;line-height:normal!important;text-align:center!important;text-decoration:none!important;margin:0;margin-top:0;margin-bottom:0;border-radius:5px;padding:14px 12px 10px!important;margin-top:10px!important;box-shadow:0 1px 2px rgba(0,0,0,0.5)}
+.btngreen{display:inline-block!important;background:#0fc47e!important;font-size:16px!important;color:#fff!important;text-transform:uppercase;font-family:'HelveticaBold'!important;text-decoration:none!important;line-height:normal!important;text-align:center!important;text-decoration:none!important;margin:0;margin-top:0;margin-bottom:0;border-radius:5px;padding:14px 12px 10px!important;margin-top:10px!important;box-shadow:0 1px 2px rgba(0,0,0,0.5)}
 i{font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 .admgeneralcls .mat-card-header-text{margin:0!important;width:100%}
 .admgeneralcls .mat-card-title{font-family:'RalewayRegular';font-size:48px!important;line-height:48px!important;text-transform:uppercase;margin:0;padding:0;margin-bottom:30px!important;color:#2a2b2c;display:flex;width:100%;align-items:center;justify-content:space-between}
@@ -302,6 +302,8 @@ app-bk-leftdiv{position:relative;z-index:999}
 .setting_formblock_btngroup{display:block;margin-top:25px;padding-top:20px;text-align:right;border-top:solid 1px #eaeaea}
 .setting_formblock_btngroup button{display:inline-block;border:none;box-shadow:none;width:98px;height:35px;text-align:center;line-height:30px;font-size:16px;cursor:pointer;text-transform:uppercase;color:#fff;background:#323234}
 .setting_formblock_btngroup button:nth-of-type(2){background:#12c3e3;margin-left:10px}
+
+.tablediv .mat-card .mat-form-field-label-wrapper{ border: none!important;}
 @media only screen and (max-width: 1199px) {
 .setting_formblock label{display:block;float:none;margin:10px 0}
 .setting_formblock .mat-form-field{display:block;float:none;margin:0 0 20px}
