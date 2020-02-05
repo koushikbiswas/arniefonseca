@@ -491,3 +491,29 @@ a{cursor:pointer;outline:none}
 .setting_formblock .mat-form-field-appearance-legacy .mat-form-field-label{top:7px!important}
 .setting_formblock .mat-form-field-underline{display:none}
 .setting_formblock .mat-error{display:block!important;margin-top:18px!important}
+
+
+.loder_body{ width: 100vw; height: 100vh; display: table-cell; vertical-align: middle; text-align: center; vertical-align: middle;}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px; margin: 10px auto;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  

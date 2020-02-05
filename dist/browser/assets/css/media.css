@@ -2,17 +2,37 @@
   .mainwrappercontent{width:96%}
   .maincontainer{width:96%}
   }
+
+  @media only screen and (max-width: 1428px) {
+
+    .blogdetail .bottom_blog .item_wrapper .item .author{ display: block;}
+
+  }
   @media only screen and (max-width: 1366px) {
   .probidhomeblock1.mat-card .mat-tab-header{width:100%}
   .homemain .mat-nav-list{width:100%;width:96%;align-items:center}
   .generalcls .mat-card-title{font-size:32px!important;line-height:36px!important}
   .singleservice .mat-card-title{font-size:18px!important;line-height:normal!important}
-  .generalcls p{font-size:16px;line-height:24px}
+  .generalcls p{font-size:16px;line-height:24px; text-align: left!important;}
+
+  .servicewrapper  .bloghead p{text-align: center!important;}
   .homeblock1contentright .mat-list-base .mat-list-item{height:auto;width:31.33%}
   .meetcoacharenaimg{width:100%!important;height:auto!important}
   .meetcoacharenaimg img{width:100%}
   }
   @media only screen and (max-width: 1199px) {
+
+    .bottom_blog .item_wrapper{ display: block!important;}
+    .blogdetail .bottom_blog .item_wrapper  .item  {
+      width: 49%!important;
+      float: left!important;
+  }
+
+  .testimonialwrapper  .mat-list { display:block; clear: both; overflow: hidden;}
+
+
+
+
   .homeblock1contentright .mat-list-base .mat-list-item{height:auto;width:33.33%}
   .meetcoacharenaimg{width:100%!important;height:auto!important}
   .homeblock1contentright{width:100%!important;padding-left:0!important}
@@ -26,7 +46,7 @@
   .generalcls .mat-card-content{display:block;text-align:center}
   .vpblock2left .btnyellow{float:none}
   .headertitlerightdesign{display:none!important}
-  .mat-card-header .mat-card-title span{width:100%;display:inline;text-align:center}
+  .mat-card-header .mat-card-title span{ width:100%; display:inline;text-align:center}
   .ptb-77.mat-card{padding-top:30px!important;padding-bottom:30px!important}
   .vpheaderwrapper.mat-card{background-color:#47484a!important;position:inherit!important}
   .vpheaderwrapper .mat-list-base .mat-list-item .mat-list-item-content,.vpheaderwrapper .mat-list-base .mat-list-option .mat-list-item-content{padding:0 8px}
@@ -48,11 +68,10 @@
   .topsocialblock{width:100px!important;margin:20px auto;display:block}
   .topsocialblock .mat-list{display:inline-flex;justify-content:center!important}
   .headerbottom .mainwrappercontent{width:100%!important}
-  .contact-form .main-div .from.mat-card{margin:4em auto!important;width:90%!important;padding:15px!important}
+  .contact-form .main-div .from.mat-card{margin:4em auto!important;width:80%!important;padding: 5%!important}
   .adm_inner_banner .adm_inner_para{text-align:left;width:100%}
   .generalcls.blog .adm_inner_banner .adm_inner_title.mat-card-title{text-align:left}
-  }
-  @media only screen and (max-width:991px) {
+
   .generalcls.blog .mat-card-title{justify-content:center!important}
   .bottom_blog .item_wrapper .item{width:100%}
   .mat-icon-button{display:block!important}
@@ -191,20 +210,102 @@
 
   @media only screen and (max-width: 767px) {
 
+    .bloglistswrapper .mat-list-base{ display: inline-block;}
+
 .homeblock1contentlefttop h2{ text-align: center!important;}
 
 .homeblock1contentlefttop  h3{ text-align: center!important;}
 
 .generalcls p{ text-align: center!important;}
 
+.bloglists .bloglistinner{ display: block;}
 
+.bloglistswrapper {
+ 
+  display: block;
+  flex-wrap: inherit;
+  -webkit-box-flex: 1;
+  flex: inherit;
+  width: 100%;
+  margin-right: auto;
+}
+
+.categorywrapper {
+  width: 100%;
+  background-color: #f5f5f5;
+  display: block;
+}
+.generalcls.bloglists .item .mat-card-content h2{ text-align: center;}
+
+.bloglists .bloglistinner span {
+  -webkit-box-flex: inherit;
+  flex: inherit;
+  margin-right: auto;
+  display: block;     -webkit-box-pack: inherit;
+  justify-content: inherit;
+}
+
+.bloglists .item_wrapper > .item .contentsection{ display: block!important; -webkit-box-align: end;
+  align-items: inherit;
+  -webkit-box-pack: inherit;
+  justify-content: inherit;
+  padding: 0;
+  flex-wrap: inherit;
+  -webkit-box-orient: inherit;
+  -webkit-box-direction: normal;
+  flex-direction: inherit;
+  height: auto!important;}
+
+.bloglists .item_wrapper > .item {
+  width: 100%!important; display: block!important;
+}
+
+.bloglists .mat-card {
+  display: block;
+  -webkit-box-align: inherit;
+  align-items: inherit;
+  -webkit-box-pack: inherit;
+  justify-content: inherit;
+  padding: 0;
+  flex-wrap: inherit;
+  background: transparent!important;
+  height: auto;
+}
+
+.bloglists .item_wrapper > .item .item_images{ display:block; height: auto;}
+
+.generalcls.bloglists .mat-card-content {
+  padding: 20px;
+  height: auto;
+}
+
+.bloglistinner .blogsociallists{ padding: 10px 0 0 0;}
+
+.generalcls.bloglists .mat-card-content{ padding-bottom: 10px;}
+.innerpagebanner.mat-card .mat-card-content span {
+  padding-left: 0;
+}
+
+.generalcls.bloglists .bloglistswrapper h2.blogtitle {
+  width: auto;
+}
+
+.bottom_blog .item_wrapper .item .next_page{ text-align: center;}
+
+.blogdetail .blogsociallists{ display: block;}
   }
 
+  @media only screen and (max-width: 520px) {
+    .blogdetail .bottom_blog .item_wrapper .item{width: 99%!important;}
+  }
+
+  @media (max-width: 500px) {
+    .contact-form .main-div .from.mat-card{ border-radius: 25px!important;}
+
+}
 
   @media only screen and (max-width: 480px) {
     .homeblock1contentright  .mat-list { display: block!important;}
-
-
 
     .homeblock1contentright .mat-list-base .mat-list-item {
       height: auto;
