@@ -40,6 +40,7 @@ export class BkHeaderComponent implements OnInit {
   logOut() {
     this.cookieService.deleteAll();
     this.router.navigateByUrl('/');
+    window.location.href="https://arniefonseca.influxiq.com/";
     // console.log("logout");
   }
 

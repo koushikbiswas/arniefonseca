@@ -177,6 +177,7 @@ const routes: Routes = [
   data : {requestcondition : {source :'video_management_view',condition : {} }, endpoint : 'datalist'}
 },
   /**Frontend Routing**/
+  { path: '', component: LoginComponent },
   { path: 'login', component: LoginComponent },
   { path: 'forget-password', component: ForgetPasswordComponent },
   { path: 'reset-password', component: ResetPasswordComponent },
