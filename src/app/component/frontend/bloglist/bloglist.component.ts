@@ -41,7 +41,7 @@ export class BloglistComponent implements OnInit {
   safeSrc: SafeResourceUrl;
 
 
-  @ViewChild('myaccordion') myPanels: MatAccordion;
+  @ViewChild('myaccordion', { static: false }) myPanels: MatAccordion;
 
   openAll(){
     this.myPanels.openAll();

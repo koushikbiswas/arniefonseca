@@ -28,10 +28,9 @@ export class ServiceComponent implements OnInit {
    }
 
   ngOnInit() {
-    this.activatedRoute.data.forEach(data=>{
-      let result:any;
-      result=data.serviceListData.res;
-      this.ServiceListArray=result;
+    this.activatedRoute.data.forEach((data: any)=>{
+      console.log(data)
+      // this.ServiceListArray=data;
       // console.log("ojjjjjjjjhgdfhgdf",this.ServiceListArray);   
     })
   }

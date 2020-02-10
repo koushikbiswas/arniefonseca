@@ -10,7 +10,7 @@ import { CookieService } from 'ngx-cookie-service';
 })
 export class BkLeftdivComponent implements OnInit {
 
-  @ViewChild('leftSidenav') public sidenav: MatSidenav;
+  @ViewChild('leftSidenav', { static: true }) public sidenav: MatSidenav;
   
   public status: any = 1;
 

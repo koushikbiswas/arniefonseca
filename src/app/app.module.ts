@@ -18,7 +18,6 @@ import { ApiService } from './api.service';
 import {ListingModule} from 'listing-angular7';
 import {MatIconModule} from '@angular/material/icon';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
-import { MatCarouselModule } from '@ngmodule/material-carousel';
 import { OwlModule } from 'ngx-owl-carousel';
 import { AmazingTimePickerModule } from 'amazing-time-picker'; // this line you need
 /**Frontend Component**/
@@ -251,7 +250,6 @@ import { AddEditSenderappComponent } from './component/backend/newsletterlists/a
     AppRoutingModule,MetaModule.forRoot(), BrowserAnimationsModule,
     ListingModule,
     MatIconModule,
-    MatCarouselModule.forRoot(),
     OwlModule,
     FormsModule,
     ReactiveFormsModule,
