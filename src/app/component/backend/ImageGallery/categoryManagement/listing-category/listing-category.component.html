@@ -1,12 +1,16 @@
-<lib-list-category
-[listingViaResolve]="imageGalleryList"
-[serverUrl]="serverUrl"
-[Token]="token"
-[updatedEndpoint]="updatedEndpoint"
-[TableName]="SourceName"
-[DeleteEndpoint]="DeleteEndpoint"
-[editRoute]="EditRoute"
-[AddButtonRoute]="addButtonRoute"
-[ManageImageButtonRoute]="manageImageButtonRoute"
-[SearchEndpoint]="searchEndpoint"
-[SearchSourceName]="searchSourcename"></lib-list-category>
+<div class="adminwrappercls">
+  <div class="admcls">
+    <app-bk-header></app-bk-header>
+  </div>
+  <div class="main-content-wrap">
+    <mat-card>
+      <div class="tablediv">
+        <lib-list-category [listingViaResolve]="imageGalleryList" [serverUrl]="serverUrl" [Token]="token"
+          [updatedEndpoint]="updatedEndpoint" [TableName]="SourceName" [DeleteEndpoint]="DeleteEndpoint"
+          [editRoute]="EditRoute" [AddButtonRoute]="addButtonRoute" [ManageImageButtonRoute]="manageImageButtonRoute"
+          [SearchEndpoint]="searchEndpoint" [SearchSourceName]="searchSourcename"></lib-list-category>
+      </div>
+    </mat-card>
+  </div>
+</div>
+<app-bk-footer></app-bk-footer>

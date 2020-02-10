@@ -1,9 +1,15 @@
-<lib-add-edit-caegory
-[serverUrl]="serverUrl"
-[getDataEndpoint]="getDataEndpoint"
-[addEndpoint]="addEndpoint"
-[SourceName]="sourceName"
-[listingUrl]="listUrl"
-[dataListViaResolve]="dataList"
-[singleData]="editedData"
-></lib-add-edit-caegory>
+<div class="adminwrappercls">
+  <div class="admcls">
+    <app-bk-header></app-bk-header>
+  </div>
+  <div class="main-content-wrap">
+    <mat-card>
+      <div class="tablediv">
+        <lib-add-edit-caegory [serverUrl]="serverUrl" [getDataEndpoint]="getDataEndpoint" [addEndpoint]="addEndpoint"
+          [SourceName]="sourceName" [listingUrl]="listUrl" [dataListViaResolve]="dataList" [singleData]="editedData">
+        </lib-add-edit-caegory>
+      </div>
+    </mat-card>
+  </div>
+</div>
+<app-bk-footer></app-bk-footer>

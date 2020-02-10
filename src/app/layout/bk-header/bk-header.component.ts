@@ -1,11 +1,9 @@
 import { Component, OnInit, Inject  } from '@angular/core';
-import { BkLeftdivComponent } from '../../../app/layout/bk-leftdiv/bk-leftdiv.component';
 import { SidenavService } from '../../services/sidenav.service';
 
 import {MatDialog} from '@angular/material/dialog';
 import { CookieService } from 'ngx-cookie-service';
 import { Router, ActivatedRoute } from '@angular/router';
-import { HeaderComponent } from '../header/header.component';
 
 @Component({
   selector: 'app-bk-header',
@@ -19,7 +17,7 @@ export class BkHeaderComponent implements OnInit {
 
   public user_full_name: any;
 
-  constructor(public cookieService: CookieService, private sidenav: SidenavService, public dialog: MatDialog, public router: Router, public Header: HeaderComponent, public activeroute: ActivatedRoute) {}
+  constructor(public cookieService: CookieService, private sidenav: SidenavService, public dialog: MatDialog, public router: Router, public activeroute: ActivatedRoute) {}
   toggleActive:boolean = false;
   toggleRightSidenav() {
     this.toggleActive = !this.toggleActive;

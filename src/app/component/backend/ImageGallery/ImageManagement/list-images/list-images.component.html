@@ -1,11 +1,16 @@
-<lib-imagelisting
-[allDataList]="imageGalleryallData"
-[serverUrl]="serverUrl"
-[Token]="token"
-[updatedEndpoint]="updatedEndpoint"
-[TableName]="SourceName"
-[DeleteEndpoint]="DeleteEndpoint"
-[editRoute]="EditRoute"
-[AddButtonRoute]="addButtonRoute"
-[SearchEndpoint]="searchEndpoint"
-[SearchSourceName]="searchSourcename"></lib-imagelisting>
+<div class="adminwrappercls">
+  <div class="admcls">
+    <app-bk-header></app-bk-header>
+  </div>
+  <div class="main-content-wrap">
+    <mat-card>
+      <div class="tablediv">
+        <lib-imagelisting [allDataList]="imageGalleryallData" [serverUrl]="serverUrl" [Token]="token"
+          [updatedEndpoint]="updatedEndpoint" [TableName]="SourceName" [DeleteEndpoint]="DeleteEndpoint"
+          [editRoute]="EditRoute" [AddButtonRoute]="addButtonRoute" [SearchEndpoint]="searchEndpoint"
+          [SearchSourceName]="searchSourcename"></lib-imagelisting>
+      </div>
+    </mat-card>
+  </div>
+</div>
+<app-bk-footer></app-bk-footer>

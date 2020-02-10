@@ -1,44 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { LoginComponent } from './component/frontend/login/login.component';
+import { LoginComponent } from './component/backend/login/login.component';
 import { AuthGuard } from './auth.guard';
 
 /**Frontend Routing**/
-import { HomeComponent } from './component/frontend/home/home.component';
-import { ContactusComponent } from './component/frontend/contactus/contactus.component';
-import { ForgetPasswordComponent } from './component/frontend/forget-password/forget-password.component';
-import { ResetPasswordComponent } from './component/frontend/reset-password/reset-password.component';
-import { SignUpComponent } from './component/frontend/sign-up/sign-up.component';
-import { ServiceComponent } from './component/frontend/service/service.component';
-import { ServicelistComponent } from './component/frontend/services/servicelist/servicelist.component';
-import { BlogComponent } from './component/frontend/blog/blog.component';
-import { BloglistComponent } from './component/frontend/bloglist/bloglist.component';
-import { BlogdetailComponent } from './component/frontend/blogdetail/blogdetail.component';
-import { AboutusComponent } from './component/frontend/aboutus/aboutus.component';
 
+import { ForgetPasswordComponent } from './component/backend/forget-password/forget-password.component';
+import { ResetPasswordComponent } from './component/backend/reset-password/reset-password.component';
+import { SignUpComponent } from './component/backend/sign-up/sign-up.component';
 
-import { TesimonialComponent } from './component/frontend/tesimonial/tesimonial.component';
-import { TesimoniallistComponent } from './component/frontend/tesimoniallist/tesimoniallist.component';
-
-
-import { EmployeeTrainingComponent } from './component/frontend/services/employee-training/employee-training.component';
-import { CouplesCounselingComponent } from './component/frontend/services/couples-counseling/couples-counseling.component';
-import { PersonalDevelopmentCoachingComponent } from './component/frontend/services/personal-development-coaching/personal-development-coaching.component';
-import { HighPerformanceCoachingComponent } from './component/frontend/services/high-performance-coaching/high-performance-coaching.component';
-import { SpecialProgramsForYoungMenComponent } from './component/frontend/services/special-programs-for-young-men/special-programs-for-young-men.component';
-import { ImageGalleryComponent } from './component/frontend/gallery/image-gallery/image-gallery.component';
-import { VideoGalleryComponent } from './component/frontend/gallery/video-gallery/video-gallery.component';
-import { TeamComponent } from './component/frontend/team/team.component';
-import { SeminarsComponent } from './component/frontend/events/seminars/seminars.component';
-import { WorkshopsComponent } from './component/frontend/events/workshops/workshops.component';
-import { SpeakerEngagementsComponent } from './component/frontend/events/speaker-engagements/speaker-engagements.component';
-
-
-import { WorkshopDetailComponent } from './component/frontend/events/workshop-detail/workshop-detail.component';
-import { SeminarsDetailComponent } from './component/frontend/events/seminars-detail/seminars-detail.component';
-import { SpeakerEngagementsDetailComponent } from './component/frontend/events/speaker-engagements-detail/speaker-engagements-detail.component';
-
-import { BioComponent } from './component/frontend/bio/bio.component';
 
 /**End Frontend Routing**/
 
@@ -56,7 +26,6 @@ import { AddEditVideosComponent } from '../app/component/backend/video-managemen
 import { ListVideoManagementComponent }from '../app/component/backend/video-management/video-library-management/list-video-management/list-video-management.component';
 /**video library route end here**/
 import { DashboardComponent } from './component/backend/dashboard/dashboard.component';
-import { BkLeftdivComponent } from './layout/bk-leftdiv/bk-leftdiv.component';
 
 import { ManageCommissionComponent } from './component/backend/manage-commission/manage-commission.component';
 import { NewsletterlistsComponent } from './component/backend/newsletterlists/newsletterlists.component';
@@ -212,76 +181,6 @@ const routes: Routes = [
   { path: 'forget-password', component: ForgetPasswordComponent },
   { path: 'reset-password', component: ResetPasswordComponent },
   { path: 'sign-up', component: SignUpComponent },
-  { path: '', component: HomeComponent },
-  { path: 'home', component: HomeComponent },
-  { path: 'contact', component: ContactusComponent },
-  
-  {
-    path: 'servicehome',
-    component: ServiceComponent,
-    resolve: { serviceListData: ResolveService },
-    data: { requestcondition: { source: 'service', condition: {} }, endpoint: 'datalist' }
-  },
-  {
-    path: "testimonialhome",
-    component: TesimonialComponent,
-    resolve: { testimonialListData: ResolveService },
-    data: {
-      requestcondition: { source: "testimonal", condition: {} },
-      endpoint: "datalistwithouttoken"
-    }
-  },
-
-  //  static path
-  {
-    path: 'ourservices', component: ServicelistComponent,
-    resolve: {
-      serviceList: ResolveService
-    },
-    data:
-    {
-      requestcondition:
-      {
-        source: 'service_view', condition: {}
-      }, endpoint: 'datalistwithouttoken'
-    }
-  },
-
-
-
-
-
-  { path: 'bloghome', component: BlogComponent },
-
-  {
-    path: 'blog', component: BloglistComponent, resolve: { blogCatList: ResolveService },
-    data: { requestcondition: { condition: { "limit": 4, "skip": 1 } }, endpoint: 'blogdata' }
-  },
-
-  {
-    path: 'blogdetail/:_id', component: BlogdetailComponent,
-    resolve: {
-      blogCatList: ResolveService
-    },
-    data:
-    {
-      requestcondition:
-      {
-        source: 'blogs_view', condition: {}
-      }, endpoint: 'datalistwithouttoken'
-    }
-  },
-
-  //  static path
-  {
-    path: "testimonial", component: TesimoniallistComponent,
-    resolve: { testimonialListData: ResolveService },
-    data: {
-      requestcondition: { source: "testimonial_view", condition: {} },
-      endpoint: "datalistwithouttoken"
-    }
-  },
-
   /**End Frontend Routing**/
   /**Backend Routing**/
   {
@@ -364,24 +263,6 @@ const routes: Routes = [
   },
 
 
-
-
-
-
-  { path: 'bk-leftdiv', component: BkLeftdivComponent },
-
-  // {
-  //   path: 'service-listing', component: ListingServiceComponent, resolve: { serviceList: ResolveService },
-  //   data: { requestcondition: { source: 'service', condition: {} }, endpoint: 'datalist' }
-  // },
-
-  {
-    path: 'service',
-    component: ServiceComponent,
-    resolve: { serviceList: ResolveService },
-    data: { requestcondition: { source: 'service_view', condition: {} }, endpoint: 'datalist' }
-  },
-
   { path: 'service/add', component: AddeditServiceComponent },
   {
     path: 'service/list',
@@ -405,10 +286,6 @@ const routes: Routes = [
   // { path: 'testimonial-lists-admin', component: ListingTestimonialComponent },
   { path: 'customer-list-admin', component: CustomerListComponent },
 
-  { path: 'workshop-detail', component: WorkshopDetailComponent },
-  { path: 'seminars-detail', component: SeminarsDetailComponent },
-  { path: 'speaker-engagements-detail', component: SpeakerEngagementsDetailComponent },
-
   { path: 'testimonial/add', component: AddeditTestimonialComponent },
   {
     path: 'testimonial/edit/:_id', component: AddeditTestimonialComponent, resolve: { testimonialData: ResolveService },
@@ -419,70 +296,8 @@ const routes: Routes = [
     data: { requestcondition: { source: 'testimonial_view', condition: {} }, endpoint: 'datalist' }
   },
 
-  { path: 'employee-training', component: EmployeeTrainingComponent },
-  { path: 'couples-counseling', component: CouplesCounselingComponent },
-  { path: 'personal-development-coaching', component: PersonalDevelopmentCoachingComponent },
-  { path: 'high-performance-coaching', component: HighPerformanceCoachingComponent },
-  { path: 'special-programs-for-young-men', component: SpecialProgramsForYoungMenComponent },
-  { path: 'image-gallery', component: ImageGalleryComponent },
-  { path: 'video-gallery', component: VideoGalleryComponent },
-  { path: 'team', component: TeamComponent },
   { path: 'booking-report', component: BookingReportComponent },
-  { path: 'bio', component: BioComponent },
-
   
-
-// ___________________event frontend__________________//
-
-  { path: 'seminars', component: SeminarsComponent,
-    resolve: { seminarsListData: ResolveService },
-    data: {
-      requestcondition: { source: "events_view", condition: {type:"seminars"} },
-      endpoint: "datalistwithouttoken"
-    }
-  },
-  { path: 'workshops', component: WorkshopsComponent,
-    resolve: { workshopsListData: ResolveService },
-    data: {
-      requestcondition: { source: "events_view", condition: {type:"workshops"} },
-      endpoint: "datalistwithouttoken"
-    }
-  },
-  { path: 'speaker-engagements', component: SpeakerEngagementsComponent,
-    resolve: { speakerEngagementsListData: ResolveService },
-    data: {
-      requestcondition: { source: "events_view", condition: {type:"speaker_engagement"} },
-      endpoint: "datalistwithouttoken"
-    }
-  },
-
-  { path: 'seminars-detail/:_id', component: SeminarsDetailComponent,
-    resolve: { seminarsDetailData: ResolveService },
-    data: {
-      requestcondition: { source: "events_view", condition: {type:"seminars"} },
-      endpoint: "datalistwithouttoken"
-    }
-  },
-  { path: 'workshop-detail/:_id', component: WorkshopDetailComponent,
-    resolve: { workshopsDetailData: ResolveService },
-    data: {
-      requestcondition: { source: "events_view", condition: {type:"workshops"} },
-      endpoint: "datalistwithouttoken"
-    }
-  },
-  
- 
-
-  { path: 'speaker-engagements-detail/:_id', component: SpeakerEngagementsDetailComponent,
-  resolve: { speakerengagementsDetailData: ResolveService },
-  data: {
-    requestcondition: { source: "events_view", condition: {type:"speaker_engagement"} },
-    endpoint: "datalistwithouttoken"
-  }
-},
-  
-// ___________________ end event frontend__________________//
-
 
   { path: 'affiliate-admin', component: AffiliateComponent },
 
@@ -650,132 +465,7 @@ data:{
     
       
     },
-    // {
-    //   path: 'sender/edit/:_id',
-    //   component: AddEditSenderappComponent,
-    //   canActivate:[AuthGuard],
-    //   resolve:{eventList:ResolveService},
-    //   data:{
-    //     requestcondition:{
-    //       source:'senders',
-    //       condition:{}
-    //     },
-    //     endpoint:'datalist'
-    //   }
-     
-    // },
-
-  // { path: 'subscriber-group/add', component: AddEditSubscriberGroupComponent },
-  
-
- 
-
-  // {
-  //   path: 'newsletter-list',
-  //   component: NewsletterlistsComponent,
-
-  //   resolve: { subscriptionListData: ResolveService },
-  //   data: {
-  //     requestcondition: {
-  //       source: 'subscriptiongroupadd',
-  //       condition: {}
-  //     },
-  //     endpoint: 'datalist'
-  //   },
-  // },
-
-
-
- 
-
-  // {
-  //   path: 'subscriber-group/edit/:_id',
-  //   component: AddEditSubscriberGroupComponent,
-
-  //   resolve: { subscriptiongroupData: ResolveService },
-  //   data: {
-  //     requestcondition: {
-  //       source: 'subscriptiongroupadd',
-  //       condition: {}
-  //     },
-  //     endpoint: 'datalist'
-  //   },
-  // },
-
-
-
-
-
-  // { path: 'newsletter/add', component: AddEditNewsletterComponent },
-  // {
-  //   path: 'newsletter/edit/:_id',
-  //   component: AddEditNewsletterComponent,
-
-  //   resolve: { newsLetterData: ResolveService },
-  //   data: {
-  //     requestcondition: {
-  //       source: 'newsLetterAdd',
-  //       condition: {}
-  //     },
-  //     endpoint: 'datalist'
-  //   },
-  // },
-
-
-
-  
-  // { path: 'subscriber/add', component: AddEditSubscriberComponent },
-
-  // {
-  //   path: 'subscriber/edit/:_id',
-  //   component: AddEditSubscriberComponent,
-
-  //   resolve: { subscriberList: ResolveService },
-  //   data: {
-  //     requestcondition: {
-  //       source: 'newsLetterSubscriber',
-  //       condition: {}
-  //     },
-  //     endpoint: 'datalist'
-  //   },
-  // },
-
- 
-
-  // { path: 'sender/add', component: AddEditSendersComponent },
-
-  // {
-  //   path: 'sender/edit/:_id',
-  //   component: AddEditSendersComponent,
-
-  //   resolve: { senderList: ResolveService },
-  //   data: {
-  //     requestcondition: {
-  //       source: 'newsletterSender',
-  //       condition: {}
-  //     },
-  //     endpoint: 'datalist'
-  //   },
-  // },
-
-  // { path: 'testemail/add', component: AddEditTestemailComponent },
-
-  // {
-  //   path: 'testemail/edit/:_id',
-  //   component: AddEditTestemailComponent,
-
-  //   resolve: { senderList: ResolveService },
-  //   data: {
-  //     requestcondition: {
-  //       source: 'testEmail',
-  //       condition: {}
-  //     },
-  //     endpoint: 'datalist'
-  //   },
-  // },
-
-
-  //____________end event routing______________//
+    
 
   // ___________________BLOG MANAGEMENT_________________
   // =======================================================

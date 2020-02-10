@@ -1,27 +1,38 @@
 
         
         <div class="adminwrappercls">
-            <app-header></app-header>
+            <div class="admcls"><app-bk-header></app-bk-header></div>
                 <div class="main-content-wrap">
                         <mat-card>
-                            <mat-toolbar color="primary" style="justify-content: center; align-items: center;">
+                            <!-- <mat-toolbar color="primary" style="justify-content: center; align-items: center;">
                                 <h2 class="headerSpan">Services List</h2>
-                            </mat-toolbar>
+                            </mat-toolbar> -->
             
                             <!-- ---------------------Button for adding new role------------------------------ -->
-                            <mat-toolbar class="buttonsetToolbar">
+                            <!-- <mat-toolbar class="buttonsetToolbar">
                                 <button class="singleButton" mat-raised-button color="primary" [routerLink]="['/service/add']">Add
                                     service</button>
-                            </mat-toolbar>
-            
+                            </mat-toolbar> -->
+                            <span class="searchblock">
+                                <span class="searchblockwrapper">
+                                    <span>
+                                        <h2>Services List</h2>
+                                    </span>
+                                    <span>
+                                        <button mat-button class="btngreen sim-button" [routerLink]="['/service/add']"><i class="material-icons">add</i> Add service</button>
+                                    </span>                    
+                                </span>
+                            </span>
             
                             <!-- to listing library -->
-                            <lib-servicelib [config]="serviceListConfig"></lib-servicelib>
+                            <div class="tablediv">
+                                <lib-servicelib [config]="serviceListConfig"></lib-servicelib>
+                            </div>
                         </mat-card>
                     </div>
                    
         </div>
-        <app-footer></app-footer>
+        <app-bk-footer></app-bk-footer>
 
         
 
