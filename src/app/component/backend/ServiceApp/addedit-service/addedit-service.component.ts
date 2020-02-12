@@ -28,20 +28,25 @@ export class AddeditServiceComponent implements OnInit {
     baseUrl: "https://fileupload.influxhostserver.com/",
     endpoint: "uploads",
     size: "51200", // kb
-    format: ["jpg", "jpeg", "png"], // use all small font
+    format: ["jpg", "jpeg","png"], // use all small font
     type: "service-image",
     path: "services",
-    prefix: "service-image_"
+    prefix: "service-image_",
+    formSubmit: false,
+    conversionNeeded: 0,
+    bucketName: "crmfiles.influxhostserver"
   }
-
   public configIconUploadData: any = {
     baseUrl: "https://fileupload.influxhostserver.com/",
     endpoint: "uploads",
     size: "51200", // kb
-    format: ["jpg", "jpeg", "png"], // use all small font
-    type: "additional-image",
+    format: ["jpg", "jpeg","png"], // use all small font
+    type: "additional_service-image",
     path: "services",
-    prefix: "additional-image_"
+    prefix: "additional_service-image_",
+    formSubmit: false,
+    conversionNeeded: 0,
+    bucketName: "crmfiles.influxhostserver"
   }
 
 
