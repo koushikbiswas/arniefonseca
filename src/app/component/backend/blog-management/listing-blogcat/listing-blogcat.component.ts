@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CookieService } from 'ngx-cookie-service';
 import { Router, ActivatedRoute } from '@angular/router';
 import { ApiService } from '../../../../api.service';
+import { MetaService } from '@ngx-meta/core';
 
 @Component({
   selector: 'app-listing-blogcat',
@@ -28,8 +29,19 @@ export class ListingBlogcatComponent implements OnInit {
 
   // public blogCatList: any;
 
-  constructor(private activatedRoute: ActivatedRoute, private cookieService: CookieService, public apiService: ApiService) {
+  constructor(private activatedRoute: ActivatedRoute, private cookieService: CookieService, public apiService: ApiService, private readonly meta: MetaService) {
+    this.meta.setTitle('Arniefonseca - Blog Management');
+    this.meta.setTag('og:description', '');
+    this.meta.setTag('twitter:description', '');
 
+    this.meta.setTag('og:keyword', '');
+    this.meta.setTag('twitter:keyword', '');
+
+    this.meta.setTag('og:title', 'Arniefonseca - Blog Management');
+    this.meta.setTag('twitter:title', 'Arniefonseca - Blog Management');
+    this.meta.setTag('og:type', 'website');
+    this.meta.setTag('og:image', 'https://arniefonseca-backend.influxiq.com/assets/images/logo.png');
+    this.meta.setTag('twitter:image', 'https://arniefonseca-backend.influxiq.com/assets/images/logo.png');
     
     
     let data: any = {

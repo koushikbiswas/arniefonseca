@@ -64,15 +64,15 @@ export class BlogManagementComponent implements OnInit {
 
 
 
-    this.meta.setTitle('Arniefonseca - BLOG MANAGEMENT');
+    this.meta.setTitle('Arniefonseca - Blog Management');
     this.meta.setTag('og:description', '');
     this.meta.setTag('twitter:description', '');
 
     this.meta.setTag('og:keyword', '');
     this.meta.setTag('twitter:keyword', '');
 
-    this.meta.setTag('og:title', 'Arniefonseca - BLOG MANAGEMENT');
-    this.meta.setTag('twitter:title', 'Arniefonseca - BLOG MANAGEMENT');
+    this.meta.setTag('og:title', 'Arniefonseca - Blog Management');
+    this.meta.setTag('twitter:title', 'Arniefonseca - Blog Management');
     this.meta.setTag('og:type', 'website');
     this.meta.setTag('og:image', 'https://arniefonseca-backend.influxiq.com/assets/images/logo.png');
     this.meta.setTag('twitter:image', 'https://arniefonseca-backend.influxiq.com/assets/images/logo.png');
