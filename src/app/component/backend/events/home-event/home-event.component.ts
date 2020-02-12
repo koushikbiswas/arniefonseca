@@ -49,8 +49,8 @@ export class HomeEventComponent implements OnInit {
   ngOnInit() {
     let data: any = {
       source:"events_view",
-      endpoint: "datalist"
-      // token: this.cookieService.get('jwtToken')
+      endpoint: "datalist",
+      token: this.cookieService.get('jwtToken')
 
     }
     this.apiService.getDatalist(data).subscribe((result: any)=>{
