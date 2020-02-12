@@ -16,27 +16,33 @@ export class AddEditBlogsComponent implements OnInit {
   getDataUrl: any= 'datalist';
   public editdata: any = [];
   action:any="add";
-  listURL:any="blog-management";
+  listURL:any="/blog-management";
 
 
   public configData: any = {
-    baseUrl: "http://3.15.236.141:5005/",
+    baseUrl: "https://fileupload.influxhostserver.com/",
     endpoint: "uploads",
     size: "51200", // kb
     format: ["jpg", "jpeg", "png"], // use all small font
     type: "blogs-image",
     path: "blogs",
-    prefix: "blogs-image_"
+    prefix: "blogs-image_",
+    formSubmit: false,
+    conversionNeeded: 0,
+    bucketName: "crmfiles.influxhostserver"
   }
 
   public configFileData: any = {
-    baseUrl: "http://3.15.236.141:5005/",
+    baseUrl: "https://fileupload.influxhostserver.com/",
     endpoint: "uploads",
     size: "51200", // kb
     format: ["pdf", "doc", "docx","docxx"], // use all small font
     type: "blogs-file",
     path: "blogs",
-    prefix: "blogs-file"
+    prefix: "blogs-file",
+    formSubmit: false,
+    conversionNeeded: 0,
+    bucketName: "crmfiles.influxhostserver"
   }
   constructor(private cookieService: CookieService, public router:Router, public activatedRoute: ActivatedRoute,public apiService: ApiService, private readonly meta: MetaService, ) { 
 
