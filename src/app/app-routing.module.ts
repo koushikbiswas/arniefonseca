@@ -55,19 +55,12 @@ import { BookAnAppointmentComponent } from './component/backend/book-an-appointm
 import { MyAppointmentComponent } from './component/backend/calendar-manager/my-appointment/my-appointment.component';
 
 
-<<<<<<< HEAD
-import { SocialAdvoComponent } from './component/backend/social-advo/social-advo.component';
-import { ManageAvailabilityComponent } from './component/backend/manage-availability/manage-availability.component';
-import { CommissionReportComponent } from './component/backend/commission-report/commission-report.component';
-import { BookingReportComponent } from './component/backend/booking-report/booking-report.component';
-import { ListingAffiliateComponent } from './component/backend/affiliate/listing-affiliate/listing-affiliate.component';
-=======
+import { ListingAffiliateComponent } from './component/backend/user/affiliate/listing-affiliate/listing-affiliate.component';
 import { SocialAdvoComponent } from './component/backend/manage-website/social-advo/social-advo.component';
 import { ManageAvailabilityComponent } from './component/backend/calendar-manager/manage-availability/manage-availability.component';
 import { CommissionReportComponent } from './component/backend/report/commission-report/commission-report.component';
 import { BookingReportComponent } from './component/backend/report/booking-report/booking-report.component';
-import { AffiliateComponent } from './component/backend/user/affiliate/affiliate.component';
->>>>>>> 5c6233f52040bfc04c0220c0a759b58c9111c58e
+
 import { BookedEventsComponent } from './component/backend/booked-events/booked-events.component';
 import { PastEventUserComponent } from './component/backend/past-event-user/past-event-user.component';
 import { UpcomingEventUserComponent } from './component/backend/upcoming-event-user/upcoming-event-user.component';
@@ -99,6 +92,8 @@ import { ListingSubscriptionComponent } from './component/backend/manage-website
 import { ListingSubcategoryComponent } from './component/backend/manage-website/newsletterlists/listing-subcategory/listing-subcategory.component';
  
 import { AddEditSenderappComponent } from './component/backend/manage-website/newsletterlists/add-edit-senderapp/add-edit-senderapp.component';
+import { AddAffiliateComponent } from './component/backend/user/add-affiliate/add-affiliate.component';
+import { AddCustomerComponent } from './component/backend/user/add-customer/add-customer.component';
 
 
 
@@ -578,6 +573,14 @@ data:{
   { path: 'social-advo-affiliate', component: SocialAdvoComponent },
   { path: 'manage-commission-affiliate', component: CommissionReportComponent },
   { path: 'my-customers', component: MyCustomersAffiliateComponent },
+
+
+  { path: 'affiliate/add', component: AddAffiliateComponent },
+  { path: 'affiliate/edit/:_id', component: AddAffiliateComponent },
+  { path: 'customer/add', component: AddCustomerComponent, },
+  { path: 'customer/edit/:_id', component: AddCustomerComponent },
+
+
 
   { path: '**', component: LoginComponent },
 ];

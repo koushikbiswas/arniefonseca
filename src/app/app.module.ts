@@ -60,7 +60,7 @@ import { ManageAvailabilityComponent } from './component/backend/calendar-manage
 import { SocialAdvoComponent } from './component/backend/manage-website/social-advo/social-advo.component';
 import { CommissionReportComponent } from './component/backend/report/commission-report/commission-report.component';
 import { BookingReportComponent } from './component/backend/report/booking-report/booking-report.component';
-import { AffiliateComponent } from './component/backend/user/affiliate/affiliate.component';
+import { ListingAffiliateComponent } from './component/backend/user/affiliate/listing-affiliate/listing-affiliate.component';
 // import { GalleryAdminComponent } from './component/backend/gallery-admin/gallery-admin.component';
 import { BookedEventsComponent } from './component/backend/booked-events/booked-events.component';
 import { PastEventUserComponent } from './component/backend/past-event-user/past-event-user.component';
@@ -100,7 +100,8 @@ import { AddEditSenderappComponent } from './component/backend/manage-website/ne
 import { HttpLoaderComponent } from './http-loader/http-loader.component';
 import { HttpLoaderService } from './http-loader.service';
 import { LoaderInterceptor } from './loader.interceptor';
-import { ListingAffiliateComponent } from './component/backend/affiliate/listing-affiliate/listing-affiliate.component';
+import { AddCustomerComponent } from './component/backend/user/add-customer/add-customer.component';
+import { AddAffiliateComponent } from './component/backend/user/add-affiliate/add-affiliate.component';
 
 
 @NgModule({
@@ -130,7 +131,7 @@ import { ListingAffiliateComponent } from './component/backend/affiliate/listing
     CommissionReportComponent,
     CustomerListComponent,  
     BookingReportComponent, 
-    AffiliateComponent, 
+    ListingAffiliateComponent, 
     // GalleryAdminComponent, 
     BookedEventsComponent, 
     PastEventUserComponent, 
@@ -170,6 +171,8 @@ import { ListingAffiliateComponent } from './component/backend/affiliate/listing
     ListVideoManagementComponent,
     HttpLoaderComponent,
     ListingAffiliateComponent,
+    AddCustomerComponent,
+    AddAffiliateComponent,
   ],
   imports: [
     AmazingTimePickerModule,   
