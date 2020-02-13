@@ -274,7 +274,7 @@ addcategory-dialog .mat-dialog-content{margin:0!important}
 /* .tablediv.trainingtablediv table{margin-top:27px} */
 .searchblock{margin:0;padding:0;position:relative;display:block}
 .searchblock .btnorange{min-width:160px;border-radius:0;padding:9px 18px 7px!important;margin:0!important;display:flex!important;align-items:center}
-.searchblock{background:#dde2e5!important;padding:10px 10px 10px 22px !important;display:block;margin:10px auto 0!important}
+.searchblock{background:#dde2e5!important;padding:10px 10px 10px 22px !important;display:block;margin:10px auto 20px!important}
 .searchblock span{display:flex;align-items:center;position:relative;z-index:99}
 .searchblock .searchblockwrapper{display:flex;align-items:stretch;justify-content:space-between;flex-direction:row}
 .searchblock span h2{font-family:"Helvetica-Normal";color:#373b3d;font-size:24px!important;margin:0}
@@ -328,7 +328,7 @@ app-bk-leftdiv{position:relative;z-index:999}
 .formspan .example-container{display:flex;flex-direction:column;width:98%;padding:14px;margin-bottom:0}
 .adminwrappercls .bloglists .mat-card{display:block!important;align-items:center!important;justify-content:flex-start!important;padding:0!important;flex-wrap:wrap!important;background:transparent!important;height:auto!important}
 .adminwrappercls .mat-form-field-appearance-legacy .mat-form-field-wrapper{padding-bottom:0!important}
-.adminwrappercls .mat-form-field-appearance-legacy .mat-form-field-infix{margin-bottom:0!important}
+/* .adminwrappercls .mat-form-field-appearance-legacy .mat-form-field-infix{margin-bottom:0!important} */
 .setting_formblock{display:block;margin:40px 0 10px}
 .setting_formblock label{display:inline-block;font-size:14px;color:#111;margin:10px 0 0;font-weight:400}
 .setting_formblock .mat-form-field{display:inline-block;margin:0 20px}
@@ -443,6 +443,8 @@ app-bk-leftdiv{position:relative;z-index:999}
 .newform_css .bottompart{padding:6px 0;display:block;text-align:left!important}
 .newform_css button{background:#f7462e!important;font-size:15px!important;color:#fff!important}
 .newform_css button:nth-of-type(2){background:#333!important;margin-left:10px!important}
+
+
 
 @media only screen and (max-width: 1199px) {
 .setting_formblock label{display:block;float:none;margin:10px 0}

@@ -297,3 +297,11 @@ ckeditor{margin-bottom:9px!important;display:inline-block;width:100%}
 .tablediv .searchbar .mat-form-field .mat-form-field-prefix,.tablediv .searchbar .mat-form-field .mat-form-field-suffix{display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center}
 .tablediv .mat-card .mat-input-element {color: #333!important;caret-color: #f1f1f1!important;}
 .mat-form-field-infix {border: 0!important;}
+
+.mat-form-field-appearance-legacy .mat-form-field-infix {
+  padding: 1em!important;
+  background: #fff;
+}
+.mat-form-field-appearance-legacy .mat-form-field-infix {
+  margin-bottom: 14px!important;
+}
