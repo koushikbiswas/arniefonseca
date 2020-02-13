@@ -12,6 +12,8 @@ import { MetaService } from '@ngx-meta/core';
 })
 export class BlogManagementComponent implements OnInit {
 
+  public user_details: any;
+
   //Blogs Lib List
   public blogListConfig: any = {
     apiBaseUrl: this.apiService.serverUrl,
@@ -77,6 +79,10 @@ export class BlogManagementComponent implements OnInit {
     this.meta.setTag('og:image', 'https://arniefonseca-backend.influxiq.com/assets/images/logo.png');
     this.meta.setTag('twitter:image', 'https://arniefonseca-backend.influxiq.com/assets/images/logo.png');
 
+
+    if (this.cookieService.get('user_details') != undefined && this.cookieService.get('user_details') != null && this.cookieService.get('user_details') != '') {      
+      this.user_details = JSON.parse(this.cookieService.get('user_details'));
+    }
 
    }
 

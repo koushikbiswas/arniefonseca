@@ -354,11 +354,11 @@ app-bk-leftdiv{position:relative;z-index:999}
 .adm_inner_banner{background:#000;display:block!important;width:inherit!important;background-size:cover;border-top-left-radius:10px;border-top-right-radius:10px;padding:50px;padding-right:45%}
 .generalcls.blog .adm_inner_banner .adm_inner_title.mat-card-title{font-size:48px!important;color:#fff!important;font-family:"HelveticaBold";text-transform:uppercase!important;text-shadow:-1px -1px 1px rgba(255,255,255,.1),1px 1px 1px rgba(0,0,0,.5)}
 .adm_inner_banner .adm_inner_para{font-size:24px;color:#fff;font-family:"HelveticaBold";margin:0;text-shadow:3px 2px 3px rgba(255,255,255,.2);width:80%}
-.bred_cram_wrapper{background:#DDE2E5;display:flex!important;padding:8px;align-items:stretch}
-.bred_cram_wrapper a{background:#b5bdbf;background:#b5bdbf;display:flex!important;color:#252525;padding:8px 20px;text-decoration:none;margin:0;width:auto;justify-content:center;font-size:18px;text-transform:capitalize;font-family:"Helvetica-Normal"}
-.activebread{background:#fff!important;color:#000!important;position:relative}
-.activebread::before{content:'';width:15px;height:100%;background:#B5BDBF;display:inline-block;position:absolute;top:0;left:0;clip-path:polygon(0 0,0% 100%,100% 50%)}
-.activebread::after{content:'';width:15px;height:100%;background:#FFF;display:inline-block;position:absolute;right:-15px;top:0;clip-path:polygon(0 0,0% 100%,100% 54%)}
+/* .bred_cram_wrapper{background:#DDE2E5;display:flex!important;padding:8px;align-items:stretch} */
+/* .bred_cram_wrapper a{background:#b5bdbf;background:#b5bdbf;display:flex!important;color:#252525;padding:8px 20px;text-decoration:none;margin:0;width:auto;justify-content:center;font-size:18px;text-transform:capitalize;font-family:"Helvetica-Normal"} */
+/* .activebread{background:#fff!important;color:#000!important;position:relative} */
+/* .activebread::before{content:'';width:15px;height:100%;background:#B5BDBF;display:inline-block;position:absolute;top:0;left:0;clip-path:polygon(0 0,0% 100%,100% 50%)} */
+/* .activebread::after{content:'';width:15px;height:100%;background:#FFF;display:inline-block;position:absolute;right:-15px;top:0;clip-path:polygon(0 0,0% 100%,100% 54%)} */
 
 
 .from.mat-card{background-color:transparent!important}

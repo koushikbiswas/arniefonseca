@@ -12,6 +12,8 @@ import { MetaService } from '@ngx-meta/core';
 })
 export class ListingTestimonialComponent implements OnInit {
 
+  public user_details: any;
+  
   /************** lib list setup start here *************/
   public testimonialListConfig:any = {
     // apiBaseUrl: "https://9v41bpikik.execute-api.us-east-1.amazonaws.com/production/api/",
@@ -47,6 +49,11 @@ export class ListingTestimonialComponent implements OnInit {
     this.testimonialListConfig.datasource = resolveData.testimonialList.res;
     //  console.log('---------------kbtest testimonialList-------------', this.testimonialListConfig.datasource );
     this.testimonialListConfig.jwtToken = this.cookieService.get('jwtToken');
+
+
+    if (this.cookieService.get('user_details') != undefined && this.cookieService.get('user_details') != null && this.cookieService.get('user_details') != '') {      
+      this.user_details = JSON.parse(this.cookieService.get('user_details'));
+    }
     
   });
 
