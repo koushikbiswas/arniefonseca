@@ -101,7 +101,7 @@ import { HttpLoaderComponent } from './http-loader/http-loader.component';
 import { HttpLoaderService } from './http-loader.service';
 import { LoaderInterceptor } from './loader.interceptor';
 import { AddCustomerComponent } from './component/backend/user/add-customer/add-customer.component';
-import { AddAffiliateComponent } from './component/backend/user/add-affiliate/add-affiliate.component';
+import { AddAffiliateComponent, AffiliateModal } from './component/backend/user/add-affiliate/add-affiliate.component';
 
 
 @NgModule({
@@ -173,6 +173,7 @@ import { AddAffiliateComponent } from './component/backend/user/add-affiliate/ad
     ListingAffiliateComponent,
     AddCustomerComponent,
     AddAffiliateComponent,
+    AffiliateModal
   ],
   imports: [
     AmazingTimePickerModule,   
@@ -207,6 +208,6 @@ import { AddAffiliateComponent } from './component/backend/user/add-affiliate/ad
   providers: [CookieService, AuthGuard, ApiService, SidenavService,DatePipe, HttpLoaderService, { provide: HTTP_INTERCEPTORS, useClass: LoaderInterceptor, multi: true, }],
   bootstrap: [AppComponent],
   schemas:[CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
-  entryComponents: [EventModal]
+  entryComponents: [EventModal,AffiliateModal]
 })
 export class AppModule { }
