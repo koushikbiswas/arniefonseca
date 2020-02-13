@@ -33,7 +33,7 @@ export class AddCustomerComponent implements OnInit {
     this.userType=this.user_details.type;
 
     this.addcustomerForm = this.fb.group({
-      id:null,
+        id:null,
         email: [null, Validators.compose([Validators.required, Validators.pattern(/^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/)])],
         firstname: [null, Validators.required],
         lastname: [null, Validators.required],
@@ -42,7 +42,7 @@ export class AddCustomerComponent implements OnInit {
         city: [null, Validators.required],
         state: [null, Validators.required],
         address: [null, Validators.required],
-        salesrep:['', Validators.required],
+        affiliate:['', Validators.required],
         type: ["customer"],
         status:1
     })
