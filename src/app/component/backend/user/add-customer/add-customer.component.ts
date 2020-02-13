@@ -42,7 +42,7 @@ export class AddCustomerComponent implements OnInit {
         city: [null, Validators.required],
         state: [null, Validators.required],
         address: [null, Validators.required],
-        affiliate:['', Validators.required],
+        // affiliate:['', Validators.required],
         type: ["customer"],
         status:1
     })

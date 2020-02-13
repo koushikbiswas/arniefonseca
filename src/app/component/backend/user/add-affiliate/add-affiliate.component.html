@@ -88,15 +88,15 @@
                 State field can not be blank</mat-error> -->
             </mat-form-field>
 
-            <mat-form-field [ngClass]="userType == 'affiliate' ? 'hideclasslasttiem' : 'test'">
+            <!-- <mat-form-field [ngClass]="userType == 'affiliate' ? 'hideclasslasttiem' : 'test'">
               <mat-label>Assign SalesRep</mat-label>
               <mat-select formControlName="affiliate" (blur)="inputUntouched('affiliate')">
-                <!-- <mat-option *ngFor="let rep of affiliateList" [value]="rep._id">{{ affiliate.fullname }}</mat-option> -->
+                <mat-option *ngFor="let rep of affiliateList" [value]="rep._id">{{ affiliate.fullname }}</mat-option>
                 <mat-option>affiliate fullname</mat-option>
               </mat-select>
-              <!-- <mat-error *ngIf="!addaffiliateForm.controls['affiliate'].valid && addaffiliateForm.controls['affiliate'].errors.required && addaffiliateForm.controls['affiliate'].touched">
-                affiliate field can not be blank</mat-error> -->
-            </mat-form-field>
+              <mat-error *ngIf="!addaffiliateForm.controls['affiliate'].valid && addaffiliateForm.controls['affiliate'].errors.required && addaffiliateForm.controls['affiliate'].touched">
+                affiliate field can not be blank</mat-error>
+            </mat-form-field> -->
 
             <span class="bottompart">
               <!-- <button mat-raised-button class="btn-lg" type="button'" (click)="addaffiliateFormSubmit()">
