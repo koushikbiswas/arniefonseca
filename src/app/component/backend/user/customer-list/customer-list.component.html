@@ -1,0 +1,46 @@
+<div class="adminwrappercls">
+  <div class="admcls"><app-bk-header></app-bk-header></div>
+      <div class="main-content-wrap">
+        <mat-card class="generalcls blog" style="padding: 0 !important;">  
+            <!-- <img src="../../../../assets/images/customerlists-admin-img1.jpg" style="width: 100%; display: block; margin: 0; padding: 0;"> -->
+            <mat-card-content class="adm_inner_banner customerbgadmin">
+              <mat-card-title class="adm_inner_title">Customer List</mat-card-title>
+              <p class="adm_inner_para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </mat-card-content>
+
+          <mat-card-content class="bred_cram_wrapper_list">
+            <mat-list class="bred_cram_wrapper">
+              <mat-list-item mat-list-item *ngIf="user_details.type == 'admin'"> <a [routerLink]="'/admin-dashboard'">Dashboard</a> </mat-list-item>
+              <mat-list-item mat-list-item *ngIf="user_details.type == 'affiliate'"> <a [routerLink]="'/affiliate-dashboard'">Dashboard</a> </mat-list-item>
+
+              <mat-list-item mat-list-item *ngIf="user_details.type == 'admin'"> <a [routerLink]="'/admin-dashboard'">User Management</a> </mat-list-item>
+              <mat-list-item mat-list-item *ngIf="user_details.type == 'affiliate'"> <a [routerLink]="'/affiliate-dashboard'">User Management</a> </mat-list-item>
+      
+              <mat-list-item mat-list-item *ngIf="user_details.type == 'admin'"> <a>Customer lists</a> </mat-list-item>
+              <mat-list-item mat-list-item *ngIf="user_details.type == 'affiliate'"> <a>Customer lists</a> </mat-list-item>
+            </mat-list>       
+          </mat-card-content>
+
+          <!-- <mat-card-content class="bred_cram_wrapper">
+              <a mat-list-item routerLinkActive="active"> Dashboard </a>
+              <a mat-list-item routerLinkActive="active"> User Management </a>
+              <a mat-list-item routerLinkActive="active activebread" [routerLink]="'/'"> Customer lists </a>
+          </mat-card-content> -->
+          <span class="searchblock">
+              <span class="searchblockwrapper">
+                  <span>
+                      <h2>Customer List</h2>
+                  </span>
+                  <span>
+                      <button mat-button class="btngreen sim-button" [routerLink]="['/affiliate/add']"><i class="material-icons">add</i> Add Customer</button>
+                  </span>                    
+              </span>
+          </span>
+          <div class="tablediv">
+              <!-- <lib-testimonial class="formfilterdiv listingtestimonial" [config]="testimonialListConfig"></lib-testimonial> -->
+          </div>
+
+        </mat-card>
+      </div>
+  </div>
+<app-bk-footer></app-bk-footer>
