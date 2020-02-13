@@ -9,6 +9,7 @@ import { ApiService } from '../../../../../../api.service';
   styleUrls: ['./list-images.component.css']
 })
 export class ListImagesComponent implements OnInit {
+  public user_details:any;
   public imageGalleryallData: any = [];
   // public serverUrl: any = "https://9v41bpikik.execute-api.us-east-1.amazonaws.com/dev/api/";
   public serverUrl: any = this.apiService.serverUrl;
@@ -19,9 +20,16 @@ export class ListImagesComponent implements OnInit {
   public addButtonRoute: any = "image-gallery/add";
   public searchEndpoint: any = "datalist";
   public searchSourcename: any = "imageGallery_management_view";
-  public token = this.cookies.get('jwtToken');
+  public token = this.cookieService.get('jwtToken');
   
-  constructor(public activatedRoute: ActivatedRoute, public cookies: CookieService,public apiService:ApiService) { }
+  constructor(public activatedRoute: ActivatedRoute, public cookieService: CookieService,public apiService:ApiService) {
+
+    if (this.cookieService.get('user_details') != undefined && this.cookieService.get('user_details') != null && this.cookieService.get('user_details') != '') {      
+      this.user_details = JSON.parse(this.cookieService.get('user_details'));
+    }
+
+    
+   }
 
   ngOnInit() {
     this.activatedRoute.data.forEach(data => {

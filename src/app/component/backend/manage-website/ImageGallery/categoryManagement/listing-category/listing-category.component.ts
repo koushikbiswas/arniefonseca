@@ -11,6 +11,7 @@ import { MetaService } from '@ngx-meta/core';
   styleUrls: ['./listing-category.component.css']
 })
 export class ListingCategoryComponent implements OnInit {
+  public user_details:any;
   public imageGalleryList: any = [];
   // public serverUrl:any="https://9v41bpikik.execute-api.us-east-1.amazonaws.com/dev/api/";
   public serverUrl: any = this.apiService.serverUrl;
@@ -22,9 +23,9 @@ export class ListingCategoryComponent implements OnInit {
   public manageImageButtonRoute:any="image-gallery/list";
   public searchEndpoint:any="datalist";
   public searchSourcename:any="imageGallery_category_view";
-  public token=this.cookies.get('jwtToken');
+  public token=this.cookieService.get('jwtToken');
 
-  constructor(public activatedRoute : ActivatedRoute,public cookies :CookieService,public apiService:ApiService,  private readonly meta: MetaService) { 
+  constructor(public activatedRoute : ActivatedRoute, public apiService:ApiService,  private readonly meta: MetaService, private cookieService: CookieService) { 
 
     this.meta.setTitle('Arniefonseca - Image Gallery');
     this.meta.setTag('og:description', '');
@@ -38,6 +39,10 @@ export class ListingCategoryComponent implements OnInit {
     this.meta.setTag('og:type', 'website');
     this.meta.setTag('og:image', 'https://arniefonseca-backend.influxiq.com/assets/images/logo.png');
     this.meta.setTag('twitter:image', 'https://arniefonseca-backend.influxiq.com/assets/images/logo.png');
+
+    if (this.cookieService.get('user_details') != undefined && this.cookieService.get('user_details') != null && this.cookieService.get('user_details') != '') {      
+      this.user_details = JSON.parse(this.cookieService.get('user_details'));
+    }
 
   }
 

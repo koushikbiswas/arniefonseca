@@ -8,12 +8,19 @@
                 <p class="adm_inner_para">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     printer took a galley of type and scrambled it to make a type specimen book.</p>
             </mat-card-content>
-            <mat-card-content class="bred_cram_wrapper">
-                <a mat-list-item routerLinkActive="active"> Dashboard </a>
-                <a mat-list-item routerLinkActive="active"> Manage Website </a>
-                <a mat-list-item routerLinkActive="active activebread" [routerLink]="'/newsletter-list'"> Newsletter
-                </a>
+            <mat-card-content class="bred_cram_wrapper_list">
+                <mat-list class="bred_cram_wrapper">
+                  <mat-list-item mat-list-item *ngIf="user_details.type == 'admin'"> <a [routerLink]="'/admin-dashboard'">Dashboard</a> </mat-list-item>
+                  <mat-list-item mat-list-item *ngIf="user_details.type == 'affiliate'"> <a [routerLink]="'/affiliate-dashboard'">Dashboard</a> </mat-list-item>
+          
+                  <mat-list-item mat-list-item *ngIf="user_details.type == 'admin'"> <a [routerLink]="'/admin-dashboard'">Manage website</a> </mat-list-item>
+                  <mat-list-item mat-list-item *ngIf="user_details.type == 'affiliate'"> <a [routerLink]="'/affiliate-dashboard'">Manage website</a> </mat-list-item>
+          
+                  <mat-list-item mat-list-item *ngIf="user_details.type == 'admin'"> <a>Newsletter Lists</a> </mat-list-item>
+                  <mat-list-item mat-list-item *ngIf="user_details.type == 'affiliate'"> <a>Newsletter Lists</a> </mat-list-item>
+                </mat-list>       
             </mat-card-content>
+            
             <mat-tab-group class="tabwrapper">
                 <mat-tab>
                     <ng-template mat-tab-label>

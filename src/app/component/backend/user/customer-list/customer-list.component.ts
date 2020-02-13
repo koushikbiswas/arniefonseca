@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { MetaService } from '@ngx-meta/core';
+import { CookieService } from 'ngx-cookie-service';
 
 @Component({
   selector: 'app-customer-list',
@@ -10,7 +11,9 @@ import { MetaService } from '@ngx-meta/core';
 })
 export class CustomerListComponent implements OnInit {
 
-  constructor(private readonly meta: MetaService, public router: Router) {
+  public user_details:any;
+
+  constructor(private readonly meta: MetaService, public router: Router,public cookieService: CookieService) {
 
     this.meta.setTitle('Arniefonseca - Commission List');
     this.meta.setTag('og:description', '');
@@ -25,6 +28,9 @@ export class CustomerListComponent implements OnInit {
     this.meta.setTag('og:image', 'https://arniefonseca-backend.influxiq.com/assets/images/logo.png');
     this.meta.setTag('twitter:image', 'https://arniefonseca-backend.influxiq.com/assets/images/logo.png');
 
+    if (this.cookieService.get('user_details') != undefined && this.cookieService.get('user_details') != null && this.cookieService.get('user_details') != '') {      
+      this.user_details = JSON.parse(this.cookieService.get('user_details'));
+    }
 
   }
 

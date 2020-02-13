@@ -15,6 +15,8 @@ import { MetaService } from '@ngx-meta/core';
 })
 export class NewsletterlistsComponent implements OnInit {
 
+  public user_details:any;
+  
   public myformsetting: FormGroup;
 
   public indexval:any;
@@ -180,7 +182,9 @@ public subscriptionForm: any = {
        
       })
  
-
+      if (this.cookieService.get('user_details') != undefined && this.cookieService.get('user_details') != null && this.cookieService.get('user_details') != '') {      
+        this.user_details = JSON.parse(this.cookieService.get('user_details'));
+      }
 
   }
 

@@ -15,6 +15,8 @@ import { MetaService } from '@ngx-meta/core';
 })
 export class ListingServiceComponent implements OnInit {
 
+  public user_details:any;
+
     /************** lib list setup start here *************/
     public serviceListConfig:any = {
       // apiBaseUrl: "https://9v41bpikik.execute-api.us-east-1.amazonaws.com/production/api/",
@@ -49,6 +51,10 @@ export class ListingServiceComponent implements OnInit {
     this.serviceListConfig.datasource = resolveData.serviceList.res;    
     this.serviceListConfig.jwtToken = this.cookieService.get('jwtToken');   
   });
+
+  if (this.cookieService.get('user_details') != undefined && this.cookieService.get('user_details') != null && this.cookieService.get('user_details') != '') {      
+    this.user_details = JSON.parse(this.cookieService.get('user_details'));
+  }
 
   
 }
