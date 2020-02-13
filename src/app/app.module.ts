@@ -100,6 +100,7 @@ import { AddEditSenderappComponent } from './component/backend/newsletterlists/a
 import { HttpLoaderComponent } from './http-loader/http-loader.component';
 import { HttpLoaderService } from './http-loader.service';
 import { LoaderInterceptor } from './loader.interceptor';
+import { ListingAffiliateComponent } from './component/backend/affiliate/listing-affiliate/listing-affiliate.component';
 
 
 @NgModule({
@@ -168,6 +169,7 @@ import { LoaderInterceptor } from './loader.interceptor';
     AddEditVideosComponent,
     ListVideoManagementComponent,
     HttpLoaderComponent,
+    ListingAffiliateComponent,
   ],
   imports: [
     AmazingTimePickerModule,   
