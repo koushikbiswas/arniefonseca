@@ -72,19 +72,11 @@ import { AddEditBlogsComponent } from './component/backend/manage-website/blog-m
 import { ListingBlogsComponent } from './component/backend/manage-website/blog-management/listing-blogs/listing-blogs.component';
 import { ManageEventListingComponent} from './component/backend/events/manage-event-listing/manage-event-listing.component';
 import { AddEditManageEventComponent, EventModal } from './component/backend/events/add-edit-manage-event/add-edit-manage-event.component';
-<<<<<<< HEAD
-import { AddEditNewsletterComponent } from './component/backend/newsletterlists/add-edit-newsletter/add-edit-newsletter.component';
-import { AddEditSubscriberComponent } from './component/backend/newsletterlists/add-edit-subscriber/add-edit-subscriber.component';
-import { AddEditSubscriberGroupComponent } from './component/backend/newsletterlists/add-edit-subscriber-group/add-edit-subscriber-group.component';
-import { AddEditTestemailComponent } from './component/backend/newsletterlists/add-edit-testemail/add-edit-testemail.component';
-// import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
-=======
 import { AddEditNewsletterComponent } from './component/backend/manage-website/newsletterlists/add-edit-newsletter/add-edit-newsletter.component';
 import { AddEditSubscriberComponent } from './component/backend/manage-website/newsletterlists/add-edit-subscriber/add-edit-subscriber.component';
 import { AddEditSubscriberGroupComponent } from './component/backend/manage-website/newsletterlists/add-edit-subscriber-group/add-edit-subscriber-group.component';
 import { AddEditTestemailComponent } from './component/backend/manage-website/newsletterlists/add-edit-testemail/add-edit-testemail.component';
-import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
->>>>>>> 4b79cb82b636613fb26fa00080bb1e38603b41a1
+// import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 import { NgxMaterialTimepickerModule } from 'ngx-material-timepicker';
 import {DatePipe} from '@angular/common';
 import { HomeEventComponent } from './component/backend/events/home-event/home-event.component';
