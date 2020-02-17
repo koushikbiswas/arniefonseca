@@ -342,10 +342,10 @@ const routes: Routes = [
   },
 
 
-
+  },
 
   //________________Manage Workshop____________//
-},
+
 
 
 

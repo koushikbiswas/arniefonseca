@@ -29,8 +29,7 @@
                         <mat-error
                             *ngIf="!eventForm.controls['title'].valid && eventForm.controls['title'].errors.required && eventForm.controls['title'].touched ">
                             title field can not be blank</mat-error>
-                        <br>
-
+                      
 
 
                         <!-- date field  -->
@@ -43,8 +42,7 @@
                         <mat-error
                             *ngIf="!eventForm.controls['date'].valid && eventForm.controls['date'].errors.required && eventForm.controls['date'].touched ">
                             choose a valid date</mat-error>
-                        <br>
-
+                        
 
 
                         <!-- date new  -->
@@ -61,7 +59,6 @@
                         </div>
 
 
-                        <br>
 
                         <!-- Zone  -->
 
@@ -91,7 +88,31 @@
                                 *ngIf="!eventForm.controls['location'].valid && eventForm.controls['location'].errors.required && eventForm.controls['location'].touched ">
                                 location field can not be blank</mat-error>
 
-                        <br>
+
+
+                        <mat-form-field>
+                            <mat-label>Select State</mat-label>
+                            <mat-select formControlName="state" (blur)="inputBlur('state')">
+                                <mat-option value="0">a</mat-option>
+                               
+                            </mat-select>
+                        </mat-form-field>
+                        <mat-error
+                        *ngIf="!eventForm.controls['state'].valid && eventForm.controls['state'].errors.required && eventForm.controls['state'].touched ">
+                        state field can not be blank</mat-error>
+
+
+
+                                <mat-form-field>
+                                    <mat-label>Select city</mat-label>
+                                    <mat-select formControlName="city" (blur)="inputBlur('city')">
+                                        <mat-option value="0">b</mat-option>
+                                        
+                                    </mat-select>
+                                </mat-form-field>
+                                <mat-error
+                                *ngIf="!eventForm.controls['city'].valid && eventForm.controls['city'].errors.required && eventForm.controls['city'].touched ">
+                                city field can not be blank</mat-error>
 
                         <!-- type -->
 
@@ -112,14 +133,15 @@
 
 
                         <!-- ckeditor  -->
-                        <ckeditor [editor]="Editor" [config]="editorConfig" formControlName="description"
-                            (blur)="inputBlur('description')">
-                        </ckeditor>
+                        <label>Description :</label>
+                        <ck-editor formControlName="description" 
+                        skin="moono-lisa"  (blur)="inputBlur('description')">
+                        </ck-editor>
                         <mat-error
                             *ngIf="!eventForm.controls['description'].valid && eventForm.controls['description'].errors.required && eventForm.controls['description'].touched ">
                             description field can not be blank</mat-error>
 
-                        <br><br>
+                       
 
 
 
@@ -153,15 +175,15 @@
 
                         <!-- if yes then add link field  -->
 
-
-                        <ckeditor *ngIf="booking_flag==true" [editor]="Editor" [config]="editorConfig"
+                        <label>Description :</label>
+                        <ck-editor *ngIf="booking_flag==true" 
                             formControlName="bookingLink" (blur)="inputBlur('bookingLink')">
-                        </ckeditor>
+                        </ck-editor>
                         <mat-error
                             *ngIf="!eventForm.controls['bookingLink'].valid && eventForm.controls['bookingLink'].errors.required && eventForm.controls['bookingLink'].touched ">
                             bookingLink field can not be blank</mat-error>
 
-                        <br><br>
+                        
 
 
                         <!-- status -->

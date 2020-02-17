@@ -76,7 +76,7 @@ import { AddEditNewsletterComponent } from './component/backend/newsletterlists/
 import { AddEditSubscriberComponent } from './component/backend/newsletterlists/add-edit-subscriber/add-edit-subscriber.component';
 import { AddEditSubscriberGroupComponent } from './component/backend/newsletterlists/add-edit-subscriber-group/add-edit-subscriber-group.component';
 import { AddEditTestemailComponent } from './component/backend/newsletterlists/add-edit-testemail/add-edit-testemail.component';
-import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
+// import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 import { NgxMaterialTimepickerModule } from 'ngx-material-timepicker';
 import {DatePipe} from '@angular/common';
 import { HomeEventComponent } from './component/backend/events/home-event/home-event.component';
@@ -101,6 +101,8 @@ import { HttpLoaderComponent } from './http-loader/http-loader.component';
 import { HttpLoaderService } from './http-loader.service';
 import { LoaderInterceptor } from './loader.interceptor';
 
+
+import { CKEditorModule } from 'ngx-ckeditor';
 
 @NgModule({
   declarations: [

@@ -63,7 +63,7 @@ export interface DialogData {
 
 export class AddEditManageEventComponent implements OnInit {
 
-public image_url:any=environment['https://fileupload.influxhostserver.com/'];
+public image_url:any=environment['imageUpload_url'];
   
   public eventForm:FormGroup;
   public booking_flag:boolean=false;
@@ -92,11 +92,11 @@ public image_url:any=environment['https://fileupload.influxhostserver.com/'];
 
 
    /**ckeditor start here*/
-   public Editor = ClassicEditor;  //for ckeditor
-   editorConfig = {
-     placeholder: 'Description..',
+  //  public Editor = ClassicEditor;  //for ckeditor
+  //  editorConfig = {
+  //    placeholder: 'Description....',
      
-   };
+  //  };
   
    public model = {
      editorData: ''
@@ -104,14 +104,29 @@ public image_url:any=environment['https://fileupload.influxhostserver.com/'];
    /**ckeditor end here*/  
 
 //image uplolad
-   public configData: any = {
-    baseUrl: this.image_url,
+  //  public configData: any = {
+  //   baseUrl: this.image_url,
+  //   endpoint: "uploads",
+  //   size: "51200", // kb
+  //   format: ["jpg", "jpeg", "png", "bmp", "zip", 'html'], // use all small font
+  //   type: "event-picture",
+  //   path: "files",
+  //   prefix: "event_picture_"
+  // }
+
+
+
+  public configData: any = {
+    baseUrl: "https://fileupload.influxhostserver.com/",
     endpoint: "uploads",
     size: "51200", // kb
-    format: ["jpg", "jpeg", "png", "bmp", "zip", 'html'], // use all small font
+    format:["jpg", "jpeg", "png", "bmp", "zip", 'html'],  // use all small font
     type: "event-picture",
     path: "files",
-    prefix: "event_picture_"
+    prefix: "event-picture",
+    formSubmit: false,
+    conversionNeeded: 0,
+    bucketName: "probidfiles-dev.com" 
   }
   
 
@@ -212,7 +227,7 @@ public image_url:any=environment['https://fileupload.influxhostserver.com/'];
     this.eventForm=this.fb.group({
       title:['',Validators.required],
       date:['',Validators.required],
-      event_date:[],
+      event_date:['',Validators.required],
       location:['',Validators.required],
       description:['',Validators.required],
       booking:['No'],
@@ -221,7 +236,9 @@ public image_url:any=environment['https://fileupload.influxhostserver.com/'];
       status:[],
       type:['',Validators.required],
       event_image:[],
-      timeZone:[]
+      timeZone:[],
+      state:['',Validators.required],
+      city:['',Validators.required]
 
     }) 
    
@@ -246,7 +263,10 @@ public image_url:any=environment['https://fileupload.influxhostserver.com/'];
       status:defaultValue.status,
       type:defaultValue.type,
       event_image:defaultValue.event_image,
-      timeZone:defaultValue.timeZone
+      timeZone:defaultValue.timeZone,
+      state:defaultValue.state,
+      city:defaultValue.city
+      
 
     })
     let sDateArr: any = defaultValue.event_date.split("-");
@@ -359,14 +379,15 @@ public image_url:any=environment['https://fileupload.influxhostserver.com/'];
 
           this.openDialog(this.successMessage);
           setTimeout(() => {
-            this.dialogRef.close();
-          }, 2000);
+         this.dialogRef.close();
+          }, 500);
 
           this.router.navigateByUrl('/manage-event-listing');
+  
+
         }
 
       })
-
 
 
     }
