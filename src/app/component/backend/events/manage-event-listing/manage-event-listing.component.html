@@ -8,10 +8,20 @@
               <mat-card-title class="adm_inner_title">Manage Event</mat-card-title>
               <p class="adm_inner_para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. printer took a galley of type and scrambled it to make a type specimen book.</p>
             </mat-card-content>
-            <mat-card-content class="bred_cram_wrapper">
+            <mat-card-content class="bred_cram_wrapper_list">
+              <mat-list class="bred_cram_wrapper">
+                <mat-list-item mat-list-item *ngIf="user_details.type == 'admin'"> <a [routerLink]="'/admin-dashboard'">Dashboard</a> </mat-list-item>
+                <mat-list-item mat-list-item *ngIf="user_details.type == 'affiliate'"> <a [routerLink]="'/affiliate-dashboard'">Dashboard</a> </mat-list-item>
+        
+                <mat-list-item mat-list-item *ngIf="user_details.type == 'admin'"> <a>Manage Events</a> </mat-list-item>
+                <mat-list-item mat-list-item *ngIf="user_details.type == 'affiliate'"> <a>Manage Events</a> </mat-list-item>
+              </mat-list>       
+            </mat-card-content>
+
+            <!-- <mat-card-content class="bred_cram_wrapper">
               <a mat-list-item routerLinkActive="active" [routerLink]="'/admin-dashboard'"> Dashboard </a>
               <a mat-list-item routerLinkActive="active activebread" [routerLink]="'/manage-event-listing'"> manage Events</a>
-            </mat-card-content>
+            </mat-card-content> -->
 
           
               <!-- <img src="../../../../assets/images/manage-speaker-engagements.jpg" style="width: 100%; display: block; margin: 0; padding: 0;"> -->
@@ -52,9 +62,8 @@
             [date_search_source]="view" 
             [search_settings]="search_settings"
             [detail_datatype]="image_detail_datatype"
-            [detail_skip_array]="detail_skip_array"
-                                      
-           [date_search_endpoint]="date_search_endpoint"
+            [detail_skip_array]="detail_skip_array"                        
+            [date_search_endpoint]="date_search_endpoint"
             >
         </lib-listing>
 

@@ -52,14 +52,8 @@
     }
     @media only screen and (max-width: 991px) {
 
-        .tablediv .searchbar .mat-form-field {
-            margin: 4px 0!important;
-            display: block;
-            width: 100%;
-        }
-
-        
-        .tablediv .searchbar{ display: block; width: 100%;}
+   .tablediv .searchbar .mat-form-field {margin: 4px 0!important;display: block;width: 100%;}       
+    .tablediv .searchbar{ display: block; width: 100%;}
     .tablediv table td{text-align:right!important}
     .tabblock .tablists ul li.nav-item a.nav-link{font-size:20px;line-height:24px;padding:15px}
     .tablediv table td.tablebuttondiv{border:0!important;border-bottom:0 solid #fff!important}
