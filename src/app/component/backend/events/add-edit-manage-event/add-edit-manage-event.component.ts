@@ -426,9 +426,7 @@ public image_url:any=environment['imageUpload_url'];
          this.dialogRef.close();
           }, 500);
 
-          setTimeout(() => {
             this.router.navigateByUrl('/manage-event-listing');
-          }, 1000);
 
         }
 

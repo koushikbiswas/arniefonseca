@@ -177,13 +177,13 @@
 
                         <!-- if yes then add link field  -->
 
-                        <label>Description :</label>
+                        <label>Booking Link Description :</label>
                         <ck-editor *ngIf="booking_flag==true" formControlName="bookingLink"
                             (blur)="inputBlur('bookingLink')">
                         </ck-editor>
-                        <mat-error
+                        <!-- <mat-error
                             *ngIf="!eventForm.controls['bookingLink'].valid && eventForm.controls['bookingLink'].errors.required && eventForm.controls['bookingLink'].touched ">
-                            bookingLink field can not be blank</mat-error>
+                            bookingLink field can not be blank</mat-error> -->
 
 
 
