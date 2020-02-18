@@ -1,5 +1,7 @@
 <div class="adminwrappercls">
-    <div class="admcls"><app-bk-header></app-bk-header></div>
+    <div class="admcls">
+        <app-bk-header></app-bk-header>
+    </div>
     <div class="main-content-wrap">
         <mat-card class="generalcls blog" style="padding: 0 !important;">
             <!-- <img src="../../../../assets/images/manage-seminars.jpg" style="width: 100%; display: block; margin: 0; padding: 0;"> -->
@@ -20,7 +22,7 @@
             <span class="formspan">
                 <span class="example-container">
 
-                    <form [formGroup]="eventForm">
+                    <form [formGroup]="eventForm" >
 
                         <mat-form-field>
                             <mat-label>Title</mat-label>
@@ -29,7 +31,7 @@
                         <mat-error
                             *ngIf="!eventForm.controls['title'].valid && eventForm.controls['title'].errors.required && eventForm.controls['title'].touched ">
                             title field can not be blank</mat-error>
-                      
+
 
 
                         <!-- date field  -->
@@ -42,7 +44,7 @@
                         <mat-error
                             *ngIf="!eventForm.controls['date'].valid && eventForm.controls['date'].errors.required && eventForm.controls['date'].touched ">
                             choose a valid date</mat-error>
-                        
+
 
 
                         <!-- date new  -->
@@ -58,7 +60,7 @@
                                 time field can not be blank</mat-error>
                         </div>
 
-
+                        <br>
 
                         <!-- Zone  -->
 
@@ -70,10 +72,10 @@
                                 </mat-option>
                             </mat-select>
                         </mat-form-field>
-                            <mat-error
-                                *ngIf="!eventForm.controls['timeZone'].valid && eventForm.controls['timeZone'].errors.required && eventForm.controls['timeZone'].touched ">
-                                timeZone field can not be blank</mat-error>
-                       
+                        <mat-error
+                            *ngIf="!eventForm.controls['timeZone'].valid && eventForm.controls['timeZone'].errors.required && eventForm.controls['timeZone'].touched ">
+                            timeZone field can not be blank</mat-error>
+
 
 
 
@@ -83,36 +85,37 @@
                         <mat-form-field>
                             <input matInput placeholder="Location" (blur)="inputBlur('location')"
                                 formControlName="location">
-                            </mat-form-field>
-                            <mat-error
-                                *ngIf="!eventForm.controls['location'].valid && eventForm.controls['location'].errors.required && eventForm.controls['location'].touched ">
-                                location field can not be blank</mat-error>
+                        </mat-form-field>
+                        <mat-error
+                            *ngIf="!eventForm.controls['location'].valid && eventForm.controls['location'].errors.required && eventForm.controls['location'].touched ">
+                            location field can not be blank</mat-error>
 
 
 
                         <mat-form-field>
                             <mat-label>Select State</mat-label>
-                            <mat-select formControlName="state" (blur)="inputBlur('state')">
-                                <mat-option value="0">a</mat-option>
-                               
-                            </mat-select>
+                            <mat-select formControlName="state" (selectionChange)="getCity($event.value);">
+                                <mat-option [value]=0>Select a category</mat-option>
+                                <mat-option *ngFor="let state of stateList;" value="{{ state.name }}">{{ state.name }}</mat-option>
+                              </mat-select>
                         </mat-form-field>
                         <mat-error
-                        *ngIf="!eventForm.controls['state'].valid && eventForm.controls['state'].errors.required && eventForm.controls['state'].touched ">
-                        state field can not be blank</mat-error>
+                            *ngIf="!eventForm.controls['state'].valid && eventForm.controls['state'].errors.required && eventForm.controls['state'].touched ">
+                            state field can not be blank</mat-error>
 
 
 
-                                <mat-form-field>
-                                    <mat-label>Select city</mat-label>
-                                    <mat-select formControlName="city" (blur)="inputBlur('city')">
-                                        <mat-option value="0">b</mat-option>
-                                        
-                                    </mat-select>
-                                </mat-form-field>
-                                <mat-error
-                                *ngIf="!eventForm.controls['city'].valid && eventForm.controls['city'].errors.required && eventForm.controls['city'].touched ">
-                                city field can not be blank</mat-error>
+                        <mat-form-field>
+                            <mat-label>Select city</mat-label>
+                            <mat-select formControlName="city">
+                                <mat-option [value]=0>Select a city</mat-option>
+                                <mat-option *ngFor="let city of allCities;" value="{{ city }}">
+                                    {{ city }}</mat-option>
+                              </mat-select>
+                        </mat-form-field>
+                        <mat-error
+                            *ngIf="!eventForm.controls['city'].valid && eventForm.controls['city'].errors.required && eventForm.controls['city'].touched ">
+                            city field can not be blank</mat-error>
 
                         <!-- type -->
 
@@ -124,24 +127,23 @@
                                 <mat-option value="speaker_engagement">Speaker Engagements</mat-option>
                             </mat-select>
                         </mat-form-field>
-                            <mat-error
-                                *ngIf="!eventForm.controls['type'].valid && eventForm.controls['type'].errors.required && eventForm.controls['type'].touched ">
-                                type field can not be blank</mat-error>
-                       
+                        <mat-error
+                            *ngIf="!eventForm.controls['type'].valid && eventForm.controls['type'].errors.required && eventForm.controls['type'].touched ">
+                            type field can not be blank</mat-error>
+
 
 
 
 
                         <!-- ckeditor  -->
                         <label>Description :</label>
-                        <ck-editor formControlName="description" 
-                        skin="moono-lisa"  (blur)="inputBlur('description')">
+                        <ck-editor formControlName="description" skin="moono-lisa" (blur)="inputBlur('description')">
                         </ck-editor>
                         <mat-error
                             *ngIf="!eventForm.controls['description'].valid && eventForm.controls['description'].errors.required && eventForm.controls['description'].touched ">
                             description field can not be blank</mat-error>
 
-                       
+
 
 
 
@@ -176,14 +178,14 @@
                         <!-- if yes then add link field  -->
 
                         <label>Description :</label>
-                        <ck-editor *ngIf="booking_flag==true" 
-                            formControlName="bookingLink" (blur)="inputBlur('bookingLink')">
+                        <ck-editor *ngIf="booking_flag==true" formControlName="bookingLink"
+                            (blur)="inputBlur('bookingLink')">
                         </ck-editor>
                         <mat-error
                             *ngIf="!eventForm.controls['bookingLink'].valid && eventForm.controls['bookingLink'].errors.required && eventForm.controls['bookingLink'].touched ">
                             bookingLink field can not be blank</mat-error>
 
-                        
+
 
 
                         <!-- status -->
