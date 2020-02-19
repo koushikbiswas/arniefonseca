@@ -13,6 +13,8 @@ import { MetaService } from '@ngx-meta/core';
   styleUrls: ['./manage-event-listing.component.css']
 })
 export class ManageEventListingComponent implements OnInit {
+
+  public user_details:any;
   public eventDataList:any[];
   public baseUrl: any = environment["API_URL"];
 
@@ -68,13 +70,18 @@ public date_search_endpoint:any="datalist";
       this.meta.setTag('og:image', 'https://arniefonseca-backend.influxiq.com/assets/images/logo.png');
       this.meta.setTag('twitter:image', 'https://arniefonseca-backend.influxiq.com/assets/images/logo.png');
 
+      if (this.cookieService.get('user_details') != undefined && this.cookieService.get('user_details') != null && this.cookieService.get('user_details') != '') {      
+        this.user_details = JSON.parse(this.cookieService.get('user_details'));
+      }
+
      }
 
   ngOnInit() {
 
     this.activatedRoute.data.forEach((resolveData)=>{
+            // console.log('>>>>>>>>>>>>>',this.eventDataList)
+
       this.eventDataList=resolveData.eventList.res;
-      console.log('>>>>>>>>>>>>>',this.eventDataList)
     })
   }
 
