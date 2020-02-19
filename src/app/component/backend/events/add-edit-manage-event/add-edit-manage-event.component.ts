@@ -94,17 +94,10 @@ public image_url:any=environment['imageUpload_url'];
   }
 
 
-   /**ckeditor start here*/
-  //  public Editor = ClassicEditor;  //for ckeditor
-  //  editorConfig = {
-  //    placeholder: 'Description....',
-     
-  //  };
   
    public model = {
      editorData: ''
    };
-   /**ckeditor end here*/  
 
 //image uplolad
   //  public configData: any = {
@@ -340,7 +333,7 @@ public image_url:any=environment['imageUpload_url'];
 
   //form submit function//
   submit(){
-    console.log('hit')
+    // console.log('hit')
     //  File Upload Works 
     if (this.configData.files) {
 
@@ -386,7 +379,7 @@ public image_url:any=environment['imageUpload_url'];
     // console.log('>>>>>>>>>>>')
 
     if(this.eventForm.valid){
-      console.log('>>>',this.eventForm.value)
+      // console.log('>>>',this.eventForm.value)
 
       this.eventForm.value.date=parseInt(eventDate);
 
@@ -412,12 +405,12 @@ public image_url:any=environment['imageUpload_url'];
         "token": this.cookieService.get('jwtToken')
       };
 
-      console.log(postData)
+      // console.log(postData)
 
       this.apiService.CustomRequest(postData,'addorupdatedata').subscribe((response: any) => {
         let result: any;
         result = response;
-        console.log('>>>>>>', result)
+        // console.log('>>>>>>', result)
 
         if (result.status == "success") {
 
@@ -426,8 +419,9 @@ public image_url:any=environment['imageUpload_url'];
          this.dialogRef.close();
           }, 500);
 
-            this.router.navigateByUrl('/manage-event-listing');
-
+            this.router.navigate(['/manage-event-listing/']);
+       
+            
         }
 
       })
