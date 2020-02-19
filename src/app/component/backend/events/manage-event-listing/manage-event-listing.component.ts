@@ -79,8 +79,9 @@ public date_search_endpoint:any="datalist";
   ngOnInit() {
 
     this.activatedRoute.data.forEach((resolveData)=>{
+            // console.log('>>>>>>>>>>>>>',this.eventDataList)
+
       this.eventDataList=resolveData.eventList.res;
-      // console.log('>>>>>>>>>>>>>',this.eventDataList)
     })
   }
 

@@ -76,7 +76,7 @@ import { AddEditNewsletterComponent } from './component/backend/manage-website/n
 import { AddEditSubscriberComponent } from './component/backend/manage-website/newsletterlists/add-edit-subscriber/add-edit-subscriber.component';
 import { AddEditSubscriberGroupComponent } from './component/backend/manage-website/newsletterlists/add-edit-subscriber-group/add-edit-subscriber-group.component';
 import { AddEditTestemailComponent } from './component/backend/manage-website/newsletterlists/add-edit-testemail/add-edit-testemail.component';
-import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
+// import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 import { NgxMaterialTimepickerModule } from 'ngx-material-timepicker';
 import {DatePipe} from '@angular/common';
 import { HomeEventComponent } from './component/backend/events/home-event/home-event.component';
@@ -103,6 +103,8 @@ import { LoaderInterceptor } from './loader.interceptor';
 import { AddCustomerComponent } from './component/backend/user/add-customer/add-customer.component';
 import { AddAffiliateComponent, AffiliateModal } from './component/backend/user/add-affiliate/add-affiliate.component';
 
+
+import { CKEditorModule } from 'ngx-ckeditor';
 
 @NgModule({
   declarations: [
