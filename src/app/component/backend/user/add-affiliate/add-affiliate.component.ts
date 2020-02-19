@@ -32,9 +32,32 @@ export class AddAffiliateComponent implements OnInit {
   public defaultData:any;
   public ErrCode: boolean;
   public dialogRef: any;
+  public stateList: any;
+  public cityList: any;
+  public allCities: any;
+  public city : any;
 
   @ViewChild(FormGroupDirective, {static: false}) formDirective: FormGroupDirective;
   constructor(public activatedRouter: ActivatedRoute, public apiservice: ApiService, public fb: FormBuilder, public dialog: MatDialog, public router: Router,private readonly meta: MetaService,public cookieService:CookieService) { 
+    
+    this.activatedRouter.params.subscribe(params => {
+      if (params['_id'] != null) {
+        this.action = "edit";
+        this.condition = { id: params._id };
+        this.activatedRouter.data.subscribe(resolveData => {
+          this.defaultData = resolveData.affiliateList.res[0];
+          
+          console.log('+++++++++++++',this.defaultData)
+        });
+      }
+      else
+        this.action = "add";
+    });
+    this.allStateCityData();
+    setTimeout(() => {
+      this.getCity(this.defaultData.state);
+    }, 500);
+    
     this.meta.setTitle('ProBid Auto - Add Affiliate');
     this.meta.setTag('og:title', 'ProBid Auto - Add Affiliate');
     this.meta.setTag('twitter:title', 'ProBid Auto - Add Affiliate');
@@ -64,15 +87,30 @@ export class AddAffiliateComponent implements OnInit {
       case 'edit':
         /* Button text */
         this.btn_text = "UPDATE";
-        this.header_txt="Edit Event"
-        this.name_txt="Edit Event";
+        this.header_txt="Edit Affiliate"
+        this.name_txt="Edit Affiliate";
         this.successMessage = "One row updated";
         this.setDefaultValue(this.defaultData);
         break;
     }
   }
 
-  generateForm(){
+  allStateCityData() {
+    this.apiservice.getcitystate("./assets/data/state.json").subscribe(response => {
+      this.stateList = response;
+    });
+
+    this.apiservice.getcitystate("./assets/data/city.json").subscribe(response => {
+      this.cityList = response;
+    });
+  }
+
+  getCity(event) {
+    var val = event;
+    this.city = this.cityList[val];
+  }
+
+  generateForm() {
     this.addaffiliateForm=this.fb.group({
       email: [null, Validators.compose([Validators.required, Validators.pattern(/^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/)])],
       firstname: [null, Validators.required],
@@ -82,38 +120,46 @@ export class AddAffiliateComponent implements OnInit {
       city: [null, Validators.required],
       state: [null, Validators.required],
       address: [null, Validators.required],
-      // affiliate:['', Validators.required],
+      password: ['', Validators.required],
+      confirmPass: ['', Validators.required],
       type: "user",
       status:1
-    })
+  },{validator: this.checkIfMatchingPasswords('password', 'confirmPass')});
+      // affiliate:['', Validators.required],
+    }
+    checkIfMatchingPasswords(passwordKey: string, passwordConfirmationKey: string) {
+      return (group: FormGroup) => {
+        let passwordInput = group.controls[passwordKey],
+            passwordConfirmationInput = group.controls[passwordConfirmationKey];
+        if (passwordInput.value !== passwordConfirmationInput.value) {
+          return passwordConfirmationInput.setErrors({notEquivalent: true})
+        }
+        else {
+            return passwordConfirmationInput.setErrors(null);
+        }
+      }
+    }
    
-  }
+
 
   setDefaultValue(defaultValue:any){
 
-
-    // console.log('#########+++++++++++++++',defaultValue);
-
     this.addaffiliateForm.patchValue({
-      title:defaultValue.title,
-      event_date:defaultValue.date,
-      location:defaultValue.location,
-      description:defaultValue.description,
-      booking:defaultValue.booking,
-      bookingLink:defaultValue.bookingLink,
-      time:defaultValue.time,
-      status:defaultValue.status,
-      type:defaultValue.type,
-      event_image:defaultValue.event_image,
-      timeZone:defaultValue.timeZone
-
+      firstname:defaultValue.firstname,
+      lastname:defaultValue.lastname,
+      email:defaultValue.email,
+      phone:defaultValue.phone,
+      zip:defaultValue.zip,
+      city:defaultValue.city,
+      state:defaultValue.state,
+      address:defaultValue.address
     })
   }
 
-  openDialog(): void {
+  openDialog(x : any): void {
     this.dialogRef = this.dialog.open(AffiliateModal, {
       width: '250px',
-      data: 'submited'
+      data: {msg : x}
     });
 
     this.dialogRef.afterClosed().subscribe(result => {
@@ -123,7 +169,7 @@ export class AddAffiliateComponent implements OnInit {
 
   submit() {
 
-
+    console.log('>>>>>>>>>>>')
 
     //blur function
     for(let i in this.addaffiliateForm.controls){
@@ -142,7 +188,7 @@ export class AddAffiliateComponent implements OnInit {
       else {
         this.addaffiliateForm.value.status = parseInt("0");
       }
-
+      delete this.addaffiliateForm.value.confirmPass;
 
       //start process for add or update
       let postData: any = {
@@ -158,7 +204,7 @@ export class AddAffiliateComponent implements OnInit {
 
         if (result.status == "success") {
 
-          this.openDialog();
+          this.openDialog(this.successMessage);
           setTimeout(() => {
             this.dialogRef.close();
           }, 2000);

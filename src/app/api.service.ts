@@ -133,6 +133,9 @@ export class ApiService {
 
     
   }
+  public getcitystate(value : any): Observable<any> {
+    return this._http.get(value);
+  }
 
   setServerUrl(value: any) {
     this.subjectForServerUrl.next(value);

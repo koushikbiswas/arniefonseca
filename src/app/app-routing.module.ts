@@ -576,7 +576,18 @@ data:{
 
 
   { path: 'affiliate/add', component: AddAffiliateComponent },
-  { path: 'affiliate/edit/:_id', component: AddAffiliateComponent },
+  { path: 'affiliate/edit/:_id', component: AddAffiliateComponent,
+        canActivate:[AuthGuard],
+        resolve:{affiliateList:ResolveService},
+        data:{
+          requestcondition:{
+            source:'users',
+            condition:{}
+          },
+          endpoint:'datalist'
+
+  },
+  },
   { path: 'customer/add', component: AddCustomerComponent, },
   { path: 'customer/edit/:_id', component: AddCustomerComponent },
 
