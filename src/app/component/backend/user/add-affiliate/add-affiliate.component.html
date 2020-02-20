@@ -41,14 +41,14 @@
                 Phone Number field can not be blank</mat-error> -->
             </mat-form-field>
 
-            <mat-form-field *ngIf="router.url == '/add-customer'">
+            <mat-form-field>
               <input matInput placeholder="Password" type="password" formControlName="password" />
               <!-- <mat-error *ngIf="!addaffiliateForm.controls['password'].valid && addaffiliateForm.controls['password'].errors.required && addaffiliateForm.controls['password'].touched">
                 Password field can not be blank</mat-error> -->
             </mat-form-field>
 
-            <mat-form-field *ngIf="router.url == '/add-customer'">
-              <input matInput placeholder="Confirm Password" type="password" formControlName="conpass" />
+            <mat-form-field >
+              <input matInput placeholder="Confirm Password" type="password" formControlName="confirmPass" />
               <!-- <mat-error *ngIf="!addaffiliateForm.controls['conpass'].valid && addaffiliateForm.controls['conpass'].errors.required && addaffiliateForm.controls['conpass'].touched">
                 Confirm Password field can not be blank</mat-error>
               <mat-error *ngIf="!addaffiliateForm.controls['conpass'].valid && addaffiliateForm.controls['conpass'].touched">
@@ -68,34 +68,35 @@
                 Zip field can not be blank</mat-error> -->
             </mat-form-field>
 
-            <mat-form-field>
-              <!-- <mat-label>City</mat-label>   -->
-              <!-- <mat-select formControlName="city"> -->
-                <input matInput placeholder="City" type="text" formControlName="city" />
-                <!-- <select matNativeControl required formControlName="city">
-                  <option label="--Select Something --"></option>
-                  <option value="volvo">Volvo</option>
-                  <option value="saab">Saab</option>
-                  <option value="mercedes">Mercedes</option>
-                  <option value="audi">Audi</option>
-                </select> -->
-                <!-- <mat-option *ngFor="let city of cityList" [value]="city.city">{{ city.city }}</mat-option> -->
-                <!-- <mat-option>city name</mat-option> -->
-              <!-- </mat-select> -->
-              <!-- <mat-error *ngIf="!addaffiliateForm.controls['city'].valid && addaffiliateForm.controls['city'].errors.required && addaffiliateForm.controls['city'].touched">
-                City field can not be blank</mat-error> -->
-            </mat-form-field>
+             <!-- State Start -->
+        <mat-form-field >
+          <mat-label>State</mat-label>
 
-            <mat-form-field>
-              <input matInput placeholder="State" type="text" formControlName="state" />
-              <!-- <mat-label>State</mat-label>
-              <mat-select formControlName="state"> -->
-                <!-- <mat-option *ngFor="let state of stateList" [value]="state.abbreviation">{{ state.name }}</mat-option> -->
-                <!-- <mat-option>state name</mat-option>
-              </mat-select> -->
-              <!-- <mat-error *ngIf="!addaffiliateForm.controls['state'].valid && addaffiliateForm.controls['state'].errors.required && addaffiliateForm.controls['state'].touched">
-                State field can not be blank</mat-error> -->
-            </mat-form-field>
+          <mat-select formControlName="state" (selectionChange)="getCity($event.value);">
+            <mat-option [value]="">Select state</mat-option>
+            <mat-option *ngFor="let state of stateList;" value="{{ state.name }}">{{ state.name }}</mat-option>
+          </mat-select>
+
+          <!-- <mat-error *ngIf="TechManagementAddEditForm.controls['state'].touched && !TechManagementAddEditForm.controls['state'].valid && TechManagementAddEditForm.controls['state'].errors.required">
+            State required.
+          </mat-error> -->
+        </mat-form-field>
+        <!-- State End -->
+
+        <!-- City Start -->
+        <mat-form-field >
+          <mat-label>City</mat-label>
+
+          <mat-select formControlName="city">
+            <mat-option value=0>Select city</mat-option>
+            <mat-option *ngFor="let cityc of city;" value="{{ cityc }}">{{ cityc }}</mat-option>
+          </mat-select>
+
+          <!-- <mat-error *ngIf="TechManagementAddEditForm.controls['city'].touched && !TechManagementAddEditForm.controls['city'].valid && TechManagementAddEditForm.controls['city'].errors.required">
+            State required.
+          </mat-error> -->
+        </mat-form-field>
+        <!-- City End -->
 
             <!-- <mat-form-field [ngClass]="userType == 'affiliate' ? 'hideclasslasttiem' : 'test'">
               <mat-label>Assign SalesRep</mat-label>
@@ -112,7 +113,7 @@
                 {{ btn_text }}
               </button> -->
               <button mat-raised-button class="btn-lg" type="button'"  
-              (click)="submit()">Submit</button>
+              (click)="submit()">{{ btn_text}}</button>
             </span>
           </form>
         </div>

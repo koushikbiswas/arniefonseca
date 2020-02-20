@@ -17,7 +17,7 @@ import {DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE} from '@angular/material/
 import {default as _rollupMoment} from 'moment';
 import {DatePipe, getLocaleDateFormat} from '@angular/common';
 import { analyzeAndValidateNgModules } from '@angular/compiler';
-
+import {ApiService} from '../../../../api.service'
 
 import { MetaService } from '@ngx-meta/core';
 
@@ -81,6 +81,9 @@ public image_url:any=environment['imageUpload_url'];
   public imageType:any;
   public ErrCode: boolean;
   public dialogRef: any;
+  public cityList:any;
+  public stateList:any;
+  public allCities:any;
 
   // sticky section
   isSticky: boolean = false;
@@ -91,17 +94,10 @@ public image_url:any=environment['imageUpload_url'];
   }
 
 
-   /**ckeditor start here*/
-  //  public Editor = ClassicEditor;  //for ckeditor
-  //  editorConfig = {
-  //    placeholder: 'Description....',
-     
-  //  };
   
    public model = {
      editorData: ''
    };
-   /**ckeditor end here*/  
 
 //image uplolad
   //  public configData: any = {
@@ -164,7 +160,7 @@ public image_url:any=environment['imageUpload_url'];
 
   ]
 
-  constructor(public fb:FormBuilder,public _http: HttpService, private _authHttp: HttpClient, private cookieService: CookieService,public router:Router,public activatedRoute:ActivatedRoute,public dialog: MatDialog, public activeroute: ActivatedRoute,public datePipe:DatePipe, private readonly meta: MetaService) { 
+  constructor(public fb:FormBuilder,public _http: HttpService, private _authHttp: HttpClient, private cookieService: CookieService,public router:Router,public activatedRoute:ActivatedRoute,public dialog: MatDialog, public activeroute: ActivatedRoute,public datePipe:DatePipe, private readonly meta: MetaService,public apiService:ApiService) { 
 
     this.activatedRoute.params.subscribe(params => {
       if (params['_id'] != null) {
@@ -172,7 +168,7 @@ public image_url:any=environment['imageUpload_url'];
         this.condition = { id: params._id };
         this.activatedRoute.data.subscribe(resolveData => {
           this.defaultData = resolveData.eventList.res[0];
-          console.log('+++++++++++++',this.defaultData)
+          // console.log('+++++++++++++',this.defaultData)
         });
       }
       else
@@ -193,6 +189,9 @@ public image_url:any=environment['imageUpload_url'];
     this.meta.setTag('og:type', 'website');
     this.meta.setTag('og:image', 'https://arniefonseca-backend.influxiq.com/assets/images/logo.png');
     this.meta.setTag('twitter:image', 'https://arniefonseca-backend.influxiq.com/assets/images/logo.png');
+
+    this.cityJson();
+    this.stateJson();
   }
 
 
@@ -222,12 +221,44 @@ public image_url:any=environment['imageUpload_url'];
   }
 
 
+    //state json
+
+    stateJson(){
+      this.apiService.getJsonObject('assets/json/states.json').subscribe(resc=>{
+        let result=resc;
+        // console.log(result);
+        this.stateList = result;
+  
+      })
+    }
+
+
+  //city json
+
+  cityJson(){
+    this.apiService.getJsonObject('assets/json/city.json').subscribe(res=>{
+      let result=res;
+      // console.log(result);
+      this.cityList = result;
+
+
+    })
+  }
+
+  getCity(event) {
+    var val = event;
+    this.allCities = this.cityList[val];
+  }
+
+
+
+
   //form generate//
   generateForm(){
     this.eventForm=this.fb.group({
       title:['',Validators.required],
       date:['',Validators.required],
-      event_date:['',Validators.required],
+      event_date:[''],
       location:['',Validators.required],
       description:['',Validators.required],
       booking:['No'],
@@ -249,8 +280,11 @@ public image_url:any=environment['imageUpload_url'];
   // set default value //
   setDefaultValue(defaultValue:any){
 
-
     // console.log('#########+++++++++++++++',defaultValue);
+    setTimeout(() => {
+      this.getCity(defaultValue.state);
+
+    }, 500);
 
     this.eventForm.patchValue({
       title:defaultValue.title,
@@ -299,7 +333,7 @@ public image_url:any=environment['imageUpload_url'];
 
   //form submit function//
   submit(){
-
+    // console.log('hit')
     //  File Upload Works 
     if (this.configData.files) {
 
@@ -314,25 +348,25 @@ public image_url:any=environment['imageUpload_url'];
     } else {
       this.eventForm.value.event_image = false;
     }
-    console.log('>>>>>>>>>>>>>>',this.eventForm.value.event_image)
+    // console.log('>>>>>>>>>>>>>>',this.eventForm.value.event_image)
 
 
     let eventDate:any;
     eventDate=this.eventForm.value.date;
-    console.log('$$$$$$$$$$$$',this.eventForm.value.date);
+    // console.log('$$$$$$$$$$$$',this.eventForm.value.date);
 
     let dateFormat:any;
     //change format date
 
     dateFormat=this.datePipe.transform(this.eventForm.value.date,"MM-dd-yyyy");
 
-    console.log("******",dateFormat)
+    // console.log("******",dateFormat)
 
     //unix code converted date
 
     eventDate=moment(this.eventForm.value.date).format('x');
 
-    console.log('eventDate',eventDate)
+    // console.log('eventDate',eventDate)
 
 
 
@@ -342,9 +376,10 @@ public image_url:any=environment['imageUpload_url'];
     }
 
 
-    console.log('>>>>>>>>>>>')
+    // console.log('>>>>>>>>>>>')
 
     if(this.eventForm.valid){
+      // console.log('>>>',this.eventForm.value)
 
       this.eventForm.value.date=parseInt(eventDate);
 
@@ -352,7 +387,7 @@ public image_url:any=environment['imageUpload_url'];
 
     
 
-      console.log(this.eventForm.value);
+      // console.log(this.eventForm.value);
 
        //status
        if (this.eventForm.value.status) {
@@ -370,10 +405,12 @@ public image_url:any=environment['imageUpload_url'];
         "token": this.cookieService.get('jwtToken')
       };
 
-      this._http.httpViaPost('addorupdatedata', postData).subscribe((response: any) => {
+      // console.log(postData)
+
+      this.apiService.CustomRequest(postData,'addorupdatedata').subscribe((response: any) => {
         let result: any;
         result = response;
-        console.log('>>>>>>', result)
+        // console.log('>>>>>>', result)
 
         if (result.status == "success") {
 
@@ -382,9 +419,9 @@ public image_url:any=environment['imageUpload_url'];
          this.dialogRef.close();
           }, 500);
 
-          this.router.navigateByUrl('/manage-event-listing');
-  
-
+            this.router.navigate(['/manage-event-listing/']);
+       
+            
         }
 
       })
@@ -397,7 +434,7 @@ public image_url:any=environment['imageUpload_url'];
 
 //blur function validation//
   inputBlur(val:any){
-    console.log(val);
+    // console.log(val);
     this.eventForm.controls[val].markAsUntouched();
   }
 

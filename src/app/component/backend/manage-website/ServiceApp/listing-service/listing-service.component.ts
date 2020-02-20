@@ -29,7 +29,7 @@ export class ListingServiceComponent implements OnInit {
       jwtToken: "",
       deleteEndPoint: "deletesingledata",
       addLink: "/service/add",
-      view:"service"
+      view:"service_view"
     }
   
   constructor( private router: Router, private activatedRoute: ActivatedRoute, private cookieService: CookieService, public apiService: ApiService, private readonly meta: MetaService ) { 
