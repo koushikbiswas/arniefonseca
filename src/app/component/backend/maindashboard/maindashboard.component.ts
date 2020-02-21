@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CookieService } from 'ngx-cookie-service';
+import {Router,ActivatedRoute} from '@angular/router'
 
 import { MetaService } from '@ngx-meta/core';
 
@@ -11,7 +12,8 @@ import { MetaService } from '@ngx-meta/core';
 export class MaindashboardComponent implements OnInit {
 public userCookies: any;
 public user_full_name: any = '';
-  constructor(public cookieService: CookieService, private readonly meta: MetaService) {
+public eventhomelist:any;
+  constructor(public cookieService: CookieService, private readonly meta: MetaService,public activatedRoute:ActivatedRoute) {
     // console.log(this.cookieService.getAll());
     // this.userCookies = JSON.parse(this.cookieService.get('user_details'));
 
@@ -35,6 +37,14 @@ public user_full_name: any = '';
    }
 
   ngOnInit() {
+
+    this.activatedRoute.data.forEach(resc=>{
+      console.log(resc.eventList.res)
+      this.eventhomelist = resc.eventList.res;
+
+      
+
+    })
   }
 
 }

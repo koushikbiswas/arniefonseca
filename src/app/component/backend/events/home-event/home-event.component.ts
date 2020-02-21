@@ -47,17 +47,23 @@ export class HomeEventComponent implements OnInit {
   }
 
   ngOnInit() {
-    let data: any = {
-      source:"events_view",
-      endpoint: "datalist",
-      token: this.cookieService.get('jwtToken')
 
-    }
-    this.apiService.getDatalist(data).subscribe((result: any)=>{
-     // console.log(result.res);
-      this.eventhomelist = result.res;
-      //console.log('>>>>>>>>>>>>>>>>>>>>>>>>>', this.blogCatConfig.datasource);
-    });
+    this.activatedRoute.data.forEach(resc=>{
+      console.log(resc.eventList.res)
+      this.eventhomelist = resc.eventList.res;
+
+      
+
+    })
+    // let data: any = {
+    //   source:"events_view",
+
+    // }
+    // this.apiService.CustomRequest(data,'datalist').subscribe((result: any)=>{
+    //  // console.log(result.res);
+    //   this.eventhomelist = result.res;
+    //   console.log('>>>>>>>>>>>>>>>>>>>>>>>>>', this.eventhomelist);
+    // });
 
   }
 
