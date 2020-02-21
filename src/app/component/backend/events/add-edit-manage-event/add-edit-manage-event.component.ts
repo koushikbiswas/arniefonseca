@@ -337,7 +337,7 @@ public image_url:any=environment['imageUpload_url'];
     //  File Upload Works 
     if (this.configData.files) {
 
-      if (this.configData.files.length > 1) { this.ErrCode = true; return; }
+      if (this.configData.files.length > 1 ) { this.ErrCode = true; return; }
       this.eventForm.value.event_image =
         {
           "basepath": this.configData.files[0].upload.data.basepath + '/' + this.configData.path + '/',
@@ -345,9 +345,10 @@ public image_url:any=environment['imageUpload_url'];
           "name": this.configData.files[0].name,
           "type": this.configData.files[0].type
         };
-    } else {
-      this.eventForm.value.event_image = false;
     }
+    //  else {
+    //   this.eventForm.value.delete.event_image
+    // }
     // console.log('>>>>>>>>>>>>>>',this.eventForm.value.event_image)
 
 

@@ -258,7 +258,7 @@ const routes: Routes = [
     data:{
       requestcondition:{
         source:'events_view',
-        condition:{}
+        condition:{},"limit":50
       },
       endpoint:'datalist'
 
@@ -326,7 +326,7 @@ const routes: Routes = [
     data:{
       requestcondition:{
         source:'events_view',
-        condition:{}
+        condition:{},"limit":50
       },
       endpoint:'datalist'
 
