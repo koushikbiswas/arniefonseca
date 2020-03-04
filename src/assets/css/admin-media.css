@@ -87,6 +87,7 @@
     .tablediv table td::before{content:attr(title);float:left;font-weight:700;text-transform:uppercase;text-align:left;margin-left:-33%;color:#000}
     .tablediv table td:last-child{border-bottom:0}
     .tablediv table td.mat-column-Actions{width:auto;padding-right:10px}
+    .adm_inner_banner .adm_inner_para {width: 80%;margin: 0 auto;display: block;}
     }
     @media only screen and (max-width: 767px) {
     .tablediv .searchbar .mat-form-field{display:flex!important;flex:1 1 50%}
