@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CookieService } from 'ngx-cookie-service';
-import { ApiService } from '../../../../../api.service';
+import { ApiService } from '../../../../../../api.service';
 
 @Component({
   selector: 'app-list-video-management',

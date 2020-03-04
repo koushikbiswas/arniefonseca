@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CookieService } from 'ngx-cookie-service';
-import { ApiService } from '../../../../api.service';
+import { ApiService } from '../../../../../api.service';
 
 import { MetaService } from '@ngx-meta/core';
 
@@ -26,6 +26,8 @@ export class ListVideosComponent implements OnInit {
   public videoManagementRoute:any="video-library-management/list";
   public searchEndpoint:any="datalist";
   public searchSourcename:any="video_category_view";
+  public user_details:any;
+  
   constructor(public activatedRoute: ActivatedRoute, public cookies :CookieService,public apiService : ApiService, private readonly meta: MetaService) {
 
     this.meta.setTitle('Arniefonseca - Videos');
@@ -40,6 +42,12 @@ export class ListVideosComponent implements OnInit {
     this.meta.setTag('og:type', 'website');
     this.meta.setTag('og:image', 'https://arniefonseca-backend.influxiq.com/assets/images/logo.png');
     this.meta.setTag('twitter:image', 'https://arniefonseca-backend.influxiq.com/assets/images/logo.png');
+
+
+    if (this.cookies.get('user_details') != undefined && this.cookies.get('user_details') != null && this.cookies.get('user_details') != '') {      
+      this.user_details = JSON.parse(this.cookies.get('user_details'));
+    }
+
 
    }
 
