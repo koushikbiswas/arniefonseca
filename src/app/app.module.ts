@@ -34,10 +34,10 @@ import { AddeditImageCategoryComponent} from './component/backend/manage-website
 import { ListingCategoryComponent} from './component/backend/manage-website/ImageGallery/categoryManagement/listing-category/listing-category.component';
 /**video library route start here**/
 import { VideoModule } from 'video-lib-influxiq';
-import { ListVideosComponent } from '../app/component/backend/video-management/list-videos/list-videos.component';
-import { VideoCategoryManagementComponent } from '../app/component/backend/video-management/video-category-management/video-category-management.component';
-import { AddEditVideosComponent } from '../app/component/backend/video-management/video-library-management/add-edit-videos/add-edit-videos.component';
-import { ListVideoManagementComponent }from '../app/component/backend/video-management/video-library-management/list-video-management/list-video-management.component';
+import { ListVideosComponent } from './component/backend/manage-website/video-management/list-videos/list-videos.component';
+import { VideoCategoryManagementComponent } from './component/backend/manage-website/video-management/video-category-management/video-category-management.component';
+import { AddEditVideosComponent } from './component/backend/manage-website/video-management/video-library-management/add-edit-videos/add-edit-videos.component';
+import { ListVideoManagementComponent }from './component/backend/manage-website/video-management/video-library-management/list-video-management/list-video-management.component';
 /**video library route end here**/
 import { SidenavService } from './../app/services/sidenav.service';
 import { DashboardComponent } from './component/backend/dashboard/dashboard.component';
