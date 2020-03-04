@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ApiService } from '../../../../../../api.service';
-
+import { CookieService } from 'ngx-cookie-service';
 import { MetaService } from '@ngx-meta/core';
 
 @Component({
@@ -18,7 +18,9 @@ export class AddEditVideosComponent implements OnInit {
   public sourceName:any ="video_management";
   public categorySourceName = "video_category";
   public SingleVideoData: any = [];
-  constructor(public activeRoute: ActivatedRoute,public apiService : ApiService, private readonly meta: MetaService) { 
+  public user_details:any;
+  
+  constructor(public activeRoute: ActivatedRoute,public apiService : ApiService, public cookies :CookieService, private readonly meta: MetaService) { 
 
 
     this.meta.setTitle('Arniefonseca - User Management');
@@ -33,6 +35,13 @@ export class AddEditVideosComponent implements OnInit {
     this.meta.setTag('og:type', 'website');
     this.meta.setTag('og:image', 'https://arniefonseca-backend.influxiq.com/assets/images/logo.png');
     this.meta.setTag('twitter:image', 'https://arniefonseca-backend.influxiq.com/assets/images/logo.png');
+
+
+    if (this.cookies.get('user_details') != undefined && this.cookies.get('user_details') != null && this.cookies.get('user_details') != '') {      
+      this.user_details = JSON.parse(this.cookies.get('user_details'));
+    }
+
+
   }
 
   ngOnInit() {
