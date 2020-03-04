@@ -1,0 +1,28 @@
+.singleButton{ margin-left: auto;}
+
+.gallerybg { background:url(../../../../../../../assets/images/videogallerybannerbg.jpg) no-repeat center center !important;background-size: cover !important;}
+
+ 
+@media only screen and (max-width: 1199px) {
+
+    .gallerybg  {
+        background-position: right top!important;
+        background-size: 200%!important;     height: auto;
+        padding: 15px;
+    padding-right: 15px;
+    text-align: center!important;
+    padding-top: 28%;
+    background-color: #2accd5!important;
+    padding-bottom: 30px;
+    }
+
+  
+}
+
+
+@media only screen and (max-width: 991px) {
+
+    .gallerybg  {    background-size: 290%!important;     padding-top: 40%;}
+
+ 
+}
