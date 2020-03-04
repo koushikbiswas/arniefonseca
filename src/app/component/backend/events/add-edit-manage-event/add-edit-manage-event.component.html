@@ -94,7 +94,7 @@
 
                         <mat-form-field>
                             <mat-label>Select State</mat-label>
-                            <mat-select formControlName="state" (selectionChange)="getCity($event.value);">
+                                <mat-select formControlName="state" (selectionChange)="getCity($event.value);">
                                 <mat-option [value]=0>Select a category</mat-option>
                                 <mat-option *ngFor="let state of stateList;" value="{{ state.name }}">{{ state.name }}</mat-option>
                               </mat-select>
