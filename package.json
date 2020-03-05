@@ -71,7 +71,7 @@
     "serialize-javascript": "^2.1.2",
     "service-lib-influxiq": "0.0.4",
     "team-lib-influxiq": "0.0.15",
-    "testimonial-lib-influxiq": "0.0.4",
+    "testimonial-lib-influxiq": "0.0.5",
     "tslib": "^1.9.0",
     "universal-webpack": "^0.6.12",
     "video-lib-influxiq": "^0.1.3",
