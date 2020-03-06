@@ -46,6 +46,7 @@ export class ListingTestimonialComponent implements OnInit {
 
     //console.log('---------------kbtest serverUrl-------------', this.ApiService.serverUrl);
   this.activatedRoute.data.subscribe(resolveData => {
+    //console.warn(resolveData);
     this.testimonialListConfig.datasource = resolveData.testimonialList.res;
     //  console.log('---------------kbtest testimonialList-------------', this.testimonialListConfig.datasource );
     this.testimonialListConfig.jwtToken = this.cookieService.get('jwtToken');
