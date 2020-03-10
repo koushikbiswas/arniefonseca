@@ -14,7 +14,7 @@ export class AddeditImageComponent implements OnInit {
   public imageCategorySourceName:any="imageGallery_category";
   public getDataEndpoint:any="datalist";
   public addEndpoint:any="addorupdatedata";
-  public ListingPageUrl:any='image-gallery/list';
+  public ListingPageUrl:any='image-gallery/category-management/list';
   public editedData:any=[];
 
   public configData: any = {
@@ -27,6 +27,7 @@ export class AddeditImageComponent implements OnInit {
     prefix: "imageGallery-picture_",
     formSubmit: false,
     conversionNeeded: 0,
+    aspectratio: [467/638,467/467],
     bucketName: "image-gallery-bucket"
   }
 

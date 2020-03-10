@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CookieService } from 'ngx-cookie-service';
-import { ApiService } from '../../../../../api.service';
+import { ApiService } from '../../../../../../api.service';
 
 @Component({
   selector: 'app-list-video-management',
@@ -19,9 +19,16 @@ export class ListVideoManagementComponent implements OnInit {
   public token:any=this.cookies.get('jwtToken');
   public deleteendpoint:any="deletesingledata";
   public addPageRoute:any="video-library-management/add";
-  public editRoute :any="video-library-management/edit"
+  public editRoute :any="video-library-management/edit";
+  public user_details:any;
 
-  constructor(public activateRoute : ActivatedRoute, public cookies :CookieService,public apiService : ApiService) { }
+  constructor(public activateRoute : ActivatedRoute, public cookies :CookieService,public apiService : ApiService) { 
+
+    if (this.cookies.get('user_details') != undefined && this.cookies.get('user_details') != null && this.cookies.get('user_details') != '') {      
+      this.user_details = JSON.parse(this.cookies.get('user_details'));
+    }
+
+  }
 
   ngOnInit() {
     this.activateRoute.data.forEach((data)=>{

@@ -324,7 +324,10 @@ addcategory-dialog .mat-dialog-content{margin:0!important}
 .breadcrumb li a:hover:after{border-left-color:#b5bdbf!important}
 app-bk-leftdiv{position:relative;z-index:999}
 .formspan{background-color:#e7e9ea;border:6px solid #fff;border-bottom:10px solid #fff;display:block!important;width:auto!important;position:relative;z-index:9}
-.formspan .mat-checkbox{float:left}
+.formspan .mat-checkbox{float:none}
+.buttonclsnew button.submitbtn.mat-raised-button.mat-primary {
+        margin-right: 5px !important;
+    }
 .formspan .example-container{display:flex;flex-direction:column;width:98%;padding:14px;margin-bottom:0}
 .adminwrappercls .bloglists .mat-card{display:block!important;align-items:center!important;justify-content:flex-start!important;padding:0!important;flex-wrap:wrap!important;background:transparent!important;height:auto!important}
 .adminwrappercls .mat-form-field-appearance-legacy .mat-form-field-wrapper{padding-bottom:0!important}

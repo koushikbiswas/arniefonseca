@@ -1,6 +1,6 @@
 .singleButton{ margin-left: auto;}
 
-.gallerybg { background:url(../../../../../../../assets/images/testimonialbannerbg.jpg) no-repeat center center !important;background-size: cover !important;}
+.gallerybg { background:url(../../../../../../../assets/images/videogallerybannerbg.jpg) no-repeat center center !important;background-size: cover !important;}
 
  
 @media only screen and (max-width: 1199px) {
@@ -12,7 +12,7 @@
     padding-right: 15px;
     text-align: center!important;
     padding-top: 28%;
-    background-color: #2ca7db!important;
+    background-color: #2accd5!important;
     padding-bottom: 30px;
     }
 

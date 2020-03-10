@@ -94,17 +94,10 @@ public image_url:any=environment['imageUpload_url'];
   }
 
 
-   /**ckeditor start here*/
-  //  public Editor = ClassicEditor;  //for ckeditor
-  //  editorConfig = {
-  //    placeholder: 'Description....',
-     
-  //  };
   
    public model = {
      editorData: ''
    };
-   /**ckeditor end here*/  
 
 //image uplolad
   //  public configData: any = {
@@ -340,11 +333,11 @@ public image_url:any=environment['imageUpload_url'];
 
   //form submit function//
   submit(){
-    console.log('hit')
+    // console.log('hit')
     //  File Upload Works 
     if (this.configData.files) {
 
-      if (this.configData.files.length > 1) { this.ErrCode = true; return; }
+      if (this.configData.files.length > 1 ) { this.ErrCode = true; return; }
       this.eventForm.value.event_image =
         {
           "basepath": this.configData.files[0].upload.data.basepath + '/' + this.configData.path + '/',
@@ -352,9 +345,10 @@ public image_url:any=environment['imageUpload_url'];
           "name": this.configData.files[0].name,
           "type": this.configData.files[0].type
         };
-    } else {
-      this.eventForm.value.event_image = false;
     }
+    //  else {
+    //   this.eventForm.value.delete.event_image
+    // }
     // console.log('>>>>>>>>>>>>>>',this.eventForm.value.event_image)
 
 
@@ -386,7 +380,7 @@ public image_url:any=environment['imageUpload_url'];
     // console.log('>>>>>>>>>>>')
 
     if(this.eventForm.valid){
-      console.log('>>>',this.eventForm.value)
+      // console.log('>>>',this.eventForm.value)
 
       this.eventForm.value.date=parseInt(eventDate);
 
@@ -412,12 +406,12 @@ public image_url:any=environment['imageUpload_url'];
         "token": this.cookieService.get('jwtToken')
       };
 
-      console.log(postData)
+      // console.log(postData)
 
       this.apiService.CustomRequest(postData,'addorupdatedata').subscribe((response: any) => {
         let result: any;
         result = response;
-        console.log('>>>>>>', result)
+        // console.log('>>>>>>', result)
 
         if (result.status == "success") {
 
@@ -426,8 +420,9 @@ public image_url:any=environment['imageUpload_url'];
          this.dialogRef.close();
           }, 500);
 
-            this.router.navigateByUrl('/manage-event-listing');
-
+            this.router.navigate(['/manage-event-listing/']);
+       
+            
         }
 
       })

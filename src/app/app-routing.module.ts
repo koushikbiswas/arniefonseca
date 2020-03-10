@@ -20,10 +20,10 @@ import { AddeditImageCategoryComponent} from './component/backend/manage-website
 import { ListingCategoryComponent} from './component/backend/manage-website/ImageGallery/categoryManagement/listing-category/listing-category.component';
 /**image gallery route end here**/
 /**video library route start here**/
-import { ListVideosComponent } from '../app/component/backend/video-management/list-videos/list-videos.component';
-import { VideoCategoryManagementComponent } from '../app/component/backend/video-management/video-category-management/video-category-management.component';
-import { AddEditVideosComponent } from '../app/component/backend/video-management/video-library-management/add-edit-videos/add-edit-videos.component';
-import { ListVideoManagementComponent }from '../app/component/backend/video-management/video-library-management/list-video-management/list-video-management.component';
+import { ListVideosComponent } from './component/backend/manage-website/video-management/list-videos/list-videos.component';
+import { VideoCategoryManagementComponent } from './component/backend/manage-website/video-management/video-category-management/video-category-management.component';
+import { AddEditVideosComponent } from './component/backend/manage-website/video-management/video-library-management/add-edit-videos/add-edit-videos.component';
+import { ListVideoManagementComponent }from './component/backend/manage-website/video-management/video-library-management/list-video-management/list-video-management.component';
 /**video library route end here**/
 import { DashboardComponent } from './component/backend/dashboard/dashboard.component';
 
@@ -258,7 +258,7 @@ const routes: Routes = [
     data:{
       requestcondition:{
         source:'events_view',
-        condition:{}
+        condition:{},"limit":50
       },
       endpoint:'datalist'
 
@@ -326,7 +326,7 @@ const routes: Routes = [
     data:{
       requestcondition:{
         source:'events_view',
-        condition:{}
+        condition:{},"limit":50
       },
       endpoint:'datalist'
 
@@ -576,7 +576,18 @@ data:{
 
 
   { path: 'affiliate/add', component: AddAffiliateComponent },
-  { path: 'affiliate/edit/:_id', component: AddAffiliateComponent },
+  { path: 'affiliate/edit/:_id', component: AddAffiliateComponent,
+        canActivate:[AuthGuard],
+        resolve:{affiliateList:ResolveService},
+        data:{
+          requestcondition:{
+            source:'users',
+            condition:{}
+          },
+          endpoint:'datalist'
+
+  },
+  },
   { path: 'customer/add', component: AddCustomerComponent, },
   { path: 'customer/edit/:_id', component: AddCustomerComponent },
 
