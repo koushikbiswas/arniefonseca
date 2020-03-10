@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CookieService } from 'ngx-cookie-service';
 import { ApiService } from '../../../../../../api.service';
-
 import { MetaService } from '@ngx-meta/core';
 
 @Component({
@@ -10,6 +9,8 @@ import { MetaService } from '@ngx-meta/core';
   templateUrl: './listing-category.component.html',
   styleUrls: ['./listing-category.component.css']
 })
+
+
 export class ListingCategoryComponent implements OnInit {
   public user_details:any;
   public imageGalleryList: any = [];
