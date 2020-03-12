@@ -1,33 +1,122 @@
 <div class="adminwrappercls">
-    <div class="admcls"><app-bk-header></app-bk-header></div>
-      <div class="main-content-wrap">
-        <mat-card  class="generalcls blog" style="padding: 0 !important;">
-            <img src="../../../../assets/images/adm-dashboard-img1.jpg" style="width: 100%; display: block; margin: 0; padding: 0;">
-            <img src="../../../../assets/images/adm-dashboard-img2.jpg" style="width: 100%; display: block; margin: 0; padding: 0;">
-            <img src="../../../../assets/images/adm-dashboard-img3.jpg" style="width: 100%; display: block; margin: 0; padding: 0;">
+    <div class="admcls">
+        <app-bk-header></app-bk-header>
+    </div>
+    <div class="newcontainer">
+        <span class="dashboardbanner bannermainwrapper">
+            <mat-card class="bannerblock">
+                <mat-card-content class="bannertextwrapper">
+                    <h2><span>Welcome to</span>  arnie fonseca </h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </mat-card-content>
+            </mat-card>
+        </span>
+<mat-card class="dashboardblock2">
+<mat-list>
+    <mat-list-item>
+        <span class="textwrapper">
+            <h1>150</h1>
+            <p>Affiliate</p>
+        </span>
+        <img src="../../../../assets/images/dashboardicon1.png">
+        <span class="buttonwrapper">
+            <button mat-button>View All</button>
+        </span>
+    </mat-list-item>
+
+    <mat-list-item>
+        <span class="textwrapper">
+            <h1>300</h1>
+            <p>CUSTOMER</p>
+        </span>
+        <img src="../../../../assets/images/dashboardicon2.png">
+        <span class="buttonwrapper">
+            <button mat-button>View All</button>
+        </span>
+    </mat-list-item>
+
+    <mat-list-item>
+        <span class="textwrapper">
+            <h1>20</h1>
+            <p><span>UPCOMING</span> EVENTS</p>
+        </span>
+        <img src="../../../../assets/images/dashboardicon3.png">
+        <span class="buttonwrapper">
+            <button mat-button>View All</button>
+        </span>
+    </mat-list-item>
+
+    <mat-list-item>
+        <span class="textwrapper">
+            <h1>1555</h1>
+            <p>BOOKINGS</p>
+        </span>
+        <img src="../../../../assets/images/dashboardicon4.png">
+        <span class="buttonwrapper">
+            <button mat-button>View All</button>
+        </span>
+    </mat-list-item>
+
+
+</mat-list>
+</mat-card>
+
+<mat-card class="dashboardblock3">
+    <img src="../../../../assets/images/adm-dashboard-img2.jpg"
+    style="width: 100%; display: block; margin: 0; padding: 0;">
+</mat-card>
+<mat-card class="dashboardblock4">
+    <span class="titlewrapper">
+        <h2>Social Advo Banners</h2>
+    </span>
+    <span class="socialadvowrapper">
+        <mat-list>
+            <mat-list-item>
+                <span class="imgwrapper">
+                    <img src="../../../../assets/images/socialadvoimage1.png">
+                </span>
+                <span class="textwrapper"></span>
+                <span class="buttonwrapper"></span>
+                <span class="socialiconwrapper"></span>
+            </mat-list-item>
+        </mat-list>
+    </span>
+</mat-card>
+
+        
+    </div>
+
+    <div class="main-content-wrap">
+        <mat-card class="generalcls blog" style="padding: 0 !important;">
+            <!-- <img src="../../../../assets/images/adm-dashboard-img1.jpg"
+                style="width: 100%; display: block; margin: 0; padding: 0;"> -->
+           
+            <img src="../../../../assets/images/adm-dashboard-img3.jpg"
+                style="width: 100%; display: block; margin: 0; padding: 0;">
             <!--<img src="../../../../assets/images/adm-dashboard-img4.jpg" style="width: 100%; display: block; margin: 0; padding: 0;">-->
 
 
-     <span class="home_event_list">
-         <h2>Event</h2>
+            <span class="home_event_list">
+                <h2>Event</h2>
 
-         <app-home-event></app-home-event>
-
-
+                <app-home-event></app-home-event>
 
 
-          <a class="eventviewallbtn" [routerLink]="['/manage-event-listing']">
+
+
+                <a class="eventviewallbtn" [routerLink]="['/manage-event-listing']">
                     View All
-                  </a>
+                </a>
 
-         <span class="clear"></span>
+                <span class="clear"></span>
 
-     </span>
+            </span>
 
 
-            <img src="../../../../assets/images/adm-dashboard-img5.jpg" style="width: 100%; display: block; margin: 0; padding: 0;">
+            <img src="../../../../assets/images/adm-dashboard-img5.jpg"
+                style="width: 100%; display: block; margin: 0; padding: 0;">
         </mat-card>
-          <!-- <mat-card class="dashboard_block1">
+        <!-- <mat-card class="dashboard_block1">
 
               <mat-card-content>
           
@@ -320,6 +409,6 @@
           
               <mat-card class="clear"></mat-card>
           </mat-card> -->
-      </div>
-  </div>
-  <app-bk-footer></app-bk-footer>
+    </div>
+</div>
+<app-bk-footer></app-bk-footer>

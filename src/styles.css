@@ -175,6 +175,7 @@ ckeditor{margin-bottom:9px!important;display:inline-block;width:100%}
     left: 0;
     position: fixed;
   }
+  .example-card .overlay{background: none;}
   .app-loading {
     position: absolute;
     top: 50%;
