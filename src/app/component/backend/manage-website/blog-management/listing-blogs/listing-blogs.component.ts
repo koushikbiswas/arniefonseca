@@ -32,7 +32,7 @@ export class ListingBlogsComponent implements OnInit {
       endpoint: "datalist"
     }
     this.apiService.getDatalist(data).subscribe((result: any)=>{
-      console.log(result.res);
+      //console.log(result.res);
       this.blogListConfig.datasource = result.res;
       this.blogListConfig.jwtToken = this.cookieService.get('jwtToken');
     });
