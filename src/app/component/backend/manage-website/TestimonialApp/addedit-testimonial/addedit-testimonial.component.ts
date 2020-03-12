@@ -14,7 +14,7 @@ export class AddeditTestimonialComponent implements OnInit {
 public configAddEdit: any = {
   action: "add",
   // endpoint: "https://9v41bpikik.execute-api.us-east-1.amazonaws.com/production/api/addorupdatedata",
-  endpoint: this.ApiService.serverUrl + 'addorupdatedata',
+  endpoint: this.ApiService.serverUrl + 'testimonialaddandreview',
   source: "testimonial",
   condition: {},
   defaultData: null,

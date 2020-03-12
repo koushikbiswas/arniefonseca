@@ -297,7 +297,7 @@ const routes: Routes = [
   },
   {
     path: 'testimonial/list', component: ListingTestimonialComponent, resolve: { testimonialList: ResolveService },
-    data: { requestcondition: { source: 'testimonial_view', condition: {} }, endpoint: 'datalist' }
+    data: { requestcondition: { source: 'testimonial_backend_list_view', condition: {} }, endpoint: 'datalist' }
   },
 
   { path: 'booking-report', component: BookingReportComponent },
