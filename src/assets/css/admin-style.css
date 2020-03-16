@@ -276,7 +276,7 @@ ck-editor [formcontrolname="description"] {margin-top: 10px !important;display: 
 .mat-card-image:first-child {margin-top: 0;}
 .searchblock{margin:0;padding:0;position:relative;display:block}
 .searchblock .btnorange{min-width:160px;border-radius:0;padding:9px 18px 7px!important;margin:0!important;display:flex!important;align-items:center}
-.searchblock{background:#dde2e5!important;padding:10px 10px 10px 22px !important;display:block;margin:10px auto 0px!important}
+.searchblock{background:#dde2e5!important;padding:10px 10px 10px 22px !important;display:block;margin:10px auto 10px!important}
 .searchblock span{display:flex;align-items:center;position:relative;z-index:99}
 .searchblock .searchblockwrapper{display:flex;align-items:stretch;justify-content:space-between;flex-direction:row}
 .searchblock span h2{font-family:"Helvetica-Normal";color:#373b3d;font-size:24px!important;margin:0}
