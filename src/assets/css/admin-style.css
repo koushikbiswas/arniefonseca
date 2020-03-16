@@ -272,6 +272,8 @@ addcategory-dialog .mat-dialog-content{margin:0!important}
 .tablediv table .actionnewbtn span{cursor:pointer}
 .tablediv.trainingtablediv{margin-top:0!important}
 /* .tablediv.trainingtablediv table{margin-top:27px} */
+ck-editor [formcontrolname="description"] {margin-top: 10px !important;display: block;}
+.mat-card-image:first-child {margin-top: 0;}
 .searchblock{margin:0;padding:0;position:relative;display:block}
 .searchblock .btnorange{min-width:160px;border-radius:0;padding:9px 18px 7px!important;margin:0!important;display:flex!important;align-items:center}
 .searchblock{background:#dde2e5!important;padding:10px 10px 10px 22px !important;display:block;margin:10px auto 0px!important}
