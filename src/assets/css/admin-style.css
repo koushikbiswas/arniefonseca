@@ -75,7 +75,7 @@ i{font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line
 .mat-dialog-content{padding:0 24px!important;box-shadow:none!important}
 .mat-form-field{margin:0 10px}
  .admcls .mat-card{padding:0!important;border-radius:0!important;box-shadow:none}
-.admcls .header{width:100%;height:63px;box-shadow:0 1px 15px rgba(0,0,0,0.04),0 1px 6px rgba(0,0,0,0.04);display:flex;align-items:stretch;flex-wrap:wrap;justify-content:space-between;background:#fafafa;z-index:999999}
+.admcls .header{width:100%;height:63px;box-shadow:0 1px 15px rgba(0,0,0,0.04),0 1px 6px rgba(0,0,0,0.04);display:flex;align-items:stretch;flex-wrap:wrap;justify-content:space-between;background:#fafafa;z-index:99}
 .admcls .header .toolbar-row{padding: 0!important;flex-wrap: wrap;justify-content: center;}
 .admcls .header .toolbar-row .logo{width: 234px;padding: 15px 13px;display: -webkit-box;display: flex;-webkit-box-align: center;align-items: center;box-shadow: 0px 0 5px -2px #888;border-right: 1px solid #e4e4e4;}
 .admcls .header .toolbar-row .logo img{max-width:100%}
@@ -279,7 +279,7 @@ ck-editor [formcontrolname="description"] {margin-top: 10px !important;display: 
 .searchblock{background:#dde2e5!important;padding:10px 10px 10px 22px !important;display:block;margin:10px auto 10px!important}
 .searchblock span{display:flex;align-items:center;position:relative;z-index:99}
 .searchblock .searchblockwrapper{display:flex;align-items:stretch;justify-content:space-between;flex-direction:row}
-.searchblock span h2{font-family:"Helvetica-Normal";color:#373b3d;font-size:24px!important;margin:0}
+.searchblock span h2{font-family:"Helvetica-Normal";color:#373b3d;font-size:24px!important;margin:0;text-transform: uppercase;}
 .tablediv .searchbar .mat-form-field .mat-form-field-infix{margin-bottom:0}
 .tablediv .searchbar .mat-form-field .mat-form-field-prefix,.tablediv .searchbar .mat-form-field .mat-form-field-suffix{display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center}
 /* .bloglists .tablediv .searchbar{padding-right:200px} */
@@ -563,7 +563,7 @@ app-bk-leftdiv{position:relative;z-index:999}
 .tablediv .titlewrapper {background-color: transparent;padding: 0;display: block;}
 
 
-.titlewrapper h2{color: #2e2e2e; text-transform: uppercase; font-family: 'HelveticaBold'; font-size: 30px;}
+.titlewrapper h2{color: #2e2e2e; text-transform: capitalize; font-family: 'HelveticaBold'; font-size: 30px;}
 .dashboardblock4{padding: 0 !important;}
 .socialadvowrapper mat-list mat-list-item{
     height: auto !important;

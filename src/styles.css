@@ -300,6 +300,9 @@ button.submitbtn.mat-raised-button.mat-primary{margin-right: 15px;display: inlin
 .bred_cram_wrapper_list.bred_cram_wrapper_list_front .bred_cram_wrapper .mat-list-item a:hover{cursor:default;color:#0fc47e}
 .mat-checkbox-checked.mat-primary .mat-checkbox-background, .mat-checkbox-indeterminate.mat-primary .mat-checkbox-background {background-color: #0fc47e;}
 
+
+.videogallery .titlewrapper h2{text-transform: uppercase;}
+
 .tablediv .searchbar .material-icons {font-size: 16px;text-align: center;}
 .tablediv .searchbar{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;flex-direction:row;-webkit-box-pack:inherit!important;padding:10px;justify-content:flex-start!important;margin-top:0;z-index:9;height:auto;display:flex;background: #bebebe;}
 /* .tablediv .searchbar{position: absolute;width: top;top: -64px;flex-grow: 60%;width: 92%;left: 0;} */

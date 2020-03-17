@@ -1,4 +1,6 @@
 .videogallery{background:url(../../../../../../assets/images/videogallerybannerbg.jpg) no-repeat center center!important;background-size:cover!important}
+
+
 @media only screen and (max-width: 1199px) {
 .videogallery{background-position:right top!important;background-size:200%!important;height:auto;padding:15px;padding-right:15px;text-align:center!important;padding-top:28%;background-color:#2bcdd4!important;padding-bottom:30px}
 }
