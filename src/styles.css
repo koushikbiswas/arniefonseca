@@ -324,6 +324,27 @@ button.submitbtn.mat-raised-button.mat-primary{margin-right: 15px;display: inlin
 .mat-form-field-appearance-legacy .mat-form-field-infix {padding: 1em!important;background: #fff;}
 .mat-form-field-appearance-legacy .mat-form-field-infix {margin-bottom: 14px!important;}
 .tablediv .searchbar span{color: #fff;font-size: 15px;}
+.tablediv .tablewrapper tr td.mat-column-additional_details{width: 30%;}
+.tablediv .tablewrapper tr td.mat-column-additional_details span{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+}
+
+.tablediv .tablewrapper tr td.mat-column-description span{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+}
+
+.tablediv .tablewrapper tr td.mat-column-service_img span{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+}
 
 @media only screen and (max-width: 991px) {
   .tablediv .searchbar span{display: flex;justify-content: space-between;}
