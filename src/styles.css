@@ -324,7 +324,7 @@ button.submitbtn.mat-raised-button.mat-primary{margin-right: 15px;display: inlin
 .mat-form-field-appearance-legacy .mat-form-field-infix {padding: 1em!important;background: #fff;}
 .mat-form-field-appearance-legacy .mat-form-field-infix {margin-bottom: 14px!important;}
 .tablediv .searchbar span{color: #fff;font-size: 15px;}
-.tablediv .tablewrapper tr td.mat-column-additional_details{width: 30%;}
+.tablediv .tablewrapper tr td.mat-column-additional_details{width: 28%;}
 .tablediv .tablewrapper tr td.mat-column-additional_details span{
   overflow: hidden;
   display: -webkit-box;
