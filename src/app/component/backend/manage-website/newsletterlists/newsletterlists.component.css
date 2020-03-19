@@ -1,3 +1,9 @@
+
+.manageblog{background:url(../../../../../assets/images/newsletterbgadmin.jpg) no-repeat center center !important;background-size: cover !important;}
+.generalcls.blog .adm_inner_banner .adm_inner_title.mat-card-title{ word-wrap: none!important;}
+
+
+
 .Settings_tab_block{ display: block!important; width: 49%; float: left;     background: #dde2e5;}
 .Settings_tab_block:nth-of-type(2){ display: block!important; width: 49%; float: right;}
 
@@ -27,8 +33,41 @@
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
+
+@media only screen and (max-width: 1199px) {
+
+    .manageblog  {
+        background-position: right top!important;
+        background-size: 200%!important;     height: auto;
+        padding: 15px;
+    padding-right: 15px;
+    text-align: center!important;
+    padding-top: 28%;
+    background-color: #2ca7db!important;
+    padding-bottom: 30px;
+    }
+
+    .generalcls.blog .adm_inner_banner .adm_inner_title.mat-card-title{     text-align: center;
+        display: block;}
+
+        .adm_inner_banner .adm_inner_para{     text-align: center!important;
+            display: block!important; width: 100%!important;}
+}
+
+
+
 @media only screen and (max-width: 1199px) {
     .Settings_tab_block{ width: 100%; float: none;}
 
     .Settings_tab_block:nth-of-type(2){ float:none;}
+}
+
+
+@media only screen and (max-width: 991px) {
+
+    .manageblog  {    background-size: 290%!important;     padding-top: 40%;}
+
+    .generalcls.blog .adm_inner_banner .adm_inner_title.mat-card-title{  font-size: 30px!important;}
+
+    .adm_inner_banner .adm_inner_para{ font-size: 20px!important;}
 }

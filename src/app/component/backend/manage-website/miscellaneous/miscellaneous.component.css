@@ -1,9 +1,7 @@
-/* .bloglists .tablediv {
-    margin-top: 0 !important;
-} */
 
-.customerbgadmin{background:url(../../../../../assets/images/customerlistbgadmin.jpg) no-repeat center center !important;background-size: cover !important;}
+.miscellaniousbg{background:url(../../../../../assets/images/miscellaniousbgadmin.jpg) no-repeat center center !important;background-size: cover !important;}
 .generalcls.blog .adm_inner_banner .adm_inner_title.mat-card-title{ word-wrap: none!important;}
+
 
 
 .Settings_tab_block{ display: block!important; width: 49%; float: left;     background: #dde2e5;}
@@ -38,7 +36,7 @@
 
 @media only screen and (max-width: 1199px) {
 
-    .customerbgadmin  {
+    .miscellaniousbg  {
         background-position: right top!important;
         background-size: 200%!important;     height: auto;
         padding: 15px;
@@ -67,7 +65,7 @@
 
 @media only screen and (max-width: 991px) {
 
-    .customerbgadmin  {    background-size: 290%!important;     padding-top: 40%;}
+    .miscellaniousbg  {    background-size: 290%!important;     padding-top: 43%;}
 
     .generalcls.blog .adm_inner_banner .adm_inner_title.mat-card-title{  font-size: 30px!important;}
 

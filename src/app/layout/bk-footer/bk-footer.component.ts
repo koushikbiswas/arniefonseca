@@ -11,7 +11,8 @@ export class BkFooterComponent implements OnInit {
 
   public user_data: any;
   constructor(public router: Router, public cookieService: CookieService, public activeroute: ActivatedRoute) {
-    // this.user_data = JSON.parse(this.cookieService.get('user_details'))
+    this.user_data = JSON.parse(this.cookieService.get('user_details'));
+    
     // console.log(this.user_data)
    }
 

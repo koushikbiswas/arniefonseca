@@ -35,7 +35,7 @@ a{cursor:pointer;outline:none}
 i{font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 .admgeneralcls .mat-card-header-text{margin:0!important;width:100%}
 .admgeneralcls .mat-card-title{font-family:'RalewayRegular';font-size:48px!important;line-height:48px!important;text-transform:uppercase;margin:0;padding:0;margin-bottom:30px!important;color:#2a2b2c;display:flex;width:100%;align-items:center;justify-content:space-between}
-.admgeneralcls .mat-card-title span span{font-family:'RalewayBold';padding-left:10px}
+.admgeneralcls .mat-card-title span span{font-family:'HelveticaBold';padding-left:10px}
 .admgeneralcls p{font-family:'HelveticaNormal';font-size:18px;color:#2b2c2d;margin:0;padding:0;line-height:25px;font-weight:400}
 .admgeneralcls p strong{text-transform:uppercase;font-family:'HelveticaBold'}
 .admgeneralcls{padding:77px 0;border-top:1px solid #f5f5f5}
@@ -65,17 +65,17 @@ i{font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line
 .mat-dialog-content .mat-card .mat-card-content{white-space:normal;word-break:break-word}
 .mat-dialog-content .mat-card-header .mat-card-title{margin-bottom:0;font-size:16px}
 .mat-dialog-content .mat-dialog-actions{margin-bottom:0;justify-content:center}
-.mat-dialog-content .mat-dialog-actions button{display:inline-block;height:auto;background:#c33;font-size:18px;color:#fff!important;text-transform:uppercase;font-family:'Ralewaybold';text-decoration:none!important;line-height:normal;text-align:center;margin:0 auto;white-space:normal;margin-top:10px;padding:12px 10px;border-radius:0!important}
+.mat-dialog-content .mat-dialog-actions button{display:inline-block;height:auto;background:#c33;font-size:18px;color:#fff!important;text-transform:uppercase;font-family:'HelveticaBold';text-decoration:none!important;line-height:normal;text-align:center;margin:0 auto;white-space:normal;margin-top:10px;padding:12px 10px;border-radius:0!important}
 .cdk-global-overlay-wrapper{align-items:center!important}
 .cdk-global-overlay-wrapper .mat-bottom-sheet-container bottom-sheet .mat-nav-list{display:flex;padding-top:0!important}
-.mat-bottom-sheet-container bottom-sheet .mat-nav-list .mat-list-item{display:inline-block;height:auto;background:#c33;font-size:18px;color:#fff!important;text-transform:uppercase;font-family:'Ralewaybold';text-decoration:none!important;line-height:normal;text-align:center;margin:5px;white-space:normal;padding:12px 10px;border-radius:0!important}
+.mat-bottom-sheet-container bottom-sheet .mat-nav-list .mat-list-item{display:inline-block;height:auto;background:#c33;font-size:18px;color:#fff!important;text-transform:uppercase;font-family:'HelveticaBold';text-decoration:none!important;line-height:normal;text-align:center;margin:5px;white-space:normal;padding:12px 10px;border-radius:0!important}
 .mat-bottom-sheet-container bottom-sheet .mat-nav-list{text-align:center}
-.mat-dialog-container .mat-dialog-actions button{display:inline-block;height:auto;background:#c33;font-size:18px;color:#fff!important;text-transform:uppercase;font-family:'Ralewaybold';text-decoration:none!important;line-height:normal;text-align:center;margin:0 auto;white-space:normal;margin-top:10px;padding:12px 10px;border-radius:0!important}
+.mat-dialog-container .mat-dialog-actions button{display:inline-block;height:auto;background:#c33;font-size:18px;color:#fff!important;text-transform:uppercase;font-family:'HelveticaBold';text-decoration:none!important;line-height:normal;text-align:center;margin:0 auto;white-space:normal;margin-top:10px;padding:12px 10px;border-radius:0!important}
 .mat-dialog-container .mat-card-header .mat-card-title{margin-bottom:0;font-size:16px;font-weight:600}
 .mat-dialog-content{padding:0 24px!important;box-shadow:none!important}
 .mat-form-field{margin:0 10px}
  .admcls .mat-card{padding:0!important;border-radius:0!important;box-shadow:none}
-.admcls .header{width:100%;height:63px;box-shadow:0 1px 15px rgba(0,0,0,0.04),0 1px 6px rgba(0,0,0,0.04);display:flex;align-items:stretch;flex-wrap:wrap;justify-content:space-between;background:#fafafa;z-index:999999}
+.admcls .header{width:100%;height:63px;box-shadow:0 1px 15px rgba(0,0,0,0.04),0 1px 6px rgba(0,0,0,0.04);display:flex;align-items:stretch;flex-wrap:wrap;justify-content:space-between;background:#fafafa;z-index:99}
 .admcls .header .toolbar-row{padding: 0!important;flex-wrap: wrap;justify-content: center;}
 .admcls .header .toolbar-row .logo{width: 234px;padding: 15px 13px;display: -webkit-box;display: flex;-webkit-box-align: center;align-items: center;box-shadow: 0px 0 5px -2px #888;border-right: 1px solid #e4e4e4;}
 .admcls .header .toolbar-row .logo img{max-width:100%}
@@ -196,7 +196,7 @@ addcategory-dialog .mat-dialog-actions{padding:8px 0;display:flex;flex-wrap:wrap
 addcategory-dialog .mat-dialog-content{margin:0!important}
 .mat-dialog-container addcategory-dialog .mat-dialog-actions button{margin:0 5px!important}
 .mat-dialog-container addcategory-dialog .mat-dialog-actions button:first-child{margin-left:0!important}
-.adminbtnred,.adminbtnred:hover{display:inline-block!important;height:auto;background:#c33!important;font-size:18px;color:#fff!important;text-transform:uppercase;font-family:'Ralewaybold';text-decoration:none!important;line-height:normal;text-align:center;margin:0 auto;white-space:normal;margin-top:0;padding:12px 10px;border-radius:0!important}
+.adminbtnred,.adminbtnred:hover{display:inline-block!important;height:auto;background:#c33!important;font-size:18px;color:#fff!important;text-transform:uppercase;font-family:'HelveticaBold';text-decoration:none!important;line-height:normal;text-align:center;margin:0 auto;white-space:normal;margin-top:0;padding:12px 10px;border-radius:0!important}
 .adminbtnred span{text-transform:uppercase!important;color:#fff!important;margin-left:0!important}
 .tablediv table{border:0 solid #ccc;border-collapse:collapse;padding:0;width:100%;max-width:100%}
 .tablediv table caption{font-size:1.5em;margin:.5em 0 .75em}
@@ -207,7 +207,7 @@ addcategory-dialog .mat-dialog-content{margin:0!important}
 .tablediv lib-listing .container{width:100%;padding:0}
 .tablediv table .empycell{border-bottom:0 solid #fff!important}
 .tablediv table th,.tablediv table td{padding:.625em;text-align:left;display:table-cell;border-bottom:1px solid #959595!important}
-.tablediv table th{font-family:'Helvetica-Normal';text-transform:uppercase;font-size:18px;color:#fff;background:#465157;padding:10px;letter-spacing:.1em;text-transform:capitalize}
+.tablediv table th{font-family:'Helvetica-Normal';text-transform:uppercase;font-size:14px;color:#fff;background:#465157;padding:10px;letter-spacing:.1em;text-transform:uppercase}
 .tablediv table td{font-family:'Helvetica-Normal';font-size:16px;padding:6px;white-space:normal;word-break:break-word;color:rgba(0,0,0,.87)}
 .tablediv table td br{display:none}
 .tablediv table td.text-center{text-align:center!important}
@@ -240,7 +240,7 @@ addcategory-dialog .mat-dialog-content{margin:0!important}
 .tablediv table th.empycell,.tablediv table td.empycell{width:2.5%;text-align:left}
 .tablediv .container{background:transparent!important;width:100%;margin-bottom:10px}
 .tablediv .container br{display:none}
-.tablediv .mat-card{background:transparent!important;padding:0;margin-top:5px}
+.tablediv .mat-card{background:transparent!important;padding:0;}
 .tablediv .mat-paginator{background-color:#0fc47e;margin-top:5px;width:100%}
 .tablediv table.mat-table{width:100%}
 .tablediv.actionsectionhide table.mat-table thead th:last-child{display:none}
@@ -257,7 +257,7 @@ addcategory-dialog .mat-dialog-content{margin:0!important}
 .tablediv .mat-card .mat-form-field-flex{margin-top:0;background-color:#fff!important;border:0 solid #efefef}
 .tablediv .mat-card .mat-input-element{color:#333!important;caret-color:#f1f1f1!important}
 .tablediv .mat-card .mat-form-field-label-wrapper{position:absolute;left:0;box-sizing:content-box;width:100%;height:100%;overflow:hidden;pointer-events:none;border-bottom:1px solid #fff;top:-1em;padding-top:1em}
-.tablediv button.mat-raised-button{display:inline-block!important;height:auto!important;background:#c33!important;font-size:12px!important;color:#fff!important;text-transform:uppercase!important;font-family:'Ralewaybold';text-decoration:none!important;line-height:normal!important;text-align:center!important;margin:0 auto!important;white-space:normal!important;margin-top:10px!important;padding:12px 10px!important;border-radius:0!important;margin-right:5px!important;margin-bottom:10px!important;z-index:99}
+.tablediv button.mat-raised-button{display:inline-block!important;height:auto!important;background:#0ed39e!important;font-size:12px!important;color:#fff!important;text-transform:uppercase!important;font-family:'HelveticaBold';text-decoration:none!important;line-height:normal!important;text-align:center!important;margin:0 auto!important;white-space:normal!important;margin-top:10px!important;padding:12px 10px!important;border-radius:0!important;margin-right:5px!important;margin-bottom:10px!important;z-index:99;    box-shadow: none !important;}
 .mat-select-panel-wrap .mat-select-panel{background:#969696}
 .mat-select-panel-wrap .mat-select-panel .mat-option.mat-selected:not(.mat-option-multiple){background:rgba(0,0,0,.22)}
 .mat-select-panel-wrap .mat-primary .mat-option.mat-selected:not(.mat-option-disabled){color:#f1f1f1}
@@ -272,12 +272,14 @@ addcategory-dialog .mat-dialog-content{margin:0!important}
 .tablediv table .actionnewbtn span{cursor:pointer}
 .tablediv.trainingtablediv{margin-top:0!important}
 /* .tablediv.trainingtablediv table{margin-top:27px} */
+ck-editor [formcontrolname="description"] {margin-top: 10px !important;display: block;}
+.mat-card-image:first-child {margin-top: 0;}
 .searchblock{margin:0;padding:0;position:relative;display:block}
 .searchblock .btnorange{min-width:160px;border-radius:0;padding:9px 18px 7px!important;margin:0!important;display:flex!important;align-items:center}
-.searchblock{background:#dde2e5!important;padding:10px 10px 10px 22px !important;display:block;margin:10px auto 20px!important}
+.searchblock{background:#dde2e5!important;padding:10px 10px 10px 22px !important;display:block;margin:10px auto 10px!important}
 .searchblock span{display:flex;align-items:center;position:relative;z-index:99}
 .searchblock .searchblockwrapper{display:flex;align-items:stretch;justify-content:space-between;flex-direction:row}
-.searchblock span h2{font-family:"Helvetica-Normal";color:#373b3d;font-size:24px!important;margin:0}
+.searchblock span h2{font-family:"Helvetica-Normal";color:#373b3d;font-size:24px!important;margin:0;text-transform: uppercase;}
 .tablediv .searchbar .mat-form-field .mat-form-field-infix{margin-bottom:0}
 .tablediv .searchbar .mat-form-field .mat-form-field-prefix,.tablediv .searchbar .mat-form-field .mat-form-field-suffix{display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center}
 /* .bloglists .tablediv .searchbar{padding-right:200px} */
@@ -374,7 +376,8 @@ app-bk-leftdiv{position:relative;z-index:999}
 .formgenrl h2{text-align:center;background-color:transparent!important;color:#fff!important;text-transform:uppercase;padding:0 15px 15px;font-size:30px}
 .mat-form-field.mat-focused .mat-form-field-label{color:#fff;left:0}
 .mat-form-field.mat-focused .mat-input-element{caret-color:#000}
-.mat-form-field .mat-form-field-label{top:1.28125em;line-height:36px;left:15px;color:#000!important}
+.mat-form-field .mat-form-field-label{top:1.28125em;line-height:36px;left:15px;color:#000!important;font-size: 14px;}
+.mat-form-field.searchdiv .mat-form-field-label{top:1.28125em;line-height:30px !important;left:5px !important;color:#000!important;font-size: 14px;}
 .mat-form-field-appearance-legacy.mat-focused .mat-form-field-underline{background-color:#fb4a32;display:none}
 
 
@@ -454,8 +457,33 @@ app-bk-leftdiv{position:relative;z-index:999}
 .newform_css{display:block!important;background:#e7e9ea!important;padding:14px!important}
 .newform_css .mat-form-field{display:block;position:relative;text-align:left}
 .newform_css .bottompart{padding:6px 0;display:block;text-align:left!important}
-.newform_css button{background:#f7462e!important;font-size:15px!important;color:#fff!important}
+/* .newform_css button{background:#f7462e!important;font-size:15px!important;color:#fff!important} */
 .newform_css button:nth-of-type(2){background:#333!important;margin-left:10px!important}
+
+.newform_css button {
+    margin-right: 15px;
+    display: inline-block!important;
+    height: auto!important;
+    background: #0ed39e!important;
+    font-size: 14px!important;
+    color: #fff!important;
+    text-transform: uppercase!important;
+    font-family: 'HelveticaBold';
+    text-decoration: none!important;
+    line-height: normal!important;
+    text-align: center!important;
+    margin: 0 auto!important;
+    white-space: normal!important;
+    margin-top: 10px!important;
+    padding: 12px 10px!important;
+    border-radius: 0!important;
+    margin-right: 5px!important;
+    margin-bottom: 10px!important;
+    z-index: 99;
+    box-shadow: none !important;
+}
+
+
 
 
 .newcontainer{width: 95%; display: block; margin: 0 auto;}
@@ -556,7 +584,11 @@ app-bk-leftdiv{position:relative;z-index:999}
 
 
 .titlewrapper{background-color: #dde2e5; padding: 25px; display: block;}
-.titlewrapper h2{color: #2e2e2e; text-transform: uppercase; font-family: 'HelveticaBold'; font-size: 30px;}
+
+.tablediv .titlewrapper {background-color: transparent;padding: 0;display: block;}
+
+
+.titlewrapper h2{color: #2e2e2e; text-transform: capitalize; font-family: 'HelveticaBold'; font-size: 30px;}
 .dashboardblock4{padding: 0 !important;}
 .socialadvowrapper mat-list mat-list-item{
     height: auto !important;

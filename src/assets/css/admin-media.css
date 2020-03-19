@@ -41,7 +41,7 @@
     .adminwrappercls .main-content-wrap {padding: 20px 20px 20px; min-height: calc(100vh - 20px);position: relative;}
     .tablediv{margin-top:0!important}
     .bloglists .tablediv .searchbar,.blogcatlists .tablediv .searchbar{padding-right:9px!important;background:#70daee}
-    .tablediv .searchbar{padding-right:9px!important;background:#70daee}
+    .tablediv .searchbar{padding-right:9px!important;}
     .mat-form-field-appearance-legacy .mat-form-field-wrapper{padding-bottom:0!important}
     /* .topmenulist{display:none} */
     .admcls .header .toolbar-row .logo {flex: 1 1 100%; align-items: center;justify-content: center;}
@@ -79,15 +79,16 @@
     .tablediv table tr:last-child td{border-bottom:1px solid #c0c1c3!important}
     .adminlisttable .whitebtnlists{text-align:right!important}
     .tablediv table td button,.tablediv table td button:hover{float:right}
-    .tablediv table td:first-child::before{content:attr(data-label)!important;float:left;font-weight:700;text-transform:uppercase;text-align:left;margin-left:-18px;color:#000}
+    .tablediv table td:first-child::before{content:attr(data-label)!important;float:left;font-weight:700;text-transform:uppercase;text-align:left;margin-left:0;color:#000}
     .adminlisttable.adminlisttabledashboard .tablediv table tr{display:table-row!important}
     .tablediv table td:last-child::before{content:attr(data-label)!important;float:left;font-weight:700;text-transform:uppercase;text-align:left;color:#000}
     .tablediv table td::after{display:none}
     .tablediv .mytranningcategory .admin_table_wrapper table td::before{content:attr(datalabel)!important;float:left;font-weight:700;text-transform:uppercase;text-align:left;margin-left:0;color:#000}
-    .tablediv table td::before{content:attr(title);float:left;font-weight:700;text-transform:uppercase;text-align:left;margin-left:-33%;color:#000}
+    .tablediv table td::before{content:attr(title);float:left;font-weight:700;text-transform:uppercase;text-align:left;margin-left:0;color:#000}
     .tablediv table td:last-child{border-bottom:0}
     .tablediv table td.mat-column-Actions{width:auto;padding-right:10px}
     .adm_inner_banner .adm_inner_para {width: 80%;margin: 0 auto;display: block;}
+    .module_videoblock {display: inline-block;}
     }
     @media only screen and (max-width: 767px) {
     .tablediv .searchbar .mat-form-field{display:flex!important;flex:1 1 50%}
@@ -96,6 +97,7 @@
     .admcls .header .header-part-right{ margin-top: 25px;}
     }
     @media only screen and (max-width: 667px) {
+    .bred_cram_wrapper .mat-list-item a {padding: 0 5px !important;line-height: normal !important;}
     .topmenudevider2{display:block;width:30px;height:78px;float:left}
     .topmenudevider2 .dehazeicon{color:#fb4a32;display:block;margin:24px 0 0!important;font-size:30px;cursor:pointer}
     .topblock .mat-list{margin:0 auto;height:0;width:0;position:absolute;-webkit-transition:all .2s linear;-moz-transition:all .2s linear;-o-transition:all .2s linear;transition:all .2s linear}

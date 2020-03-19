@@ -15,9 +15,8 @@ export class AddeditServiceComponent implements OnInit {
   public configAddEdit: any = {
     action: "add",
     // endpoint: "https://9v41bpikik.execute-api.us-east-1.amazonaws.com/production/api/addorupdatedata",
-    endpoint: environment.API_URL+'addorupdatedata',
-  
-    source: "service",
+    endpoint: environment['API_URL']+'addorupdatedata',
+    source:"service",
     condition: {},
     defaultData: null,
     jwtToken: this.cookieService.get('jwtToken'),
