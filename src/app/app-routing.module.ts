@@ -95,7 +95,8 @@ import { AddEditSenderappComponent } from './component/backend/manage-website/ne
 import { AddAffiliateComponent } from './component/backend/user/add-affiliate/add-affiliate.component';
 import { AddCustomerComponent } from './component/backend/user/add-customer/add-customer.component';
 import { MiscellaneousComponent } from './component/backend/manage-website/miscellaneous/miscellaneous.component';
-
+ //account-settings
+ import { AccountSettingsComponent } from './component/backend/account-settings/account-settings.component';
 
 
 
@@ -104,6 +105,11 @@ import { MiscellaneousComponent } from './component/backend/manage-website/misce
 /**End Backend Routing**/
 
 const routes: Routes = [
+  //account-settings route
+{
+   path:'account-settings',
+   component : AccountSettingsComponent
+},
 /**Image Gallery start here**/
 {
   path : 'image-gallery/category-management/add',
