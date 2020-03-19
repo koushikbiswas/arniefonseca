@@ -5,7 +5,7 @@
           <!-- <img src="../../../../assets/images/blogmang-dashboard-img1.jpg" style="width: 100%; display: block; margin: 0; padding: 0;"> -->
           
           <mat-card-content class="bred_cram_wrapper_list">
-            <mat-list class="bred_cram_wrapper">
+            <!-- <mat-list class="bred_cram_wrapper">
               <mat-list-item mat-list-item *ngIf="user_details.type == 'admin'"> <a [routerLink]="'/admin-dashboard'">Dashboard</a> </mat-list-item>
               <mat-list-item mat-list-item *ngIf="user_details.type == 'affiliate'"> <a [routerLink]="'/affiliate-dashboard'">Dashboard</a> </mat-list-item>
       
@@ -21,13 +21,13 @@
               <mat-list-item mat-list-item *ngIf="user_details.type == 'admin' && activatedRoute.snapshot.routeConfig.path == 'blog-category/edit/:_id'"> <a>Edit blog Category</a> </mat-list-item>
               <mat-list-item mat-list-item *ngIf="user_details.type == 'affiliate' && activatedRoute.snapshot.routeConfig.path == 'blog-category/edit/:_id'"> <a>Edit blog Category</a> </mat-list-item>
               
-            </mat-list>       
+            </mat-list>        -->
           </mat-card-content>
           
           <span class="searchblock">
               <span class="searchblockwrapper">
                   <span>
-                      <h2>ADD BLOG Category</h2>
+                      <h2>{{header}}</h2>
                   </span>            
               </span>
           </span>
