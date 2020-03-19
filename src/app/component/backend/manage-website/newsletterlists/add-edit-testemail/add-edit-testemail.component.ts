@@ -10,6 +10,9 @@ import { MetaService } from '@ngx-meta/core';
   styleUrls: ['./add-edit-testemail.component.css']
 })
 export class AddEditTestemailComponent implements OnInit {
+
+  public user_details:any;
+  
   public configAddEdit: any = {
     action: "add",
     // endpoint: "https://r245816wug.execute-api.us-east-1.amazonaws.com/dev/api/addorupdatedata",
@@ -39,6 +42,10 @@ export class AddEditTestemailComponent implements OnInit {
     this.meta.setTag('og:type', 'website');
     this.meta.setTag('og:image', 'https://arniefonseca-backend.influxiq.com/assets/images/logo.png');
     this.meta.setTag('twitter:image', 'https://arniefonseca-backend.influxiq.com/assets/images/logo.png');
+
+    if (this.cookieService.get('user_details') != undefined && this.cookieService.get('user_details') != null && this.cookieService.get('user_details') != '') {      
+      this.user_details = JSON.parse(this.cookieService.get('user_details'));
+    }
 
   }
 

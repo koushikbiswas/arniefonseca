@@ -12,6 +12,10 @@ import { MetaService } from '@ngx-meta/core';
   styleUrls: ['./addedit-service.component.css']
 })
 export class AddeditServiceComponent implements OnInit {
+
+  public user_details:any;
+  
+
   public configAddEdit: any = {
     action: "add",
     // endpoint: "https://9v41bpikik.execute-api.us-east-1.amazonaws.com/production/api/addorupdatedata",
@@ -49,7 +53,7 @@ export class AddeditServiceComponent implements OnInit {
   }
 
 
-  constructor(private router : Router , private activatedRoute : ActivatedRoute ,private cookieService : CookieService, public ApiService: ApiService, private readonly meta: MetaService) {
+  constructor(public router : Router , public activatedRoute : ActivatedRoute ,private cookieService : CookieService, public ApiService: ApiService, private readonly meta: MetaService) {
     this.meta.setTitle('Arniefonseca - Service');
     this.meta.setTag('og:description', '');
     this.meta.setTag('twitter:description', '');
@@ -62,6 +66,10 @@ export class AddeditServiceComponent implements OnInit {
     this.meta.setTag('og:type', 'website');
     this.meta.setTag('og:image', 'https://arniefonseca-backend.influxiq.com/assets/images/logo.png');
     this.meta.setTag('twitter:image', 'https://arniefonseca-backend.influxiq.com/assets/images/logo.png');
+
+    if (this.cookieService.get('user_details') != undefined && this.cookieService.get('user_details') != null && this.cookieService.get('user_details') != '') {      
+      this.user_details = JSON.parse(this.cookieService.get('user_details'));
+    }
     
    }
 

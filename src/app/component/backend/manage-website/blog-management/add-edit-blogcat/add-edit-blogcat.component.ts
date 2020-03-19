@@ -10,6 +10,10 @@ import { MetaService } from '@ngx-meta/core';
   styleUrls: ['./add-edit-blogcat.component.css']
 })
 export class AddEditBlogcatComponent implements OnInit {
+
+  public user_details: any;
+
+  
   //Add editfor blog category
   public configAddEdit: any = {
     action: "add",
@@ -38,6 +42,10 @@ export class AddEditBlogcatComponent implements OnInit {
     this.meta.setTag('og:type', 'website');
     this.meta.setTag('og:image', 'https://arniefonseca-backend.influxiq.com/assets/images/logo.png');
     this.meta.setTag('twitter:image', 'https://arniefonseca-backend.influxiq.com/assets/images/logo.png');
+
+    if (this.cookieService.get('user_details') != undefined && this.cookieService.get('user_details') != null && this.cookieService.get('user_details') != '') {      
+      this.user_details = JSON.parse(this.cookieService.get('user_details'));
+    }
 
   }
 
