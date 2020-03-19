@@ -469,6 +469,10 @@ postdata(requestdata: any) {
     var result = this._http.post(this.serverUrl+endpoint, JSON.stringify(data), httpOptions).pipe(map(res => res));
     return result;
   }
+    /* read site setting data */
+    public getSiteSettingData(url): Observable<any> {
+      return this._http.get(url);
+    }
 
 }
 

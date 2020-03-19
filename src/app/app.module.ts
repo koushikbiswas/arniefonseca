@@ -106,6 +106,8 @@ import { AddAffiliateComponent, AffiliateModal } from './component/backend/user/
 
 import { CKEditorModule } from 'ngx-ckeditor';
 import { MiscellaneousComponent } from './component/backend/manage-website/miscellaneous/miscellaneous.component';
+//account-settings
+import { AccountSettingsComponent } from './component/backend/account-settings/account-settings.component';
 
 @NgModule({
   declarations: [
@@ -177,7 +179,8 @@ import { MiscellaneousComponent } from './component/backend/manage-website/misce
     AddCustomerComponent,
     AddAffiliateComponent,
     AffiliateModal,
-    MiscellaneousComponent
+    MiscellaneousComponent,
+    AccountSettingsComponent
   ],
   imports: [
     AmazingTimePickerModule,   

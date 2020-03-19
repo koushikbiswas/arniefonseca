@@ -94,7 +94,7 @@
                       <button class="userwrapper" mat-button [matMenuTriggerFor]="menu">
                         <img src="http://gull-html-laravel.ui-lib.com/assets/images/faces/1.jpg" id="userDropdown" alt="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
                       <mat-menu #menu="matMenu">
-                          <button mat-menu-item>Account settings</button>                        
+                          <button mat-menu-item [routerLink]="['/account-settings']">Account settings</button>                        
                           <button mat-menu-item *ngIf="token!=''" (click)="logOut()">Sign out</button>
                       </mat-menu>                    
                   </div>
