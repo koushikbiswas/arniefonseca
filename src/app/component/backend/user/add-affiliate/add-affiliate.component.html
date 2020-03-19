@@ -4,6 +4,27 @@
   </div>
   <div class="main-content-wrap">
     <mat-card class="generalcls blog" style="padding: 0 !important;"> 
+
+      <mat-card-content class="bred_cram_wrapper_list">
+        <mat-list class="bred_cram_wrapper">
+          <mat-list-item mat-list-item *ngIf="user_details.type == 'admin'"> <a [routerLink]="'/admin-dashboard'">Dashboard</a> </mat-list-item>
+          <mat-list-item mat-list-item *ngIf="user_details.type == 'affiliate'"> <a [routerLink]="'/affiliate-dashboard'">Dashboard</a> </mat-list-item>
+
+          <mat-list-item mat-list-item *ngIf="user_details.type == 'admin'"> <a [routerLink]="'/admin-dashboard'">User Management</a> </mat-list-item>
+          <mat-list-item mat-list-item *ngIf="user_details.type == 'affiliate'"> <a [routerLink]="'/affiliate-dashboard'">User Management</a> </mat-list-item>
+  
+          <mat-list-item mat-list-item *ngIf="user_details.type == 'admin'"> <a [routerLink]="'/affiliate-admin'">Affiliate lists</a> </mat-list-item>
+          <mat-list-item mat-list-item *ngIf="user_details.type == 'affiliate'"> <a [routerLink]="'/affiliate-admin'">Affiliate lists</a> </mat-list-item>
+
+          <mat-list-item mat-list-item *ngIf="user_details.type == 'admin' && router.url == '/affiliate/add'"> <a>Add Affiliate</a> </mat-list-item>
+          <mat-list-item mat-list-item *ngIf="user_details.type == 'affiliate' && router.url == '/affiliate/add'"> <a>Add Affiliate</a> </mat-list-item>
+   
+          <mat-list-item mat-list-item *ngIf="user_details.type == 'admin' && activatedRouter.snapshot.routeConfig.path == 'affiliate/edit/:_id'"> <a>Edit Affiliate</a> </mat-list-item>
+          <mat-list-item mat-list-item *ngIf="user_details.type == 'affiliate' && activatedRouter.snapshot.routeConfig.path == 'affiliate/edit/:_id'"> <a>Edit Affiliate</a> </mat-list-item>
+
+        </mat-list>       
+      </mat-card-content>
+
       <span class="searchblock">
         <span class="searchblockwrapper">
           <span>
