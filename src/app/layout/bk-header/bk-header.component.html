@@ -92,10 +92,13 @@
               <div class="dropdown">
                   <div class="user">
                       <button class="userwrapper" mat-button [matMenuTriggerFor]="menu">
-                        <img src="http://gull-html-laravel.ui-lib.com/assets/images/faces/1.jpg" id="userDropdown" alt="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                        <!-- <img src="http://gull-html-laravel.ui-lib.com/assets/images/faces/1.jpg" id="userDropdown" alt="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> -->
+                        <img *ngIf="profile_img !=''" [src]="userData.profile_picture" alt="">
+                        <img *ngIf="profile_img ==''" src="https://arniefonseca-backend.influxiq.com/assets/images/no-image-default.jpg">
+                      </button>
                       <mat-menu #menu="matMenu">
-                          <button mat-menu-item [routerLink]="['/account-settings']">Account settings</button>                        
-                          <button mat-menu-item *ngIf="token!=''" (click)="logOut()">Sign out</button>
+                          <a mat-menu-item routerLinkActive="activemenu" [routerLink]="['/account-settings']">Account settings</a>                        
+                          <a mat-menu-item routerLinkActive="activemenu" *ngIf="token!=''" (click)="logOut()">Sign out</a>
                       </mat-menu>                    
                   </div>
               </div>

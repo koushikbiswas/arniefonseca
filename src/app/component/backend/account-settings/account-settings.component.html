@@ -8,7 +8,7 @@
           <lib-file-upload [config]="configData" class="file_upload" ></lib-file-upload>
           <span class="profileimg">
             
-            <ng-container *ngIf="userData.profile_picture">
+            <ng-container *ngIf="userData.profile_picture &&  imageFlag">
               <img mat-card-image [attr.src]="userData.profile_picture">
             </ng-container>
 

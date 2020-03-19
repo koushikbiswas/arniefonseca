@@ -2,7 +2,6 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, FormGroupDirective } from '@angular/forms';
 import { CookieService } from 'ngx-cookie-service';
 import { ApiService } from '../../../api.service';
-// import { AppComponent } from '../../../app.component';
 import { MetaService } from '@ngx-meta/core';
 import { MatSnackBar } from '@angular/material';
 @Component({
@@ -28,6 +27,7 @@ export class AccountSettingsComponent implements OnInit {
   public states: any;
   public cities: any;
   public allCities: any;
+  public imageFlag:boolean=true;
   public configData: any = {
     baseUrl: "https://fileupload.influxhostserver.com/",
     endpoint: "uploads",
@@ -108,9 +108,7 @@ export class AccountSettingsComponent implements OnInit {
         "_id_object": this.cookies_id
       }
     }
-    this.apiService.getDatalist(data).subscribe((res: any) => {
-      console.log("datalist data",res);
-      
+    this.apiService.getDatalist(data).subscribe((res: any) => {      
       this.userData = res.res[0];
       this.getCity(this.userData.state);
       this.UpdateForm.controls['firstname'].patchValue(this.userData.firstname);
@@ -210,6 +208,7 @@ export class AccountSettingsComponent implements OnInit {
         // this.apploader.loader = 1;
   
         this.apiService.CustomRequest(data, endpoint).subscribe(res => {
+          this.imageFlag = false;
           let message = "Successfully Updted";
           let action  = "Ok"
           this.snackBar.open(message, action, {
