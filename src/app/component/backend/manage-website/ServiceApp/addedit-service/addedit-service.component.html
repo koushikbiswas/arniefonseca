@@ -2,6 +2,26 @@
 <div class="adminwrappercls">
     <div class="admcls"><app-bk-header></app-bk-header></div>
     <div class="main-content-wrap">
+        <mat-card-content class="bred_cram_wrapper_list">
+            <mat-list class="bred_cram_wrapper">
+              <mat-list-item mat-list-item *ngIf="user_details.type == 'admin'"> <a [routerLink]="'/admin-dashboard'">Dashboard</a> </mat-list-item>
+              <mat-list-item mat-list-item *ngIf="user_details.type == 'affiliate'"> <a [routerLink]="'/affiliate-dashboard'">Dashboard</a> </mat-list-item>
+      
+              <mat-list-item mat-list-item *ngIf="user_details.type == 'admin'"> <a [routerLink]="'/admin-dashboard'">Manage website</a> </mat-list-item>
+              <mat-list-item mat-list-item *ngIf="user_details.type == 'affiliate'"> <a [routerLink]="'/affiliate-dashboard'">Manage website</a> </mat-list-item>
+      
+              <mat-list-item mat-list-item *ngIf="user_details.type == 'admin'"> <a [routerLink]="'/service/list'">Services List</a> </mat-list-item>
+              <mat-list-item mat-list-item *ngIf="user_details.type == 'affiliate'"> <a [routerLink]="'/service/list'">Services List</a> </mat-list-item>
+
+              <mat-list-item mat-list-item *ngIf="user_details.type == 'admin' && router.url ==='/service/add'"> <a >Add Services</a> </mat-list-item>
+              <mat-list-item mat-list-item *ngIf="user_details.type == 'affiliate' && router.url ==='/service/add'"> <a>Add Services</a> </mat-list-item>
+
+              <mat-list-item mat-list-item *ngIf="user_details.type == 'admin' && activatedRoute.snapshot.routeConfig.path == 'service/edit/:_id'"> <a>Edit Services</a> </mat-list-item>
+              <mat-list-item mat-list-item *ngIf="user_details.type == 'affiliate' && activatedRoute.snapshot.routeConfig.path == 'service/edit/:_id'"> <a>Edit Services</a> </mat-list-item>
+
+            </mat-list>       
+        </mat-card-content>
+
         <mat-card>
             <lib-addedit-service [config]="configAddEdit" [imageUpload]="configImgUploadData" [imageUpload2]="configIconUploadData"></lib-addedit-service>
         </mat-card>
