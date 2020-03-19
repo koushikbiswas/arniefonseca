@@ -10,6 +10,10 @@ import { MetaService } from '@ngx-meta/core';
   styleUrls: ['./add-edit-blogcat.component.css']
 })
 export class AddEditBlogcatComponent implements OnInit {
+
+  public user_details: any;
+  public header:string='ADD BLOG Category';
+  
   //Add editfor blog category
   public configAddEdit: any = {
     action: "add",
@@ -39,11 +43,16 @@ export class AddEditBlogcatComponent implements OnInit {
     this.meta.setTag('og:image', 'https://arniefonseca-backend.influxiq.com/assets/images/logo.png');
     this.meta.setTag('twitter:image', 'https://arniefonseca-backend.influxiq.com/assets/images/logo.png');
 
+    if (this.cookieService.get('user_details') != undefined && this.cookieService.get('user_details') != null && this.cookieService.get('user_details') != '') {      
+      this.user_details = JSON.parse(this.cookieService.get('user_details'));
+    }
+
   }
 
   ngOnInit() {
     this.activatedRouter.params.subscribe(params => {
       if (params._id) {
+        this.header='EDIT BLOG Category'
         this.activatedRouter.data.subscribe(resolveData => {
           this.configAddEdit.defaultData = resolveData.blogCatList.res[0];
           this.configAddEdit.action = "edit";

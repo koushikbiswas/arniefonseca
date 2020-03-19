@@ -417,7 +417,8 @@ data:{
   },
   {
     path: 'newsletter/edit/:_id',
-    component: AddEditNewsletterComponent
+    component: AddEditNewsletterComponent, resolve: { newsData: ResolveService },
+    data: { requestcondition: { source: 'senders', condition: {} }, endpoint: 'datalist' }
   },
   // -----------------------------------------------
 
