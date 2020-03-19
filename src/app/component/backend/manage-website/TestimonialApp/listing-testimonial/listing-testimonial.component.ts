@@ -51,7 +51,7 @@ public date_search_source:any="testimonial_view";
 public date_search_endpoint:any="datalist";
 public search_settings: any = {
     selectsearch: [{ label: 'Search By Status', field: 'status', values: this.status }],
-    textsearch: [{ label: "Search by Name", field: 'name' },{ label: "Search by Email", field: 'email' }],
+    textsearch: [{ label: "Search by Name", field: 'name_search' },{ label: "Search by Email", field: 'email' }],
     // datesearch:[{startdatelabel:"Start Date",enddatelabel:"End Date", submit:"Search By Date",  field:"created_at"}],   // this is use for  date search 
 
   };

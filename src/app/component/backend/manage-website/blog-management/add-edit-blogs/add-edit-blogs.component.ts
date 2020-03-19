@@ -17,6 +17,7 @@ export class AddEditBlogsComponent implements OnInit {
   public editdata: any = [];
   action:any="add";
   listURL:any="/blog-management";
+  public header:string='Add Blog';
 
 
   public configData: any = {
@@ -66,6 +67,7 @@ export class AddEditBlogsComponent implements OnInit {
 
     this.activatedRoute.params.subscribe(params => {
       if (params._id) {
+        this.header='Edit Blog';
         this.activatedRoute.data.subscribe(resolveData => {         
           this.editdata= resolveData.blogsData.res[0];  
           this.action="edit";    
