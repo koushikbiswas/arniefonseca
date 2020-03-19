@@ -11,15 +11,37 @@
                         </span>            
                     </span>
                 </span> -->
-                <lib-add-edit-video-management
-                [serverUrl]="serverUrl"
-                [addEndpoint]="addUpdateEndpoint"
-                [listPageUrl]="listingRoute"
-                [EditVideoData]="SingleVideoData"
-                [SourceName]="sourceName"
-                [CategorySourceName] = "categorySourceName"
-                [getDataEndpoint]="getDataEndpoint">
-                </lib-add-edit-video-management>
+                <mat-card-content class="bred_cram_wrapper_list">
+                  <mat-list class="bred_cram_wrapper">
+                    <mat-list-item mat-list-item *ngIf="user_details.type == 'admin'"> <a [routerLink]="'/admin-dashboard'">Dashboard</a> </mat-list-item>
+                    <mat-list-item mat-list-item *ngIf="user_details.type == 'affiliate'"> <a [routerLink]="'/affiliate-dashboard'">Dashboard</a> </mat-list-item>
+            
+                    <mat-list-item mat-list-item *ngIf="user_details.type == 'admin'"> <a [routerLink]="'/admin-dashboard'">Manage website</a> </mat-list-item>
+                    <mat-list-item mat-list-item *ngIf="user_details.type == 'affiliate'"> <a [routerLink]="'/affiliate-dashboard'">Manage website</a> </mat-list-item>
+            
+                    <mat-list-item mat-list-item *ngIf="user_details.type == 'admin'"> <a [routerLink]="'/video-category/list'">Video Gallery List</a> </mat-list-item>
+                    <mat-list-item mat-list-item *ngIf="user_details.type == 'affiliate'"> <a [routerLink]="'/video-category/list'">Video Gallery List</a> </mat-list-item>
+              
+                <mat-list-item mat-list-item *ngIf="user_details.type == 'admin' && router.url == '/video-library-management/add'"> <a>Add Video Gallery</a> </mat-list-item>
+                <mat-list-item mat-list-item *ngIf="user_details.type == 'affiliate' && router.url == '/video-library-management/add'"> <a>Add Video Gallery</a> </mat-list-item>
+        
+                <mat-list-item mat-list-item *ngIf="user_details.type == 'admin' && activeRoute.snapshot.routeConfig.path == 'video-library-management/edit/:_id'"> <a>Edit Video Gallery</a> </mat-list-item>
+                <mat-list-item mat-list-item *ngIf="user_details.type == 'affiliate' && activeRoute.snapshot.routeConfig.path == 'video-library-management/edit/:_id'"> <a>Edit Video Gallery</a> </mat-list-item>
+
+                  </mat-list>
+                </mat-card-content>
+
+                <mat-card-content>
+                  <lib-add-edit-video-management
+                  [serverUrl]="serverUrl"
+                  [addEndpoint]="addUpdateEndpoint"
+                  [listPageUrl]="listingRoute"
+                  [EditVideoData]="SingleVideoData"
+                  [SourceName]="sourceName"
+                  [CategorySourceName] = "categorySourceName"
+                  [getDataEndpoint]="getDataEndpoint">
+                  </lib-add-edit-video-management>
+                </mat-card-content>
               </mat-card>
             </div> 
         </div>

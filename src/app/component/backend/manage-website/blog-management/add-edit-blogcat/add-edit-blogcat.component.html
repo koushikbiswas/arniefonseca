@@ -18,8 +18,8 @@
               <mat-list-item mat-list-item *ngIf="user_details.type == 'admin' && router.url == '/blog-category/add'"> <a>Add Blog Category</a> </mat-list-item>
               <mat-list-item mat-list-item *ngIf="user_details.type == 'affiliate' && router.url == '/blog-category/add'"> <a>Add Blog Category</a> </mat-list-item>
    
-              <mat-list-item mat-list-item *ngIf="user_details.type == 'admin' && activatedRoute.snapshot.routeConfig.path == 'blog-category/edit/:_id'"> <a>Edit blog Category</a> </mat-list-item>
-              <mat-list-item mat-list-item *ngIf="user_details.type == 'affiliate' && activatedRoute.snapshot.routeConfig.path == 'blog-category/edit/:_id'"> <a>Edit blog Category</a> </mat-list-item>
+              <mat-list-item mat-list-item *ngIf="user_details.type == 'admin' && activatedRouter.snapshot.routeConfig.path == 'blog-category/edit/:_id'"> <a>Edit blog Category</a> </mat-list-item>
+              <mat-list-item mat-list-item *ngIf="user_details.type == 'affiliate' && activatedRouter.snapshot.routeConfig.path == 'blog-category/edit/:_id'"> <a>Edit blog Category</a> </mat-list-item>
               
             </mat-list>       
           </mat-card-content>
@@ -27,7 +27,7 @@
           <span class="searchblock">
               <span class="searchblockwrapper">
                   <span>
-                      <h2>ADD BLOG Category</h2>
+                    <h2>{{header}}</h2>
                   </span>            
               </span>
           </span>

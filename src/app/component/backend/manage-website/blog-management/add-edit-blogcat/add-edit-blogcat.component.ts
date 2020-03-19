@@ -12,7 +12,7 @@ import { MetaService } from '@ngx-meta/core';
 export class AddEditBlogcatComponent implements OnInit {
 
   public user_details: any;
-
+  public header:string='Add Blog Category';
   
   //Add editfor blog category
   public configAddEdit: any = {
@@ -27,7 +27,7 @@ export class AddEditBlogcatComponent implements OnInit {
     userData: { id: "18801017007", name: "Admin" },
     defaultDataAlways: null
   }
-  constructor(private activatedRouter: ActivatedRoute, private cookieService: CookieService,public apiService: ApiService, private readonly meta: MetaService,) { 
+  constructor(public activatedRouter: ActivatedRoute, public router:Router, private cookieService: CookieService,public apiService: ApiService, private readonly meta: MetaService,) { 
 
 
     this.meta.setTitle('Arniefonseca - Blog Management');
@@ -52,6 +52,7 @@ export class AddEditBlogcatComponent implements OnInit {
   ngOnInit() {
     this.activatedRouter.params.subscribe(params => {
       if (params._id) {
+        this.header='Edit Blog Category';
         this.activatedRouter.data.subscribe(resolveData => {
           this.configAddEdit.defaultData = resolveData.blogCatList.res[0];
           this.configAddEdit.action = "edit";

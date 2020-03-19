@@ -460,6 +460,13 @@ app-bk-leftdiv{position:relative;z-index:999}
 /* .newform_css button{background:#f7462e!important;font-size:15px!important;color:#fff!important} */
 .newform_css button:nth-of-type(2){background:#333!important;margin-left:10px!important}
 
+.formspan .example-container {padding: 10px !important;}
+.uploadfilecontainerfl {
+    margin: 20px auto;
+    padding: 10px 15px 25px;
+    display: block;
+}
+
 .newform_css button {
     margin-right: 15px;
     display: inline-block!important;

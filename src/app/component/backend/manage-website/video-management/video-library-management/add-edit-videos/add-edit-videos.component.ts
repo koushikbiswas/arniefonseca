@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ApiService } from '../../../../../../api.service';
 import { CookieService } from 'ngx-cookie-service';
 import { MetaService } from '@ngx-meta/core';
@@ -20,7 +20,7 @@ export class AddEditVideosComponent implements OnInit {
   public SingleVideoData: any = [];
   public user_details:any;
   
-  constructor(public activeRoute: ActivatedRoute,public apiService : ApiService, public cookies :CookieService, private readonly meta: MetaService) { 
+  constructor(private router : Router, public activeRoute: ActivatedRoute,public apiService : ApiService, public cookies :CookieService, private readonly meta: MetaService) { 
 
 
     this.meta.setTitle('Arniefonseca - User Management');

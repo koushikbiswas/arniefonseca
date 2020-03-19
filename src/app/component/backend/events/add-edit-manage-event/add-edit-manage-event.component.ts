@@ -63,6 +63,8 @@ export interface DialogData {
 
 export class AddEditManageEventComponent implements OnInit {
 
+  public user_details: any;
+
 public image_url:any=environment['imageUpload_url'];
   
   public eventForm:FormGroup;
@@ -161,6 +163,10 @@ public image_url:any=environment['imageUpload_url'];
   ]
 
   constructor(public fb:FormBuilder,public _http: HttpService, private _authHttp: HttpClient, private cookieService: CookieService,public router:Router,public activatedRoute:ActivatedRoute,public dialog: MatDialog, public activeroute: ActivatedRoute,public datePipe:DatePipe, private readonly meta: MetaService,public apiService:ApiService) { 
+
+    if (this.cookieService.get('user_details') != undefined && this.cookieService.get('user_details') != null && this.cookieService.get('user_details') != '') {      
+      this.user_details = JSON.parse(this.cookieService.get('user_details'));
+    }
 
     this.activatedRoute.params.subscribe(params => {
       if (params['_id'] != null) {
