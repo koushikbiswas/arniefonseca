@@ -91,6 +91,9 @@
     .module_videoblock {display: inline-block;}
     }
     @media only screen and (max-width: 767px) {
+    .generalcls.blog .adm_inner_banner .adm_inner_title.mat-card-title {font-size: 30px !important;margin-top: 30px;}
+ 
+
     .tablediv .searchbar .mat-form-field{display:flex!important;flex:1 1 50%}
     .bloglists .tablediv .searchbar span.textsearch,.blogcatlists .tablediv .searchbar span.textsearch{width:100%}
 
