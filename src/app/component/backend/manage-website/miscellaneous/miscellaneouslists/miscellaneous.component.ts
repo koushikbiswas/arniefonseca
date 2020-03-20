@@ -48,6 +48,7 @@ export class MiscellaneousComponent implements OnInit {
   deleteEndpoint: any = "deletesingledata";
   view: any = "contactusForm";
   public dataList:any=[];
+  public singleData:any;
   @ViewChild(MatPaginator, { static: false }) paginator: MatPaginator;
   @ViewChild(MatSort, { static: false }) sort: MatSort;
   constructor(public dialog: MatDialog,private router: Router, private activatedRoute: ActivatedRoute, private cookieService: CookieService, public apiservice: ApiService, private readonly meta: MetaService) { 
@@ -123,5 +124,34 @@ export class MiscellaneousComponent implements OnInit {
 
     })
 
+  }
+  singledatafetch(id:any){
+   let data: any = {
+    endpoint: 'datalist',
+    source: 'contactusForm',
+    condition: {
+      "_id_object": id
+    }  }
+  this.apiservice.getDatalist(data).subscribe((res: any) => {
+    if (res.status = "success") {
+       this.singleData = res.res;
+       console.log("single data",this.singleData);
+       let modalData: any = {
+        panelClass: 'delete-dialog',
+        data: {
+          header: "User Details",
+          singledata:this.singleData,
+          message: "",
+          button1: { text: "" },
+          button2: { text: "" },
+        }
+      }
+      this.dialogRef = this.dialog.open(CommonComponent, modalData);
+      this.dialogRef.afterClosed().subscribe(result => {
+      });
+
+    }
+
+  })
   }
 }
