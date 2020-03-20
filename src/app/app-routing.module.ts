@@ -94,7 +94,7 @@ import { ListingSubcategoryComponent } from './component/backend/manage-website/
 import { AddEditSenderappComponent } from './component/backend/manage-website/newsletterlists/add-edit-senderapp/add-edit-senderapp.component';
 import { AddAffiliateComponent } from './component/backend/user/add-affiliate/add-affiliate.component';
 import { AddCustomerComponent } from './component/backend/user/add-customer/add-customer.component';
-import { MiscellaneousComponent } from './component/backend/manage-website/miscellaneous/miscellaneous.component';
+import { MiscellaneousComponent } from './component/backend/manage-website/miscellaneous/miscellaneouslists/miscellaneous.component';
  //account-settings
  import { AccountSettingsComponent } from './component/backend/account-settings/account-settings.component';
 
@@ -600,7 +600,11 @@ data:{
   { path: 'customer/edit/:_id', component: AddCustomerComponent },
 
 
-  {path: 'miscellaneous', component: MiscellaneousComponent},
+  {
+    path: 'miscellaneous', component: MiscellaneousComponent,
+    resolve: { miscellaneousData : ResolveService},
+    data :{ requestcondition : {source :'',condition:{}},endpoint :'miscellaneouslistdata'}
+   },
 
   { path: '**', component: LoginComponent },
 ];

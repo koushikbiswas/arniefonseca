@@ -61,7 +61,6 @@ export class BkHeaderComponent implements OnInit {
       }
     }
     this.apiService.getDatalist(data).subscribe((res: any) => {
-      
       this.userData = res.res[0];
      
     });

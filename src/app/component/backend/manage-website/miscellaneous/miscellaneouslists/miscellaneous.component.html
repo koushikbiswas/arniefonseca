@@ -1,0 +1,101 @@
+<div class="adminwrappercls">
+  <div class="admcls">
+    <app-bk-header></app-bk-header>
+  </div>
+  <div class="main-content-wrap">
+      <mat-card class="generalcls blog" style="padding: 0 !important;">
+          <mat-card-content class="adm_inner_banner miscellaniousbg">
+              <mat-card-title class="adm_inner_title">miscellaneous</mat-card-title>
+              <p class="adm_inner_para">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </mat-card-content>
+          <mat-card-content class="bred_cram_wrapper_list">
+              <mat-list class="bred_cram_wrapper">
+                <mat-list-item mat-list-item *ngIf="user_details.type == 'admin'"> <a [routerLink]="'/admin-dashboard'">Dashboard</a> </mat-list-item>
+                <mat-list-item mat-list-item *ngIf="user_details.type == 'affiliate'"> <a [routerLink]="'/affiliate-dashboard'">Dashboard</a> </mat-list-item>
+        
+                <mat-list-item mat-list-item *ngIf="user_details.type == 'admin'"> <a [routerLink]="'/admin-dashboard'">Manage website</a> </mat-list-item>
+                <mat-list-item mat-list-item *ngIf="user_details.type == 'affiliate'"> <a [routerLink]="'/affiliate-dashboard'">Manage website</a> </mat-list-item>
+        
+                <mat-list-item mat-list-item *ngIf="user_details.type == 'admin'"> <a>Miscellaneous</a> </mat-list-item>
+                <mat-list-item mat-list-item *ngIf="user_details.type == 'affiliate'"> <a>Miscellaneous</a> </mat-list-item>
+              </mat-list>       
+          </mat-card-content>
+          <span class="searchblock">
+            <span class="searchblockwrapper">
+                <span>
+                    <h2>miscellaneous</h2>
+                </span>
+            </span>
+        </span>
+
+          
+        <div class="tablediv">
+          <table mat-table [dataSource]="dataSource" matSort>          
+              <!-- ID Column -->
+                  <ng-container matColumnDef="name">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
+                    <td mat-cell *matCellDef="let row" title="Name"> {{row.name}} </td>
+                  </ng-container>
+                  <ng-container matColumnDef="no">
+                    <th mat-header-cell *matHeaderCellDef> No. </th>
+                    <td mat-cell *matCellDef="let row; let i = index;" title= "No"> {{ i + 1 }} </td>
+                  </ng-container>
+            
+                  <!-- Progress Column -->
+                  <ng-container matColumnDef="address">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Address </th>
+                    <td mat-cell *matCellDef="let row" title="Address"> {{row.address}} </td>
+                  </ng-container>
+            
+                  <!-- Name Column -->
+                  <ng-container matColumnDef="email">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> E-mail </th>
+                    <td mat-cell *matCellDef="let row" title="E-mail"> {{row.email}} </td>
+                  </ng-container>
+            
+                  <!-- Color Column -->
+                  <ng-container matColumnDef="message">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>Message </th>
+                    <td mat-cell *matCellDef="let row" title="Message"> {{row.message}} </td>
+                  </ng-container>
+                  <ng-container matColumnDef="phone">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>Phone </th>
+                    <td mat-cell *matCellDef="let row" title="Phone"> {{row.phone}} </td>
+                  </ng-container>
+                  <ng-container matColumnDef="created_at">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>Date Added </th>
+                    <td mat-cell *matCellDef="let row" title="Date Added"> {{row.created_at |date}} </td>
+                  </ng-container>
+        
+                  <ng-container matColumnDef="viewAction">
+                    <th mat-header-cell *matHeaderCellDef> Action </th>
+                    <td mat-cell *matCellDef="let element; let i = index;" data-label="Action">
+                      <span class="buttons_ro">
+                        <span class="pointer" (click)="deleteRecord(element._id, i);">
+                          <i class="material-icons">
+                            delete_outline
+                          </i>
+                        </span>
+                        <span class="material-icons">
+                          visibility
+                          </span>
+                      </span>
+                    </td>
+                  </ng-container>
+                  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                  <tr mat-row *matRowDef="let row; columns: displayedColumns;">
+                  </tr>
+                </table>
+                <mat-paginator [pageSizeOptions]="[5, 10, 20,100,200]" showFirstLastButtons></mat-paginator>
+            <!-- Contact Us Listing goes here  -->
+           
+
+
+        </div>
+          
+      </mat-card>
+  </div>
+</div>
+<app-bk-footer></app-bk-footer>
+

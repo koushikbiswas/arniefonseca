@@ -41,8 +41,10 @@ export class AddAffiliateComponent implements OnInit {
   constructor(public activatedRouter: ActivatedRoute, public apiservice: ApiService, public fb: FormBuilder, public dialog: MatDialog, public router: Router,private readonly meta: MetaService,public cookieService:CookieService) { 
     
     this.activatedRouter.params.subscribe(params => {
+      
       if (params['_id'] != null) {
         this.action = "edit";
+        this.header_text='Edit Affiliate';
         this.condition = { id: params._id };
         this.activatedRouter.data.subscribe(resolveData => {
           this.defaultData = resolveData.affiliateList.res[0];
@@ -169,7 +171,7 @@ export class AddAffiliateComponent implements OnInit {
 
   submit() {
 
-    console.log('>>>>>>>>>>>')
+    // console.log('>>>>>>>>>>>')
 
     //blur function
     for(let i in this.addaffiliateForm.controls){
@@ -177,7 +179,7 @@ export class AddAffiliateComponent implements OnInit {
     }
 
 
-    console.log('>>>>>>>>>>>')
+    // console.log('>>>>>>>>>>>')
 
     if(this.addaffiliateForm.valid){
 
@@ -200,7 +202,7 @@ export class AddAffiliateComponent implements OnInit {
       this.apiservice.CustomRequest( postData,'addorupdatedata').subscribe((response: any) => {
         let result: any;
         result = response;
-        console.log('>>>>>>', result)
+        // console.log('>>>>>>', result)
 
         if (result.status == "success") {
 
