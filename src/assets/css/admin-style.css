@@ -651,7 +651,7 @@ app-bk-leftdiv{position:relative;z-index:999}
 .myaccount .myaccountwrapper{width:1000px;margin:0 auto;display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;min-height:100vh}
 .myaccount.generalcls .myaccountwrapper .mat-card-title{font-family:'HelveticaBold';font-size:48px!important;line-height:48px!important;text-transform:uppercase;margin:0;padding:0;color:#fff;display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;width:100%;-webkit-box-align:center;align-items:center;-webkit-box-pack:center;justify-content:center;background:#333;margin-bottom:2px!important;padding:20px 0 15px}
 .myaccount .mat-tab-group{display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;flex-direction:row;width:100%}
-.myaccount .mat-tab-group .mat-form-field{width:100%}
+.myaccount .mat-tab-group .mat-form-field{width:96%}
 .myaccount .mat-tab-labels{display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;flex-direction:column}
 .myaccount .mat-ink-bar{position:absolute;right:0!important;height:100%;transition:.5s cubic-bezier(.35,0,.25,1);top:0;width:1px!important}
 .myaccount .mat-ink-bar[style]{right:0!important;background-color:transparent!important}
@@ -688,8 +688,12 @@ app-bk-leftdiv{position:relative;z-index:999}
 .adminwrappercls button,.adminwrappercls mat-button{border-radius:0!important}
 .myaccount .visibleicon{cursor:pointer}
 .myaccount .mat-tab-body-wrapper .mat-form-field-appearance-legacy .mat-form-field-infix button{margin:0;padding:0;box-shadow:none!important;min-width:1px;line-height:normal}
+.myaccount .btnclswrapper{display: block; margin-top: 10px;}
+.myaccount .btnclswrapper button{display: inline-block !important;margin: 10px 5px !important;}
+.myaccount .myaccountwrapper .tablediv{width: 100%;}
+.myaccount .myaccountwrapper .mat-form-field-label-wrapper {top: -50%;}
 
-
+.searchblock .searchblockwrapper .btngreen {margin-top: 0!important;}
 
 
 

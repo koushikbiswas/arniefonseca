@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router , ActivatedRoute } from '@angular/router';
 import { CookieService } from 'ngx-cookie-service';
-import { ApiService } from '../../../../api.service';
-import { environment } from '../../../../../environments/environment';
+import { ApiService } from '../../../../../api.service';
+import { environment } from '../../../../../../environments/environment';
 import { MetaService } from '@ngx-meta/core';
 
 @Component({

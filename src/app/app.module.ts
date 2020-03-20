@@ -105,7 +105,7 @@ import { AddAffiliateComponent, AffiliateModal } from './component/backend/user/
 
 
 import { CKEditorModule } from 'ngx-ckeditor';
-import { MiscellaneousComponent } from './component/backend/manage-website/miscellaneous/miscellaneous.component';
+import { MiscellaneousComponent } from './component/backend/manage-website/miscellaneous/miscellaneouslists/miscellaneous.component';
 //account-settings
 import { AccountSettingsComponent } from './component/backend/account-settings/account-settings.component';
 
