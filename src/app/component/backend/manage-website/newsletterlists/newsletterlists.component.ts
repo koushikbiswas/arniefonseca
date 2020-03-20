@@ -130,7 +130,7 @@ public subscriptionForm: any = {
     }
     this.apiservice.getDatalist(data).subscribe((result: any)=>{
       this.subscriptionForm.datasource = result.res;
-      console.log('>>>>>>>>>>>>koushik subscription>>>>>>>>>>>>>', this.subscriptionForm.datasource);
+      // console.log('>>>>>>>>>>>>koushik subscription>>>>>>>>>>>>>', this.subscriptionForm.datasource);
     });
 
 
@@ -157,7 +157,7 @@ public subscriptionForm: any = {
       }
       this.apiservice.getDatalist(dataTestemail).subscribe((result: any)=>{
         this.testEmailConfigForm.datasource = result.res;
-         console.log('>>>>>>>>>>>>amitavatestemail>>>>>>>>>>>>>', this.testEmailConfigForm.datasource);
+        //  console.log('>>>>>>>>>>>>amitavatestemail>>>>>>>>>>>>>', this.testEmailConfigForm.datasource);
       });
 
 
@@ -171,7 +171,7 @@ public subscriptionForm: any = {
       }
       this.apiservice.getDatalist(dataSenderapp).subscribe((result: any)=>{
         this.senderConfigForm.datasource = result.res;
-         console.log('>>>>>>>>>>>>amitavasender>>>>>>>>>>>>>', this.senderConfigForm.datasource);
+        //  console.log('>>>>>>>>>>>>amitavasender>>>>>>>>>>>>>', this.senderConfigForm.datasource);
       });
 
 
