@@ -600,7 +600,11 @@ data:{
   { path: 'customer/edit/:_id', component: AddCustomerComponent },
 
 
-  {path: 'miscellaneous', component: MiscellaneousComponent},
+  {
+    path: 'miscellaneous', component: MiscellaneousComponent,
+    resolve: { miscellaneousData : ResolveService},
+    data :{ requestcondition : {source :'',condition:{}},endpoint :'miscellaneouslistdata'}
+   },
 
   { path: '**', component: LoginComponent },
 ];

@@ -31,16 +31,65 @@
 
           
         <div class="tablediv">
-
+          <table mat-table [dataSource]="dataSource" matSort>          
+              <!-- ID Column -->
+                  <ng-container matColumnDef="name">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
+                    <td mat-cell *matCellDef="let row" title="Name"> {{row.name}} </td>
+                  </ng-container>
+                  <ng-container matColumnDef="no">
+                    <th mat-header-cell *matHeaderCellDef> No. </th>
+                    <td mat-cell *matCellDef="let row; let i = index;" title= "No"> {{ i + 1 }} </td>
+                  </ng-container>
+            
+                  <!-- Progress Column -->
+                  <ng-container matColumnDef="address">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Address </th>
+                    <td mat-cell *matCellDef="let row" title="Address"> {{row.address}} </td>
+                  </ng-container>
+            
+                  <!-- Name Column -->
+                  <ng-container matColumnDef="email">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> E-mail </th>
+                    <td mat-cell *matCellDef="let row" title="E-mail"> {{row.email}} </td>
+                  </ng-container>
+            
+                  <!-- Color Column -->
+                  <ng-container matColumnDef="message">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>Message </th>
+                    <td mat-cell *matCellDef="let row" title="Message"> {{row.message}} </td>
+                  </ng-container>
+                  <ng-container matColumnDef="phone">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>Phone </th>
+                    <td mat-cell *matCellDef="let row" title="Phone"> {{row.phone}} </td>
+                  </ng-container>
+                  <ng-container matColumnDef="created_at">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>Date Added </th>
+                    <td mat-cell *matCellDef="let row" title="Date Added"> {{row.created_at |date}} </td>
+                  </ng-container>
+        
+                  <ng-container matColumnDef="viewAction">
+                    <th mat-header-cell *matHeaderCellDef> Action </th>
+                    <td mat-cell *matCellDef="let element; let i = index;" data-label="Action">
+                      <span class="buttons_ro">
+                        <span class="pointer" (click)="deleteRecord(element._id, i);">
+                          <i class="material-icons">
+                            delete_outline
+                          </i>
+                        </span>
+                        <span class="material-icons">
+                          visibility
+                          </span>
+                      </span>
+                    </td>
+                  </ng-container>
+                  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                  <tr mat-row *matRowDef="let row; columns: displayedColumns;">
+                  </tr>
+                </table>
+                <mat-paginator [pageSizeOptions]="[5, 10, 20,100,200]" showFirstLastButtons></mat-paginator>
             <!-- Contact Us Listing goes here  -->
-            <!-- <lib-listing *ngIf="contactUsData != null && contactUsData.length>0" [datasource]="contactUsData"
-                [skip]="contactUsData_skip" [modify_header_array]="contactUsData_modify_header"
-                [sourcedata]="tableName" [jwttoken]="user_cookie"
-                [updateendpoint]="UpdateEndpoint" [deleteendpoint]="deleteEndpoint"
-                [detail_skip_array]="detail_skip_array">
-            </lib-listing> -->
-
-            <!-- -------------------------------------------- -->
+           
 
 
         </div>
