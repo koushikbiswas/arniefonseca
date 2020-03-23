@@ -457,8 +457,33 @@ app-bk-leftdiv{position:relative;z-index:999}
 .newform_css{display:block!important;background:#e7e9ea!important;padding:14px!important}
 .newform_css .mat-form-field{display:block;position:relative;text-align:left}
 .newform_css .bottompart{padding:6px 0;display:block;text-align:left!important}
-.newform_css button{background:#f7462e!important;font-size:15px!important;color:#fff!important}
+/* .newform_css button{background:#f7462e!important;font-size:15px!important;color:#fff!important} */
 .newform_css button:nth-of-type(2){background:#333!important;margin-left:10px!important}
+
+.newform_css button {
+    margin-right: 15px;
+    display: inline-block!important;
+    height: auto!important;
+    background: #0ed39e!important;
+    font-size: 14px!important;
+    color: #fff!important;
+    text-transform: uppercase!important;
+    font-family: 'HelveticaBold';
+    text-decoration: none!important;
+    line-height: normal!important;
+    text-align: center!important;
+    margin: 0 auto!important;
+    white-space: normal!important;
+    margin-top: 10px!important;
+    padding: 12px 10px!important;
+    border-radius: 0!important;
+    margin-right: 5px!important;
+    margin-bottom: 10px!important;
+    z-index: 99;
+    box-shadow: none !important;
+}
+
+
 
 
 .newcontainer{width: 95%; display: block; margin: 0 auto;}
