@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { CookieService } from 'ngx-cookie-service';
 import { ApiService } from '../../../../../api.service';
 
 import { MetaService } from '@ngx-meta/core';
@@ -11,6 +12,9 @@ import { MetaService } from '@ngx-meta/core';
   styleUrls: ['./video-category-management.component.css']
 })
 export class VideoCategoryManagementComponent implements OnInit {
+
+  public user_details: any;
+
 // public serverUrl:any="https://9ozbyvv5v0.execute-api.us-east-1.amazonaws.com/production/api/";
 public serverUrl: any = this.apiService.serverUrl;
 public getDataEndpoint:any="datalist";
@@ -19,7 +23,7 @@ public listUrl:any="video-category/list";
 public sourceName:any="video_category";
 public dataList:any=[];
 public editedData:any=[];
-  constructor(public activeRoute:ActivatedRoute,public apiService : ApiService, private readonly meta: MetaService) {
+  constructor(private router : Router, public activeRoute:ActivatedRoute,public apiService : ApiService, private readonly meta: MetaService,private cookieService : CookieService) {
 
     this.meta.setTitle('Arniefonseca - Videos');
     this.meta.setTag('og:description', '');
@@ -33,6 +37,10 @@ public editedData:any=[];
     this.meta.setTag('og:type', 'website');
     this.meta.setTag('og:image', 'https://arniefonseca-backend.influxiq.com/assets/images/logo.png');
     this.meta.setTag('twitter:image', 'https://arniefonseca-backend.influxiq.com/assets/images/logo.png');
+
+    if (this.cookieService.get('user_details') != undefined && this.cookieService.get('user_details') != null && this.cookieService.get('user_details') != '') {      
+      this.user_details = JSON.parse(this.cookieService.get('user_details'));
+    }
 
    }
 

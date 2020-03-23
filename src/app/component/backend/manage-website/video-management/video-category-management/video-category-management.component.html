@@ -11,13 +11,36 @@
                     </span>            
                 </span>
             </span> -->
-            <lib-add-edit-videos
-            [serverUrl]="serverUrl"
-            [getDataEndpoint]="getDataEndpoint"
-            [addEndpoint]="addEndpoint"
-            [listingUrl]="listUrl"
-            [EditList]="editedData"
-            [SourceName]="sourceName"></lib-add-edit-videos>
+
+            <mat-card-content class="bred_cram_wrapper_list">
+              <mat-list class="bred_cram_wrapper">
+                <mat-list-item mat-list-item *ngIf="user_details.type == 'admin'"> <a [routerLink]="'/admin-dashboard'">Dashboard</a> </mat-list-item>
+                <mat-list-item mat-list-item *ngIf="user_details.type == 'affiliate'"> <a [routerLink]="'/affiliate-dashboard'">Dashboard</a> </mat-list-item>
+        
+                <mat-list-item mat-list-item *ngIf="user_details.type == 'admin'"> <a [routerLink]="'/admin-dashboard'">Manage website</a> </mat-list-item>
+                <mat-list-item mat-list-item *ngIf="user_details.type == 'affiliate'"> <a [routerLink]="'/affiliate-dashboard'">Manage website</a> </mat-list-item>
+        
+                <mat-list-item mat-list-item *ngIf="user_details.type == 'admin'"> <a [routerLink]="'/video-category/list'">Video Category </a> </mat-list-item>
+                <mat-list-item mat-list-item *ngIf="user_details.type == 'affiliate'"> <a [routerLink]="'/video-category/list'">Video Category </a> </mat-list-item>
+              
+                <mat-list-item mat-list-item *ngIf="user_details.type == 'admin' && router.url == '/video-category/add'"> <a>Add Video Category</a> </mat-list-item>
+                <mat-list-item mat-list-item *ngIf="user_details.type == 'affiliate' && router.url == '/video-category/add'"> <a>Add Video Category</a> </mat-list-item>
+        
+                <mat-list-item mat-list-item *ngIf="user_details.type == 'admin' && activeRoute.snapshot.routeConfig.path == 'video-category/edit/:_id'"> <a>Edit Video Category</a> </mat-list-item>
+                <mat-list-item mat-list-item *ngIf="user_details.type == 'affiliate' && activeRoute.snapshot.routeConfig.path == 'video-category/edit/:_id'"> <a>Edit Video Category</a> </mat-list-item>
+
+              </mat-list>       
+            </mat-card-content>
+            <mat-card-content>
+              <lib-add-edit-videos
+                [serverUrl]="serverUrl"
+                [getDataEndpoint]="getDataEndpoint"
+                [addEndpoint]="addEndpoint"
+                [listingUrl]="listUrl"
+                [EditList]="editedData"
+                [SourceName]="sourceName">
+              </lib-add-edit-videos>
+            </mat-card-content>
           </mat-card>
         </div> 
     </div>

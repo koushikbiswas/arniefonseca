@@ -10,6 +10,10 @@ import { MetaService } from '@ngx-meta/core';
   styleUrls: ['./addedit-testimonial.component.css']
 })
 export class AddeditTestimonialComponent implements OnInit {
+
+  public user_details: any;
+  public header:string='Add Testimonial';
+
 /* Config for add and edit start */
 public configAddEdit: any = {
   action: "add",
@@ -64,11 +68,16 @@ public configAudioFileUpload:any={
     this.meta.setTag('og:image', 'https://arniefonseca-backend.influxiq.com/assets/images/logo.png');
     this.meta.setTag('twitter:image', 'https://arniefonseca-backend.influxiq.com/assets/images/logo.png');
 
+    if (this.cookieService.get('user_details') != undefined && this.cookieService.get('user_details') != null && this.cookieService.get('user_details') != '') {      
+      this.user_details = JSON.parse(this.cookieService.get('user_details'));
+    }
+
    }
 
   ngOnInit() {
     this.activatedRoute.params.subscribe(params => {
       if(params._id) {
+        this.header='Edit Testimonial';
         this.activatedRoute.data.subscribe(resolveData => {
           this.configAddEdit.defaultData = resolveData.testimonialData.res[0];
           this.configAddEdit.action = "edit";

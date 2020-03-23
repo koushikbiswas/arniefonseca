@@ -3,10 +3,31 @@
       <div class="main-content-wrap">
         <mat-card class="generalcls blog" style="padding: 0 !important;">  
           <!-- <img src="../../../../assets/images/blogmang-dashboard-img1.jpg" style="width: 100%; display: block; margin: 0; padding: 0;"> -->
+          
+          <mat-card-content class="bred_cram_wrapper_list">
+            <!-- <mat-list class="bred_cram_wrapper">
+              <mat-list-item mat-list-item *ngIf="user_details.type == 'admin'"> <a [routerLink]="'/admin-dashboard'">Dashboard</a> </mat-list-item>
+              <mat-list-item mat-list-item *ngIf="user_details.type == 'affiliate'"> <a [routerLink]="'/affiliate-dashboard'">Dashboard</a> </mat-list-item>
+      
+              <mat-list-item mat-list-item *ngIf="user_details.type == 'admin'"> <a [routerLink]="'/admin-dashboard'">Manage website</a> </mat-list-item>
+              <mat-list-item mat-list-item *ngIf="user_details.type == 'affiliate'"> <a [routerLink]="'/affiliate-dashboard'">Manage website</a> </mat-list-item>
+      
+              <mat-list-item mat-list-item *ngIf="user_details.type == 'admin'"> <a [routerLink]="'/blog-management'">blog management</a> </mat-list-item>
+              <mat-list-item mat-list-item *ngIf="user_details.type == 'affiliate'"> <a [routerLink]="'/blog-management'">blog management</a> </mat-list-item>
+
+              <mat-list-item mat-list-item *ngIf="user_details.type == 'admin' && router.url == '/blog-category/add'"> <a>Add Blog Category</a> </mat-list-item>
+              <mat-list-item mat-list-item *ngIf="user_details.type == 'affiliate' && router.url == '/blog-category/add'"> <a>Add Blog Category</a> </mat-list-item>
+   
+              <mat-list-item mat-list-item *ngIf="user_details.type == 'admin' && activatedRouter.snapshot.routeConfig.path == 'blog-category/edit/:_id'"> <a>Edit blog Category</a> </mat-list-item>
+              <mat-list-item mat-list-item *ngIf="user_details.type == 'affiliate' && activatedRouter.snapshot.routeConfig.path == 'blog-category/edit/:_id'"> <a>Edit blog Category</a> </mat-list-item>
+              
+            </mat-list>        -->
+          </mat-card-content>
+          
           <span class="searchblock">
               <span class="searchblockwrapper">
                   <span>
-                      <h2>ADD BLOG Category</h2>
+                    <h2>{{header}}</h2>
                   </span>            
               </span>
           </span>

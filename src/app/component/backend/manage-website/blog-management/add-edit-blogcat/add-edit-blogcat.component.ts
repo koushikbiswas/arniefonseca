@@ -10,6 +10,10 @@ import { MetaService } from '@ngx-meta/core';
   styleUrls: ['./add-edit-blogcat.component.css']
 })
 export class AddEditBlogcatComponent implements OnInit {
+
+  public user_details: any;
+  public header:string='Add Blog Category';
+  
   //Add editfor blog category
   public configAddEdit: any = {
     action: "add",
@@ -23,7 +27,7 @@ export class AddEditBlogcatComponent implements OnInit {
     userData: { id: "18801017007", name: "Admin" },
     defaultDataAlways: null
   }
-  constructor(private activatedRouter: ActivatedRoute, private cookieService: CookieService,public apiService: ApiService, private readonly meta: MetaService,) { 
+  constructor(public activatedRouter: ActivatedRoute, public router:Router, private cookieService: CookieService,public apiService: ApiService, private readonly meta: MetaService,) { 
 
 
     this.meta.setTitle('Arniefonseca - Blog Management');
@@ -39,11 +43,16 @@ export class AddEditBlogcatComponent implements OnInit {
     this.meta.setTag('og:image', 'https://arniefonseca-backend.influxiq.com/assets/images/logo.png');
     this.meta.setTag('twitter:image', 'https://arniefonseca-backend.influxiq.com/assets/images/logo.png');
 
+    if (this.cookieService.get('user_details') != undefined && this.cookieService.get('user_details') != null && this.cookieService.get('user_details') != '') {      
+      this.user_details = JSON.parse(this.cookieService.get('user_details'));
+    }
+
   }
 
   ngOnInit() {
     this.activatedRouter.params.subscribe(params => {
       if (params._id) {
+        this.header='Edit Blog Category';
         this.activatedRouter.data.subscribe(resolveData => {
           this.configAddEdit.defaultData = resolveData.blogCatList.res[0];
           this.configAddEdit.action = "edit";

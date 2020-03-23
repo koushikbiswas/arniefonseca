@@ -105,7 +105,12 @@ import { AddAffiliateComponent, AffiliateModal } from './component/backend/user/
 
 
 import { CKEditorModule } from 'ngx-ckeditor';
-import { MiscellaneousComponent } from './component/backend/manage-website/miscellaneous/miscellaneous.component';
+import { MiscellaneousComponent } from './component/backend/manage-website/miscellaneous/miscellaneouslists/miscellaneous.component';
+//account-settings
+import { AccountSettingsComponent } from './component/backend/account-settings/account-settings.component';
+import { CommonComponent } from './component/backend/common/common.component';
+// import { DialogBoxComponent } from './common/dialog-box/dialog-box.component';
+
 
 @NgModule({
   declarations: [
@@ -177,7 +182,9 @@ import { MiscellaneousComponent } from './component/backend/manage-website/misce
     AddCustomerComponent,
     AddAffiliateComponent,
     AffiliateModal,
-    MiscellaneousComponent
+    MiscellaneousComponent,
+    AccountSettingsComponent,
+    CommonComponent
   ],
   imports: [
     AmazingTimePickerModule,   
@@ -212,6 +219,6 @@ import { MiscellaneousComponent } from './component/backend/manage-website/misce
   providers: [CookieService, AuthGuard, ApiService, SidenavService,DatePipe, HttpLoaderService, { provide: HTTP_INTERCEPTORS, useClass: LoaderInterceptor, multi: true, }],
   bootstrap: [AppComponent],
   schemas:[CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
-  entryComponents: [EventModal,AffiliateModal]
+  entryComponents: [EventModal,AffiliateModal,CommonComponent]
 })
 export class AppModule { }

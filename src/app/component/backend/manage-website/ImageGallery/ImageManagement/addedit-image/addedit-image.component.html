@@ -3,6 +3,28 @@
     <app-bk-header></app-bk-header>
   </div>
   <div class="main-content-wrap">
+
+    <mat-card-content class="bred_cram_wrapper_list">
+      <mat-list class="bred_cram_wrapper">
+        <mat-list-item mat-list-item *ngIf="user_details.type == 'admin'"> <a [routerLink]="'/admin-dashboard'">Dashboard</a> </mat-list-item>
+        <mat-list-item mat-list-item *ngIf="user_details.type == 'affiliate'"> <a [routerLink]="'/affiliate-dashboard'">Dashboard</a> </mat-list-item>
+
+        <mat-list-item mat-list-item *ngIf="user_details.type == 'admin'"> <a [routerLink]="'/admin-dashboard'">Manage website</a> </mat-list-item>
+        <mat-list-item mat-list-item *ngIf="user_details.type == 'affiliate'"> <a [routerLink]="'/affiliate-dashboard'">Manage website</a> </mat-list-item>
+
+        <mat-list-item mat-list-item *ngIf="user_details.type == 'admin'"> <a [routerLink]="'/image-gallery/list'">Image Gallery</a> </mat-list-item>
+        <mat-list-item mat-list-item *ngIf="user_details.type == 'affiliate'"> <a [routerLink]="'/image-gallery/list'">Image Gallery</a> </mat-list-item>
+
+        <mat-list-item mat-list-item *ngIf="user_details.type == 'admin' && router.url == '/image-gallery/add'"> <a>Add Image</a> </mat-list-item>
+        <mat-list-item mat-list-item *ngIf="user_details.type == 'affiliate' && router.url == '/image-gallery/add'"> <a>Add Image</a> </mat-list-item>
+
+        <mat-list-item mat-list-item *ngIf="user_details.type == 'admin' && activeRoute.snapshot.routeConfig.path == 'image-gallery/edit/:_id'"> <a>Edit Image</a> </mat-list-item>
+        <mat-list-item mat-list-item *ngIf="user_details.type == 'affiliate' && activeRoute.snapshot.routeConfig.path == 'image-gallery/edit/:_id'"> <a>Edit Image</a> </mat-list-item>
+
+
+      </mat-list>       
+  </mat-card-content>
+
     <mat-card>
       <div class="tablediv">
         <lib-add-edit-image [serverUrl]="serverUrl" [getDataEndpoint]="getDataEndpoint" [addEndpoint]="addEndpoint"

@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { SidenavService } from '../../services/sidenav.service';
-
 import {MatDialog} from '@angular/material/dialog';
 import { CookieService } from 'ngx-cookie-service';
 import { Router, ActivatedRoute } from '@angular/router';
+import { ApiService } from '../../api.service';
 
 @Component({
   selector: 'app-bk-header',
@@ -14,10 +14,19 @@ export class BkHeaderComponent implements OnInit {
   public userCookies: any;     
   public user_data: any;
 
-
+  public user_cookies: any;
+ 
+  public cookies_id: any;
+  public userData: any = [];
   public user_full_name: any;
 
-  constructor(public cookieService: CookieService, private sidenav: SidenavService, public dialog: MatDialog, public router: Router, public activeroute: ActivatedRoute) {}
+  constructor(public cookieService: CookieService, private sidenav: SidenavService, public dialog: MatDialog, public router: Router, public activeroute: ActivatedRoute,public apiService: ApiService) {
+    let allcookies: any;
+    allcookies = cookieService.getAll();
+    this.user_cookies = JSON.parse(allcookies.user_details);
+    this.cookies_id = this.user_cookies._id;
+    this.getdata();
+  }
   toggleActive:boolean = false;
   toggleRightSidenav() {
     this.toggleActive = !this.toggleActive;
@@ -43,6 +52,18 @@ export class BkHeaderComponent implements OnInit {
     window.location.href="https://arniefonseca.influxiq.com/";
     // console.log("logout");
   }
-
+  getdata() {
+    let data: any = {
+      endpoint: 'datalist',
+      source: 'users_view',
+      condition: {
+        "_id_object": this.cookies_id
+      }
+    }
+    this.apiService.getDatalist(data).subscribe((res: any) => {
+      this.userData = res.res[0];
+     
+    });
+  }
 }
 
