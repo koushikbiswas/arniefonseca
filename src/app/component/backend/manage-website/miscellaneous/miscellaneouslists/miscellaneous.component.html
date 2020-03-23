@@ -28,7 +28,18 @@
                 </span>
             </span>
         </span>
+        <span>
+          <mat-form-field  class="searchdiv">
+            <input matInput placeholder="Search by Name" [(ngModel)]="search.name"
+             >
+          </mat-form-field>
+          <mat-form-field  class="searchdiv">
+            <input matInput placeholder="Search by E-mail" [(ngModel)]="search.email"
+             >
+          </mat-form-field>
+          <button class="submitbtn" mat-raised-button color="primary" type="button" (click)="getPageData()">Search</button>
 
+        </span>
           
         <div class="tablediv">
           <table mat-table [dataSource]="dataSource" matSort>          

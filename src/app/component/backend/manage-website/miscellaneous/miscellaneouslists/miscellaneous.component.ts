@@ -49,6 +49,10 @@ export class MiscellaneousComponent implements OnInit {
   view: any = "contactusForm";
   public dataList:any=[];
   public singleData:any;
+  public search:any={
+    "name":"",
+    "email":""
+  }
   @ViewChild(MatPaginator, { static: false }) paginator: MatPaginator;
   @ViewChild(MatSort, { static: false }) sort: MatSort;
   constructor(public dialog: MatDialog,private router: Router, private activatedRoute: ActivatedRoute, private cookieService: CookieService, public apiservice: ApiService, private readonly meta: MetaService) { 
@@ -135,7 +139,6 @@ export class MiscellaneousComponent implements OnInit {
   this.apiservice.getDatalist(data).subscribe((res: any) => {
     if (res.status = "success") {
        this.singleData = res.res;
-       console.log("single data",this.singleData);
        let modalData: any = {
         panelClass: 'delete-dialog',
         data: {
@@ -153,5 +156,41 @@ export class MiscellaneousComponent implements OnInit {
     }
 
   })
+  }
+  getPageData(){
+    // let searchCondition:any={};
+    // let searchVal:any=this.search;
+    // let searchArray:any=Object.keys(searchVal).map(function(key){
+    //   return {key:key,val:searchVal[key]};
+    // });
+    // for (let i in searchArray) {
+    //   if(searchArray[i].val!=null && searchArray[i].val!=''){
+    //     searchCondition[searchArray[i].key]={$regex : searchArray[i].val};
+    //   } 
+    // }
+    // searchCondition={$and:[searchCondition]};
+    // this.lastSearchCondition = searchCondition;
+
+    // let link = this.serverDetailsVal.serverUrl + this.formSourceVal.viewReportEndpoint;
+    // let data: any ={
+    //   token:this.serverDetailsVal.jwttoken,
+    //   condition:{
+    //     "skip":(parseInt(this.page.page_no)-1) * parseInt(this.page.page_count),
+    //     "limit":parseInt(this.page.page_count),
+    //     "search" : searchCondition
+        
+    //   },
+    //   sort_val:this.sort_val,
+    //   sort_type:this.sort_type
+      
+    // }
+    // this.apiService.postData(link,data).subscribe((response:any)=>{
+    // if(response.status="success"){
+    //   this.reportDataCount=0;
+    //   this.gettrainingreportdatacount();
+    //   this.dataSource = new MatTableDataSource(response.training_report_data);
+    // }
+    // })
+
   }
 }
