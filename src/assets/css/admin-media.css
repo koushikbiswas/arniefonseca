@@ -53,7 +53,7 @@
     @media only screen and (max-width: 991px) {
 
    .tablediv .searchbar .mat-form-field {margin: 4px 0!important;display: block;width: 100%;}       
-    .tablediv .searchbar{ display: block; width: 100%;}
+
     .tablediv table td{text-align:right!important}
     .tabblock .tablists ul li.nav-item a.nav-link{font-size:20px;line-height:24px;padding:15px}
     .tablediv table td.tablebuttondiv{border:0!important;border-bottom:0 solid #fff!important}
@@ -98,6 +98,7 @@
     .bloglists .tablediv .searchbar span.textsearch,.blogcatlists .tablediv .searchbar span.textsearch{width:100%}
 
     .admcls .header .header-part-right{ margin-top: 25px;}
+    /* .tablediv .searchbar{ display: block; width: 100%;} */
     }
     @media only screen and (max-width: 667px) {
     .bred_cram_wrapper .mat-list-item a {padding: 0 5px !important;line-height: normal !important;}
@@ -135,6 +136,7 @@
 
     .bred_cram_wrapper a{     display: block!important; float: none;} 
     }
+
 
     
     @media only screen and (max-width: 540px) {
