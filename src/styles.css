@@ -294,6 +294,8 @@ button.submitbtn.mat-raised-button.mat-primary{margin-right: 15px;display: inlin
   z-index: 99;box-shadow: none !important;}
 .mat-chip.mat-standard-chip.mat-chip-selected.mat-primary {background-color: #0ed39e !important;font-size: 12px!important;color: #fff!important;text-transform: uppercase!important;
   font-family: 'HelveticaBold';}
+  .searchbar button.submitbtn.mat-raised-button.mat-primary{margin-left: 2px !important;}
+  .searchbar button.add_button.mat-raised-button.mat-primary{margin-left: 2px !important;}
 .formspan .example-container h1{color: #000000;}
 .mat-checkbox:not(.mat-checkbox-disabled).mat-primary .mat-checkbox-ripple .mat-ripple-element {background-color: #0ed39e !important;}
 .cdk-overlay-pane.custom-modalbox p {text-align: center !important;}
@@ -381,6 +383,10 @@ button.submitbtn.mat-raised-button.mat-primary{margin-right: 15px;display: inlin
 .titlewrapper {padding: 15px;}
 }
 
+@media only screen and (max-width: 640px) {
+  .cdk-overlay-pane.delete-dialog .mat-dialog-container {min-width: inherit !important;max-width: 96% !important;margin: 0 auto !important;width: 100% !important;}
+  button.submitbtn.mat-raised-button.mat-primary {margin-top: 5px!important;margin-bottom: 5px!important;}
+}
 @media only screen and (max-width: 410px) {
 .tablediv button.mat-raised-button {margin-right: auto!important;margin-left: auto!important;margin-top: 10px !important;margin-bottom: 5px!important;}
 }
