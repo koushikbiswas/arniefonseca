@@ -145,6 +145,7 @@ ckeditor{margin-bottom:9px!important;display:inline-block;width:100%}
 
 cdk-overlay-pane.delete-dialog p {text-align: center !important;}
 
+.tablewrapper .mat-column-description{width: 20%;}
 
 .homebanner .owl-carousel.owl-drag .owl-item{position:relative;margin-top:0;width:100%!important;height:100%}
 .homebanner .owl-carousel.owl-drag .owl-stage[style]{width:100%!important;display:flex;justify-content:flex-start}
