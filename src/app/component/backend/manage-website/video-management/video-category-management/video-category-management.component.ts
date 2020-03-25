@@ -23,7 +23,7 @@ public listUrl:any="video-category/list";
 public sourceName:any="video_category";
 public dataList:any=[];
 public editedData:any=[];
-  constructor(private router : Router, public activeRoute:ActivatedRoute,public apiService : ApiService, private readonly meta: MetaService,private cookieService : CookieService) {
+  constructor(public router : Router, public activeRoute:ActivatedRoute,public apiService : ApiService, private readonly meta: MetaService,private cookieService : CookieService) {
 
     this.meta.setTitle('Arniefonseca - Videos');
     this.meta.setTag('og:description', '');

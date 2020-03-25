@@ -52,7 +52,7 @@ public configAudioFileUpload:any={
   conversionNeeded: 1,
   bucketName: "crmfiles.influxhostserver"
 }
-  constructor(private router : Router , private activatedRoute : ActivatedRoute ,private cookieService : CookieService, public ApiService: ApiService, private readonly meta: MetaService) {
+  constructor(public router : Router , public activatedRoute : ActivatedRoute ,public cookieService : CookieService, public ApiService: ApiService, private readonly meta: MetaService) {
 
 
     this.meta.setTitle('Arniefonseca - Testimonial');

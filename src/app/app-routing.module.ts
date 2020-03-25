@@ -295,7 +295,15 @@ const routes: Routes = [
   { path: 'my-appointment-admin', component: MyAppointmentComponent },
   { path: 'commission-report', component: CommissionReportComponent },
   // { path: 'testimonial-lists-admin', component: ListingTestimonialComponent },
-  { path: 'customer-list-admin', component: CustomerListComponent },
+  { path: 'customer-list-admin', component: CustomerListComponent,
+  resolve:{affiliateList:ResolveService},data:{
+    requestcondition:{
+      source:'users_customer_view',
+      condition:{}
+    },
+    endpoint:'datalist'
+
+  }, },
 
   { path: 'testimonial/add', component: AddeditTestimonialComponent },
   {
@@ -310,7 +318,8 @@ const routes: Routes = [
   { path: 'booking-report', component: BookingReportComponent },
   
 
-  { path: 'affiliate-admin', component: ListingAffiliateComponent,resolve:{affiliateList:ResolveService},data:{
+  { path: 'affiliate-admin', component: ListingAffiliateComponent,
+  resolve:{affiliateList:ResolveService},data:{
     requestcondition:{
       source:'users_view',
       condition:{}
@@ -597,7 +606,16 @@ data:{
   },
   },
   { path: 'customer/add', component: AddCustomerComponent, },
-  { path: 'customer/edit/:_id', component: AddCustomerComponent },
+  { path: 'customer/edit/:_id', component: AddCustomerComponent,
+  resolve:{affiliateList:ResolveService},
+  data:{
+    requestcondition:{
+      source:'users',
+      condition:{}
+    },
+    endpoint:'datalist'
+
+}, },
 
 
   {

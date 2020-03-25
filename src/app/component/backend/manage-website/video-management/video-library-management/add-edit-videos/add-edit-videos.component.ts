@@ -20,7 +20,7 @@ export class AddEditVideosComponent implements OnInit {
   public SingleVideoData: any = [];
   public user_details:any;
   
-  constructor(private router : Router, public activeRoute: ActivatedRoute,public apiService : ApiService, public cookies :CookieService, private readonly meta: MetaService) { 
+  constructor(public router : Router, public activeRoute: ActivatedRoute,public apiService : ApiService, public cookies :CookieService, private readonly meta: MetaService) { 
 
 
     this.meta.setTitle('Arniefonseca - User Management');

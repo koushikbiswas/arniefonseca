@@ -53,7 +53,7 @@
     @media only screen and (max-width: 991px) {
 
    .tablediv .searchbar .mat-form-field {margin: 4px 0!important;display: block;width: 100%;}       
-    .tablediv .searchbar{ display: block; width: 100%;}
+
     .tablediv table td{text-align:right!important}
     .tabblock .tablists ul li.nav-item a.nav-link{font-size:20px;line-height:24px;padding:15px}
     .tablediv table td.tablebuttondiv{border:0!important;border-bottom:0 solid #fff!important}
@@ -75,7 +75,7 @@
     .tablediv table caption{font-size:1.3em}
     .tablediv table thead{border:none;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}
     .tablediv table tr{border-bottom:0 solid #c0c1c3;width:100%;margin-bottom:.625em}
-    .tablediv table td{border-bottom:1px solid #c0c1c3;display:block;font-size:13px;text-align:right;padding-left:25%}
+    .tablediv table td{border-bottom:1px solid #c0c1c3;display:block;font-size:13px;text-align:right;padding-left:10px}
     .tablediv table tr:last-child td{border-bottom:1px solid #c0c1c3!important}
     .adminlisttable .whitebtnlists{text-align:right!important}
     .tablediv table td button,.tablediv table td button:hover{float:right}
@@ -91,10 +91,14 @@
     .module_videoblock {display: inline-block;}
     }
     @media only screen and (max-width: 767px) {
+    .generalcls.blog .adm_inner_banner .adm_inner_title.mat-card-title {font-size: 30px !important;margin-top: 30px;}
+ 
+
     .tablediv .searchbar .mat-form-field{display:flex!important;flex:1 1 50%}
     .bloglists .tablediv .searchbar span.textsearch,.blogcatlists .tablediv .searchbar span.textsearch{width:100%}
 
     .admcls .header .header-part-right{ margin-top: 25px;}
+    /* .tablediv .searchbar{ display: block; width: 100%;} */
     }
     @media only screen and (max-width: 667px) {
     .bred_cram_wrapper .mat-list-item a {padding: 0 5px !important;line-height: normal !important;}
@@ -132,6 +136,7 @@
 
     .bred_cram_wrapper a{     display: block!important; float: none;} 
     }
+
 
     
     @media only screen and (max-width: 540px) {
