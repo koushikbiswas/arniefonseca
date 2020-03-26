@@ -259,15 +259,14 @@ const routes: Routes = [
   // {path: 'customer-dashboard', component:DashboardComponent, canActivate:[AuthGuard]},       // Useing for canActive
   { path: 'customer-dashboard', component: DashboardComponent },
   { path: 'admin-dashboard', component: MaindashboardComponent,
-
     canActivate:[AuthGuard],
-    resolve:{eventList:ResolveService},
+    resolve:{count:ResolveService},
     data:{
       requestcondition:{
-        source:'events_view',
-        condition:{},"limit":50
+        source:'',
+        condition:{},
       },
-      endpoint:'datalist'
+      endpoint:'dashboradcount'
 
     },
 
