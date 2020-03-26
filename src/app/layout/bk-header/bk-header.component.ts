@@ -24,6 +24,7 @@ export class BkHeaderComponent implements OnInit {
     let allcookies: any;
     allcookies = cookieService.getAll();
     this.user_cookies = JSON.parse(allcookies.user_details);
+    // console.log('>>',this.user_cookies)
     this.cookies_id = this.user_cookies._id;
     this.getdata();
   }
@@ -61,7 +62,9 @@ export class BkHeaderComponent implements OnInit {
       }
     }
     this.apiService.getDatalist(data).subscribe((res: any) => {
+      console.log(res)
       this.userData = res.res[0];
+      // console.log(this.userData)
      
     });
   }

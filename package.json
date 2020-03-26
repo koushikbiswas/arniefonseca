@@ -52,7 +52,7 @@
     "hammerjs": "^2.0.8",
     "handlebars": "^4.7.3",
     "igniteui-angular": "^8.2.18",
-    "image-gallery-lib-influxiq": "0.0.13",
+    "image-gallery-lib-influxiq": "0.0.14",
     "influxiq-blog-library": "0.0.1",
     "listing-angular7": "^0.1.4",
     "login-lib-influxiq": "0.0.14",

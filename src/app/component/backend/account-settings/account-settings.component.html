@@ -16,17 +16,17 @@
           <span class="profile-area">
             <lib-file-upload [config]="configData" class="file_upload" ></lib-file-upload>
             <span class="profileimg">            
-              <ng-container *ngIf="userData.profile_picture && imageFlag">
+              <ng-container *ngIf="userData !=null && userData.profile_picture!=null && imageFlag">
                 <img mat-card-image [attr.src]="userData.profile_picture">
               </ng-container>
-              <ng-container *ngIf="!userData.profile_picture">
+              <ng-container *ngIf="userData == null || userData.profile_picture == null">
                 <img src="http://gull-html-laravel.ui-lib.com/assets/images/faces/1.jpg">
               </ng-container>
             </span>
             <span class="profileinfo">         
-              <h2>{{userData.fullname }} </h2>
-              <p>Designation : {{userData.type}}</p>
-              <p>Date Added: {{ userData.date_added}}</p>            
+              <h2 *ngIf="userData !=null && userData.fullname!=null ">{{userData.fullname }} </h2>
+              <p *ngIf="userData !=null && userData.type!=null ">Designation : {{userData.type}}</p>
+              <p *ngIf="userData !=null && userData.date_added!=null "> Date Added: {{ userData.date_added}}</p>            
             </span>
           </span>
              

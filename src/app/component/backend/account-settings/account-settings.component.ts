@@ -108,7 +108,8 @@ export class AccountSettingsComponent implements OnInit {
         "_id_object": this.cookies_id
       }
     }
-    this.apiService.getDatalist(data).subscribe((res: any) => {      
+    this.apiService.getDatalist(data).subscribe((res: any) => {  
+      console.log(res)    
       this.userData = res.res[0];
       this.getCity(this.userData.state);
       this.UpdateForm.controls['firstname'].patchValue(this.userData.firstname);
@@ -161,7 +162,7 @@ export class AccountSettingsComponent implements OnInit {
       });
     }
     /**for getting all states & cities  function end here**/
-    getCity(event) {
+    getCity(event:any) {
       var val = event;
       this.allCities = this.cities[val];
     }

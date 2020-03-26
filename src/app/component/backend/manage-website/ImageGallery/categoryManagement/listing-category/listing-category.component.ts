@@ -77,11 +77,11 @@ export class ListingCategoryComponent implements OnInit {
       "source":"imageGallery_management_view"
     }
     this.apiService.CustomRequest(data,'datalist').subscribe(res=>{
-      console.log(res)
+      // console.log(res)
       let result:any;
       result=res;
       this.DataListForImage=result.res;
-      console.log(  this.DataListForImage)
+      // console.log(  this.DataListForImage)
 
     })
 
