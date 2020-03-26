@@ -124,7 +124,7 @@ export class AddAffiliateComponent implements OnInit {
       address: [null, Validators.required],
       password: ['', Validators.required],
       confirmPass: ['', Validators.required],
-      type: "user",
+      type: "affiliate",
       status:1
   },{validator: this.checkIfMatchingPasswords('password', 'confirmPass')});
       // affiliate:['', Validators.required],

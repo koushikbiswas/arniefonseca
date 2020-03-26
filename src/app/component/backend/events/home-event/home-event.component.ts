@@ -48,13 +48,10 @@ export class HomeEventComponent implements OnInit {
 
   ngOnInit() {
 
-    this.activatedRoute.data.forEach(resc=>{
-      console.log(resc.eventList.res)
-      this.eventhomelist = resc.eventList.res;
-
-      
-
-    })
+    // this.activatedRoute.data.forEach(resc=>{
+    //   console.log(resc.eventList.res)
+    //   this.eventhomelist = resc.eventList.res;
+    // })
     // let data: any = {
     //   source:"events_view",
 

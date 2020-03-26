@@ -13,6 +13,7 @@ export class MaindashboardComponent implements OnInit {
 public userCookies: any;
 public user_full_name: any = '';
 public eventhomelist:any;
+public count:any;
   constructor(public cookieService: CookieService, private readonly meta: MetaService,public activatedRoute:ActivatedRoute) {
     // console.log(this.cookieService.getAll());
     // this.userCookies = JSON.parse(this.cookieService.get('user_details'));
@@ -38,12 +39,9 @@ public eventhomelist:any;
 
   ngOnInit() {
 
-    this.activatedRoute.data.forEach(resc=>{
-      console.log(resc.eventList.res)
-      this.eventhomelist = resc.eventList.res;
-
-      
-
+    this.activatedRoute.data.forEach((resc:any)=>{
+     //console.warn(resc);
+     this.count=resc.count;
     })
   }
 
