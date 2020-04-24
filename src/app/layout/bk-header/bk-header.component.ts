@@ -49,8 +49,12 @@ export class BkHeaderComponent implements OnInit {
 
   logOut() {
     this.cookieService.deleteAll();
+    setTimeout(() => {
     this.router.navigateByUrl('/');
-    window.location.href="https://arniefonseca.influxiq.com/";
+    // window.location.href="https://dev.arniefonseca.com/";
+
+    }, 1000);
+    // window.location.href="https://dev.arniefonseca.com/";
     // console.log("logout");
   }
   getdata() {
@@ -63,7 +67,9 @@ export class BkHeaderComponent implements OnInit {
     }
     this.apiService.getDatalist(data).subscribe((res: any) => {
       console.log(res)
-      this.userData = res.res[0];
+      let result:any=res;
+
+      this.userData = result.res[0];
       // console.log(this.userData)
      
     });
