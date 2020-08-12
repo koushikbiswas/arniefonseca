@@ -69,7 +69,7 @@
     "ngx-owl-carousel": "^2.0.7",
     "ngx-uploader": "^7.1.0",
     "rxjs": "~6.5.4",
-    "serialize-javascript": "^2.1.2",
+    "serialize-javascript": "^3.1.0",
     "service-lib-influxiq": "0.0.17",
     "team-lib-influxiq": "0.0.15",
     "testimonial-lib-influxiq": "0.0.5",
