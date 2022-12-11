@@ -46,7 +46,7 @@
     "core-js": "^2.6.11",
     "dateformat": "^3.0.3",
     "domino": "^2.1.4",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "file-upload-lib-influxiq": "0.0.20",
     "font-awesome": "^4.7.0",
     "hammerjs": "^2.0.8",
